@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "FantasyPros Data Extractor",
+  "version": "1.0",
+  "description": "Extract player data from FantasyPros for Draft Tracker",
+  
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "downloads"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.fantasypros.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Extract FantasyPros Data",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  
+  "web_accessible_resources": [
+    "content.js"
+  ]
+}
