@@ -151,8 +151,106 @@ class FantasyDraftTracker {
         const copyBookmarkBtn = modal.querySelector('#copyBookmarkBtn');
         if (copyBookmarkBtn) {
             copyBookmarkBtn.addEventListener('click', async () => {
-                // ...Bookmark-Code wie gehabt (hier abgekürzt)
-                // Details im Originalcode
+                const bookmarkCode = `javascript:void(function(){
+    var p=[];
+    var isQB = window.location.href.toLowerCase().includes('/qb.php');
+    document.querySelectorAll('tr.player-row').forEach(function(r){
+        try{
+            var c = r.querySelectorAll('td');
+            if(c.length<11) return;
+            var n = c[2].querySelector('.player-cell-name');
+            if(!n) return;
+            var t = c[2].querySelector('.player-cell-team');
+            var position = isQB ? 'QB' : c[3].textContent.trim().replace(/[^A-Z]/gi, '');
+            var opponent = isQB ? c[3].textContent.trim() : c[4].textContent.trim();
+            var upside = isQB ? c[4].querySelectorAll('.mcu-rating-meter__segment.is-filled').length : c[5].querySelectorAll('.mcu-rating-meter__segment.is-filled').length;
+            var bust = isQB ? c[5].querySelectorAll('.mcu-rating-meter__segment.is-filled').length : c[6].querySelectorAll('.mcu-rating-meter__segment.is-filled').length;
+            var matchup = isQB ? c[6].querySelectorAll('.template-stars-star .fa-star.template-stars-star-filled').length : c[7].querySelectorAll('.template-stars-star .fa-star.template-stars-star-filled').length;
+            var startSit = isQB ? c[7].textContent.trim() : '';
+            var projFpts = isQB ? c[8].textContent.trim() : '';
+            var avgDiff = isQB ? (c[9]?c[9].textContent.trim():'') : (c[8]?c[8].textContent.trim():'');
+            var percentOver = isQB ? (c[10]?c[10].textContent.trim():'') : (c[9]?c[9].textContent.trim():'');
+            var opportunity = isQB ? (c[11]?c[11].textContent.trim():'') : (c[10]?c[10].textContent.trim():'');
+            var efficiency = isQB ? (c[12]?c[12].textContent.trim():'') : (c[11]?c[11].textContent.trim():'');
+            p.push({
+                rank:parseInt(c[0].textContent.trim()),
+                player_name:n.textContent.trim(),
+                position:position,
+                team:t?t.textContent.replace(/[()]/g,''):'',
+                opponent:opponent,
+                upside:upside,
+                bust:bust,
+                matchup:matchup,
+                start_sit:startSit,
+                proj_fpts:projFpts,
+                avgDiff:avgDiff,
+                percentOver:percentOver,
+                opportunity:opportunity,
+                efficiency:efficiency
+            });
+        }catch(e){}
+    });
+    if(p.length===0){
+        alert('Keine Daten gefunden');
+        return;
+    }
+    var j=JSON.stringify(p,null,2);
+    var b=new Blob([j],{type:'application/json'});
+    var u=URL.createObjectURL(b);
+    var a=document.createElement('a');
+    a.href=u;
+    a.download='fantasypros-data.json';
+    a.click();
+    URL.revokeObjectURL(u);
+    if(navigator.clipboard){
+        navigator.clipboard.writeText(j).then(function(){
+            alert('✅ '+p.length+' Spieler - Download+Clipboard');
+        }).catch(function(){
+            alert('✅ '+p.length+' Spieler - Download');
+        });
+    }else{
+        alert('✅ '+p.length+' Spieler - Download');
+    }
+})()`;
+
+                try {
+                    await navigator.clipboard.writeText(bookmarkCode);
+                    copyBookmarkBtn.textContent = '✅ Bookmark Code kopiert!';
+                    copyBookmarkBtn.style.background = '#28a745';
+
+                    setTimeout(() => {
+                        copyBookmarkBtn.textContent = '📋 Bookmark Code Kopieren';
+                        copyBookmarkBtn.style.background = '#fd7e14';
+                    }, 2000);
+
+                } catch (error) {
+                    console.error('Clipboard error:', error);
+                    // Fallback: Show in text area
+                    const fallbackDiv = document.createElement('div');
+                    fallbackDiv.style.cssText = `
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: white;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                    z-index: 10002;
+                    max-width: 90%;
+                    max-height: 90%;
+                `;
+
+                    fallbackDiv.innerHTML = `
+                    <h4>📋 Bookmark Code (Zwischenablage nicht verfügbar)</h4>
+                    <p>Kopieren Sie den folgenden Code und verwenden Sie ihn als Lesezeichen-URL:</p>
+                    <textarea style="width: 100%; height: 100px; font-family: monospace; font-size: 12px;" readonly>${bookmarkCode}</textarea>
+                    <br><br>
+                    <button onclick="this.parentElement.remove()" style="background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Schließen</button>
+                `;
+
+                    document.body.appendChild(fallbackDiv);
+                }
             });
         }
         const downloadExtBtn = modal.querySelector('#downloadExtension');
