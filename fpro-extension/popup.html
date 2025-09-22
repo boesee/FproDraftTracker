@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { width: 300px; padding: 20px; }
+        button { width: 100%; padding: 10px; margin: 5px 0; }
+        .success { background: #d4edda; padding: 10px; border-radius: 5px; margin: 10px 0; }
+        .error { background: #f8d7da; padding: 10px; border-radius: 5px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h3>FantasyPros Data Extractor</h3>
+    <button id="extractBtn">Extract Player Data</button>
+    <button id="downloadBtn" style="display: none;">Download JSON</button>
+    <div id="status"></div>
+    <div id="instructions">
+        <p><small>1. Navigate to a FantasyPros rankings page</small></p>
+        <p><small>2. Click "Extract Player Data"</small></p>
+        <p><small>3. Import the data in your Draft Tracker</small></p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
