@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="de" data-theme="light">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +7,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <main class="container-fluid">
         <header>
             <hgroup>
                 <h1>Fantasy Football Draft Tracker</h1>
-                <p>Track your fantasy football draft with FantasyPros data and Sleeper API integration</p>
+                <p>Verwalten Sie Ihren Fantasy-Football-Draft mit Daten von FantasyPros und Sleeper API-Integration.</p>
             </hgroup>
 
             <div class="grid">
                 <div>
                     <label for="draftId">Draft ID:</label>
-                    <input type="text" id="draftId" placeholder="Enter Sleeper Draft ID">
-                    <small>Draft ID von sleeper.app</small>
+                    <input type="text" id="draftId" placeholder="Sleeper Draft ID eingeben">
+                    <small>Die Draft ID finden Sie auf sleeper.app</small>
                 </div>
             </div>
 
             <div class="grid">
-                <button id="loadJsonData" class="secondary">📊 Spielerdaten Laden</button>
-                <button id="loadDraft">🏈 Load Draft Data</button>
+                <button id="loadJsonData" class="secondary">📊 Spielerdaten laden</button>
+                <button id="loadDraft">🏈 Draft-Daten laden</button>
             </div>
 
             <input type="file" id="jsonFileInput" accept=".json" style="display: none;">
@@ -39,7 +37,7 @@
                 <div>
                     <label for="positionFilter">Position:</label>
                     <select id="positionFilter">
-                        <option value="">All Positions</option>
+                        <option value="">Alle Positionen</option>
                         <option value="QB">QB</option>
                         <option value="RB">RB</option>
                         <option value="WR">WR</option>
@@ -47,45 +45,45 @@
                     </select>
                 </div>
                 <div>
-                    <label for="rankFilter">Max Rank:</label>
+                    <label for="rankFilter">Maximaler Rang:</label>
                     <input type="number" id="rankFilter" placeholder="z.B. 50" min="1">
                 </div>
                 <div>
-                    <label for="draftedFilter">Draft Status:</label>
+                    <label for="draftedFilter">Draft-Status:</label>
                     <select id="draftedFilter">
-                        <option value="">All Players</option>
-                        <option value="available">Available</option>
-                        <option value="drafted">Drafted</option>
+                        <option value="">Alle Spieler</option>
+                        <option value="available">Verfügbar</option>
+                        <option value="drafted">Gedraftet</option>
                     </select>
                 </div>
-                <!-- NEU: Spieler-Suchfeld -->
                 <div>
-                    <label for="playerSearch">Spielername suchen:</label>
-                    <input type="text" id="playerSearch" placeholder="🔍 Spielername suchen...">
+                    <label for="playerSearch">Suche in allen Spalten:</label>
+                    <input type="text" id="playerSearch" placeholder="🔍 z.B. Hurts, team:phi, startsit:A+">
+                    <small>Syntax: spalte:wert für gezielte Suche (z.B. startsit:A+)</small>
                 </div>
             </div>
-            <button id="clearFilters" class="secondary outline">Clear Filters</button>
+            <button id="clearFilters" class="secondary outline">Filter zurücksetzen</button>
         </section>
 
         <section>
             <div class="grid" id="stats">
                 <article class="text-center">
                     <h3 id="totalPlayers">0</h3>
-                    <p>Total Players</p>
+                    <p>Gesamtanzahl Spieler</p>
                 </article>
                 <article class="text-center">
                     <h3 id="availablePlayers" class="text-success">0</h3>
-                    <p>Available</p>
+                    <p>Verfügbar</p>
                 </article>
                 <article class="text-center">
                     <h3 id="draftedPlayers" class="text-danger">0</h3>
-                    <p>Drafted</p>
+                    <p>Gedraftet</p>
                 </article>
             </div>
         </section>
 
         <div id="loading" style="display: none;">
-            <p>Loading data...</p>
+            <p>Daten werden geladen...</p>
         </div>
 
         <div id="error" style="display: none;">
@@ -93,60 +91,25 @@
         </div>
 
         <section>
-            <!-- Responsive table wrapper -->
             <div class="table-container">
                 <table id="playersTable" class="responsive-table">
                     <thead>
                         <tr>
-                            <th class="rank-col" onclick="sortTable('rank')" title="Fantasy Rank">
-                                #
-                            </th>
-                            <th class="player-col" onclick="sortTable('player_name')" title="Player Name">
-                                Player
-                            </th>
-                            <th class="pos-col" onclick="sortTable('position')" title="Position">
-                                Pos
-                            </th>
-                            <th class="team-col" onclick="sortTable('team')" title="Team">
-                                Team
-                            </th>
-                            <th class="opp-col" onclick="sortTable('opponent')" title="Opponent">
-                                Opp
-                            </th>
-                            <th class="rating-col" onclick="sortTable('upside')"
-                                title="Upside Potential (1-5 Stars) - High ceiling performance potential">
-                                <span title="Upside Potential">📈 Upside</span>
-                            </th>
-                            <th class="rating-col" onclick="sortTable('bust')"
-                                title="Bust Risk (1-5 Stars) - Risk of underperforming">
-                                <span title="Bust Risk">📉 Bust</span>
-                            </th>
-                            <th class="rating-col" onclick="sortTable('matchup')"
-                                title="Matchup Rating (1-5 Stars) - Favorable matchup strength">
-                                <span title="Matchup Quality">⚔️ Matchup</span>
-                            </th>
-
-                            <th class="startsit-col" onclick="sortTable('start_sit')" title="Start/Sit Recommendation">
-                                Start/Sit
-                            </th>
-                            <th class="projftps-col" onclick="sortTable('proj_fpts')" title="Projected Fantasy Points">
-                                Proj FPTS
-                            </th>
-                            <th class="stat-col" onclick="sortTable('avgDiff')" title="Average Difference">
-                                Diff
-                            </th>
-                            <th class="stat-col" onclick="sortTable('percentOver')" title="Percentage Over">
-                                %Over
-                            </th>
-                            <th class="stat-col" onclick="sortTable('opportunity')" title="Opportunity Share">
-                                Opp%
-                            </th>
-                            <th class="stat-col" onclick="sortTable('efficiency')" title="Efficiency Rating">
-                                Eff
-                            </th>
-                            <th class="status-col">
-                                Status
-                            </th>
+                            <th class="rank-col" onclick="sortTable('rank')" title="Fantasy Rang">#</th>
+                            <th class="player-col" onclick="sortTable('player_name')" title="Spielername">Spieler</th>
+                            <th class="pos-col" onclick="sortTable('position')" title="Position">Pos</th>
+                            <th class="team-col" onclick="sortTable('team')" title="Team">Team</th>
+                            <th class="opp-col" onclick="sortTable('opponent')" title="Gegner">Gegner</th>
+                            <th class="rating-col" onclick="sortTable('upside')" title="Upside (1-5 Sterne)">📈 Upside</th>
+                            <th class="rating-col" onclick="sortTable('bust')" title="Bust-Risiko (1-5 Sterne)">📉 Bust</th>
+                            <th class="rating-col" onclick="sortTable('matchup')" title="Matchup-Bewertung (1-5 Sterne)">⚔️ Matchup</th>
+                            <th class="startsit-col" onclick="sortTable('start_sit')" title="Start/Sit Empfehlung">Start/Sit</th>
+                            <th class="projftps-col" onclick="sortTable('proj_fpts')" title="Progn. Fantasy Punkte">Proj FPTS</th>
+                            <th class="stat-col" onclick="sortTable('avgDiff')" title="Durchschnittl. Differenz">Diff</th>
+                            <th class="stat-col" onclick="sortTable('percentOver')" title="Prozent über Durchschnitt">%Über</th>
+                            <th class="stat-col" onclick="sortTable('opportunity')" title="Opportunity Share">Opp%</th>
+                            <th class="stat-col" onclick="sortTable('efficiency')" title="Effizienzbewertung">Eff</th>
+                            <th class="status-col">Status</th>
                         </tr>
                     </thead>
                     <tbody id="playersTableBody"></tbody>
@@ -157,5 +120,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>

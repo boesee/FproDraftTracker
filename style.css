@@ -1,12 +1,18 @@
-/* Custom styles for Fantasy Draft Tracker */
+/* 
+  Fantasy Draft Tracker - Benutzerdefinierte Styles
+  ------------------------------------------------
+  Dieses Stylesheet sorgt für responsives, modernes und übersichtliches Design der Draft-Tracker-App.
+  Es optimiert Tabellen-Darstellung, Filter-UI, Status-Badges, Bewertungssymbole (Sterne) 
+  sowie mobile und barrierefreie Darstellung.
+*/
 
-/* Use container-fluid for full width */
+/* Volle Breite für Container */
 .container-fluid {
     max-width: 100%;
     padding: 0 1rem;
 }
 
-/* Table container with horizontal scroll */
+/* Tabellen-Wrapper mit horizontalem Scrollen */
 .table-container {
     width: 100%;
     overflow-x: auto;
@@ -15,16 +21,16 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Responsive table styles */
+/* Responsive Tabelle */
 .responsive-table {
     width: 100%;
-    min-width: 1200px; /* Minimum width to prevent crushing */
+    min-width: 1200px;
     border-collapse: collapse;
     font-size: 14px;
     white-space: nowrap;
 }
 
-/* Column width optimization */
+/* Optimierte Spaltenbreiten */
 .responsive-table th,
 .responsive-table td {
     padding: 8px 6px;
@@ -32,7 +38,6 @@
     border-bottom: 1px solid var(--pico-border-color);
 }
 
-/* Specific column widths */
 .rank-col { width: 50px; min-width: 50px; }
 .player-col { 
     width: 200px; 
@@ -51,7 +56,7 @@
 .projftps-col { width: 80px; min-width: 70px; }
 .status-col { width: 100px; min-width: 90px; }
 
-/* Header styling */
+/* Tabellenkopf */
 .responsive-table th {
     background: var(--pico-background-color);
     font-weight: bold;
@@ -68,13 +73,13 @@
     background: var(--pico-secondary-background);
 }
 
-/* Player name styling */
+/* Spielername */
 .player-name {
     font-weight: 500;
     color: var(--pico-color);
 }
 
-/* Status badges */
+/* Status-Badges für Spieler */
 .status-badge {
     padding: 4px 8px;
     border-radius: 12px;
@@ -94,7 +99,7 @@
     color: #721c24;
 }
 
-/* Drafted row styling */
+/* Zeile für gedraftete Spieler */
 .drafted-row {
     background: rgba(248, 215, 218, 0.3);
     opacity: 0.8;
@@ -104,45 +109,43 @@
     background: rgba(248, 215, 218, 0.5);
 }
 
-/* Rating display */
+/* Bewertungssymbole (z. B. Sterne) */
 .rating-display {
     font-size: 16px;
     line-height: 1;
+    letter-spacing: 1px;
+    font-family: monospace;
 }
 
-/* Compact stats */
+/* Kompakte Statistikanzeigen */
 .compact-stat {
     font-size: 12px;
     line-height: 1.2;
 }
 
-/* Mobile optimizations */
+/* Mobile Optimierungen */
 @media (max-width: 768px) {
     .container-fluid {
         padding: 0 0.5rem;
     }
-    
     .responsive-table {
         font-size: 12px;
         min-width: 1000px;
     }
-    
     .responsive-table th,
     .responsive-table td {
         padding: 6px 4px;
     }
-    
     .player-col {
         max-width: 150px;
     }
-    
     .grid {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
 }
 
-/* Small screen - hide less important columns */
+/* Unwichtige Spalten auf mittleren Bildschirmen ausblenden */
 @media (max-width: 1024px) {
     .stat-col:nth-last-child(4),
     .stat-col:nth-last-child(3) {
@@ -150,20 +153,19 @@
     }
 }
 
-/* Very small screens - show only essential columns */
+/* Nur essentielle Spalten auf sehr kleinen Bildschirmen */
 @media (max-width: 600px) {
     .team-col,
     .opp-col,
     .rating-col:not(:nth-child(6)) {
         display: none;
     }
-    
     .responsive-table {
         min-width: 500px;
     }
 }
 
-/* Loading and error states */
+/* Ladeanzeige und Fehlermeldung */
 #loading {
     text-align: center;
     padding: 2rem;
@@ -178,7 +180,7 @@
     border-left: 4px solid #dc3545;
 }
 
-/* Success message */
+/* Erfolgsmeldungen */
 #success {
     background: #d4edda;
     color: #155724;
@@ -188,7 +190,7 @@
     border-left: 4px solid #28a745;
 }
 
-/* Stats cards */
+/* Statistikkarten */
 #stats article {
     background: var(--pico-card-background-color);
     border: 1px solid var(--pico-border-color);
@@ -205,12 +207,12 @@
     color: #dc3545 !important;
 }
 
-/* Tooltip improvements */
+/* Tooltip-Verbesserungen */
 [title] {
     cursor: help;
 }
 
-/* Button improvements */
+/* Buttons */
 button {
     transition: all 0.3s ease;
 }
@@ -219,78 +221,59 @@ button:hover {
     transform: translateY(-1px);
 }
 
-/* Filter section */
+/* Filterbereich */
 section h2 {
     margin-bottom: 1rem;
     color: var(--pico-color);
 }
 
-/* Scrollbar styling for webkit browsers */
+/* Scrollbar für Tabellencontainer (nur Webkit) */
 .table-container::-webkit-scrollbar {
     height: 8px;
 }
-
 .table-container::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 4px;
 }
-
 .table-container::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 4px;
 }
-
 .table-container::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
-/* === ERGÄNZUNG: Erweiterte Rating-Styles === */
-
-/* Rating-Darstellung verbessert */
-.rating-display {
-    font-size: 16px;
-    line-height: 1;
-    letter-spacing: 1px;
-    font-family: monospace;
-}
-
+/* Erweiterte Bewertung-Styles (Sterne etc.) */
 .rating-stars {
     color: #ffc107;
     text-shadow: 0 0 2px rgba(0,0,0,0.3);
 }
-
 .rating-stars .filled {
     color: #ffc107;
 }
-
 .rating-stars .empty {
     color: #e9ecef;
 }
 
-/* Spezifische Farben für verschiedene Rating-Typen */
+/* Farbliche Kodierung nach Bewertungstyp */
 .upside-stars .filled {
     color: #28a745;
     text-shadow: 0 0 2px rgba(40, 167, 69, 0.5);
 }
-
 .upside-stars .empty {
     color: #d4edda;
 }
-
 .bust-stars .filled {
     color: #dc3545;
     text-shadow: 0 0 2px rgba(220, 53, 69, 0.5);
 }
-
 .bust-stars .empty {
     color: #f8d7da;
 }
-
 .matchup-stars .filled {
     color: #007bff;
     text-shadow: 0 0 2px rgba(0, 123, 255, 0.5);
 }
-
 .matchup-stars .empty {
     color: #d1ecf1;
 }
@@ -302,24 +285,22 @@ section h2 {
     font-size: 14px;
 }
 
-/* Header-Tooltips verbessert */
+/* Tooltip für Spaltenköpfe */
 .responsive-table th span[title] {
     border-bottom: 1px dotted var(--pico-color);
     cursor: help;
     transition: all 0.2s ease;
 }
-
 .responsive-table th span[title]:hover {
     border-bottom-color: var(--pico-primary);
     color: var(--pico-primary);
 }
 
-/* Rating-Spalten-Anpassungen */
+/* Bewertungsspalten */
 .rating-col {
     text-align: center;
     vertical-align: middle;
 }
-
 .rating-col .rating-display {
     display: inline-block;
     padding: 2px 4px;
@@ -327,99 +308,56 @@ section h2 {
     background: rgba(255, 255, 255, 0.1);
 }
 
-/* Hover-Effekte für Ratings */
+/* Hover-Effekt für Bewertungen */
 .rating-display:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease;
 }
 
-/* Responsive Anpassungen für Rating-Spalten */
+/* Responsive Anpassungen für Bewertungsspalten */
 @media (max-width: 1024px) {
-    .rating-col {
-        min-width: 70px;
-    }
-    
-    .rating-display {
-        font-size: 14px;
-        letter-spacing: 0.5px;
-    }
-    
-    .responsive-table th span {
-        font-size: 11px;
-    }
+    .rating-col { min-width: 70px; }
+    .rating-display { font-size: 14px; letter-spacing: 0.5px; }
+    .responsive-table th span { font-size: 11px; }
 }
-
 @media (max-width: 768px) {
-    .rating-col {
-        min-width: 60px;
-    }
-    
-    .rating-display {
-        font-size: 12px;
-        letter-spacing: 0px;
-    }
-    
-    .responsive-table th span {
-        font-size: 10px;
-    }
+    .rating-col { min-width: 60px; }
+    .rating-display { font-size: 12px; letter-spacing: 0px; }
+    .responsive-table th span { font-size: 10px; }
 }
-
 @media (max-width: 600px) {
-    .rating-display {
-        font-size: 10px;
-    }
-    
-    /* Zeige nur 3 Sterne auf sehr kleinen Bildschirmen */
-    .rating-display .empty:nth-child(n+4) {
-        display: none;
-    }
-    
-    .rating-display .filled:nth-child(n+4) {
-        display: none;
-    }
+    .rating-display { font-size: 10px; }
+    .rating-display .empty:nth-child(n+4) { display: none; }
+    .rating-display .filled:nth-child(n+4) { display: none; }
 }
 
-/* Dark mode Anpassungen für Ratings */
+/* Dark Mode für Bewertungen */
 @media (prefers-color-scheme: dark) {
-    .upside-stars .empty {
-        color: #1e4d2b;
-    }
-    
-    .bust-stars .empty {
-        color: #4d1e23;
-    }
-    
-    .matchup-stars .empty {
-        color: #1e3a4d;
-    }
-    
-    .rating-col .rating-display {
-        background: rgba(0, 0, 0, 0.2);
-    }
+    .upside-stars .empty { color: #1e4d2b; }
+    .bust-stars .empty { color: #4d1e23; }
+    .matchup-stars .empty { color: #1e3a4d; }
+    .rating-col .rating-display { background: rgba(0, 0, 0, 0.2); }
 }
 
-/* Accessibility improvements */
+/* Barrierefreiheit für Bewertungen */
 .rating-display[title] {
     cursor: help;
 }
 
-/* Print styles für Ratings */
+/* Druck-Styles für Bewertungen */
 @media print {
     .rating-display {
         color: black !important;
         text-shadow: none !important;
     }
-    
     .upside-stars .filled::after {
         content: " (Upside)";
         font-size: 8px;
     }
-    
     .bust-stars .filled::after {
         content: " (Risk)";
         font-size: 8px;
     }
-    
     .matchup-stars .filled::after {
         content: " (Match)";
         font-size: 8px;
