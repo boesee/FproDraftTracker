@@ -295,16 +295,21 @@ class FantasyDraftTracker {
         alert(`Browser Extension Installation:
 
 1. Erstellen Sie einen Ordner "fantasypros-extension"
+
 2. Erstellen Sie darin diese Dateien:
    - manifest.json
    - content.js
    - popup.html
    - popup.js
+   Die Dateien können Sie von GitHub kopieren: https://github.com/boesee/FproDraftTracker/tree/main/fpro-extension
 
 3. Chrome: chrome://extensions/ → Entwicklermodus → "Entpackte Erweiterung laden"
+
 4. Firefox: about:debugging → "Temporäres Add-on laden"
 
-Die kompletten Dateien finden Sie in der Browser-Konsole (F12).`);
+5. Gehen Sie zu einer FantasyPros Ranking-Seite und klicken Sie auf das Extension-Icon → "Extract Data"
+
+6. Die Daten werden automatisch heruntergeladen und in die Zwischenablage kopiert.`);
     }
 
     /**
