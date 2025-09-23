@@ -283,6 +283,12 @@ section h2 {
     color: #6c757d;
     font-style: italic;
     font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* Tooltip für Spaltenköpfe */
@@ -301,12 +307,12 @@ section h2 {
     text-align: center;
     vertical-align: middle;
 }
-.rating-col .rating-display {
+/* .rating-col .rating-display {
     display: inline-block;
     padding: 2px 4px;
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.1);
-}
+} */
 
 /* Hover-Effekt für Bewertungen */
 .rating-display:hover {
@@ -336,7 +342,8 @@ section h2 {
     .upside-stars .empty { color: #1e4d2b; }
     .bust-stars .empty { color: #4d1e23; }
     .matchup-stars .empty { color: #1e3a4d; }
-    .rating-col .rating-display { background: rgba(0, 0, 0, 0.2); }
+    /* .rating-col .rating-display { background: rgba(0, 0, 0, 0.2); } */
+    .no-rating { background: rgba(0, 0, 0, 0.2); }
 }
 
 /* Barrierefreiheit für Bewertungen */

@@ -565,11 +565,11 @@ class FantasyDraftTracker {
             <td class="rating-col">
                 <span class="rating-display matchup-stars" title="${matchupTooltip}">${this.renderStarRating(player.matchup, 'matchup')}</span>
             </td>
-            <td class="startsit-col">
-                <span class="compact-stat">${player.start_sit || '-'}</span>
+            <td class="stat-col">
+                <span class="compact-stat">${this.formatStatValue(player.start_sit)}</span>
             </td>
-            <td class="projftps-col">
-                <span class="compact-stat">${player.proj_fpts || '-'}</span>
+            <td class="stat-col">
+                <span class="compact-stat">${this.formatStatValue(player.proj_fpts)}</span>
             </td>
             <td class="stat-col">
                 <span class="compact-stat">${this.formatStatValue(player.avgDiff)}</span>
@@ -594,6 +594,19 @@ class FantasyDraftTracker {
     }
 
     /**
+    * Gibt ein einheitlich gestyltes "-" für leere Zellen zurück,
+    * sonst den Wert als kompakte Statistik.
+    * @param {string|number} value
+    * @returns {string}
+    */
+
+    renderEmptyCell(value) {
+        if (!value || value === '-' || value === '') {
+            return '<span class="no-rating" title="Keine Bewertung">-</span>';
+        }
+    }
+
+    /**
      * Rendert eine Sternebewertung für einen Wert (z.B. Upside, Bust, Matchup).
      * @param {number} rating 
      * @param {string} type 
@@ -611,7 +624,7 @@ class FantasyDraftTracker {
             case 'matchup': break;
         }
         if (rating === 0 || !rating) {
-            return '<span class="no-rating" title="Keine Bewertung">-</span>';
+            return this.renderEmptyCell();
         }
         const filled = `<span class="filled">${filledStar.repeat(filledStars)}</span>`;
         const empty = `<span class="empty">${emptyStar.repeat(emptyStars)}</span>`;
@@ -646,7 +659,7 @@ class FantasyDraftTracker {
      * @returns {string}
      */
     formatStatValue(value) {
-        if (!value || value === '-' || value === '') return '-';
+        if (!value || value === '-' || value === '') return this.renderEmptyCell();
         if (typeof value === 'string' && value.includes('%')) {
             const match = value.match(/(\d+)%/);
             if (match) return match[1] + '%';
