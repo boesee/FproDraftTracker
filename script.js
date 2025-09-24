@@ -492,7 +492,7 @@ class FantasyDraftTracker {
         }
 
         this.filteredPlayers = this.allPlayers.filter(player => {
-            if (positionFilter && player.position !== positionFilter) return false;
+            if (positionFilter && ((positionFilter === "FLEX" && !["RB", "WR", "TE"].includes(player.position)) || (positionFilter !== "FLEX" && player.position !== positionFilter))) return false;
             if (rankFilter && player.rank > parseInt(rankFilter)) return false;
             if (draftedFilter === 'available' && player.drafted) return false;
             if (draftedFilter === 'drafted' && !player.drafted) return false;
