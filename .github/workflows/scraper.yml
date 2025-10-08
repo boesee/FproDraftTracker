@@ -1,5 +1,5 @@
 ---
-name: FantasyPros ECR Scraper
+name: FantasyPros ecrData Scraper
 
 on:
   workflow_dispatch:  # Manueller Start möglich
