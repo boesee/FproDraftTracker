@@ -1,0 +1,34 @@
+name: FantasyPros ECR Scraper
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *' # Täglich um 8:00 UTC
+
+jobs:
+  scrape-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Puppeteer
+        run: npm install puppeteer
+
+      - name: Run Scraper
+        run: node scrape-fantasypros.js
+
+      - name: Commit scraped data
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/ecrData.json
+          git commit -m "Update ECR data [bot]"
+          git push
