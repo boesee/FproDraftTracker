@@ -783,7 +783,9 @@
     "pos_rank": "QB17",
     "sos_stars": "qb_stars",
     "star_rating": 4.34,
-    "owned_perc": "89.3%"
+    "owned_perc": "89.3%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Foot "
   },
   {
     "player_id": 22900,
@@ -2323,7 +2325,9 @@
     "pos_rank": "RB23",
     "sos_stars": "rb_stars",
     "star_rating": 2.65,
-    "owned_perc": "98.3%"
+    "owned_perc": "98.3%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Ankle "
   },
   {
     "player_id": 24209,
@@ -3695,7 +3699,9 @@
     "pos_rank": "TE18",
     "sos_stars": "te_stars",
     "star_rating": 3.36,
-    "owned_perc": "44.3%"
+    "owned_perc": "44.3%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Ankle "
   },
   {
     "player_id": 24778,
@@ -7338,7 +7344,9 @@
     "pos_rank": "WR106",
     "sos_stars": "wr_stars",
     "star_rating": 3.46,
-    "owned_perc": "0.6%"
+    "owned_perc": "0.6%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Knee "
   },
   {
     "player_id": 27224,
@@ -7394,7 +7402,9 @@
     "pos_rank": "RB82",
     "sos_stars": "rb_stars",
     "star_rating": 4.27,
-    "owned_perc": "5.4%"
+    "owned_perc": "5.4%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Knee "
   },
   {
     "player_id": 18246,
