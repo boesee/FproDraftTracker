@@ -34,6 +34,16 @@ export class DraftUI {
         if (jsonFileInput) {
             jsonFileInput.addEventListener('change', (e) => this.handleJsonFile(e));
         }
+
+        // ECR Daten holen
+        const fetchEcrBtn = document.getElementById('fetchEcrData');
+        if (fetchEcrBtn) {
+
+            fetchEcrBtn.addEventListener('click', () => this.tracker.fetchEcrData());
+        }
+
+
+
     }
 
     showJsonImport() {
@@ -60,49 +70,62 @@ export class DraftUI {
 
             content.innerHTML = `
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-                    <h3 style="margin: 0; color: #333;">📊 Spielerdaten Importieren</h3>
-                    <button id="closeModalBtn" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #666; padding: 0; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">×</button>
-                </div>
-                <div style="margin: 1.5rem 0;">
-                    <h4 style="color: #28a745; margin-bottom: 1rem;">🔧 Option 1: Browser Extension (Empfohlen)</h4>
-                    <p style="margin-bottom: 1rem;">Installieren Sie die FantasyPros Extension für automatische Extraktion:</p>
-                    <button id="downloadExtension" style="background: #28a745; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">📥 Extension Anleitung</button>
-                    <small style="display: block; margin-top: 8px; color: #666;">
-                        Nach Installation: Gehen Sie zu FantasyPros → Extension Icon klicken → "Extract Data"
-                    </small>
-                </div>
-                <hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;">
-                <div style="margin: 1.5rem 0;">
-                    <h4 style="color: #007bff; margin-bottom: 1rem;">📁 Option 2: JSON Datei Hochladen</h4>
-                    <input type="file" id="jsonFileUpload" accept=".json" style="margin: 10px 0; padding: 8px; border: 2px dashed #007bff; border-radius: 6px; width: 100%; cursor: pointer;">
-                    <small style="display: block; color: #666;">Laden Sie eine JSON-Datei mit Spielerdaten hoch</small>
-                </div>
-                <hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;">
-                <div style="margin: 1.5rem 0;">
-                    <h4 style="color: #6f42c1; margin-bottom: 1rem;">📝 Option 3: JSON Text Einfügen</h4>
-                    <textarea id="jsonTextInput" placeholder="JSON Daten hier einfügen..." style="width: 100%; height: 200px; font-family: 'Courier New', monospace; font-size: 12px; border: 1px solid #ddd; border-radius: 6px; padding: 10px; resize: vertical;"></textarea>
-                    <button id="processJsonText" style="margin-top: 10px; background: #6f42c1; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold;">JSON Verarbeiten</button>
-                </div>
-                <hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;">
-                <div style="margin: 1.5rem 0;">
-                    <h4 style="color: #fd7e14; margin-bottom: 1rem;">🔖 Option 4: Browser Bookmark (Einfachste Lösung)</h4>
-                    <p style="margin-bottom: 1rem;">Klicken Sie den Button zum Kopieren des erweiterten Bookmark-Codes:</p>
-                    <button id="copyBookmarkBtn" style="background: #fd7e14; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">📋 Bookmark Code Kopieren</button>
-                    <div style="font-size: 12px; color: #666; background: #f8f9fa; padding: 10px; border-radius: 4px; margin-top: 10px;">
-                        <strong>✨ Erweiterte Funktionen:</strong><br>
-                        • 📥 Automatischer Download der JSON-Datei<br>
-                        • 📋 Kopiert JSON automatisch in Zwischenablage<br>
-                        • ✅ Bestätigungsmeldung mit Spieleranzahl<br>
-                        • 🔄 Funktioniert auf allen FantasyPros Ranking-Seiten
-                    </div>
-                    <div style="font-size: 12px; color: #666; margin-top: 10px;">
-                        <strong>📖 Anleitung:</strong><br>
-                        1. Button klicken → Code wird kopiert<br>
-                        2. Neues Lesezeichen erstellen (Rechtsklick auf Lesezeichen-Leiste)<br>
-                        3. Als URL den kopierten Code einfügen<br>
-                        4. Auf FantasyPros-Seiten das Lesezeichen klicken
-                    </div>
-                </div>
+    <h3 style="margin: 0; color: #333;">📊 Spielerdaten Importieren</h3>
+    <button id="closeModalBtn"
+        style="background: none; border: none; font-size: 24px; cursor: pointer; color: #666; padding: 0; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">×</button>
+</div>
+
+<div style="margin: 1.5rem 0;">
+    <h4 style="color: #28a745; margin-bottom: 1rem;">🌐 Empfohlen: FPro Scraper</h4>
+    <p style="margin-bottom: 1rem;">Scrapen Sie die Daten direkt von FantasyPros:</p>
+    <button id="fetchEcrData" class="modal-button modal-button--primary"><span style="margin-right:8px;">🤖</span>Auto Import</button>
+</div>
+
+
+<div style="margin: 1.5rem 0;">
+    <h4 style="color: #28a745; margin-bottom: 1rem;">🔧 Alternative 1: Browser Extension</h4>
+    <p style="margin-bottom: 1rem;">Installieren Sie die FantasyPros Extension für automatische Extraktion:</p>
+    <button id="downloadExtension" class="modal-button"><span style="margin-right:8px;">📥</span>Extension Anleitung</button>
+    <small style="display: block; margin-top: 8px; color: #666;">
+        Nach Installation: Gehen Sie zu FantasyPros → Extension Icon klicken → "Extract Data"
+    </small>
+</div>
+
+
+<hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;">
+<div style="margin: 1.5rem 0;">
+    <label for="jsonFileUpload" class="modal-button" style="display: inline-block;"><span style="margin-right:8px;">📁</span>JSON Datei Hochladen</label>
+<input type="file" id="jsonFileUpload" accept=".json" style="display:none;">
+    <small style="display: block; margin-top: 8px; color: #666;">Laden Sie eine JSON-Datei mit Spielerdaten hoch</small>
+</div>
+<hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;">
+<div style="margin: 1.5rem 0;">
+    <h4 style="color: #6f42c1; margin-bottom: 1rem;">📝 Alternative 3: JSON Text Einfügen</h4>
+    <textarea id="jsonTextInput" placeholder="JSON Daten hier einfügen..."
+        style="width: 100%; height: 200px; font-family: 'Courier New', monospace; font-size: 12px; border: 1px solid #ddd; border-radius: 6px; padding: 10px; resize: vertical;"></textarea>
+    <button id="processJsonText" class="modal-button">JSON Verarbeiten</button>
+</div>
+<hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;">
+<div style="margin: 1.5rem 0;">
+    <h4 style="color: #fd7e14; margin-bottom: 1rem;">🔖 Alternative 4: Browser Bookmark (Einfachste Lösung)</h4>
+    <p style="margin-bottom: 1rem;">Klicken Sie den Button zum Kopieren des erweiterten Bookmark-Codes:</p>
+    <button id="copyBookmarkBtn" class="modal-button"><span style="margin-right:8px;">📋</span>Bookmark Code Kopieren</button>
+    <div
+        style="font-size: 12px; color: #666; background: #f8f9fa; padding: 10px; border-radius: 4px; margin-top: 10px;">
+        <strong>✨ Erweiterte Funktionen:</strong><br>
+        • 📥 Automatischer Download der JSON-Datei<br>
+        • 📋 Kopiert JSON automatisch in Zwischenablage<br>
+        • ✅ Bestätigungsmeldung mit Spieleranzahl<br>
+        • 🔄 Funktioniert auf allen FantasyPros Ranking-Seiten
+    </div>
+    <div style="font-size: 12px; color: #666; margin-top: 10px;">
+        <strong>📖 Anleitung:</strong><br>
+        1. Button klicken → Code wird kopiert<br>
+        2. Neues Lesezeichen erstellen (Rechtsklick auf Lesezeichen-Leiste)<br>
+        3. Als URL den kopierten Code einfügen<br>
+        4. Auf FantasyPros-Seiten das Lesezeichen klicken
+    </div>
+</div>
             `;
             modal.appendChild(content);
             document.body.appendChild(modal);
@@ -252,6 +275,17 @@ if(navigator.clipboard){
                     }
                 } else {
                     alert('Bitte geben Sie JSON-Daten ein.');
+                }
+            });
+        }
+
+        const fetchEcrBtn = modal.querySelector('#fetchEcrData');
+        if (fetchEcrBtn) {
+            fetchEcrBtn.addEventListener('click', () => {
+                console.log('fetchEcrBtn geklickt'); // Debug Log
+                this.tracker.fetchEcrData();
+                if (document.body.contains(modal)) {
+                    document.body.removeChild(modal);
                 }
             });
         }

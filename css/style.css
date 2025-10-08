@@ -221,6 +221,38 @@ button:hover {
     transform: translateY(-1px);
 }
 
+.modal-button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background .2s;
+}
+.modal-button:hover {
+    background: #0056b3;
+}
+
+.modal-button--primary {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(40,167,69,0.12);
+    border-left: 5px solid #218838;
+    transition: background .2s;
+}
+.modal-button--primary:hover {
+    background: #218838;
+}
+
 /* Filterbereich */
 section h2 {
     margin-bottom: 1rem;

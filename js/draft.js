@@ -10,7 +10,7 @@ export class FantasyDraftTracker {
         // Die DraftUI-Instanz muss später von außen zugewiesen werden!
         this.ui = null;
 
-        
+
     }
 
     debugLog(message, data = null) {
@@ -139,5 +139,43 @@ export class FantasyDraftTracker {
                 ? (aVal > bVal ? 1 : -1)
                 : (aVal < bVal ? 1 : -1);
         });
+    }
+
+    async fetchEcrData() {
+        const baseUrl = "https://www.fantasypros.com/nfl/rankings/ppr-superflex.php";
+        const corsProxyUrl = "https://corsproxy.io/?" + encodeURIComponent(baseUrl);
+        console.log('Fetching ECR data from:', corsProxyUrl);
+        try {
+            const response = await fetch(corsProxyUrl);
+            const html = await response.text();
+
+            console.log('Fetched HTML length:', html);
+
+            const ecrData = this.extractEcrDataFromHtml(html);
+
+            if (!ecrData) {
+                if (this.ui) this.ui.showError("Konnte ecrData nicht extrahieren!");
+                return;
+            }
+            console.log('Extracted ECR Data:', ecrData);
+            this.processJsonData(JSON.stringify(ecrData));
+            if (this.ui) this.ui.showSuccess(`${ecrData.length} ECR-Spieler erfolgreich geladen.`);
+        } catch (error) {
+            if (this.ui) this.ui.showError("Fehler beim Laden der ECR-Daten: " + error.message);
+        }
+    }
+
+    extractEcrDataFromHtml(html) {
+        try {
+            // Finde var ecrData = {...};
+            const match = html.match(/var\s+ecrData\s*=\s*(\{[\s\S]*?\});/);
+            if (!match) return null;
+            const jsCode = "const ecrData = " + match[1] + "; ecrData;";
+            const ecrData = eval(jsCode); // Nur für Testzwecke!
+            return Array.isArray(ecrData.players) ? ecrData.players : ecrData;
+        } catch (err) {
+            console.error('Fehler beim Extrahieren:', err);
+            return null;
+        }
     }
 }
