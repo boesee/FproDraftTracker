@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 </head>
+
 <body>
     <main class="container-fluid">
         <header>
@@ -88,6 +90,9 @@
             <p>Daten werden geladen...</p>
         </div>
 
+        <div id="success" style="display: none;">
+            <p id="successMessage"></p>
+        </div>
         <div id="error" style="display: none;">
             <p id="errorMessage"></p>
         </div>
@@ -102,13 +107,20 @@
                             <th class="pos-col" onclick="sortTable('position')" title="Position">Pos</th>
                             <th class="team-col" onclick="sortTable('team')" title="Team">Team</th>
                             <th class="opp-col" onclick="sortTable('opponent')" title="Gegner">Gegner</th>
-                            <th class="rating-col" onclick="sortTable('upside')" title="Upside (1-5 Sterne)">📈 Upside</th>
-                            <th class="rating-col" onclick="sortTable('bust')" title="Bust-Risiko (1-5 Sterne)">📉 Bust</th>
-                            <th class="rating-col" onclick="sortTable('matchup')" title="Matchup-Bewertung (1-5 Sterne)">⚔️ Matchup</th>
-                            <th class="startsit-col" onclick="sortTable('start_sit')" title="Start/Sit Empfehlung">Start/Sit</th>
-                            <th class="projftps-col" onclick="sortTable('proj_fpts')" title="Progn. Fantasy Punkte">Proj FPTS</th>
-                            <th class="stat-col" onclick="sortTable('avgDiff')" title="Durchschnittl. Differenz">Diff</th>
-                            <th class="stat-col" onclick="sortTable('percentOver')" title="Prozent über Durchschnitt">%Über</th>
+                            <th class="rating-col" onclick="sortTable('upside')" title="Upside (1-5 Sterne)">📈 Upside
+                            </th>
+                            <th class="rating-col" onclick="sortTable('bust')" title="Bust-Risiko (1-5 Sterne)">📉 Bust
+                            </th>
+                            <th class="rating-col" onclick="sortTable('matchup')"
+                                title="Matchup-Bewertung (1-5 Sterne)">⚔️ Matchup</th>
+                            <th class="startsit-col" onclick="sortTable('start_sit')" title="Start/Sit Empfehlung">
+                                Start/Sit</th>
+                            <th class="projftps-col" onclick="sortTable('proj_fpts')" title="Progn. Fantasy Punkte">Proj
+                                FPTS</th>
+                            <th class="stat-col" onclick="sortTable('avgDiff')" title="Durchschnittl. Differenz">Diff
+                            </th>
+                            <th class="stat-col" onclick="sortTable('percentOver')" title="Prozent über Durchschnitt">
+                                %Über</th>
                             <th class="stat-col" onclick="sortTable('opportunity')" title="Opportunity Share">Opp%</th>
                             <th class="stat-col" onclick="sortTable('efficiency')" title="Effizienzbewertung">Eff</th>
                             <th class="status-col">Status</th>
@@ -120,6 +132,7 @@
         </section>
     </main>
 
-    <script type = "module" src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

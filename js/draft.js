@@ -10,31 +10,7 @@ export class FantasyDraftTracker {
         // Die DraftUI-Instanz muss später von außen zugewiesen werden!
         this.ui = null;
 
-        this.initializeEventListeners();
-    }
-
-    initializeEventListeners() {
-        const loadJsonBtn = document.getElementById('loadJsonData');
-        const loadDraftBtn = document.getElementById('loadDraft');
-        const jsonFileInput = document.getElementById('jsonFileInput');
-
-        if (loadJsonBtn) {
-            loadJsonBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                if (this.ui) this.ui.showJsonImport();
-            });
-        }
-
-        if (loadDraftBtn) {
-            loadDraftBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.loadDraftData();
-            });
-        }
-
-        if (jsonFileInput) {
-            jsonFileInput.addEventListener('change', (e) => this.handleJsonFile(e));
-        }
+        
     }
 
     debugLog(message, data = null) {
@@ -61,17 +37,6 @@ export class FantasyDraftTracker {
         };
     }
 
-    async handleJsonFile(event) {
-        const file = event.target.files[0];
-        if (!file) return;
-        try {
-            const text = await file.text();
-            this.processJsonData(text);
-        } catch (error) {
-            if (this.ui) this.ui.showError(`Fehler beim Lesen der Datei: ${error.message}`);
-        }
-    }
-
     processJsonData(jsonString) {
         try {
             const data = JSON.parse(jsonString);
@@ -92,6 +57,7 @@ export class FantasyDraftTracker {
     }
 
     findPlayerMatch(fantasyPlayer, draftedPlayersArray) {
+        if (!Array.isArray(draftedPlayersArray)) return null; // <- Schutz gegen null/undefined
         const fantasyNormalized = this.normalizePlayerName(fantasyPlayer.player_name);
         for (const draftedPick of draftedPlayersArray) {
             if (!draftedPick.metadata?.first_name || !draftedPick.metadata?.last_name) continue;
@@ -112,12 +78,12 @@ export class FantasyDraftTracker {
         return null;
     }
 
-    async loadDraftData() {
-        const draftId = document.getElementById('draftId').value.trim();
+    async loadDraftData(draftId) { // <--- draftId als Parameter!
         if (!draftId) {
             if (this.ui) this.ui.showError('Bitte geben Sie eine gültige Draft ID ein.');
             return;
         }
+
         if (this.allPlayers.length === 0) {
             if (this.ui) this.ui.showError('Bitte laden Sie zuerst die Spielerdaten.');
             return;
@@ -126,6 +92,13 @@ export class FantasyDraftTracker {
         try {
             const response = await fetch(`https://api.sleeper.app/v1/draft/${draftId}/picks`);
             const draftData = await response.json();
+
+            // Prüfe, ob die Daten wirklich ein Array sind!
+            if (!Array.isArray(draftData)) {
+                if (this.ui) this.ui.showError('Fehler: Keine gültigen Draft-Daten erhalten. Überprüfe die Draft-ID!');
+                return;
+            }
+
             let matchedPlayers = 0;
             this.allPlayers = this.allPlayers.map(player => {
                 const matchResult = this.findPlayerMatch(player, draftData);
@@ -167,8 +140,4 @@ export class FantasyDraftTracker {
                 : (aVal < bVal ? 1 : -1);
         });
     }
-
-    
-
-    
 }
