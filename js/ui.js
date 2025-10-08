@@ -5,12 +5,35 @@ export class DraftUI {
     }
 
     initUI() {
-
-        clearFilters.addEventListener('click', () => this.clearFilters());
+        document.getElementById('clearFilters').addEventListener('click', () => this.clearFilters());
         document.getElementById('positionFilter').addEventListener('change', () => this.applyFilters());
         document.getElementById('rankFilter').addEventListener('input', () => this.applyFilters());
         document.getElementById('draftedFilter').addEventListener('change', () => this.applyFilters());
         document.getElementById('playerSearch').addEventListener('input', () => this.applyFilters());
+
+        const loadJsonBtn = document.getElementById('loadJsonData');
+        if (loadJsonBtn) {
+            loadJsonBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.showJsonImport();
+            });
+        }
+
+        // Draft laden
+        const loadDraftBtn = document.getElementById('loadDraft');
+        if (loadDraftBtn) {
+            loadDraftBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const draftId = document.getElementById('draftId').value.trim();
+                this.tracker.loadDraftData(draftId);
+            });
+        }
+
+        // JSON File Input
+        const jsonFileInput = document.getElementById('jsonFileInput');
+        if (jsonFileInput) {
+            jsonFileInput.addEventListener('change', (e) => this.handleJsonFile(e));
+        }
     }
 
     showJsonImport() {
@@ -94,71 +117,75 @@ export class DraftUI {
     setupModalEventListeners(modal) {
         const closeBtn = modal.querySelector('#closeModalBtn');
         if (closeBtn) {
-            closeBtn.addEventListener('click', () => document.body.removeChild(modal));
+            closeBtn.addEventListener('click', () => {
+                if (document.body.contains(modal)) {
+                    document.body.removeChild(modal);
+                }
+            });
         }
         const copyBookmarkBtn = modal.querySelector('#copyBookmarkBtn');
         if (copyBookmarkBtn) {
             copyBookmarkBtn.addEventListener('click', async () => {
                 const bookmarkCode = `javascript:void(function(){
-    var p=[];
-    var isQB = window.location.href.toLowerCase().includes('/qb.php');
-    document.querySelectorAll('tr.player-row').forEach(function(r){
-        try{
-            var c = r.querySelectorAll('td');
-            if(c.length<6) return;
-            var n = c[2].querySelector('.player-cell-name');
-            if(!n) return;
-            var t = c[2].querySelector('.player-cell-team');
-            var position = isQB ? 'QB' : c[3].textContent.trim().replace(/[^A-Z]/gi, '');
-            var opponent = isQB ? c[3].textContent.trim() : c[4].textContent.trim();
-            var upside = isQB ? c[4].querySelectorAll('.mcu-rating-meter__segment.is-filled').length : c[5].querySelectorAll('.mcu-rating-meter__segment.is-filled').length;
-            var bust = isQB ? c[5].querySelectorAll('.mcu-rating-meter__segment.is-filled').length : c[6].querySelectorAll('.mcu-rating-meter__segment.is-filled').length;
-            var matchup = isQB ? c[6].querySelectorAll('.template-stars-star .fa-star.template-stars-star-filled').length : c[7].querySelectorAll('.template-stars-star .fa-star.template-stars-star-filled').length;
-            var startSit = isQB ? c[7].textContent.trim() : '';
-            var projFpts = isQB ? c[8].textContent.trim() : '';
-            var avgDiff = isQB ? (c[9]?c[9].textContent.trim():'') : (c[8]?c[8].textContent.trim():'');
-            var percentOver = isQB ? (c[10]?c[10].textContent.trim():'') : (c[9]?c[9].textContent.trim():'');
-            var opportunity = isQB ? (c[11]?c[11].textContent.trim():'') : (c[10]?c[10].textContent.trim():'');
-            var efficiency = isQB ? (c[12]?c[12].textContent.trim():'') : (c[11]?c[11].textContent.trim():'');
-            p.push({
-                rank:parseInt(c[0].textContent.trim()),
-                player_name:n.textContent.trim(),
-                position:position,
-                team:t?t.textContent.replace(/[()]/g,''):'',
-                opponent:opponent,
-                upside:upside,
-                bust:bust,
-                matchup:matchup,
-                start_sit:startSit,
-                proj_fpts:projFpts,
-                avgDiff:avgDiff,
-                percentOver:percentOver,
-                opportunity:opportunity,
-                efficiency:efficiency
-            });
-        }catch(e){}
-    });
-    if(p.length===0){
-        alert('Keine Daten gefunden');
-        return;
-    }
-    var j=JSON.stringify(p,null,2);
-    var b=new Blob([j],{type:'application/json'});
-    var u=URL.createObjectURL(b);
-    var a=document.createElement('a');
-    a.href=u;
-    a.download='fantasypros-data.json';
-    a.click();
-    URL.revokeObjectURL(u);
-    if(navigator.clipboard){
-        navigator.clipboard.writeText(j).then(function(){
-            alert('✅ '+p.length+' Spieler - Download+Clipboard');
-        }).catch(function(){
-            alert('✅ '+p.length+' Spieler - Download');
+var p=[];
+var isQB = window.location.href.toLowerCase().includes('/qb.php');
+document.querySelectorAll('tr.player-row').forEach(function(r){
+    try{
+        var c = r.querySelectorAll('td');
+        if(c.length<6) return;
+        var n = c[2].querySelector('.player-cell-name');
+        if(!n) return;
+        var t = c[2].querySelector('.player-cell-team');
+        var position = isQB ? 'QB' : c[3].textContent.trim().replace(/[^A-Z]/gi, '');
+        var opponent = isQB ? c[3].textContent.trim() : c[4].textContent.trim();
+        var upside = isQB ? c[4].querySelectorAll('.mcu-rating-meter__segment.is-filled').length : c[5].querySelectorAll('.mcu-rating-meter__segment.is-filled').length;
+        var bust = isQB ? c[5].querySelectorAll('.mcu-rating-meter__segment.is-filled').length : c[6].querySelectorAll('.mcu-rating-meter__segment.is-filled').length;
+        var matchup = isQB ? c[6].querySelectorAll('.template-stars-star .fa-star.template-stars-star-filled').length : c[7].querySelectorAll('.template-stars-star .fa-star.template-stars-star-filled').length;
+        var startSit = isQB ? c[7].textContent.trim() : '';
+        var projFpts = isQB ? c[8].textContent.trim() : '';
+        var avgDiff = isQB ? (c[9]?c[9].textContent.trim():'') : (c[8]?c[8].textContent.trim():'');
+        var percentOver = isQB ? (c[10]?c[10].textContent.trim():'') : (c[9]?c[9].textContent.trim():'');
+        var opportunity = isQB ? (c[11]?c[11].textContent.trim():'') : (c[10]?c[10].textContent.trim():'');
+        var efficiency = isQB ? (c[12]?c[12].textContent.trim():'') : (c[11]?c[11].textContent.trim():'');
+        p.push({
+            rank:parseInt(c[0].textContent.trim()),
+            player_name:n.textContent.trim(),
+            position:position,
+            team:t?t.textContent.replace(/[()]/g,''):'',
+            opponent:opponent,
+            upside:upside,
+            bust:bust,
+            matchup:matchup,
+            start_sit:startSit,
+            proj_fpts:projFpts,
+            avgDiff:avgDiff,
+            percentOver:percentOver,
+            opportunity:opportunity,
+            efficiency:efficiency
         });
-    }else{
+    }catch(e){}
+});
+if(p.length===0){
+    alert('Keine Daten gefunden');
+    return;
+}
+var j=JSON.stringify(p,null,2);
+var b=new Blob([j],{type:'application/json'});
+var u=URL.createObjectURL(b);
+var a=document.createElement('a');
+a.href=u;
+a.download='fantasypros-data.json';
+a.click();
+URL.revokeObjectURL(u);
+if(navigator.clipboard){
+    navigator.clipboard.writeText(j).then(function(){
+        alert('✅ '+p.length+' Spieler - Download+Clipboard');
+    }).catch(function(){
         alert('✅ '+p.length+' Spieler - Download');
-    }
+    });
+}else{
+    alert('✅ '+p.length+' Spieler - Download');
+}
 })()`;
 
                 try {
@@ -176,26 +203,26 @@ export class DraftUI {
                     // Fallback: Show in text area
                     const fallbackDiv = document.createElement('div');
                     fallbackDiv.style.cssText = `
-                    position: fixed;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    background: white;
-                    padding: 20px;
-                    border-radius: 8px;
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-                    z-index: 10002;
-                    max-width: 90%;
-                    max-height: 90%;
-                `;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                z-index: 10002;
+                max-width: 90%;
+                max-height: 90%;
+            `;
 
                     fallbackDiv.innerHTML = `
-                    <h4>📋 Bookmark Code (Zwischenablage nicht verfügbar)</h4>
-                    <p>Kopieren Sie den folgenden Code und verwenden Sie ihn als Lesezeichen-URL:</p>
-                    <textarea style="width: 100%; height: 100px; font-family: monospace; font-size: 12px;" readonly>${bookmarkCode}</textarea>
-                    <br><br>
-                    <button onclick="this.parentElement.remove()" style="background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Schließen</button>
-                `;
+                <h4>📋 Bookmark Code (Zwischenablage nicht verfügbar)</h4>
+                <p>Kopieren Sie den folgenden Code und verwenden Sie ihn als Lesezeichen-URL:</p>
+                <textarea style="width: 100%; height: 100px; font-family: monospace; font-size: 12px;" readonly>${bookmarkCode}</textarea>
+                <br><br>
+                <button onclick="this.parentElement.remove()" style="background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Schließen</button>
+            `;
 
                     document.body.appendChild(fallbackDiv);
                 }
@@ -208,8 +235,10 @@ export class DraftUI {
         const fileUpload = modal.querySelector('#jsonFileUpload');
         if (fileUpload) {
             fileUpload.addEventListener('change', (e) => {
-                this.tracker.handleJsonFile(e);
-                document.body.removeChild(modal);
+                this.handleJsonFile(e);
+                if (document.body.contains(modal)) {
+                    document.body.removeChild(modal);
+                }
             });
         }
         const processBtn = modal.querySelector('#processJsonText');
@@ -218,18 +247,24 @@ export class DraftUI {
                 const jsonText = modal.querySelector('#jsonTextInput').value;
                 if (jsonText.trim()) {
                     this.tracker.processJsonData(jsonText);
-                    document.body.removeChild(modal);
+                    if (document.body.contains(modal)) {
+                        document.body.removeChild(modal);
+                    }
                 } else {
                     alert('Bitte geben Sie JSON-Daten ein.');
                 }
             });
         }
         modal.addEventListener('click', (e) => {
-            if (e.target === modal) document.body.removeChild(modal);
+            if (e.target === modal && document.body.contains(modal)) {
+                document.body.removeChild(modal);
+            }
         });
         const handleEscape = (e) => {
             if (e.key === 'Escape') {
-                document.body.removeChild(modal);
+                if (document.body.contains(modal)) {
+                    document.body.removeChild(modal);
+                }
                 document.removeEventListener('keydown', handleEscape);
             }
         };
@@ -452,23 +487,9 @@ export class DraftUI {
      */
     showSuccess(message) {
         this.hideError();
-        let successElement = document.getElementById('success');
-        if (!successElement) {
-            successElement = document.createElement('div');
-            successElement.id = 'success';
-            successElement.style.cssText = `
-                background-color: var(--pico-color-green-100);
-                color: var(--pico-color-green-700);
-                padding: 1rem;
-                border-radius: var(--pico-border-radius);
-                margin-bottom: 1rem;
-                border-left: 4px solid var(--pico-color-green-500);
-            `;
-            document.getElementById('error').parentNode.insertBefore(successElement, document.getElementById('error'));
-        }
-
+        const successElement = document.getElementById('success');
         successElement.style.display = 'block';
-        successElement.textContent = message;
+        document.getElementById('successMessage').textContent = message;
         setTimeout(() => this.hideSuccess(), 3000);
     }
 
@@ -533,6 +554,17 @@ export class DraftUI {
         // Tabelle und Stats updaten
         this.renderTable(this.tracker.filteredPlayers, this.tracker.allPlayers);
         this.updateStats(this.tracker.allPlayers);
+    }
+
+    async handleJsonFile(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        try {
+            const text = await file.text();
+            this.tracker.processJsonData(text);
+        } catch (error) {
+            this.showError(`Fehler beim Lesen der Datei: ${error.message}`);
+        }
     }
 }
 
