@@ -5,8 +5,8 @@ export class DraftUI {
     }
 
     initUI() {
-        // Hier kannst du z.B. globale EventListener für UI setzen oder Initialisierungen vornehmen.
-        // Beispiel: document.getElementById('app').style.display = 'block';
+        
+        clearFilters.addEventListener('click', () => this.clearFilters());
     }
 
     showJsonImport() {
@@ -95,7 +95,7 @@ export class DraftUI {
         const copyBookmarkBtn = modal.querySelector('#copyBookmarkBtn');
         if (copyBookmarkBtn) {
             copyBookmarkBtn.addEventListener('click', async () => {
-                 const bookmarkCode = `javascript:void(function(){
+                const bookmarkCode = `javascript:void(function(){
     var p=[];
     var isQB = window.location.href.toLowerCase().includes('/qb.php');
     document.querySelectorAll('tr.player-row').forEach(function(r){
@@ -474,6 +474,25 @@ export class DraftUI {
     hideSuccess() {
         const successElement = document.getElementById('success');
         if (successElement) successElement.style.display = 'none';
+    }
+
+    clearFilters() {
+        document.getElementById('positionFilter').value = '';
+        document.getElementById('rankFilter').value = '';
+        document.getElementById('draftedFilter').value = '';
+        document.getElementById('playerSearch').value = '';
+        // Nach dem Zurücksetzen: Tracker-Filter aktualisieren
+        const filters = this.getFiltersFromUI();
+        this.tracker.applyFilters(filters);
+    }
+
+    getFiltersFromUI() {
+        return {
+            positionFilter: document.getElementById('positionFilter').value,
+            rankFilter: document.getElementById('rankFilter').value,
+            draftedFilter: document.getElementById('draftedFilter').value,
+            playerSearch: document.getElementById('playerSearch').value.trim().toLowerCase()
+        };
     }
 }
 
