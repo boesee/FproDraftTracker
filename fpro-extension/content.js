@@ -18,7 +18,7 @@ function extractPlayersData() {
     rows.forEach((row) => {
         try {
             const cells = row.querySelectorAll('td');
-            if (cells.length < 11) return;
+            if (cells.length < 3) return;
 
             const rank = parseInt(cells[0].textContent.trim());
             const playerLink = cells[2].querySelector('.player-cell-name');
