@@ -23,7 +23,7 @@ jobs:
         run: npm install puppeteer
 
       - name: Run Scraper
-        run: node workflows/scrape-fantasypros.js
+        run: node scrape-fantasypros.js
 
       - name: Commit scraped data
         run: |
