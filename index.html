@@ -21,7 +21,7 @@
             <div class="grid">
                 <div>
                     <label for="draftId">Draft ID:</label>
-                    <input type="text" id="draftId" placeholder="Sleeper Draft ID eingeben">
+                    <input type="text" id="draftId" value="1265036530947203072" >
                     <small>Die Draft ID finden Sie auf sleeper.app</small>
                 </div>
             </div>
@@ -97,35 +97,10 @@
             <p id="errorMessage"></p>
         </div>
 
-        <section>
+        <section id="playersTableSection">
             <div class="table-container">
                 <table id="playersTable" class="responsive-table">
-                    <thead>
-                        <tr>
-                            <th class="rank-col" onclick="sortTable('rank')" title="Fantasy Rang">#</th>
-                            <th class="player-col" onclick="sortTable('player_name')" title="Spielername">Spieler</th>
-                            <th class="pos-col" onclick="sortTable('position')" title="Position">Pos</th>
-                            <th class="team-col" onclick="sortTable('team')" title="Team">Team</th>
-                            <th class="opp-col" onclick="sortTable('opponent')" title="Gegner">Gegner</th>
-                            <th class="rating-col" onclick="sortTable('upside')" title="Upside (1-5 Sterne)">📈 Upside
-                            </th>
-                            <th class="rating-col" onclick="sortTable('bust')" title="Bust-Risiko (1-5 Sterne)">📉 Bust
-                            </th>
-                            <th class="rating-col" onclick="sortTable('matchup')"
-                                title="Matchup-Bewertung (1-5 Sterne)">⚔️ Matchup</th>
-                            <th class="startsit-col" onclick="sortTable('start_sit')" title="Start/Sit Empfehlung">
-                                Start/Sit</th>
-                            <th class="projftps-col" onclick="sortTable('proj_fpts')" title="Progn. Fantasy Punkte">Proj
-                                FPTS</th>
-                            <th class="stat-col" onclick="sortTable('avgDiff')" title="Durchschnittl. Differenz">Diff
-                            </th>
-                            <th class="stat-col" onclick="sortTable('percentOver')" title="Prozent über Durchschnitt">
-                                %Über</th>
-                            <th class="stat-col" onclick="sortTable('opportunity')" title="Opportunity Share">Opp%</th>
-                            <th class="stat-col" onclick="sortTable('efficiency')" title="Effizienzbewertung">Eff</th>
-                            <th class="status-col">Status</th>
-                        </tr>
-                    </thead>
+                    <thead id="playersTableHead"></thead>
                     <tbody id="playersTableBody"></tbody>
                 </table>
             </div>
