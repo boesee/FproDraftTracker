@@ -12,7 +12,12 @@ Ein leistungsstarkes Tool zur schnellen und komfortablen Extraktion von FantasyP
 
 ## Installation
 
-### Browser Extension (Empfohlen)
+### ECR Daten Laden (Empfohlen)
+
+1. Lade die ECR Daten aus der App mittels Button
+2. Die Datei wird stündlich aktualisiert und kann einfach überschrieben werden
+
+### Browser Extension (Alternative)
 
 1. Klone oder lade dieses Repository herunter.
 2. Öffne deinen Browser:
@@ -28,10 +33,10 @@ Ein leistungsstarkes Tool zur schnellen und komfortablen Extraktion von FantasyP
 
 ## Anleitung
 
-1. Gehe auf eine beliebige FantasyPros-Ranking-Seite (z.B. QB, RB, WR, TE).
-2. Starte die Extension oder nutze das Bookmarklet.
-3. Extrahiere die Daten per Knopfdruck.
-4. Importiere die heruntergeladene JSON-Datei in deinen Draft Tracker.
+1. Starte den Tracker
+2. Klicke auf Spielerdaten laden
+3. Importiere die Spielerdaten in den Draft Tracker
+4. Optional: gleiche die Spielerdaten mit deinem Sleeper ab
 
 ## Unterstützte Datenfelder
 
@@ -40,10 +45,7 @@ Ein leistungsstarkes Tool zur schnellen und komfortablen Extraktion von FantasyP
 - Position (`position`)
 - Team (`team`)
 - Gegner (`opponent`)
-- Upside, Bust, Matchup (Sternebewertungen)
-- Start/Sit Empfehlung
-- Projektierte Fantasy-Punkte
-- Verschiedene Statistiken (Opportunity, Efficiency, etc.)
+- Matchup (`matchup`)
 - Draft-Status (optional durch Integration mit Sleeper)
 
 ## Sicherheit & Datenschutz

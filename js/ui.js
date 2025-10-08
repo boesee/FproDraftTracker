@@ -35,15 +35,11 @@ export class DraftUI {
             jsonFileInput.addEventListener('change', (e) => this.handleJsonFile(e));
         }
 
-        // ECR Daten holen
-        const fetchEcrBtn = document.getElementById('fetchEcrData');
-        if (fetchEcrBtn) {
-
-            fetchEcrBtn.addEventListener('click', () => this.tracker.fetchEcrData());
+        // ECR Daten lokal laden (neu!)
+        const loadEcrBtn = document.getElementById('loadEcrData');
+        if (loadEcrBtn) {
+            loadEcrBtn.addEventListener('click', () => this.tracker.loadAndProcessEcrData());
         }
-
-
-
     }
 
     showJsonImport() {
@@ -76,10 +72,10 @@ export class DraftUI {
 </div>
 
 <div style="margin: 1.5rem 0;">
-    <h4 style="color: #28a745; margin-bottom: 1rem;">🌐 Empfohlen: FPro Scraper</h4>
-    <p style="margin-bottom: 1rem;">Scrapen Sie die Daten direkt von FantasyPros:</p>
-    <button id="fetchEcrData" class="modal-button modal-button--primary"><span style="margin-right:8px;">🤖</span>Auto Import</button>
-</div>
+                <h4 style="color: #28a745; margin-bottom: 1rem;">🌐 Empfohlen: FPro Scraper</h4>
+                <p style="margin-bottom: 1rem;">Importieren Sie die ECR-Daten direkt aus der lokalen JSON-Datei:</p>
+                <button id="loadEcrData" class="modal-button modal-button--primary"><span style="margin-right:8px;">🤖</span>ECR Data laden</button>
+            </div>
 
 
 <div style="margin: 1.5rem 0;">
@@ -149,66 +145,89 @@ export class DraftUI {
         const copyBookmarkBtn = modal.querySelector('#copyBookmarkBtn');
         if (copyBookmarkBtn) {
             copyBookmarkBtn.addEventListener('click', async () => {
-                const bookmarkCode = `javascript:void(function(){
-var p=[];
-var isQB = window.location.href.toLowerCase().includes('/qb.php');
-document.querySelectorAll('tr.player-row').forEach(function(r){
-    try{
-        var c = r.querySelectorAll('td');
-        if(c.length<6) return;
-        var n = c[2].querySelector('.player-cell-name');
-        if(!n) return;
-        var t = c[2].querySelector('.player-cell-team');
-        var position = isQB ? 'QB' : c[3].textContent.trim().replace(/[^A-Z]/gi, '');
-        var opponent = isQB ? c[3].textContent.trim() : c[4].textContent.trim();
-        var upside = isQB ? c[4].querySelectorAll('.mcu-rating-meter__segment.is-filled').length : c[5].querySelectorAll('.mcu-rating-meter__segment.is-filled').length;
-        var bust = isQB ? c[5].querySelectorAll('.mcu-rating-meter__segment.is-filled').length : c[6].querySelectorAll('.mcu-rating-meter__segment.is-filled').length;
-        var matchup = isQB ? c[6].querySelectorAll('.template-stars-star .fa-star.template-stars-star-filled').length : c[7].querySelectorAll('.template-stars-star .fa-star.template-stars-star-filled').length;
-        var startSit = isQB ? c[7].textContent.trim() : '';
-        var projFpts = isQB ? c[8].textContent.trim() : '';
-        var avgDiff = isQB ? (c[9]?c[9].textContent.trim():'') : (c[8]?c[8].textContent.trim():'');
-        var percentOver = isQB ? (c[10]?c[10].textContent.trim():'') : (c[9]?c[9].textContent.trim():'');
-        var opportunity = isQB ? (c[11]?c[11].textContent.trim():'') : (c[10]?c[10].textContent.trim():'');
-        var efficiency = isQB ? (c[12]?c[12].textContent.trim():'') : (c[11]?c[11].textContent.trim():'');
-        p.push({
-            rank:parseInt(c[0].textContent.trim()),
-            player_name:n.textContent.trim(),
-            position:position,
-            team:t?t.textContent.replace(/[()]/g,''):'',
-            opponent:opponent,
-            upside:upside,
-            bust:bust,
-            matchup:matchup,
-            start_sit:startSit,
-            proj_fpts:projFpts,
-            avgDiff:avgDiff,
-            percentOver:percentOver,
-            opportunity:opportunity,
-            efficiency:efficiency
-        });
-    }catch(e){}
-});
-if(p.length===0){
-    alert('Keine Daten gefunden');
-    return;
-}
-var j=JSON.stringify(p,null,2);
-var b=new Blob([j],{type:'application/json'});
-var u=URL.createObjectURL(b);
-var a=document.createElement('a');
-a.href=u;
-a.download='fantasypros-data.json';
-a.click();
-URL.revokeObjectURL(u);
-if(navigator.clipboard){
-    navigator.clipboard.writeText(j).then(function(){
-        alert('✅ '+p.length+' Spieler - Download+Clipboard');
-    }).catch(function(){
-        alert('✅ '+p.length+' Spieler - Download');
+                const bookmarkCode = `javascript: void (function () {
+    var p = [];
+    var isQB = window.location.href.toLowerCase().includes('/qb.php');
+    document.querySelectorAll('tr.player-row').forEach(function (r) {
+        try {
+            const c = r.querySelectorAll('td');
+            if (c.length < 3) return;
+
+            // Name & Team robust extrahieren
+            const nameEl = c[2].querySelector('.player-cell-name');
+            const teamEl = c[2].querySelector('.player-cell-team');
+            if (!nameEl) return;
+
+            const playerName = nameEl.textContent.trim();
+            const playerTeam = teamEl ? teamEl.textContent.replace(/[()]/g, '').trim() : '';
+
+            // Optional: zusammengesetzter Name, z.B. "J. Allen (BUF)"
+            const playerFullName = playerTeam ? playerName + ' (' + playerTeam + ')' : playerName;
+
+            // Position & Gegner
+            const position = isQB ? 'QB' : (c[3]?.textContent.trim().replace(/[^A-Z]/gi, '') || '');
+            const opponent = isQB ? (c[3]?.textContent.trim() || '') : (c[4]?.textContent.trim() || '');
+
+            // Upside, Bust, Matchup robust extrahieren
+            const upside = isQB
+                ? c[4]?.querySelectorAll('.mcu-rating-meter__segment.is-filled').length || 0
+                : c[5]?.querySelectorAll('.mcu-rating-meter__segment.is-filled').length || 0;
+            const bust = isQB
+                ? c[5]?.querySelectorAll('.mcu-rating-meter__segment.is-filled').length || 0
+                : c[6]?.querySelectorAll('.mcu-rating-meter__segment.is-filled').length || 0;
+            const matchup = isQB
+                ? c[6]?.querySelectorAll('.template-stars-star .fa-star.template-stars-star-filled').length || 0
+                : c[7]?.querySelectorAll('.template-stars-star .fa-star.template-stars-star-filled').length || 0;
+
+            // Stats
+            const startSit = isQB ? (c[7]?.textContent.trim() || '') : '';
+            const projFpts = isQB ? (c[8]?.textContent.trim() || '') : '';
+            const avgDiff = isQB ? (c[9]?.textContent.trim() || '') : (c[8]?.textContent.trim() || '');
+            const percentOver = isQB ? (c[10]?.textContent.trim() || '') : (c[9]?.textContent.trim() || '');
+            const opportunity = isQB ? (c[11]?.textContent.trim() || '') : (c[10]?.textContent.trim() || '');
+            const efficiency = isQB ? (c[12]?.textContent.trim() || '') : (c[11]?.textContent.trim() || '');
+
+            // Spielerobjekt pushen
+            p.push({
+                rank: parseInt(c[0]?.textContent.trim() || '0', 10),
+                player_name: playerFullName,
+                position,
+                team: playerTeam,
+                opponent,
+                upside,
+                bust,
+                matchup,
+                start_sit: startSit,
+                proj_fpts: projFpts,
+                avgDiff,
+                percentOver,
+                opportunity,
+                efficiency
+            });
+        } catch (e) { }
     });
-}else{
-    alert('✅ '+p.length+' Spieler - Download');
-}
+    if (p.length === 0) {
+        alert('Keine Daten gefunden');
+        return;
+    }
+    var j = JSON.stringify(p, null, 2);
+    var b = new Blob([j], { type: 'application/json' });
+    var u = URL.createObjectURL(b);
+    var a = document.createElement('a');
+    a.href = u;
+    a.download = 'fantasypros-data.json';
+    a.click();
+    URL.revokeObjectURL(u);
+    if (navigator.clipboard) {
+        
+        navigator.clipboard.writeText(j).then(function () {
+            alert('✅ ' + p.length + ' Spieler - Download+Clipboard');
+        }).catch(function () {
+            alert('✅ ' + p.length + ' Spieler - Download');
+        });
+    } else {
+        alert('✅ ' + p.length + ' Spieler - Download');
+    }
 })()`;
 
                 try {
@@ -279,16 +298,17 @@ if(navigator.clipboard){
             });
         }
 
-        const fetchEcrBtn = modal.querySelector('#fetchEcrData');
-        if (fetchEcrBtn) {
-            fetchEcrBtn.addEventListener('click', () => {
-                console.log('fetchEcrBtn geklickt'); // Debug Log
-                this.tracker.fetchEcrData();
+        const loadEcrBtn = modal.querySelector('#loadEcrData');
+        if (loadEcrBtn) {
+            loadEcrBtn.addEventListener('click', () => {
+                console.log('loadEcrBtn geklickt'); // Debug Log
+                this.tracker.loadAndProcessEcrData();
                 if (document.body.contains(modal)) {
                     document.body.removeChild(modal);
                 }
             });
         }
+
         modal.addEventListener('click', (e) => {
             if (e.target === modal && document.body.contains(modal)) {
                 document.body.removeChild(modal);
@@ -328,17 +348,53 @@ if(navigator.clipboard){
 
     renderTable(filteredPlayers, allPlayers) {
         const tbody = document.getElementById('playersTableBody');
+        const thead = document.getElementById('playersTableHead');
+        const section = document.getElementById('playersTableSection');
         tbody.innerHTML = '';
+        if (thead) thead.innerHTML = '';
 
-        if (filteredPlayers.length === 0) {
-            tbody.innerHTML = `
-            <tr><td colspan="13" style="text-align: center; padding: 2rem;">
-                ${allPlayers.length === 0 ? 'Keine Spielerdaten geladen.' : 'Keine Spieler entsprechen den Filtern.'}
-            </td></tr>
-        `;
+        // Blende Section aus, wenn keine Spieler geladen
+        if (!allPlayers || allPlayers.length === 0) {
+            if (section) section.style.display = 'none';
             return;
         }
 
+        console.log('Rendering table with players:', allPlayers);
+
+        // Spalten dynamisch bestimmen
+        const columns = this.getActiveColumns(allPlayers);
+
+        // Tabelle nur ausblenden, wenn WIRKLICH keine Spieler da sind
+        if (!filteredPlayers.length) {
+            if (section) section.style.display = 'none';
+            return;
+        } else {
+            if (section) section.style.display = '';
+        }
+
+        // Header dynamisch rendern
+        let headerHtml = `
+        <tr>
+            <th class="rank-col">#</th>
+            <th class="player-col">Spieler</th>
+            <th class="pos-col">Pos</th>
+            <th class="team-col">Team</th>
+            <th class="opp-col">Gegner</th>
+            ${columns.upside ? '<th class="rating-col">Upside</th>' : ''}
+            ${columns.bust ? '<th class="rating-col">Bust</th>' : ''}
+            ${columns.matchup ? '<th class="rating-col">Matchup</th>' : ''}
+            ${columns.start_sit ? '<th class="stat-col">Start/Sit</th>' : ''}
+            ${columns.proj_fpts ? '<th class="stat-col">Proj FPTS</th>' : ''}
+            ${columns.avgDiff ? '<th class="stat-col">Diff</th>' : ''}
+            ${columns.percentOver ? '<th class="stat-col">%Über</th>' : ''}
+            ${columns.opportunity ? '<th class="stat-col">Opp%</th>' : ''}
+            ${columns.efficiency ? '<th class="stat-col">Eff</th>' : ''}
+            <th class="status-col">Status</th>
+        </tr>
+    `;
+        if (thead) thead.innerHTML = headerHtml;
+
+        // Spielerzeilen rendern
         filteredPlayers.forEach(player => {
             const row = document.createElement('tr');
             if (player.drafted) row.classList.add('drafted-row');
@@ -359,33 +415,15 @@ if(navigator.clipboard){
             <td class="pos-col">${player.position || '-'}</td>
             <td class="team-col">${player.team || '-'}</td>
             <td class="opp-col">${player.opponent || '-'}</td>
-            <td class="rating-col">
-                <span class="rating-display upside-stars" title="${upsideTooltip}">${this.renderStarRating(player.upside, 'upside')}</span>
-            </td>
-            <td class="rating-col">
-                <span class="rating-display bust-stars" title="${bustTooltip}">${this.renderStarRating(player.bust, 'bust')}</span>
-            </td>
-            <td class="rating-col">
-                <span class="rating-display matchup-stars" title="${matchupTooltip}">${this.renderStarRating(player.matchup, 'matchup')}</span>
-            </td>
-            <td class="stat-col">
-                <span class="compact-stat">${this.formatStatValue(player.start_sit)}</span>
-            </td>
-            <td class="stat-col">
-                <span class="compact-stat">${this.formatStatValue(player.proj_fpts)}</span>
-            </td>
-            <td class="stat-col">
-                <span class="compact-stat">${this.formatStatValue(player.avgDiff)}</span>
-            </td>
-            <td class="stat-col">
-                <span class="compact-stat">${this.formatStatValue(player.percentOver)}</span>
-            </td>
-            <td class="stat-col">
-                <span class="compact-stat">${this.formatStatValue(player.opportunity)}</span>
-            </td>
-            <td class="stat-col">
-                <span class="compact-stat">${this.formatStatValue(player.efficiency)}</span>
-            </td>
+            ${columns.upside ? `<td class="rating-col"><span class="rating-display upside-stars" title="${upsideTooltip}">${this.renderStarRating(player.upside, 'upside')}</span></td>` : ''}
+            ${columns.bust ? `<td class="rating-col"><span class="rating-display bust-stars" title="${bustTooltip}">${this.renderStarRating(player.bust, 'bust')}</span></td>` : ''}
+            ${columns.matchup ? `<td class="rating-col"><span class="rating-display matchup-stars" title="${matchupTooltip}">${this.renderStarRating(player.matchup, 'matchup')}</span></td>` : ''}
+            ${columns.start_sit ? `<td class="stat-col"><span class="compact-stat">${this.formatStatValue(player.start_sit)}</span></td>` : ''}
+            ${columns.proj_fpts ? `<td class="stat-col"><span class="compact-stat">${this.formatStatValue(player.proj_fpts)}</span></td>` : ''}
+            ${columns.avgDiff ? `<td class="stat-col"><span class="compact-stat">${this.formatStatValue(player.avgDiff)}</span></td>` : ''}
+            ${columns.percentOver ? `<td class="stat-col"><span class="compact-stat">${this.formatStatValue(player.percentOver)}</span></td>` : ''}
+            ${columns.opportunity ? `<td class="stat-col"><span class="compact-stat">${this.formatStatValue(player.opportunity)}</span></td>` : ''}
+            ${columns.efficiency ? `<td class="stat-col"><span class="compact-stat">${this.formatStatValue(player.efficiency)}</span></td>` : ''}
             <td class="status-col">
                 <span class="status-badge ${player.drafted ? 'status-drafted' : 'status-available'}" ${draftTooltip}>
                     ${player.drafted ? 'Drafted' : 'Available'}
@@ -394,6 +432,8 @@ if(navigator.clipboard){
         `;
             tbody.appendChild(row);
         });
+
+        console.log(this.renderStarRating(3.8));
     }
 
     renderEmptyCell(value) {
@@ -402,24 +442,41 @@ if(navigator.clipboard){
         }
     }
 
+    roundToStarRating(rating) {
+        const value = parseFloat(rating) || 0;
+        const base = Math.floor(value);
+        const decimal = value - base;
+
+        if (decimal > 0.75) {
+            return base + 1;
+        } else if (decimal > 0.25) {
+            return base + 0.5;
+        } else {
+            return base;
+        }
+    }
+
+
     renderStarRating(rating, type = 'default') {
         const maxStars = 5;
-        const filledStars = Math.max(0, Math.min(maxStars, parseInt(rating) || 0));
-        const emptyStars = maxStars - filledStars;
-        let filledStar = '★';
-        let emptyStar = '☆';
-        switch (type) {
-            case 'upside': break;
-            case 'bust': break;
-            case 'matchup': break;
-        }
-        if (rating === 0 || !rating) {
-            return this.renderEmptyCell();
-        }
-        const filled = `<span class="filled">${filledStar.repeat(filledStars)}</span>`;
-        const empty = `<span class="empty">${emptyStar.repeat(emptyStars)}</span>`;
-        return filled + empty;
+        const rounded = this.roundToStarRating(rating);
+
+        const fullStars = Math.floor(rounded);
+        const hasHalfStar = (rounded - fullStars) === 0.5 ? 1 : 0;
+        const emptyStars = maxStars - fullStars - hasHalfStar;
+
+        const filledStar = '★';
+        const halfStar = '⯨'; // Alternativ: SVG/FontAwesome
+        const emptyStar = '☆';
+
+        if (rounded === 0) return this.renderEmptyCell();
+        let html = '';
+        html += `<span class="filled">${filledStar.repeat(fullStars)}</span>`;
+        if (hasHalfStar) html += `<span class="filled">${halfStar}</span>`;
+        html += `<span class="empty">${emptyStar.repeat(emptyStars)}</span>`;
+        return html;
     }
+
 
     renderCompactRating(rating) {
         if (!rating || rating === 0) return '-';
@@ -470,6 +527,8 @@ if(navigator.clipboard){
     }
 
     getMatchupTooltip(rating) {
+        const rounded = this.roundToStarRating(rating);
+
         const descriptions = {
             0: 'Keine Matchup-Bewertung',
             1: 'Sehr schwieriges Matchup',
@@ -478,7 +537,8 @@ if(navigator.clipboard){
             4: 'Günstiges Matchup',
             5: 'Sehr günstiges Matchup'
         };
-        return descriptions[rating] || 'Unbekannte Bewertung';
+        // Für halbe Sterne nimm die untere ganze Zahl für das Mapping
+        return descriptions[Math.floor(rounded)] || 'Unbekannte Bewertung';
     }
 
     updateStats(allPlayers) {
@@ -569,8 +629,10 @@ if(navigator.clipboard){
         // Filterlogik auf die Tracker-Daten anwenden
         this.tracker.filteredPlayers = this.tracker.allPlayers.filter(player => {
             if (filters.positionFilter && (
-                (filters.positionFilter === "FLEX" && !["RB", "WR", "TE"].includes(player.position)) ||
-                (filters.positionFilter !== "FLEX" && player.position !== filters.positionFilter)
+                (filters.positionFilter === "FLEX" &&
+                    !["RB", "WR", "TE"].some(pos => player.position.includes(pos))) ||
+                (filters.positionFilter !== "FLEX" &&
+                    !player.position.includes(filters.positionFilter))
             )) return false;
             if (filters.rankFilter && player.rank > parseInt(filters.rankFilter)) return false;
             if (filters.draftedFilter === 'available' && player.drafted) return false;
@@ -599,6 +661,20 @@ if(navigator.clipboard){
         } catch (error) {
             this.showError(`Fehler beim Lesen der Datei: ${error.message}`);
         }
+    }
+
+    getActiveColumns(allPlayers) {
+        return {
+            matchup: true,
+            upside: allPlayers.some(p => p.upside && p.upside !== 0),
+            bust: allPlayers.some(p => p.bust && p.bust !== 0),
+            start_sit: allPlayers.some(p => p.start_sit && p.start_sit !== ''),
+            proj_fpts: allPlayers.some(p => p.proj_fpts && p.proj_fpts !== ''),
+            avgDiff: allPlayers.some(p => p.avgDiff && p.avgDiff !== ''),
+            percentOver: allPlayers.some(p => p.percentOver && p.percentOver !== ''),
+            opportunity: allPlayers.some(p => p.opportunity && p.opportunity !== ''),
+            efficiency: allPlayers.some(p => p.efficiency && p.efficiency !== ''),
+        };
     }
 }
 

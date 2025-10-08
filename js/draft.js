@@ -141,41 +141,26 @@ export class FantasyDraftTracker {
         });
     }
 
-    async fetchEcrData() {
-        const baseUrl = "https://www.fantasypros.com/nfl/rankings/ppr-superflex.php";
-        const corsProxyUrl = "https://corsproxy.io/?" + encodeURIComponent(baseUrl);
-        console.log('Fetching ECR data from:', corsProxyUrl);
+    async loadAndProcessEcrData() {
         try {
-            const response = await fetch(corsProxyUrl);
-            const html = await response.text();
+            const response = await fetch('data/ecrData.json');
+            if (!response.ok) throw new Error('Fehler beim Laden der ecrData.json');
+            const rawData = await response.json();
 
-            console.log('Fetched HTML length:', html);
+            // Beispiel-Mapping: Passe die Namen entsprechend deiner JSON an!
+            const mappedPlayers = (Array.isArray(rawData) ? rawData : rawData.players).map(p => ({
+                rank: p.rank_ecr ?? '',
+                player_name: p.player_name ?? '',
+                position: p.pos_rank ?? '',
+                team: p.player_team_id ?? '',
+                opponent: p.player_opponent ?? '',
+                matchup: p.star_rating ?? 0
+            }));
 
-            const ecrData = this.extractEcrDataFromHtml(html);
-
-            if (!ecrData) {
-                if (this.ui) this.ui.showError("Konnte ecrData nicht extrahieren!");
-                return;
-            }
-            console.log('Extracted ECR Data:', ecrData);
-            this.processJsonData(JSON.stringify(ecrData));
-            if (this.ui) this.ui.showSuccess(`${ecrData.length} ECR-Spieler erfolgreich geladen.`);
+            this.processJsonData(JSON.stringify(mappedPlayers));
+            if (this.ui) this.ui.showSuccess(`${mappedPlayers.length} ECR-Spieler erfolgreich geladen.`);
         } catch (error) {
             if (this.ui) this.ui.showError("Fehler beim Laden der ECR-Daten: " + error.message);
-        }
-    }
-
-    extractEcrDataFromHtml(html) {
-        try {
-            // Finde var ecrData = {...};
-            const match = html.match(/var\s+ecrData\s*=\s*(\{[\s\S]*?\});/);
-            if (!match) return null;
-            const jsCode = "const ecrData = " + match[1] + "; ecrData;";
-            const ecrData = eval(jsCode); // Nur für Testzwecke!
-            return Array.isArray(ecrData.players) ? ecrData.players : ecrData;
-        } catch (err) {
-            console.error('Fehler beim Extrahieren:', err);
-            return null;
         }
     }
 }
