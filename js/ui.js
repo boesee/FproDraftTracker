@@ -1,65 +1,14 @@
-/**
- * FantasyDraftTracker
- * 
- * Hauptklasse für die Verwaltung und Visualisierung von Fantasy Football Draft-Daten.
- * Ermöglicht das Importieren von Spielerdaten, das Filtern, Sortieren und Markieren von gedrafteten Spielern
- * sowie die Integration von Sleeper Draft Daten.
- */
-class FantasyDraftTracker {
-    /**
-     * Initialisiert die Tracker-Instanz und setzt die Standardwerte.
-     */
-    constructor() {
-        this.allPlayers = [];
-        this.filteredPlayers = [];
-        this.draftedPlayers = [];
-        this.sortField = 'rank';
-        this.sortDirection = 'asc';
-        this.debugMode = true;
-
-        this.initializeEventListeners();
+export class DraftUI {
+    constructor(tracker) {
+        // tracker ist die Instanz von FantasyDraftTracker
+        this.tracker = tracker;
     }
 
-    /**
-     * Registriert alle notwendigen Event Listener für das UI.
-     */
-    initializeEventListeners() {
-        const loadJsonBtn = document.getElementById('loadJsonData');
-        const loadDraftBtn = document.getElementById('loadDraft');
-        const positionFilter = document.getElementById('positionFilter');
-        const rankFilter = document.getElementById('rankFilter');
-        const draftedFilter = document.getElementById('draftedFilter');
-        const clearFilters = document.getElementById('clearFilters');
-        const playerSearch = document.getElementById('playerSearch');
-        const jsonFileInput = document.getElementById('jsonFileInput');
-
-        if (loadJsonBtn) {
-            loadJsonBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.showJsonImport();
-            });
-        }
-
-        if (loadDraftBtn) {
-            loadDraftBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.loadDraftData();
-            });
-        }
-
-        if (positionFilter) positionFilter.addEventListener('change', () => this.applyFilters());
-        if (rankFilter) rankFilter.addEventListener('input', () => this.applyFilters());
-        if (draftedFilter) draftedFilter.addEventListener('change', () => this.applyFilters());
-        if (clearFilters) clearFilters.addEventListener('click', () => this.clearFilters());
-        if (playerSearch) playerSearch.addEventListener('input', () => this.applyFilters());
-        if (jsonFileInput) {
-            jsonFileInput.addEventListener('change', (e) => this.handleJsonFile(e));
-        }
+    initUI() {
+        // Hier kannst du z.B. globale EventListener für UI setzen oder Initialisierungen vornehmen.
+        // Beispiel: document.getElementById('app').style.display = 'block';
     }
 
-    /**
-     * Zeigt das Modal für den JSON-Import an.
-     */
     showJsonImport() {
         try {
             const existingModal = document.querySelector('.json-import-modal');
@@ -128,7 +77,6 @@ class FantasyDraftTracker {
                     </div>
                 </div>
             `;
-
             modal.appendChild(content);
             document.body.appendChild(modal);
 
@@ -139,10 +87,6 @@ class FantasyDraftTracker {
         }
     }
 
-    /**
-     * Registriert Event Listener für das Import-Modal.
-     * @param {HTMLElement} modal 
-     */
     setupModalEventListeners(modal) {
         const closeBtn = modal.querySelector('#closeModalBtn');
         if (closeBtn) {
@@ -151,13 +95,13 @@ class FantasyDraftTracker {
         const copyBookmarkBtn = modal.querySelector('#copyBookmarkBtn');
         if (copyBookmarkBtn) {
             copyBookmarkBtn.addEventListener('click', async () => {
-                const bookmarkCode = `javascript:void(function(){
+                 const bookmarkCode = `javascript:void(function(){
     var p=[];
     var isQB = window.location.href.toLowerCase().includes('/qb.php');
     document.querySelectorAll('tr.player-row').forEach(function(r){
         try{
             var c = r.querySelectorAll('td');
-            if(c.length<11) return;
+            if(c.length<6) return;
             var n = c[2].querySelector('.player-cell-name');
             if(!n) return;
             var t = c[2].querySelector('.player-cell-team');
@@ -260,7 +204,7 @@ class FantasyDraftTracker {
         const fileUpload = modal.querySelector('#jsonFileUpload');
         if (fileUpload) {
             fileUpload.addEventListener('change', (e) => {
-                this.handleJsonFile(e);
+                this.tracker.handleJsonFile(e);
                 document.body.removeChild(modal);
             });
         }
@@ -269,7 +213,7 @@ class FantasyDraftTracker {
             processBtn.addEventListener('click', () => {
                 const jsonText = modal.querySelector('#jsonTextInput').value;
                 if (jsonText.trim()) {
-                    this.processJsonData(jsonText);
+                    this.tracker.processJsonData(jsonText);
                     document.body.removeChild(modal);
                 } else {
                     alert('Bitte geben Sie JSON-Daten ein.');
@@ -288,9 +232,6 @@ class FantasyDraftTracker {
         document.addEventListener('keydown', handleEscape);
     }
 
-    /**
-     * Zeigt eine Kurzanleitung zur Extension-Installation an.
-     */
     showExtensionInstructions() {
         alert(`Browser Extension Installation:
 
@@ -312,231 +253,20 @@ class FantasyDraftTracker {
 6. Die Daten werden automatisch heruntergeladen und in die Zwischenablage kopiert.`);
     }
 
-    /**
-     * Gibt Debug-Ausgaben aus, falls debugMode aktiv ist.
-     * @param {string} message 
-     * @param {*} data 
-     */
-    debugLog(message, data = null) {
-        if (this.debugMode) {
-            console.log(`[DEBUG] ${message}`, data || '');
-        }
-    }
-
-    /**
-     * Normalisiert einen Spielernamen (entfernt Suffixe, Sonderzeichen, etc.).
-     * @param {string} name
-     * @returns {Object} { first, last, fullName }
-     */
-    normalizePlayerName(name) {
-        if (!name) return { first: '', last: '', fullName: '' };
-        const withoutSuffix = name
-            .replace(/\s+(jr\.?|sr\.?|iii\.?|ii\.?|iv\.?|v\.?)$/i, '')
-            .replace(/\s+(junior|senior)$/i, '')
-            .trim();
-        const normalized = withoutSuffix.toLowerCase()
-            .replace(/[^\w\s]/g, '')
-            .replace(/\s+/g, ' ')
-            .trim();
-        const parts = normalized.split(' ').filter(part => part.length > 0);
-        return {
-            first: parts[0] || '',
-            last: parts[parts.length - 1] || '',
-            fullName: normalized
-        };
-    }
-
-    /**
-     * Verarbeitet den Upload einer JSON-Datei und lädt die Spielerdaten.
-     * @param {Event} event 
-     */
-    async handleJsonFile(event) {
-        const file = event.target.files[0];
-        if (!file) return;
-        try {
-            const text = await file.text();
-            this.processJsonData(text);
-        } catch (error) {
-            this.showError(`Fehler beim Lesen der Datei: ${error.message}`);
-        }
-    }
-
-    /**
-     * Verarbeitet den JSON-Text und lädt die Spielerdaten.
-     * @param {string} jsonString 
-     */
-    processJsonData(jsonString) {
-        try {
-            const data = JSON.parse(jsonString);
-            const playersData = Array.isArray(data) ? data : data.players || [];
-            this.allPlayers = playersData.map(player => ({
-                ...player,
-                drafted: false
-            }));
-            this.debugLog(`Loaded ${this.allPlayers.length} players`);
-            this.sortPlayers();
-            this.applyFilters();
-            this.updateStats();
-            this.showSuccess(`${this.allPlayers.length} Spieler erfolgreich geladen.`);
-        } catch (error) {
-            console.error('Error parsing JSON:', error);
-            this.showError(`Fehler beim Verarbeiten der JSON-Daten: ${error.message}`);
-        }
-    }
-
-    /**
-     * Findet einen Draft-Match für einen Fantasy-Spieler in der Sleeper-Draft-Picks-Liste.
-     * @param {Object} fantasyPlayer 
-     * @param {Array} draftedPlayersArray 
-     * @returns {Object|null}
-     */
-    findPlayerMatch(fantasyPlayer, draftedPlayersArray) {
-        const fantasyNormalized = this.normalizePlayerName(fantasyPlayer.player_name);
-        for (const draftedPick of draftedPlayersArray) {
-            if (!draftedPick.metadata?.first_name || !draftedPick.metadata?.last_name) continue;
-            const draftedFullName = `${draftedPick.metadata.first_name} ${draftedPick.metadata.last_name}`;
-            const draftedNormalized = this.normalizePlayerName(draftedFullName);
-            if (
-                fantasyNormalized.fullName === draftedNormalized.fullName ||
-                (fantasyNormalized.first === draftedNormalized.first &&
-                    fantasyNormalized.last === draftedNormalized.last)
-            ) {
-                return {
-                    match: draftedPick,
-                    score: 100,
-                    reason: 'Exact name match'
-                };
-            }
-        }
-        return null;
-    }
-
-    /**
-     * Lädt die Draftdaten von Sleeper per Draft-ID und matched sie auf die Spielerliste.
-     */
-    async loadDraftData() {
-        const draftId = document.getElementById('draftId').value.trim();
-        if (!draftId) {
-            this.showError('Bitte geben Sie eine gültige Draft ID ein.');
-            return;
-        }
-        if (this.allPlayers.length === 0) {
-            this.showError('Bitte laden Sie zuerst die Spielerdaten.');
-            return;
-        }
-        this.showLoading(true);
-        try {
-            const response = await fetch(`https://api.sleeper.app/v1/draft/${draftId}/picks`);
-            const draftData = await response.json();
-            let matchedPlayers = 0;
-            this.allPlayers = this.allPlayers.map(player => {
-                const matchResult = this.findPlayerMatch(player, draftData);
-                if (matchResult) {
-                    matchedPlayers++;
-                    return {
-                        ...player,
-                        drafted: true,
-                        draftInfo: matchResult.match,
-                        matchReason: matchResult.reason
-                    };
-                }
-                return { ...player, drafted: false, draftInfo: null };
-            });
-            this.showSuccess(`${draftData.length} Picks geladen, ${matchedPlayers} Spieler gematcht.`);
-            this.sortPlayers();
-            this.applyFilters();
-            this.updateStats();
-        } catch (error) {
-            this.showError(`Fehler beim Laden der Draft-Daten: ${error.message}`);
-        } finally {
-            this.showLoading(false);
-        }
-    }
-
-    /**
-     * Sortiert die Spielerliste nach dem aktuell gewählten Sortierfeld und Richtung.
-     */
-    sortPlayers() {
-        this.allPlayers.sort((a, b) => {
-            let aVal = a[this.sortField];
-            let bVal = b[this.sortField];
-            if (['rank', 'upside', 'bust', 'matchup'].includes(this.sortField)) {
-                aVal = parseInt(aVal) || 999;
-                bVal = parseInt(bVal) || 999;
-            } else if (typeof aVal === 'string') {
-                aVal = aVal.toLowerCase();
-                bVal = bVal.toLowerCase();
-            }
-            return this.sortDirection === 'asc'
-                ? (aVal > bVal ? 1 : -1)
-                : (aVal < bVal ? 1 : -1);
-        });
-    }
-
-    /**
-     * Filtert die Spielerliste anhand der UI-Filter und Suchparameter.
-     * Unterstützt auch parametrisierte Suche (spalte:wert).
-     */
-    applyFilters() {
-        const positionFilter = document.getElementById('positionFilter').value;
-        const rankFilter = document.getElementById('rankFilter').value;
-        const draftedFilter = document.getElementById('draftedFilter').value;
-        const playerSearch = document.getElementById('playerSearch').value.trim().toLowerCase();
-
-        let columnSearch = null;
-        let columnValue = null;
-        const match = playerSearch.match(/^([a-z_]+):(.*)$/i);
-        if (match) {
-            columnSearch = match[1].toLowerCase();
-            columnValue = match[2].trim().toLowerCase();
-        }
-
-        this.filteredPlayers = this.allPlayers.filter(player => {
-            if (positionFilter && player.position !== positionFilter) return false;
-            if (rankFilter && player.rank > parseInt(rankFilter)) return false;
-            if (draftedFilter === 'available' && player.drafted) return false;
-            if (draftedFilter === 'drafted' && !player.drafted) return false;
-            if (columnSearch && player.hasOwnProperty(columnSearch)) {
-                return (player[columnSearch] || '').toString().toLowerCase().includes(columnValue);
-            }
-            if (playerSearch && !columnSearch) {
-                const values = Object.values(player).map(v => (v || '').toString().toLowerCase());
-                if (!values.some(val => val.includes(playerSearch))) return false;
-            }
-            return true;
-        });
-
-        this.renderTable();
-        this.updateStats();
-    }
-
-    /**
-     * Setzt alle Filter im UI zurück.
-     */
-    clearFilters() {
-        document.getElementById('positionFilter').value = '';
-        document.getElementById('rankFilter').value = '';
-        document.getElementById('draftedFilter').value = '';
-        this.applyFilters();
-    }
-
-    /**
-     * Rendert die aktuelle gefilterte Spielerliste als Tabelle im UI.
-     */
-    renderTable() {
+    renderTable(filteredPlayers, allPlayers) {
         const tbody = document.getElementById('playersTableBody');
         tbody.innerHTML = '';
 
-        if (this.filteredPlayers.length === 0) {
+        if (filteredPlayers.length === 0) {
             tbody.innerHTML = `
             <tr><td colspan="13" style="text-align: center; padding: 2rem;">
-                ${this.allPlayers.length === 0 ? 'Keine Spielerdaten geladen.' : 'Keine Spieler entsprechen den Filtern.'}
+                ${allPlayers.length === 0 ? 'Keine Spielerdaten geladen.' : 'Keine Spieler entsprechen den Filtern.'}
             </td></tr>
         `;
             return;
         }
 
-        this.filteredPlayers.forEach(player => {
+        filteredPlayers.forEach(player => {
             const row = document.createElement('tr');
             if (player.drafted) row.classList.add('drafted-row');
             let draftTooltip = '';
@@ -593,25 +323,12 @@ class FantasyDraftTracker {
         });
     }
 
-    /**
-    * Gibt ein einheitlich gestyltes "-" für leere Zellen zurück,
-    * sonst den Wert als kompakte Statistik.
-    * @param {string|number} value
-    * @returns {string}
-    */
-
     renderEmptyCell(value) {
         if (!value || value === '-' || value === '') {
             return '<span class="no-rating" title="Keine Bewertung">-</span>';
         }
     }
 
-    /**
-     * Rendert eine Sternebewertung für einen Wert (z.B. Upside, Bust, Matchup).
-     * @param {number} rating 
-     * @param {string} type 
-     * @returns {string}
-     */
     renderStarRating(rating, type = 'default') {
         const maxStars = 5;
         const filledStars = Math.max(0, Math.min(maxStars, parseInt(rating) || 0));
@@ -631,11 +348,6 @@ class FantasyDraftTracker {
         return filled + empty;
     }
 
-    /**
-     * Gibt die kompakte Bewertung (Punkte) als Symbolkette zurück.
-     * @param {number} rating 
-     * @returns {string}
-     */
     renderCompactRating(rating) {
         if (!rating || rating === 0) return '-';
         const filled = '●'.repeat(rating);
@@ -643,21 +355,11 @@ class FantasyDraftTracker {
         return filled + empty;
     }
 
-    /**
-     * Gibt Sterne für eine kompakte Anzeige zurück.
-     * @param {number} rating 
-     * @returns {string}
-     */
     renderCompactStars(rating) {
         if (!rating || rating === 0) return '-';
         return '★'.repeat(rating);
     }
 
-    /**
-     * Formatiert einen Statistikwert zur Anzeige.
-     * @param {string|number} value 
-     * @returns {string}
-     */
     formatStatValue(value) {
         if (!value || value === '-' || value === '') return this.renderEmptyCell();
         if (typeof value === 'string' && value.includes('%')) {
@@ -670,11 +372,6 @@ class FantasyDraftTracker {
         return value;
     }
 
-    /**
-     * Gibt einen Beschreibungstext für Upside-Sterne zurück.
-     * @param {number} rating 
-     * @returns {string}
-     */
     getUpsideTooltip(rating) {
         const descriptions = {
             0: 'Keine Upside-Bewertung',
@@ -687,11 +384,6 @@ class FantasyDraftTracker {
         return descriptions[rating] || 'Unbekannte Bewertung';
     }
 
-    /**
-     * Gibt einen Beschreibungstext für Bust-Sterne zurück.
-     * @param {number} rating 
-     * @returns {string}
-     */
     getBustTooltip(rating) {
         const descriptions = {
             0: 'Keine Bust-Bewertung',
@@ -704,11 +396,6 @@ class FantasyDraftTracker {
         return descriptions[rating] || 'Unbekannte Bewertung';
     }
 
-    /**
-     * Gibt einen Beschreibungstext für Matchup-Sterne zurück.
-     * @param {number} rating 
-     * @returns {string}
-     */
     getMatchupTooltip(rating) {
         const descriptions = {
             0: 'Keine Matchup-Bewertung',
@@ -721,21 +408,14 @@ class FantasyDraftTracker {
         return descriptions[rating] || 'Unbekannte Bewertung';
     }
 
-    /**
-     * Aktualisiert die Statistikanzeige im UI.
-     */
-    updateStats() {
-        const total = this.allPlayers.length;
-        const drafted = this.allPlayers.filter(p => p.drafted).length;
+    updateStats(allPlayers) {
+        const total = allPlayers.length;
+        const drafted = allPlayers.filter(p => p.drafted).length;
         document.getElementById('totalPlayers').textContent = total;
         document.getElementById('availablePlayers').textContent = total - drafted;
         document.getElementById('draftedPlayers').textContent = drafted;
     }
 
-    /**
-     * Zeigt/hide eine Ladeanzeige an.
-     * @param {boolean} show 
-     */
     showLoading(show) {
         const loadingElement = document.getElementById('loading');
         loadingElement.style.display = show ? 'block' : 'none';
@@ -797,27 +477,4 @@ class FantasyDraftTracker {
     }
 }
 
-/**
- * Sortiert die Tabelle nach dem gewählten Feld.
- * @param {string} field 
- */
-function sortTable(field) {
-    const tracker = window.draftTracker;
-    if (tracker.sortField === field) {
-        tracker.sortDirection = tracker.sortDirection === 'asc' ? 'desc' : 'asc';
-    } else {
-        tracker.sortField = field;
-        tracker.sortDirection = 'asc';
-    }
-    tracker.sortPlayers();
-    tracker.applyFilters();
-}
 
-// Initialisierung beim Laden des DOMs
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-        window.draftTracker = new FantasyDraftTracker();
-    });
-} else {
-    window.draftTracker = new FantasyDraftTracker();
-}
