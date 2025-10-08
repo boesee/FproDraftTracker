@@ -16,11 +16,6 @@ export class FantasyDraftTracker {
     initializeEventListeners() {
         const loadJsonBtn = document.getElementById('loadJsonData');
         const loadDraftBtn = document.getElementById('loadDraft');
-        const positionFilter = document.getElementById('positionFilter');
-        const rankFilter = document.getElementById('rankFilter');
-        const draftedFilter = document.getElementById('draftedFilter');
-        
-        const playerSearch = document.getElementById('playerSearch');
         const jsonFileInput = document.getElementById('jsonFileInput');
 
         if (loadJsonBtn) {
@@ -37,11 +32,6 @@ export class FantasyDraftTracker {
             });
         }
 
-        if (positionFilter) positionFilter.addEventListener('change', () => this.applyFilters());
-        if (rankFilter) rankFilter.addEventListener('input', () => this.applyFilters());
-        if (draftedFilter) draftedFilter.addEventListener('change', () => this.applyFilters());
-        
-        if (playerSearch) playerSearch.addEventListener('input', () => this.applyFilters());
         if (jsonFileInput) {
             jsonFileInput.addEventListener('change', (e) => this.handleJsonFile(e));
         }
@@ -92,7 +82,7 @@ export class FantasyDraftTracker {
             }));
             this.debugLog(`Loaded ${this.allPlayers.length} players`);
             this.sortPlayers();
-            this.applyFilters();
+            this.ui.applyFilters();
             if (this.ui) this.ui.updateStats(this.allPlayers);
             if (this.ui) this.ui.showSuccess(`${this.allPlayers.length} Spieler erfolgreich geladen.`);
         } catch (error) {
@@ -152,7 +142,7 @@ export class FantasyDraftTracker {
             });
             if (this.ui) this.ui.showSuccess(`${draftData.length} Picks geladen, ${matchedPlayers} Spieler gematcht.`);
             this.sortPlayers();
-            this.applyFilters();
+            this.ui.applyFilters();
             if (this.ui) this.ui.updateStats(this.allPlayers);
         } catch (error) {
             if (this.ui) this.ui.showError(`Fehler beim Laden der Draft-Daten: ${error.message}`);
@@ -178,38 +168,7 @@ export class FantasyDraftTracker {
         });
     }
 
-    applyFilters() {
-        const positionFilter = document.getElementById('positionFilter').value;
-        const rankFilter = document.getElementById('rankFilter').value;
-        const draftedFilter = document.getElementById('draftedFilter').value;
-        const playerSearch = document.getElementById('playerSearch').value.trim().toLowerCase();
-
-        let columnSearch = null;
-        let columnValue = null;
-        const match = playerSearch.match(/^([a-z_]+):(.*)$/i);
-        if (match) {
-            columnSearch = match[1].toLowerCase();
-            columnValue = match[2].trim().toLowerCase();
-        }
-
-        this.filteredPlayers = this.allPlayers.filter(player => {
-            if (positionFilter && ((positionFilter === "FLEX" && !["RB", "WR", "TE"].includes(player.position)) || (positionFilter !== "FLEX" && player.position !== positionFilter))) return false;
-            if (rankFilter && player.rank > parseInt(rankFilter)) return false;
-            if (draftedFilter === 'available' && player.drafted) return false;
-            if (draftedFilter === 'drafted' && !player.drafted) return false;
-            if (columnSearch && player.hasOwnProperty(columnSearch)) {
-                return (player[columnSearch] || '').toString().toLowerCase().includes(columnValue);
-            }
-            if (playerSearch && !columnSearch) {
-                const values = Object.values(player).map(v => (v || '').toString().toLowerCase());
-                if (!values.some(val => val.includes(playerSearch))) return false;
-            }
-            return true;
-        });
-
-        if (this.ui) this.ui.renderTable(this.filteredPlayers, this.allPlayers);
-        if (this.ui) this.ui.updateStats(this.allPlayers);
-    }
+    
 
     
 }
