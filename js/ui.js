@@ -5,8 +5,12 @@ export class DraftUI {
     }
 
     initUI() {
-        
+
         clearFilters.addEventListener('click', () => this.clearFilters());
+        document.getElementById('positionFilter').addEventListener('change', () => this.applyFilters());
+        document.getElementById('rankFilter').addEventListener('input', () => this.applyFilters());
+        document.getElementById('draftedFilter').addEventListener('change', () => this.applyFilters());
+        document.getElementById('playerSearch').addEventListener('input', () => this.applyFilters());
     }
 
     showJsonImport() {
@@ -483,7 +487,7 @@ export class DraftUI {
         document.getElementById('playerSearch').value = '';
         // Nach dem Zurücksetzen: Tracker-Filter aktualisieren
         const filters = this.getFiltersFromUI();
-        this.tracker.applyFilters(filters);
+        this.applyFilters(filters);
     }
 
     getFiltersFromUI() {
@@ -493,6 +497,42 @@ export class DraftUI {
             draftedFilter: document.getElementById('draftedFilter').value,
             playerSearch: document.getElementById('playerSearch').value.trim().toLowerCase()
         };
+    }
+
+    applyFilters() {
+        // Filterwerte aus dem UI holen
+        const filters = this.getFiltersFromUI();
+
+        let columnSearch = null;
+        let columnValue = null;
+        const match = filters.playerSearch.match(/^([a-z_]+):(.*)$/i);
+        if (match) {
+            columnSearch = match[1].toLowerCase();
+            columnValue = match[2].trim().toLowerCase();
+        }
+
+        // Filterlogik auf die Tracker-Daten anwenden
+        this.tracker.filteredPlayers = this.tracker.allPlayers.filter(player => {
+            if (filters.positionFilter && (
+                (filters.positionFilter === "FLEX" && !["RB", "WR", "TE"].includes(player.position)) ||
+                (filters.positionFilter !== "FLEX" && player.position !== filters.positionFilter)
+            )) return false;
+            if (filters.rankFilter && player.rank > parseInt(filters.rankFilter)) return false;
+            if (filters.draftedFilter === 'available' && player.drafted) return false;
+            if (filters.draftedFilter === 'drafted' && !player.drafted) return false;
+            if (columnSearch && player.hasOwnProperty(columnSearch)) {
+                return (player[columnSearch] || '').toString().toLowerCase().includes(columnValue);
+            }
+            if (filters.playerSearch && !columnSearch) {
+                const values = Object.values(player).map(v => (v || '').toString().toLowerCase());
+                if (!values.some(val => val.includes(filters.playerSearch))) return false;
+            }
+            return true;
+        });
+
+        // Tabelle und Stats updaten
+        this.renderTable(this.tracker.filteredPlayers, this.tracker.allPlayers);
+        this.updateStats(this.tracker.allPlayers);
     }
 }
 
