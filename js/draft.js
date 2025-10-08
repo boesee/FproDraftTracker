@@ -19,7 +19,7 @@ export class FantasyDraftTracker {
         const positionFilter = document.getElementById('positionFilter');
         const rankFilter = document.getElementById('rankFilter');
         const draftedFilter = document.getElementById('draftedFilter');
-        const clearFilters = document.getElementById('clearFilters');
+        
         const playerSearch = document.getElementById('playerSearch');
         const jsonFileInput = document.getElementById('jsonFileInput');
 
@@ -40,7 +40,7 @@ export class FantasyDraftTracker {
         if (positionFilter) positionFilter.addEventListener('change', () => this.applyFilters());
         if (rankFilter) rankFilter.addEventListener('input', () => this.applyFilters());
         if (draftedFilter) draftedFilter.addEventListener('change', () => this.applyFilters());
-        if (clearFilters) clearFilters.addEventListener('click', () => this.clearFilters());
+        
         if (playerSearch) playerSearch.addEventListener('input', () => this.applyFilters());
         if (jsonFileInput) {
             jsonFileInput.addEventListener('change', (e) => this.handleJsonFile(e));
@@ -211,11 +211,5 @@ export class FantasyDraftTracker {
         if (this.ui) this.ui.updateStats(this.allPlayers);
     }
 
-    clearFilters() {
-        document.getElementById('positionFilter').value = '';
-        document.getElementById('rankFilter').value = '';
-        document.getElementById('draftedFilter').value = '';
-        document.getElementById('playerSearch').value = '';
-        this.applyFilters();
-    }
+    
 }
