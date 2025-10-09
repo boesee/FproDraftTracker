@@ -12,6 +12,20 @@
 </head>
 
 <body>
+
+    
+
+    <div id="loading">
+        <p>Daten werden geladen...</p>
+    </div>
+
+    <div id="success">
+        <p id="successMessage"></p>
+    </div>
+    <div id="error"></div>
+    <p id="errorMessage"></p>
+    </div>
+
     <main class="container-fluid">
         <header>
             <hgroup>
@@ -19,25 +33,43 @@
                 <p>Verwalten Sie Ihren Fantasy-Football-Draft mit Daten von FantasyPros und Sleeper API-Integration.</p>
             </hgroup>
 
-            <div class="grid">
-                <div>
-                    <label for="draftId">Draft ID:</label>
-                    <input type="text" id="draftId" value="1265036530947203072" >
-                    <small>Die Draft ID finden Sie auf sleeper.app</small>
-                </div>
-            </div>
+            <section class="input-card">
+                <label for="draftId"><strong>Draft ID:</strong></label>
+                <input type="text" id="draftId" value="1265036530947203072" placeholder="Draft-ID eingeben"
+                    autocomplete="off" />
+                <small class="hint">Die Draft ID finden Sie auf sleeper.app</small>
 
-            <div class="grid">
-                <button id="loadJsonBtn" class="secondary">📊 JSON manuell hochladen</button>
+                <button id="loadJsonBtn" class="primary">
+                    📄 JSON manuell hochladen
+                </button>
                 <input type="file" id="jsonFileUpload" accept=".json" style="display:none;">
-                <button id="loadDraft">🏈 Draft-Daten laden</button>
-            </div>
-
-            <input type="file" id="jsonFileInput" accept=".json" style="display: none;">
+                <button id="loadDraft" class="secondary">
+                    🏈 Draft-Daten laden
+                </button>
+            </section>
         </header>
 
-        <section>
-            <h2>Filter</h2>
+        <details id="filterSection" open>
+            <summary>🔍 Filter anzeigen/ausblenden</summary>
+
+            <!-- Statistik-Badges kompakt und inline -->
+            <div class="filter-stats-inline" id="stats">
+                <span class="stat-badge total">
+                    <span id="totalPlayers">0</span>
+                    <small>Spieler</small>
+                </span>
+                <span class="stat-badge available">
+                    <span id="availablePlayers" class="text-success">0</span>
+                    <small>Verfügbar</small>
+                </span>
+                <span class="stat-badge drafted">
+                    <span id="draftedPlayers" class="text-danger">0</span>
+                    <small>Gedraftet</small>
+                </span>
+            </div>
+
+            <!-- Deine Filter -->
+
             <div class="grid">
                 <div>
                     <label for="positionFilter">Position:</label>
@@ -69,35 +101,7 @@
                 </div>
             </div>
             <button id="clearFilters" class="secondary outline">Filter zurücksetzen</button>
-        </section>
-
-        <section>
-            <div class="grid" id="stats">
-                <article class="text-center">
-                    <h3 id="totalPlayers">0</h3>
-                    <p>Gesamtanzahl Spieler</p>
-                </article>
-                <article class="text-center">
-                    <h3 id="availablePlayers" class="text-success">0</h3>
-                    <p>Verfügbar</p>
-                </article>
-                <article class="text-center">
-                    <h3 id="draftedPlayers" class="text-danger">0</h3>
-                    <p>Gedraftet</p>
-                </article>
-            </div>
-        </section>
-
-        <div id="loading" style="display: none;">
-            <p>Daten werden geladen...</p>
-        </div>
-
-        <div id="success" style="display: none;">
-            <p id="successMessage"></p>
-        </div>
-        <div id="error" style="display: none;">
-            <p id="errorMessage"></p>
-        </div>
+        </details>
 
         <section id="playersTableSection">
             <div class="table-container">
@@ -109,7 +113,7 @@
         </section>
     </main>
 
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/main.js" defer></script>
 </body>
 
 </html>
