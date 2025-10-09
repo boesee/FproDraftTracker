@@ -7,7 +7,7 @@ export class FantasyDraftTracker {
         this.draftedPlayers = [];
         this.sortField = 'rank';
         this.sortDirection = 'asc';
-        this.debugMode = true;    
+        this.debugMode = true;
 
         // Die DraftUI-Instanz muss später von außen zugewiesen werden!
         this.ui = null;
@@ -143,13 +143,15 @@ export class FantasyDraftTracker {
         });
     }
 
-    async loadAndProcessEcrData() {
+    async loadDefaultEcrData() {
+
+        
+
         try {
             const response = await fetch('data/ecrData.json');
             if (!response.ok) throw new Error('Fehler beim Laden der ecrData.json');
             const rawData = await response.json();
 
-            // Beispiel-Mapping: Passe die Namen entsprechend deiner JSON an!
             const mappedPlayers = (Array.isArray(rawData) ? rawData : rawData.players).map(p => ({
                 rank: p.rank_ecr ?? '',
                 player_name: p.player_name ?? '',
@@ -159,22 +161,12 @@ export class FantasyDraftTracker {
                 matchup: p.star_rating ?? 0
             }));
 
+            this.ecrData = mappedPlayers;
             this.processJsonData(JSON.stringify(mappedPlayers));
+            if (this.ui) this.ui.applyFilters();
             if (this.ui) this.ui.showSuccess(`${mappedPlayers.length} ECR-Spieler erfolgreich geladen.`);
         } catch (error) {
             if (this.ui) this.ui.showError("Fehler beim Laden der ECR-Daten: " + error.message);
         }
-    }
-
-    loadDefaultEcrData() {
-        fetch('data/ecrData.json')
-            .then(response => response.json())
-            .then(data => {
-                this.ecrData = data;
-                this.initUI(); // Jetzt die UI initialisieren!
-            })
-            .catch(error => {
-                console.error('Fehler beim Laden von data/ecrData.json:', error);
-            });
     }
 }

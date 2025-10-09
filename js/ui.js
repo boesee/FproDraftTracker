@@ -26,8 +26,8 @@ export class DraftUI {
                     const reader = new FileReader();
                     reader.onload = (event) => {
                         try {
-                            this.ecrData = JSON.parse(event.target.result);
-                            this.renderTable(); // oder was immer du nach neuen Daten tun willst
+                            this.tracker.processJsonData(event.target.result);
+                            this.applyFilters();
                         } catch (err) {
                             alert('Ungültiges JSON!');
                         }
@@ -62,7 +62,7 @@ export class DraftUI {
             return;
         }
 
-        console.log('Rendering table with players:', allPlayers);
+
 
         // Spalten dynamisch bestimmen
         const columns = this.getActiveColumns(allPlayers);
@@ -136,7 +136,6 @@ export class DraftUI {
             tbody.appendChild(row);
         });
 
-        console.log(this.renderStarRating(3.8));
     }
 
     renderEmptyCell(value) {
@@ -169,8 +168,8 @@ export class DraftUI {
         const emptyStars = maxStars - fullStars - hasHalfStar;
 
         const filledStar = '<i class="fa-solid fa-star"></i>';
-        const halfStar   = '<i class="fa-solid fa-star-half-stroke"></i>';
-        const emptyStar  = '<i class="fa-regular fa-star"></i>';
+        const halfStar = '<i class="fa-solid fa-star-half-stroke"></i>';
+        const emptyStar = '<i class="fa-regular fa-star"></i>';
 
         if (rounded === 0) return this.renderEmptyCell();
         let html = '';
@@ -254,48 +253,34 @@ export class DraftUI {
 
     showLoading(show) {
         const loadingElement = document.getElementById('loading');
-        loadingElement.style.display = show ? 'block' : 'none';
-        if (show) loadingElement.setAttribute('aria-busy', 'true');
-        else loadingElement.removeAttribute('aria-busy');
+        if (show) {
+            loadingElement.classList.add('show-message');
+            loadingElement.setAttribute('aria-busy', 'true');
+        } else {
+            loadingElement.classList.remove('show-message');
+            loadingElement.removeAttribute('aria-busy');
+        }
     }
 
-    /**
-     * Zeigt eine Fehlermeldung im UI an.
-     * @param {string} message 
-     */
     showError(message) {
         this.hideSuccess();
         const errorElement = document.getElementById('error');
-        errorElement.style.display = 'block';
         document.getElementById('errorMessage').textContent = message;
+        errorElement.classList.add('show-message');
         setTimeout(() => this.hideError(), 5000);
     }
-
-    /**
-     * Blendet die Fehlermeldung aus.
-     */
     hideError() {
-        document.getElementById('error').style.display = 'none';
+        document.getElementById('error').classList.remove('show-message');
     }
-
-    /**
-     * Zeigt eine Erfolgsmeldung im UI an.
-     * @param {string} message 
-     */
     showSuccess(message) {
         this.hideError();
         const successElement = document.getElementById('success');
-        successElement.style.display = 'block';
         document.getElementById('successMessage').textContent = message;
+        successElement.classList.add('show-message');
         setTimeout(() => this.hideSuccess(), 3000);
     }
-
-    /**
-     * Blendet die Erfolgsmeldung aus.
-     */
     hideSuccess() {
-        const successElement = document.getElementById('success');
-        if (successElement) successElement.style.display = 'none';
+        document.getElementById('success').classList.remove('show-message');
     }
 
     clearFilters() {
