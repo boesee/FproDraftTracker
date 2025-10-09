@@ -1,11 +1,13 @@
 export class FantasyDraftTracker {
     constructor() {
+        this.ecrData = null;
+        this.loadDefaultEcrData();
         this.allPlayers = [];
         this.filteredPlayers = [];
         this.draftedPlayers = [];
         this.sortField = 'rank';
         this.sortDirection = 'asc';
-        this.debugMode = true;
+        this.debugMode = true;    
 
         // Die DraftUI-Instanz muss später von außen zugewiesen werden!
         this.ui = null;
@@ -162,5 +164,17 @@ export class FantasyDraftTracker {
         } catch (error) {
             if (this.ui) this.ui.showError("Fehler beim Laden der ECR-Daten: " + error.message);
         }
+    }
+
+    loadDefaultEcrData() {
+        fetch('data/ecrData.json')
+            .then(response => response.json())
+            .then(data => {
+                this.ecrData = data;
+                this.initUI(); // Jetzt die UI initialisieren!
+            })
+            .catch(error => {
+                console.error('Fehler beim Laden von data/ecrData.json:', error);
+            });
     }
 }

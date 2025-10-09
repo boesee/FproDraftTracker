@@ -11,11 +11,29 @@ export class DraftUI {
         document.getElementById('draftedFilter').addEventListener('change', () => this.applyFilters());
         document.getElementById('playerSearch').addEventListener('input', () => this.applyFilters());
 
-        const loadJsonBtn = document.getElementById('loadJsonData');
-        if (loadJsonBtn) {
-            loadJsonBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                this.showJsonImport();
+        // Im initUI oder Setup
+        const loadJsonBtn = document.getElementById('loadJsonBtn');
+        const jsonFileUpload = document.getElementById('jsonFileUpload');
+
+        if (loadJsonBtn && jsonFileUpload) {
+            loadJsonBtn.addEventListener('click', () => {
+                jsonFileUpload.click();
+            });
+
+            jsonFileUpload.addEventListener('change', (e) => {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                        try {
+                            this.ecrData = JSON.parse(event.target.result);
+                            this.renderTable(); // oder was immer du nach neuen Daten tun willst
+                        } catch (err) {
+                            alert('Ungültiges JSON!');
+                        }
+                    };
+                    reader.readAsText(file);
+                }
             });
         }
 
@@ -29,321 +47,6 @@ export class DraftUI {
             });
         }
 
-        // JSON File Input
-        const jsonFileInput = document.getElementById('jsonFileInput');
-        if (jsonFileInput) {
-            jsonFileInput.addEventListener('change', (e) => this.handleJsonFile(e));
-        }
-
-        // ECR Daten lokal laden (neu!)
-        const loadEcrBtn = document.getElementById('loadEcrData');
-        if (loadEcrBtn) {
-            loadEcrBtn.addEventListener('click', () => this.tracker.loadAndProcessEcrData());
-        }
-    }
-
-    showJsonImport() {
-        try {
-            const existingModal = document.querySelector('.json-import-modal');
-            if (existingModal) existingModal.remove();
-
-            const modal = document.createElement('div');
-            modal.className = 'json-import-modal';
-            modal.style.cssText = `
-                position: fixed;
-                top: 0; left: 0; width: 100%; height: 100%;
-                background: rgba(0, 0, 0, 0.6);
-                display: flex; justify-content: center; align-items: center;
-                z-index: 10000; backdrop-filter: blur(3px);
-            `;
-
-            const content = document.createElement('div');
-            content.style.cssText = `
-                background: white; padding: 2rem; border-radius: 12px;
-                max-width: 700px; max-height: 90vh; overflow-y: auto;
-                position: relative; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); margin: 1rem;
-            `;
-
-            content.innerHTML = `
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-    <h3 style="margin: 0; color: #333;">📊 Spielerdaten Importieren</h3>
-    <button id="closeModalBtn"
-        style="background: none; border: none; font-size: 24px; cursor: pointer; color: #666; padding: 0; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;">×</button>
-</div>
-
-<div style="margin: 1.5rem 0;">
-                <h4 style="color: #28a745; margin-bottom: 1rem;">🌐 Empfohlen: FPro Scraper</h4>
-                <p style="margin-bottom: 1rem;">Importieren Sie die ECR-Daten direkt aus der lokalen JSON-Datei:</p>
-                <button id="loadEcrData" class="modal-button modal-button--primary"><span style="margin-right:8px;">🤖</span>ECR Data laden</button>
-            </div>
-
-
-<div style="margin: 1.5rem 0;">
-    <h4 style="color: #28a745; margin-bottom: 1rem;">🔧 Alternative 1: Browser Extension</h4>
-    <p style="margin-bottom: 1rem;">Installieren Sie die FantasyPros Extension für automatische Extraktion:</p>
-    <button id="downloadExtension" class="modal-button"><span style="margin-right:8px;">📥</span>Extension Anleitung</button>
-    <small style="display: block; margin-top: 8px; color: #666;">
-        Nach Installation: Gehen Sie zu FantasyPros → Extension Icon klicken → "Extract Data"
-    </small>
-</div>
-
-
-<hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;">
-<div style="margin: 1.5rem 0;">
-    <label for="jsonFileUpload" class="modal-button" style="display: inline-block;"><span style="margin-right:8px;">📁</span>JSON Datei Hochladen</label>
-<input type="file" id="jsonFileUpload" accept=".json" style="display:none;">
-    <small style="display: block; margin-top: 8px; color: #666;">Laden Sie eine JSON-Datei mit Spielerdaten hoch</small>
-</div>
-<hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;">
-<div style="margin: 1.5rem 0;">
-    <h4 style="color: #6f42c1; margin-bottom: 1rem;">📝 Alternative 3: JSON Text Einfügen</h4>
-    <textarea id="jsonTextInput" placeholder="JSON Daten hier einfügen..."
-        style="width: 100%; height: 200px; font-family: 'Courier New', monospace; font-size: 12px; border: 1px solid #ddd; border-radius: 6px; padding: 10px; resize: vertical;"></textarea>
-    <button id="processJsonText" class="modal-button">JSON Verarbeiten</button>
-</div>
-<hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;">
-<div style="margin: 1.5rem 0;">
-    <h4 style="color: #fd7e14; margin-bottom: 1rem;">🔖 Alternative 4: Browser Bookmark (Einfachste Lösung)</h4>
-    <p style="margin-bottom: 1rem;">Klicken Sie den Button zum Kopieren des erweiterten Bookmark-Codes:</p>
-    <button id="copyBookmarkBtn" class="modal-button"><span style="margin-right:8px;">📋</span>Bookmark Code Kopieren</button>
-    <div
-        style="font-size: 12px; color: #666; background: #f8f9fa; padding: 10px; border-radius: 4px; margin-top: 10px;">
-        <strong>✨ Erweiterte Funktionen:</strong><br>
-        • 📥 Automatischer Download der JSON-Datei<br>
-        • 📋 Kopiert JSON automatisch in Zwischenablage<br>
-        • ✅ Bestätigungsmeldung mit Spieleranzahl<br>
-        • 🔄 Funktioniert auf allen FantasyPros Ranking-Seiten
-    </div>
-    <div style="font-size: 12px; color: #666; margin-top: 10px;">
-        <strong>📖 Anleitung:</strong><br>
-        1. Button klicken → Code wird kopiert<br>
-        2. Neues Lesezeichen erstellen (Rechtsklick auf Lesezeichen-Leiste)<br>
-        3. Als URL den kopierten Code einfügen<br>
-        4. Auf FantasyPros-Seiten das Lesezeichen klicken
-    </div>
-</div>
-            `;
-            modal.appendChild(content);
-            document.body.appendChild(modal);
-
-            this.setupModalEventListeners(modal);
-        } catch (error) {
-            console.error('Fehler beim Erstellen des Import-Dialogs:', error);
-            alert('Fehler beim Öffnen des Import-Dialogs. Bitte Seite neu laden.');
-        }
-    }
-
-    setupModalEventListeners(modal) {
-        const closeBtn = modal.querySelector('#closeModalBtn');
-        if (closeBtn) {
-            closeBtn.addEventListener('click', () => {
-                if (document.body.contains(modal)) {
-                    document.body.removeChild(modal);
-                }
-            });
-        }
-        const copyBookmarkBtn = modal.querySelector('#copyBookmarkBtn');
-        if (copyBookmarkBtn) {
-            copyBookmarkBtn.addEventListener('click', async () => {
-                const bookmarkCode = `javascript: void (function () {
-    var p = [];
-    var isQB = window.location.href.toLowerCase().includes('/qb.php');
-    document.querySelectorAll('tr.player-row').forEach(function (r) {
-        try {
-            const c = r.querySelectorAll('td');
-            if (c.length < 3) return;
-
-            // Name & Team robust extrahieren
-            const nameEl = c[2].querySelector('.player-cell-name');
-            const teamEl = c[2].querySelector('.player-cell-team');
-            if (!nameEl) return;
-
-            const playerName = nameEl.textContent.trim();
-            const playerTeam = teamEl ? teamEl.textContent.replace(/[()]/g, '').trim() : '';
-
-            // Optional: zusammengesetzter Name, z.B. "J. Allen (BUF)"
-            const playerFullName = playerTeam ? playerName + ' (' + playerTeam + ')' : playerName;
-
-            // Position & Gegner
-            const position = isQB ? 'QB' : (c[3]?.textContent.trim().replace(/[^A-Z]/gi, '') || '');
-            const opponent = isQB ? (c[3]?.textContent.trim() || '') : (c[4]?.textContent.trim() || '');
-
-            // Upside, Bust, Matchup robust extrahieren
-            const upside = isQB
-                ? c[4]?.querySelectorAll('.mcu-rating-meter__segment.is-filled').length || 0
-                : c[5]?.querySelectorAll('.mcu-rating-meter__segment.is-filled').length || 0;
-            const bust = isQB
-                ? c[5]?.querySelectorAll('.mcu-rating-meter__segment.is-filled').length || 0
-                : c[6]?.querySelectorAll('.mcu-rating-meter__segment.is-filled').length || 0;
-            const matchup = isQB
-                ? c[6]?.querySelectorAll('.template-stars-star .fa-star.template-stars-star-filled').length || 0
-                : c[7]?.querySelectorAll('.template-stars-star .fa-star.template-stars-star-filled').length || 0;
-
-            // Stats
-            const startSit = isQB ? (c[7]?.textContent.trim() || '') : '';
-            const projFpts = isQB ? (c[8]?.textContent.trim() || '') : '';
-            const avgDiff = isQB ? (c[9]?.textContent.trim() || '') : (c[8]?.textContent.trim() || '');
-            const percentOver = isQB ? (c[10]?.textContent.trim() || '') : (c[9]?.textContent.trim() || '');
-            const opportunity = isQB ? (c[11]?.textContent.trim() || '') : (c[10]?.textContent.trim() || '');
-            const efficiency = isQB ? (c[12]?.textContent.trim() || '') : (c[11]?.textContent.trim() || '');
-
-            // Spielerobjekt pushen
-            p.push({
-                rank: parseInt(c[0]?.textContent.trim() || '0', 10),
-                player_name: playerFullName,
-                position,
-                team: playerTeam,
-                opponent,
-                upside,
-                bust,
-                matchup,
-                start_sit: startSit,
-                proj_fpts: projFpts,
-                avgDiff,
-                percentOver,
-                opportunity,
-                efficiency
-            });
-        } catch (e) { }
-    });
-    if (p.length === 0) {
-        alert('Keine Daten gefunden');
-        return;
-    }
-    var j = JSON.stringify(p, null, 2);
-    var b = new Blob([j], { type: 'application/json' });
-    var u = URL.createObjectURL(b);
-    var a = document.createElement('a');
-    a.href = u;
-    a.download = 'fantasypros-data.json';
-    a.click();
-    URL.revokeObjectURL(u);
-    if (navigator.clipboard) {
-        
-        navigator.clipboard.writeText(j).then(function () {
-            alert('✅ ' + p.length + ' Spieler - Download+Clipboard');
-        }).catch(function () {
-            alert('✅ ' + p.length + ' Spieler - Download');
-        });
-    } else {
-        alert('✅ ' + p.length + ' Spieler - Download');
-    }
-})()`;
-
-                try {
-                    await navigator.clipboard.writeText(bookmarkCode);
-                    copyBookmarkBtn.textContent = '✅ Bookmark Code kopiert!';
-                    copyBookmarkBtn.style.background = '#28a745';
-
-                    setTimeout(() => {
-                        copyBookmarkBtn.textContent = '📋 Bookmark Code Kopieren';
-                        copyBookmarkBtn.style.background = '#fd7e14';
-                    }, 2000);
-
-                } catch (error) {
-                    console.error('Clipboard error:', error);
-                    // Fallback: Show in text area
-                    const fallbackDiv = document.createElement('div');
-                    fallbackDiv.style.cssText = `
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background: white;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-                z-index: 10002;
-                max-width: 90%;
-                max-height: 90%;
-            `;
-
-                    fallbackDiv.innerHTML = `
-                <h4>📋 Bookmark Code (Zwischenablage nicht verfügbar)</h4>
-                <p>Kopieren Sie den folgenden Code und verwenden Sie ihn als Lesezeichen-URL:</p>
-                <textarea style="width: 100%; height: 100px; font-family: monospace; font-size: 12px;" readonly>${bookmarkCode}</textarea>
-                <br><br>
-                <button onclick="this.parentElement.remove()" style="background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Schließen</button>
-            `;
-
-                    document.body.appendChild(fallbackDiv);
-                }
-            });
-        }
-        const downloadExtBtn = modal.querySelector('#downloadExtension');
-        if (downloadExtBtn) {
-            downloadExtBtn.addEventListener('click', () => this.showExtensionInstructions());
-        }
-        const fileUpload = modal.querySelector('#jsonFileUpload');
-        if (fileUpload) {
-            fileUpload.addEventListener('change', (e) => {
-                this.handleJsonFile(e);
-                if (document.body.contains(modal)) {
-                    document.body.removeChild(modal);
-                }
-            });
-        }
-        const processBtn = modal.querySelector('#processJsonText');
-        if (processBtn) {
-            processBtn.addEventListener('click', () => {
-                const jsonText = modal.querySelector('#jsonTextInput').value;
-                if (jsonText.trim()) {
-                    this.tracker.processJsonData(jsonText);
-                    if (document.body.contains(modal)) {
-                        document.body.removeChild(modal);
-                    }
-                } else {
-                    alert('Bitte geben Sie JSON-Daten ein.');
-                }
-            });
-        }
-
-        const loadEcrBtn = modal.querySelector('#loadEcrData');
-        if (loadEcrBtn) {
-            loadEcrBtn.addEventListener('click', () => {
-                console.log('loadEcrBtn geklickt'); // Debug Log
-                this.tracker.loadAndProcessEcrData();
-                if (document.body.contains(modal)) {
-                    document.body.removeChild(modal);
-                }
-            });
-        }
-
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal && document.body.contains(modal)) {
-                document.body.removeChild(modal);
-            }
-        });
-        const handleEscape = (e) => {
-            if (e.key === 'Escape') {
-                if (document.body.contains(modal)) {
-                    document.body.removeChild(modal);
-                }
-                document.removeEventListener('keydown', handleEscape);
-            }
-        };
-        document.addEventListener('keydown', handleEscape);
-    }
-
-    showExtensionInstructions() {
-        alert(`Browser Extension Installation:
-
-1. Erstellen Sie einen Ordner "fantasypros-extension"
-
-2. Erstellen Sie darin diese Dateien:
-   - manifest.json
-   - content.js
-   - popup.html
-   - popup.js
-   Die Dateien können Sie von GitHub kopieren: https://github.com/boesee/FproDraftTracker/tree/main/fpro-extension
-
-3. Chrome: chrome://extensions/ → Entwicklermodus → "Entpackte Erweiterung laden"
-
-4. Firefox: about:debugging → "Temporäres Add-on laden"
-
-5. Gehen Sie zu einer FantasyPros Ranking-Seite und klicken Sie auf das Extension-Icon → "Extract Data"
-
-6. Die Daten werden automatisch heruntergeladen und in die Zwischenablage kopiert.`);
     }
 
     renderTable(filteredPlayers, allPlayers) {
