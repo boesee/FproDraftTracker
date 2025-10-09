@@ -1,5 +1,7 @@
 export class FantasyDraftTracker {
     constructor() {
+        this.ecrData = null;
+        this.loadDefaultEcrData();
         this.allPlayers = [];
         this.filteredPlayers = [];
         this.draftedPlayers = [];
@@ -141,13 +143,15 @@ export class FantasyDraftTracker {
         });
     }
 
-    async loadAndProcessEcrData() {
+    async loadDefaultEcrData() {
+
+        
+
         try {
             const response = await fetch('data/ecrData.json');
             if (!response.ok) throw new Error('Fehler beim Laden der ecrData.json');
             const rawData = await response.json();
 
-            // Beispiel-Mapping: Passe die Namen entsprechend deiner JSON an!
             const mappedPlayers = (Array.isArray(rawData) ? rawData : rawData.players).map(p => ({
                 rank: p.rank_ecr ?? '',
                 player_name: p.player_name ?? '',
@@ -157,7 +161,9 @@ export class FantasyDraftTracker {
                 matchup: p.star_rating ?? 0
             }));
 
+            this.ecrData = mappedPlayers;
             this.processJsonData(JSON.stringify(mappedPlayers));
+            if (this.ui) this.ui.applyFilters();
             if (this.ui) this.ui.showSuccess(`${mappedPlayers.length} ECR-Spieler erfolgreich geladen.`);
         } catch (error) {
             if (this.ui) this.ui.showError("Fehler beim Laden der ECR-Daten: " + error.message);
