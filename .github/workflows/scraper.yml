@@ -4,7 +4,7 @@ name: FantasyPros ECR Scraper
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6-23 * 9-12 2-4' # Every hour from 8 AM to 11 PM, September to December, Tuesday to Thursday
+    - cron: '0 6-23 * 9-12 2-4' # Every hour from 8 AM to 1 AM CET, September to December, Tuesday to Thursday
 
 jobs:
   scrape-and-commit:
