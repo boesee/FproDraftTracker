@@ -465,9 +465,9 @@ export class DraftUI {
         const hasHalfStar = (rounded - fullStars) === 0.5 ? 1 : 0;
         const emptyStars = maxStars - fullStars - hasHalfStar;
 
-        const filledStar = '<i class="fa-solid fa-star" style="color: #FFD700;"></i>';
-        const halfStar   = '<i class="fa-solid fa-star-half-stroke" style="color: #FFD700;"></i>';
-        const emptyStar  = '<i class="fa-regular fa-star" style="color: #FFD700;"></i>';
+        const filledStar = '<i class="fa-solid fa-star"></i>';
+        const halfStar   = '<i class="fa-solid fa-star-half-stroke"></i>';
+        const emptyStar  = '<i class="fa-regular fa-star"></i>';
 
         if (rounded === 0) return this.renderEmptyCell();
         let html = '';
