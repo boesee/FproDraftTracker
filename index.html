@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 </head>
 
 <body>
@@ -35,14 +36,14 @@
 
             <section class="input-card">
                 <label for="draftId"><strong>Draft ID:</strong></label>
-                <input type="text" id="draftId" value="1265036530947203072" placeholder="Draft-ID eingeben"
+                <input type="text" id="draftId" value="1265036625717501952" placeholder="Draft-ID eingeben"
                     autocomplete="off" />
                 <small class="hint">Die Draft ID finden Sie auf sleeper.app</small>
 
                 <button id="loadJsonBtn" class="primary">
                     📄 JSON manuell hochladen
                 </button>
-                <input type="file" id="jsonFileUpload" accept=".json" style="display:none;">
+                <input type="file" id="jsonFileUpload" accept=".json,.csv" style="display:none;">
                 <button id="loadDraft" class="secondary">
                     🏈 Draft-Daten laden
                 </button>
@@ -114,6 +115,7 @@
     </main>
 
     <script type="module" src="js/main.js" defer></script>
+    
 </body>
 
 </html>

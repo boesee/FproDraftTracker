@@ -108,7 +108,7 @@ export class FantasyDraftTracker {
                 }
                 return { ...player, drafted: false, draftInfo: null };
             });
-            this.ui?.showSuccess(`${draftData.length} Picks geladen, ${matchedPlayers} Spieler gematcht.`);
+            this.ui?.showSuccess(`${draftData.length} Picks geladen, ${matchedPlayers} Spieler gematched.`);
             this.sortPlayers();
             this.ui.applyFilters();
             this.ui?.updateStats(this.allPlayers);

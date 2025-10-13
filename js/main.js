@@ -14,6 +14,7 @@ function initializeApp() {
     window.draftTracker = tracker;
     window.draftUI = ui;
     ui.initUI();
+    ui.clearFilters();
     tracker.loadDefaultEcrData();   // <--- Hier wird ECR-Daten geladen!
 }
 
