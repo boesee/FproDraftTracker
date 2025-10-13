@@ -33,3 +33,38 @@ export function readJsonFile(file, logger, messages) {
         reader.readAsText(file);
     });
 }
+
+
+export function parseCsvFile(file) {
+    const csvToJsonMapping = {
+        "RK": "rank",
+        "PLAYER NAME": "player_name",
+        "TEAM": "team",
+        "POS": "position",
+        "OPP": "opponent",
+        // "UPSIDE ": "upside",
+        // "BUST ": "bust",
+        "MATCHUP ": "matchup",
+        "AVG. DIFF ": "avgDiff",
+        "% OVER ": "percentOver",
+        "OPPORTUNITY ": "opportunity",
+        "EFFICIENCY ": "efficiency"
+    };
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = function (event) {
+            const text = event.target.result;
+            const result = Papa.parse(text, { header: true, skipEmptyLines: true });
+            const jsonData = result.data.map(row => {
+                const obj = {};
+                for (const [csvKey, jsonKey] of Object.entries(csvToJsonMapping)) {
+                    obj[jsonKey] = row[csvKey];
+                }
+                return obj;
+            });
+            resolve(jsonData);
+        };
+        reader.onerror = reject;
+        reader.readAsText(file);
+    });
+}

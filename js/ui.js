@@ -1,4 +1,4 @@
-import { readJsonFile } from './fileUtils.js';
+import { readJsonFile, parseCsvFile } from './fileUtils.js';
 export class DraftUI {
 
 
@@ -27,23 +27,39 @@ export class DraftUI {
 
             jsonFileUpload.addEventListener('change', async (e) => {
                 const file = e.target.files[0];
+                if (!file) return;
+
+                const fileName = file.name.toLowerCase();
+                const isCSV = fileName.endsWith('.csv');
+                const isJSON = fileName.endsWith('.json');
+
                 try {
-                    const jsonData = await readJsonFile(file, this.logger, this.messages);
-                    const result = this.tracker.processJsonData(JSON.stringify(jsonData));
-                    if (result === true) {
+                    let jsonData;
+                    if (isJSON) {
+                        jsonData = await readJsonFile(file, this.logger, this.messages);
+                    } else if (isCSV) {
+                        jsonData = await parseCsvFile(file);
+                    } else {
+                        this.messages.showError('Nur JSON oder CSV Dateien sind erlaubt.');
+                        return;
+                    }
+
+                    const processResult = this.tracker.processJsonData(JSON.stringify(jsonData));
+                    if (processResult === true) {
                         const numPlayers = Array.isArray(jsonData)
                             ? jsonData.length
                             : Array.isArray(jsonData.players)
                                 ? jsonData.players.length
                                 : 0;
                         this.messages.showSuccess(`${numPlayers} Spieler erfolgreich geladen.`);
+                        this.clearFilters();
                     } else {
-                        this.messages.showError("Fehler beim Verarbeiten der JSON-Daten: " + result.message);
+                        this.messages.showError("Fehler beim Verarbeiten der Daten: " + processResult.message);
                     }
                     this.applyFilters();
                 } catch (err) {
                     this.messages.showError(`Fehler beim Verarbeiten der Datei: ${err.message}`);
-                    this.logger.error('Fehler beim Laden der JSON-Datei', err);
+                    this.logger.error('Fehler beim Laden der Datei', err);
                 }
             });
         }
