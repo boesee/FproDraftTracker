@@ -2,8 +2,10 @@
 node_modules/
 
 # Package lock files
+package.json
 package-lock.json
 yarn.lock
+pnpm-lock.yaml
 
 # Logfiles
 npm-debug.log*
@@ -13,9 +15,18 @@ yarn-error.log*
 # OS files
 .DS_Store
 Thumbs.db
+*.tgz
 
 # Optional: VS Code settings
 .vscode/
 
 # Optional: Env files
 .env
+
+# Jest Tests
+babel.config.js
+jest.config.js
+
+dist/
+build/
+coverage/

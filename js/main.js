@@ -1,20 +1,26 @@
-import { FantasyDraftTracker } from './draft.js';
-import { DraftUI } from './ui.js';
+import AppConfig from './config.js';
+import { Logger } from './logger.js';
+import {MessageHandler} from './messageHandler.js';
+import {FantasyDraftTracker} from './draft.js';
+import {DraftUI} from './ui.js';
 
-const tracker = new FantasyDraftTracker();
-const ui = new DraftUI(tracker);
+const logger = new Logger(AppConfig.debugMode);
+const messages = new MessageHandler({ logger });
+const tracker = new FantasyDraftTracker(AppConfig, logger);
+const ui = new DraftUI(tracker, messages, logger);
 tracker.ui = ui;
 
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-        window.draftTracker = tracker;
-        window.draftUI = ui;
-        ui.initUI();
-    });
-} else {
+function initializeApp() {
     window.draftTracker = tracker;
     window.draftUI = ui;
     ui.initUI();
+    tracker.loadDefaultEcrData();   // <--- Hier wird ECR-Daten geladen!
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeApp);
+} else {
+    initializeApp();
 }
 
 window.sortTable = function(field) {
