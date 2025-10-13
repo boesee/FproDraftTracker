@@ -1,25 +1,17 @@
 export class FantasyDraftTracker {
-    constructor() {
+    constructor(config = AppConfig, logger) {
+        this.debugMode = config.debugMode ?? false;
+        this.logger = logger;
         this.ecrData = null;
-        this.loadDefaultEcrData();
         this.allPlayers = [];
         this.filteredPlayers = [];
         this.draftedPlayers = [];
         this.sortField = 'rank';
         this.sortDirection = 'asc';
-        this.debugMode = true;
-
-        // Die DraftUI-Instanz muss später von außen zugewiesen werden!
-        this.ui = null;
-
-
+        
     }
 
-    debugLog(message, data = null) {
-        if (this.debugMode) {
-            console.log(`[DEBUG] ${message}`, data || '');
-        }
-    }
+    
 
     normalizePlayerName(name) {
         if (!name) return { first: '', last: '', fullName: '' };
@@ -47,14 +39,15 @@ export class FantasyDraftTracker {
                 ...player,
                 drafted: false
             }));
-            this.debugLog(`Loaded ${this.allPlayers.length} players`);
+            this.logger.debug(`Loaded ${this.allPlayers.length} players`);
             this.sortPlayers();
             this.ui.applyFilters();
-            if (this.ui) this.ui.updateStats(this.allPlayers);
-            if (this.ui) this.ui.showSuccess(`${this.allPlayers.length} Spieler erfolgreich geladen.`);
+            this.ui?.updateStats(this.allPlayers);
+            return true;
         } catch (error) {
-            console.error('Error parsing JSON:', error);
-            if (this.ui) this.ui.showError(`Fehler beim Verarbeiten der JSON-Daten: ${error.message}`);
+
+            this.logger.error('Error parsing JSON:', error);
+            return error;
         }
     }
 
@@ -82,22 +75,22 @@ export class FantasyDraftTracker {
 
     async loadDraftData(draftId) { // <--- draftId als Parameter!
         if (!draftId) {
-            if (this.ui) this.ui.showError('Bitte geben Sie eine gültige Draft ID ein.');
+            this.ui?.showError('Bitte geben Sie eine gültige Draft ID ein.');
             return;
         }
 
         if (this.allPlayers.length === 0) {
-            if (this.ui) this.ui.showError('Bitte laden Sie zuerst die Spielerdaten.');
+            this.ui?.showError('Bitte laden Sie zuerst die Spielerdaten.');
             return;
         }
-        if (this.ui) this.ui.showLoading(true);
+        this.ui?.showLoading(true);
         try {
             const response = await fetch(`https://api.sleeper.app/v1/draft/${draftId}/picks`);
             const draftData = await response.json();
 
             // Prüfe, ob die Daten wirklich ein Array sind!
             if (!Array.isArray(draftData)) {
-                if (this.ui) this.ui.showError('Fehler: Keine gültigen Draft-Daten erhalten. Überprüfe die Draft-ID!');
+                this.ui?.showError('Fehler: Keine gültigen Draft-Daten erhalten. Überprüfe die Draft-ID!');
                 return;
             }
 
@@ -115,14 +108,14 @@ export class FantasyDraftTracker {
                 }
                 return { ...player, drafted: false, draftInfo: null };
             });
-            if (this.ui) this.ui.showSuccess(`${draftData.length} Picks geladen, ${matchedPlayers} Spieler gematcht.`);
+            this.ui?.showSuccess(`${draftData.length} Picks geladen, ${matchedPlayers} Spieler gematcht.`);
             this.sortPlayers();
             this.ui.applyFilters();
-            if (this.ui) this.ui.updateStats(this.allPlayers);
+            this.ui?.updateStats(this.allPlayers);
         } catch (error) {
-            if (this.ui) this.ui.showError(`Fehler beim Laden der Draft-Daten: ${error.message}`);
+            this.ui?.showError(`Fehler beim Laden der Draft-Daten: ${error.message}`);
         } finally {
-            if (this.ui) this.ui.showLoading(false);
+            this.ui?.showLoading(false);
         }
     }
 
@@ -145,7 +138,7 @@ export class FantasyDraftTracker {
 
     async loadDefaultEcrData() {
 
-        
+
 
         try {
             const response = await fetch('data/ecrData.json');
@@ -162,11 +155,21 @@ export class FantasyDraftTracker {
             }));
 
             this.ecrData = mappedPlayers;
-            this.processJsonData(JSON.stringify(mappedPlayers));
-            if (this.ui) this.ui.applyFilters();
-            if (this.ui) this.ui.showSuccess(`${mappedPlayers.length} ECR-Spieler erfolgreich geladen.`);
+            const result = this.processJsonData(JSON.stringify(mappedPlayers));
+
+            if (result) {
+
+                if (this.ui) {
+                    this.ui.showSuccess(`${mappedPlayers.length} ECR-Spieler erfolgreich geladen.`);
+                }
+            } else {
+
+                if (this.ui) this.ui.showError("Fehler beim Verarbeiten der ECR-Daten: " + result.message);
+
+            }
+
         } catch (error) {
-            if (this.ui) this.ui.showError("Fehler beim Laden der ECR-Daten: " + error.message);
+            this.ui?.showError("Fehler beim Laden der ECR-Daten: " + error.message);
         }
     }
 }

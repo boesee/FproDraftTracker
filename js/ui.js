@@ -1,7 +1,12 @@
+import { readJsonFile } from './fileUtils.js';
 export class DraftUI {
-    constructor(tracker) {
+
+
+    constructor(tracker, messages, logger) {
         // tracker ist die Instanz von FantasyDraftTracker
         this.tracker = tracker;
+        this.messages = messages;
+        this.logger = logger;
     }
 
     initUI() {
@@ -20,19 +25,25 @@ export class DraftUI {
                 jsonFileUpload.click();
             });
 
-            jsonFileUpload.addEventListener('change', (e) => {
+            jsonFileUpload.addEventListener('change', async (e) => {
                 const file = e.target.files[0];
-                if (file) {
-                    const reader = new FileReader();
-                    reader.onload = (event) => {
-                        try {
-                            this.tracker.processJsonData(event.target.result);
-                            this.applyFilters();
-                        } catch (err) {
-                            alert('Ungültiges JSON!');
-                        }
-                    };
-                    reader.readAsText(file);
+                try {
+                    const jsonData = await readJsonFile(file, this.logger, this.messages);
+                    const result = this.tracker.processJsonData(JSON.stringify(jsonData));
+                    if (result === true) {
+                        const numPlayers = Array.isArray(jsonData)
+                            ? jsonData.length
+                            : Array.isArray(jsonData.players)
+                                ? jsonData.players.length
+                                : 0;
+                        this.messages.showSuccess(`${numPlayers} Spieler erfolgreich geladen.`);
+                    } else {
+                        this.messages.showError("Fehler beim Verarbeiten der JSON-Daten: " + result.message);
+                    }
+                    this.applyFilters();
+                } catch (err) {
+                    this.messages.showError(`Fehler beim Verarbeiten der Datei: ${err.message}`);
+                    this.logger.error('Fehler beim Laden der JSON-Datei', err);
                 }
             });
         }
@@ -251,36 +262,14 @@ export class DraftUI {
         document.getElementById('draftedPlayers').textContent = drafted;
     }
 
+    showError(msg, details = null) {
+        this.messages.showError(msg, details);
+    }
+    showSuccess(msg) {
+        this.messages.showSuccess(msg);
+    }
     showLoading(show) {
-        const loadingElement = document.getElementById('loading');
-        if (show) {
-            loadingElement.classList.add('show-message');
-            loadingElement.setAttribute('aria-busy', 'true');
-        } else {
-            loadingElement.classList.remove('show-message');
-            loadingElement.removeAttribute('aria-busy');
-        }
-    }
-
-    showError(message) {
-        this.hideSuccess();
-        const errorElement = document.getElementById('error');
-        document.getElementById('errorMessage').textContent = message;
-        errorElement.classList.add('show-message');
-        setTimeout(() => this.hideError(), 5000);
-    }
-    hideError() {
-        document.getElementById('error').classList.remove('show-message');
-    }
-    showSuccess(message) {
-        this.hideError();
-        const successElement = document.getElementById('success');
-        document.getElementById('successMessage').textContent = message;
-        successElement.classList.add('show-message');
-        setTimeout(() => this.hideSuccess(), 3000);
-    }
-    hideSuccess() {
-        document.getElementById('success').classList.remove('show-message');
+        this.messages.showLoading(show);
     }
 
     clearFilters() {
@@ -301,6 +290,17 @@ export class DraftUI {
             playerSearch: document.getElementById('playerSearch').value.trim().toLowerCase()
         };
     }
+
+    /**
+     * Wendet die aktuellen Filtereinstellungen aus dem UI auf die Spieler-Liste an.
+     * - Liest alle Filterwerte (Position, Rang, Draft-Status, Suchfeld) aus dem UI.
+     * - Unterstützt gezielte Spaltensuche per Syntax (z.B. "team:phi").
+     * - Filtert die Spieler nach Position, maximalem Rang, Draft-Status und Suchbegriff.
+     * - Aktualisiert die gefilterte Spieler-Liste im Tracker.
+     * - Rendert die gefilterte Tabelle und aktualisiert die Statistik-Badges.
+     * 
+     * Hinweis: Die Logik ist komplex, da verschiedene Filter-Kombinationen und Suchmodi unterstützt werden.
+     */
 
     applyFilters() {
         // Filterwerte aus dem UI holen
@@ -338,17 +338,6 @@ export class DraftUI {
         // Tabelle und Stats updaten
         this.renderTable(this.tracker.filteredPlayers, this.tracker.allPlayers);
         this.updateStats(this.tracker.allPlayers);
-    }
-
-    async handleJsonFile(event) {
-        const file = event.target.files[0];
-        if (!file) return;
-        try {
-            const text = await file.text();
-            this.tracker.processJsonData(text);
-        } catch (error) {
-            this.showError(`Fehler beim Lesen der Datei: ${error.message}`);
-        }
     }
 
     getActiveColumns(allPlayers) {
