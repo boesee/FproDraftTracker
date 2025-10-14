@@ -24,7 +24,7 @@
     "recommendation": null,
     "pos_rank": "QB1",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 4.92,
     "owned_perc": "99.3%"
   },
   {
@@ -52,7 +52,7 @@
     "recommendation": null,
     "pos_rank": "QB2",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 4.82,
     "owned_perc": "88.7%"
   },
   {
@@ -80,7 +80,7 @@
     "recommendation": null,
     "pos_rank": "QB3",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.73,
     "owned_perc": "87.6%"
   },
   {
@@ -108,7 +108,7 @@
     "recommendation": null,
     "pos_rank": "QB4",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.13,
     "owned_perc": "99.0%"
   },
   {
@@ -136,7 +136,7 @@
     "recommendation": null,
     "pos_rank": "QB5",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 1.93,
     "owned_perc": "99.7%"
   },
   {
@@ -164,7 +164,7 @@
     "recommendation": null,
     "pos_rank": "RB1",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.14,
     "owned_perc": "99.8%"
   },
   {
@@ -192,7 +192,7 @@
     "recommendation": null,
     "pos_rank": "WR1",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.71,
     "owned_perc": "99.7%"
   },
   {
@@ -220,7 +220,7 @@
     "recommendation": null,
     "pos_rank": "QB6",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.23,
     "owned_perc": "97.2%"
   },
   {
@@ -248,7 +248,7 @@
     "recommendation": null,
     "pos_rank": "QB7",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.92,
     "owned_perc": "92.9%"
   },
   {
@@ -276,7 +276,7 @@
     "recommendation": null,
     "pos_rank": "WR2",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.62,
     "owned_perc": "99.5%"
   },
   {
@@ -304,7 +304,7 @@
     "recommendation": null,
     "pos_rank": "RB2",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.54,
     "owned_perc": "99.8%"
   },
   {
@@ -332,7 +332,7 @@
     "recommendation": null,
     "pos_rank": "QB8",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.92,
     "owned_perc": "86.3%"
   },
   {
@@ -360,7 +360,7 @@
     "recommendation": null,
     "pos_rank": "QB9",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 4.22,
     "owned_perc": "80.2%"
   },
   {
@@ -388,7 +388,7 @@
     "recommendation": null,
     "pos_rank": "QB10",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.43,
     "owned_perc": "79.5%"
   },
   {
@@ -416,7 +416,7 @@
     "recommendation": null,
     "pos_rank": "QB11",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.23,
     "owned_perc": "89.3%"
   },
   {
@@ -444,7 +444,7 @@
     "recommendation": null,
     "pos_rank": "QB12",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.62,
     "owned_perc": "82.6%"
   },
   {
@@ -472,7 +472,7 @@
     "recommendation": null,
     "pos_rank": "QB13",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.23,
     "owned_perc": "57.1%"
   },
   {
@@ -500,7 +500,7 @@
     "recommendation": null,
     "pos_rank": "RB3",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.54,
     "owned_perc": "99.8%"
   },
   {
@@ -528,7 +528,7 @@
     "recommendation": null,
     "pos_rank": "RB4",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.34,
     "owned_perc": "99.6%"
   },
   {
@@ -556,7 +556,7 @@
     "recommendation": null,
     "pos_rank": "WR3",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 1.84,
     "owned_perc": "99.8%"
   },
   {
@@ -584,7 +584,7 @@
     "recommendation": null,
     "pos_rank": "WR4",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "99.7%"
   },
   {
@@ -612,7 +612,7 @@
     "recommendation": null,
     "pos_rank": "WR5",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.26,
     "owned_perc": "95.4%"
   },
   {
@@ -640,7 +640,7 @@
     "recommendation": null,
     "pos_rank": "QB14",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.43,
     "owned_perc": "63.2%"
   },
   {
@@ -668,7 +668,7 @@
     "recommendation": null,
     "pos_rank": "RB5",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.04,
     "owned_perc": "99.7%"
   },
   {
@@ -696,7 +696,7 @@
     "recommendation": null,
     "pos_rank": "QB15",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.23,
     "owned_perc": "77.3%"
   },
   {
@@ -724,7 +724,7 @@
     "recommendation": null,
     "pos_rank": "RB6",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 1.93,
     "owned_perc": "99.7%"
   },
   {
@@ -752,7 +752,7 @@
     "recommendation": null,
     "pos_rank": "QB16",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 1.63,
     "owned_perc": "28.3%"
   },
   {
@@ -780,7 +780,7 @@
     "recommendation": null,
     "pos_rank": "QB17",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.13,
     "owned_perc": "37.4%"
   },
   {
@@ -808,7 +808,7 @@
     "recommendation": null,
     "pos_rank": "QB18",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.62,
     "owned_perc": "42.2%"
   },
   {
@@ -836,7 +836,7 @@
     "recommendation": null,
     "pos_rank": "QB19",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 1.83,
     "owned_perc": "76.5%"
   },
   {
@@ -864,7 +864,7 @@
     "recommendation": null,
     "pos_rank": "WR6",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.78,
     "owned_perc": "99.4%"
   },
   {
@@ -892,7 +892,7 @@
     "recommendation": null,
     "pos_rank": "WR7",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.46,
     "owned_perc": "93.1%"
   },
   {
@@ -920,7 +920,7 @@
     "recommendation": null,
     "pos_rank": "RB7",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.14,
     "owned_perc": "95.9%"
   },
   {
@@ -948,7 +948,7 @@
     "recommendation": null,
     "pos_rank": "QB20",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 4.52,
     "owned_perc": "19.3%"
   },
   {
@@ -976,7 +976,7 @@
     "recommendation": null,
     "pos_rank": "WR8",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "99.3%"
   },
   {
@@ -1004,7 +1004,7 @@
     "recommendation": null,
     "pos_rank": "QB21",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 4.32,
     "owned_perc": "6.2%"
   },
   {
@@ -1032,7 +1032,7 @@
     "recommendation": null,
     "pos_rank": "RB8",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.95,
     "owned_perc": "91.9%"
   },
   {
@@ -1060,7 +1060,7 @@
     "recommendation": null,
     "pos_rank": "RB9",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.24,
     "owned_perc": "99.8%"
   },
   {
@@ -1088,7 +1088,7 @@
     "recommendation": null,
     "pos_rank": "WR9",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.23,
     "owned_perc": "98.5%"
   },
   {
@@ -1116,7 +1116,7 @@
     "recommendation": null,
     "pos_rank": "WR10",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.59,
     "owned_perc": "97.1%"
   },
   {
@@ -1144,7 +1144,7 @@
     "recommendation": null,
     "pos_rank": "QB22",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.13,
     "owned_perc": "25.1%"
   },
   {
@@ -1172,7 +1172,7 @@
     "recommendation": null,
     "pos_rank": "WR11",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.91,
     "owned_perc": "88.2%"
   },
   {
@@ -1200,7 +1200,7 @@
     "recommendation": null,
     "pos_rank": "WR12",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.62,
     "owned_perc": "95.2%"
   },
   {
@@ -1228,7 +1228,7 @@
     "recommendation": null,
     "pos_rank": "QB23",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.33,
     "owned_perc": "21.2%"
   },
   {
@@ -1256,7 +1256,7 @@
     "recommendation": null,
     "pos_rank": "TE1",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.54,
     "owned_perc": "87.7%"
   },
   {
@@ -1284,7 +1284,7 @@
     "recommendation": null,
     "pos_rank": "RB10",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 4.25,
     "owned_perc": "94.8%"
   },
   {
@@ -1312,7 +1312,7 @@
     "recommendation": null,
     "pos_rank": "WR13",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.97,
     "owned_perc": "97.9%"
   },
   {
@@ -1340,7 +1340,7 @@
     "recommendation": null,
     "pos_rank": "RB11",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.04,
     "owned_perc": "99.6%"
   },
   {
@@ -1368,7 +1368,7 @@
     "recommendation": null,
     "pos_rank": "QB24",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 4.42,
     "owned_perc": "7.2%"
   },
   {
@@ -1396,7 +1396,7 @@
     "recommendation": null,
     "pos_rank": "RB12",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 4.05,
     "owned_perc": "87.4%"
   },
   {
@@ -1424,7 +1424,7 @@
     "recommendation": null,
     "pos_rank": "RB13",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.65,
     "owned_perc": "63.3%"
   },
   {
@@ -1452,7 +1452,7 @@
     "recommendation": null,
     "pos_rank": "RB14",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.84,
     "owned_perc": "76.9%"
   },
   {
@@ -1480,7 +1480,7 @@
     "recommendation": null,
     "pos_rank": "RB15",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.75,
     "owned_perc": "97.6%"
   },
   {
@@ -1508,7 +1508,7 @@
     "recommendation": null,
     "pos_rank": "QB25",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 1.73,
     "owned_perc": "27.3%"
   },
   {
@@ -1536,7 +1536,7 @@
     "recommendation": null,
     "pos_rank": "WR14",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.3,
     "owned_perc": "97.6%"
   },
   {
@@ -1564,7 +1564,7 @@
     "recommendation": null,
     "pos_rank": "WR15",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "91.1%"
   },
   {
@@ -1592,7 +1592,7 @@
     "recommendation": null,
     "pos_rank": "WR16",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.3,
     "owned_perc": "94.9%"
   },
   {
@@ -1620,7 +1620,7 @@
     "recommendation": null,
     "pos_rank": "WR17",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "90.4%"
   },
   {
@@ -1648,7 +1648,7 @@
     "recommendation": null,
     "pos_rank": "RB16",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.14,
     "owned_perc": "88.9%"
   },
   {
@@ -1676,7 +1676,7 @@
     "recommendation": null,
     "pos_rank": "TE2",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.04,
     "owned_perc": "99.7%"
   },
   {
@@ -1704,7 +1704,7 @@
     "recommendation": null,
     "pos_rank": "WR18",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "95.3%"
   },
   {
@@ -1732,7 +1732,7 @@
     "recommendation": null,
     "pos_rank": "WR19",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.91,
     "owned_perc": "95.7%"
   },
   {
@@ -1760,7 +1760,7 @@
     "recommendation": null,
     "pos_rank": "RB17",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.85,
     "owned_perc": "99.5%"
   },
   {
@@ -1788,7 +1788,7 @@
     "recommendation": null,
     "pos_rank": "TE3",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.95,
     "owned_perc": "96.5%"
   },
   {
@@ -1816,7 +1816,7 @@
     "recommendation": null,
     "pos_rank": "RB18",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 1.83,
     "owned_perc": "92.2%"
   },
   {
@@ -1844,7 +1844,7 @@
     "recommendation": null,
     "pos_rank": "WR20",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.59,
     "owned_perc": "97.1%"
   },
   {
@@ -1872,7 +1872,7 @@
     "recommendation": null,
     "pos_rank": "QB26",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.73,
     "owned_perc": "21.6%"
   },
   {
@@ -1900,7 +1900,7 @@
     "recommendation": null,
     "pos_rank": "WR21",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.33,
     "owned_perc": "84.6%"
   },
   {
@@ -1928,7 +1928,7 @@
     "recommendation": null,
     "pos_rank": "WR22",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.59,
     "owned_perc": "99.8%"
   },
   {
@@ -1956,7 +1956,7 @@
     "recommendation": null,
     "pos_rank": "WR23",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.59,
     "owned_perc": "88.6%"
   },
   {
@@ -1984,7 +1984,7 @@
     "recommendation": null,
     "pos_rank": "WR24",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "99.1%"
   },
   {
@@ -2012,7 +2012,7 @@
     "recommendation": null,
     "pos_rank": "RB19",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.95,
     "owned_perc": "88.9%"
   },
   {
@@ -2040,7 +2040,7 @@
     "recommendation": null,
     "pos_rank": "WR25",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "93.5%"
   },
   {
@@ -2068,7 +2068,7 @@
     "recommendation": null,
     "pos_rank": "RB20",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.24,
     "owned_perc": "34.5%"
   },
   {
@@ -2096,7 +2096,7 @@
     "recommendation": null,
     "pos_rank": "WR26",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "47.6%"
   },
   {
@@ -2124,7 +2124,7 @@
     "recommendation": null,
     "pos_rank": "RB21",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.24,
     "owned_perc": "92.6%"
   },
   {
@@ -2152,7 +2152,7 @@
     "recommendation": null,
     "pos_rank": "WR27",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 1.94,
     "owned_perc": "48.3%"
   },
   {
@@ -2180,7 +2180,7 @@
     "recommendation": null,
     "pos_rank": "WR28",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 1.84,
     "owned_perc": "84.6%"
   },
   {
@@ -2208,7 +2208,7 @@
     "recommendation": null,
     "pos_rank": "WR29",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "89.9%"
   },
   {
@@ -2236,7 +2236,7 @@
     "recommendation": null,
     "pos_rank": "WR30",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.23,
     "owned_perc": "99.8%"
   },
   {
@@ -2264,7 +2264,7 @@
     "recommendation": null,
     "pos_rank": "WR31",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.26,
     "owned_perc": "88.9%"
   },
   {
@@ -2292,7 +2292,7 @@
     "recommendation": null,
     "pos_rank": "TE4",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.14,
     "owned_perc": "90.2%"
   },
   {
@@ -2320,7 +2320,7 @@
     "recommendation": null,
     "pos_rank": "WR32",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.52,
     "owned_perc": "24.6%"
   },
   {
@@ -2348,7 +2348,7 @@
     "recommendation": null,
     "pos_rank": "RB22",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.44,
     "owned_perc": "97.4%"
   },
   {
@@ -2376,7 +2376,7 @@
     "recommendation": null,
     "pos_rank": "WR33",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.33,
     "owned_perc": "54.6%"
   },
   {
@@ -2404,7 +2404,7 @@
     "recommendation": null,
     "pos_rank": "RB23",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.85,
     "owned_perc": "96.8%"
   },
   {
@@ -2432,7 +2432,7 @@
     "recommendation": null,
     "pos_rank": "TE5",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 0.93,
     "owned_perc": "96.7%",
     "injury_status": "IR",
     "injury_tooltip": "IR:  "
@@ -2462,7 +2462,7 @@
     "recommendation": null,
     "pos_rank": "WR34",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.52,
     "owned_perc": "77.3%"
   },
   {
@@ -2490,7 +2490,7 @@
     "recommendation": null,
     "pos_rank": "WR35",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "96.6%"
   },
   {
@@ -2518,7 +2518,7 @@
     "recommendation": null,
     "pos_rank": "WR36",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.46,
     "owned_perc": "94.3%"
   },
   {
@@ -2546,7 +2546,7 @@
     "recommendation": null,
     "pos_rank": "QB27",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.23,
     "owned_perc": "8.7%"
   },
   {
@@ -2574,7 +2574,7 @@
     "recommendation": null,
     "pos_rank": "WR37",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "76.9%"
   },
   {
@@ -2602,7 +2602,7 @@
     "recommendation": null,
     "pos_rank": "TE6",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.04,
     "owned_perc": "78.5%"
   },
   {
@@ -2630,7 +2630,7 @@
     "recommendation": null,
     "pos_rank": "RB24",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.45,
     "owned_perc": "85.7%"
   },
   {
@@ -2658,7 +2658,7 @@
     "recommendation": null,
     "pos_rank": "WR38",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.71,
     "owned_perc": "89.4%"
   },
   {
@@ -2686,7 +2686,7 @@
     "recommendation": null,
     "pos_rank": "QB28",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 4.02,
     "owned_perc": "13.9%"
   },
   {
@@ -2714,7 +2714,7 @@
     "recommendation": null,
     "pos_rank": "WR39",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.62,
     "owned_perc": "78.6%"
   },
   {
@@ -2742,7 +2742,7 @@
     "recommendation": null,
     "pos_rank": "RB25",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.75,
     "owned_perc": "97.7%"
   },
   {
@@ -2770,7 +2770,7 @@
     "recommendation": null,
     "pos_rank": "WR40",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.36,
     "owned_perc": "7.2%"
   },
   {
@@ -2798,7 +2798,7 @@
     "recommendation": null,
     "pos_rank": "RB26",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.85,
     "owned_perc": "77.9%"
   },
   {
@@ -2826,7 +2826,7 @@
     "recommendation": null,
     "pos_rank": "WR41",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "53.9%"
   },
   {
@@ -2854,7 +2854,7 @@
     "recommendation": null,
     "pos_rank": "WR42",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "72.7%"
   },
   {
@@ -2882,7 +2882,7 @@
     "recommendation": null,
     "pos_rank": "QB29",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 1.83,
     "owned_perc": "9.8%"
   },
   {
@@ -2910,7 +2910,7 @@
     "recommendation": null,
     "pos_rank": "RB27",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.54,
     "owned_perc": "95.3%"
   },
   {
@@ -2938,7 +2938,7 @@
     "recommendation": null,
     "pos_rank": "RB28",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.34,
     "owned_perc": "8.8%"
   },
   {
@@ -2966,7 +2966,7 @@
     "recommendation": null,
     "pos_rank": "TE7",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.35,
     "owned_perc": "96.9%"
   },
   {
@@ -2994,7 +2994,7 @@
     "recommendation": null,
     "pos_rank": "WR43",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.78,
     "owned_perc": "32.9%"
   },
   {
@@ -3022,7 +3022,7 @@
     "recommendation": null,
     "pos_rank": "TE8",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.65,
     "owned_perc": "98.8%"
   },
   {
@@ -3050,7 +3050,7 @@
     "recommendation": null,
     "pos_rank": "WR44",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.78,
     "owned_perc": "33.5%"
   },
   {
@@ -3078,7 +3078,7 @@
     "recommendation": null,
     "pos_rank": "WR45",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.59,
     "owned_perc": "11.1%"
   },
   {
@@ -3106,7 +3106,7 @@
     "recommendation": null,
     "pos_rank": "TE9",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.35,
     "owned_perc": "77.9%"
   },
   {
@@ -3134,7 +3134,7 @@
     "recommendation": null,
     "pos_rank": "RB29",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.64,
     "owned_perc": "84.1%"
   },
   {
@@ -3162,7 +3162,7 @@
     "recommendation": null,
     "pos_rank": "WR46",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.36,
     "owned_perc": "97.5%"
   },
   {
@@ -3190,7 +3190,7 @@
     "recommendation": null,
     "pos_rank": "WR47",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.62,
     "owned_perc": "35.1%"
   },
   {
@@ -3218,7 +3218,7 @@
     "recommendation": null,
     "pos_rank": "WR48",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.59,
     "owned_perc": "66.3%"
   },
   {
@@ -3246,7 +3246,7 @@
     "recommendation": null,
     "pos_rank": "TE10",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.94,
     "owned_perc": "70.9%"
   },
   {
@@ -3274,7 +3274,7 @@
     "recommendation": null,
     "pos_rank": "RB30",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.34,
     "owned_perc": "91.6%"
   },
   {
@@ -3302,7 +3302,7 @@
     "recommendation": null,
     "pos_rank": "WR49",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.59,
     "owned_perc": "9.5%"
   },
   {
@@ -3330,7 +3330,7 @@
     "recommendation": null,
     "pos_rank": "WR50",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.91,
     "owned_perc": "41.4%"
   },
   {
@@ -3358,7 +3358,7 @@
     "recommendation": null,
     "pos_rank": "TE11",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.54,
     "owned_perc": "72.1%"
   },
   {
@@ -3386,7 +3386,7 @@
     "recommendation": null,
     "pos_rank": "WR51",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.91,
     "owned_perc": "13.1%"
   },
   {
@@ -3414,7 +3414,7 @@
     "recommendation": null,
     "pos_rank": "TE12",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.94,
     "owned_perc": "13.6%"
   },
   {
@@ -3442,7 +3442,7 @@
     "recommendation": null,
     "pos_rank": "TE13",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.55,
     "owned_perc": "64.5%"
   },
   {
@@ -3470,7 +3470,7 @@
     "recommendation": null,
     "pos_rank": "TE14",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 1.84,
     "owned_perc": "88.7%"
   },
   {
@@ -3498,7 +3498,7 @@
     "recommendation": null,
     "pos_rank": "WR52",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.97,
     "owned_perc": "87.1%"
   },
   {
@@ -3526,7 +3526,7 @@
     "recommendation": null,
     "pos_rank": "QB30",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.83,
     "owned_perc": "0.8%"
   },
   {
@@ -3554,7 +3554,7 @@
     "recommendation": null,
     "pos_rank": "WR53",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.59,
     "owned_perc": "82.8%"
   },
   {
@@ -3582,7 +3582,7 @@
     "recommendation": null,
     "pos_rank": "TE15",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.94,
     "owned_perc": "35.2%"
   },
   {
@@ -3610,7 +3610,7 @@
     "recommendation": null,
     "pos_rank": "WR54",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.62,
     "owned_perc": "35.4%"
   },
   {
@@ -3638,7 +3638,7 @@
     "recommendation": null,
     "pos_rank": "WR55",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.62,
     "owned_perc": "9.2%"
   },
   {
@@ -3666,7 +3666,7 @@
     "recommendation": null,
     "pos_rank": "TE16",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.24,
     "owned_perc": "67.3%"
   },
   {
@@ -3694,7 +3694,7 @@
     "recommendation": null,
     "pos_rank": "RB31",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.85,
     "owned_perc": "76.4%"
   },
   {
@@ -3722,7 +3722,7 @@
     "recommendation": null,
     "pos_rank": "TE17",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.94,
     "owned_perc": "6.0%"
   },
   {
@@ -3750,7 +3750,7 @@
     "recommendation": null,
     "pos_rank": "TE18",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 4.55,
     "owned_perc": "39.5%"
   },
   {
@@ -3778,7 +3778,7 @@
     "recommendation": null,
     "pos_rank": "RB32",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.64,
     "owned_perc": "60.3%"
   },
   {
@@ -3806,7 +3806,7 @@
     "recommendation": null,
     "pos_rank": "WR56",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.3,
     "owned_perc": "20.1%"
   },
   {
@@ -3834,7 +3834,7 @@
     "recommendation": null,
     "pos_rank": "TE19",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.45,
     "owned_perc": "2.8%"
   },
   {
@@ -3862,7 +3862,7 @@
     "recommendation": null,
     "pos_rank": "WR57",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.91,
     "owned_perc": "98.7%"
   },
   {
@@ -3890,7 +3890,7 @@
     "recommendation": null,
     "pos_rank": "RB33",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.85,
     "owned_perc": "89.5%"
   },
   {
@@ -3918,7 +3918,7 @@
     "recommendation": null,
     "pos_rank": "WR58",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "17.0%"
   },
   {
@@ -3946,7 +3946,7 @@
     "recommendation": null,
     "pos_rank": "RB34",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.65,
     "owned_perc": "94.3%"
   },
   {
@@ -3974,7 +3974,7 @@
     "recommendation": null,
     "pos_rank": "RB35",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.14,
     "owned_perc": "52.7%"
   },
   {
@@ -4002,7 +4002,7 @@
     "recommendation": null,
     "pos_rank": "WR59",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "6.8%"
   },
   {
@@ -4030,7 +4030,7 @@
     "recommendation": null,
     "pos_rank": "WR60",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.33,
     "owned_perc": "7.1%"
   },
   {
@@ -4058,7 +4058,7 @@
     "recommendation": null,
     "pos_rank": "TE20",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.45,
     "owned_perc": "19.8%"
   },
   {
@@ -4086,7 +4086,7 @@
     "recommendation": null,
     "pos_rank": "WR61",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.59,
     "owned_perc": "4.3%"
   },
   {
@@ -4114,7 +4114,7 @@
     "recommendation": null,
     "pos_rank": "RB36",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.64,
     "owned_perc": "66.7%"
   },
   {
@@ -4142,7 +4142,7 @@
     "recommendation": null,
     "pos_rank": "WR62",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.36,
     "owned_perc": "1.6%"
   },
   {
@@ -4170,7 +4170,7 @@
     "recommendation": null,
     "pos_rank": "WR63",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.97,
     "owned_perc": "3.8%"
   },
   {
@@ -4198,7 +4198,7 @@
     "recommendation": null,
     "pos_rank": "RB37",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.64,
     "owned_perc": "34.4%"
   },
   {
@@ -4226,7 +4226,7 @@
     "recommendation": null,
     "pos_rank": "WR64",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.26,
     "owned_perc": "14.4%"
   },
   {
@@ -4254,7 +4254,7 @@
     "recommendation": null,
     "pos_rank": "TE21",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.45,
     "owned_perc": "18.4%"
   },
   {
@@ -4282,7 +4282,7 @@
     "recommendation": null,
     "pos_rank": "TE22",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.44,
     "owned_perc": "20.9%"
   },
   {
@@ -4310,7 +4310,7 @@
     "recommendation": null,
     "pos_rank": "WR65",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "3.6%"
   },
   {
@@ -4338,7 +4338,7 @@
     "recommendation": null,
     "pos_rank": "RB38",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.95,
     "owned_perc": "77.5%"
   },
   {
@@ -4366,7 +4366,7 @@
     "recommendation": null,
     "pos_rank": "RB39",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.54,
     "owned_perc": "35.2%"
   },
   {
@@ -4394,7 +4394,7 @@
     "recommendation": null,
     "pos_rank": "WR66",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.71,
     "owned_perc": "97.0%"
   },
   {
@@ -4422,7 +4422,7 @@
     "recommendation": null,
     "pos_rank": "TE23",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.04,
     "owned_perc": "0.9%"
   },
   {
@@ -4450,7 +4450,7 @@
     "recommendation": null,
     "pos_rank": "RB40",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.24,
     "owned_perc": "34.9%"
   },
   {
@@ -4478,7 +4478,7 @@
     "recommendation": null,
     "pos_rank": "TE24",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.35,
     "owned_perc": "36.3%"
   },
   {
@@ -4506,7 +4506,7 @@
     "recommendation": null,
     "pos_rank": "RB41",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.34,
     "owned_perc": "34.3%"
   },
   {
@@ -4534,7 +4534,7 @@
     "recommendation": null,
     "pos_rank": "RB42",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.34,
     "owned_perc": "62.9%"
   },
   {
@@ -4562,7 +4562,7 @@
     "recommendation": null,
     "pos_rank": "WR67",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.91,
     "owned_perc": "5.6%"
   },
   {
@@ -4590,7 +4590,7 @@
     "recommendation": null,
     "pos_rank": "WR68",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.26,
     "owned_perc": "1.2%"
   },
   {
@@ -4618,7 +4618,7 @@
     "recommendation": null,
     "pos_rank": "RB43",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 1.83,
     "owned_perc": "38.2%"
   },
   {
@@ -4646,7 +4646,7 @@
     "recommendation": null,
     "pos_rank": "WR69",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.46,
     "owned_perc": "7.5%"
   },
   {
@@ -4674,7 +4674,7 @@
     "recommendation": null,
     "pos_rank": "TE25",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.45,
     "owned_perc": "1.4%"
   },
   {
@@ -4702,7 +4702,7 @@
     "recommendation": null,
     "pos_rank": "RB44",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.75,
     "owned_perc": "22.3%"
   },
   {
@@ -4730,7 +4730,7 @@
     "recommendation": null,
     "pos_rank": "RB45",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.14,
     "owned_perc": "21.1%"
   },
   {
@@ -4758,7 +4758,7 @@
     "recommendation": null,
     "pos_rank": "RB46",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.85,
     "owned_perc": "15.5%"
   },
   {
@@ -4786,7 +4786,7 @@
     "recommendation": null,
     "pos_rank": "RB47",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 4.25,
     "owned_perc": "51.3%"
   },
   {
@@ -4814,7 +4814,7 @@
     "recommendation": null,
     "pos_rank": "RB48",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.64,
     "owned_perc": "9.0%"
   },
   {
@@ -4842,7 +4842,7 @@
     "recommendation": null,
     "pos_rank": "WR70",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.71,
     "owned_perc": "3.8%"
   },
   {
@@ -4870,7 +4870,7 @@
     "recommendation": null,
     "pos_rank": "TE26",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.94,
     "owned_perc": "34.8%"
   },
   {
@@ -4898,7 +4898,7 @@
     "recommendation": null,
     "pos_rank": "RB49",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.75,
     "owned_perc": "6.3%"
   },
   {
@@ -4926,7 +4926,7 @@
     "recommendation": null,
     "pos_rank": "WR71",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.52,
     "owned_perc": "85.0%"
   },
   {
@@ -4954,7 +4954,7 @@
     "recommendation": null,
     "pos_rank": "RB50",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.84,
     "owned_perc": "7.1%"
   },
   {
@@ -4982,7 +4982,7 @@
     "recommendation": null,
     "pos_rank": "WR72",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.97,
     "owned_perc": "0.9%"
   },
   {
@@ -5010,7 +5010,7 @@
     "recommendation": null,
     "pos_rank": "WR73",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.52,
     "owned_perc": "2.8%"
   },
   {
@@ -5038,7 +5038,7 @@
     "recommendation": null,
     "pos_rank": "WR74",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.46,
     "owned_perc": "1.0%"
   },
   {
@@ -5066,7 +5066,7 @@
     "recommendation": null,
     "pos_rank": "TE27",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.35,
     "owned_perc": "0.9%"
   },
   {
@@ -5094,7 +5094,7 @@
     "recommendation": null,
     "pos_rank": "WR75",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.71,
     "owned_perc": "5.2%"
   },
   {
@@ -5122,7 +5122,7 @@
     "recommendation": null,
     "pos_rank": "RB51",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 4.05,
     "owned_perc": "1.8%"
   },
   {
@@ -5150,7 +5150,7 @@
     "recommendation": null,
     "pos_rank": "WR76",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.78,
     "owned_perc": "81.8%"
   },
   {
@@ -5178,7 +5178,7 @@
     "recommendation": null,
     "pos_rank": "WR77",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.36,
     "owned_perc": "95.4%"
   },
   {
@@ -5206,7 +5206,7 @@
     "recommendation": null,
     "pos_rank": "RB52",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 1.93,
     "owned_perc": "19.9%"
   },
   {
@@ -5234,7 +5234,7 @@
     "recommendation": null,
     "pos_rank": "RB53",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.14,
     "owned_perc": "50.8%"
   },
   {
@@ -5262,7 +5262,7 @@
     "recommendation": null,
     "pos_rank": "QB31",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.83,
     "owned_perc": "83.5%"
   },
   {
@@ -5290,7 +5290,7 @@
     "recommendation": null,
     "pos_rank": "RB54",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.84,
     "owned_perc": "98.7%"
   },
   {
@@ -5318,7 +5318,7 @@
     "recommendation": null,
     "pos_rank": "TE28",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.45,
     "owned_perc": "98.1%"
   },
   {
@@ -5346,7 +5346,7 @@
     "recommendation": null,
     "pos_rank": "QB32",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.43,
     "owned_perc": "28.6%"
   },
   {
@@ -5374,7 +5374,7 @@
     "recommendation": null,
     "pos_rank": "WR78",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.36,
     "owned_perc": "77.2%"
   },
   {
@@ -5402,7 +5402,7 @@
     "recommendation": null,
     "pos_rank": "WR79",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.91,
     "owned_perc": "1.5%"
   },
   {
@@ -5430,7 +5430,7 @@
     "recommendation": null,
     "pos_rank": "WR80",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.23,
     "owned_perc": "1.1%"
   },
   {
@@ -5458,7 +5458,7 @@
     "recommendation": null,
     "pos_rank": "QB33",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.43,
     "owned_perc": "3.6%"
   },
   {
@@ -5486,7 +5486,7 @@
     "recommendation": null,
     "pos_rank": "WR81",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.71,
     "owned_perc": "0.6%"
   },
   {
@@ -5514,7 +5514,7 @@
     "recommendation": null,
     "pos_rank": "RB55",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.95,
     "owned_perc": "26.9%"
   },
   {
@@ -5542,7 +5542,7 @@
     "recommendation": null,
     "pos_rank": "RB56",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.44,
     "owned_perc": "1.2%"
   },
   {
@@ -5570,7 +5570,7 @@
     "recommendation": null,
     "pos_rank": "RB57",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.24,
     "owned_perc": "7.2%"
   },
   {
@@ -5598,7 +5598,7 @@
     "recommendation": null,
     "pos_rank": "WR82",
     "sos_stars": "wr_stars",
-    "star_rating": 0
+    "star_rating": 4.36
   },
   {
     "player_id": 16399,
@@ -5625,7 +5625,7 @@
     "recommendation": null,
     "pos_rank": "TE29",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.94,
     "owned_perc": "87.8%"
   },
   {
@@ -5653,7 +5653,7 @@
     "recommendation": null,
     "pos_rank": "RB58",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.04,
     "owned_perc": "2.3%"
   },
   {
@@ -5681,7 +5681,7 @@
     "recommendation": null,
     "pos_rank": "RB59",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.95,
     "owned_perc": "16.2%"
   },
   {
@@ -5709,7 +5709,7 @@
     "recommendation": null,
     "pos_rank": "WR83",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.78,
     "owned_perc": "0.6%"
   },
   {
@@ -5737,7 +5737,7 @@
     "recommendation": null,
     "pos_rank": "RB60",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.45,
     "owned_perc": "2.1%"
   },
   {
@@ -5765,7 +5765,7 @@
     "recommendation": null,
     "pos_rank": "TE30",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.14,
     "owned_perc": "3.1%"
   },
   {
@@ -5793,7 +5793,7 @@
     "recommendation": null,
     "pos_rank": "TE31",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.75,
     "owned_perc": "2.6%"
   },
   {
@@ -5821,7 +5821,7 @@
     "recommendation": null,
     "pos_rank": "WR84",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "12.2%"
   },
   {
@@ -5849,7 +5849,7 @@
     "recommendation": null,
     "pos_rank": "RB61",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 4.25,
     "owned_perc": "2.5%"
   },
   {
@@ -5877,7 +5877,7 @@
     "recommendation": null,
     "pos_rank": "RB62",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.04,
     "owned_perc": "2.8%"
   },
   {
@@ -5905,7 +5905,7 @@
     "recommendation": null,
     "pos_rank": "TE32",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 4.25,
     "owned_perc": "1.8%"
   },
   {
@@ -5933,7 +5933,7 @@
     "recommendation": null,
     "pos_rank": "RB63",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.14,
     "owned_perc": "28.2%"
   },
   {
@@ -5961,7 +5961,7 @@
     "recommendation": null,
     "pos_rank": "TE33",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.25,
     "owned_perc": "26.2%"
   },
   {
@@ -5989,7 +5989,7 @@
     "recommendation": null,
     "pos_rank": "TE34",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 0.93,
     "owned_perc": "23.5%"
   },
   {
@@ -6017,7 +6017,7 @@
     "recommendation": null,
     "pos_rank": "TE35",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.25,
     "owned_perc": "5.4%"
   },
   {
@@ -6045,7 +6045,7 @@
     "recommendation": null,
     "pos_rank": "TE36",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.94,
     "owned_perc": "16.4%"
   },
   {
@@ -6073,7 +6073,7 @@
     "recommendation": null,
     "pos_rank": "WR85",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "13.0%"
   },
   {
@@ -6101,7 +6101,7 @@
     "recommendation": null,
     "pos_rank": "RB64",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.34,
     "owned_perc": "3.6%"
   },
   {
@@ -6129,7 +6129,7 @@
     "recommendation": null,
     "pos_rank": "WR86",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 1.94,
     "owned_perc": "1.2%"
   },
   {
@@ -6157,7 +6157,7 @@
     "recommendation": null,
     "pos_rank": "WR87",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.78,
     "owned_perc": "2.9%"
   },
   {
@@ -6185,7 +6185,7 @@
     "recommendation": null,
     "pos_rank": "WR88",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "2.3%"
   },
   {
@@ -6213,7 +6213,7 @@
     "recommendation": null,
     "pos_rank": "TE37",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.35,
     "owned_perc": "7.4%"
   },
   {
@@ -6241,7 +6241,7 @@
     "recommendation": null,
     "pos_rank": "WR89",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "0.9%"
   },
   {
@@ -6269,7 +6269,7 @@
     "recommendation": null,
     "pos_rank": "WR90",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 1.94,
     "owned_perc": "1.0%"
   },
   {
@@ -6297,7 +6297,7 @@
     "recommendation": null,
     "pos_rank": "TE38",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.35,
     "owned_perc": "1.4%"
   },
   {
@@ -6325,7 +6325,7 @@
     "recommendation": null,
     "pos_rank": "WR91",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.3,
     "owned_perc": "1.4%"
   },
   {
@@ -6353,7 +6353,7 @@
     "recommendation": null,
     "pos_rank": "WR92",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.62,
     "owned_perc": "2.1%"
   },
   {
@@ -6381,7 +6381,7 @@
     "recommendation": null,
     "pos_rank": "WR93",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 1.94,
     "owned_perc": "25.6%"
   },
   {
@@ -6409,7 +6409,7 @@
     "recommendation": null,
     "pos_rank": "WR94",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 1.84,
     "owned_perc": "2.1%"
   },
   {
@@ -6437,7 +6437,7 @@
     "recommendation": null,
     "pos_rank": "WR95",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "46.6%"
   },
   {
@@ -6465,7 +6465,7 @@
     "recommendation": null,
     "pos_rank": "WR96",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.78,
     "owned_perc": "1.4%"
   },
   {
@@ -6493,7 +6493,7 @@
     "recommendation": null,
     "pos_rank": "TE39",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.44,
     "owned_perc": "2.9%"
   },
   {
@@ -6521,7 +6521,7 @@
     "recommendation": null,
     "pos_rank": "WR97",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.3,
     "owned_perc": "8.2%",
     "injury_status": "Q",
     "injury_tooltip": "Questionable: Shoulder "
@@ -6551,7 +6551,7 @@
     "recommendation": null,
     "pos_rank": "WR98",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "1.2%"
   },
   {
@@ -6579,7 +6579,7 @@
     "recommendation": null,
     "pos_rank": "WR99",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "1.6%"
   },
   {
@@ -6607,7 +6607,7 @@
     "recommendation": null,
     "pos_rank": "WR100",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.91,
     "owned_perc": "0.7%"
   },
   {
@@ -6635,7 +6635,7 @@
     "recommendation": null,
     "pos_rank": "WR101",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.78,
     "owned_perc": "20.3%"
   },
   {
@@ -6663,7 +6663,7 @@
     "recommendation": null,
     "pos_rank": "WR102",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "0.7%"
   },
   {
@@ -6691,7 +6691,7 @@
     "recommendation": null,
     "pos_rank": "RB65",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.34,
     "owned_perc": "26.9%"
   },
   {
@@ -6719,7 +6719,7 @@
     "recommendation": null,
     "pos_rank": "TE40",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.04,
     "owned_perc": "0.6%"
   },
   {
@@ -6747,7 +6747,7 @@
     "recommendation": null,
     "pos_rank": "WR103",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.91,
     "owned_perc": "0.6%"
   },
   {
@@ -6775,7 +6775,7 @@
     "recommendation": null,
     "pos_rank": "WR104",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "5.6%"
   },
   {
@@ -6803,7 +6803,7 @@
     "recommendation": null,
     "pos_rank": "WR105",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.46,
     "owned_perc": "0.1%"
   },
   {
@@ -6831,7 +6831,7 @@
     "recommendation": null,
     "pos_rank": "TE41",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.35,
     "owned_perc": "0.6%"
   },
   {
@@ -6859,7 +6859,7 @@
     "recommendation": null,
     "pos_rank": "WR106",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.91,
     "owned_perc": "1.1%"
   },
   {
@@ -6887,7 +6887,7 @@
     "recommendation": null,
     "pos_rank": "WR107",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.71,
     "owned_perc": "0.8%"
   },
   {
@@ -6915,7 +6915,7 @@
     "recommendation": null,
     "pos_rank": "WR108",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.78,
     "owned_perc": "0.6%"
   },
   {
@@ -6943,7 +6943,7 @@
     "recommendation": null,
     "pos_rank": "WR109",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.59,
     "owned_perc": "6.2%"
   },
   {
@@ -6971,7 +6971,7 @@
     "recommendation": null,
     "pos_rank": "TE42",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.45,
     "owned_perc": "0.6%"
   },
   {
@@ -6999,7 +6999,7 @@
     "recommendation": null,
     "pos_rank": "WR110",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.59,
     "owned_perc": "0.7%"
   },
   {
@@ -7027,7 +7027,7 @@
     "recommendation": null,
     "pos_rank": "TE43",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.24,
     "owned_perc": "1.0%"
   },
   {
@@ -7055,7 +7055,7 @@
     "recommendation": null,
     "pos_rank": "WR111",
     "sos_stars": "wr_stars",
-    "star_rating": 0
+    "star_rating": 3.2
   },
   {
     "player_id": 24334,
@@ -7082,7 +7082,7 @@
     "recommendation": null,
     "pos_rank": "TE44",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.45,
     "owned_perc": "2.7%"
   },
   {
@@ -7110,7 +7110,7 @@
     "recommendation": null,
     "pos_rank": "RB66",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.24,
     "owned_perc": "1.3%"
   },
   {
@@ -7138,7 +7138,7 @@
     "recommendation": null,
     "pos_rank": "RB67",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 1.83,
     "owned_perc": "0.6%"
   },
   {
@@ -7166,7 +7166,7 @@
     "recommendation": null,
     "pos_rank": "WR112",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "3.5%"
   },
   {
@@ -7194,7 +7194,7 @@
     "recommendation": null,
     "pos_rank": "WR113",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "1.4%"
   },
   {
@@ -7222,7 +7222,7 @@
     "recommendation": null,
     "pos_rank": "WR114",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.3,
     "owned_perc": "0.1%"
   },
   {
@@ -7250,7 +7250,7 @@
     "recommendation": null,
     "pos_rank": "TE45",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 4.25,
     "owned_perc": "0.7%"
   },
   {
@@ -7278,7 +7278,7 @@
     "recommendation": null,
     "pos_rank": "WR115",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "0.6%"
   },
   {
@@ -7306,7 +7306,7 @@
     "recommendation": null,
     "pos_rank": "TE46",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.45,
     "owned_perc": "0.7%"
   },
   {
@@ -7334,7 +7334,7 @@
     "recommendation": null,
     "pos_rank": "RB68",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.14,
     "owned_perc": "0.9%"
   },
   {
@@ -7362,7 +7362,7 @@
     "recommendation": null,
     "pos_rank": "TE47",
     "sos_stars": "te_stars",
-    "star_rating": 0
+    "star_rating": 2.04
   },
   {
     "player_id": 26160,
@@ -7389,7 +7389,7 @@
     "recommendation": null,
     "pos_rank": "WR116",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.3,
     "owned_perc": "1.4%"
   },
   {
@@ -7417,7 +7417,7 @@
     "recommendation": null,
     "pos_rank": "TE48",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.75,
     "owned_perc": "2.3%"
   },
   {
@@ -7445,7 +7445,7 @@
     "recommendation": null,
     "pos_rank": "WR117",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "6.8%"
   },
   {
@@ -7473,7 +7473,7 @@
     "recommendation": null,
     "pos_rank": "WR118",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.52,
     "owned_perc": "0.6%"
   },
   {
@@ -7501,7 +7501,7 @@
     "recommendation": null,
     "pos_rank": "RB69",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.65,
     "owned_perc": "2.8%"
   },
   {
@@ -7529,7 +7529,7 @@
     "recommendation": null,
     "pos_rank": "WR119",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.78,
     "owned_perc": "1.9%"
   },
   {
@@ -7557,7 +7557,7 @@
     "recommendation": null,
     "pos_rank": "WR120",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.36,
     "owned_perc": "1.0%"
   },
   {
@@ -7585,7 +7585,7 @@
     "recommendation": null,
     "pos_rank": "RB70",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.04,
     "owned_perc": "0.8%"
   },
   {
@@ -7613,7 +7613,7 @@
     "recommendation": null,
     "pos_rank": "RB71",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.45,
     "owned_perc": "0.8%"
   },
   {
@@ -7641,7 +7641,7 @@
     "recommendation": null,
     "pos_rank": "TE49",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.94,
     "owned_perc": "0.6%"
   },
   {
@@ -7669,7 +7669,7 @@
     "recommendation": null,
     "pos_rank": "TE50",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.14,
     "owned_perc": "0.6%"
   },
   {
@@ -7697,7 +7697,7 @@
     "recommendation": null,
     "pos_rank": "WR121",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "1.4%"
   },
   {
@@ -7725,7 +7725,7 @@
     "recommendation": null,
     "pos_rank": "TE51",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.75,
     "owned_perc": "0.6%"
   },
   {
@@ -7753,7 +7753,7 @@
     "recommendation": null,
     "pos_rank": "TE52",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.75,
     "owned_perc": "3.6%"
   },
   {
@@ -7781,7 +7781,7 @@
     "recommendation": null,
     "pos_rank": "WR122",
     "sos_stars": "wr_stars",
-    "star_rating": 0
+    "star_rating": 3.2
   },
   {
     "player_id": 23812,
@@ -7808,7 +7808,7 @@
     "recommendation": null,
     "pos_rank": "RB72",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.95,
     "owned_perc": "0.7%"
   },
   {
@@ -7836,7 +7836,7 @@
     "recommendation": null,
     "pos_rank": "RB73",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.04,
     "owned_perc": "1.0%"
   },
   {
@@ -7864,7 +7864,7 @@
     "recommendation": null,
     "pos_rank": "WR123",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "0.7%"
   },
   {
@@ -7892,7 +7892,7 @@
     "recommendation": null,
     "pos_rank": "WR124",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.23,
     "owned_perc": "1.0%"
   },
   {
@@ -7920,7 +7920,7 @@
     "recommendation": null,
     "pos_rank": "RB74",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 4.05,
     "owned_perc": "8.5%"
   },
   {
@@ -7948,7 +7948,7 @@
     "recommendation": null,
     "pos_rank": "WR125",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.23,
     "owned_perc": "1.0%"
   },
   {
@@ -7976,7 +7976,7 @@
     "recommendation": null,
     "pos_rank": "WR126",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 1.84,
     "owned_perc": "11.0%"
   },
   {
@@ -8004,7 +8004,7 @@
     "recommendation": null,
     "pos_rank": "RB75",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.64,
     "owned_perc": "4.1%"
   },
   {
@@ -8032,7 +8032,7 @@
     "recommendation": null,
     "pos_rank": "TE53",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.14,
     "owned_perc": "1.1%"
   },
   {
@@ -8060,7 +8060,7 @@
     "recommendation": null,
     "pos_rank": "RB76",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.24,
     "owned_perc": "4.9%"
   },
   {
@@ -8088,7 +8088,7 @@
     "recommendation": null,
     "pos_rank": "TE54",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 1.84,
     "owned_perc": "0.7%"
   },
   {
@@ -8116,7 +8116,7 @@
     "recommendation": null,
     "pos_rank": "RB77",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.24,
     "owned_perc": "0.1%"
   },
   {
@@ -8144,7 +8144,7 @@
     "recommendation": null,
     "pos_rank": "WR127",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.33,
     "owned_perc": "1.9%"
   },
   {
@@ -8172,7 +8172,7 @@
     "recommendation": null,
     "pos_rank": "TE55",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.14,
     "owned_perc": "1.6%"
   },
   {
@@ -8200,7 +8200,7 @@
     "recommendation": null,
     "pos_rank": "WR128",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.59,
     "owned_perc": "7.8%"
   },
   {
@@ -8228,7 +8228,7 @@
     "recommendation": null,
     "pos_rank": "WR129",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 4.46,
     "owned_perc": "0.9%"
   },
   {
@@ -8256,7 +8256,7 @@
     "recommendation": null,
     "pos_rank": "TE56",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.45,
     "owned_perc": "0.6%"
   },
   {
@@ -8284,7 +8284,7 @@
     "recommendation": null,
     "pos_rank": "RB78",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.24,
     "owned_perc": "2.6%"
   },
   {
@@ -8312,7 +8312,7 @@
     "recommendation": null,
     "pos_rank": "RB79",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.24,
     "owned_perc": "35.7%"
   },
   {
@@ -8340,7 +8340,7 @@
     "recommendation": null,
     "pos_rank": "RB80",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.04,
     "owned_perc": "2.3%"
   },
   {
@@ -8368,7 +8368,7 @@
     "recommendation": null,
     "pos_rank": "RB81",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 1.93,
     "owned_perc": "3.4%"
   },
   {
@@ -8396,7 +8396,7 @@
     "recommendation": null,
     "pos_rank": "TE57",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 4.55,
     "owned_perc": "0.7%"
   },
   {
@@ -8424,7 +8424,7 @@
     "recommendation": null,
     "pos_rank": "WR130",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.23,
     "owned_perc": "1.6%"
   },
   {
@@ -8452,7 +8452,7 @@
     "recommendation": null,
     "pos_rank": "TE58",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.94,
     "owned_perc": "1.2%"
   },
   {
@@ -8480,7 +8480,7 @@
     "recommendation": null,
     "pos_rank": "TE59",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.24,
     "owned_perc": "0.7%"
   },
   {
@@ -8508,7 +8508,7 @@
     "recommendation": null,
     "pos_rank": "RB82",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.85,
     "owned_perc": "0.1%"
   },
   {
@@ -8536,7 +8536,7 @@
     "recommendation": null,
     "pos_rank": "TE60",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.54,
     "owned_perc": "0.6%"
   },
   {
@@ -8564,7 +8564,7 @@
     "recommendation": null,
     "pos_rank": "TE61",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.14,
     "owned_perc": "0.6%"
   },
   {
@@ -8592,7 +8592,7 @@
     "recommendation": null,
     "pos_rank": "WR131",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.71,
     "owned_perc": "0.6%"
   },
   {
@@ -8620,7 +8620,7 @@
     "recommendation": null,
     "pos_rank": "TE62",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 4.25,
     "owned_perc": "1.1%"
   },
   {
@@ -8648,7 +8648,7 @@
     "recommendation": null,
     "pos_rank": "RB83",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.44,
     "owned_perc": "1.5%"
   },
   {
@@ -8676,7 +8676,7 @@
     "recommendation": null,
     "pos_rank": "TE63",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 4.55,
     "owned_perc": "1.0%"
   },
   {
@@ -8704,7 +8704,7 @@
     "recommendation": null,
     "pos_rank": "RB84",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.04,
     "owned_perc": "0.6%"
   },
   {
@@ -8732,7 +8732,7 @@
     "recommendation": null,
     "pos_rank": "RB85",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.64,
     "owned_perc": "0.9%"
   },
   {
@@ -8760,7 +8760,7 @@
     "recommendation": null,
     "pos_rank": "RB86",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.54,
     "owned_perc": "0.6%"
   },
   {
@@ -8788,7 +8788,7 @@
     "recommendation": null,
     "pos_rank": "TE64",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 3.55,
     "owned_perc": "1.1%"
   },
   {
@@ -8816,7 +8816,7 @@
     "recommendation": null,
     "pos_rank": "TE65",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 0.93,
     "owned_perc": "0.6%"
   },
   {
@@ -8844,7 +8844,7 @@
     "recommendation": null,
     "pos_rank": "WR132",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 2.42,
     "owned_perc": "0.8%"
   },
   {
@@ -8872,7 +8872,7 @@
     "recommendation": null,
     "pos_rank": "TE66",
     "sos_stars": "te_stars",
-    "star_rating": 0,
+    "star_rating": 2.94,
     "owned_perc": "0.6%",
     "injury_status": "IR",
     "injury_tooltip": "IR:  "
@@ -8902,7 +8902,7 @@
     "recommendation": null,
     "pos_rank": "WR133",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 3.2,
     "owned_perc": "3.5%"
   },
   {
@@ -8930,7 +8930,7 @@
     "recommendation": null,
     "pos_rank": "RB87",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.14,
     "owned_perc": "1.0%"
   },
   {
@@ -8958,7 +8958,7 @@
     "recommendation": null,
     "pos_rank": "RB88",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.14,
     "owned_perc": "4.6%"
   },
   {
@@ -8986,7 +8986,7 @@
     "recommendation": null,
     "pos_rank": "RB89",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.34,
     "owned_perc": "1.1%"
   },
   {
@@ -9014,7 +9014,7 @@
     "recommendation": null,
     "pos_rank": "WR134",
     "sos_stars": "wr_stars",
-    "star_rating": 0,
+    "star_rating": 1.84,
     "owned_perc": "0.6%"
   },
   {
@@ -9042,7 +9042,7 @@
     "recommendation": null,
     "pos_rank": "RB90",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.75,
     "owned_perc": "1.8%"
   },
   {
@@ -9070,7 +9070,7 @@
     "recommendation": null,
     "pos_rank": "RB91",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.64,
     "owned_perc": "64.5%",
     "injury_status": "IR",
     "injury_tooltip": "IR:  "
@@ -9100,7 +9100,7 @@
     "recommendation": null,
     "pos_rank": "RB92",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 2.34,
     "owned_perc": "0.7%"
   },
   {
@@ -9128,7 +9128,7 @@
     "recommendation": null,
     "pos_rank": "RB93",
     "sos_stars": "rb_stars",
-    "star_rating": 0,
+    "star_rating": 3.85,
     "owned_perc": "1.3%"
   },
   {
@@ -9156,7 +9156,7 @@
     "recommendation": null,
     "pos_rank": "QB34",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 4.42,
     "owned_perc": "1.5%"
   },
   {
@@ -9184,7 +9184,7 @@
     "recommendation": null,
     "pos_rank": "QB35",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 4.92,
     "owned_perc": "2.3%"
   },
   {
@@ -9212,7 +9212,7 @@
     "recommendation": null,
     "pos_rank": "QB36",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.23,
     "owned_perc": "3.8%"
   },
   {
@@ -9240,7 +9240,7 @@
     "recommendation": null,
     "pos_rank": "QB37",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 1.63,
     "owned_perc": "1.6%"
   },
   {
@@ -9268,7 +9268,7 @@
     "recommendation": null,
     "pos_rank": "QB38",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.23,
     "owned_perc": "0.9%"
   },
   {
@@ -9296,7 +9296,7 @@
     "recommendation": null,
     "pos_rank": "QB39",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 1.73,
     "owned_perc": "0.6%"
   },
   {
@@ -9324,7 +9324,7 @@
     "recommendation": null,
     "pos_rank": "QB40",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.62,
     "owned_perc": "0.6%"
   },
   {
@@ -9352,7 +9352,7 @@
     "recommendation": null,
     "pos_rank": "QB41",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.43,
     "owned_perc": "0.7%"
   },
   {
@@ -9380,7 +9380,7 @@
     "recommendation": null,
     "pos_rank": "QB42",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.73,
     "owned_perc": "1.0%"
   },
   {
@@ -9408,7 +9408,7 @@
     "recommendation": null,
     "pos_rank": "QB43",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.13,
     "owned_perc": "3.5%"
   },
   {
@@ -9436,7 +9436,7 @@
     "recommendation": null,
     "pos_rank": "QB44",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 4.52,
     "owned_perc": "0.6%"
   },
   {
@@ -9464,7 +9464,7 @@
     "recommendation": null,
     "pos_rank": "QB45",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 4.82,
     "owned_perc": "0.8%"
   },
   {
@@ -9492,7 +9492,7 @@
     "recommendation": null,
     "pos_rank": "QB46",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 4.32,
     "owned_perc": "3.1%"
   },
   {
@@ -9520,7 +9520,7 @@
     "recommendation": null,
     "pos_rank": "QB47",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.92,
     "owned_perc": "0.6%"
   },
   {
@@ -9548,7 +9548,7 @@
     "recommendation": null,
     "pos_rank": "QB48",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.13,
     "owned_perc": "0.7%"
   },
   {
@@ -9576,7 +9576,7 @@
     "recommendation": null,
     "pos_rank": "QB49",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.33,
     "owned_perc": "1.1%"
   },
   {
@@ -9604,7 +9604,7 @@
     "recommendation": null,
     "pos_rank": "QB50",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 1.93,
     "owned_perc": "0.7%"
   },
   {
@@ -9632,7 +9632,7 @@
     "recommendation": null,
     "pos_rank": "QB51",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 1.63,
     "owned_perc": "1.9%"
   },
   {
@@ -9660,7 +9660,7 @@
     "recommendation": null,
     "pos_rank": "QB52",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.23,
     "owned_perc": "0.6%"
   },
   {
@@ -9688,7 +9688,7 @@
     "recommendation": null,
     "pos_rank": "QB53",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.23,
     "owned_perc": "0.8%"
   },
   {
@@ -9716,7 +9716,7 @@
     "recommendation": null,
     "pos_rank": "QB54",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.43,
     "owned_perc": "1.0%"
   },
   {
@@ -9744,7 +9744,7 @@
     "recommendation": null,
     "pos_rank": "QB55",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.73,
     "owned_perc": "1.1%"
   },
   {
@@ -9772,7 +9772,7 @@
     "recommendation": null,
     "pos_rank": "QB56",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.13,
     "owned_perc": "0.6%"
   },
   {
@@ -9800,7 +9800,7 @@
     "recommendation": null,
     "pos_rank": "QB57",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 4.22,
     "owned_perc": "0.6%"
   },
   {
@@ -9828,7 +9828,7 @@
     "recommendation": null,
     "pos_rank": "QB58",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 3.62,
     "owned_perc": "1.8%"
   },
   {
@@ -9856,7 +9856,7 @@
     "recommendation": null,
     "pos_rank": "QB59",
     "sos_stars": "qb_stars",
-    "star_rating": 0,
+    "star_rating": 2.23,
     "owned_perc": "0.7%"
   }
 ]
