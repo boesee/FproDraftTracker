@@ -41,13 +41,13 @@ export function parseCsvFile(file) {
         "PLAYER NAME": "player_name",
         "TEAM": "team",
         "POS": "position",
-        "OPP ": "opponent",
+        "OPP": "opponent",
         // "UPSIDE ": "upside",
         // "BUST ": "bust",
         "MATCHUP ": "matchup",
         "AVG. DIFF ": "avgDiff",
         "% OVER ": "percentOver",
-        "OPPORTUNITY ": "opportunity",
+        "OPP ": "opportunity",
         "EFFICIENCY ": "efficiency"
     };
     return new Promise((resolve, reject) => {
