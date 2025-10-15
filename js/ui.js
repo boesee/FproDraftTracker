@@ -38,7 +38,7 @@ export class DraftUI {
                     if (isJSON) {
                         jsonData = await readJsonFile(file, this.logger, this.messages);
                     } else if (isCSV) {
-                        jsonData = await parseCsvFile(file);
+                        jsonData = await parseCsvFile(file, this.logger, this.message);
                     } else {
                         this.messages.showError('Nur JSON oder CSV Dateien sind erlaubt.');
                         return;
