@@ -79,11 +79,7 @@ export class DraftUI {
     renderTable(filteredPlayers, allPlayers) {
         this.logger?.debug("Active columns:", this.getActiveColumns(allPlayers));
         this.logger?.debug("Example player row:", filteredPlayers[0]);
-        if (!this.logger) {
-            console.error("Logger in renderTable: undefined!");
-        } else {
-            this.logger.debug("Logger in renderTable: vorhanden");
-        }
+        
         const tbody = document.getElementById('playersTableBody');
         const thead = document.getElementById('playersTableHead');
         const section = document.getElementById('playersTableSection');
