@@ -35,7 +35,7 @@ export function readJsonFile(file, logger, messages) {
 }
 
 
-export function parseCsvFile(file) {
+export function parseCsvFile(file, logger) {
     const csvToJsonMapping = {
         "RK": "rank",
         "PLAYER NAME": "player_name",
@@ -55,6 +55,7 @@ export function parseCsvFile(file) {
         reader.onload = function (event) {
             const text = event.target.result;
             const result = Papa.parse(text, { header: true, skipEmptyLines: true });
+            logger?.debug("CSV Header-Keys:", Object.keys(result.data[0]));
             const jsonData = result.data.map(row => {
                 const obj = {};
                 for (const [csvKey, jsonKey] of Object.entries(csvToJsonMapping)) {
@@ -62,6 +63,7 @@ export function parseCsvFile(file) {
                 }
                 return obj;
             });
+            logger?.debug("Erster Spieler nach Mapping:", jsonData[0]);
             resolve(jsonData);
         };
         reader.onerror = reject;
