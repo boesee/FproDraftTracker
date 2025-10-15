@@ -41,7 +41,7 @@ export function parseCsvFile(file) {
         "PLAYER NAME": "player_name",
         "TEAM": "team",
         "POS": "position",
-        "OPP": "opponent",
+        "OPP ": "opponent",
         // "UPSIDE ": "upside",
         // "BUST ": "bust",
         "MATCHUP ": "matchup",
