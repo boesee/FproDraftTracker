@@ -26,7 +26,7 @@ jobs:
       - name: Run Scraper
         run: node scrape-fantasypros.js
 
-      - name: Commit scraped data
+      - name: Set up Git credentials
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
@@ -34,6 +34,17 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git remote set-url origin \
             https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          git add data/ecrData.json
-          git commit -m "Update ECR data [bot]"
-          git push
+
+      - name: Add scraped data
+        run: git add data/ecrData.json
+
+      - name: Commit and push if changed
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update ECR data [bot]"
+            git push
+          fi
