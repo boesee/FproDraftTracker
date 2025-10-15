@@ -36,20 +36,19 @@ export function readJsonFile(file, logger, messages) {
 
 
 export function parseCsvFile(file, logger) {
+    
     const csvToJsonMapping = {
         "RK": "rank",
         "PLAYER NAME": "player_name",
         "TEAM": "team",
         "POS": "position",
         "OPP": "opponent",
-        // "UPSIDE ": "upside",
-        // "BUST ": "bust",
         "MATCHUP ": "matchup",
         "AVG. DIFF ": "avgDiff",
         "% OVER ": "percentOver",
         "OPP ": "opportunity",
-        "EFFICIENCY ": "efficiency"
-    };
+        "EFF ": "efficiency"
+};
     return new Promise((resolve, reject) => {
         const reader = new FileReader();
         reader.onload = function (event) {
