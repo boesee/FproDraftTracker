@@ -1170,7 +1170,7 @@
     "player_owned_avg": 99.6,
     "player_opponent": "at KC",
     "player_opponent_id": "KC",
-    "player_ecr_delta": null,
+    "player_ecr_delta": -2,
     "rank_ecr": 42,
     "rank_min": "33",
     "rank_max": "65",
@@ -1182,6 +1182,7 @@
     "pos_rank": "RB12",
     "sos_stars": "rb_stars",
     "star_rating": 3.04,
+    "ecr_delta_text": "This player's positional ECR has fallen 2 spots in the past 2 days",
     "owned_perc": "99.6%"
   },
   {
