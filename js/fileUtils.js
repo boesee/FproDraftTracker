@@ -46,7 +46,7 @@ export function parseCsvFile(file, logger) {
         "MATCHUP ": "matchup",
         "AVG. DIFF ": "avgDiff",
         "% OVER ": "percentOver",
-        "OPP ": "opportunity",
+        "OPPORTUNITY ": "opportunity",
         "EFF ": "efficiency"
 };
     return new Promise((resolve, reject) => {
