@@ -1453,7 +1453,9 @@
     "pos_rank": "WR17",
     "sos_stars": "wr_stars",
     "star_rating": 1.79,
-    "owned_perc": "98.5%"
+    "owned_perc": "98.5%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Concussion "
   },
   {
     "player_id": 24209,
@@ -1901,7 +1903,9 @@
     "pos_rank": "WR23",
     "sos_stars": "wr_stars",
     "star_rating": 3.45,
-    "owned_perc": "91.0%"
+    "owned_perc": "91.0%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Ankle "
   },
   {
     "player_id": 17253,
@@ -2601,7 +2605,9 @@
     "pos_rank": "WR35",
     "sos_stars": "wr_stars",
     "star_rating": 2.28,
-    "owned_perc": "60.1%"
+    "owned_perc": "60.1%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Hip "
   },
   {
     "player_id": 19590,
@@ -2657,7 +2663,9 @@
     "pos_rank": "RB23",
     "sos_stars": "rb_stars",
     "star_rating": 1.66,
-    "owned_perc": "96.9%"
+    "owned_perc": "96.9%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Ankle "
   },
   {
     "player_id": 11594,
@@ -2741,7 +2749,9 @@
     "pos_rank": "RB24",
     "sos_stars": "rb_stars",
     "star_rating": 3.47,
-    "owned_perc": "84.5%"
+    "owned_perc": "84.5%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Toe "
   },
   {
     "player_id": 16425,
@@ -2825,7 +2835,9 @@
     "pos_rank": "WR38",
     "sos_stars": "wr_stars",
     "star_rating": 3.65,
-    "owned_perc": "77.7%"
+    "owned_perc": "77.7%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Hip "
   },
   {
     "player_id": 25337,
@@ -3811,7 +3823,9 @@
     "pos_rank": "TE20",
     "sos_stars": "te_stars",
     "star_rating": 2.66,
-    "owned_perc": "35.8%"
+    "owned_perc": "35.8%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Knee "
   },
   {
     "player_id": 27142,
@@ -5129,7 +5143,9 @@
     "pos_rank": "WR76",
     "sos_stars": "wr_stars",
     "star_rating": 2.38,
-    "owned_perc": "37.5%"
+    "owned_perc": "37.5%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Concussion "
   },
   {
     "player_id": 26160,
@@ -5437,7 +5453,9 @@
     "pos_rank": "RB53",
     "sos_stars": "rb_stars",
     "star_rating": 1.66,
-    "owned_perc": "6.5%"
+    "owned_perc": "6.5%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Ankle "
   },
   {
     "player_id": 19747,
@@ -6476,7 +6494,9 @@
     "pos_rank": "WR102",
     "sos_stars": "wr_stars",
     "star_rating": 1.79,
-    "owned_perc": "27.4%"
+    "owned_perc": "27.4%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Hamstring "
   },
   {
     "player_id": 16434,
@@ -7290,7 +7310,9 @@
     "pos_rank": "TE42",
     "sos_stars": "te_stars",
     "star_rating": 2.96,
-    "owned_perc": "0.7%"
+    "owned_perc": "0.7%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Foot "
   },
   {
     "player_id": 26212,
@@ -7323,17 +7345,17 @@
   {
     "player_id": 19111,
     "player_name": "D'Ernest Johnson",
-    "player_team_id": "FA",
+    "player_team_id": "NE",
     "player_position_id": "RB",
     "player_positions": "RB",
     "player_short_name": "D. Johnson",
     "player_eligibility": "RB",
     "player_page_url": "https://www.fantasypros.com/nfl/players/dernest-johnson.php",
     "player_filename": "dernest-johnson.php",
-    "player_bye_week": null,
+    "player_bye_week": "14",
     "player_owned_avg": 1,
-    "player_opponent": "",
-    "player_opponent_id": null,
+    "player_opponent": "vs. ATL",
+    "player_opponent_id": "ATL",
     "player_ecr_delta": null,
     "rank_ecr": 262,
     "rank_min": "244",
@@ -7345,6 +7367,7 @@
     "recommendation": null,
     "pos_rank": "RB75",
     "sos_stars": "rb_stars",
+    "star_rating": 3.47,
     "owned_perc": "1.0%"
   },
   {
@@ -7429,7 +7452,9 @@
     "pos_rank": "WR111",
     "sos_stars": "wr_stars",
     "star_rating": 1.79,
-    "owned_perc": "0.6%"
+    "owned_perc": "0.6%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Chest "
   },
   {
     "player_id": 18571,
@@ -8096,7 +8121,9 @@
     "pos_rank": "RB85",
     "sos_stars": "rb_stars",
     "star_rating": 3.17,
-    "owned_perc": "0.6%"
+    "owned_perc": "0.6%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Hamstring "
   },
   {
     "player_id": 19268,
@@ -8320,7 +8347,9 @@
     "pos_rank": "TE57",
     "sos_stars": "te_stars",
     "star_rating": 2.26,
-    "owned_perc": "1.0%"
+    "owned_perc": "1.0%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Knee "
   },
   {
     "player_id": 26446,
@@ -8542,7 +8571,9 @@
     "pos_rank": "RB93",
     "sos_stars": "rb_stars",
     "star_rating": 1.36,
-    "owned_perc": "0.6%"
+    "owned_perc": "0.6%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Hand "
   },
   {
     "player_id": 27449,
@@ -10235,8 +10266,8 @@
     "sos_stars": "te_stars",
     "star_rating": 4.16,
     "owned_perc": "0.6%",
-    "injury_status": "Q",
-    "injury_tooltip": "Questionable: Ankle "
+    "injury_status": "O",
+    "injury_tooltip": "OUT: Ankle "
   },
   {
     "player_id": 20082,
@@ -11589,7 +11620,9 @@
     "pos_rank": "RB109",
     "sos_stars": "rb_stars",
     "star_rating": 3.17,
-    "owned_perc": "1.1%"
+    "owned_perc": "1.1%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Groin "
   },
   {
     "player_id": 25644,
