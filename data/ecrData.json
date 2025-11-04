@@ -209,7 +209,7 @@
     "player_owned_avg": 99.8,
     "player_opponent": "at IND",
     "player_opponent_id": "IND",
-    "player_ecr_delta": -1,
+    "player_ecr_delta": null,
     "rank_ecr": 8,
     "rank_min": "7",
     "rank_max": "11",
@@ -221,7 +221,6 @@
     "pos_rank": "RB2",
     "sos_stars": "rb_stars",
     "star_rating": 2.49,
-    "ecr_delta_text": "This player's positional ECR has fallen 1 spot in the past 2 days",
     "owned_perc": "99.8%"
   },
   {
@@ -238,7 +237,7 @@
     "player_owned_avg": 99.6,
     "player_opponent": "vs. ATL",
     "player_opponent_id": "ATL",
-    "player_ecr_delta": 1,
+    "player_ecr_delta": null,
     "rank_ecr": 9,
     "rank_min": "9",
     "rank_max": "10",
@@ -250,7 +249,6 @@
     "pos_rank": "RB3",
     "sos_stars": "rb_stars",
     "star_rating": 3.59,
-    "ecr_delta_text": "This player's positional ECR has risen 1 spot in the past 2 days",
     "owned_perc": "99.6%"
   },
   {
@@ -407,7 +405,7 @@
     "player_owned_avg": 99.7,
     "player_opponent": "vs. BUF",
     "player_opponent_id": "BUF",
-    "player_ecr_delta": -1,
+    "player_ecr_delta": null,
     "rank_ecr": 15,
     "rank_min": "14",
     "rank_max": "17",
@@ -419,7 +417,6 @@
     "pos_rank": "RB4",
     "sos_stars": "rb_stars",
     "star_rating": 4.28,
-    "ecr_delta_text": "This player's positional ECR has fallen 1 spot in the past 2 days",
     "owned_perc": "99.7%"
   },
   {
@@ -576,7 +573,7 @@
     "player_owned_avg": 99.8,
     "player_opponent": "at WAS",
     "player_opponent_id": "WAS",
-    "player_ecr_delta": 1,
+    "player_ecr_delta": null,
     "rank_ecr": 21,
     "rank_min": "12",
     "rank_max": "23",
@@ -588,7 +585,6 @@
     "pos_rank": "RB6",
     "sos_stars": "rb_stars",
     "star_rating": 2.89,
-    "ecr_delta_text": "This player's positional ECR has risen 1 spot in the past 2 days",
     "owned_perc": "99.8%"
   },
   {
@@ -1137,7 +1133,7 @@
     "player_owned_avg": 98.3,
     "player_opponent": "vs. PIT",
     "player_opponent_id": "PIT",
-    "player_ecr_delta": -2,
+    "player_ecr_delta": null,
     "rank_ecr": 41,
     "rank_min": "43",
     "rank_max": "45",
@@ -1149,7 +1145,6 @@
     "pos_rank": "WR12",
     "sos_stars": "wr_stars",
     "star_rating": 2.32,
-    "ecr_delta_text": "This player's positional ECR has fallen 2 spots in the past 2 days",
     "owned_perc": "98.3%"
   },
   {
@@ -1278,7 +1273,7 @@
     "player_owned_avg": 99.7,
     "player_opponent": "vs. PHI",
     "player_opponent_id": "PHI",
-    "player_ecr_delta": -2,
+    "player_ecr_delta": null,
     "rank_ecr": 46,
     "rank_min": "35",
     "rank_max": "53",
@@ -1290,7 +1285,6 @@
     "pos_rank": "RB11",
     "sos_stars": "rb_stars",
     "star_rating": 4.18,
-    "ecr_delta_text": "This player's positional ECR has fallen 2 spots in the past 2 days",
     "owned_perc": "99.7%"
   },
   {
@@ -1335,7 +1329,7 @@
     "player_owned_avg": 87.6,
     "player_opponent": "vs. ATL",
     "player_opponent_id": "ATL",
-    "player_ecr_delta": -2,
+    "player_ecr_delta": null,
     "rank_ecr": 48,
     "rank_min": "39",
     "rank_max": "51",
@@ -1347,7 +1341,6 @@
     "pos_rank": "WR15",
     "sos_stars": "wr_stars",
     "star_rating": 3.56,
-    "ecr_delta_text": "This player's positional ECR has fallen 2 spots in the past 2 days",
     "owned_perc": "87.6%"
   },
   {
@@ -1560,7 +1553,7 @@
     "player_owned_avg": 92.3,
     "player_opponent": "vs. DET",
     "player_opponent_id": "DET",
-    "player_ecr_delta": 3,
+    "player_ecr_delta": null,
     "rank_ecr": 56,
     "rank_min": "58",
     "rank_max": "60",
@@ -1572,7 +1565,6 @@
     "pos_rank": "WR18",
     "sos_stars": "wr_stars",
     "star_rating": 4.18,
-    "ecr_delta_text": "This player's positional ECR has risen 3 spots in the past 2 days",
     "owned_perc": "92.3%"
   },
   {
@@ -1645,7 +1637,7 @@
     "player_owned_avg": 91.2,
     "player_opponent": "at TB",
     "player_opponent_id": "TB",
-    "player_ecr_delta": 2,
+    "player_ecr_delta": null,
     "rank_ecr": 59,
     "rank_min": "52",
     "rank_max": "65",
@@ -1657,7 +1649,6 @@
     "pos_rank": "WR19",
     "sos_stars": "wr_stars",
     "star_rating": 2.94,
-    "ecr_delta_text": "This player's positional ECR has risen 2 spots in the past 2 days",
     "owned_perc": "91.2%"
   },
   {
@@ -1674,7 +1665,7 @@
     "player_owned_avg": 85.2,
     "player_opponent": "vs. NYG",
     "player_opponent_id": "NYG",
-    "player_ecr_delta": 5,
+    "player_ecr_delta": null,
     "rank_ecr": 60,
     "rank_min": "60",
     "rank_max": "71",
@@ -1686,7 +1677,6 @@
     "pos_rank": "WR20",
     "sos_stars": "wr_stars",
     "star_rating": 2.21,
-    "ecr_delta_text": "This player's positional ECR has risen 5 spots in the past 2 days",
     "owned_perc": "85.2%"
   },
   {
@@ -1871,7 +1861,7 @@
     "player_owned_avg": 96.1,
     "player_opponent": "at HOU",
     "player_opponent_id": "HOU",
-    "player_ecr_delta": 4,
+    "player_ecr_delta": null,
     "rank_ecr": 67,
     "rank_min": "66",
     "rank_max": "78",
@@ -1883,7 +1873,6 @@
     "pos_rank": "WR23",
     "sos_stars": "wr_stars",
     "star_rating": 2.42,
-    "ecr_delta_text": "This player's positional ECR has risen 4 spots in the past 2 days",
     "owned_perc": "96.1%"
   },
   {
@@ -2040,7 +2029,7 @@
     "player_owned_avg": 83.7,
     "player_opponent": "at TB",
     "player_opponent_id": "TB",
-    "player_ecr_delta": 8,
+    "player_ecr_delta": null,
     "rank_ecr": 73,
     "rank_min": "68",
     "rank_max": "87",
@@ -2052,7 +2041,6 @@
     "pos_rank": "RB19",
     "sos_stars": "rb_stars",
     "star_rating": 2.69,
-    "ecr_delta_text": "This player's positional ECR has risen 8 spots in the past 2 days",
     "owned_perc": "83.7%"
   },
   {
@@ -2209,7 +2197,7 @@
     "player_owned_avg": 88,
     "player_opponent": "at CHI",
     "player_opponent_id": "CHI",
-    "player_ecr_delta": -2,
+    "player_ecr_delta": null,
     "rank_ecr": 79,
     "rank_min": "73",
     "rank_max": "98",
@@ -2221,7 +2209,6 @@
     "pos_rank": "RB21",
     "sos_stars": "rb_stars",
     "star_rating": 3.49,
-    "ecr_delta_text": "This player's positional ECR has fallen 2 spots in the past 2 days",
     "owned_perc": "88.0%"
   },
   {
@@ -2518,7 +2505,7 @@
     "player_owned_avg": 8.1,
     "player_opponent": "at HOU",
     "player_opponent_id": "HOU",
-    "player_ecr_delta": 8,
+    "player_ecr_delta": null,
     "rank_ecr": 90,
     "rank_min": "92",
     "rank_max": "93",
@@ -2530,7 +2517,6 @@
     "pos_rank": "WR34",
     "sos_stars": "wr_stars",
     "star_rating": 2.42,
-    "ecr_delta_text": "This player's positional ECR has risen 8 spots in the past 2 days",
     "owned_perc": "8.1%"
   },
   {
@@ -2799,7 +2785,7 @@
     "player_owned_avg": 94.5,
     "player_opponent": "at WAS",
     "player_opponent_id": "WAS",
-    "player_ecr_delta": -3,
+    "player_ecr_delta": null,
     "rank_ecr": 100,
     "rank_min": "92",
     "rank_max": "106",
@@ -2811,7 +2797,6 @@
     "pos_rank": "RB25",
     "sos_stars": "rb_stars",
     "star_rating": 2.89,
-    "ecr_delta_text": "This player's positional ECR has fallen 3 spots in the past 2 days",
     "owned_perc": "94.5%"
   },
   {
@@ -2940,7 +2925,7 @@
     "player_owned_avg": 8.7,
     "player_opponent": "vs. ARI",
     "player_opponent_id": "ARI",
-    "player_ecr_delta": 9,
+    "player_ecr_delta": null,
     "rank_ecr": 105,
     "rank_min": "102",
     "rank_max": "115",
@@ -2952,7 +2937,6 @@
     "pos_rank": "WR44",
     "sos_stars": "wr_stars",
     "star_rating": 2.21,
-    "ecr_delta_text": "This player's positional ECR has risen 9 spots in the past 2 days",
     "owned_perc": "8.7%"
   },
   {
@@ -2997,7 +2981,7 @@
     "player_owned_avg": 71.5,
     "player_opponent": "vs. NYG",
     "player_opponent_id": "NYG",
-    "player_ecr_delta": 8,
+    "player_ecr_delta": null,
     "rank_ecr": 107,
     "rank_min": "75",
     "rank_max": "116",
@@ -3009,7 +2993,6 @@
     "pos_rank": "RB26",
     "sos_stars": "rb_stars",
     "star_rating": 3.99,
-    "ecr_delta_text": "This player's positional ECR has risen 8 spots in the past 2 days",
     "owned_perc": "71.5%"
   },
   {
@@ -3756,7 +3739,7 @@
     "player_owned_avg": 26.8,
     "player_opponent": "vs. JAC",
     "player_opponent_id": "JAC",
-    "player_ecr_delta": 7,
+    "player_ecr_delta": null,
     "rank_ecr": 134,
     "rank_min": "133",
     "rank_max": "139",
@@ -3768,7 +3751,6 @@
     "pos_rank": "WR55",
     "sos_stars": "wr_stars",
     "star_rating": 2.84,
-    "ecr_delta_text": "This player's positional ECR has risen 7 spots in the past 2 days",
     "owned_perc": "26.8%"
   },
   {
@@ -3925,7 +3907,7 @@
     "player_owned_avg": 3.6,
     "player_opponent": "at HOU",
     "player_opponent_id": "HOU",
-    "player_ecr_delta": 8,
+    "player_ecr_delta": null,
     "rank_ecr": 140,
     "rank_min": "133",
     "rank_max": "148",
@@ -3937,7 +3919,6 @@
     "pos_rank": "WR57",
     "sos_stars": "wr_stars",
     "star_rating": 2.42,
-    "ecr_delta_text": "This player's positional ECR has risen 8 spots in the past 2 days",
     "owned_perc": "3.6%"
   },
   {
@@ -4374,7 +4355,7 @@
     "player_owned_avg": 7.1,
     "player_opponent": "vs. DET",
     "player_opponent_id": "DET",
-    "player_ecr_delta": 7,
+    "player_ecr_delta": null,
     "rank_ecr": 156,
     "rank_min": "140",
     "rank_max": "140",
@@ -4386,7 +4367,6 @@
     "pos_rank": "WR64",
     "sos_stars": "wr_stars",
     "star_rating": 4.18,
-    "ecr_delta_text": "This player's positional ECR has risen 7 spots in the past 2 days",
     "owned_perc": "7.1%"
   },
   {
@@ -4431,7 +4411,7 @@
     "player_owned_avg": 35.3,
     "player_opponent": "at IND",
     "player_opponent_id": "IND",
-    "player_ecr_delta": -5,
+    "player_ecr_delta": null,
     "rank_ecr": 158,
     "rank_min": "154",
     "rank_max": "161",
@@ -4443,7 +4423,6 @@
     "pos_rank": "RB39",
     "sos_stars": "rb_stars",
     "star_rating": 2.49,
-    "ecr_delta_text": "This player's positional ECR has fallen 5 spots in the past 2 days",
     "owned_perc": "35.3%"
   },
   {
@@ -4460,7 +4439,7 @@
     "player_owned_avg": 19.6,
     "player_opponent": "vs. JAC",
     "player_opponent_id": "JAC",
-    "player_ecr_delta": -9,
+    "player_ecr_delta": null,
     "rank_ecr": 159,
     "rank_min": "154",
     "rank_max": "164",
@@ -4472,7 +4451,6 @@
     "pos_rank": "WR65",
     "sos_stars": "wr_stars",
     "star_rating": 2.84,
-    "ecr_delta_text": "This player's positional ECR has fallen 9 spots in the past 2 days",
     "owned_perc": "19.6%"
   },
   {
@@ -4769,7 +4747,7 @@
     "player_owned_avg": 2.8,
     "player_opponent": "at TB",
     "player_opponent_id": "TB",
-    "player_ecr_delta": 13,
+    "player_ecr_delta": null,
     "rank_ecr": 170,
     "rank_min": "168",
     "rank_max": "170",
@@ -4781,7 +4759,6 @@
     "pos_rank": "RB46",
     "sos_stars": "rb_stars",
     "star_rating": 2.69,
-    "ecr_delta_text": "This player's positional ECR has risen 13 spots in the past 2 days",
     "owned_perc": "2.8%"
   },
   {
@@ -5162,7 +5139,7 @@
     "player_owned_avg": 17.7,
     "player_opponent": "at SEA",
     "player_opponent_id": "SEA",
-    "player_ecr_delta": 7,
+    "player_ecr_delta": null,
     "rank_ecr": 184,
     "rank_min": "175",
     "rank_max": "223",
@@ -5174,7 +5151,6 @@
     "pos_rank": "RB55",
     "sos_stars": "rb_stars",
     "star_rating": 2.39,
-    "ecr_delta_text": "This player's positional ECR has risen 7 spots in the past 2 days",
     "owned_perc": "17.7%"
   },
   {
@@ -5471,7 +5447,7 @@
     "player_owned_avg": 1.6,
     "player_opponent": "vs. DET",
     "player_opponent_id": "DET",
-    "player_ecr_delta": 8,
+    "player_ecr_delta": null,
     "rank_ecr": 195,
     "rank_min": "154",
     "rank_max": "227",
@@ -5483,7 +5459,6 @@
     "pos_rank": "WR74",
     "sos_stars": "wr_stars",
     "star_rating": 4.18,
-    "ecr_delta_text": "This player's positional ECR has risen 8 spots in the past 2 days",
     "owned_perc": "1.6%"
   },
   {
@@ -5500,7 +5475,7 @@
     "player_owned_avg": 0,
     "player_opponent": "vs. ARI",
     "player_opponent_id": "ARI",
-    "player_ecr_delta": 30,
+    "player_ecr_delta": null,
     "rank_ecr": 196,
     "rank_min": "159",
     "rank_max": "169",
@@ -5511,8 +5486,7 @@
     "recommendation": null,
     "pos_rank": "WR75",
     "sos_stars": "wr_stars",
-    "star_rating": 2.21,
-    "ecr_delta_text": "This player's positional ECR has risen 30 spots in the past 2 days"
+    "star_rating": 2.21
   },
   {
     "player_id": 18466,
@@ -5976,7 +5950,7 @@
     "player_owned_avg": 1.1,
     "player_opponent": "at CHI",
     "player_opponent_id": "CHI",
-    "player_ecr_delta": 27,
+    "player_ecr_delta": null,
     "rank_ecr": 213,
     "rank_min": "180",
     "rank_max": "198",
@@ -5988,7 +5962,6 @@
     "pos_rank": "WR89",
     "sos_stars": "wr_stars",
     "star_rating": 3.56,
-    "ecr_delta_text": "This player's positional ECR has risen 27 spots in the past 2 days",
     "owned_perc": "1.1%"
   },
   {
@@ -6119,7 +6092,7 @@
     "player_owned_avg": 70.5,
     "player_opponent": "vs. ARI",
     "player_opponent_id": "ARI",
-    "player_ecr_delta": -53,
+    "player_ecr_delta": null,
     "rank_ecr": 218,
     "rank_min": "152",
     "rank_max": "152",
@@ -6131,7 +6104,6 @@
     "pos_rank": "WR92",
     "sos_stars": "wr_stars",
     "star_rating": 2.21,
-    "ecr_delta_text": "This player's positional ECR has fallen 53 spots in the past 2 days",
     "owned_perc": "70.5%"
   },
   {
@@ -6288,7 +6260,7 @@
     "player_owned_avg": 1.2,
     "player_opponent": "vs. NYG",
     "player_opponent_id": "NYG",
-    "player_ecr_delta": 19,
+    "player_ecr_delta": null,
     "rank_ecr": 224,
     "rank_min": "171",
     "rank_max": "231",
@@ -6300,7 +6272,6 @@
     "pos_rank": "RB61",
     "sos_stars": "rb_stars",
     "star_rating": 3.99,
-    "ecr_delta_text": "This player's positional ECR has risen 19 spots in the past 2 days",
     "owned_perc": "1.2%"
   },
   {
@@ -6850,7 +6821,7 @@
     "player_owned_avg": 1.1,
     "player_opponent": "at HOU",
     "player_opponent_id": "HOU",
-    "player_ecr_delta": -24,
+    "player_ecr_delta": null,
     "rank_ecr": 244,
     "rank_min": "190",
     "rank_max": "190",
@@ -6862,7 +6833,6 @@
     "pos_rank": "WR106",
     "sos_stars": "wr_stars",
     "star_rating": 2.42,
-    "ecr_delta_text": "This player's positional ECR has fallen 24 spots in the past 2 days",
     "owned_perc": "1.1%"
   },
   {
@@ -6934,7 +6904,7 @@
     "player_owned_avg": 0,
     "player_opponent": "at HOU",
     "player_opponent_id": "HOU",
-    "player_ecr_delta": 17,
+    "player_ecr_delta": null,
     "rank_ecr": 247,
     "rank_min": "195",
     "rank_max": "195",
@@ -6945,8 +6915,7 @@
     "recommendation": null,
     "pos_rank": "WR108",
     "sos_stars": "wr_stars",
-    "star_rating": 2.42,
-    "ecr_delta_text": "This player's positional ECR has risen 17 spots in the past 2 days"
+    "star_rating": 2.42
   },
   {
     "player_id": 26379,
@@ -6989,7 +6958,7 @@
     "player_owned_avg": 3.8,
     "player_opponent": "vs. NYG",
     "player_opponent_id": "NYG",
-    "player_ecr_delta": 4,
+    "player_ecr_delta": null,
     "rank_ecr": 249,
     "rank_min": "197",
     "rank_max": "197",
@@ -7001,7 +6970,6 @@
     "pos_rank": "TE43",
     "sos_stars": "te_stars",
     "star_rating": 2.34,
-    "ecr_delta_text": "This player's positional ECR has risen 4 spots in the past 2 days",
     "owned_perc": "3.8%"
   },
   {
@@ -7382,7 +7350,7 @@
     "player_owned_avg": 0.6,
     "player_opponent": "at CHI",
     "player_opponent_id": "CHI",
-    "player_ecr_delta": -35,
+    "player_ecr_delta": null,
     "rank_ecr": 263,
     "rank_min": "215",
     "rank_max": "215",
@@ -7394,7 +7362,6 @@
     "pos_rank": "TE47",
     "sos_stars": "te_stars",
     "star_rating": 3.22,
-    "ecr_delta_text": "This player's positional ECR has fallen 35 spots in the past 2 days",
     "owned_perc": "0.6%"
   },
   {
@@ -7551,7 +7518,7 @@
     "player_owned_avg": 1,
     "player_opponent": "at CHI",
     "player_opponent_id": "CHI",
-    "player_ecr_delta": 16,
+    "player_ecr_delta": null,
     "rank_ecr": 269,
     "rank_min": "226",
     "rank_max": "226",
@@ -7563,7 +7530,6 @@
     "pos_rank": "TE50",
     "sos_stars": "te_stars",
     "star_rating": 3.22,
-    "ecr_delta_text": "This player's positional ECR has risen 16 spots in the past 2 days",
     "owned_perc": "1.0%"
   },
   {
@@ -7971,7 +7937,7 @@
     "player_owned_avg": 0.8,
     "player_opponent": "at CHI",
     "player_opponent_id": "CHI",
-    "player_ecr_delta": -13,
+    "player_ecr_delta": null,
     "rank_ecr": 284,
     "rank_min": "244",
     "rank_max": "244",
@@ -7983,7 +7949,6 @@
     "pos_rank": "WR120",
     "sos_stars": "wr_stars",
     "star_rating": 3.56,
-    "ecr_delta_text": "This player's positional ECR has fallen 13 spots in the past 2 days",
     "owned_perc": "0.8%"
   },
   {
@@ -8116,7 +8081,7 @@
     "player_owned_avg": 0.7,
     "player_opponent": "vs. BAL",
     "player_opponent_id": "BAL",
-    "player_ecr_delta": -7,
+    "player_ecr_delta": null,
     "rank_ecr": 289,
     "rank_min": "255",
     "rank_max": "255",
@@ -8128,7 +8093,6 @@
     "pos_rank": "TE56",
     "sos_stars": "te_stars",
     "star_rating": 4.2,
-    "ecr_delta_text": "This player's positional ECR has fallen 7 spots in the past 2 days",
     "owned_perc": "0.7%"
   },
   {
@@ -8399,7 +8363,7 @@
     "player_owned_avg": 0.1,
     "player_opponent": "at IND",
     "player_opponent_id": "IND",
-    "player_ecr_delta": -22,
+    "player_ecr_delta": null,
     "rank_ecr": 299,
     "rank_min": "275",
     "rank_max": "275",
@@ -8411,7 +8375,6 @@
     "pos_rank": "WR126",
     "sos_stars": "wr_stars",
     "star_rating": 2.94,
-    "ecr_delta_text": "This player's positional ECR has fallen 22 spots in the past 2 days",
     "owned_perc": "0.1%"
   },
   {
