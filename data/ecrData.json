@@ -8764,7 +8764,9 @@
     "recommendation": null,
     "pos_rank": "RB80",
     "sos_stars": "rb_stars",
-    "star_rating": 4.38
+    "star_rating": 4.38,
+    "injury_status": "S",
+    "injury_tooltip": "Suspended:  "
   },
   {
     "player_id": 18616,
