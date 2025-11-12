@@ -9294,7 +9294,9 @@
     "pos_rank": "WR125",
     "sos_stars": "wr_stars",
     "star_rating": 3.21,
-    "owned_perc": "1.0%"
+    "owned_perc": "1.0%",
+    "injury_status": "IR",
+    "injury_tooltip": "IR:  "
   },
   {
     "player_id": 26162,
