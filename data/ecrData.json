@@ -4701,7 +4701,9 @@
     "pos_rank": "TE29",
     "sos_stars": "te_stars",
     "star_rating": 4.18,
-    "owned_perc": "72.7%"
+    "owned_perc": "72.7%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Hamstring "
   },
   {
     "player_id": 18631,
@@ -5625,7 +5627,9 @@
     "pos_rank": "WR84",
     "sos_stars": "wr_stars",
     "star_rating": 2.91,
-    "owned_perc": "5.4%"
+    "owned_perc": "5.4%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Knee "
   },
   {
     "player_id": 27316,
@@ -7277,8 +7281,8 @@
     "sos_stars": "te_stars",
     "star_rating": 3.48,
     "owned_perc": "5.4%",
-    "injury_status": "Q",
-    "injury_tooltip": "Questionable: Neck "
+    "injury_status": "O",
+    "injury_tooltip": "OUT: Neck "
   },
   {
     "player_id": 25983,
@@ -8448,8 +8452,8 @@
     "sos_stars": "wr_stars",
     "star_rating": 4.84,
     "owned_perc": "0.6%",
-    "injury_status": "Q",
-    "injury_tooltip": "Questionable: Ankle "
+    "injury_status": "O",
+    "injury_tooltip": "OUT: Ankle "
   },
   {
     "player_id": 27186,
