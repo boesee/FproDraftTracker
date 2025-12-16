@@ -13,6 +13,7 @@
     "player_owned_avg": 99.7,
     "player_opponent": "vs. CIN",
     "player_opponent_id": "CIN",
+    "player_ecr_delta": null,
     "rank_ecr": 1,
     "rank_min": "1",
     "rank_max": "6",
@@ -23,8 +24,7 @@
     "recommendation": null,
     "pos_rank": "RB1",
     "sos_stars": "rb_stars",
-    "star_rating": 3.8,
-    "ecr_delta_text": "This player's positional ECR has risen 1 spot in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "99.7%"
   },
   {
@@ -52,7 +52,7 @@
     "recommendation": null,
     "pos_rank": "QB1",
     "sos_stars": "qb_stars",
-    "star_rating": 1.9,
+    "star_rating": 0,
     "owned_perc": "99.8%"
   },
   {
@@ -80,7 +80,7 @@
     "recommendation": null,
     "pos_rank": "QB2",
     "sos_stars": "qb_stars",
-    "star_rating": 4.9,
+    "star_rating": 0,
     "owned_perc": "99.4%"
   },
   {
@@ -108,7 +108,7 @@
     "recommendation": null,
     "pos_rank": "RB2",
     "sos_stars": "rb_stars",
-    "star_rating": 2.9,
+    "star_rating": 0,
     "owned_perc": "99.8%"
   },
   {
@@ -136,7 +136,7 @@
     "recommendation": null,
     "pos_rank": "QB3",
     "sos_stars": "qb_stars",
-    "star_rating": 3.4,
+    "star_rating": 0,
     "owned_perc": "96.5%"
   },
   {
@@ -153,7 +153,7 @@
     "player_owned_avg": 99.8,
     "player_opponent": "at ARI",
     "player_opponent_id": "ARI",
-    "player_ecr_delta": -1,
+    "player_ecr_delta": null,
     "rank_ecr": 6,
     "rank_min": "2",
     "rank_max": "11",
@@ -164,8 +164,7 @@
     "recommendation": null,
     "pos_rank": "RB3",
     "sos_stars": "rb_stars",
-    "star_rating": 4.4,
-    "ecr_delta_text": "This player's positional ECR has fallen 1 spot in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "99.8%"
   },
   {
@@ -193,7 +192,7 @@
     "recommendation": null,
     "pos_rank": "QB4",
     "sos_stars": "qb_stars",
-    "star_rating": 4.4,
+    "star_rating": 0,
     "owned_perc": "96.2%"
   },
   {
@@ -221,7 +220,7 @@
     "recommendation": null,
     "pos_rank": "QB5",
     "sos_stars": "qb_stars",
-    "star_rating": 2.5,
+    "star_rating": 0,
     "owned_perc": "82.8%"
   },
   {
@@ -249,7 +248,7 @@
     "recommendation": null,
     "pos_rank": "QB6",
     "sos_stars": "qb_stars",
-    "star_rating": 1.5,
+    "star_rating": 0,
     "owned_perc": "91.5%"
   },
   {
@@ -277,7 +276,7 @@
     "recommendation": null,
     "pos_rank": "WR1",
     "sos_stars": "wr_stars",
-    "star_rating": 2.1,
+    "star_rating": 0,
     "owned_perc": "99.8%"
   },
   {
@@ -305,7 +304,7 @@
     "recommendation": null,
     "pos_rank": "RB4",
     "sos_stars": "rb_stars",
-    "star_rating": 2.7,
+    "star_rating": 0,
     "owned_perc": "99.9%"
   },
   {
@@ -333,7 +332,7 @@
     "recommendation": null,
     "pos_rank": "QB7",
     "sos_stars": "qb_stars",
-    "star_rating": 2.1,
+    "star_rating": 0,
     "owned_perc": "92.9%"
   },
   {
@@ -361,7 +360,7 @@
     "recommendation": null,
     "pos_rank": "QB8",
     "sos_stars": "qb_stars",
-    "star_rating": 4.2,
+    "star_rating": 0,
     "owned_perc": "99.1%"
   },
   {
@@ -389,7 +388,7 @@
     "recommendation": null,
     "pos_rank": "WR2",
     "sos_stars": "wr_stars",
-    "star_rating": 3.2,
+    "star_rating": 0,
     "owned_perc": "99.6%"
   },
   {
@@ -417,7 +416,7 @@
     "recommendation": null,
     "pos_rank": "QB9",
     "sos_stars": "qb_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "35.0%"
   },
   {
@@ -445,7 +444,7 @@
     "recommendation": null,
     "pos_rank": "RB5",
     "sos_stars": "rb_stars",
-    "star_rating": 1.8,
+    "star_rating": 0,
     "owned_perc": "99.5%"
   },
   {
@@ -473,7 +472,7 @@
     "recommendation": null,
     "pos_rank": "WR3",
     "sos_stars": "wr_stars",
-    "star_rating": 3.9,
+    "star_rating": 0,
     "owned_perc": "99.8%"
   },
   {
@@ -501,7 +500,7 @@
     "recommendation": null,
     "pos_rank": "QB10",
     "sos_stars": "qb_stars",
-    "star_rating": 3.4,
+    "star_rating": 0,
     "owned_perc": "89.1%"
   },
   {
@@ -529,7 +528,7 @@
     "recommendation": null,
     "pos_rank": "QB11",
     "sos_stars": "qb_stars",
-    "star_rating": 5,
+    "star_rating": 0,
     "owned_perc": "76.9%"
   },
   {
@@ -557,7 +556,7 @@
     "recommendation": null,
     "pos_rank": "WR4",
     "sos_stars": "wr_stars",
-    "star_rating": 2.4,
+    "star_rating": 0,
     "owned_perc": "99.8%"
   },
   {
@@ -585,7 +584,7 @@
     "recommendation": null,
     "pos_rank": "QB12",
     "sos_stars": "qb_stars",
-    "star_rating": 2.8,
+    "star_rating": 0,
     "owned_perc": "60.6%"
   },
   {
@@ -613,7 +612,7 @@
     "recommendation": null,
     "pos_rank": "QB13",
     "sos_stars": "qb_stars",
-    "star_rating": 1.8,
+    "star_rating": 0,
     "owned_perc": "76.3%"
   },
   {
@@ -630,7 +629,7 @@
     "player_owned_avg": 99.8,
     "player_opponent": "vs. LAC",
     "player_opponent_id": "LAC",
-    "player_ecr_delta": 18,
+    "player_ecr_delta": null,
     "rank_ecr": 23,
     "rank_min": "20",
     "rank_max": "28",
@@ -641,8 +640,7 @@
     "recommendation": null,
     "pos_rank": "WR5",
     "sos_stars": "wr_stars",
-    "star_rating": 1.7,
-    "ecr_delta_text": "This player's positional ECR has risen 18 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "99.8%"
   },
   {
@@ -670,7 +668,7 @@
     "recommendation": null,
     "pos_rank": "QB14",
     "sos_stars": "qb_stars",
-    "star_rating": 5,
+    "star_rating": 0,
     "owned_perc": "89.9%"
   },
   {
@@ -698,7 +696,7 @@
     "recommendation": null,
     "pos_rank": "RB6",
     "sos_stars": "rb_stars",
-    "star_rating": 2.5,
+    "star_rating": 0,
     "owned_perc": "93.4%"
   },
   {
@@ -726,7 +724,7 @@
     "recommendation": null,
     "pos_rank": "WR6",
     "sos_stars": "wr_stars",
-    "star_rating": 3,
+    "star_rating": 0,
     "owned_perc": "99.4%"
   },
   {
@@ -754,7 +752,7 @@
     "recommendation": null,
     "pos_rank": "QB15",
     "sos_stars": "qb_stars",
-    "star_rating": 2.7,
+    "star_rating": 0,
     "owned_perc": "89.1%"
   },
   {
@@ -782,7 +780,7 @@
     "recommendation": null,
     "pos_rank": "QB16",
     "sos_stars": "qb_stars",
-    "star_rating": 3,
+    "star_rating": 0,
     "owned_perc": "81.0%"
   },
   {
@@ -810,7 +808,7 @@
     "recommendation": null,
     "pos_rank": "RB7",
     "sos_stars": "rb_stars",
-    "star_rating": 3.7,
+    "star_rating": 0,
     "owned_perc": "99.8%"
   },
   {
@@ -838,7 +836,7 @@
     "recommendation": null,
     "pos_rank": "QB17",
     "sos_stars": "qb_stars",
-    "star_rating": 1.1,
+    "star_rating": 0,
     "owned_perc": "54.7%"
   },
   {
@@ -866,7 +864,7 @@
     "recommendation": null,
     "pos_rank": "WR7",
     "sos_stars": "wr_stars",
-    "star_rating": 3.7,
+    "star_rating": 0,
     "owned_perc": "83.8%"
   },
   {
@@ -894,7 +892,7 @@
     "recommendation": null,
     "pos_rank": "QB18",
     "sos_stars": "qb_stars",
-    "star_rating": 3.4,
+    "star_rating": 0,
     "owned_perc": "92.9%"
   },
   {
@@ -922,7 +920,7 @@
     "recommendation": null,
     "pos_rank": "QB19",
     "sos_stars": "qb_stars",
-    "star_rating": 3.3,
+    "star_rating": 0,
     "owned_perc": "30.2%"
   },
   {
@@ -950,7 +948,7 @@
     "recommendation": null,
     "pos_rank": "QB20",
     "sos_stars": "qb_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "11.2%"
   },
   {
@@ -978,7 +976,7 @@
     "recommendation": null,
     "pos_rank": "TE1",
     "sos_stars": "te_stars",
-    "star_rating": 1.6,
+    "star_rating": 0,
     "owned_perc": "99.7%"
   },
   {
@@ -1006,7 +1004,7 @@
     "recommendation": null,
     "pos_rank": "WR8",
     "sos_stars": "wr_stars",
-    "star_rating": 2.9,
+    "star_rating": 0,
     "owned_perc": "83.5%"
   },
   {
@@ -1034,7 +1032,7 @@
     "recommendation": null,
     "pos_rank": "RB8",
     "sos_stars": "rb_stars",
-    "star_rating": 3.1,
+    "star_rating": 0,
     "owned_perc": "99.7%"
   },
   {
@@ -1062,7 +1060,7 @@
     "recommendation": null,
     "pos_rank": "QB21",
     "sos_stars": "qb_stars",
-    "star_rating": 2.5,
+    "star_rating": 0,
     "owned_perc": "21.0%"
   },
   {
@@ -1090,7 +1088,7 @@
     "recommendation": null,
     "pos_rank": "RB9",
     "sos_stars": "rb_stars",
-    "star_rating": 4.2,
+    "star_rating": 0,
     "owned_perc": "98.1%"
   },
   {
@@ -1118,7 +1116,7 @@
     "recommendation": null,
     "pos_rank": "RB10",
     "sos_stars": "rb_stars",
-    "star_rating": 3.2,
+    "star_rating": 0,
     "owned_perc": "99.6%"
   },
   {
@@ -1146,7 +1144,7 @@
     "recommendation": null,
     "pos_rank": "QB22",
     "sos_stars": "qb_stars",
-    "star_rating": 4.3,
+    "star_rating": 0,
     "owned_perc": "20.2%"
   },
   {
@@ -1174,7 +1172,7 @@
     "recommendation": null,
     "pos_rank": "QB23",
     "sos_stars": "qb_stars",
-    "star_rating": 2.1,
+    "star_rating": 0,
     "owned_perc": "8.8%"
   },
   {
@@ -1202,7 +1200,7 @@
     "recommendation": null,
     "pos_rank": "WR9",
     "sos_stars": "wr_stars",
-    "star_rating": 2.5,
+    "star_rating": 0,
     "owned_perc": "95.7%"
   },
   {
@@ -1219,7 +1217,7 @@
     "player_owned_avg": 99.2,
     "player_opponent": "at WAS",
     "player_opponent_id": "WAS",
-    "player_ecr_delta": -2,
+    "player_ecr_delta": null,
     "rank_ecr": 44,
     "rank_min": "42",
     "rank_max": "51",
@@ -1230,8 +1228,7 @@
     "recommendation": null,
     "pos_rank": "WR10",
     "sos_stars": "wr_stars",
-    "star_rating": 4.6,
-    "ecr_delta_text": "This player's positional ECR has fallen 2 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "99.2%"
   },
   {
@@ -1248,7 +1245,7 @@
     "player_owned_avg": 93.7,
     "player_opponent": "vs. NYJ",
     "player_opponent_id": "NYJ",
-    "player_ecr_delta": -2,
+    "player_ecr_delta": null,
     "rank_ecr": 45,
     "rank_min": "38",
     "rank_max": "54",
@@ -1259,8 +1256,7 @@
     "recommendation": null,
     "pos_rank": "WR11",
     "sos_stars": "wr_stars",
-    "star_rating": 4,
-    "ecr_delta_text": "This player's positional ECR has fallen 2 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "93.7%"
   },
   {
@@ -1288,7 +1284,7 @@
     "recommendation": null,
     "pos_rank": "WR12",
     "sos_stars": "wr_stars",
-    "star_rating": 2.4,
+    "star_rating": 0,
     "owned_perc": "95.1%"
   },
   {
@@ -1316,7 +1312,7 @@
     "recommendation": null,
     "pos_rank": "QB24",
     "sos_stars": "qb_stars",
-    "star_rating": 3.3,
+    "star_rating": 0,
     "owned_perc": "41.5%"
   },
   {
@@ -1344,7 +1340,7 @@
     "recommendation": null,
     "pos_rank": "RB11",
     "sos_stars": "rb_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "95.4%"
   },
   {
@@ -1372,7 +1368,7 @@
     "recommendation": null,
     "pos_rank": "WR13",
     "sos_stars": "wr_stars",
-    "star_rating": 2.2,
+    "star_rating": 0,
     "owned_perc": "95.0%"
   },
   {
@@ -1400,7 +1396,7 @@
     "recommendation": null,
     "pos_rank": "QB25",
     "sos_stars": "qb_stars",
-    "star_rating": 3.5,
+    "star_rating": 0,
     "owned_perc": "28.2%"
   },
   {
@@ -1428,7 +1424,7 @@
     "recommendation": null,
     "pos_rank": "WR14",
     "sos_stars": "wr_stars",
-    "star_rating": 1.7,
+    "star_rating": 0,
     "owned_perc": "97.6%"
   },
   {
@@ -1456,7 +1452,7 @@
     "recommendation": null,
     "pos_rank": "WR15",
     "sos_stars": "wr_stars",
-    "star_rating": 3.7,
+    "star_rating": 0,
     "owned_perc": "98.3%"
   },
   {
@@ -1484,7 +1480,7 @@
     "recommendation": null,
     "pos_rank": "WR16",
     "sos_stars": "wr_stars",
-    "star_rating": 3,
+    "star_rating": 0,
     "owned_perc": "84.7%"
   },
   {
@@ -1512,7 +1508,7 @@
     "recommendation": null,
     "pos_rank": "QB26",
     "sos_stars": "qb_stars",
-    "star_rating": 1.9,
+    "star_rating": 0,
     "owned_perc": "16.9%"
   },
   {
@@ -1540,7 +1536,7 @@
     "recommendation": null,
     "pos_rank": "TE2",
     "sos_stars": "te_stars",
-    "star_rating": 3.6,
+    "star_rating": 0,
     "owned_perc": "99.2%"
   },
   {
@@ -1568,7 +1564,7 @@
     "recommendation": null,
     "pos_rank": "WR17",
     "sos_stars": "wr_stars",
-    "star_rating": 4.1,
+    "star_rating": 0,
     "owned_perc": "97.0%"
   },
   {
@@ -1596,7 +1592,7 @@
     "recommendation": null,
     "pos_rank": "WR18",
     "sos_stars": "wr_stars",
-    "star_rating": 4.2,
+    "star_rating": 0,
     "owned_perc": "95.7%"
   },
   {
@@ -1624,7 +1620,7 @@
     "recommendation": null,
     "pos_rank": "WR19",
     "sos_stars": "wr_stars",
-    "star_rating": 1.7,
+    "star_rating": 0,
     "owned_perc": "93.2%"
   },
   {
@@ -1652,7 +1648,7 @@
     "recommendation": null,
     "pos_rank": "RB12",
     "sos_stars": "rb_stars",
-    "star_rating": 3.4,
+    "star_rating": 0,
     "owned_perc": "98.4%"
   },
   {
@@ -1680,7 +1676,7 @@
     "recommendation": null,
     "pos_rank": "WR20",
     "sos_stars": "wr_stars",
-    "star_rating": 2.2,
+    "star_rating": 0,
     "owned_perc": "65.3%"
   },
   {
@@ -1708,7 +1704,7 @@
     "recommendation": null,
     "pos_rank": "WR21",
     "sos_stars": "wr_stars",
-    "star_rating": 4.6,
+    "star_rating": 0,
     "owned_perc": "95.4%"
   },
   {
@@ -1725,7 +1721,7 @@
     "player_owned_avg": 81.8,
     "player_opponent": "vs. LV",
     "player_opponent_id": "LV",
-    "player_ecr_delta": 5,
+    "player_ecr_delta": null,
     "rank_ecr": 62,
     "rank_min": "56",
     "rank_max": "69",
@@ -1736,8 +1732,7 @@
     "recommendation": null,
     "pos_rank": "RB13",
     "sos_stars": "rb_stars",
-    "star_rating": 2.4,
-    "ecr_delta_text": "This player's positional ECR has risen 5 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "81.8%"
   },
   {
@@ -1765,7 +1760,7 @@
     "recommendation": null,
     "pos_rank": "QB27",
     "sos_stars": "qb_stars",
-    "star_rating": 3.3,
+    "star_rating": 0,
     "owned_perc": "19.4%"
   },
   {
@@ -1793,7 +1788,7 @@
     "recommendation": null,
     "pos_rank": "WR22",
     "sos_stars": "wr_stars",
-    "star_rating": 1.4,
+    "star_rating": 0,
     "owned_perc": "93.2%"
   },
   {
@@ -1821,7 +1816,7 @@
     "recommendation": null,
     "pos_rank": "RB14",
     "sos_stars": "rb_stars",
-    "star_rating": 2.9,
+    "star_rating": 0,
     "owned_perc": "97.7%"
   },
   {
@@ -1849,7 +1844,7 @@
     "recommendation": null,
     "pos_rank": "RB15",
     "sos_stars": "rb_stars",
-    "star_rating": 1.6,
+    "star_rating": 0,
     "owned_perc": "99.7%"
   },
   {
@@ -1877,7 +1872,7 @@
     "recommendation": null,
     "pos_rank": "WR23",
     "sos_stars": "wr_stars",
-    "star_rating": 1.6,
+    "star_rating": 0,
     "owned_perc": "82.9%"
   },
   {
@@ -1905,7 +1900,7 @@
     "recommendation": null,
     "pos_rank": "WR24",
     "sos_stars": "wr_stars",
-    "star_rating": 4.8,
+    "star_rating": 0,
     "owned_perc": "97.3%"
   },
   {
@@ -1933,7 +1928,7 @@
     "recommendation": null,
     "pos_rank": "RB16",
     "sos_stars": "rb_stars",
-    "star_rating": 1.5,
+    "star_rating": 0,
     "owned_perc": "99.3%"
   },
   {
@@ -1961,7 +1956,7 @@
     "recommendation": null,
     "pos_rank": "RB17",
     "sos_stars": "rb_stars",
-    "star_rating": 2.1,
+    "star_rating": 0,
     "owned_perc": "91.8%"
   },
   {
@@ -1978,7 +1973,7 @@
     "player_owned_avg": 93.9,
     "player_opponent": "vs. GB",
     "player_opponent_id": "GB",
-    "player_ecr_delta": -3,
+    "player_ecr_delta": null,
     "rank_ecr": 71,
     "rank_min": "65",
     "rank_max": "76",
@@ -1989,8 +1984,7 @@
     "recommendation": null,
     "pos_rank": "RB18",
     "sos_stars": "rb_stars",
-    "star_rating": 3,
-    "ecr_delta_text": "This player's positional ECR has fallen 3 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "93.9%"
   },
   {
@@ -2018,7 +2012,7 @@
     "recommendation": null,
     "pos_rank": "WR25",
     "sos_stars": "wr_stars",
-    "star_rating": 2.7,
+    "star_rating": 0,
     "owned_perc": "99.7%"
   },
   {
@@ -2046,7 +2040,7 @@
     "recommendation": null,
     "pos_rank": "WR26",
     "sos_stars": "wr_stars",
-    "star_rating": 3.3,
+    "star_rating": 0,
     "owned_perc": "86.6%"
   },
   {
@@ -2074,7 +2068,7 @@
     "recommendation": null,
     "pos_rank": "QB28",
     "sos_stars": "qb_stars",
-    "star_rating": 3.9,
+    "star_rating": 0,
     "owned_perc": "8.8%"
   },
   {
@@ -2102,7 +2096,7 @@
     "recommendation": null,
     "pos_rank": "TE3",
     "sos_stars": "te_stars",
-    "star_rating": 3.3,
+    "star_rating": 0,
     "owned_perc": "81.5%"
   },
   {
@@ -2130,7 +2124,7 @@
     "recommendation": null,
     "pos_rank": "WR27",
     "sos_stars": "wr_stars",
-    "star_rating": 2.9,
+    "star_rating": 0,
     "owned_perc": "73.3%"
   },
   {
@@ -2158,7 +2152,7 @@
     "recommendation": null,
     "pos_rank": "RB19",
     "sos_stars": "rb_stars",
-    "star_rating": 3.2,
+    "star_rating": 0,
     "owned_perc": "79.6%"
   },
   {
@@ -2186,7 +2180,7 @@
     "recommendation": null,
     "pos_rank": "WR28",
     "sos_stars": "wr_stars",
-    "star_rating": 4.4,
+    "star_rating": 0,
     "owned_perc": "44.3%"
   },
   {
@@ -2214,7 +2208,7 @@
     "recommendation": null,
     "pos_rank": "RB20",
     "sos_stars": "rb_stars",
-    "star_rating": 4.3,
+    "star_rating": 0,
     "owned_perc": "93.8%"
   },
   {
@@ -2242,7 +2236,7 @@
     "recommendation": null,
     "pos_rank": "QB29",
     "sos_stars": "qb_stars",
-    "star_rating": 2.2,
+    "star_rating": 0,
     "owned_perc": "9.6%"
   },
   {
@@ -2270,7 +2264,7 @@
     "recommendation": null,
     "pos_rank": "WR29",
     "sos_stars": "wr_stars",
-    "star_rating": 2.9,
+    "star_rating": 0,
     "owned_perc": "96.5%"
   },
   {
@@ -2298,7 +2292,7 @@
     "recommendation": null,
     "pos_rank": "RB21",
     "sos_stars": "rb_stars",
-    "star_rating": 3.6,
+    "star_rating": 0,
     "owned_perc": "97.6%"
   },
   {
@@ -2326,7 +2320,7 @@
     "recommendation": null,
     "pos_rank": "QB30",
     "sos_stars": "qb_stars",
-    "star_rating": 4.3,
+    "star_rating": 0,
     "owned_perc": "0.6%"
   },
   {
@@ -2354,7 +2348,7 @@
     "recommendation": null,
     "pos_rank": "WR30",
     "sos_stars": "wr_stars",
-    "star_rating": 1.6,
+    "star_rating": 0,
     "owned_perc": "90.8%"
   },
   {
@@ -2382,7 +2376,7 @@
     "recommendation": null,
     "pos_rank": "WR31",
     "sos_stars": "wr_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "92.5%"
   },
   {
@@ -2410,7 +2404,7 @@
     "recommendation": null,
     "pos_rank": "RB22",
     "sos_stars": "rb_stars",
-    "star_rating": 4.1,
+    "star_rating": 0,
     "owned_perc": "88.0%"
   },
   {
@@ -2438,7 +2432,7 @@
     "recommendation": null,
     "pos_rank": "RB23",
     "sos_stars": "rb_stars",
-    "star_rating": 4,
+    "star_rating": 0,
     "owned_perc": "93.3%"
   },
   {
@@ -2466,7 +2460,7 @@
     "recommendation": null,
     "pos_rank": "WR32",
     "sos_stars": "wr_stars",
-    "star_rating": 2.6,
+    "star_rating": 0,
     "owned_perc": "21.9%"
   },
   {
@@ -2494,7 +2488,7 @@
     "recommendation": null,
     "pos_rank": "RB24",
     "sos_stars": "rb_stars",
-    "star_rating": 2.7,
+    "star_rating": 0,
     "owned_perc": "98.8%"
   },
   {
@@ -2522,7 +2516,7 @@
     "recommendation": null,
     "pos_rank": "WR33",
     "sos_stars": "wr_stars",
-    "star_rating": 1.4,
+    "star_rating": 0,
     "owned_perc": "92.0%"
   },
   {
@@ -2539,7 +2533,7 @@
     "player_owned_avg": 78.4,
     "player_opponent": "vs. GB",
     "player_opponent_id": "GB",
-    "player_ecr_delta": -6,
+    "player_ecr_delta": null,
     "rank_ecr": 91,
     "rank_min": "89",
     "rank_max": "100",
@@ -2550,8 +2544,7 @@
     "recommendation": null,
     "pos_rank": "WR34",
     "sos_stars": "wr_stars",
-    "star_rating": 2.6,
-    "ecr_delta_text": "This player's positional ECR has fallen 6 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "78.4%"
   },
   {
@@ -2579,7 +2572,7 @@
     "recommendation": null,
     "pos_rank": "WR35",
     "sos_stars": "wr_stars",
-    "star_rating": 3.3,
+    "star_rating": 0,
     "owned_perc": "27.5%"
   },
   {
@@ -2607,7 +2600,7 @@
     "recommendation": null,
     "pos_rank": "WR36",
     "sos_stars": "wr_stars",
-    "star_rating": 4,
+    "star_rating": 0,
     "owned_perc": "82.7%"
   },
   {
@@ -2635,7 +2628,7 @@
     "recommendation": null,
     "pos_rank": "RB25",
     "sos_stars": "rb_stars",
-    "star_rating": 3.6,
+    "star_rating": 0,
     "owned_perc": "71.7%"
   },
   {
@@ -2663,7 +2656,7 @@
     "recommendation": null,
     "pos_rank": "WR37",
     "sos_stars": "wr_stars",
-    "star_rating": 2.7,
+    "star_rating": 0,
     "owned_perc": "82.9%"
   },
   {
@@ -2691,7 +2684,7 @@
     "recommendation": null,
     "pos_rank": "TE4",
     "sos_stars": "te_stars",
-    "star_rating": 4.3,
+    "star_rating": 0,
     "owned_perc": "87.2%"
   },
   {
@@ -2708,7 +2701,7 @@
     "player_owned_avg": 53.4,
     "player_opponent": "vs. JAC",
     "player_opponent_id": "JAC",
-    "player_ecr_delta": 12,
+    "player_ecr_delta": null,
     "rank_ecr": 97,
     "rank_min": "93",
     "rank_max": "108",
@@ -2719,8 +2712,7 @@
     "recommendation": null,
     "pos_rank": "WR38",
     "sos_stars": "wr_stars",
-    "star_rating": 1.7,
-    "ecr_delta_text": "This player's positional ECR has risen 12 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "53.4%"
   },
   {
@@ -2748,7 +2740,7 @@
     "recommendation": null,
     "pos_rank": "TE5",
     "sos_stars": "te_stars",
-    "star_rating": 1.8,
+    "star_rating": 0,
     "owned_perc": "99.3%"
   },
   {
@@ -2765,7 +2757,7 @@
     "player_owned_avg": 75,
     "player_opponent": "at DAL",
     "player_opponent_id": "DAL",
-    "player_ecr_delta": 6,
+    "player_ecr_delta": null,
     "rank_ecr": 99,
     "rank_min": "90",
     "rank_max": "107",
@@ -2776,8 +2768,7 @@
     "recommendation": null,
     "pos_rank": "WR39",
     "sos_stars": "wr_stars",
-    "star_rating": 4.8,
-    "ecr_delta_text": "This player's positional ECR has risen 6 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "75.0%"
   },
   {
@@ -2805,7 +2796,7 @@
     "recommendation": null,
     "pos_rank": "WR40",
     "sos_stars": "wr_stars",
-    "star_rating": 4.4,
+    "star_rating": 0,
     "owned_perc": "51.4%"
   },
   {
@@ -2833,7 +2824,7 @@
     "recommendation": null,
     "pos_rank": "TE6",
     "sos_stars": "te_stars",
-    "star_rating": 3.4,
+    "star_rating": 0,
     "owned_perc": "75.0%"
   },
   {
@@ -2850,7 +2841,7 @@
     "player_owned_avg": 43,
     "player_opponent": "vs. LV",
     "player_opponent_id": "LV",
-    "player_ecr_delta": 4,
+    "player_ecr_delta": null,
     "rank_ecr": 102,
     "rank_min": "99",
     "rank_max": "115",
@@ -2861,8 +2852,7 @@
     "recommendation": null,
     "pos_rank": "WR41",
     "sos_stars": "wr_stars",
-    "star_rating": 3,
-    "ecr_delta_text": "This player's positional ECR has risen 4 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "43.0%"
   },
   {
@@ -2890,7 +2880,7 @@
     "recommendation": null,
     "pos_rank": "RB26",
     "sos_stars": "rb_stars",
-    "star_rating": 1.8,
+    "star_rating": 0,
     "owned_perc": "91.5%"
   },
   {
@@ -2918,7 +2908,7 @@
     "recommendation": null,
     "pos_rank": "TE7",
     "sos_stars": "te_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "5.2%"
   },
   {
@@ -2946,7 +2936,7 @@
     "recommendation": null,
     "pos_rank": "WR42",
     "sos_stars": "wr_stars",
-    "star_rating": 3.2,
+    "star_rating": 0,
     "owned_perc": "53.8%"
   },
   {
@@ -2974,7 +2964,7 @@
     "recommendation": null,
     "pos_rank": "WR43",
     "sos_stars": "wr_stars",
-    "star_rating": 2.2,
+    "star_rating": 0,
     "owned_perc": "5.9%"
   },
   {
@@ -3002,7 +2992,7 @@
     "recommendation": null,
     "pos_rank": "RB27",
     "sos_stars": "rb_stars",
-    "star_rating": 1.8,
+    "star_rating": 0,
     "owned_perc": "84.8%"
   },
   {
@@ -3030,7 +3020,7 @@
     "recommendation": null,
     "pos_rank": "WR44",
     "sos_stars": "wr_stars",
-    "star_rating": 3.7,
+    "star_rating": 0,
     "owned_perc": "73.4%"
   },
   {
@@ -3058,7 +3048,7 @@
     "recommendation": null,
     "pos_rank": "TE8",
     "sos_stars": "te_stars",
-    "star_rating": 3.5,
+    "star_rating": 0,
     "owned_perc": "49.9%"
   },
   {
@@ -3075,7 +3065,7 @@
     "player_owned_avg": 96.8,
     "player_opponent": "vs. SF",
     "player_opponent_id": "SF",
-    "player_ecr_delta": -3,
+    "player_ecr_delta": null,
     "rank_ecr": 110,
     "rank_min": "106",
     "rank_max": "116",
@@ -3086,8 +3076,7 @@
     "recommendation": null,
     "pos_rank": "TE9",
     "sos_stars": "te_stars",
-    "star_rating": 2.8,
-    "ecr_delta_text": "This player's positional ECR has fallen 3 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "96.8%"
   },
   {
@@ -3115,7 +3104,7 @@
     "recommendation": null,
     "pos_rank": "TE10",
     "sos_stars": "te_stars",
-    "star_rating": 3.7,
+    "star_rating": 0,
     "owned_perc": "96.6%"
   },
   {
@@ -3143,7 +3132,7 @@
     "recommendation": null,
     "pos_rank": "RB28",
     "sos_stars": "rb_stars",
-    "star_rating": 1.7,
+    "star_rating": 0,
     "owned_perc": "95.6%"
   },
   {
@@ -3171,7 +3160,7 @@
     "recommendation": null,
     "pos_rank": "WR45",
     "sos_stars": "wr_stars",
-    "star_rating": 3,
+    "star_rating": 0,
     "owned_perc": "61.9%"
   },
   {
@@ -3199,7 +3188,7 @@
     "recommendation": null,
     "pos_rank": "WR46",
     "sos_stars": "wr_stars",
-    "star_rating": 3.7,
+    "star_rating": 0,
     "owned_perc": "84.0%"
   },
   {
@@ -3227,7 +3216,7 @@
     "recommendation": null,
     "pos_rank": "WR47",
     "sos_stars": "wr_stars",
-    "star_rating": 2.9,
+    "star_rating": 0,
     "owned_perc": "55.1%"
   },
   {
@@ -3244,7 +3233,7 @@
     "player_owned_avg": 79.2,
     "player_opponent": "at CLE",
     "player_opponent_id": "CLE",
-    "player_ecr_delta": 3,
+    "player_ecr_delta": null,
     "rank_ecr": 116,
     "rank_min": "110",
     "rank_max": "123",
@@ -3255,8 +3244,7 @@
     "recommendation": null,
     "pos_rank": "TE11",
     "sos_stars": "te_stars",
-    "star_rating": 2,
-    "ecr_delta_text": "This player's positional ECR has risen 3 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "79.2%"
   },
   {
@@ -3284,7 +3272,7 @@
     "recommendation": null,
     "pos_rank": "WR48",
     "sos_stars": "wr_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "20.2%"
   },
   {
@@ -3312,7 +3300,7 @@
     "recommendation": null,
     "pos_rank": "WR49",
     "sos_stars": "wr_stars",
-    "star_rating": 3.3,
+    "star_rating": 0,
     "owned_perc": "54.8%"
   },
   {
@@ -3340,7 +3328,7 @@
     "recommendation": null,
     "pos_rank": "WR50",
     "sos_stars": "wr_stars",
-    "star_rating": 2.7,
+    "star_rating": 0,
     "owned_perc": "21.3%"
   },
   {
@@ -3368,7 +3356,7 @@
     "recommendation": null,
     "pos_rank": "TE12",
     "sos_stars": "te_stars",
-    "star_rating": 4.5,
+    "star_rating": 0,
     "owned_perc": "30.8%"
   },
   {
@@ -3396,7 +3384,7 @@
     "recommendation": null,
     "pos_rank": "TE13",
     "sos_stars": "te_stars",
-    "star_rating": 2.5,
+    "star_rating": 0,
     "owned_perc": "43.2%"
   },
   {
@@ -3413,7 +3401,7 @@
     "player_owned_avg": 7.8,
     "player_opponent": "vs. ATL",
     "player_opponent_id": "ATL",
-    "player_ecr_delta": -8,
+    "player_ecr_delta": null,
     "rank_ecr": 122,
     "rank_min": "108",
     "rank_max": "136",
@@ -3424,8 +3412,7 @@
     "recommendation": null,
     "pos_rank": "RB29",
     "sos_stars": "rb_stars",
-    "star_rating": 2.9,
-    "ecr_delta_text": "This player's positional ECR has fallen 8 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "7.8%"
   },
   {
@@ -3442,7 +3429,7 @@
     "player_owned_avg": 41.4,
     "player_opponent": "vs. SF",
     "player_opponent_id": "SF",
-    "player_ecr_delta": -7,
+    "player_ecr_delta": null,
     "rank_ecr": 123,
     "rank_min": "119",
     "rank_max": "135",
@@ -3453,8 +3440,7 @@
     "recommendation": null,
     "pos_rank": "WR51",
     "sos_stars": "wr_stars",
-    "star_rating": 3.3,
-    "ecr_delta_text": "This player's positional ECR has fallen 7 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "41.4%"
   },
   {
@@ -3471,7 +3457,7 @@
     "player_owned_avg": 69.5,
     "player_opponent": "at DET",
     "player_opponent_id": "DET",
-    "player_ecr_delta": 6,
+    "player_ecr_delta": null,
     "rank_ecr": 124,
     "rank_min": "102",
     "rank_max": "133",
@@ -3482,8 +3468,7 @@
     "recommendation": null,
     "pos_rank": "RB30",
     "sos_stars": "rb_stars",
-    "star_rating": 1.8,
-    "ecr_delta_text": "This player's positional ECR has risen 6 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "69.5%"
   },
   {
@@ -3511,7 +3496,7 @@
     "recommendation": null,
     "pos_rank": "RB31",
     "sos_stars": "rb_stars",
-    "star_rating": 3,
+    "star_rating": 0,
     "owned_perc": "67.4%"
   },
   {
@@ -3528,7 +3513,7 @@
     "player_owned_avg": 87,
     "player_opponent": "vs. LAC",
     "player_opponent_id": "LAC",
-    "player_ecr_delta": -2,
+    "player_ecr_delta": null,
     "rank_ecr": 126,
     "rank_min": "121",
     "rank_max": "137",
@@ -3539,8 +3524,7 @@
     "recommendation": null,
     "pos_rank": "TE14",
     "sos_stars": "te_stars",
-    "star_rating": 4.6,
-    "ecr_delta_text": "This player's positional ECR has fallen 2 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "87.0%"
   },
   {
@@ -3568,7 +3552,7 @@
     "recommendation": null,
     "pos_rank": "WR52",
     "sos_stars": "wr_stars",
-    "star_rating": 2.2,
+    "star_rating": 0,
     "owned_perc": "31.0%"
   },
   {
@@ -3596,7 +3580,7 @@
     "recommendation": null,
     "pos_rank": "WR53",
     "sos_stars": "wr_stars",
-    "star_rating": 3.3,
+    "star_rating": 0,
     "owned_perc": "7.3%"
   },
   {
@@ -3613,7 +3597,7 @@
     "player_owned_avg": 46,
     "player_opponent": "vs. PHI",
     "player_opponent_id": "PHI",
-    "player_ecr_delta": 17,
+    "player_ecr_delta": null,
     "rank_ecr": 129,
     "rank_min": "102",
     "rank_max": "143",
@@ -3624,8 +3608,7 @@
     "recommendation": null,
     "pos_rank": "RB32",
     "sos_stars": "rb_stars",
-    "star_rating": 3.6,
-    "ecr_delta_text": "This player's positional ECR has risen 17 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "46.0%"
   },
   {
@@ -3653,7 +3636,7 @@
     "recommendation": null,
     "pos_rank": "TE15",
     "sos_stars": "te_stars",
-    "star_rating": 3.7,
+    "star_rating": 0,
     "owned_perc": "58.8%"
   },
   {
@@ -3681,7 +3664,7 @@
     "recommendation": null,
     "pos_rank": "TE16",
     "sos_stars": "te_stars",
-    "star_rating": 3.5,
+    "star_rating": 0,
     "owned_perc": "44.3%"
   },
   {
@@ -3709,7 +3692,7 @@
     "recommendation": null,
     "pos_rank": "QB31",
     "sos_stars": "qb_stars",
-    "star_rating": 1.7,
+    "star_rating": 0,
     "owned_perc": "0.6%"
   },
   {
@@ -3737,7 +3720,7 @@
     "recommendation": null,
     "pos_rank": "WR54",
     "sos_stars": "wr_stars",
-    "star_rating": 3.9,
+    "star_rating": 0,
     "owned_perc": "12.1%"
   },
   {
@@ -3765,7 +3748,7 @@
     "recommendation": null,
     "pos_rank": "RB33",
     "sos_stars": "rb_stars",
-    "star_rating": 1.5,
+    "star_rating": 0,
     "owned_perc": "42.7%"
   },
   {
@@ -3793,7 +3776,7 @@
     "recommendation": null,
     "pos_rank": "WR55",
     "sos_stars": "wr_stars",
-    "star_rating": 2.3,
+    "star_rating": 0,
     "owned_perc": "42.1%"
   },
   {
@@ -3821,7 +3804,7 @@
     "recommendation": null,
     "pos_rank": "RB34",
     "sos_stars": "rb_stars",
-    "star_rating": 3.6,
+    "star_rating": 0,
     "owned_perc": "69.8%"
   },
   {
@@ -3849,7 +3832,7 @@
     "recommendation": null,
     "pos_rank": "WR56",
     "sos_stars": "wr_stars",
-    "star_rating": 2.9,
+    "star_rating": 0,
     "owned_perc": "0.1%"
   },
   {
@@ -3877,7 +3860,7 @@
     "recommendation": null,
     "pos_rank": "TE17",
     "sos_stars": "te_stars",
-    "star_rating": 2.6,
+    "star_rating": 0,
     "owned_perc": "67.0%"
   },
   {
@@ -3905,7 +3888,7 @@
     "recommendation": null,
     "pos_rank": "RB35",
     "sos_stars": "rb_stars",
-    "star_rating": 4.3,
+    "star_rating": 0,
     "owned_perc": "52.5%"
   },
   {
@@ -3933,7 +3916,7 @@
     "recommendation": null,
     "pos_rank": "WR57",
     "sos_stars": "wr_stars",
-    "star_rating": 2.7,
+    "star_rating": 0,
     "owned_perc": "13.5%"
   },
   {
@@ -3961,7 +3944,7 @@
     "recommendation": null,
     "pos_rank": "WR58",
     "sos_stars": "wr_stars",
-    "star_rating": 3.2,
+    "star_rating": 0,
     "owned_perc": "60.0%"
   },
   {
@@ -3978,7 +3961,7 @@
     "player_owned_avg": 7.8,
     "player_opponent": "at MIA",
     "player_opponent_id": "MIA",
-    "player_ecr_delta": 3,
+    "player_ecr_delta": null,
     "rank_ecr": 142,
     "rank_min": "139",
     "rank_max": "155",
@@ -3989,8 +3972,7 @@
     "recommendation": null,
     "pos_rank": "TE18",
     "sos_stars": "te_stars",
-    "star_rating": 3.3,
-    "ecr_delta_text": "This player's positional ECR has risen 3 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "7.8%"
   },
   {
@@ -4018,7 +4000,7 @@
     "recommendation": null,
     "pos_rank": "RB36",
     "sos_stars": "rb_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "67.7%"
   },
   {
@@ -4046,7 +4028,7 @@
     "recommendation": null,
     "pos_rank": "WR59",
     "sos_stars": "wr_stars",
-    "star_rating": 4.4,
+    "star_rating": 0,
     "owned_perc": "4.2%"
   },
   {
@@ -4074,7 +4056,7 @@
     "recommendation": null,
     "pos_rank": "WR60",
     "sos_stars": "wr_stars",
-    "star_rating": 2.5,
+    "star_rating": 0,
     "owned_perc": "14.9%"
   },
   {
@@ -4102,7 +4084,7 @@
     "recommendation": null,
     "pos_rank": "WR61",
     "sos_stars": "wr_stars",
-    "star_rating": 4,
+    "star_rating": 0,
     "owned_perc": "20.8%"
   },
   {
@@ -4130,7 +4112,7 @@
     "recommendation": null,
     "pos_rank": "RB37",
     "sos_stars": "rb_stars",
-    "star_rating": 2.7,
+    "star_rating": 0,
     "owned_perc": "93.9%"
   },
   {
@@ -4158,7 +4140,7 @@
     "recommendation": null,
     "pos_rank": "RB38",
     "sos_stars": "rb_stars",
-    "star_rating": 4,
+    "star_rating": 0,
     "owned_perc": "64.6%"
   },
   {
@@ -4186,7 +4168,7 @@
     "recommendation": null,
     "pos_rank": "TE19",
     "sos_stars": "te_stars",
-    "star_rating": 2.6,
+    "star_rating": 0,
     "owned_perc": "43.3%"
   },
   {
@@ -4214,7 +4196,7 @@
     "recommendation": null,
     "pos_rank": "TE20",
     "sos_stars": "te_stars",
-    "star_rating": 2,
+    "star_rating": 0,
     "owned_perc": "18.8%"
   },
   {
@@ -4242,7 +4224,7 @@
     "recommendation": null,
     "pos_rank": "RB39",
     "sos_stars": "rb_stars",
-    "star_rating": 1.7,
+    "star_rating": 0,
     "owned_perc": "75.3%"
   },
   {
@@ -4270,7 +4252,7 @@
     "recommendation": null,
     "pos_rank": "WR62",
     "sos_stars": "wr_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "2.6%"
   },
   {
@@ -4298,7 +4280,7 @@
     "recommendation": null,
     "pos_rank": "RB40",
     "sos_stars": "rb_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "0.7%"
   },
   {
@@ -4326,7 +4308,7 @@
     "recommendation": null,
     "pos_rank": "TE21",
     "sos_stars": "te_stars",
-    "star_rating": 3.5,
+    "star_rating": 0,
     "owned_perc": "85.8%"
   },
   {
@@ -4343,7 +4325,7 @@
     "player_owned_avg": 13.5,
     "player_opponent": "at DEN",
     "player_opponent_id": "DEN",
-    "player_ecr_delta": 21,
+    "player_ecr_delta": null,
     "rank_ecr": 155,
     "rank_min": "144",
     "rank_max": "164",
@@ -4354,8 +4336,7 @@
     "recommendation": null,
     "pos_rank": "WR63",
     "sos_stars": "wr_stars",
-    "star_rating": 1.6,
-    "ecr_delta_text": "This player's positional ECR has risen 21 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "13.5%"
   },
   {
@@ -4383,7 +4364,7 @@
     "recommendation": null,
     "pos_rank": "TE22",
     "sos_stars": "te_stars",
-    "star_rating": 3.5,
+    "star_rating": 0,
     "owned_perc": "45.2%"
   },
   {
@@ -4411,7 +4392,7 @@
     "recommendation": null,
     "pos_rank": "QB32",
     "sos_stars": "qb_stars",
-    "star_rating": 1.3,
+    "star_rating": 0,
     "owned_perc": "1.2%"
   },
   {
@@ -4439,7 +4420,7 @@
     "recommendation": null,
     "pos_rank": "WR64",
     "sos_stars": "wr_stars",
-    "star_rating": 2.2,
+    "star_rating": 0,
     "owned_perc": "13.1%"
   },
   {
@@ -4467,7 +4448,7 @@
     "recommendation": null,
     "pos_rank": "RB41",
     "sos_stars": "rb_stars",
-    "star_rating": 4.3,
+    "star_rating": 0,
     "owned_perc": "72.3%"
   },
   {
@@ -4495,7 +4476,7 @@
     "recommendation": null,
     "pos_rank": "WR65",
     "sos_stars": "wr_stars",
-    "star_rating": 1.7,
+    "star_rating": 0,
     "owned_perc": "10.5%"
   },
   {
@@ -4523,7 +4504,7 @@
     "recommendation": null,
     "pos_rank": "TE23",
     "sos_stars": "te_stars",
-    "star_rating": 2.4,
+    "star_rating": 0,
     "owned_perc": "1.3%"
   },
   {
@@ -4540,7 +4521,7 @@
     "player_owned_avg": 27.5,
     "player_opponent": "vs. JAC",
     "player_opponent_id": "JAC",
-    "player_ecr_delta": 9,
+    "player_ecr_delta": null,
     "rank_ecr": 162,
     "rank_min": "159",
     "rank_max": "171",
@@ -4551,8 +4532,7 @@
     "recommendation": null,
     "pos_rank": "WR66",
     "sos_stars": "wr_stars",
-    "star_rating": 1.7,
-    "ecr_delta_text": "This player's positional ECR has risen 9 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "27.5%"
   },
   {
@@ -4580,7 +4560,7 @@
     "recommendation": null,
     "pos_rank": "TE24",
     "sos_stars": "te_stars",
-    "star_rating": 3,
+    "star_rating": 0,
     "owned_perc": "57.2%"
   },
   {
@@ -4597,7 +4577,7 @@
     "player_owned_avg": 4.3,
     "player_opponent": "at DAL",
     "player_opponent_id": "DAL",
-    "player_ecr_delta": 11,
+    "player_ecr_delta": null,
     "rank_ecr": 164,
     "rank_min": "150",
     "rank_max": "174",
@@ -4608,8 +4588,7 @@
     "recommendation": null,
     "pos_rank": "WR67",
     "sos_stars": "wr_stars",
-    "star_rating": 4.8,
-    "ecr_delta_text": "This player's positional ECR has risen 11 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "4.3%"
   },
   {
@@ -4637,7 +4616,7 @@
     "recommendation": null,
     "pos_rank": "RB42",
     "sos_stars": "rb_stars",
-    "star_rating": 3.4,
+    "star_rating": 0,
     "owned_perc": "3.9%"
   },
   {
@@ -4665,7 +4644,7 @@
     "recommendation": null,
     "pos_rank": "RB43",
     "sos_stars": "rb_stars",
-    "star_rating": 4.4,
+    "star_rating": 0,
     "owned_perc": "36.3%"
   },
   {
@@ -4693,7 +4672,7 @@
     "recommendation": null,
     "pos_rank": "WR68",
     "sos_stars": "wr_stars",
-    "star_rating": 3,
+    "star_rating": 0,
     "owned_perc": "23.7%"
   },
   {
@@ -4721,7 +4700,7 @@
     "recommendation": null,
     "pos_rank": "RB44",
     "sos_stars": "rb_stars",
-    "star_rating": 1.8,
+    "star_rating": 0,
     "owned_perc": "38.2%"
   },
   {
@@ -4749,7 +4728,7 @@
     "recommendation": null,
     "pos_rank": "WR69",
     "sos_stars": "wr_stars",
-    "star_rating": 3.9,
+    "star_rating": 0,
     "owned_perc": "97.8%"
   },
   {
@@ -4777,7 +4756,7 @@
     "recommendation": null,
     "pos_rank": "TE25",
     "sos_stars": "te_stars",
-    "star_rating": 2.7,
+    "star_rating": 0,
     "owned_perc": "8.6%"
   },
   {
@@ -4805,7 +4784,7 @@
     "recommendation": null,
     "pos_rank": "WR70",
     "sos_stars": "wr_stars",
-    "star_rating": 2.4,
+    "star_rating": 0,
     "owned_perc": "8.4%"
   },
   {
@@ -4833,7 +4812,7 @@
     "recommendation": null,
     "pos_rank": "RB45",
     "sos_stars": "rb_stars",
-    "star_rating": 3.2,
+    "star_rating": 0,
     "owned_perc": "37.9%"
   },
   {
@@ -4861,7 +4840,7 @@
     "recommendation": null,
     "pos_rank": "TE26",
     "sos_stars": "te_stars",
-    "star_rating": 1.9,
+    "star_rating": 0,
     "owned_perc": "78.5%"
   },
   {
@@ -4878,7 +4857,7 @@
     "player_owned_avg": 9.6,
     "player_opponent": "vs. ATL",
     "player_opponent_id": "ATL",
-    "player_ecr_delta": 17,
+    "player_ecr_delta": null,
     "rank_ecr": 174,
     "rank_min": "164",
     "rank_max": "188",
@@ -4889,8 +4868,7 @@
     "recommendation": null,
     "pos_rank": "RB46",
     "sos_stars": "rb_stars",
-    "star_rating": 2.9,
-    "ecr_delta_text": "This player's positional ECR has risen 17 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "9.6%"
   },
   {
@@ -4918,7 +4896,7 @@
     "recommendation": null,
     "pos_rank": "TE27",
     "sos_stars": "te_stars",
-    "star_rating": 3.5,
+    "star_rating": 0,
     "owned_perc": "28.4%"
   },
   {
@@ -4935,7 +4913,7 @@
     "player_owned_avg": 35.8,
     "player_opponent": "at CLE",
     "player_opponent_id": "CLE",
-    "player_ecr_delta": 8,
+    "player_ecr_delta": null,
     "rank_ecr": 176,
     "rank_min": "167",
     "rank_max": "187",
@@ -4946,8 +4924,7 @@
     "recommendation": null,
     "pos_rank": "WR71",
     "sos_stars": "wr_stars",
-    "star_rating": 4,
-    "ecr_delta_text": "This player's positional ECR has risen 8 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "35.8%"
   },
   {
@@ -4975,7 +4952,7 @@
     "recommendation": null,
     "pos_rank": "WR72",
     "sos_stars": "wr_stars",
-    "star_rating": 2.3,
+    "star_rating": 0,
     "owned_perc": "2.9%"
   },
   {
@@ -5003,7 +4980,7 @@
     "recommendation": null,
     "pos_rank": "WR73",
     "sos_stars": "wr_stars",
-    "star_rating": 4.4,
+    "star_rating": 0,
     "owned_perc": "52.1%"
   },
   {
@@ -5031,7 +5008,7 @@
     "recommendation": null,
     "pos_rank": "RB47",
     "sos_stars": "rb_stars",
-    "star_rating": 4.1,
+    "star_rating": 0,
     "owned_perc": "69.8%"
   },
   {
@@ -5059,7 +5036,7 @@
     "recommendation": null,
     "pos_rank": "WR74",
     "sos_stars": "wr_stars",
-    "star_rating": 2.6,
+    "star_rating": 0,
     "owned_perc": "2.1%"
   },
   {
@@ -5087,7 +5064,7 @@
     "recommendation": null,
     "pos_rank": "TE28",
     "sos_stars": "te_stars",
-    "star_rating": 2,
+    "star_rating": 0,
     "owned_perc": "2.3%"
   },
   {
@@ -5115,7 +5092,7 @@
     "recommendation": null,
     "pos_rank": "QB33",
     "sos_stars": "qb_stars",
-    "star_rating": 1.3,
+    "star_rating": 0,
     "owned_perc": "10.1%"
   },
   {
@@ -5143,7 +5120,7 @@
     "recommendation": null,
     "pos_rank": "RB48",
     "sos_stars": "rb_stars",
-    "star_rating": 4.2,
+    "star_rating": 0,
     "owned_perc": "56.5%"
   },
   {
@@ -5171,7 +5148,7 @@
     "recommendation": null,
     "pos_rank": "RB49",
     "sos_stars": "rb_stars",
-    "star_rating": 4.2,
+    "star_rating": 0,
     "owned_perc": "15.6%"
   },
   {
@@ -5199,7 +5176,7 @@
     "recommendation": null,
     "pos_rank": "TE29",
     "sos_stars": "te_stars",
-    "star_rating": 3.5,
+    "star_rating": 0,
     "owned_perc": "3.5%"
   },
   {
@@ -5227,7 +5204,7 @@
     "recommendation": null,
     "pos_rank": "WR75",
     "sos_stars": "wr_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "12.1%"
   },
   {
@@ -5255,7 +5232,7 @@
     "recommendation": null,
     "pos_rank": "TE30",
     "sos_stars": "te_stars",
-    "star_rating": 2.4,
+    "star_rating": 0,
     "owned_perc": "15.1%"
   },
   {
@@ -5272,7 +5249,7 @@
     "player_owned_avg": 2,
     "player_opponent": "vs. PHI",
     "player_opponent_id": "PHI",
-    "player_ecr_delta": 7,
+    "player_ecr_delta": null,
     "rank_ecr": 188,
     "rank_min": "181",
     "rank_max": "192",
@@ -5283,8 +5260,7 @@
     "recommendation": null,
     "pos_rank": "RB50",
     "sos_stars": "rb_stars",
-    "star_rating": 3.6,
-    "ecr_delta_text": "This player's positional ECR has risen 7 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "2.0%"
   },
   {
@@ -5312,7 +5288,7 @@
     "recommendation": null,
     "pos_rank": "WR76",
     "sos_stars": "wr_stars",
-    "star_rating": 4.4,
+    "star_rating": 0,
     "owned_perc": "32.7%"
   },
   {
@@ -5340,7 +5316,7 @@
     "recommendation": null,
     "pos_rank": "WR77",
     "sos_stars": "wr_stars",
-    "star_rating": 2.2,
+    "star_rating": 0,
     "owned_perc": "1.6%"
   },
   {
@@ -5368,7 +5344,7 @@
     "recommendation": null,
     "pos_rank": "RB51",
     "sos_stars": "rb_stars",
-    "star_rating": 1.8,
+    "star_rating": 0,
     "owned_perc": "4.0%"
   },
   {
@@ -5396,7 +5372,7 @@
     "recommendation": null,
     "pos_rank": "WR78",
     "sos_stars": "wr_stars",
-    "star_rating": 4.1,
+    "star_rating": 0,
     "owned_perc": "9.2%"
   },
   {
@@ -5413,7 +5389,7 @@
     "player_owned_avg": 0.7,
     "player_opponent": "at MIA",
     "player_opponent_id": "MIA",
-    "player_ecr_delta": 7,
+    "player_ecr_delta": null,
     "rank_ecr": 193,
     "rank_min": "163",
     "rank_max": "247",
@@ -5424,8 +5400,7 @@
     "recommendation": null,
     "pos_rank": "WR79",
     "sos_stars": "wr_stars",
-    "star_rating": 3.9,
-    "ecr_delta_text": "This player's positional ECR has risen 7 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "0.7%"
   },
   {
@@ -5453,7 +5428,7 @@
     "recommendation": null,
     "pos_rank": "RB52",
     "sos_stars": "rb_stars",
-    "star_rating": 2.9,
+    "star_rating": 0,
     "owned_perc": "48.2%"
   },
   {
@@ -5481,7 +5456,7 @@
     "recommendation": null,
     "pos_rank": "RB53",
     "sos_stars": "rb_stars",
-    "star_rating": 1.6,
+    "star_rating": 0,
     "owned_perc": "5.7%"
   },
   {
@@ -5509,7 +5484,7 @@
     "recommendation": null,
     "pos_rank": "WR80",
     "sos_stars": "wr_stars",
-    "star_rating": 2.1,
+    "star_rating": 0,
     "owned_perc": "98.6%",
     "injury_status": "Q",
     "injury_tooltip": "Questionable: Knee "
@@ -5539,7 +5514,7 @@
     "recommendation": null,
     "pos_rank": "RB54",
     "sos_stars": "rb_stars",
-    "star_rating": 2.5,
+    "star_rating": 0,
     "owned_perc": "29.7%"
   },
   {
@@ -5567,7 +5542,7 @@
     "recommendation": null,
     "pos_rank": "WR81",
     "sos_stars": "wr_stars",
-    "star_rating": 2.9,
+    "star_rating": 0,
     "owned_perc": "98.6%"
   },
   {
@@ -5595,7 +5570,7 @@
     "recommendation": null,
     "pos_rank": "RB55",
     "sos_stars": "rb_stars",
-    "star_rating": 3.1,
+    "star_rating": 0,
     "owned_perc": "38.7%"
   },
   {
@@ -5623,7 +5598,7 @@
     "recommendation": null,
     "pos_rank": "RB56",
     "sos_stars": "rb_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "22.1%"
   },
   {
@@ -5651,7 +5626,7 @@
     "recommendation": null,
     "pos_rank": "WR82",
     "sos_stars": "wr_stars",
-    "star_rating": 3.7,
+    "star_rating": 0,
     "owned_perc": "91.7%"
   },
   {
@@ -5679,7 +5654,7 @@
     "recommendation": null,
     "pos_rank": "WR83",
     "sos_stars": "wr_stars",
-    "star_rating": 2.7,
+    "star_rating": 0,
     "owned_perc": "2.6%"
   },
   {
@@ -5696,7 +5671,7 @@
     "player_owned_avg": 4.5,
     "player_opponent": "vs. JAC",
     "player_opponent_id": "JAC",
-    "player_ecr_delta": -52,
+    "player_ecr_delta": null,
     "rank_ecr": 203,
     "rank_min": "178",
     "rank_max": "209",
@@ -5707,8 +5682,7 @@
     "recommendation": null,
     "pos_rank": "WR84",
     "sos_stars": "wr_stars",
-    "star_rating": 1.7,
-    "ecr_delta_text": "This player's positional ECR has fallen 52 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "4.5%"
   },
   {
@@ -5736,7 +5710,7 @@
     "recommendation": null,
     "pos_rank": "TE31",
     "sos_stars": "te_stars",
-    "star_rating": 4.3,
+    "star_rating": 0,
     "owned_perc": "2.0%"
   },
   {
@@ -5764,7 +5738,7 @@
     "recommendation": null,
     "pos_rank": "RB57",
     "sos_stars": "rb_stars",
-    "star_rating": 2.1,
+    "star_rating": 0,
     "owned_perc": "1.9%"
   },
   {
@@ -5792,7 +5766,7 @@
     "recommendation": null,
     "pos_rank": "TE32",
     "sos_stars": "te_stars",
-    "star_rating": 2.7,
+    "star_rating": 0,
     "owned_perc": "32.2%"
   },
   {
@@ -5809,7 +5783,7 @@
     "player_owned_avg": 4.4,
     "player_opponent": "vs. NE",
     "player_opponent_id": "NE",
-    "player_ecr_delta": 11,
+    "player_ecr_delta": null,
     "rank_ecr": 207,
     "rank_min": "187",
     "rank_max": "210",
@@ -5820,8 +5794,7 @@
     "recommendation": null,
     "pos_rank": "WR85",
     "sos_stars": "wr_stars",
-    "star_rating": 4.2,
-    "ecr_delta_text": "This player's positional ECR has risen 11 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "4.4%"
   },
   {
@@ -5849,7 +5822,7 @@
     "recommendation": null,
     "pos_rank": "RB58",
     "sos_stars": "rb_stars",
-    "star_rating": 2.9,
+    "star_rating": 0,
     "owned_perc": "1.0%"
   },
   {
@@ -5877,7 +5850,7 @@
     "recommendation": null,
     "pos_rank": "WR86",
     "sos_stars": "wr_stars",
-    "star_rating": 2.7,
+    "star_rating": 0,
     "owned_perc": "0.8%"
   },
   {
@@ -5905,7 +5878,7 @@
     "recommendation": null,
     "pos_rank": "TE33",
     "sos_stars": "te_stars",
-    "star_rating": 3.3,
+    "star_rating": 0,
     "owned_perc": "2.6%"
   },
   {
@@ -5933,7 +5906,7 @@
     "recommendation": null,
     "pos_rank": "TE34",
     "sos_stars": "te_stars",
-    "star_rating": 1.5,
+    "star_rating": 0,
     "owned_perc": "0.6%"
   },
   {
@@ -5961,7 +5934,7 @@
     "recommendation": null,
     "pos_rank": "WR87",
     "sos_stars": "wr_stars",
-    "star_rating": 4.8,
+    "star_rating": 0,
     "owned_perc": "51.0%"
   },
   {
@@ -5989,7 +5962,7 @@
     "recommendation": null,
     "pos_rank": "TE35",
     "sos_stars": "te_stars",
-    "star_rating": 4.5,
+    "star_rating": 0,
     "owned_perc": "3.0%"
   },
   {
@@ -6017,7 +5990,7 @@
     "recommendation": null,
     "pos_rank": "TE36",
     "sos_stars": "te_stars",
-    "star_rating": 1.5,
+    "star_rating": 0,
     "owned_perc": "1.9%"
   },
   {
@@ -6045,7 +6018,7 @@
     "recommendation": null,
     "pos_rank": "WR88",
     "sos_stars": "wr_stars",
-    "star_rating": 2.9,
+    "star_rating": 0,
     "owned_perc": "3.5%"
   },
   {
@@ -6073,7 +6046,7 @@
     "recommendation": null,
     "pos_rank": "WR89",
     "sos_stars": "wr_stars",
-    "star_rating": 3.7,
+    "star_rating": 0,
     "owned_perc": "1.3%"
   },
   {
@@ -6101,7 +6074,7 @@
     "recommendation": null,
     "pos_rank": "RB59",
     "sos_stars": "rb_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "8.9%"
   },
   {
@@ -6129,7 +6102,7 @@
     "recommendation": null,
     "pos_rank": "RB60",
     "sos_stars": "rb_stars",
-    "star_rating": 4.3,
+    "star_rating": 0,
     "owned_perc": "3.9%"
   },
   {
@@ -6157,7 +6130,7 @@
     "recommendation": null,
     "pos_rank": "RB61",
     "sos_stars": "rb_stars",
-    "star_rating": 3.7,
+    "star_rating": 0,
     "owned_perc": "32.3%"
   },
   {
@@ -6185,7 +6158,7 @@
     "recommendation": null,
     "pos_rank": "WR90",
     "sos_stars": "wr_stars",
-    "star_rating": 3,
+    "star_rating": 0,
     "owned_perc": "1.1%"
   },
   {
@@ -6213,7 +6186,7 @@
     "recommendation": null,
     "pos_rank": "WR91",
     "sos_stars": "wr_stars",
-    "star_rating": 3,
+    "star_rating": 0,
     "owned_perc": "3.6%"
   },
   {
@@ -6241,7 +6214,7 @@
     "recommendation": null,
     "pos_rank": "RB62",
     "sos_stars": "rb_stars",
-    "star_rating": 3.6,
+    "star_rating": 0,
     "owned_perc": "41.7%"
   },
   {
@@ -6269,7 +6242,7 @@
     "recommendation": null,
     "pos_rank": "WR92",
     "sos_stars": "wr_stars",
-    "star_rating": 1.7,
+    "star_rating": 0,
     "owned_perc": "0.7%"
   },
   {
@@ -6297,7 +6270,7 @@
     "recommendation": null,
     "pos_rank": "RB63",
     "sos_stars": "rb_stars",
-    "star_rating": 1.6,
+    "star_rating": 0,
     "owned_perc": "0.6%"
   },
   {
@@ -6325,7 +6298,7 @@
     "recommendation": null,
     "pos_rank": "RB64",
     "sos_stars": "rb_stars",
-    "star_rating": 2.4,
+    "star_rating": 0,
     "owned_perc": "0.9%"
   },
   {
@@ -6353,7 +6326,7 @@
     "recommendation": null,
     "pos_rank": "RB65",
     "sos_stars": "rb_stars",
-    "star_rating": 1.8,
+    "star_rating": 0,
     "owned_perc": "6.8%"
   },
   {
@@ -6381,7 +6354,7 @@
     "recommendation": null,
     "pos_rank": "RB66",
     "sos_stars": "rb_stars",
-    "star_rating": 3.6,
+    "star_rating": 0,
     "owned_perc": "5.5%"
   },
   {
@@ -6409,7 +6382,7 @@
     "recommendation": null,
     "pos_rank": "RB67",
     "sos_stars": "rb_stars",
-    "star_rating": 2.4
+    "star_rating": 0
   },
   {
     "player_id": 25325,
@@ -6436,7 +6409,7 @@
     "recommendation": null,
     "pos_rank": "RB68",
     "sos_stars": "rb_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "1.2%"
   },
   {
@@ -6464,7 +6437,7 @@
     "recommendation": null,
     "pos_rank": "WR93",
     "sos_stars": "wr_stars",
-    "star_rating": 2.1,
+    "star_rating": 0,
     "owned_perc": "1.0%"
   },
   {
@@ -6492,7 +6465,7 @@
     "recommendation": null,
     "pos_rank": "RB69",
     "sos_stars": "rb_stars",
-    "star_rating": 2.1,
+    "star_rating": 0,
     "owned_perc": "0.8%"
   },
   {
@@ -6520,7 +6493,7 @@
     "recommendation": null,
     "pos_rank": "WR94",
     "sos_stars": "wr_stars",
-    "star_rating": 4,
+    "star_rating": 0,
     "owned_perc": "0.7%"
   },
   {
@@ -6537,7 +6510,7 @@
     "player_owned_avg": 1.3,
     "player_opponent": "at DET",
     "player_opponent_id": "DET",
-    "player_ecr_delta": 4,
+    "player_ecr_delta": null,
     "rank_ecr": 233,
     "rank_min": "196",
     "rank_max": "196",
@@ -6548,8 +6521,7 @@
     "recommendation": null,
     "pos_rank": "TE37",
     "sos_stars": "te_stars",
-    "star_rating": 2.7,
-    "ecr_delta_text": "This player's positional ECR has risen 4 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "1.3%"
   },
   {
@@ -6566,7 +6538,7 @@
     "player_owned_avg": 5.2,
     "player_opponent": "at CLE",
     "player_opponent_id": "CLE",
-    "player_ecr_delta": 31,
+    "player_ecr_delta": null,
     "rank_ecr": 234,
     "rank_min": "200",
     "rank_max": "200",
@@ -6577,8 +6549,7 @@
     "recommendation": null,
     "pos_rank": "WR95",
     "sos_stars": "wr_stars",
-    "star_rating": 4,
-    "ecr_delta_text": "This player's positional ECR has risen 31 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "5.2%"
   },
   {
@@ -6606,7 +6577,7 @@
     "recommendation": null,
     "pos_rank": "TE38",
     "sos_stars": "te_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "1.6%"
   },
   {
@@ -6634,7 +6605,7 @@
     "recommendation": null,
     "pos_rank": "WR96",
     "sos_stars": "wr_stars",
-    "star_rating": 3.3,
+    "star_rating": 0,
     "owned_perc": "0.4%"
   },
   {
@@ -6662,7 +6633,7 @@
     "recommendation": null,
     "pos_rank": "WR97",
     "sos_stars": "wr_stars",
-    "star_rating": 3,
+    "star_rating": 0,
     "owned_perc": "1.4%"
   },
   {
@@ -6690,7 +6661,7 @@
     "recommendation": null,
     "pos_rank": "RB70",
     "sos_stars": "rb_stars",
-    "star_rating": 2.5,
+    "star_rating": 0,
     "owned_perc": "0.6%"
   },
   {
@@ -6718,7 +6689,7 @@
     "recommendation": null,
     "pos_rank": "WR98",
     "sos_stars": "wr_stars",
-    "star_rating": 2.3,
+    "star_rating": 0,
     "owned_perc": "3.7%"
   },
   {
@@ -6746,7 +6717,7 @@
     "recommendation": null,
     "pos_rank": "WR99",
     "sos_stars": "wr_stars",
-    "star_rating": 4,
+    "star_rating": 0,
     "owned_perc": "1.0%"
   },
   {
@@ -6774,7 +6745,7 @@
     "recommendation": null,
     "pos_rank": "WR100",
     "sos_stars": "wr_stars",
-    "star_rating": 4,
+    "star_rating": 0,
     "owned_perc": "1.9%"
   },
   {
@@ -6802,7 +6773,7 @@
     "recommendation": null,
     "pos_rank": "WR101",
     "sos_stars": "wr_stars",
-    "star_rating": 1.7,
+    "star_rating": 0,
     "owned_perc": "3.6%"
   },
   {
@@ -6830,7 +6801,7 @@
     "recommendation": null,
     "pos_rank": "TE39",
     "sos_stars": "te_stars",
-    "star_rating": 3.8,
+    "star_rating": 0,
     "owned_perc": "0.6%"
   },
   {
@@ -6858,7 +6829,7 @@
     "recommendation": null,
     "pos_rank": "WR102",
     "sos_stars": "wr_stars",
-    "star_rating": 2.1,
+    "star_rating": 0,
     "owned_perc": "1.4%"
   },
   {
@@ -6875,7 +6846,7 @@
     "player_owned_avg": 2.4,
     "player_opponent": "vs. NYJ",
     "player_opponent_id": "NYJ",
-    "player_ecr_delta": -4,
+    "player_ecr_delta": null,
     "rank_ecr": 245,
     "rank_min": "223",
     "rank_max": "223",
@@ -6886,8 +6857,7 @@
     "recommendation": null,
     "pos_rank": "TE40",
     "sos_stars": "te_stars",
-    "star_rating": 3.5,
-    "ecr_delta_text": "This player's positional ECR has fallen 4 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "2.4%"
   },
   {
@@ -6915,7 +6885,7 @@
     "recommendation": null,
     "pos_rank": "WR103",
     "sos_stars": "wr_stars",
-    "star_rating": 3.7,
+    "star_rating": 0,
     "owned_perc": "1.2%"
   },
   {
@@ -6932,7 +6902,7 @@
     "player_owned_avg": 0,
     "player_opponent": "vs. BUF",
     "player_opponent_id": "BUF",
-    "player_ecr_delta": 21,
+    "player_ecr_delta": null,
     "rank_ecr": 247,
     "rank_min": "226",
     "rank_max": "226",
@@ -6943,8 +6913,7 @@
     "recommendation": null,
     "pos_rank": "RB71",
     "sos_stars": "rb_stars",
-    "star_rating": 4.3,
-    "ecr_delta_text": "This player's positional ECR has risen 21 spots in the past 2 days"
+    "star_rating": 0
   },
   {
     "player_id": 23049,
@@ -6971,7 +6940,7 @@
     "recommendation": null,
     "pos_rank": "WR104",
     "sos_stars": "wr_stars",
-    "star_rating": 4
+    "star_rating": 0
   },
   {
     "player_id": 26011,
@@ -6987,7 +6956,7 @@
     "player_owned_avg": 0.6,
     "player_opponent": "vs. NE",
     "player_opponent_id": "NE",
-    "player_ecr_delta": 39,
+    "player_ecr_delta": null,
     "rank_ecr": 249,
     "rank_min": "229",
     "rank_max": "229",
@@ -6998,8 +6967,7 @@
     "recommendation": null,
     "pos_rank": "WR105",
     "sos_stars": "wr_stars",
-    "star_rating": 4.2,
-    "ecr_delta_text": "This player's positional ECR has risen 39 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "0.6%"
   },
   {
@@ -7027,7 +6995,7 @@
     "recommendation": null,
     "pos_rank": "WR106",
     "sos_stars": "wr_stars",
-    "star_rating": 3.7,
+    "star_rating": 0,
     "owned_perc": "1.0%"
   },
   {
@@ -7055,7 +7023,7 @@
     "recommendation": null,
     "pos_rank": "TE41",
     "sos_stars": "te_stars",
-    "star_rating": 4.3,
+    "star_rating": 0,
     "owned_perc": "0.7%"
   },
   {
@@ -7083,7 +7051,7 @@
     "recommendation": null,
     "pos_rank": "TE42",
     "sos_stars": "te_stars",
-    "star_rating": 3.3,
+    "star_rating": 0,
     "owned_perc": "2.3%"
   },
   {
@@ -7111,7 +7079,7 @@
     "recommendation": null,
     "pos_rank": "WR107",
     "sos_stars": "wr_stars",
-    "star_rating": 3,
+    "star_rating": 0,
     "owned_perc": "2.2%"
   },
   {
@@ -7139,7 +7107,7 @@
     "recommendation": null,
     "pos_rank": "RB72",
     "sos_stars": "rb_stars",
-    "star_rating": 3.2,
+    "star_rating": 0,
     "owned_perc": "0.7%"
   },
   {
@@ -7167,7 +7135,7 @@
     "recommendation": null,
     "pos_rank": "TE43",
     "sos_stars": "te_stars",
-    "star_rating": 3.3,
+    "star_rating": 0,
     "owned_perc": "0.1%"
   },
   {
@@ -7195,7 +7163,7 @@
     "recommendation": null,
     "pos_rank": "TE44",
     "sos_stars": "te_stars",
-    "star_rating": 3,
+    "star_rating": 0,
     "owned_perc": "0.7%"
   },
   {
@@ -7223,7 +7191,7 @@
     "recommendation": null,
     "pos_rank": "WR108",
     "sos_stars": "wr_stars",
-    "star_rating": 4.6,
+    "star_rating": 0,
     "owned_perc": "1.2%"
   },
   {
@@ -7240,7 +7208,7 @@
     "player_owned_avg": 1.1,
     "player_opponent": "at DEN",
     "player_opponent_id": "DEN",
-    "player_ecr_delta": -9,
+    "player_ecr_delta": null,
     "rank_ecr": 258,
     "rank_min": "246",
     "rank_max": "246",
@@ -7251,8 +7219,7 @@
     "recommendation": null,
     "pos_rank": "WR109",
     "sos_stars": "wr_stars",
-    "star_rating": 1.6,
-    "ecr_delta_text": "This player's positional ECR has fallen 9 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "1.1%"
   },
   {
@@ -7280,7 +7247,7 @@
     "recommendation": null,
     "pos_rank": "WR110",
     "sos_stars": "wr_stars",
-    "star_rating": 4.1,
+    "star_rating": 0,
     "owned_perc": "0.6%"
   },
   {
@@ -7297,7 +7264,7 @@
     "player_owned_avg": 0.7,
     "player_opponent": "at NO",
     "player_opponent_id": "NO",
-    "player_ecr_delta": 8,
+    "player_ecr_delta": null,
     "rank_ecr": 260,
     "rank_min": "249",
     "rank_max": "249",
@@ -7308,8 +7275,7 @@
     "recommendation": null,
     "pos_rank": "TE45",
     "sos_stars": "te_stars",
-    "star_rating": 2.6,
-    "ecr_delta_text": "This player's positional ECR has risen 8 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "0.7%"
   },
   {
@@ -7337,7 +7303,7 @@
     "recommendation": null,
     "pos_rank": "WR111",
     "sos_stars": "wr_stars",
-    "star_rating": 2.1,
+    "star_rating": 0,
     "owned_perc": "1.3%",
     "injury_status": "Q",
     "injury_tooltip": "Questionable: Back "
@@ -7367,7 +7333,7 @@
     "recommendation": null,
     "pos_rank": "WR112",
     "sos_stars": "wr_stars",
-    "star_rating": 2.1,
+    "star_rating": 0,
     "owned_perc": "0.6%"
   },
   {
@@ -7395,7 +7361,7 @@
     "recommendation": null,
     "pos_rank": "WR113",
     "sos_stars": "wr_stars",
-    "star_rating": 1.4,
+    "star_rating": 0,
     "owned_perc": "1.1%"
   },
   {
@@ -7423,7 +7389,7 @@
     "recommendation": null,
     "pos_rank": "TE46",
     "sos_stars": "te_stars",
-    "star_rating": 3.3,
+    "star_rating": 0,
     "owned_perc": "2.9%"
   },
   {
@@ -7451,7 +7417,7 @@
     "recommendation": null,
     "pos_rank": "WR114",
     "sos_stars": "wr_stars",
-    "star_rating": 4.1,
+    "star_rating": 0,
     "owned_perc": "5.4%"
   },
   {
@@ -7479,7 +7445,7 @@
     "recommendation": null,
     "pos_rank": "WR115",
     "sos_stars": "wr_stars",
-    "star_rating": 4.4,
+    "star_rating": 0,
     "owned_perc": "1.5%"
   },
   {
@@ -7507,7 +7473,7 @@
     "recommendation": null,
     "pos_rank": "WR116",
     "sos_stars": "wr_stars",
-    "star_rating": 1.4,
+    "star_rating": 0,
     "owned_perc": "0.6%"
   },
   {
@@ -7535,7 +7501,7 @@
     "recommendation": null,
     "pos_rank": "WR117",
     "sos_stars": "wr_stars",
-    "star_rating": 3.7
+    "star_rating": 0
   },
   {
     "player_id": 25287,
@@ -7551,7 +7517,7 @@
     "player_owned_avg": 9.1,
     "player_opponent": "vs. BUF",
     "player_opponent_id": "BUF",
-    "player_ecr_delta": 21,
+    "player_ecr_delta": null,
     "rank_ecr": 269,
     "rank_min": "258",
     "rank_max": "258",
@@ -7562,8 +7528,7 @@
     "recommendation": null,
     "pos_rank": "WR118",
     "sos_stars": "wr_stars",
-    "star_rating": 3.7,
-    "ecr_delta_text": "This player's positional ECR has risen 21 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "9.1%"
   },
   {
@@ -7580,7 +7545,7 @@
     "player_owned_avg": 1.7,
     "player_opponent": "at TEN",
     "player_opponent_id": "TEN",
-    "player_ecr_delta": 13,
+    "player_ecr_delta": null,
     "rank_ecr": 270,
     "rank_min": "259",
     "rank_max": "259",
@@ -7591,8 +7556,7 @@
     "recommendation": null,
     "pos_rank": "WR119",
     "sos_stars": "wr_stars",
-    "star_rating": 3.7,
-    "ecr_delta_text": "This player's positional ECR has risen 13 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "1.7%"
   },
   {
@@ -7609,7 +7573,7 @@
     "player_owned_avg": 0.6,
     "player_opponent": "vs. PIT",
     "player_opponent_id": "PIT",
-    "player_ecr_delta": 13,
+    "player_ecr_delta": null,
     "rank_ecr": 271,
     "rank_min": "260",
     "rank_max": "260",
@@ -7620,8 +7584,7 @@
     "recommendation": null,
     "pos_rank": "WR120",
     "sos_stars": "wr_stars",
-    "star_rating": 2.4,
-    "ecr_delta_text": "This player's positional ECR has risen 13 spots in the past 2 days",
+    "star_rating": 0,
     "owned_perc": "0.6%"
   },
   {
@@ -7649,7 +7612,7 @@
     "recommendation": null,
     "pos_rank": "WR121",
     "sos_stars": "wr_stars",
-    "star_rating": 2.9,
+    "star_rating": 0,
     "owned_perc": "17.7%"
   },
   {
@@ -7677,6 +7640,6 @@
     "recommendation": null,
     "pos_rank": "WR122",
     "sos_stars": "wr_stars",
-    "star_rating": 3.7
+    "star_rating": 0
   }
 ]
