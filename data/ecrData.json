@@ -10,7 +10,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/josh-allen-qb.php",
     "player_filename": "josh-allen-qb.php",
     "player_bye_week": "7",
-    "player_owned_avg": 99.7,
+    "player_owned_avg": 99.3,
     "player_opponent": "vs. PHI",
     "player_opponent_id": "PHI",
     "player_ecr_delta": null,
@@ -25,7 +25,7 @@
     "pos_rank": "QB1",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "99.7%"
+    "owned_perc": "99.3%"
   },
   {
     "player_id": 23180,
@@ -66,7 +66,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/drake-maye.php",
     "player_filename": "drake-maye.php",
     "player_bye_week": "14",
-    "player_owned_avg": 96.9,
+    "player_owned_avg": 96.4,
     "player_opponent": "at NYJ",
     "player_opponent_id": "NYJ",
     "player_ecr_delta": null,
@@ -81,7 +81,7 @@
     "pos_rank": "QB2",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "96.9%"
+    "owned_perc": "96.4%"
   },
   {
     "player_id": 19196,
@@ -178,7 +178,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/matthew-stafford.php",
     "player_filename": "matthew-stafford.php",
     "player_bye_week": "8",
-    "player_owned_avg": 92.1,
+    "player_owned_avg": 91.9,
     "player_opponent": "at ATL",
     "player_opponent_id": "ATL",
     "player_ecr_delta": null,
@@ -193,7 +193,7 @@
     "pos_rank": "QB5",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "92.1%"
+    "owned_perc": "91.9%"
   },
   {
     "player_id": 22968,
@@ -402,7 +402,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/caleb-williams.php",
     "player_filename": "caleb-williams.php",
     "player_bye_week": "5",
-    "player_owned_avg": 76.4,
+    "player_owned_avg": 76.1,
     "player_opponent": "at SF",
     "player_opponent_id": "SF",
     "player_ecr_delta": null,
@@ -417,7 +417,7 @@
     "pos_rank": "QB10",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "76.4%"
+    "owned_perc": "76.1%"
   },
   {
     "player_id": 22936,
@@ -458,7 +458,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/jamarr-chase.php",
     "player_filename": "jamarr-chase.php",
     "player_bye_week": "10",
-    "player_owned_avg": 99.8,
+    "player_owned_avg": 99.3,
     "player_opponent": "vs. ARI",
     "player_opponent_id": "ARI",
     "player_ecr_delta": null,
@@ -473,7 +473,7 @@
     "pos_rank": "WR3",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "99.8%"
+    "owned_perc": "99.3%"
   },
   {
     "player_id": 17237,
@@ -486,7 +486,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/baker-mayfield.php",
     "player_filename": "baker-mayfield.php",
     "player_bye_week": "9",
-    "player_owned_avg": 92.7,
+    "player_owned_avg": 92.8,
     "player_opponent": "at MIA",
     "player_opponent_id": "MIA",
     "player_ecr_delta": null,
@@ -501,7 +501,7 @@
     "pos_rank": "QB11",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "92.7%"
+    "owned_perc": "92.8%"
   },
   {
     "player_id": 19799,
@@ -514,7 +514,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/amonra-stbrown.php",
     "player_filename": "amonra-stbrown.php",
     "player_bye_week": "8",
-    "player_owned_avg": 99.8,
+    "player_owned_avg": 99.3,
     "player_opponent": "at MIN",
     "player_opponent_id": "MIN",
     "player_ecr_delta": null,
@@ -529,7 +529,7 @@
     "pos_rank": "WR4",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "99.8%",
+    "owned_perc": "99.3%",
     "injury_status": "Q",
     "injury_tooltip": "Questionable: Knee "
   },
@@ -544,7 +544,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/tyler-shough.php",
     "player_filename": "tyler-shough.php",
     "player_bye_week": "11",
-    "player_owned_avg": 14.8,
+    "player_owned_avg": 15,
     "player_opponent": "at TEN",
     "player_opponent_id": "TEN",
     "player_ecr_delta": null,
@@ -559,7 +559,7 @@
     "pos_rank": "QB12",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "14.8%"
+    "owned_perc": "15.0%"
   },
   {
     "player_id": 23136,
@@ -600,7 +600,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/bo-nix.php",
     "player_filename": "bo-nix.php",
     "player_bye_week": "12",
-    "player_owned_avg": 89.9,
+    "player_owned_avg": 89.6,
     "player_opponent": "at KC",
     "player_opponent_id": "KC",
     "player_ecr_delta": null,
@@ -615,7 +615,7 @@
     "pos_rank": "QB13",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "89.9%"
+    "owned_perc": "89.6%"
   },
   {
     "player_id": 23160,
@@ -628,7 +628,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/jaxson-dart.php",
     "player_filename": "jaxson-dart.php",
     "player_bye_week": "14",
-    "player_owned_avg": 80.1,
+    "player_owned_avg": 79.3,
     "player_opponent": "at LV",
     "player_opponent_id": "LV",
     "player_ecr_delta": null,
@@ -643,7 +643,7 @@
     "pos_rank": "QB14",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "80.1%"
+    "owned_perc": "79.3%"
   },
   {
     "player_id": 15501,
@@ -768,7 +768,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/cj-stroud.php",
     "player_filename": "cj-stroud.php",
     "player_bye_week": "6",
-    "player_owned_avg": 67.6,
+    "player_owned_avg": 67.2,
     "player_opponent": "at LAC",
     "player_opponent_id": "LAC",
     "player_ecr_delta": null,
@@ -783,7 +783,7 @@
     "pos_rank": "QB17",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "67.6%"
+    "owned_perc": "67.2%"
   },
   {
     "player_id": 17236,
@@ -908,7 +908,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/nico-collins.php",
     "player_filename": "nico-collins.php",
     "player_bye_week": "6",
-    "player_owned_avg": 99.5,
+    "player_owned_avg": 98.9,
     "player_opponent": "at LAC",
     "player_opponent_id": "LAC",
     "player_ecr_delta": null,
@@ -923,7 +923,7 @@
     "pos_rank": "WR7",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "99.5%"
+    "owned_perc": "98.9%"
   },
   {
     "player_id": 22963,
@@ -964,7 +964,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/travis-etienne.php",
     "player_filename": "travis-etienne.php",
     "player_bye_week": "8",
-    "player_owned_avg": 93.7,
+    "player_owned_avg": 93.3,
     "player_opponent": "at IND",
     "player_opponent_id": "IND",
     "player_ecr_delta": null,
@@ -979,7 +979,7 @@
     "pos_rank": "RB8",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "93.7%"
+    "owned_perc": "93.3%"
   },
   {
     "player_id": 9001,
@@ -1048,7 +1048,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/ashton-jeanty.php",
     "player_filename": "ashton-jeanty.php",
     "player_bye_week": "8",
-    "player_owned_avg": 98.3,
+    "player_owned_avg": 97.7,
     "player_opponent": "vs. NYG",
     "player_opponent_id": "NYG",
     "player_ecr_delta": null,
@@ -1063,7 +1063,7 @@
     "pos_rank": "RB9",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "98.3%"
+    "owned_perc": "97.7%"
   },
   {
     "player_id": 11177,
@@ -1076,7 +1076,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/kirk-cousins.php",
     "player_filename": "kirk-cousins.php",
     "player_bye_week": "5",
-    "player_owned_avg": 10.8,
+    "player_owned_avg": 10.9,
     "player_opponent": "vs. LAR",
     "player_opponent_id": "LAR",
     "player_ecr_delta": null,
@@ -1091,7 +1091,7 @@
     "pos_rank": "QB21",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "10.8%"
+    "owned_perc": "10.9%"
   },
   {
     "player_id": 12119,
@@ -1216,7 +1216,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/geno-smith.php",
     "player_filename": "geno-smith.php",
     "player_bye_week": "8",
-    "player_owned_avg": 9.9,
+    "player_owned_avg": 9.8,
     "player_opponent": "vs. NYG",
     "player_opponent_id": "NYG",
     "player_ecr_delta": null,
@@ -1231,7 +1231,7 @@
     "pos_rank": "QB23",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "9.9%"
+    "owned_perc": "9.8%"
   },
   {
     "player_id": 15514,
@@ -1272,7 +1272,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/philip-rivers.php",
     "player_filename": "philip-rivers.php",
     "player_bye_week": "11",
-    "player_owned_avg": 8.2,
+    "player_owned_avg": 8.4,
     "player_opponent": "vs. JAC",
     "player_opponent_id": "JAC",
     "player_ecr_delta": null,
@@ -1287,7 +1287,7 @@
     "pos_rank": "QB24",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "8.2%"
+    "owned_perc": "8.4%"
   },
   {
     "player_id": 23677,
@@ -1328,7 +1328,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/javonte-williams.php",
     "player_filename": "javonte-williams.php",
     "player_bye_week": "10",
-    "player_owned_avg": 97.2,
+    "player_owned_avg": 96.7,
     "player_opponent": "at WAS",
     "player_opponent_id": "WAS",
     "player_ecr_delta": null,
@@ -1343,7 +1343,7 @@
     "pos_rank": "RB12",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "97.2%",
+    "owned_perc": "96.7%",
     "injury_status": "Q",
     "injury_tooltip": "Questionable: Neck "
   },
@@ -1470,7 +1470,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/rj-harvey.php",
     "player_filename": "rj-harvey.php",
     "player_bye_week": "12",
-    "player_owned_avg": 91.5,
+    "player_owned_avg": 91.2,
     "player_opponent": "at KC",
     "player_opponent_id": "KC",
     "player_ecr_delta": null,
@@ -1485,7 +1485,7 @@
     "pos_rank": "RB14",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "91.5%"
+    "owned_perc": "91.2%"
   },
   {
     "player_id": 17253,
@@ -1498,7 +1498,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/courtland-sutton.php",
     "player_filename": "courtland-sutton.php",
     "player_bye_week": "12",
-    "player_owned_avg": 94,
+    "player_owned_avg": 93.4,
     "player_opponent": "at KC",
     "player_opponent_id": "KC",
     "player_ecr_delta": null,
@@ -1513,7 +1513,7 @@
     "pos_rank": "WR15",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "94.0%"
+    "owned_perc": "93.4%"
   },
   {
     "player_id": 23680,
@@ -1526,7 +1526,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/quinn-ewers.php",
     "player_filename": "quinn-ewers.php",
     "player_bye_week": "12",
-    "player_owned_avg": 2.7,
+    "player_owned_avg": 2.8,
     "player_opponent": "vs. TB",
     "player_opponent_id": "TB",
     "player_ecr_delta": null,
@@ -1541,7 +1541,7 @@
     "pos_rank": "QB25",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "2.7%"
+    "owned_perc": "2.8%"
   },
   {
     "player_id": 25981,
@@ -1554,7 +1554,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/bucky-irving.php",
     "player_filename": "bucky-irving.php",
     "player_bye_week": "9",
-    "player_owned_avg": 98.1,
+    "player_owned_avg": 97.6,
     "player_opponent": "at MIA",
     "player_opponent_id": "MIA",
     "player_ecr_delta": null,
@@ -1569,7 +1569,7 @@
     "pos_rank": "RB15",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "98.1%"
+    "owned_perc": "97.6%"
   },
   {
     "player_id": 18466,
@@ -1582,7 +1582,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/terry-mclaurin.php",
     "player_filename": "terry-mclaurin.php",
     "player_bye_week": "12",
-    "player_owned_avg": 93.1,
+    "player_owned_avg": 93.2,
     "player_opponent": "vs. DAL",
     "player_opponent_id": "DAL",
     "player_ecr_delta": null,
@@ -1597,7 +1597,7 @@
     "pos_rank": "WR16",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "93.1%"
+    "owned_perc": "93.2%"
   },
   {
     "player_id": 25968,
@@ -1610,7 +1610,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/shedeur-sanders.php",
     "player_filename": "shedeur-sanders.php",
     "player_bye_week": "9",
-    "player_owned_avg": 15.6,
+    "player_owned_avg": 15.8,
     "player_opponent": "vs. PIT",
     "player_opponent_id": "PIT",
     "player_ecr_delta": null,
@@ -1625,7 +1625,7 @@
     "pos_rank": "QB26",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "15.6%"
+    "owned_perc": "15.8%"
   },
   {
     "player_id": 17233,
@@ -1694,7 +1694,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/zay-flowers.php",
     "player_filename": "zay-flowers.php",
     "player_bye_week": "7",
-    "player_owned_avg": 96,
+    "player_owned_avg": 95.6,
     "player_opponent": "at GB",
     "player_opponent_id": "GB",
     "player_ecr_delta": null,
@@ -1709,7 +1709,7 @@
     "pos_rank": "WR17",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "96.0%"
+    "owned_perc": "95.6%"
   },
   {
     "player_id": 22955,
@@ -1722,7 +1722,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/brock-bowers.php",
     "player_filename": "brock-bowers.php",
     "player_bye_week": "8",
-    "player_owned_avg": 99.1,
+    "player_owned_avg": 98.6,
     "player_opponent": "vs. NYG",
     "player_opponent_id": "NYG",
     "player_ecr_delta": null,
@@ -1737,7 +1737,7 @@
     "pos_rank": "TE3",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "99.1%"
+    "owned_perc": "98.6%"
   },
   {
     "player_id": 22985,
@@ -1778,7 +1778,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/michael-wilson.php",
     "player_filename": "michael-wilson.php",
     "player_bye_week": "8",
-    "player_owned_avg": 86.6,
+    "player_owned_avg": 86.5,
     "player_opponent": "at CIN",
     "player_opponent_id": "CIN",
     "player_ecr_delta": null,
@@ -1793,7 +1793,7 @@
     "pos_rank": "WR19",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "86.6%"
+    "owned_perc": "86.5%"
   },
   {
     "player_id": 25417,
@@ -1806,7 +1806,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/tetairoa-mcmillan.php",
     "player_filename": "tetairoa-mcmillan.php",
     "player_bye_week": "14",
-    "player_owned_avg": 94.8,
+    "player_owned_avg": 94.4,
     "player_opponent": "vs. SEA",
     "player_opponent_id": "SEA",
     "player_ecr_delta": null,
@@ -1821,7 +1821,7 @@
     "pos_rank": "WR20",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "94.8%"
+    "owned_perc": "94.4%"
   },
   {
     "player_id": 18269,
@@ -1890,7 +1890,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/omarion-hampton.php",
     "player_filename": "omarion-hampton.php",
     "player_bye_week": "12",
-    "player_owned_avg": 93.6,
+    "player_owned_avg": 93.3,
     "player_opponent": "vs. HOU",
     "player_opponent_id": "HOU",
     "player_ecr_delta": null,
@@ -1905,7 +1905,7 @@
     "pos_rank": "RB18",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "93.6%"
+    "owned_perc": "93.3%"
   },
   {
     "player_id": 27050,
@@ -1918,7 +1918,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/harold-fannin-jr.php",
     "player_filename": "harold-fannin-jr.php",
     "player_bye_week": "9",
-    "player_owned_avg": 75.2,
+    "player_owned_avg": 75,
     "player_opponent": "vs. PIT",
     "player_opponent_id": "PIT",
     "player_ecr_delta": null,
@@ -1933,7 +1933,7 @@
     "pos_rank": "TE4",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "75.2%"
+    "owned_perc": "75.0%"
   },
   {
     "player_id": 18598,
@@ -2030,7 +2030,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/devonta-smith.php",
     "player_filename": "devonta-smith.php",
     "player_bye_week": "9",
-    "player_owned_avg": 95.3,
+    "player_owned_avg": 94.8,
     "player_opponent": "at BUF",
     "player_opponent_id": "BUF",
     "player_ecr_delta": null,
@@ -2045,7 +2045,7 @@
     "pos_rank": "WR23",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "95.3%"
+    "owned_perc": "94.8%"
   },
   {
     "player_id": 19790,
@@ -2058,7 +2058,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/jaylen-waddle.php",
     "player_filename": "jaylen-waddle.php",
     "player_bye_week": "12",
-    "player_owned_avg": 95.1,
+    "player_owned_avg": 94.7,
     "player_opponent": "vs. TB",
     "player_opponent_id": "TB",
     "player_ecr_delta": null,
@@ -2073,7 +2073,7 @@
     "pos_rank": "WR24",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "95.1%"
+    "owned_perc": "94.7%"
   },
   {
     "player_id": 17265,
@@ -2086,7 +2086,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/dj-moore-wr.php",
     "player_filename": "dj-moore-wr.php",
     "player_bye_week": "5",
-    "player_owned_avg": 84.3,
+    "player_owned_avg": 84.1,
     "player_opponent": "at SF",
     "player_opponent_id": "SF",
     "player_ecr_delta": null,
@@ -2101,7 +2101,7 @@
     "pos_rank": "WR25",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "84.3%"
+    "owned_perc": "84.1%"
   },
   {
     "player_id": 13981,
@@ -2114,7 +2114,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/stefon-diggs.php",
     "player_filename": "stefon-diggs.php",
     "player_bye_week": "14",
-    "player_owned_avg": 91.9,
+    "player_owned_avg": 91.6,
     "player_opponent": "at NYJ",
     "player_opponent_id": "NYJ",
     "player_ecr_delta": null,
@@ -2129,7 +2129,7 @@
     "pos_rank": "WR26",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "91.9%"
+    "owned_perc": "91.6%"
   },
   {
     "player_id": 26122,
@@ -2142,7 +2142,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/ladd-mcconkey.php",
     "player_filename": "ladd-mcconkey.php",
     "player_bye_week": "12",
-    "player_owned_avg": 97.2,
+    "player_owned_avg": 96.7,
     "player_opponent": "vs. HOU",
     "player_opponent_id": "HOU",
     "player_ecr_delta": null,
@@ -2157,7 +2157,7 @@
     "pos_rank": "WR27",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "97.2%"
+    "owned_perc": "96.7%"
   },
   {
     "player_id": 22980,
@@ -2170,7 +2170,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/tyrone-tracy-jr.php",
     "player_filename": "tyrone-tracy-jr.php",
     "player_bye_week": "14",
-    "player_owned_avg": 83.4,
+    "player_owned_avg": 83.2,
     "player_opponent": "at LV",
     "player_opponent_id": "LV",
     "player_ecr_delta": null,
@@ -2185,7 +2185,7 @@
     "pos_rank": "RB20",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "83.4%"
+    "owned_perc": "83.2%"
   },
   {
     "player_id": 16406,
@@ -2226,7 +2226,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/kenneth-gainwell.php",
     "player_filename": "kenneth-gainwell.php",
     "player_bye_week": "5",
-    "player_owned_avg": 73.8,
+    "player_owned_avg": 73.6,
     "player_opponent": "at CLE",
     "player_opponent_id": "CLE",
     "player_ecr_delta": null,
@@ -2241,7 +2241,7 @@
     "pos_rank": "RB21",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "73.8%"
+    "owned_perc": "73.6%"
   },
   {
     "player_id": 23000,
@@ -2254,7 +2254,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/brian-thomas-jr.php",
     "player_filename": "brian-thomas-jr.php",
     "player_bye_week": "8",
-    "player_owned_avg": 91.1,
+    "player_owned_avg": 90.6,
     "player_opponent": "at IND",
     "player_opponent_id": "IND",
     "player_ecr_delta": null,
@@ -2269,7 +2269,7 @@
     "pos_rank": "WR29",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "91.1%"
+    "owned_perc": "90.6%"
   },
   {
     "player_id": 19210,
@@ -2338,7 +2338,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/rhamondre-stevenson.php",
     "player_filename": "rhamondre-stevenson.php",
     "player_bye_week": "14",
-    "player_owned_avg": 67.1,
+    "player_owned_avg": 66.8,
     "player_opponent": "at NYJ",
     "player_opponent_id": "NYJ",
     "player_ecr_delta": null,
@@ -2353,7 +2353,7 @@
     "pos_rank": "RB23",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "67.1%"
+    "owned_perc": "66.8%"
   },
   {
     "player_id": 23886,
@@ -2394,7 +2394,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/marvin-harrison-jr.php",
     "player_filename": "marvin-harrison-jr.php",
     "player_bye_week": "8",
-    "player_owned_avg": 91.9,
+    "player_owned_avg": 91.6,
     "player_opponent": "at CIN",
     "player_opponent_id": "CIN",
     "player_ecr_delta": null,
@@ -2409,7 +2409,7 @@
     "pos_rank": "WR32",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "91.9%"
+    "owned_perc": "91.6%"
   },
   {
     "player_id": 22728,
@@ -2450,7 +2450,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/kyle-pitts.php",
     "player_filename": "kyle-pitts.php",
     "player_bye_week": "5",
-    "player_owned_avg": 89.3,
+    "player_owned_avg": 89.1,
     "player_opponent": "vs. LAR",
     "player_opponent_id": "LAR",
     "player_ecr_delta": null,
@@ -2465,7 +2465,7 @@
     "pos_rank": "TE5",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "89.3%"
+    "owned_perc": "89.1%"
   },
   {
     "player_id": 18705,
@@ -2564,7 +2564,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/emeka-egbuka.php",
     "player_filename": "emeka-egbuka.php",
     "player_bye_week": "9",
-    "player_owned_avg": 95.7,
+    "player_owned_avg": 95.2,
     "player_opponent": "at MIA",
     "player_opponent_id": "MIA",
     "player_ecr_delta": null,
@@ -2579,7 +2579,7 @@
     "pos_rank": "WR34",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "95.7%"
+    "owned_perc": "95.2%"
   },
   {
     "player_id": 23748,
@@ -2592,7 +2592,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/khalil-shakir.php",
     "player_filename": "khalil-shakir.php",
     "player_bye_week": "7",
-    "player_owned_avg": 81.9,
+    "player_owned_avg": 81.6,
     "player_opponent": "vs. PHI",
     "player_opponent_id": "PHI",
     "player_ecr_delta": null,
@@ -2607,7 +2607,7 @@
     "pos_rank": "WR35",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "81.9%"
+    "owned_perc": "81.6%"
   },
   {
     "player_id": 27161,
@@ -2704,7 +2704,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/adonai-mitchell.php",
     "player_filename": "adonai-mitchell.php",
     "player_bye_week": "9",
-    "player_owned_avg": 31.6,
+    "player_owned_avg": 31.7,
     "player_opponent": "vs. NE",
     "player_opponent_id": "NE",
     "player_ecr_delta": null,
@@ -2719,7 +2719,7 @@
     "pos_rank": "WR36",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "31.6%"
+    "owned_perc": "31.7%"
   },
   {
     "player_id": 23020,
@@ -2732,7 +2732,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/jayden-reed.php",
     "player_filename": "jayden-reed.php",
     "player_bye_week": "5",
-    "player_owned_avg": 55.7,
+    "player_owned_avg": 55.5,
     "player_opponent": "vs. BAL",
     "player_opponent_id": "BAL",
     "player_ecr_delta": null,
@@ -2747,7 +2747,7 @@
     "pos_rank": "WR37",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "55.7%"
+    "owned_perc": "55.5%"
   },
   {
     "player_id": 23107,
@@ -2844,7 +2844,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/dallas-goedert.php",
     "player_filename": "dallas-goedert.php",
     "player_bye_week": "9",
-    "player_owned_avg": 90,
+    "player_owned_avg": 89.6,
     "player_opponent": "at BUF",
     "player_opponent_id": "BUF",
     "player_ecr_delta": null,
@@ -2859,7 +2859,7 @@
     "pos_rank": "TE7",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "90.0%"
+    "owned_perc": "89.6%"
   },
   {
     "player_id": 17349,
@@ -2872,7 +2872,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/dalton-schultz.php",
     "player_filename": "dalton-schultz.php",
     "player_bye_week": "6",
-    "player_owned_avg": 53.7,
+    "player_owned_avg": 53.6,
     "player_opponent": "at LAC",
     "player_opponent_id": "LAC",
     "player_ecr_delta": null,
@@ -2887,7 +2887,7 @@
     "pos_rank": "TE8",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "53.7%"
+    "owned_perc": "53.6%"
   },
   {
     "player_id": 23123,
@@ -2956,7 +2956,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/xavier-worthy.php",
     "player_filename": "xavier-worthy.php",
     "player_bye_week": "10",
-    "player_owned_avg": 84.6,
+    "player_owned_avg": 84,
     "player_opponent": "vs. DEN",
     "player_opponent_id": "DEN",
     "player_ecr_delta": null,
@@ -2971,7 +2971,7 @@
     "pos_rank": "WR41",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "84.6%"
+    "owned_perc": "84.0%"
   },
   {
     "player_id": 19246,
@@ -3012,7 +3012,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/keenan-allen.php",
     "player_filename": "keenan-allen.php",
     "player_bye_week": "12",
-    "player_owned_avg": 76,
+    "player_owned_avg": 75.4,
     "player_opponent": "vs. HOU",
     "player_opponent_id": "HOU",
     "player_ecr_delta": null,
@@ -3027,7 +3027,7 @@
     "pos_rank": "WR42",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "76.0%"
+    "owned_perc": "75.4%"
   },
   {
     "player_id": 23013,
@@ -3096,7 +3096,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/parker-washington.php",
     "player_filename": "parker-washington.php",
     "player_bye_week": "8",
-    "player_owned_avg": 12.4,
+    "player_owned_avg": 12.7,
     "player_opponent": "at IND",
     "player_opponent_id": "IND",
     "player_ecr_delta": null,
@@ -3111,7 +3111,7 @@
     "pos_rank": "WR44",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "12.4%"
+    "owned_perc": "12.7%"
   },
   {
     "player_id": 9326,
@@ -3152,7 +3152,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/jalen-coker.php",
     "player_filename": "jalen-coker.php",
     "player_bye_week": "14",
-    "player_owned_avg": 19.9,
+    "player_owned_avg": 19.8,
     "player_opponent": "vs. SEA",
     "player_opponent_id": "SEA",
     "player_ecr_delta": null,
@@ -3167,7 +3167,7 @@
     "pos_rank": "WR45",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "19.9%"
+    "owned_perc": "19.8%"
   },
   {
     "player_id": 22718,
@@ -3236,7 +3236,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/darius-slayton.php",
     "player_filename": "darius-slayton.php",
     "player_bye_week": "14",
-    "player_owned_avg": 30.8,
+    "player_owned_avg": 30.6,
     "player_opponent": "at LV",
     "player_opponent_id": "LV",
     "player_ecr_delta": null,
@@ -3251,7 +3251,7 @@
     "pos_rank": "WR46",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "30.8%"
+    "owned_perc": "30.6%"
   },
   {
     "player_id": 26006,
@@ -3264,7 +3264,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/colston-loveland.php",
     "player_filename": "colston-loveland.php",
     "player_bye_week": "5",
-    "player_owned_avg": 48.1,
+    "player_owned_avg": 47.9,
     "player_opponent": "at SF",
     "player_opponent_id": "SF",
     "player_ecr_delta": null,
@@ -3279,7 +3279,7 @@
     "pos_rank": "TE11",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "48.1%"
+    "owned_perc": "47.9%"
   },
   {
     "player_id": 24687,
@@ -3292,7 +3292,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/rashid-shaheed.php",
     "player_filename": "rashid-shaheed.php",
     "player_bye_week": "8",
-    "player_owned_avg": 55.8,
+    "player_owned_avg": 55.5,
     "player_opponent": "at CAR",
     "player_opponent_id": "CAR",
     "player_ecr_delta": null,
@@ -3307,7 +3307,7 @@
     "pos_rank": "WR47",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "55.8%"
+    "owned_perc": "55.5%"
   },
   {
     "player_id": 27580,
@@ -3404,7 +3404,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/chris-rodriguez-jr.php",
     "player_filename": "chris-rodriguez-jr.php",
     "player_bye_week": "12",
-    "player_owned_avg": 36.5,
+    "player_owned_avg": 36.6,
     "player_opponent": "vs. DAL",
     "player_opponent_id": "DAL",
     "player_ecr_delta": null,
@@ -3419,7 +3419,7 @@
     "pos_rank": "RB31",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "36.5%"
+    "owned_perc": "36.6%"
   },
   {
     "player_id": 23152,
@@ -3460,7 +3460,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/chimere-dike.php",
     "player_filename": "chimere-dike.php",
     "player_bye_week": "10",
-    "player_owned_avg": 19.7,
+    "player_owned_avg": 19.9,
     "player_opponent": "vs. NO",
     "player_opponent_id": "NO",
     "player_ecr_delta": null,
@@ -3475,7 +3475,7 @@
     "pos_rank": "WR49",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "19.7%"
+    "owned_perc": "19.9%"
   },
   {
     "player_id": 27077,
@@ -3544,7 +3544,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/tre-tucker.php",
     "player_filename": "tre-tucker.php",
     "player_bye_week": "8",
-    "player_owned_avg": 39.2,
+    "player_owned_avg": 39,
     "player_opponent": "vs. NYG",
     "player_opponent_id": "NYG",
     "player_ecr_delta": null,
@@ -3559,7 +3559,7 @@
     "pos_rank": "WR52",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "39.2%"
+    "owned_perc": "39.0%"
   },
   {
     "player_id": 19201,
@@ -3656,7 +3656,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/colby-parkinson.php",
     "player_filename": "colby-parkinson.php",
     "player_bye_week": "8",
-    "player_owned_avg": 21.1,
+    "player_owned_avg": 20.8,
     "player_opponent": "at ATL",
     "player_opponent_id": "ATL",
     "player_ecr_delta": null,
@@ -3671,7 +3671,7 @@
     "pos_rank": "TE13",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "21.1%"
+    "owned_perc": "20.8%"
   },
   {
     "player_id": 25885,
@@ -3684,7 +3684,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/emanuel-wilson.php",
     "player_filename": "emanuel-wilson.php",
     "player_bye_week": "5",
-    "player_owned_avg": 40.6,
+    "player_owned_avg": 40.3,
     "player_opponent": "vs. BAL",
     "player_opponent_id": "BAL",
     "player_ecr_delta": null,
@@ -3699,7 +3699,7 @@
     "pos_rank": "RB34",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "40.6%"
+    "owned_perc": "40.3%"
   },
   {
     "player_id": 22895,
@@ -3852,7 +3852,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/travis-kelce.php",
     "player_filename": "travis-kelce.php",
     "player_bye_week": "10",
-    "player_owned_avg": 96.3,
+    "player_owned_avg": 95.5,
     "player_opponent": "vs. DEN",
     "player_opponent_id": "DEN",
     "player_ecr_delta": null,
@@ -3867,7 +3867,7 @@
     "pos_rank": "TE16",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "96.3%"
+    "owned_perc": "95.5%"
   },
   {
     "player_id": 24333,
@@ -3964,7 +3964,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/audric-estime.php",
     "player_filename": "audric-estime.php",
     "player_bye_week": "11",
-    "player_owned_avg": 23.6,
+    "player_owned_avg": 23.4,
     "player_opponent": "at TEN",
     "player_opponent_id": "TEN",
     "player_ecr_delta": null,
@@ -3979,7 +3979,7 @@
     "pos_rank": "RB36",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "23.6%"
+    "owned_perc": "23.4%"
   },
   {
     "player_id": 19810,
@@ -4020,7 +4020,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/tyjae-spears.php",
     "player_filename": "tyjae-spears.php",
     "player_bye_week": "10",
-    "player_owned_avg": 37,
+    "player_owned_avg": 37.4,
     "player_opponent": "vs. NO",
     "player_opponent_id": "NO",
     "player_ecr_delta": null,
@@ -4035,7 +4035,7 @@
     "pos_rank": "RB37",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "37.0%"
+    "owned_perc": "37.4%"
   },
   {
     "player_id": 19792,
@@ -4048,7 +4048,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/chuba-hubbard.php",
     "player_filename": "chuba-hubbard.php",
     "player_bye_week": "14",
-    "player_owned_avg": 67.2,
+    "player_owned_avg": 66.7,
     "player_opponent": "vs. SEA",
     "player_opponent_id": "SEA",
     "player_ecr_delta": null,
@@ -4063,7 +4063,7 @@
     "pos_rank": "RB38",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "67.2%"
+    "owned_perc": "66.7%"
   },
   {
     "player_id": 25654,
@@ -4076,7 +4076,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/emari-demercado.php",
     "player_filename": "emari-demercado.php",
     "player_bye_week": "8",
-    "player_owned_avg": 11.2,
+    "player_owned_avg": 11.1,
     "player_opponent": "at CIN",
     "player_opponent_id": "CIN",
     "player_ecr_delta": null,
@@ -4091,7 +4091,7 @@
     "pos_rank": "RB39",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "11.2%"
+    "owned_perc": "11.1%"
   },
   {
     "player_id": 25997,
@@ -4104,7 +4104,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/oronde-gadsden-ii.php",
     "player_filename": "oronde-gadsden-ii.php",
     "player_bye_week": "12",
-    "player_owned_avg": 58.8,
+    "player_owned_avg": 58.3,
     "player_opponent": "vs. HOU",
     "player_opponent_id": "HOU",
     "player_ecr_delta": null,
@@ -4119,7 +4119,7 @@
     "pos_rank": "TE17",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "58.8%"
+    "owned_perc": "58.3%"
   },
   {
     "player_id": 26335,
@@ -4132,7 +4132,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/aj-barner.php",
     "player_filename": "aj-barner.php",
     "player_bye_week": "8",
-    "player_owned_avg": 18,
+    "player_owned_avg": 17.9,
     "player_opponent": "at CAR",
     "player_opponent_id": "CAR",
     "player_ecr_delta": null,
@@ -4147,7 +4147,7 @@
     "pos_rank": "TE18",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "18.0%"
+    "owned_perc": "17.9%"
   },
   {
     "player_id": 26314,
@@ -4160,7 +4160,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/malik-washington.php",
     "player_filename": "malik-washington.php",
     "player_bye_week": "12",
-    "player_owned_avg": 13.8,
+    "player_owned_avg": 13.9,
     "player_opponent": "vs. TB",
     "player_opponent_id": "TB",
     "player_ecr_delta": null,
@@ -4175,7 +4175,7 @@
     "pos_rank": "WR60",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "13.8%"
+    "owned_perc": "13.9%"
   },
   {
     "player_id": 27059,
@@ -4244,7 +4244,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/dalton-kincaid.php",
     "player_filename": "dalton-kincaid.php",
     "player_bye_week": "7",
-    "player_owned_avg": 75.8,
+    "player_owned_avg": 75.4,
     "player_opponent": "vs. PHI",
     "player_opponent_id": "PHI",
     "player_ecr_delta": null,
@@ -4259,7 +4259,7 @@
     "pos_rank": "TE20",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "75.8%"
+    "owned_perc": "75.4%"
   },
   {
     "player_id": 23104,
@@ -4272,7 +4272,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/theo-johnson.php",
     "player_filename": "theo-johnson.php",
     "player_bye_week": "14",
-    "player_owned_avg": 41.3,
+    "player_owned_avg": 41.4,
     "player_opponent": "at LV",
     "player_opponent_id": "LV",
     "player_ecr_delta": null,
@@ -4287,7 +4287,7 @@
     "pos_rank": "TE21",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "41.3%"
+    "owned_perc": "41.4%"
   },
   {
     "player_id": 16423,
@@ -4523,7 +4523,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/devin-singletary.php",
     "player_filename": "devin-singletary.php",
     "player_bye_week": "14",
-    "player_owned_avg": 32.1,
+    "player_owned_avg": 32,
     "player_opponent": "at LV",
     "player_opponent_id": "LV",
     "player_ecr_delta": null,
@@ -4538,7 +4538,7 @@
     "pos_rank": "RB44",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "32.1%"
+    "owned_perc": "32.0%"
   },
   {
     "player_id": 25876,
@@ -4637,7 +4637,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/mark-andrews.php",
     "player_filename": "mark-andrews.php",
     "player_bye_week": "7",
-    "player_owned_avg": 82.6,
+    "player_owned_avg": 82.2,
     "player_opponent": "at GB",
     "player_opponent_id": "GB",
     "player_ecr_delta": null,
@@ -4652,7 +4652,7 @@
     "pos_rank": "TE24",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "82.6%"
+    "owned_perc": "82.2%"
   },
   {
     "player_id": 26024,
@@ -4665,7 +4665,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/matthew-golden.php",
     "player_filename": "matthew-golden.php",
     "player_bye_week": "5",
-    "player_owned_avg": 33.3,
+    "player_owned_avg": 33.2,
     "player_opponent": "vs. BAL",
     "player_opponent_id": "BAL",
     "player_ecr_delta": null,
@@ -4680,7 +4680,7 @@
     "pos_rank": "WR65",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "33.3%"
+    "owned_perc": "33.2%"
   },
   {
     "player_id": 16411,
@@ -4749,7 +4749,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/kendrick-bourne.php",
     "player_filename": "kendrick-bourne.php",
     "player_bye_week": "14",
-    "player_owned_avg": 3.9,
+    "player_owned_avg": 4.2,
     "player_opponent": "vs. CHI",
     "player_opponent_id": "CHI",
     "player_ecr_delta": null,
@@ -4764,7 +4764,7 @@
     "pos_rank": "WR66",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "3.9%"
+    "owned_perc": "4.2%"
   },
   {
     "player_id": 27016,
@@ -4777,7 +4777,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/luther-burden-iii.php",
     "player_filename": "luther-burden-iii.php",
     "player_bye_week": "5",
-    "player_owned_avg": 20.9,
+    "player_owned_avg": 20.8,
     "player_opponent": "at SF",
     "player_opponent_id": "SF",
     "player_ecr_delta": null,
@@ -4792,7 +4792,7 @@
     "pos_rank": "WR67",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "20.9%"
+    "owned_perc": "20.8%"
   },
   {
     "player_id": 22989,
@@ -4833,7 +4833,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/woody-marks.php",
     "player_filename": "woody-marks.php",
     "player_bye_week": "6",
-    "player_owned_avg": 79.9,
+    "player_owned_avg": 79.7,
     "player_opponent": "at LAC",
     "player_opponent_id": "LAC",
     "player_ecr_delta": null,
@@ -4848,7 +4848,7 @@
     "pos_rank": "RB46",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "79.9%"
+    "owned_perc": "79.7%"
   },
   {
     "player_id": 23891,
@@ -4917,7 +4917,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/gunnar-helm.php",
     "player_filename": "gunnar-helm.php",
     "player_bye_week": "10",
-    "player_owned_avg": 1.3,
+    "player_owned_avg": 1.4,
     "player_opponent": "vs. NO",
     "player_opponent_id": "NO",
     "player_ecr_delta": null,
@@ -4932,7 +4932,7 @@
     "pos_rank": "TE27",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "1.3%"
+    "owned_perc": "1.4%"
   },
   {
     "player_id": 25282,
@@ -5001,7 +5001,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/jacory-croskeymerritt.php",
     "player_filename": "jacory-croskeymerritt.php",
     "player_bye_week": "12",
-    "player_owned_avg": 48.1,
+    "player_owned_avg": 47.8,
     "player_opponent": "vs. DAL",
     "player_opponent_id": "DAL",
     "player_ecr_delta": null,
@@ -5016,7 +5016,7 @@
     "pos_rank": "RB50",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "48.1%"
+    "owned_perc": "47.8%"
   },
   {
     "player_id": 22967,
@@ -5169,7 +5169,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/treveyon-henderson.php",
     "player_filename": "treveyon-henderson.php",
     "player_bye_week": "14",
-    "player_owned_avg": 95.9,
+    "player_owned_avg": 95.5,
     "player_opponent": "at NYJ",
     "player_opponent_id": "NYJ",
     "player_ecr_delta": null,
@@ -5184,7 +5184,7 @@
     "pos_rank": "RB51",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "95.9%"
+    "owned_perc": "95.5%"
   },
   {
     "player_id": 17246,
@@ -5197,7 +5197,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/nick-chubb.php",
     "player_filename": "nick-chubb.php",
     "player_bye_week": "6",
-    "player_owned_avg": 37.8,
+    "player_owned_avg": 37.6,
     "player_opponent": "at LAC",
     "player_opponent_id": "LAC",
     "player_ecr_delta": null,
@@ -5212,7 +5212,7 @@
     "pos_rank": "RB52",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "37.8%"
+    "owned_perc": "37.6%"
   },
   {
     "player_id": 26398,
@@ -5225,7 +5225,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/ryan-flournoy.php",
     "player_filename": "ryan-flournoy.php",
     "player_bye_week": "10",
-    "player_owned_avg": 7.3,
+    "player_owned_avg": 7.5,
     "player_opponent": "at WAS",
     "player_opponent_id": "WAS",
     "player_ecr_delta": null,
@@ -5240,7 +5240,7 @@
     "pos_rank": "WR69",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "7.3%",
+    "owned_perc": "7.5%",
     "injury_status": "Q",
     "injury_tooltip": "Questionable: Knee "
   },
@@ -5367,7 +5367,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/ty-johnson.php",
     "player_filename": "ty-johnson.php",
     "player_bye_week": "7",
-    "player_owned_avg": 3.7,
+    "player_owned_avg": 3.9,
     "player_opponent": "vs. PHI",
     "player_opponent_id": "PHI",
     "player_ecr_delta": null,
@@ -5382,7 +5382,7 @@
     "pos_rank": "RB54",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "3.7%"
+    "owned_perc": "3.9%"
   },
   {
     "player_id": 24334,
@@ -5451,7 +5451,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/brian-robinson-jr.php",
     "player_filename": "brian-robinson-jr.php",
     "player_bye_week": "14",
-    "player_owned_avg": 45.2,
+    "player_owned_avg": 45.6,
     "player_opponent": "vs. CHI",
     "player_opponent_id": "CHI",
     "player_ecr_delta": null,
@@ -5466,7 +5466,7 @@
     "pos_rank": "RB55",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "45.2%"
+    "owned_perc": "45.6%"
   },
   {
     "player_id": 25987,
@@ -5479,7 +5479,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/jaylen-wright.php",
     "player_filename": "jaylen-wright.php",
     "player_bye_week": "12",
-    "player_owned_avg": 13.7,
+    "player_owned_avg": 13.4,
     "player_opponent": "vs. TB",
     "player_opponent_id": "TB",
     "player_ecr_delta": null,
@@ -5494,7 +5494,7 @@
     "pos_rank": "RB56",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "13.7%"
+    "owned_perc": "13.4%"
   },
   {
     "player_id": 24205,
@@ -5619,7 +5619,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/marcus-mariota.php",
     "player_filename": "marcus-mariota.php",
     "player_bye_week": "12",
-    "player_owned_avg": 15.4,
+    "player_owned_avg": 15.5,
     "player_opponent": "vs. DAL",
     "player_opponent_id": "DAL",
     "player_ecr_delta": null,
@@ -5634,7 +5634,7 @@
     "pos_rank": "QB34",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "15.4%",
+    "owned_perc": "15.5%",
     "injury_status": "Q",
     "injury_tooltip": "Questionable: Hand "
   },
@@ -5789,7 +5789,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/rome-odunze.php",
     "player_filename": "rome-odunze.php",
     "player_bye_week": "5",
-    "player_owned_avg": 86.3,
+    "player_owned_avg": 85.8,
     "player_opponent": "at SF",
     "player_opponent_id": "SF",
     "player_ecr_delta": null,
@@ -5804,7 +5804,7 @@
     "pos_rank": "WR77",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "86.3%"
+    "owned_perc": "85.8%"
   },
   {
     "player_id": 23179,
@@ -5957,7 +5957,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/rashod-bateman.php",
     "player_filename": "rashod-bateman.php",
     "player_bye_week": "7",
-    "player_owned_avg": 12.3,
+    "player_owned_avg": 12.4,
     "player_opponent": "at GB",
     "player_opponent_id": "GB",
     "player_ecr_delta": null,
@@ -5972,7 +5972,7 @@
     "pos_rank": "WR80",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "12.3%"
+    "owned_perc": "12.4%"
   },
   {
     "player_id": 26379,
@@ -6013,7 +6013,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/rashee-rice.php",
     "player_filename": "rashee-rice.php",
     "player_bye_week": "10",
-    "player_owned_avg": 96.9,
+    "player_owned_avg": 96.1,
     "player_opponent": "vs. DEN",
     "player_opponent_id": "DEN",
     "player_ecr_delta": null,
@@ -6028,7 +6028,7 @@
     "pos_rank": "WR82",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "96.9%",
+    "owned_perc": "96.1%",
     "injury_status": "Q",
     "injury_tooltip": "Questionable: Concussion "
   },
@@ -6071,7 +6071,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/isaac-teslaa.php",
     "player_filename": "isaac-teslaa.php",
     "player_bye_week": "8",
-    "player_owned_avg": 7.1,
+    "player_owned_avg": 7,
     "player_opponent": "at MIN",
     "player_opponent_id": "MIN",
     "player_ecr_delta": null,
@@ -6086,7 +6086,7 @@
     "pos_rank": "WR84",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "7.1%"
+    "owned_perc": "7.0%"
   },
   {
     "player_id": 26546,
@@ -6155,7 +6155,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/jonnu-smith.php",
     "player_filename": "jonnu-smith.php",
     "player_bye_week": "5",
-    "player_owned_avg": 32.1,
+    "player_owned_avg": 32.2,
     "player_opponent": "at CLE",
     "player_opponent_id": "CLE",
     "player_ecr_delta": null,
@@ -6170,7 +6170,7 @@
     "pos_rank": "TE36",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "32.1%"
+    "owned_perc": "32.2%"
   },
   {
     "player_id": 25304,
@@ -6295,7 +6295,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/pat-bryant.php",
     "player_filename": "pat-bryant.php",
     "player_bye_week": "12",
-    "player_owned_avg": 4.3,
+    "player_owned_avg": 4.4,
     "player_opponent": "at KC",
     "player_opponent_id": "KC",
     "player_ecr_delta": null,
@@ -6310,7 +6310,7 @@
     "pos_rank": "WR89",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "4.3%",
+    "owned_perc": "4.4%",
     "injury_status": "Q",
     "injury_tooltip": "Questionable: Concussion "
   },
@@ -6353,7 +6353,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/josh-palmer.php",
     "player_filename": "josh-palmer.php",
     "player_bye_week": "7",
-    "player_owned_avg": 5.2,
+    "player_owned_avg": 5.1,
     "player_opponent": "vs. PHI",
     "player_opponent_id": "PHI",
     "player_ecr_delta": null,
@@ -6368,7 +6368,7 @@
     "pos_rank": "WR91",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "5.2%"
+    "owned_perc": "5.1%"
   },
   {
     "player_id": 27102,
@@ -6381,7 +6381,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/dylan-sampson.php",
     "player_filename": "dylan-sampson.php",
     "player_bye_week": "9",
-    "player_owned_avg": 10.5,
+    "player_owned_avg": 10.6,
     "player_opponent": "vs. PIT",
     "player_opponent_id": "PIT",
     "player_ecr_delta": null,
@@ -6396,7 +6396,7 @@
     "pos_rank": "RB66",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "10.5%"
+    "owned_perc": "10.6%"
   },
   {
     "player_id": 24354,
@@ -6465,7 +6465,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/ricky-pearsall.php",
     "player_filename": "ricky-pearsall.php",
     "player_bye_week": "14",
-    "player_owned_avg": 61,
+    "player_owned_avg": 60.8,
     "player_opponent": "vs. CHI",
     "player_opponent_id": "CHI",
     "player_ecr_delta": null,
@@ -6480,7 +6480,7 @@
     "pos_rank": "WR93",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "61.0%"
+    "owned_perc": "60.8%"
   },
   {
     "player_id": 23049,
@@ -6632,7 +6632,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/raheem-mostert.php",
     "player_filename": "raheem-mostert.php",
     "player_bye_week": "8",
-    "player_owned_avg": 1.6,
+    "player_owned_avg": 1.7,
     "player_opponent": "vs. NYG",
     "player_opponent_id": "NYG",
     "player_ecr_delta": null,
@@ -6647,7 +6647,7 @@
     "pos_rank": "RB70",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "1.6%"
+    "owned_perc": "1.7%"
   },
   {
     "player_id": 25287,
@@ -6688,7 +6688,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/ray-davis.php",
     "player_filename": "ray-davis.php",
     "player_bye_week": "7",
-    "player_owned_avg": 6.6,
+    "player_owned_avg": 6.7,
     "player_opponent": "vs. PHI",
     "player_opponent_id": "PHI",
     "player_ecr_delta": null,
@@ -6703,7 +6703,7 @@
     "pos_rank": "RB71",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "6.6%"
+    "owned_perc": "6.7%"
   },
   {
     "player_id": 23812,
@@ -6914,7 +6914,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/terrance-ferguson.php",
     "player_filename": "terrance-ferguson.php",
     "player_bye_week": "8",
-    "player_owned_avg": 1.6,
+    "player_owned_avg": 1.5,
     "player_opponent": "at ATL",
     "player_opponent_id": "ATL",
     "player_ecr_delta": null,
@@ -6929,7 +6929,7 @@
     "pos_rank": "TE37",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "1.6%"
+    "owned_perc": "1.5%"
   },
   {
     "player_id": 23119,
@@ -7026,7 +7026,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/ben-sinnott.php",
     "player_filename": "ben-sinnott.php",
     "player_bye_week": "12",
-    "player_owned_avg": 1.5,
+    "player_owned_avg": 1.4,
     "player_opponent": "vs. DAL",
     "player_opponent_id": "DAL",
     "player_ecr_delta": null,
@@ -7041,7 +7041,7 @@
     "pos_rank": "TE39",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "1.5%"
+    "owned_perc": "1.4%"
   },
   {
     "player_id": 27259,
@@ -7054,7 +7054,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/brashard-smith.php",
     "player_filename": "brashard-smith.php",
     "player_bye_week": "10",
-    "player_owned_avg": 3.8,
+    "player_owned_avg": 3.7,
     "player_opponent": "vs. DEN",
     "player_opponent_id": "DEN",
     "player_ecr_delta": null,
@@ -7069,7 +7069,7 @@
     "pos_rank": "RB74",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "3.8%"
+    "owned_perc": "3.7%"
   },
   {
     "player_id": 22997,
@@ -7110,7 +7110,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/jaylin-noel.php",
     "player_filename": "jaylin-noel.php",
     "player_bye_week": "6",
-    "player_owned_avg": 2.1,
+    "player_owned_avg": 2,
     "player_opponent": "at LAC",
     "player_opponent_id": "LAC",
     "player_ecr_delta": null,
@@ -7125,7 +7125,7 @@
     "pos_rank": "WR105",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "2.1%"
+    "owned_perc": "2.0%"
   },
   {
     "player_id": 25813,
@@ -7138,7 +7138,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/tyrell-shavers.php",
     "player_filename": "tyrell-shavers.php",
     "player_bye_week": "7",
-    "player_owned_avg": 0.9,
+    "player_owned_avg": 1,
     "player_opponent": "vs. PHI",
     "player_opponent_id": "PHI",
     "player_ecr_delta": null,
@@ -7153,7 +7153,7 @@
     "pos_rank": "WR106",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "0.9%"
+    "owned_perc": "1.0%"
   },
   {
     "player_id": 20126,
@@ -7306,7 +7306,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/tyler-lockett.php",
     "player_filename": "tyler-lockett.php",
     "player_bye_week": "8",
-    "player_owned_avg": 3.5,
+    "player_owned_avg": 3.6,
     "player_opponent": "vs. NYG",
     "player_opponent_id": "NYG",
     "player_ecr_delta": null,
@@ -7321,7 +7321,7 @@
     "pos_rank": "WR109",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "3.5%"
+    "owned_perc": "3.6%"
   },
   {
     "player_id": 23153,
@@ -7390,7 +7390,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/tyrod-taylor.php",
     "player_filename": "tyrod-taylor.php",
     "player_bye_week": "9",
-    "player_owned_avg": 6.8,
+    "player_owned_avg": 6.7,
     "player_opponent": "vs. NE",
     "player_opponent_id": "NE",
     "player_ecr_delta": null,
@@ -7405,7 +7405,7 @@
     "pos_rank": "QB36",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "6.8%"
+    "owned_perc": "6.7%"
   },
   {
     "player_id": 16556,
@@ -7558,7 +7558,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/will-shipley.php",
     "player_filename": "will-shipley.php",
     "player_bye_week": "9",
-    "player_owned_avg": 2.9,
+    "player_owned_avg": 2.8,
     "player_opponent": "at BUF",
     "player_opponent_id": "BUF",
     "player_ecr_delta": null,
@@ -7573,7 +7573,7 @@
     "pos_rank": "RB80",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "2.9%"
+    "owned_perc": "2.8%"
   },
   {
     "player_id": 22962,
@@ -7753,7 +7753,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/jj-mccarthy.php",
     "player_filename": "jj-mccarthy.php",
     "player_bye_week": "6",
-    "player_owned_avg": 36.2,
+    "player_owned_avg": 36.1,
     "player_opponent": "vs. DET",
     "player_opponent_id": "DET",
     "player_ecr_delta": null,
@@ -7768,7 +7768,7 @@
     "pos_rank": "QB37",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "36.2%",
+    "owned_perc": "36.1%",
     "injury_status": "Q",
     "injury_tooltip": "Questionable: Hand "
   },
@@ -7867,7 +7867,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/jordan-whittington.php",
     "player_filename": "jordan-whittington.php",
     "player_bye_week": "8",
-    "player_owned_avg": 1.4,
+    "player_owned_avg": 1.3,
     "player_opponent": "at ATL",
     "player_opponent_id": "ATL",
     "player_ecr_delta": null,
@@ -7882,7 +7882,7 @@
     "pos_rank": "WR115",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "1.4%"
+    "owned_perc": "1.3%"
   },
   {
     "player_id": 27469,
@@ -7979,7 +7979,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/kaleb-johnson-rb.php",
     "player_filename": "kaleb-johnson-rb.php",
     "player_bye_week": "5",
-    "player_owned_avg": 15.6,
+    "player_owned_avg": 15.5,
     "player_opponent": "at CLE",
     "player_opponent_id": "CLE",
     "player_ecr_delta": null,
@@ -7994,7 +7994,7 @@
     "pos_rank": "RB84",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "15.6%"
+    "owned_perc": "15.5%"
   },
   {
     "player_id": 15581,
@@ -8175,7 +8175,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/mason-taylor.php",
     "player_filename": "mason-taylor.php",
     "player_bye_week": "9",
-    "player_owned_avg": 14.8,
+    "player_owned_avg": 15,
     "player_opponent": "vs. NE",
     "player_opponent_id": "NE",
     "player_ecr_delta": null,
@@ -8190,7 +8190,7 @@
     "pos_rank": "TE52",
     "sos_stars": "te_stars",
     "star_rating": 0,
-    "owned_perc": "14.8%"
+    "owned_perc": "15.0%"
   },
   {
     "player_id": 16421,
@@ -8345,7 +8345,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/kimani-vidal.php",
     "player_filename": "kimani-vidal.php",
     "player_bye_week": "12",
-    "player_owned_avg": 61.9,
+    "player_owned_avg": 61.7,
     "player_opponent": "vs. HOU",
     "player_opponent_id": "HOU",
     "player_ecr_delta": null,
@@ -8360,7 +8360,7 @@
     "pos_rank": "RB87",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "61.9%"
+    "owned_perc": "61.7%"
   },
   {
     "player_id": 26023,
@@ -8431,7 +8431,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/bhayshul-tuten.php",
     "player_filename": "bhayshul-tuten.php",
     "player_bye_week": "8",
-    "player_owned_avg": 26.2,
+    "player_owned_avg": 26,
     "player_opponent": "at IND",
     "player_opponent_id": "IND",
     "player_ecr_delta": null,
@@ -8446,7 +8446,7 @@
     "pos_rank": "RB89",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "26.2%"
+    "owned_perc": "26.0%"
   },
   {
     "player_id": 26022,
@@ -8717,7 +8717,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/roman-wilson.php",
     "player_filename": "roman-wilson.php",
     "player_bye_week": "5",
-    "player_owned_avg": 1.5,
+    "player_owned_avg": 1.4,
     "player_opponent": "at CLE",
     "player_opponent_id": "CLE",
     "player_ecr_delta": null,
@@ -8732,7 +8732,7 @@
     "pos_rank": "WR125",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "1.5%"
+    "owned_perc": "1.4%"
   },
   {
     "player_id": 17262,
@@ -9080,7 +9080,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/marshawn-lloyd.php",
     "player_filename": "marshawn-lloyd.php",
     "player_bye_week": "5",
-    "player_owned_avg": 1.7,
+    "player_owned_avg": 1.6,
     "player_opponent": "vs. BAL",
     "player_opponent_id": "BAL",
     "player_ecr_delta": null,
@@ -9095,7 +9095,7 @@
     "pos_rank": "RB95",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "1.7%",
+    "owned_perc": "1.6%",
     "injury_status": "IR",
     "injury_tooltip": "IR:  "
   },
@@ -9196,7 +9196,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/jalen-royals.php",
     "player_filename": "jalen-royals.php",
     "player_bye_week": "10",
-    "player_owned_avg": 1.4,
+    "player_owned_avg": 1.3,
     "player_opponent": "vs. DEN",
     "player_opponent_id": "DEN",
     "player_ecr_delta": null,
@@ -9211,7 +9211,7 @@
     "pos_rank": "WR130",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "1.4%"
+    "owned_perc": "1.3%"
   },
   {
     "player_id": 18049,
@@ -9612,7 +9612,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/tahj-brooks.php",
     "player_filename": "tahj-brooks.php",
     "player_bye_week": "10",
-    "player_owned_avg": 1.5,
+    "player_owned_avg": 1.4,
     "player_opponent": "vs. ARI",
     "player_opponent_id": "ARI",
     "player_ecr_delta": null,
@@ -9627,7 +9627,7 @@
     "pos_rank": "RB97",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "1.5%"
+    "owned_perc": "1.4%"
   },
   {
     "player_id": 25322,
@@ -10086,7 +10086,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/trey-benson.php",
     "player_filename": "trey-benson.php",
     "player_bye_week": "8",
-    "player_owned_avg": 40.7,
+    "player_owned_avg": 40.2,
     "player_opponent": "at CIN",
     "player_opponent_id": "CIN",
     "player_ecr_delta": null,
@@ -10101,7 +10101,7 @@
     "pos_rank": "RB101",
     "sos_stars": "rb_stars",
     "star_rating": 0,
-    "owned_perc": "40.7%"
+    "owned_perc": "40.2%"
   },
   {
     "player_id": 26003,
@@ -10508,7 +10508,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/luke-mccaffrey.php",
     "player_filename": "luke-mccaffrey.php",
     "player_bye_week": "12",
-    "player_owned_avg": 2,
+    "player_owned_avg": 1.9,
     "player_opponent": "vs. DAL",
     "player_opponent_id": "DAL",
     "player_ecr_delta": null,
@@ -10523,7 +10523,7 @@
     "pos_rank": "WR154",
     "sos_stars": "wr_stars",
     "star_rating": 0,
-    "owned_perc": "2.0%",
+    "owned_perc": "1.9%",
     "injury_status": "IR",
     "injury_tooltip": "IR:  "
   },
@@ -10761,7 +10761,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/justin-fields.php",
     "player_filename": "justin-fields.php",
     "player_bye_week": "9",
-    "player_owned_avg": 22.2,
+    "player_owned_avg": 22,
     "player_opponent": "vs. NE",
     "player_opponent_id": "NE",
     "player_ecr_delta": null,
@@ -10776,7 +10776,7 @@
     "pos_rank": "QB44",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "22.2%"
+    "owned_perc": "22.0%"
   },
   {
     "player_id": 13891,
@@ -11013,7 +11013,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/jalen-milroe.php",
     "player_filename": "jalen-milroe.php",
     "player_bye_week": "8",
-    "player_owned_avg": 1.4,
+    "player_owned_avg": 1.3,
     "player_opponent": "at CAR",
     "player_opponent_id": "CAR",
     "player_ecr_delta": null,
@@ -11028,7 +11028,7 @@
     "pos_rank": "QB53",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "1.4%"
+    "owned_perc": "1.3%"
   },
   {
     "player_id": 18557,
@@ -11293,7 +11293,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/spencer-rattler.php",
     "player_filename": "spencer-rattler.php",
     "player_bye_week": "11",
-    "player_owned_avg": 1.5,
+    "player_owned_avg": 1.4,
     "player_opponent": "at TEN",
     "player_opponent_id": "TEN",
     "player_ecr_delta": null,
@@ -11308,7 +11308,7 @@
     "pos_rank": "QB63",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "1.5%"
+    "owned_perc": "1.4%"
   },
   {
     "player_id": 16726,
@@ -11432,7 +11432,7 @@
     "player_page_url": "https://www.fantasypros.com/nfl/players/russell-wilson.php",
     "player_filename": "russell-wilson.php",
     "player_bye_week": "14",
-    "player_owned_avg": 1.9,
+    "player_owned_avg": 1.8,
     "player_opponent": "at LV",
     "player_opponent_id": "LV",
     "player_ecr_delta": null,
@@ -11447,7 +11447,7 @@
     "pos_rank": "QB68",
     "sos_stars": "qb_stars",
     "star_rating": 0,
-    "owned_perc": "1.9%"
+    "owned_perc": "1.8%"
   },
   {
     "player_id": 16477,
