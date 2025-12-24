@@ -8035,7 +8035,9 @@
     "pos_rank": "QB37",
     "sos_stars": "qb_stars",
     "star_rating": 4,
-    "owned_perc": "6.7%"
+    "owned_perc": "6.7%",
+    "injury_status": "Q",
+    "injury_tooltip": "Questionable: Knee "
   },
   {
     "player_id": 22962,
