@@ -9,9 +9,6 @@ on:
     - cron: '*/30 5-21 * * *'
   workflow_dispatch: {}
 
-permissions:
-  contents: write
-
 concurrency:
   group: update-rankings
   cancel-in-progress: false
@@ -20,7 +17,10 @@ jobs:
   update-rankings:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - uses: actions/setup-node@v4
         with:
@@ -31,10 +31,21 @@ jobs:
           FANTASYPROS_API_KEY: ${{ secrets.FANTASYPROS_API_KEY }}
         run: node scripts/update-rankings.mjs
 
-      - name: Commit updated rankings
+      - name: Set up Git credentials
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "actions@github.com"
+          git config --local user.name "github-actions[bot]"
+          git remote set-url origin \
+            https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+
+      - name: Commit and push if changed
+        run: |
           git add data/rankings.json
-          git diff --cached --quiet && echo "No changes to commit" || git commit -m "Update rankings from FantasyPros API"
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update rankings from FantasyPros API"
+            git push
+          fi
