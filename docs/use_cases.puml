@@ -7,34 +7,34 @@ actor "GitHub Actions Scheduler" as scheduler
 rectangle "FproDraftTracker" {
   usecase "UC-001\nRankings anzeigen" as UC001
   usecase "UC-002\nDraft-Fortschritt abgleichen" as UC002
-  usecase "UC-003\nNach Position filtern" as UC003
-  usecase "UC-004\nNach maximalem Rang filtern" as UC004
-  usecase "UC-005\nNach Draft-Status filtern" as UC005
-  usecase "UC-006\nSpieler durchsuchen" as UC006
-  usecase "UC-007\nFilter zurücksetzen" as UC007
-  usecase "UC-008\nStatistik-Übersicht einsehen" as UC008
-  usecase "UC-009\nFehler-Feedback erhalten" as UC009
-  usecase "UC-010\nAktualität der Rankings einsehen" as UC010
-  usecase "UC-011\nRankings über FantasyPros-API aktualisieren" as UC011
+  usecase "UC-003\nSpielerliste filtern/durchsuchen" as UC003
+  usecase "UC-004\nStatistik-Übersicht einsehen" as UC004
+  usecase "UC-005\nFehler-Feedback erhalten" as UC005
+  usecase "UC-006\nAktualität der Rankings einsehen" as UC006
+  usecase "UC-007\nRankings über FantasyPros-API aktualisieren" as UC007
 }
 
 manager --> UC001
 manager --> UC002
 manager --> UC003
 manager --> UC004
-manager --> UC005
-manager --> UC006
-manager --> UC007
-manager --> UC008
 
-scheduler --> UC011
+scheduler --> UC007
 
-UC001 ..> UC010 : <<include>>
-UC009 ..> UC002 : <<extend>>
+UC001 ..> UC006 : <<include>>
+UC005 ..> UC002 : <<extend>>
 
-note bottom of UC011
+note bottom of UC003
+  Bündelt FR-003..FR-007 (Position, maximaler Rang,
+  Draft-Status, Volltextsuche inkl. Spalten-Syntax,
+  Filter zurücksetzen) als Alternativabläufe eines
+  Use Case, statt fünf separater Use Cases –
+  Details folgen in der Use-Case-Spec.
+end note
+
+note bottom of UC007
   Erzeugt den RANKINGS_SNAPSHOT (siehe entity_model.md),
-  der von UC-001/UC-010 angezeigt wird. Kein direkter
+  der von UC-001/UC-006 angezeigt wird. Kein direkter
   Use-Case-Aufruf durch den Manager, sondern asynchrone
   Datenbereitstellung über eine im Repository committete
   JSON-Datei (halbstündlich, 07:00–23:00 Uhr, siehe C-004).
