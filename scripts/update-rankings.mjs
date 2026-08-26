@@ -109,11 +109,17 @@ async function main() {
   const players = mapPlayers(rawPlayers);
 
   // Safety net per UC-007 AF-2: refuse to commit an implausible or empty
-  // result instead of overwriting the last known-good snapshot.
-  const validShare = rawPlayers.length ? players.length / rawPlayers.length : 0;
-  if (players.length < 50 || validShare < 0.5) {
+  // result instead of overwriting the last known-good snapshot. Note: most
+  // of the raw response is expected to map to null here and get filtered
+  // out - DST, kickers, and deep bench players legitimately have no "OP"
+  // (Superflex) rank at all, so a low players/rawPlayers ratio is normal,
+  // not a sign of a broken response. A real full-season pull maps a few
+  // hundred players; MIN_PLAYERS is set well below that as a floor against
+  // a near-empty or malformed response.
+  const MIN_PLAYERS = 100;
+  if (players.length < MIN_PLAYERS) {
     console.error(
-      `Refusing to write rankings: only ${players.length}/${rawPlayers.length} players mapped successfully.`
+      `Refusing to write rankings: only ${players.length}/${rawPlayers.length} players mapped successfully (minimum ${MIN_PLAYERS}).`
     );
     if (rawPlayers[0]) {
       console.error('Sample raw player:', JSON.stringify(rawPlayers[0], null, 2));
