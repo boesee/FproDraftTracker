@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T14:46:25.794Z",
+  "generatedAt": "2026-08-26T15:47:17.476Z",
   "source": "fantasypros-api",
   "players": [
     {
@@ -1692,7 +1692,7 @@
       "player_name": "Zach Charbonnet",
       "first_name": "Zach",
       "last_name": "Charbonnet",
-      "position": "RB50",
+      "position": "RB49",
       "team": "SEA",
       "opponent": null
     },
@@ -2951,17 +2951,6 @@
       "opponent": null
     },
     {
-      "player_id": 19252,
-      "rank": 268,
-      "rankIsEstimated": true,
-      "player_name": "Brandon Aiyuk",
-      "first_name": "Brandon",
-      "last_name": "Aiyuk",
-      "position": "WR108",
-      "team": "SF",
-      "opponent": null
-    },
-    {
       "player_id": 24367,
       "rank": 268,
       "rankIsEstimated": false,
@@ -2970,6 +2959,17 @@
       "last_name": "Randall",
       "position": "RB85",
       "team": "BAL",
+      "opponent": null
+    },
+    {
+      "player_id": 19252,
+      "rank": 269,
+      "rankIsEstimated": true,
+      "player_name": "Brandon Aiyuk",
+      "first_name": "Brandon",
+      "last_name": "Aiyuk",
+      "position": "WR108",
+      "team": "SF",
       "opponent": null
     },
     {
@@ -3039,17 +3039,6 @@
       "opponent": null
     },
     {
-      "player_id": 15802,
-      "rank": 274,
-      "rankIsEstimated": true,
-      "player_name": "Tyreek Hill",
-      "first_name": "Tyreek",
-      "last_name": "Hill",
-      "position": "WR110",
-      "team": "FA",
-      "opponent": null
-    },
-    {
       "player_id": 18631,
       "rank": 274,
       "rankIsEstimated": false,
@@ -3069,6 +3058,17 @@
       "last_name": "Arroyo",
       "position": "TE42",
       "team": "SEA",
+      "opponent": null
+    },
+    {
+      "player_id": 15802,
+      "rank": 276,
+      "rankIsEstimated": true,
+      "player_name": "Tyreek Hill",
+      "first_name": "Tyreek",
+      "last_name": "Hill",
+      "position": "WR110",
+      "team": "FA",
       "opponent": null
     },
     {
@@ -3116,19 +3116,8 @@
       "opponent": null
     },
     {
-      "player_id": 23054,
-      "rank": 279,
-      "rankIsEstimated": true,
-      "player_name": "Audric Estime",
-      "first_name": "Audric",
-      "last_name": "Estime",
-      "position": "RB95",
-      "team": "NO",
-      "opponent": null
-    },
-    {
       "player_id": 26212,
-      "rank": 280,
+      "rank": 279,
       "rankIsEstimated": true,
       "player_name": "Tahj Brooks",
       "first_name": "Tahj",
@@ -3146,6 +3135,17 @@
       "last_name": "Taylor",
       "position": "RB90",
       "team": "JAC",
+      "opponent": null
+    },
+    {
+      "player_id": 23054,
+      "rank": 281,
+      "rankIsEstimated": true,
+      "player_name": "Audric Estime",
+      "first_name": "Audric",
+      "last_name": "Estime",
+      "position": "RB96",
+      "team": "NO",
       "opponent": null
     },
     {
@@ -3292,13 +3292,13 @@
       "opponent": null
     },
     {
-      "player_id": 16420,
+      "player_id": 16425,
       "rank": 294,
       "rankIsEstimated": true,
-      "player_name": "Joe Mixon",
-      "first_name": "Joe",
-      "last_name": "Mixon",
-      "position": "RB101",
+      "player_name": "Kareem Hunt",
+      "first_name": "Kareem",
+      "last_name": "Hunt",
+      "position": "RB99",
       "team": "FA",
       "opponent": null
     },
@@ -3311,17 +3311,6 @@
       "last_name": "McCaffrey",
       "position": "WR124",
       "team": "WAS",
-      "opponent": null
-    },
-    {
-      "player_id": 16425,
-      "rank": 295,
-      "rankIsEstimated": true,
-      "player_name": "Kareem Hunt",
-      "first_name": "Kareem",
-      "last_name": "Hunt",
-      "position": "RB99",
-      "team": "FA",
       "opponent": null
     },
     {
@@ -3344,6 +3333,17 @@
       "last_name": "Waller",
       "position": "TE43",
       "team": "CAR",
+      "opponent": null
+    },
+    {
+      "player_id": 16420,
+      "rank": 296,
+      "rankIsEstimated": true,
+      "player_name": "Joe Mixon",
+      "first_name": "Joe",
+      "last_name": "Mixon",
+      "position": "RB101",
+      "team": "FA",
       "opponent": null
     },
     {
@@ -3898,7 +3898,7 @@
     },
     {
       "player_id": 25282,
-      "rank": 346,
+      "rank": 345,
       "rankIsEstimated": true,
       "player_name": "Luke Musgrave",
       "first_name": "Luke",
@@ -4084,25 +4084,25 @@
       "opponent": null
     },
     {
-      "player_id": 25167,
-      "rank": 361,
-      "rankIsEstimated": true,
-      "player_name": "Tommy Myers",
-      "first_name": "Tommy",
-      "last_name": "Myers",
-      "position": "TE82",
-      "team": "FA",
-      "opponent": null
-    },
-    {
       "player_id": 26379,
-      "rank": 362,
+      "rank": 361,
       "rankIsEstimated": true,
       "player_name": "Isaiah Williams",
       "first_name": "Isaiah",
       "last_name": "Williams",
       "position": "WR155",
       "team": "NYJ",
+      "opponent": null
+    },
+    {
+      "player_id": 26309,
+      "rank": 362,
+      "rankIsEstimated": true,
+      "player_name": "Sione Vaki",
+      "first_name": "Sione",
+      "last_name": "Vaki",
+      "position": "RB113",
+      "team": "DET",
       "opponent": null
     },
     {
@@ -4114,17 +4114,6 @@
       "last_name": "Wetjen",
       "position": "WR154",
       "team": "PIT",
-      "opponent": null
-    },
-    {
-      "player_id": 26309,
-      "rank": 363,
-      "rankIsEstimated": true,
-      "player_name": "Sione Vaki",
-      "first_name": "Sione",
-      "last_name": "Vaki",
-      "position": "RB113",
-      "team": "DET",
       "opponent": null
     },
     {
@@ -4183,6 +4172,17 @@
       "opponent": null
     },
     {
+      "player_id": 25167,
+      "rank": 368,
+      "rankIsEstimated": true,
+      "player_name": "Tommy Myers",
+      "first_name": "Tommy",
+      "last_name": "Myers",
+      "position": "TE82",
+      "team": "FA",
+      "opponent": null
+    },
+    {
       "player_id": 27312,
       "rank": 368,
       "rankIsEstimated": false,
@@ -4191,6 +4191,17 @@
       "last_name": "Royer",
       "position": "TE76",
       "team": "CLE",
+      "opponent": null
+    },
+    {
+      "player_id": 16483,
+      "rank": 369,
+      "rankIsEstimated": true,
+      "player_name": "Austin Ekeler",
+      "first_name": "Austin",
+      "last_name": "Ekeler",
+      "position": "RB115",
+      "team": "FA",
       "opponent": null
     },
     {
@@ -4213,17 +4224,6 @@
       "last_name": "Hopkins",
       "position": "WR158",
       "team": "BAL",
-      "opponent": null
-    },
-    {
-      "player_id": 16483,
-      "rank": 370,
-      "rankIsEstimated": true,
-      "player_name": "Austin Ekeler",
-      "first_name": "Austin",
-      "last_name": "Ekeler",
-      "position": "RB115",
-      "team": "FA",
       "opponent": null
     },
     {
@@ -4293,6 +4293,17 @@
       "opponent": null
     },
     {
+      "player_id": 22763,
+      "rank": 377,
+      "rankIsEstimated": true,
+      "player_name": "Khalil Herbert",
+      "first_name": "Khalil",
+      "last_name": "Herbert",
+      "position": "RB128",
+      "team": "SF",
+      "opponent": null
+    },
+    {
       "player_id": 28168,
       "rank": 377,
       "rankIsEstimated": false,
@@ -4312,17 +4323,6 @@
       "last_name": "Fields",
       "position": "QB39",
       "team": "KC",
-      "opponent": null
-    },
-    {
-      "player_id": 22763,
-      "rank": 378,
-      "rankIsEstimated": true,
-      "player_name": "Khalil Herbert",
-      "first_name": "Khalil",
-      "last_name": "Herbert",
-      "position": "RB128",
-      "team": "SF",
       "opponent": null
     },
     {
