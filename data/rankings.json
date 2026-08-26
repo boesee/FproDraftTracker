@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T13:47:42.000Z",
+  "generatedAt": "2026-08-26T14:16:11.709Z",
   "source": "fantasypros-api",
   "players": [
     {
@@ -3127,17 +3127,6 @@
       "opponent": null
     },
     {
-      "player_id": 23054,
-      "rank": 280,
-      "rankIsEstimated": true,
-      "player_name": "Audric Estime",
-      "first_name": "Audric",
-      "last_name": "Estime",
-      "position": "RB96",
-      "team": "NO",
-      "opponent": null
-    },
-    {
       "player_id": 28109,
       "rank": 280,
       "rankIsEstimated": false,
@@ -3146,6 +3135,17 @@
       "last_name": "Taylor",
       "position": "RB90",
       "team": "JAC",
+      "opponent": null
+    },
+    {
+      "player_id": 23054,
+      "rank": 281,
+      "rankIsEstimated": true,
+      "player_name": "Audric Estime",
+      "first_name": "Audric",
+      "last_name": "Estime",
+      "position": "RB96",
+      "team": "NO",
       "opponent": null
     },
     {
