@@ -43,7 +43,13 @@ auf der offiziellen API basierenden Prozess.
   Scoring-Formate und Positionsgruppen verschachtelt unter
   `rank.ECR.{scoring}.{position}` (bestätigt durch eine reale
   Beispiel-Antwort); das Mapping wählt clientseitig `PPR`/`OP` (Full-PPR,
-  wochenspezifisch, Superflex-Gesamtrang) aus.
+  wochenspezifisch, Superflex-Gesamtrang) aus, mit Fallback auf
+  `ROS-PPR`/`OP`, falls für einen Spieler in der aktuellen Woche gar kein
+  `PPR`-Bucket existiert (siehe Sicherheitsnetz-Punkt unten). Superflex/OP
+  wurde bewusst gewählt (statt reiner Positions-Ranglisten), weil es
+  Cross-Positions-Vergleiche ermöglicht (z. B. "OP55 vs. OP54" sagt
+  eindeutig, wer overall besser geranked ist — bei getrennten
+  Positions-Rängen wie "RB12" vs. "WR15" wäre das nicht möglich).
   `{season}` und `{week}` werden beide zur Laufzeit berechnet, damit
   keiner der beiden Parameter je manuell nachgeführt werden muss:
   - `{season}`: ab März gilt das laufende Kalenderjahr als Saison, sonst
@@ -58,8 +64,27 @@ auf der offiziellen API basierenden Prozess.
 - **Ausgabe:** `data/rankings.json` (Nachfolger von `data/ecrData.json`),
   Format gemäß `RANKINGS_SNAPSHOT`/`PLAYER` in `entity_model.md`. Das
   Feld `position` kombiniert `position_id` mit dem positionsspezifischen
-  PPR-Rang aus `rank.ECR.PPR[position_id]` (z. B. "RB81"), analog
-  zum `pos_rank`-Feld des Vorgängerprodukts.
+  Rang aus derselben Scoring-Bucket wie der Gesamt-Rang (`PPR` oder im
+  Fallback-Fall `ROS-PPR`) unter `rank.ECR.{scoring}[position_id]`
+  (z. B. "RB81"), analog zum `pos_rank`-Feld des Vorgängerprodukts.
+- **Fallback bei fehlenden Wochendaten:** Manche Spieler (typischerweise
+  Backups/tiefe Bankspieler) haben in einer gegebenen Woche gar keinen
+  `PPR`-Bucket (nicht nur kein `OP` darin, sondern `STD`/`PPR`/`HALF`
+  fehlen komplett) — z. B. Zach Charbonnet, der nur `ROS-*`/`DYN` hatte,
+  obwohl er ein regulär rosterbarer RB ist. Für solche Fälle fällt das
+  Skript auf `ROS-PPR`/`OP` zurück (gleiche Skala, nur anderer
+  Zeithorizont), statt den Spieler komplett zu verwerfen. Gibt es auch
+  dort keinen `OP`-Wert (wie bei Jayden Higgins, der nur `DYN` hatte),
+  wird der Spieler ausgeschlossen — ein Rückfall auf `DYN` (Dynasty)
+  würde Langfrist-/Rookie-Wert zeigen, was in einem Redraft-Kontext
+  irreführend wäre. Das deckt sich mit der FantasyPros-Website: dort
+  fehlte Higgins ebenfalls im wöchentlichen Ranking.
+  Hinweis: Die auf der Website sichtbaren Werte für Bankspieler wie
+  Charbonnet (z. B. "RB180, Overall 682") stimmen nicht zwangsläufig mit
+  den API-Werten überein — die Website scheint für solche Fälle eine
+  andere Berechnung/Datenquelle zu verwenden. Der Fallback approximiert
+  dies bewusst, statt eine exakte 1:1-Parität mit der Website
+  anzustreben.
 - **Zeitplan:** Cron `*/30 5-21 * * *` (UTC) ≙ 07:00–23:30 Uhr CEST
   (Europe/Zurich, Sommerzeit). Bewusst als fixer UTC-Cron ohne
   Zeitzonen-Umrechnung umgesetzt: Draften findet laut Vision überwiegend im

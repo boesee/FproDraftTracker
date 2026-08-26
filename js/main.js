@@ -25,6 +25,8 @@ const statTotalEl = document.getElementById('statTotal');
 const statAvailableEl = document.getElementById('statAvailable');
 const statDraftedEl = document.getElementById('statDrafted');
 
+const rankEstimateNoteEl = document.getElementById('rankEstimateNote');
+
 const messages = createMessageCenter(
   document.getElementById('syncError'),
   document.getElementById('syncSuccess')
@@ -35,6 +37,22 @@ let allPlayers = [];
 function createCell(text) {
   const td = document.createElement('td');
   td.textContent = text;
+  return td;
+}
+
+// Marks a rank derived from the ROS-PPR fallback (see
+// scripts/update-rankings.mjs, resolveScoringBucket) visibly, since it's on
+// a different scale than a week-specific rank - a bare number next to
+// regular ranks would misleadingly suggest direct comparability.
+function createRankCell(player) {
+  const td = document.createElement('td');
+  if (player.rankIsEstimated) {
+    td.textContent = `${player.rank}*`;
+    td.title = 'Rang basiert auf Rest-of-Season-Daten, da für diese Woche keine Daten vorliegen.';
+    td.classList.add('rank-estimated');
+  } else {
+    td.textContent = player.rank;
+  }
   return td;
 }
 
@@ -55,7 +73,7 @@ function renderTable() {
     const row = document.createElement('tr');
     if (player.drafted) row.classList.add('drafted-row');
     row.append(
-      createCell(player.rank),
+      createRankCell(player),
       createCell(player.player_name),
       createCell(player.position),
       createCell(player.team),
@@ -64,6 +82,7 @@ function renderTable() {
     );
     tbodyEl.appendChild(row);
   }
+  rankEstimateNoteEl.hidden = !filtered.some((player) => player.rankIsEstimated);
 }
 
 // UC-004 main flow (BR-001: always the full list, not the filtered one).

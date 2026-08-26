@@ -79,3 +79,10 @@ Use case ends.
 - **BR-003:** Ein fehlgeschlagener Workflow-Lauf committet keinen neuen
   Snapshot; der vorherige Snapshot bleibt maßgeblich, bis ein
   nachfolgender Lauf erfolgreich ist.
+- **BR-004:** Liefert die API für einen Spieler in der aktuellen Woche
+  keinen Gesamt-Rang, wird ersatzweise der Rest-of-Season-Rang derselben
+  Skala verwendet, damit rosterbare Spieler (z. B. Backups) nicht
+  komplett aus den Rankings verschwinden. Liefert auch das keinen
+  Gesamt-Rang, wird der Spieler ausgeschlossen; ein Rückfall auf
+  Dynasty-Werte findet bewusst nicht statt, da diese Langfrist-/
+  Rookie-Wert statt Redraft-Relevanz abbilden und irreführend wären.
