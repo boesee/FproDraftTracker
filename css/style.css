@@ -93,3 +93,14 @@
     gap: 1rem;
     margin: 1rem 0;
 }
+
+.rank-estimated {
+    font-style: italic;
+    color: #b45309;
+}
+
+.rank-estimate-note {
+    font-size: 0.85em;
+    color: #b45309;
+    margin-top: 0.5rem;
+}

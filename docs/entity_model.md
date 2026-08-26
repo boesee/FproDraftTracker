@@ -38,7 +38,9 @@ Ein einzelner Spieler-Eintrag innerhalb eines `RANKINGS_SNAPSHOT`.
 
 | Attribute | Description | Data Type | Length/Precision | Validation Rules |
 |-----------|-------------|-----------|-------------------|-------------------|
+| player_id | Numerische FantasyPros-Player-ID (`id` in der API-Antwort); erlaubt gezieltes Nachfragen bei der API zu Debug-Zwecken | Long | – | Not Null |
 | rank | Gesamt-Rang (PPR, Superflex/"OP") aus `rank.ECR.PPR.OP`, mit Fallback auf `rank.ECR.ROS-PPR.OP`, falls in der aktuellen Woche kein `PPR`-Bucket existiert (siehe architecture.md) | Integer | – | Not Null, Min: 1, Max: 999 |
+| rankIsEstimated | `true`, wenn `rank` aus dem ROS-PPR-Fallback stammt statt aus dem wochenspezifischen PPR-Bucket; steuert die visuelle Kennzeichnung im Frontend | Boolean | – | Not Null |
 | player_name | Vollständiger Spielername (Anzeige) | String | 100 | Not Null |
 | first_name | Vorname laut FantasyPros-API; Grundlage für den Namensabgleich in UC-002 | String | 50 | Not Null |
 | last_name | Nachname laut FantasyPros-API; Grundlage für den Namensabgleich in UC-002 | String | 50 | Not Null |

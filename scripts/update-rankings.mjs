@@ -146,8 +146,19 @@ function mapPlayers(rawPlayers) {
     .map((p) => {
       const scoring = resolveScoringBucket(p);
       if (!scoring) return null; // no usable OP rank in PPR or ROS-PPR
+
+      const rankIsEstimated = scoring === FALLBACK_SCORING;
+      if (rankIsEstimated) {
+        // Makes it possible to query this one player directly for
+        // debugging (e.g. via the API's player id) without having to
+        // grep the full response by name.
+        console.log(`Fallback (${FALLBACK_SCORING}) used for id=${p.id} "${p.player_name}"`);
+      }
+
       return {
+        player_id: p.id ?? null,
         rank: extractOverallRank(p, scoring),
+        rankIsEstimated,
         player_name: decodeHtmlEntities(p.player_name ?? ''),
         first_name: decodeHtmlEntities(p.first_name ?? ''),
         last_name: decodeHtmlEntities(p.last_name ?? ''),
