@@ -30,12 +30,14 @@ function currentNflSeason(now = new Date()) {
   return month >= 2 ? now.getUTCFullYear() : now.getUTCFullYear() - 1;
 }
 
-// Computes the current NFL week (0 = preseason, 1-18 = regular season) so
-// the `week` query param never needs manual, weekly upkeep. Week N runs
-// from the Tuesday before its Thursday kickoff through the following
-// Monday (the common "week rolls over on Tuesday" convention); anything
-// before Week 1's Tuesday is preseason (0), anything past Week 18 is
-// clamped to 18 (late-season/offseason).
+// Computes the current NFL week (1-18) so the `week` query param never
+// needs manual, weekly upkeep. Week N runs from the Tuesday before its
+// Thursday kickoff through the following Monday (the common "week rolls
+// over on Tuesday" convention); anything before Week 1's Tuesday is
+// clamped to 1 rather than treated as a separate "preseason" value, since
+// drafts (and FantasyPros' Week 1 rankings) happen well before the actual
+// Week 1 games. Anything past Week 18 is clamped to 18
+// (late-season/offseason).
 function currentNflWeek(now = new Date()) {
   const season = currentNflSeason(now);
 
@@ -49,8 +51,8 @@ function currentNflWeek(now = new Date()) {
 
   const msPerWeek = 7 * 24 * 60 * 60 * 1000;
   const diff = now.getTime() - week1Tuesday;
-  if (diff < 0) return 0;
-  return Math.min(Math.floor(diff / msPerWeek) + 1, 18);
+  const week = Math.floor(diff / msPerWeek) + 1;
+  return Math.min(Math.max(week, 1), 18);
 }
 
 async function fetchRankings() {

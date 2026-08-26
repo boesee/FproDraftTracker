@@ -48,11 +48,13 @@ auf der offiziellen API basierenden Prozess.
   keiner der beiden Parameter je manuell nachgeführt werden muss:
   - `{season}`: ab März gilt das laufende Kalenderjahr als Saison, sonst
     das Vorjahr.
-  - `{week}`: 0 (Preseason) vor dem Kickoff der Saison; danach 1–18, mit
-    Rollover jeweils am Dienstag nach dem Montagsspiel (Woche 1 beginnt am
-    Dienstag vor ihrem Donnerstags-Kickoff, der auf den ersten Montag im
-    September/Labor Day folgt); nach Woche 18 bleibt der Wert auf 18
-    stehen, bis mit dem neuen Kalenderjahr auch die Saison umspringt.
+  - `{week}`: immer 1–18, kein separater Preseason-Wert 0. Vor dem
+    rechnerischen Beginn von Woche 1 (Dienstag vor dem Donnerstags-Kickoff,
+    der auf den ersten Montag im September/Labor Day folgt) wird auf 1
+    geklemmt, da Drafts und FantasyPros' "Week 1"-Rankings bereits Tage
+    vorher stattfinden bzw. verfügbar sind. Danach Rollover jeweils am
+    Dienstag; nach Woche 18 bleibt der Wert auf 18 stehen, bis mit dem
+    neuen Kalenderjahr auch die Saison umspringt.
 - **Ausgabe:** `data/rankings.json` (Nachfolger von `data/ecrData.json`),
   Format gemäß `RANKINGS_SNAPSHOT`/`PLAYER` in `entity_model.md`. Das
   Feld `position` kombiniert `position_id` mit dem positionsspezifischen
