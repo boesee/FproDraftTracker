@@ -34,6 +34,34 @@ Dieser Workflow ersetzt das bisherige, manuell auszuführende
 Puppeteer-Scraping (`scrape-fantasypros.js`) durch einen automatisierten,
 auf der offiziellen API basierenden Prozess.
 
+### Konkrete Umsetzung (UC-007)
+
+- **Workflow:** [`.github/workflows/update-rankings.yml`](../.github/workflows/update-rankings.yml)
+- **Skript:** [`scripts/update-rankings.mjs`](../scripts/update-rankings.mjs)
+- **Endpoint:** `GET https://api.fantasypros.com/public/v2/json/nfl/{season}/rankings?week=0&range=true&scoring=PPR&position=OP`
+  (Auth über Header `x-api-key`). `{season}` wird zur Laufzeit berechnet
+  (ab März gilt das laufende Kalenderjahr als Saison, sonst das
+  Vorjahr).
+- **Ausgabe:** `data/rankings.json` (Nachfolger von `data/ecrData.json`),
+  Format gemäß `RANKINGS_SNAPSHOT`/`PLAYER` in `entity_model.md`.
+- **Zeitplan:** Cron `*/30 5-21 * * *` (UTC) ≙ 07:00–23:30 Uhr CEST
+  (Europe/Zurich, Sommerzeit). Bewusst als fixer UTC-Cron ohne
+  Zeitzonen-Umrechnung umgesetzt: Draften findet laut Vision überwiegend im
+  August/September statt (Sommerzeit), daher deckt dieses Fenster den
+  Hauptnutzungszeitraum korrekt ab; während der Winterzeit (CET, UTC+1)
+  verschiebt sich das reale Fenster auf 06:00–22:30 Uhr. Diese Drift wurde
+  bewusst in Kauf genommen, statt mit zwei Cron-Ausdrücken oder
+  Zeitzonen-Logik im Skript zu arbeiten.
+- **Sicherheitsnetz (UC-007 AF-2):** Das Skript committet nur, wenn
+  mindestens 50 Spieler und mindestens 50 % der Rohdaten erfolgreich
+  gemappt werden konnten; andernfalls bricht es ohne Commit ab und der
+  letzte erfolgreiche Snapshot bleibt bestehen.
+- **Offene Annahme:** Die genaue Struktur von `player.rank` sowie die
+  Query-Parameter `scoring=PPR&position=OP` sind aus der API-Dokumentation
+  abgeleitet, aber noch nicht gegen eine echte Antwort verifiziert. Ein
+  manueller Lauf über `workflow_dispatch` sollte vor der Aktivierung des
+  Zeitplans die Werte in `data/rankings.json` gegenprüfen.
+
 ## Sleeper-Draft-Abgleich
 
 Die Sleeper-API ist öffentlich, unauthentifiziert und CORS-offen. Der
