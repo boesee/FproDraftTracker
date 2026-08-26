@@ -17,9 +17,69 @@
         </header>
 
         <p id="rankingsBanner" class="rankings-banner" role="status" hidden></p>
-        <p id="rankingsError" class="rankings-error" role="alert" hidden></p>
+        <p id="rankingsError" class="message-error" role="alert" hidden></p>
+
+        <p id="syncError" class="message-error" role="alert" hidden></p>
+        <p id="syncSuccess" class="message-success" role="status" hidden></p>
 
         <section id="playersSection" hidden>
+            <section class="draft-sync">
+                <div>
+                    <label for="draftId">Sleeper Draft-ID</label>
+                    <input type="text" id="draftId" placeholder="Draft-ID eingeben" autocomplete="off">
+                </div>
+                <button id="loadDraftBtn" type="button">Draft-Daten laden</button>
+            </section>
+
+            <section class="stats-badges" id="statsBadges">
+                <span class="stat-badge">
+                    <strong id="statTotal">0</strong>
+                    <small>Spieler</small>
+                </span>
+                <span class="stat-badge stat-available">
+                    <strong id="statAvailable">0</strong>
+                    <small>Verfügbar</small>
+                </span>
+                <span class="stat-badge stat-drafted">
+                    <strong id="statDrafted">0</strong>
+                    <small>Gedraftet</small>
+                </span>
+            </section>
+
+            <details class="filters" open>
+                <summary>Filter</summary>
+                <div class="filters-grid">
+                    <div>
+                        <label for="positionFilter">Position</label>
+                        <select id="positionFilter">
+                            <option value="">Alle Positionen</option>
+                            <option value="QB">QB</option>
+                            <option value="RB">RB</option>
+                            <option value="WR">WR</option>
+                            <option value="TE">TE</option>
+                            <option value="FLEX">FLEX</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="rankFilter">Maximaler Rang</label>
+                        <input type="number" id="rankFilter" min="1" placeholder="z. B. 50">
+                    </div>
+                    <div>
+                        <label for="draftedFilter">Draft-Status</label>
+                        <select id="draftedFilter">
+                            <option value="">Alle Spieler</option>
+                            <option value="available">Verfügbar</option>
+                            <option value="drafted">Gedraftet</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="playerSearch">Suche</label>
+                        <input type="text" id="playerSearch" placeholder="z. B. Hurts, team:phi">
+                    </div>
+                </div>
+                <button id="clearFiltersBtn" type="button" class="secondary outline">Filter zurücksetzen</button>
+            </details>
+
             <table id="playersTable">
                 <thead>
                     <tr>
@@ -28,6 +88,7 @@
                         <th>Position</th>
                         <th>Team</th>
                         <th>Gegner</th>
+                        <th>Status</th>
                     </tr>
                 </thead>
                 <tbody id="playersTableBody"></tbody>

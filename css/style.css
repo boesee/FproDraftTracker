@@ -14,12 +14,20 @@
     color: #664d03;
 }
 
-.rankings-error {
+.message-error {
     padding: 0.75rem 1rem;
     border-radius: var(--pico-border-radius);
     background: #f8d7da;
     color: #721c24;
     border-left: 4px solid #dc3545;
+}
+
+.message-success {
+    padding: 0.75rem 1rem;
+    border-radius: var(--pico-border-radius);
+    background: #d4edda;
+    color: #155724;
+    border-left: 4px solid #28a745;
 }
 
 #playersTable th {
@@ -32,4 +40,56 @@
 #playersTable th:first-child {
     text-align: right;
     width: 3em;
+}
+
+.drafted-row {
+    opacity: 0.6;
+}
+
+.draft-sync {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.draft-sync div {
+    flex: 1 1 220px;
+}
+
+.stats-badges {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.stat-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: var(--pico-border-radius);
+    background: var(--pico-card-background-color);
+    border: 1px solid var(--pico-border-color);
+    min-width: 5rem;
+}
+
+.stat-badge strong {
+    font-size: 1.4rem;
+}
+
+.stat-available strong {
+    color: #28a745;
+}
+
+.stat-drafted strong {
+    color: #dc3545;
+}
+
+.filters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
 }
