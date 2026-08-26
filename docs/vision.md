@@ -58,9 +58,11 @@ robuster, aktueller und wartungsärmer wird.
 - Die FantasyPros-API ist auf 500 Requests pro Tag limitiert; die App muss
   mit diesem Kontingent auskommen (z. B. durch Caching der Rankings statt
   eines Aufrufs pro Seitenaufruf/Nutzeraktion).
-- Erlaubt die FantasyPros-API keinen direkten Browser-Zugriff (CORS), ist ein
-  minimaler Backend-/Proxy-Baustein zur Weiterleitung der Anfragen
-  erforderlich; andernfalls bleibt die App wie bisher rein clientseitig.
+- Die FantasyPros-API ist CORS-geschützt (verifiziert) und kann daher nicht
+  direkt aus dem Browser aufgerufen werden; der API-Aufruf muss außerhalb
+  des Frontends erfolgen.
+- Die App wird als rein statische Website auf GitHub Pages betrieben und
+  hat zur Laufzeit kein eigenes Backend.
 - Die Sleeper-API bleibt öffentlich und ohne Authentifizierung nutzbar wie im
   bisherigen Produkt.
 - Die Benutzeroberfläche bleibt deutschsprachig, analog zum bisherigen
