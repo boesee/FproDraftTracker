@@ -18,9 +18,9 @@ if (!API_KEY) {
 
 const OUTPUT_PATH = new URL('../data/rankings.json', import.meta.url);
 
-// Half-PPR, week-specific scoring; "OP" is the Superflex-style overall
+// Full PPR, week-specific scoring; "OP" is the Superflex-style overall
 // rank across all offensive positions (see docs/architecture.md).
-const SCORING = 'HALF';
+const SCORING = 'PPR';
 const OVERALL_POSITION = 'OP';
 
 function currentNflSeason(now = new Date()) {

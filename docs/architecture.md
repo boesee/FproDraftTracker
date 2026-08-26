@@ -42,7 +42,7 @@ auf der offiziellen API basierenden Prozess.
   (Auth über Header `x-api-key`). Die Antwort liefert pro Spieler alle
   Scoring-Formate und Positionsgruppen verschachtelt unter
   `rank.ECR.{scoring}.{position}` (bestätigt durch eine reale
-  Beispiel-Antwort); das Mapping wählt clientseitig `HALF`/`OP` (Half-PPR,
+  Beispiel-Antwort); das Mapping wählt clientseitig `PPR`/`OP` (Full-PPR,
   wochenspezifisch, Superflex-Gesamtrang) aus.
   `{season}` und `{week}` werden beide zur Laufzeit berechnet, damit
   keiner der beiden Parameter je manuell nachgeführt werden muss:
@@ -56,7 +56,7 @@ auf der offiziellen API basierenden Prozess.
 - **Ausgabe:** `data/rankings.json` (Nachfolger von `data/ecrData.json`),
   Format gemäß `RANKINGS_SNAPSHOT`/`PLAYER` in `entity_model.md`. Das
   Feld `position` kombiniert `position_id` mit dem positionsspezifischen
-  Half-PPR-Rang aus `rank.ECR.HALF[position_id]` (z. B. "RB81"), analog
+  PPR-Rang aus `rank.ECR.PPR[position_id]` (z. B. "RB81"), analog
   zum `pos_rank`-Feld des Vorgängerprodukts.
 - **Zeitplan:** Cron `*/30 5-21 * * *` (UTC) ≙ 07:00–23:30 Uhr CEST
   (Europe/Zurich, Sommerzeit). Bewusst als fixer UTC-Cron ohne
