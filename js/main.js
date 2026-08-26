@@ -119,10 +119,16 @@ async function loadDraft() {
 
   try {
     const picks = await fetchDraftPicks(draftId);
-    const { players, matched } = matchDraftedPlayers(allPlayers, picks);
+    const { players, matched, unmatchedPicks } = matchDraftedPlayers(allPlayers, picks);
     allPlayers = players;
     renderAll();
     messages.showSuccess(`${picks.length} Picks geladen, ${matched} Spieler zugeordnet.`);
+    // UC-002 AF-3: surface unmatched picks in the console for quick
+    // diagnosis, instead of having to manually diff 100+ picks by hand.
+    if (unmatchedPicks.length > 0) {
+      const names = unmatchedPicks.map((pick) => `${pick.metadata.first_name} ${pick.metadata.last_name}`);
+      console.warn(`Nicht zugeordnete Sleeper-Picks (${names.length}):`, names);
+    }
   } catch (error) {
     // UC-002 AF-2: invalid/unknown draft ID or unexpected response.
     logger.error('Draft-Abgleich fehlgeschlagen', error);

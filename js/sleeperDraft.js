@@ -54,13 +54,24 @@ export async function fetchDraftPicks(draftId) {
   return data;
 }
 
-// UC-002 main flow, steps 4-5.
+// UC-002 main flow, steps 4-5. Also reports which Sleeper picks found no
+// matching player (AF-3), so mismatches can be diagnosed quickly instead
+// of manually diffing the pick list against the rankings.
 export function matchDraftedPlayers(players, picks) {
+  const matchedPicks = new Set();
   let matched = 0;
   const result = players.map((player) => {
     const pick = findMatchingPick(player, picks);
-    if (pick) matched += 1;
+    if (pick) {
+      matched += 1;
+      matchedPicks.add(pick);
+    }
     return { ...player, drafted: Boolean(pick), draftInfo: pick };
   });
-  return { players: result, matched };
+
+  const unmatchedPicks = picks.filter(
+    (pick) => !matchedPicks.has(pick) && pick.metadata?.first_name && pick.metadata?.last_name
+  );
+
+  return { players: result, matched, unmatchedPicks };
 }
