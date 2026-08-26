@@ -38,11 +38,11 @@ Ein einzelner Spieler-Eintrag innerhalb eines `RANKINGS_SNAPSHOT`.
 
 | Attribute | Description | Data Type | Length/Precision | Validation Rules |
 |-----------|-------------|-----------|-------------------|-------------------|
-| rank | FantasyPros Expert-Consensus-Rang | Integer | – | Not Null, Min: 1, Max: 999 |
+| rank | Wochenspezifischer Gesamt-Rang (Half-PPR, Superflex/"OP") aus `rank.ECR.HALF.OP` der FantasyPros-API | Integer | – | Not Null, Min: 1, Max: 999 |
 | player_name | Vollständiger Spielername (Anzeige) | String | 100 | Not Null |
 | first_name | Vorname laut FantasyPros-API; Grundlage für den Namensabgleich in UC-002 | String | 50 | Not Null |
 | last_name | Nachname laut FantasyPros-API; Grundlage für den Namensabgleich in UC-002 | String | 50 | Not Null |
-| position | Spielposition (z. B. QB, RB, WR, TE) | String | 10 | Not Null |
+| position | Position kombiniert mit dem positionsspezifischen Half-PPR-Rang (z. B. "RB81"), aus `position_id` + `rank.ECR.HALF[position_id]` | String | 10 | Not Null |
 | team | NFL-Team-Kürzel | String | 5 | Not Null |
 | opponent | Gegner in der aktuellen Woche | String | 10 | Optional (Bye Week möglich) |
 
