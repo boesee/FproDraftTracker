@@ -17,6 +17,7 @@ nicht mehrfach vergeben.
 | FR-007 | Filter zurücksetzen | As a Fantasy-Football-Manager, I want to reset all active filters with one action, so that I can quickly return to the full player list. | Low | Draft |
 | FR-008 | Statistik-Übersicht einsehen | As a Fantasy-Football-Manager, I want to see a live count of total, available, and drafted players, so that I can gauge draft progress at a glance. | Medium | Draft |
 | FR-009 | Feedback bei Fehlern | As a Fantasy-Football-Manager, I want to see a clear message when an invalid Draft-ID is entered or the Sleeper data cannot be loaded, so that I understand why the draft sync failed. | Medium | Draft |
+| FR-010 | Aktualität der Rankings einsehen | As a Fantasy-Football-Manager, I want to see an info banner stating when the rankings were last synced with the FantasyPros API, so that I can judge how current the data is, especially if a scheduled update has failed. | High | Draft |
 
 ## Non-Functional Requirements (NFR)
 
@@ -24,7 +25,7 @@ nicht mehrfach vergeben.
 |----|-------|-------------|----------|----------|--------|
 | NFR-001 | Datenaktualität | Während der Betriebszeit (07:00–23:00 Uhr) dürfen die ausgelieferten Ranking-Daten nicht älter als 30 Minuten sein. | Performance | High | Draft |
 | NFR-002 | Ladezeit | Die Spielerliste muss nach dem Laden der Seite innerhalb von 2 Sekunden vollständig gerendert sein (gemessen ohne Sleeper-Abgleich, bei Rankings-JSON < 500 KB). | Performance | Medium | Draft |
-| NFR-003 | Ausfallsicherheit der Datenpipeline | Schlägt ein geplanter GitHub-Actions-Lauf fehl, muss die App weiterhin die zuletzt erfolgreich abgerufenen Rankings anzeigen, statt vollständig auszufallen. | Availability | High | Draft |
+| NFR-003 | Ausfallsicherheit der Datenpipeline | Schlägt ein geplanter GitHub-Actions-Lauf fehl, muss die App weiterhin die zuletzt erfolgreich abgerufenen Rankings anzeigen (statt vollständig auszufallen) und deren Zeitstempel sichtbar machen (siehe FR-010). | Availability | High | Draft |
 | NFR-004 | Geheimhaltung des API-Keys | Der FantasyPros-API-Key darf zu keinem Zeitpunkt im ausgelieferten Frontend-Code, im Browser-Netzwerkverkehr oder im Git-Verlauf des Repositories sichtbar sein. | Security | High | Draft |
 | NFR-005 | Responsives Layout | Die Anwendung muss auf gängigen Desktop- und mobilen Bildschirmgrößen (ab 360 px Breite) ohne horizontales Scrollen der Seite bedienbar sein. | Usability | Medium | Draft |
 
