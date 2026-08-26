@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T09:36:33.662Z",
+  "generatedAt": "2026-08-26T09:45:31.881Z",
   "source": "fantasypros-api",
   "players": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "rank": 2,
-      "player_name": "Ja&amp;#39;Marr Chase",
+      "player_name": "Ja'Marr Chase",
       "first_name": "Ja'Marr",
       "last_name": "Chase",
       "position": "WR1",
@@ -193,7 +193,7 @@
     },
     {
       "rank": 22,
-      "player_name": "De&amp;#39;Von Achane",
+      "player_name": "De'Von Achane",
       "first_name": "De'Von",
       "last_name": "Achane",
       "position": "RB5",
@@ -571,7 +571,7 @@
     },
     {
       "rank": 64,
-      "player_name": "D&amp;#39;Andre Swift",
+      "player_name": "D'Andre Swift",
       "first_name": "D'Andre",
       "last_name": "Swift",
       "position": "RB17",
@@ -931,7 +931,7 @@
     },
     {
       "rank": 104,
-      "player_name": "Wan&amp;#39;Dale Robinson",
+      "player_name": "Wan'Dale Robinson",
       "first_name": "Wan'Dale",
       "last_name": "Robinson",
       "position": "WR36",
@@ -1480,7 +1480,7 @@
     },
     {
       "rank": 165,
-      "player_name": "De&amp;#39;Zhaun Stribling",
+      "player_name": "De'Zhaun Stribling",
       "first_name": "De'Zhaun",
       "last_name": "Stribling",
       "position": "WR61",
@@ -1588,7 +1588,7 @@
     },
     {
       "rank": 177,
-      "player_name": "Tre&amp;#39; Harris",
+      "player_name": "Tre' Harris",
       "first_name": "Tre'",
       "last_name": "Harris",
       "position": "WR70",
@@ -1894,7 +1894,7 @@
     },
     {
       "rank": 211,
-      "player_name": "Ja&amp;#39;Kobi Lane",
+      "player_name": "Ja'Kobi Lane",
       "first_name": "Ja'Kobi",
       "last_name": "Lane",
       "position": "WR89",
@@ -2515,7 +2515,7 @@
     },
     {
       "rank": 280,
-      "player_name": "J&amp;#39;Mari Taylor",
+      "player_name": "J'Mari Taylor",
       "first_name": "J'Mari",
       "last_name": "Taylor",
       "position": "RB90",
@@ -3100,7 +3100,7 @@
     },
     {
       "rank": 345,
-      "player_name": "Lil&amp;#39;Jordan Humphrey",
+      "player_name": "Lil'Jordan Humphrey",
       "first_name": "Lil'Jordan",
       "last_name": "Humphrey",
       "position": "WR149",
@@ -3172,7 +3172,7 @@
     },
     {
       "rank": 353,
-      "player_name": "Ja&amp;#39;Tavion Sanders",
+      "player_name": "Ja'Tavion Sanders",
       "first_name": "Ja'Tavion",
       "last_name": "Sanders",
       "position": "TE78",
@@ -3469,7 +3469,7 @@
     },
     {
       "rank": 386,
-      "player_name": "Dont&amp;#39;e Thornton Jr.",
+      "player_name": "Dont'e Thornton Jr.",
       "first_name": "Dont'e",
       "last_name": "Thornton Jr.",
       "position": "WR159",
@@ -4693,7 +4693,7 @@
     },
     {
       "rank": 522,
-      "player_name": "Ke&amp;#39;Shawn Williams",
+      "player_name": "Ke'Shawn Williams",
       "first_name": "Ke'Shawn",
       "last_name": "Williams",
       "position": "WR211",
@@ -4729,7 +4729,7 @@
     },
     {
       "rank": 526,
-      "player_name": "Aidan O&amp;#39;Connell",
+      "player_name": "Aidan O'Connell",
       "first_name": "Aidan",
       "last_name": "O'Connell",
       "position": "QB67",
