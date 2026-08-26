@@ -69,15 +69,16 @@ auf der offiziellen API basierenden Prozess.
   bewusst in Kauf genommen, statt mit zwei Cron-Ausdrücken oder
   Zeitzonen-Logik im Skript zu arbeiten.
 - **Sicherheitsnetz (UC-007 AF-2):** Das Skript committet nur, wenn
-  mindestens 50 Spieler und mindestens 50 % der Rohdaten erfolgreich
-  gemappt werden konnten; andernfalls bricht es ohne Commit ab und der
-  letzte erfolgreiche Snapshot bleibt bestehen.
+  mindestens 100 Spieler erfolgreich gemappt werden konnten; andernfalls
+  bricht es ohne Commit ab und der letzte erfolgreiche Snapshot bleibt
+  bestehen. Es gibt bewusst **keine** Prozent-Schwelle relativ zur Anzahl
+  Rohdaten-Einträge: D/ST, Kicker und viele tiefe Bankspieler haben
+  grundsätzlich keinen "OP"-Rang (Superflex) und werden beim Mapping
+  regulär aussortiert — ein realer Lauf lieferte z. B. 579 von 1589
+  Rohdaten-Einträgen als gültig gemappte Spieler.
 - **Verifiziert:** Die Struktur von `player.rank.ECR.{scoring}.{position}`
-  wurde anhand einer echten Beispiel-Antwort bestätigt. Dennoch empfiehlt
-  sich vor der Aktivierung des Zeitplans ein manueller Testlauf über
-  `workflow_dispatch`, um `data/rankings.json` einmal gegen echte,
-  vollständige Daten zu prüfen (die verifizierte Probe enthielt nur einen
-  einzelnen Spieler).
+  sowie das Mapping wurden anhand echter API-Antworten bestätigt
+  (inklusive eines vollständigen Laufs über alle NFL-Spieler).
 
 ## Sleeper-Draft-Abgleich
 
