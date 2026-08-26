@@ -15,8 +15,6 @@ robuster, aktueller und wartungsärmer wird.
 - **Fantasy-Football-Manager** während eines Live-Drafts, die aktuelle
   Experten-Rankings mit dem Draft-Fortschritt abgleichen wollen, um zu sehen,
   wer noch verfügbar ist.
-- **Liga-Commissioners / Co-Manager**, die parallel mehrere Teams oder den
-  Gesamtverlauf eines Drafts im Blick behalten wollen.
 
 ## Goals
 
@@ -43,10 +41,11 @@ robuster, aktueller und wartungsärmer wird.
   Spalten-Syntax (`spalte:wert`).
 - Übersichtstabelle mit Live-Statistiken (Spieler gesamt / verfügbar /
   gedraftet).
-- Manueller JSON-Upload als Fallback, falls die API nicht erreichbar ist.
 
 ### Out of scope
 
+- Manueller JSON-Upload als Fallback (kein Notfall-Workaround mehr, seit die
+  FantasyPros-API die Datenquelle ist).
 - Unterstützung anderer Draft-Plattformen als Sleeper (vorerst).
 - Eigene Nutzerkonten oder Login-System.
 - Native Mobile-App (nur responsives Web).
@@ -55,9 +54,10 @@ robuster, aktueller und wartungsärmer wird.
 
 ## Constraints
 
-- Die FantasyPros-API erfordert eine gültige Zugangsberechtigung (API-Key
-  bzw. Abonnement); genaue Anforderungen werden in der Requirements-Phase
-  geklärt.
+- API-URL und API-Key für die FantasyPros-API sind bereits vorhanden.
+- Die FantasyPros-API ist auf 500 Requests pro Tag limitiert; die App muss
+  mit diesem Kontingent auskommen (z. B. durch Caching der Rankings statt
+  eines Aufrufs pro Seitenaufruf/Nutzeraktion).
 - Erlaubt die FantasyPros-API keinen direkten Browser-Zugriff (CORS), ist ein
   minimaler Backend-/Proxy-Baustein zur Weiterleitung der Anfragen
   erforderlich; andernfalls bleibt die App wie bisher rein clientseitig.
@@ -65,7 +65,8 @@ robuster, aktueller und wartungsärmer wird.
   bisherigen Produkt.
 - Die Benutzeroberfläche bleibt deutschsprachig, analog zum bisherigen
   Produkt.
-- API-Zugangsdaten dürfen nicht im Frontend-Code oder im Repository landen.
+- API-Zugangsdaten (API-Key) dürfen nicht im Frontend-Code oder im
+  Repository landen.
 
 ## Success measures
 
