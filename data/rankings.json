@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T15:47:17.476Z",
+  "generatedAt": "2026-08-26T16:28:20.914Z",
   "source": "fantasypros-api",
   "players": [
     {
@@ -1675,6 +1675,17 @@
       "opponent": null
     },
     {
+      "player_id": 23152,
+      "rank": 153,
+      "rankIsEstimated": true,
+      "player_name": "Zach Charbonnet",
+      "first_name": "Zach",
+      "last_name": "Charbonnet",
+      "position": "RB50",
+      "team": "SEA",
+      "opponent": null
+    },
+    {
       "player_id": 28127,
       "rank": 153,
       "rankIsEstimated": false,
@@ -1683,17 +1694,6 @@
       "last_name": "Cooper Jr.",
       "position": "WR66",
       "team": "NYJ",
-      "opponent": null
-    },
-    {
-      "player_id": 23152,
-      "rank": 154,
-      "rankIsEstimated": true,
-      "player_name": "Zach Charbonnet",
-      "first_name": "Zach",
-      "last_name": "Charbonnet",
-      "position": "RB49",
-      "team": "SEA",
       "opponent": null
     },
     {
@@ -3117,12 +3117,12 @@
     },
     {
       "player_id": 26212,
-      "rank": 279,
+      "rank": 280,
       "rankIsEstimated": true,
       "player_name": "Tahj Brooks",
       "first_name": "Tahj",
       "last_name": "Brooks",
-      "position": "RB93",
+      "position": "RB94",
       "team": "CIN",
       "opponent": null
     },
@@ -3336,17 +3336,6 @@
       "opponent": null
     },
     {
-      "player_id": 16420,
-      "rank": 296,
-      "rankIsEstimated": true,
-      "player_name": "Joe Mixon",
-      "first_name": "Joe",
-      "last_name": "Mixon",
-      "position": "RB101",
-      "team": "FA",
-      "opponent": null
-    },
-    {
       "player_id": 26005,
       "rank": 297,
       "rankIsEstimated": false,
@@ -3399,6 +3388,17 @@
       "last_name": "Austin III",
       "position": "WR118",
       "team": "NYG",
+      "opponent": null
+    },
+    {
+      "player_id": 16420,
+      "rank": 302,
+      "rankIsEstimated": true,
+      "player_name": "Joe Mixon",
+      "first_name": "Joe",
+      "last_name": "Mixon",
+      "position": "RB101",
+      "team": "FA",
       "opponent": null
     },
     {
@@ -3622,6 +3622,17 @@
       "opponent": null
     },
     {
+      "player_id": 22728,
+      "rank": 322,
+      "rankIsEstimated": true,
+      "player_name": "Michael Carter",
+      "first_name": "Michael",
+      "last_name": "Carter",
+      "position": "RB103",
+      "team": "TEN",
+      "opponent": null
+    },
+    {
       "player_id": 27499,
       "rank": 322,
       "rankIsEstimated": false,
@@ -3641,17 +3652,6 @@
       "last_name": "Raymond",
       "position": "WR135",
       "team": "CHI",
-      "opponent": null
-    },
-    {
-      "player_id": 22728,
-      "rank": 323,
-      "rankIsEstimated": true,
-      "player_name": "Michael Carter",
-      "first_name": "Michael",
-      "last_name": "Carter",
-      "position": "RB103",
-      "team": "TEN",
       "opponent": null
     },
     {
@@ -3886,6 +3886,17 @@
       "opponent": null
     },
     {
+      "player_id": 25282,
+      "rank": 344,
+      "rankIsEstimated": true,
+      "player_name": "Luke Musgrave",
+      "first_name": "Luke",
+      "last_name": "Musgrave",
+      "position": "TE54",
+      "team": "GB",
+      "opponent": null
+    },
+    {
       "player_id": 18590,
       "rank": 345,
       "rankIsEstimated": false,
@@ -3894,17 +3905,6 @@
       "last_name": "Humphrey",
       "position": "WR149",
       "team": "DEN",
-      "opponent": null
-    },
-    {
-      "player_id": 25282,
-      "rank": 345,
-      "rankIsEstimated": true,
-      "player_name": "Luke Musgrave",
-      "first_name": "Luke",
-      "last_name": "Musgrave",
-      "position": "TE54",
-      "team": "GB",
       "opponent": null
     },
     {
