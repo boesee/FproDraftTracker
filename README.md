@@ -1,44 +1,70 @@
 # FproDraftTracker
 
-**Fantasy Football Draft Tracker**  
-Tracke deinen Fantasy Football Draft mit aktuellen FantasyPros-Daten und Sleeper API-Integration.
+**Fantasy Football Draft Tracker**
+Tracke deinen Fantasy Football Draft mit aktuellen FantasyPros-Rankings und Sleeper API-Integration.
 
 ---
 
 ## Features
 
-- **Automatisches Laden** von `data/ecrData.json` beim Start der Applikation
-- **Manuelles Hochladen** einer eigenen JSON-Datei als Notfall-Lösung (über "JSON manuell hochladen"-Button)
-- Integration von FantasyPros und Sleeper API für Draft-Daten
-- Responsive UI für deinen Draft
+- **Automatisches Laden** der aktuellen Rankings aus `data/rankings.json`
+- **Aktualitäts-Banner**, der anzeigt, wann die Rankings zuletzt mit der FantasyPros-API synchronisiert wurden
+- **Draft-Abgleich** über die Sleeper-API anhand einer Draft-ID
+- **Filter & Suche**: Position, maximaler Rang, Draft-Status, Volltextsuche (inkl. `spalte:wert`-Syntax)
+- **Statistik-Übersicht**: Spieler gesamt / verfügbar / gedraftet
+- Responsive UI auf Basis von [Pico CSS](https://picocss.com/)
+
+Die Rankings werden nicht mehr gescraped, sondern über einen GitHub-Actions-Workflow
+([`update-rankings.yml`](.github/workflows/update-rankings.yml)) periodisch direkt von der
+offiziellen FantasyPros-API bezogen. Details dazu und zur restlichen Architektur stehen in
+[`docs/architecture.md`](docs/architecture.md).
 
 ---
 
 ## Nutzung
 
-1. **Starte die Applikation:**  
-   Die Datei `data/ecrData.json` wird automatisch geladen.
-
-2. **JSON manuell hochladen:**  
-   Klicke auf den Button „JSON manuell hochladen“.  
-   Wähle deine eigene JSON-Datei aus.  
-   Die Daten werden sofort übernommen.
+1. **Seite öffnen:** Die Datei `data/rankings.json` wird automatisch geladen und angezeigt.
+2. **Draft abgleichen:** Sleeper-Draft-ID eingeben und auf „Draft-Daten laden“ klicken, um gedraftete
+   Spieler zu markieren.
+3. **Filtern/Suchen:** Über den Filterbereich nach Position, Rang oder Draft-Status einschränken, oder
+   die Suche nutzen (z. B. `team:phi`).
 
 ---
 
 ## Entwicklung & Setup
 
-1. **Clone das Repository:**
+1. **Repository klonen:**
    ```sh
    git clone https://github.com/boesee/FproDraftTracker.git
    ```
-2. **Starte einen lokalen Webserver (z. B. mit Python):**
+2. **Lokalen Webserver starten** (z. B. mit Python):
    ```sh
    python -m http.server
    ```
-   und öffne `http://localhost:8000` im Browser.
+   und `http://localhost:8000` im Browser öffnen.
 
-3. **Bearbeite die Dateien in `/js/`, `/data/` und `/css/` nach Bedarf.**
+   Für die lokale Entwicklung wird eine `data/rankings.json` benötigt (siehe
+   [`docs/entity_model.md`](docs/entity_model.md) für das Format); ohne diese Datei zeigt die App den
+   entsprechenden Fehlerzustand.
+
+3. **Dateien in `/js/`, `/css/` und `index.html` nach Bedarf anpassen.**
+
+### Rankings-Pipeline (GitHub Actions)
+
+Der Workflow [`update-rankings.yml`](.github/workflows/update-rankings.yml) benötigt zwei
+Repository-Secrets (Settings → Secrets and variables → Actions):
+
+- `FANTASYPROS_API_KEY` – API-Key für die FantasyPros-API
+- `GH_TOKEN` – Personal Access Token mit Schreibrechten, um `data/rankings.json` zu committen
+
+---
+
+## Projektdokumentation
+
+Der Rebuild folgt dem [AI Unified Process](https://unifiedprocess.ai/) (AIUP); die Artefakte liegen in
+[`docs/`](docs/): [`vision.md`](docs/vision.md), [`architecture.md`](docs/architecture.md),
+[`requirements.md`](docs/requirements.md), [`entity_model.md`](docs/entity_model.md),
+[`use_cases.puml`](docs/use_cases.puml) und die Detail-Specs in [`docs/use_cases/`](docs/use_cases/).
 
 ---
 
