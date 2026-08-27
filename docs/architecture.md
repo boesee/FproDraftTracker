@@ -113,9 +113,10 @@ der Gegner für diesen Spieler ist). Die FantasyPros-API bietet **keinen**
 Spielplan/Matchup-Endpoint (per vollständiger OpenAPI-Spezifikation
 verifiziert — kein Treffer für "matchup", "opponent" oder "star_rating" in
 der gesamten Spec); dieser Datenpunkt war ausschliesslich über die
-Website selbst verfügbar. Da ein erneuter Website-Scrape genau die
-Fragilität zurückbringen würde, die dieser Rebuild beseitigen sollte,
-wird bewusst darauf verzichtet — das Matchup-Rating entfällt ersatzlos.
+Website selbst verfügbar. Ein automatisierter Website-Scrape würde genau
+die Fragilität zurückbringen, die dieser Rebuild beseitigen sollte — daher
+wird das Matchup-Rating **nicht** automatisiert bezogen (siehe eigener
+Abschnitt weiter unten für die stattdessen gewählte manuelle Lösung).
 
 Der reine Gegner (ohne Bewertung) lässt sich aber über eine zweite,
 unauthentifizierte öffentliche API beziehen: ESPNs (nicht offiziell
@@ -137,6 +138,47 @@ GET https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?week={
 - Damit hat die Pipeline zwei externe Datenquellen (FantasyPros +
   zusätzlich ESPN), beide unauthentifiziert bzw. mit API-Key, beide
   serverseitig in der Actions-Umgebung aufgerufen.
+
+## Matchup-Rating (manuell gepflegte Ausnahme)
+
+Das FantasyPros-Matchup-Rating (0–5, wie günstig der Gegner für einen
+Spieler ist) steckt clientseitig in `window.advancedMetrics` auf
+[`ppr-superflex.php`](https://www.fantasypros.com/nfl/rankings/ppr-superflex.php)
+— aber **nur für eingeloggte Nutzer**; ohne Login liefert die Seite dort
+lediglich ein leeres Array. Eine Automatisierung des Logins wurde bewusst
+verworfen:
+
+- Das FantasyPros-Passwort müsste als GitHub-Actions-Secret hinterlegt
+  und alle 30 Minuten für einen automatisierten Login verwendet werden —
+  ein unverhältnismässiges Sicherheitsrisiko für ein Nice-to-have-Feld.
+- Automatisierter Login verstösst bei den meisten Diensten gegen die ToS.
+- Login-Flows sind fragiler als reine Seitenstruktur (CAPTCHA, 2FA,
+  Session-Handling, mögliches Risiko einer Account-Sperrung durch
+  ungewöhnliches automatisiertes Zugriffsmuster).
+
+**Gewählte Lösung:** eine manuell gepflegte Momentaufnahme,
+[`matchup-ratings.json`](../matchup-ratings.json) im Repository-Root,
+analog zu `config.json`. Der Repo-Owner öffnet die Seite eingeloggt,
+führt in der Browser-Konsole `copy(JSON.stringify(advancedMetrics))` aus
+und fügt das Ergebnis ab Zeile 2 der Datei ein (Zeile 1 bleibt ein
+`//`-Kommentar mit genau diesem Befehl als Reminder). Damit läuft **kein
+eigener Code** gegen die FantasyPros-Website — kein Scraping, keine
+Login-Automatisierung, kein Puppeteer/Headless-Browser in der Pipeline.
+
+- `scripts/update-rankings.mjs` (`loadMatchupRatings`) liest die Datei,
+  überspringt die führende Kommentarzeile und mapped pro FantasyPros-
+  `player_id` den Wert aus `matchup_rating.rating` (als `matchupRating`
+  auf `PLAYER`).
+- Fehlt die Datei, ist sie leer/veraltet oder nicht mehr parsebar (z. B.
+  weil FantasyPros die interne Struktur ändert), wird das geloggt und die
+  Pipeline läuft ohne Matchup-Ratings weiter (`matchupRating: null`) —
+  wie beim ESPN-Gegner kein Grund, den Lauf abzubrechen.
+- Frontend: Der Wert wird auf die nächste ganze Zahl gerundet und als
+  0–5 blaue/graue Sterne dargestellt (z. B. 2.7 → 3 gefüllte + 2 leere
+  Sterne), mit dem Rohwert als Tooltip.
+- Bewusster Nachteil: Die Datei veraltet, sobald sich die Rankings ändern,
+  bis sie manuell neu eingefügt wird — akzeptiert, da es sich um ein
+  Nice-to-have-Attribut handelt, nicht um die Kern-Rankings.
 
 ## Sleeper-Draft-Abgleich
 

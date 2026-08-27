@@ -12,6 +12,7 @@ Tracke deinen Fantasy Football Draft mit aktuellen FantasyPros-Rankings und Slee
 - **Draft-Abgleich** über die Sleeper-API anhand einer Draft-ID
 - **Filter & Suche**: Position, maximaler Rang, Draft-Status, Volltextsuche (inkl. `spalte:wert`-Syntax)
 - **Statistik-Übersicht**: Spieler gesamt / verfügbar / gedraftet
+- **Gegner** pro Spieler (ESPN Scoreboard API) und optional ein **Matchup-Rating** (Sterne)
 - Responsive UI auf Basis von [Pico CSS](https://picocss.com/)
 
 Die Rankings werden nicht mehr gescraped, sondern über einen GitHub-Actions-Workflow
@@ -47,6 +48,19 @@ Optionale, von Hand gepflegte Konfiguration im Repository-Root:
 - `season`/`week`: überschreiben bei Bedarf die von der Pipeline automatisch berechneten Werte;
   `null` heisst "automatisch berechnen" (Standard). Details siehe
   [`docs/architecture.md`](docs/architecture.md#konfiguration-configjson).
+
+### `matchup-ratings.json` (optional)
+
+FantasyPros' Matchup-Rating erfordert einen eingeloggten Account und ist über keine API verfügbar
+(siehe [`docs/architecture.md`](docs/architecture.md#matchup-rating-manuell-gepflegte-ausnahme)).
+Um es trotzdem nutzen zu können, ohne Zugangsdaten zu automatisieren, wird es manuell gepflegt:
+
+1. [`ppr-superflex.php`](https://www.fantasypros.com/nfl/rankings/ppr-superflex.php) eingeloggt öffnen.
+2. Browser-Konsole öffnen und ausführen: `copy(JSON.stringify(advancedMetrics))`
+3. Ergebnis in `matchup-ratings.json` ab Zeile 2 einfügen (Zeile 1 ist ein Kommentar mit genau
+   diesem Befehl) und committen.
+
+Fehlt die Datei oder ist sie veraltet, bleibt das Matchup-Rating in der App einfach leer.
 
 ---
 

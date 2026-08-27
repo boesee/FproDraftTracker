@@ -57,6 +57,35 @@ function createRankCell(player) {
   return td;
 }
 
+const MATCHUP_STAR_COUNT = 5;
+
+// FantasyPros' matchup-favorability rating (0-5), from the manually
+// maintained matchup-ratings.json (see scripts/update-rankings.mjs,
+// loadMatchupRatings). Rounded to the nearest whole star, e.g. 2.7 -> 3
+// filled + 2 empty stars.
+function createMatchupCell(matchupRating) {
+  const td = document.createElement('td');
+  if (matchupRating === null || matchupRating === undefined) {
+    td.textContent = '-';
+    return td;
+  }
+
+  const filled = Math.max(0, Math.min(MATCHUP_STAR_COUNT, Math.round(matchupRating)));
+  const empty = MATCHUP_STAR_COUNT - filled;
+
+  const filledSpan = document.createElement('span');
+  filledSpan.className = 'matchup-star-filled';
+  filledSpan.textContent = '★'.repeat(filled);
+
+  const emptySpan = document.createElement('span');
+  emptySpan.className = 'matchup-star-empty';
+  emptySpan.textContent = '★'.repeat(empty);
+
+  td.append(filledSpan, emptySpan);
+  td.title = `Matchup-Rating: ${matchupRating}`;
+  return td;
+}
+
 function getFilters() {
   return {
     position: positionFilter.value,
@@ -79,6 +108,7 @@ function renderTable() {
       createCell(player.position),
       createCell(player.team),
       createCell(player.opponent ?? '-'),
+      createMatchupCell(player.matchupRating),
       createCell(player.drafted ? 'Gedraftet' : 'Verfügbar')
     );
     tbodyEl.appendChild(row);
