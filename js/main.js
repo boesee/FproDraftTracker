@@ -23,6 +23,8 @@ const playerSearch = document.getElementById('playerSearch');
 const clearFiltersBtn = document.getElementById('clearFiltersBtn');
 
 const statTotalEl = document.getElementById('statTotal');
+const statMatchedEl = document.getElementById('statMatched');
+const statRosFallbackEl = document.getElementById('statRosFallback');
 const statAvailableEl = document.getElementById('statAvailable');
 const statDraftedEl = document.getElementById('statDrafted');
 
@@ -118,8 +120,10 @@ function renderTable() {
 
 // UC-004 main flow (BR-001: always the full list, not the filtered one).
 function renderStats() {
-  const { total, available, drafted } = computeStats(allPlayers);
+  const { total, available, drafted, matched, rosFallback } = computeStats(allPlayers);
   statTotalEl.textContent = total;
+  statMatchedEl.textContent = matched;
+  statRosFallbackEl.textContent = rosFallback;
   statAvailableEl.textContent = available;
   statDraftedEl.textContent = drafted;
 }

@@ -87,6 +87,10 @@
     color: #dc3545;
 }
 
+.stat-ros-fallback strong {
+    color: #b45309;
+}
+
 .filters-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

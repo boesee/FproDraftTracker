@@ -11,7 +11,7 @@ Tracke deinen Fantasy Football Draft mit aktuellen FantasyPros-Rankings und Slee
 - **Aktualitäts-Banner**, der anzeigt, wann die Rankings zuletzt mit der FantasyPros-API synchronisiert wurden
 - **Draft-Abgleich** über die Sleeper-API anhand einer Draft-ID
 - **Filter & Suche**: Position, maximaler Rang, Draft-Status, Volltextsuche (inkl. `spalte:wert`-Syntax)
-- **Statistik-Übersicht**: Spieler gesamt / verfügbar / gedraftet
+- **Statistik-Übersicht**: Spieler gesamt / gematched / ROS-Fallback / verfügbar / gedraftet
 - **Gegner** pro Spieler (ESPN Scoreboard API) und optional ein **Matchup-Rating** (Sterne)
 - Responsive UI auf Basis von [Pico CSS](https://picocss.com/)
 

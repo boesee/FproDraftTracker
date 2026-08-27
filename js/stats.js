@@ -6,5 +6,12 @@
 export function computeStats(players) {
   const total = players.length;
   const drafted = players.filter((p) => p.drafted).length;
-  return { total, available: total - drafted, drafted };
+  const rosFallback = players.filter((p) => p.rankIsEstimated).length;
+  return {
+    total,
+    available: total - drafted,
+    drafted,
+    matched: total - rosFallback,
+    rosFallback,
+  };
 }
