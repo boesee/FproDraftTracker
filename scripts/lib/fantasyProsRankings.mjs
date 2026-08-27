@@ -60,6 +60,20 @@ function extractPositionLabel(player, scoring) {
   return typeof positionalRank === 'number' ? `${positionId}${positionalRank}` : positionId;
 }
 
+// PPR/OP and ROS-PPR/OP are different numeric scales that happen to
+// overlap (both are small integers), so sorting directly by `rank` can
+// interleave a ROS-PPR fallback player between two real weekly-ranked
+// players it has no meaningful relationship to - or even collide on the
+// exact same number. Sorting instead pushes every rankIsEstimated player
+// after all real weekly ranks (still ordered among themselves by their
+// ROS rank), while the displayed `rank` value itself stays the genuine
+// number from whichever scoring bucket was used.
+const FALLBACK_SORT_OFFSET = 10000;
+
+function sortKey(player) {
+  return player.rankIsEstimated ? player.rank + FALLBACK_SORT_OFFSET : player.rank;
+}
+
 export function mapPlayers(rawPlayers, opponents, matchupRatings) {
   return rawPlayers
     .map((p) => {
@@ -88,5 +102,5 @@ export function mapPlayers(rawPlayers, opponents, matchupRatings) {
       };
     })
     .filter((p) => p && p.player_name && p.rank !== null)
-    .sort((a, b) => a.rank - b.rank);
+    .sort((a, b) => sortKey(a) - sortKey(b));
 }

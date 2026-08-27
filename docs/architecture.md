@@ -76,9 +76,8 @@ auf der offiziellen API basierenden Prozess.
   `PPR`-Bucket (nicht nur kein `OP` darin, sondern `STD`/`PPR`/`HALF`
   fehlen komplett) — z. B. Zach Charbonnet, der nur `ROS-*`/`DYN` hatte,
   obwohl er ein regulär rosterbarer RB ist. Für solche Fälle fällt das
-  Skript auf `ROS-PPR`/`OP` zurück (gleiche Skala, nur anderer
-  Zeithorizont), statt den Spieler komplett zu verwerfen. Gibt es auch
-  dort keinen `OP`-Wert (wie bei Jayden Higgins, der nur `DYN` hatte),
+  Skript auf `ROS-PPR`/`OP` zurück, statt den Spieler komplett zu
+  verwerfen. Gibt es auch dort keinen `OP`-Wert (wie bei Jayden Higgins, der nur `DYN` hatte),
   wird der Spieler ausgeschlossen — ein Rückfall auf `DYN` (Dynasty)
   würde Langfrist-/Rookie-Wert zeigen, was in einem Redraft-Kontext
   irreführend wäre. Das deckt sich mit der FantasyPros-Website: dort
@@ -89,6 +88,18 @@ auf der offiziellen API basierenden Prozess.
   andere Berechnung/Datenquelle zu verwenden. Der Fallback approximiert
   dies bewusst, statt eine exakte 1:1-Parität mit der Website
   anzustreben.
+- **Sortierung bei gemischten Skalen:** `PPR`/`OP` und `ROS-PPR`/`OP` sind
+  zwei unterschiedliche Ranglisten (unterschiedlich grosse Spieler-Pools),
+  deren Zahlenwerte sich aber überschneiden können — ein ROS-Rang "153"
+  hat nichts mit einem Wochen-Rang "153" zu tun, kann aber genau denselben
+  Zahlenwert annehmen (in der Praxis kam das bei 28 von 607 Spielern vor
+  und führte zu doppelt vergebenen Rangnummern in der Liste). Beim Sortieren
+  (sowohl beim Schreiben von `data/rankings.json` als auch beim Rendern im
+  Frontend) werden `rankIsEstimated`-Spieler deshalb konsequent hinter alle
+  echten Wochenränge einsortiert (intern per Sortier-Offset von 10'000,
+  nicht im gespeicherten `rank`-Wert selbst) — der angezeigte Rang bleibt
+  die echte Zahl aus der jeweiligen Scoring-Bucket, kollidiert aber nicht
+  mehr mit unabhängigen Wochenrängen mittendrin in der Liste.
 - **Zeitplan:** Cron `*/30 5-21 * * *` (UTC) ≙ 07:00–23:30 Uhr CEST
   (Europe/Zurich, Sommerzeit). Bewusst als fixer UTC-Cron ohne
   Zeitzonen-Umrechnung umgesetzt: Draften findet laut Vision überwiegend im

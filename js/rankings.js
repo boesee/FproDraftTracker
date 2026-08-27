@@ -14,9 +14,21 @@ export async function loadRankingsSnapshot() {
   return response.json();
 }
 
+// PPR/OP and ROS-PPR/OP (see scripts/lib/fantasyProsRankings.mjs,
+// rankIsEstimated) are different numeric scales that happen to overlap,
+// so sorting directly by `rank` can interleave or even collide a
+// ROS-PPR fallback player with an unrelated real weekly-ranked player.
+// Pushing every rankIsEstimated player after all real ranks avoids that,
+// while the displayed rank value itself stays the genuine number.
+const FALLBACK_SORT_OFFSET = 10000;
+
+function sortKey(player) {
+  return player.rankIsEstimated ? player.rank + FALLBACK_SORT_OFFSET : player.rank;
+}
+
 // UC-001 BR-001: players are displayed sorted ascending by rank.
 export function sortPlayersByRank(players) {
-  return [...players].sort((a, b) => a.rank - b.rank);
+  return [...players].sort((a, b) => sortKey(a) - sortKey(b));
 }
 
 // UC-006 BR-002: the staleness check only applies within the 07:00-23:00
