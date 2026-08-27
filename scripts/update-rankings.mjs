@@ -8,7 +8,7 @@
 // scoring format (STD/PPR/HALF/ROS-*/DYN) and then by position group
 // (per-position/FLX/OP/ALL) - see SCORING/OVERALL_POSITION below.
 
-import { writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 
 const API_KEY = process.env.FANTASYPROS_API_KEY;
 if (!API_KEY) {
@@ -17,6 +17,20 @@ if (!API_KEY) {
 }
 
 const OUTPUT_PATH = new URL('../data/rankings.json', import.meta.url);
+const CONFIG_PATH = new URL('../config.json', import.meta.url);
+
+// Reads the human-maintained config.json at the repo root. `season`/`week`
+// there override the auto-computed values below when set (non-null); a
+// missing file or unset fields fall back to the automatic computation, so
+// config.json is an optional override, not a requirement.
+async function loadConfig() {
+  try {
+    return JSON.parse(await readFile(CONFIG_PATH, 'utf8'));
+  } catch (err) {
+    if (err.code === 'ENOENT') return {};
+    throw err;
+  }
+}
 
 // Full PPR; "OP" is the Superflex-style overall rank across all offensive
 // positions, including QB (see docs/architecture.md). Week-specific PPR is
@@ -75,9 +89,9 @@ function currentNflWeek(now = new Date()) {
   return Math.min(Math.max(week, 1), 18);
 }
 
-async function fetchRankings() {
-  const season = currentNflSeason();
-  const week = currentNflWeek();
+async function fetchRankings(config) {
+  const season = config.season ?? currentNflSeason();
+  const week = config.week ?? currentNflWeek();
   const url =
     `https://api.fantasypros.com/public/v2/json/nfl/${season}/rankings` +
     `?week=${week}&range=true`;
@@ -175,7 +189,8 @@ function mapPlayers(rawPlayers) {
 }
 
 async function main() {
-  const data = await fetchRankings();
+  const config = await loadConfig();
+  const data = await fetchRankings(config);
   const rawPlayers = data.players ?? [];
   const players = mapPlayers(rawPlayers);
 
