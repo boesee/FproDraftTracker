@@ -89,9 +89,7 @@ function currentNflWeek(now = new Date()) {
   return Math.min(Math.max(week, 1), 18);
 }
 
-async function fetchRankings(config) {
-  const season = config.season ?? currentNflSeason();
-  const week = config.week ?? currentNflWeek();
+async function fetchRankings(season, week) {
   const url =
     `https://api.fantasypros.com/public/v2/json/nfl/${season}/rankings` +
     `?week=${week}&range=true`;
@@ -105,6 +103,57 @@ async function fetchRankings(config) {
   }
 
   return response.json();
+}
+
+// FantasyPros' public API has no schedule/matchup endpoint at all (checked
+// against their full OpenAPI spec) - it's only ever been available via
+// scraping their website, which this rebuild deliberately doesn't do. The
+// opponent (without any favorability rating - that data simply isn't
+// published anywhere we can use) comes from ESPN's public scoreboard
+// instead. A couple of team abbreviations differ from FantasyPros' and are
+// translated back, confirmed against a real response.
+const ESPN_TO_FANTASYPROS_TEAM = {
+  JAX: 'JAC',
+  WSH: 'WAS',
+};
+
+function toFantasyProsTeamId(espnAbbreviation) {
+  return ESPN_TO_FANTASYPROS_TEAM[espnAbbreviation] ?? espnAbbreviation;
+}
+
+// Returns a map of FantasyPros team_id -> opponent label ("vs XXX" at home,
+// "at XXX" away). Opponent is a nice-to-have, not critical like the
+// rankings themselves, so a fetch failure here logs and returns an empty
+// map (every player's opponent falls back to null) instead of failing the
+// whole run.
+async function fetchOpponents(season, week) {
+  const url =
+    `https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard` +
+    `?week=${week}&seasontype=2&year=${season}`;
+
+  let data;
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`ESPN API returned ${response.status} ${response.statusText}`);
+    }
+    data = await response.json();
+  } catch (err) {
+    console.error('Could not fetch opponents from ESPN, continuing without them:', err.message);
+    return {};
+  }
+
+  const opponents = {};
+  for (const event of data.events ?? []) {
+    const competitors = event.competitions?.[0]?.competitors ?? [];
+    if (competitors.length !== 2) continue;
+    const [a, b] = competitors;
+    const teamA = toFantasyProsTeamId(a.team.abbreviation);
+    const teamB = toFantasyProsTeamId(b.team.abbreviation);
+    opponents[teamA] = a.homeAway === 'home' ? `vs ${teamB}` : `at ${teamB}`;
+    opponents[teamB] = b.homeAway === 'home' ? `vs ${teamA}` : `at ${teamA}`;
+  }
+  return opponents;
 }
 
 const NAMED_HTML_ENTITIES = {
@@ -155,7 +204,7 @@ function extractPositionLabel(player, scoring) {
   return typeof positionalRank === 'number' ? `${positionId}${positionalRank}` : positionId;
 }
 
-function mapPlayers(rawPlayers) {
+function mapPlayers(rawPlayers, opponents) {
   return rawPlayers
     .map((p) => {
       const scoring = resolveScoringBucket(p);
@@ -178,10 +227,7 @@ function mapPlayers(rawPlayers) {
         last_name: decodeHtmlEntities(p.last_name ?? ''),
         position: extractPositionLabel(p, scoring),
         team: p.team_id ?? '',
-        // Not provided by this endpoint in the samples seen so far; kept as
-        // an optional field per docs/entity_model.md until confirmed
-        // otherwise.
-        opponent: p.opponent ?? null,
+        opponent: opponents[p.team_id] ?? null,
       };
     })
     .filter((p) => p && p.player_name && p.rank !== null)
@@ -190,9 +236,15 @@ function mapPlayers(rawPlayers) {
 
 async function main() {
   const config = await loadConfig();
-  const data = await fetchRankings(config);
+  const season = config.season ?? currentNflSeason();
+  const week = config.week ?? currentNflWeek();
+
+  const [data, opponents] = await Promise.all([
+    fetchRankings(season, week),
+    fetchOpponents(season, week),
+  ]);
   const rawPlayers = data.players ?? [];
-  const players = mapPlayers(rawPlayers);
+  const players = mapPlayers(rawPlayers, opponents);
 
   // Safety net per UC-007 AF-2: refuse to commit an implausible or empty
   // result instead of overwriting the last known-good snapshot. Note: most

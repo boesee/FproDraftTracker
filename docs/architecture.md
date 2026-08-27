@@ -105,6 +105,39 @@ auf der offiziellen API basierenden Prozess.
   sowie das Mapping wurden anhand echter API-Antworten bestätigt
   (inklusive eines vollständigen Laufs über alle NFL-Spieler).
 
+## Gegner-Anreicherung (ESPN Scoreboard API)
+
+Das ursprüngliche Vorgängerprodukt zeigte pro Spieler den Gegner sowie ein
+proprietäres FantasyPros-"Matchup"-Rating (Sterne-Bewertung, wie günstig
+der Gegner für diesen Spieler ist). Die FantasyPros-API bietet **keinen**
+Spielplan/Matchup-Endpoint (per vollständiger OpenAPI-Spezifikation
+verifiziert — kein Treffer für "matchup", "opponent" oder "star_rating" in
+der gesamten Spec); dieser Datenpunkt war ausschliesslich über die
+Website selbst verfügbar. Da ein erneuter Website-Scrape genau die
+Fragilität zurückbringen würde, die dieser Rebuild beseitigen sollte,
+wird bewusst darauf verzichtet — das Matchup-Rating entfällt ersatzlos.
+
+Der reine Gegner (ohne Bewertung) lässt sich aber über eine zweite,
+unauthentifizierte öffentliche API beziehen: ESPNs (nicht offiziell
+dokumentierte, aber weit verbreitete) Scoreboard-API:
+
+```
+GET https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?week={week}&seasontype=2&year={season}
+```
+
+- Liefert alle Spiele der Woche mit Heim-/Auswärts-Team; daraus wird pro
+  Team ein Label erzeugt ("vs XXX" bei Heimspiel, "at XXX" auswärts).
+- Zwei Team-Kürzel weichen von FantasyPros ab und werden zurückübersetzt
+  (gegen eine echte Antwort verifiziert): ESPN `JAX` → FantasyPros `JAC`
+  (Jacksonville), ESPN `WSH` → FantasyPros `WAS` (Washington).
+- Schlägt der ESPN-Abruf fehl, wird das geloggt und die Pipeline läuft
+  ohne Gegner-Daten weiter (`opponent: null` für alle Spieler) — im
+  Gegensatz zum Sicherheitsnetz der Rankings selbst (UC-007 AF-2) ist der
+  Gegner ein Nice-to-have, kein Grund, den ganzen Lauf abzubrechen.
+- Damit hat die Pipeline zwei externe Datenquellen (FantasyPros +
+  zusätzlich ESPN), beide unauthentifiziert bzw. mit API-Key, beide
+  serverseitig in der Actions-Umgebung aufgerufen.
+
 ## Sleeper-Draft-Abgleich
 
 Die Sleeper-API ist öffentlich, unauthentifiziert und CORS-offen. Der
