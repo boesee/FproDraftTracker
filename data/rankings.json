@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T21:56:22.894Z",
+  "generatedAt": "2026-08-27T13:24:57.802Z",
   "source": "fantasypros-api",
   "players": [
     {
@@ -11,7 +11,8 @@
       "last_name": "Gibbs",
       "position": "RB1",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 19788,
@@ -22,7 +23,8 @@
       "last_name": "Chase",
       "position": "WR1",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 23133,
@@ -33,7 +35,8 @@
       "last_name": "Robinson",
       "position": "RB2",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 19196,
@@ -44,7 +47,8 @@
       "last_name": "Burrow",
       "position": "QB1",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 23180,
@@ -55,7 +59,8 @@
       "last_name": "Nacua",
       "position": "WR2",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 17298,
@@ -66,7 +71,8 @@
       "last_name": "Allen",
       "position": "QB2",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 17233,
@@ -77,7 +83,8 @@
       "last_name": "Jackson",
       "position": "QB3",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 19275,
@@ -88,7 +95,8 @@
       "last_name": "Hurts",
       "position": "QB4",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 23070,
@@ -99,7 +107,8 @@
       "last_name": "Smith-Njigba",
       "position": "WR3",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 19799,
@@ -110,7 +119,8 @@
       "last_name": "St. Brown",
       "position": "WR4",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 18635,
@@ -121,7 +131,8 @@
       "last_name": "Herbert",
       "position": "QB5",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 15600,
@@ -132,7 +143,8 @@
       "last_name": "Prescott",
       "position": "QB6",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 22902,
@@ -143,7 +155,8 @@
       "last_name": "Daniels",
       "position": "QB7",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 16393,
@@ -154,7 +167,8 @@
       "last_name": "McCaffrey",
       "position": "RB3",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 23046,
@@ -165,7 +179,8 @@
       "last_name": "Maye",
       "position": "QB8",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 19217,
@@ -176,7 +191,8 @@
       "last_name": "Taylor",
       "position": "RB4",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 23160,
@@ -187,7 +203,8 @@
       "last_name": "Dart",
       "position": "QB10",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 19780,
@@ -198,7 +215,8 @@
       "last_name": "Lawrence",
       "position": "QB9",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 23084,
@@ -209,7 +227,8 @@
       "last_name": "Williams",
       "position": "QB11",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 15501,
@@ -220,7 +239,8 @@
       "last_name": "Goff",
       "position": "QB12",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 23136,
@@ -231,7 +251,8 @@
       "last_name": "Achane",
       "position": "RB5",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 19797,
@@ -242,7 +263,8 @@
       "last_name": "Purdy",
       "position": "QB14",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 9451,
@@ -253,7 +275,8 @@
       "last_name": "Stafford",
       "position": "QB13",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 17237,
@@ -264,7 +287,8 @@
       "last_name": "Mayfield",
       "position": "QB15",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 18600,
@@ -275,7 +299,8 @@
       "last_name": "Murray",
       "position": "QB16",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 19236,
@@ -286,7 +311,8 @@
       "last_name": "Jefferson",
       "position": "WR6",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 25989,
@@ -297,7 +323,8 @@
       "last_name": "Jeanty",
       "position": "RB6",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 19202,
@@ -308,7 +335,8 @@
       "last_name": "Lamb",
       "position": "WR5",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 16413,
@@ -319,7 +347,8 @@
       "last_name": "Mahomes II",
       "position": "QB17",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 22910,
@@ -330,7 +359,8 @@
       "last_name": "Nix",
       "position": "QB18",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 25324,
@@ -341,7 +371,8 @@
       "last_name": "Brown",
       "position": "RB7",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 19246,
@@ -352,7 +383,8 @@
       "last_name": "Love",
       "position": "QB21",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 23096,
@@ -363,7 +395,8 @@
       "last_name": "Shough",
       "position": "QB20",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 23499,
@@ -374,7 +407,8 @@
       "last_name": "Willis",
       "position": "QB19",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 25395,
@@ -385,7 +419,8 @@
       "last_name": "Hampton",
       "position": "RB8",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 20130,
@@ -396,7 +431,8 @@
       "last_name": "Collins",
       "position": "WR7",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 20111,
@@ -407,7 +443,8 @@
       "last_name": "Olave",
       "position": "WR8",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 17240,
@@ -418,7 +455,8 @@
       "last_name": "Barkley",
       "position": "RB9",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 17236,
@@ -429,7 +467,8 @@
       "last_name": "Darnold",
       "position": "QB22",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 23071,
@@ -440,7 +479,8 @@
       "last_name": "Stroud",
       "position": "QB23",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 22958,
@@ -451,7 +491,8 @@
       "last_name": "Cook III",
       "position": "RB10",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 22900,
@@ -462,7 +503,8 @@
       "last_name": "Young",
       "position": "QB24",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 23163,
@@ -473,7 +515,8 @@
       "last_name": "London",
       "position": "WR9",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 15514,
@@ -484,7 +527,8 @@
       "last_name": "Henry",
       "position": "RB11",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 22955,
@@ -495,7 +539,8 @@
       "last_name": "Bowers",
       "position": "TE1",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 18232,
@@ -506,7 +551,8 @@
       "last_name": "Jones",
       "position": "QB25",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 23021,
@@ -517,7 +563,8 @@
       "last_name": "Walker III",
       "position": "RB12",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 23113,
@@ -528,7 +575,8 @@
       "last_name": "Rice",
       "position": "WR10",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 18218,
@@ -539,7 +587,8 @@
       "last_name": "Brown",
       "position": "WR12",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 22963,
@@ -550,7 +599,8 @@
       "last_name": "Pickens",
       "position": "WR11",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 22739,
@@ -561,7 +611,8 @@
       "last_name": "Williams",
       "position": "RB13",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 22936,
@@ -572,7 +623,8 @@
       "last_name": "McBride",
       "position": "TE2",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 9001,
@@ -583,7 +635,8 @@
       "last_name": "Rodgers",
       "position": "QB26",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 19222,
@@ -594,7 +647,8 @@
       "last_name": "Smith",
       "position": "WR13",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 19211,
@@ -605,7 +659,8 @@
       "last_name": "Higgins",
       "position": "WR14",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 23059,
@@ -616,7 +671,8 @@
       "last_name": "Williams",
       "position": "RB14",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 22982,
@@ -627,7 +683,8 @@
       "last_name": "Hall",
       "position": "RB16",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 22916,
@@ -638,7 +695,8 @@
       "last_name": "Flowers",
       "position": "WR15",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 15642,
@@ -649,7 +707,8 @@
       "last_name": "Brissett",
       "position": "QB27",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 23072,
@@ -660,7 +719,8 @@
       "last_name": "Wilson",
       "position": "WR16",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 18269,
@@ -671,7 +731,8 @@
       "last_name": "Jacobs",
       "position": "RB15",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 11177,
@@ -682,7 +743,8 @@
       "last_name": "Cousins",
       "position": "QB28",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 25417,
@@ -693,7 +755,8 @@
       "last_name": "McMillan",
       "position": "WR17",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 19210,
@@ -704,7 +767,8 @@
       "last_name": "Swift",
       "position": "RB17",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 19231,
@@ -715,7 +779,8 @@
       "last_name": "Etienne Jr.",
       "position": "RB19",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 24755,
@@ -726,7 +791,8 @@
       "last_name": "Ward",
       "position": "QB29",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 27166,
@@ -737,7 +803,8 @@
       "last_name": "Skattebo",
       "position": "RB18",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 26122,
@@ -748,7 +815,8 @@
       "last_name": "McConkey",
       "position": "WR19",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 11687,
@@ -759,7 +827,8 @@
       "last_name": "Smith",
       "position": "QB30",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 19790,
@@ -770,7 +839,8 @@
       "last_name": "Waddle",
       "position": "WR18",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 25403,
@@ -781,7 +851,8 @@
       "last_name": "Love",
       "position": "RB20",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 18239,
@@ -792,7 +863,8 @@
       "last_name": "Montgomery",
       "position": "RB21",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 23062,
@@ -803,7 +875,8 @@
       "last_name": "Egbuka",
       "position": "WR20",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 18466,
@@ -814,7 +887,8 @@
       "last_name": "McLaurin",
       "position": "WR22",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 12123,
@@ -825,7 +899,8 @@
       "last_name": "Adams",
       "position": "WR21",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 25981,
@@ -836,7 +911,8 @@
       "last_name": "Irving",
       "position": "RB22",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 26006,
@@ -847,7 +923,8 @@
       "last_name": "Loveland",
       "position": "TE3",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 23886,
@@ -858,7 +935,8 @@
       "last_name": "Watson",
       "position": "WR23",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 26434,
@@ -869,7 +947,8 @@
       "last_name": "Warren",
       "position": "TE4",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 12119,
@@ -880,7 +959,8 @@
       "last_name": "Evans",
       "position": "WR24",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 23677,
@@ -891,7 +971,8 @@
       "last_name": "Williams",
       "position": "WR25",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 25391,
@@ -902,7 +983,8 @@
       "last_name": "Judkins",
       "position": "RB24",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 27016,
@@ -913,7 +995,8 @@
       "last_name": "Burden III",
       "position": "WR26",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 25411,
@@ -924,7 +1007,8 @@
       "last_name": "Odunze",
       "position": "WR27",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 24209,
@@ -935,7 +1019,8 @@
       "last_name": "Warren",
       "position": "RB23",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 25409,
@@ -946,7 +1031,8 @@
       "last_name": "Nabers",
       "position": "WR28",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 23106,
@@ -957,7 +1043,8 @@
       "last_name": "Washington",
       "position": "WR29",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 23064,
@@ -968,7 +1055,8 @@
       "last_name": "Harrison Jr.",
       "position": "WR31",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 18219,
@@ -979,7 +1067,8 @@
       "last_name": "Metcalf",
       "position": "WR30",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 18705,
@@ -990,7 +1079,8 @@
       "last_name": "Pollard",
       "position": "RB25",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 17253,
@@ -1001,7 +1091,8 @@
       "last_name": "Sutton",
       "position": "WR33",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 22726,
@@ -1012,7 +1103,8 @@
       "last_name": "Stevenson",
       "position": "RB26",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 20164,
@@ -1023,7 +1115,8 @@
       "last_name": "Pitts Sr.",
       "position": "TE5",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 27050,
@@ -1034,7 +1127,8 @@
       "last_name": "Fannin Jr.",
       "position": "TE6",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 26009,
@@ -1045,7 +1139,8 @@
       "last_name": "Tate",
       "position": "WR34",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 24706,
@@ -1056,7 +1151,8 @@
       "last_name": "Downs",
       "position": "WR32",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 27297,
@@ -1067,7 +1163,8 @@
       "last_name": "Tuten",
       "position": "RB27",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 17265,
@@ -1078,7 +1175,8 @@
       "last_name": "Moore",
       "position": "WR35",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 19198,
@@ -1089,7 +1187,8 @@
       "last_name": "Tagovailoa",
       "position": "QB31",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 19647,
@@ -1100,7 +1199,8 @@
       "last_name": "Dowdle",
       "position": "RB29",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 22985,
@@ -1111,7 +1211,8 @@
       "last_name": "Robinson",
       "position": "WR36",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 27329,
@@ -1122,7 +1223,8 @@
       "last_name": "Price",
       "position": "RB28",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 22978,
@@ -1133,7 +1235,8 @@
       "last_name": "LaPorta",
       "position": "TE7",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 25298,
@@ -1144,7 +1247,8 @@
       "last_name": "Kraft",
       "position": "TE8",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 16406,
@@ -1155,7 +1259,8 @@
       "last_name": "Godwin Jr.",
       "position": "WR38",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 23065,
@@ -1166,7 +1271,8 @@
       "last_name": "Henderson",
       "position": "RB30",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 23000,
@@ -1177,7 +1283,8 @@
       "last_name": "Thomas Jr.",
       "position": "WR37",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 19278,
@@ -1188,7 +1295,8 @@
       "last_name": "Pittman Jr.",
       "position": "WR39",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 25333,
@@ -1199,7 +1307,8 @@
       "last_name": "Wilson",
       "position": "WR40",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 19792,
@@ -1210,7 +1319,8 @@
       "last_name": "Hubbard",
       "position": "RB31",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 17270,
@@ -1221,7 +1331,8 @@
       "last_name": "Goedert",
       "position": "TE9",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 11594,
@@ -1232,7 +1343,8 @@
       "last_name": "Kelce",
       "position": "TE10",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 23123,
@@ -1243,7 +1355,8 @@
       "last_name": "Johnston",
       "position": "WR41",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 18598,
@@ -1254,7 +1367,8 @@
       "last_name": "Meyers",
       "position": "WR42",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 23107,
@@ -1265,7 +1379,8 @@
       "last_name": "Addison",
       "position": "WR44",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 23020,
@@ -1276,7 +1391,8 @@
       "last_name": "Reed",
       "position": "WR43",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 19245,
@@ -1287,7 +1403,8 @@
       "last_name": "Dobbins",
       "position": "RB33",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 23310,
@@ -1298,7 +1415,8 @@
       "last_name": "Gainwell",
       "position": "RB32",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 23748,
@@ -1309,7 +1427,8 @@
       "last_name": "Shakir",
       "position": "WR45",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 22718,
@@ -1320,7 +1439,8 @@
       "last_name": "Ferguson",
       "position": "TE11",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 26403,
@@ -1331,7 +1451,8 @@
       "last_name": "Coker",
       "position": "WR46",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 23794,
@@ -1342,7 +1463,8 @@
       "last_name": "Doubs",
       "position": "WR47",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 16673,
@@ -1353,7 +1475,8 @@
       "last_name": "Jones Sr.",
       "position": "RB34",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 23781,
@@ -1364,7 +1487,8 @@
       "last_name": "Likely",
       "position": "TE13",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 23019,
@@ -1375,7 +1499,8 @@
       "last_name": "Worthy",
       "position": "WR48",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 19562,
@@ -1386,7 +1511,8 @@
       "last_name": "Johnson",
       "position": "TE12",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 25420,
@@ -1397,7 +1523,8 @@
       "last_name": "Lemon",
       "position": "WR49",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 23891,
@@ -1408,7 +1535,8 @@
       "last_name": "White",
       "position": "RB35",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 26024,
@@ -1419,7 +1547,8 @@
       "last_name": "Golden",
       "position": "WR50",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 27131,
@@ -1430,7 +1559,8 @@
       "last_name": "Monangai",
       "position": "RB36",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 27142,
@@ -1441,7 +1571,8 @@
       "last_name": "Harvey",
       "position": "RB37",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 17269,
@@ -1452,7 +1583,8 @@
       "last_name": "Andrews",
       "position": "TE15",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 25247,
@@ -1463,7 +1595,8 @@
       "last_name": "Kincaid",
       "position": "TE14",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 27331,
@@ -1474,7 +1607,8 @@
       "last_name": "Concepcion",
       "position": "WR51",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 26148,
@@ -1485,7 +1619,8 @@
       "last_name": "Brooks",
       "position": "RB38",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 24687,
@@ -1496,7 +1631,8 @@
       "last_name": "Shaheed",
       "position": "WR52",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 25345,
@@ -1507,7 +1643,8 @@
       "last_name": "Strange",
       "position": "TE16",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 15561,
@@ -1518,7 +1655,8 @@
       "last_name": "Henry",
       "position": "TE18",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 17349,
@@ -1529,7 +1667,8 @@
       "last_name": "Schultz",
       "position": "TE17",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 27316,
@@ -1540,7 +1679,8 @@
       "last_name": "Croskey-Merritt",
       "position": "RB40",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 25337,
@@ -1551,7 +1691,8 @@
       "last_name": "Tucker",
       "position": "WR53",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 23013,
@@ -1562,7 +1703,8 @@
       "last_name": "Corum",
       "position": "RB39",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 22969,
@@ -1573,7 +1715,8 @@
       "last_name": "Mason",
       "position": "RB41",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 19201,
@@ -1584,7 +1727,8 @@
       "last_name": "Jeudy",
       "position": "WR56",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 24177,
@@ -1595,7 +1739,8 @@
       "last_name": "Nailor",
       "position": "WR54",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 19590,
@@ -1606,7 +1751,8 @@
       "last_name": "Jennings",
       "position": "WR55",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 27339,
@@ -1617,7 +1763,8 @@
       "last_name": "Boston",
       "position": "WR57",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 25997,
@@ -1628,7 +1775,8 @@
       "last_name": "Gadsden II",
       "position": "TE19",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 18290,
@@ -1639,7 +1787,8 @@
       "last_name": "Hockenson",
       "position": "TE20",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 24357,
@@ -1650,7 +1799,8 @@
       "last_name": "Mitchell",
       "position": "WR59",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 23181,
@@ -1661,7 +1811,8 @@
       "last_name": "Otton",
       "position": "TE21",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 23179,
@@ -1672,7 +1823,8 @@
       "last_name": "McMillan",
       "position": "WR58",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 16398,
@@ -1683,7 +1835,8 @@
       "last_name": "Watson",
       "position": "QB32",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 23152,
@@ -1692,9 +1845,10 @@
       "player_name": "Zach Charbonnet",
       "first_name": "Zach",
       "last_name": "Charbonnet",
-      "position": "RB50",
+      "position": "RB49",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 25323,
@@ -1705,7 +1859,8 @@
       "last_name": "Spears",
       "position": "RB42",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 28127,
@@ -1716,7 +1871,8 @@
       "last_name": "Cooper Jr.",
       "position": "WR67",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 23982,
@@ -1727,7 +1883,8 @@
       "last_name": "Okonkwo",
       "position": "TE22",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 26335,
@@ -1738,7 +1895,8 @@
       "last_name": "Barner",
       "position": "TE23",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 22986,
@@ -1749,7 +1907,8 @@
       "last_name": "Rodriguez Jr.",
       "position": "RB43",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 16433,
@@ -1760,7 +1919,8 @@
       "last_name": "Kupp",
       "position": "WR60",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 28138,
@@ -1771,7 +1931,8 @@
       "last_name": "Stribling",
       "position": "WR61",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 24354,
@@ -1782,7 +1943,8 @@
       "last_name": "Wicks",
       "position": "WR65",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 26314,
@@ -1793,7 +1955,8 @@
       "last_name": "Washington",
       "position": "WR63",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 22980,
@@ -1804,7 +1967,8 @@
       "last_name": "Tracy Jr.",
       "position": "RB44",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 26398,
@@ -1815,7 +1979,8 @@
       "last_name": "Flournoy",
       "position": "WR64",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 19810,
@@ -1826,7 +1991,8 @@
       "last_name": "Mooney",
       "position": "WR66",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 27109,
@@ -1837,7 +2003,8 @@
       "last_name": "Helm",
       "position": "TE25",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 20163,
@@ -1848,7 +2015,8 @@
       "last_name": "Freiermuth",
       "position": "TE24",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 27102,
@@ -1859,7 +2027,8 @@
       "last_name": "Sampson",
       "position": "RB45",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 23091,
@@ -1870,7 +2039,8 @@
       "last_name": "Ferguson",
       "position": "TE27",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 13981,
@@ -1881,7 +2051,8 @@
       "last_name": "Diggs",
       "position": "WR62",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 17258,
@@ -1892,7 +2063,8 @@
       "last_name": "Ridley",
       "position": "WR68",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 25360,
@@ -1903,7 +2075,8 @@
       "last_name": "Mitchell",
       "position": "RB46",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 22989,
@@ -1914,7 +2087,8 @@
       "last_name": "Boutte",
       "position": "WR69",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 23153,
@@ -1925,7 +2099,8 @@
       "last_name": "Dulcich",
       "position": "TE26",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 26055,
@@ -1936,7 +2111,8 @@
       "last_name": "Sadiq",
       "position": "TE28",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 26215,
@@ -1947,7 +2123,8 @@
       "last_name": "Harris",
       "position": "WR70",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 16411,
@@ -1958,7 +2135,8 @@
       "last_name": "Engram",
       "position": "TE29",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 24333,
@@ -1969,7 +2147,8 @@
       "last_name": "Pacheco",
       "position": "RB48",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 27520,
@@ -1980,7 +2159,8 @@
       "last_name": "Marks",
       "position": "RB49",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 23092,
@@ -1991,7 +2171,8 @@
       "last_name": "Franklin",
       "position": "WR73",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 27446,
@@ -2002,7 +2183,8 @@
       "last_name": "TeSlaa",
       "position": "WR76",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 24172,
@@ -2013,7 +2195,8 @@
       "last_name": "Allgeier",
       "position": "RB47",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 19794,
@@ -2024,7 +2207,8 @@
       "last_name": "Bateman",
       "position": "WR72",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 16399,
@@ -2035,7 +2219,8 @@
       "last_name": "Njoku",
       "position": "TE30",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 18706,
@@ -2046,7 +2231,8 @@
       "last_name": "Slayton",
       "position": "WR74",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 18244,
@@ -2057,7 +2243,8 @@
       "last_name": "Samuel Sr.",
       "position": "WR71",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 19372,
@@ -2068,7 +2255,8 @@
       "last_name": "Parkinson",
       "position": "TE31",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 26039,
@@ -2079,7 +2267,8 @@
       "last_name": "Bernard",
       "position": "WR75",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 27211,
@@ -2090,7 +2279,8 @@
       "last_name": "Bryant",
       "position": "WR78",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 25419,
@@ -2101,7 +2291,8 @@
       "last_name": "Branch",
       "position": "WR77",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 22913,
@@ -2112,7 +2303,8 @@
       "last_name": "Thornton",
       "position": "WR80",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 26409,
@@ -2123,7 +2315,8 @@
       "last_name": "Vele",
       "position": "WR79",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 27059,
@@ -2134,7 +2327,8 @@
       "last_name": "Ayomanor",
       "position": "WR81",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 23056,
@@ -2145,7 +2339,8 @@
       "last_name": "Mayer",
       "position": "TE32",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 23080,
@@ -2156,7 +2351,8 @@
       "last_name": "Mims Jr.",
       "position": "WR82",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 26019,
@@ -2167,7 +2363,8 @@
       "last_name": "Coleman",
       "position": "WR83",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 27122,
@@ -2178,7 +2375,8 @@
       "last_name": "Noel",
       "position": "WR86",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 25335,
@@ -2189,7 +2387,8 @@
       "last_name": "Iosivas",
       "position": "WR93",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 25885,
@@ -2200,7 +2399,8 @@
       "last_name": "Wilson",
       "position": "RB50",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 25418,
@@ -2211,7 +2411,8 @@
       "last_name": "Williams",
       "position": "WR94",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 16423,
@@ -2222,7 +2423,8 @@
       "last_name": "Perine",
       "position": "RB63",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 18256,
@@ -2233,7 +2435,8 @@
       "last_name": "Hill",
       "position": "RB51",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 22967,
@@ -2244,7 +2447,8 @@
       "last_name": "Washington",
       "position": "TE33",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 20094,
@@ -2255,7 +2459,8 @@
       "last_name": "Robinson Jr.",
       "position": "RB52",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 27224,
@@ -2266,7 +2471,8 @@
       "last_name": "Bech",
       "position": "WR88",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 27337,
@@ -2277,7 +2483,8 @@
       "last_name": "Lane",
       "position": "WR84",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 27320,
@@ -2288,7 +2495,8 @@
       "last_name": "Coleman",
       "position": "RB53",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 25361,
@@ -2299,7 +2507,8 @@
       "last_name": "Dell",
       "position": "WR85",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 26022,
@@ -2310,7 +2519,8 @@
       "last_name": "Horton",
       "position": "WR87",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 16421,
@@ -2321,7 +2531,8 @@
       "last_name": "Kamara",
       "position": "RB55",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 18520,
@@ -2332,7 +2543,8 @@
       "last_name": "Turpin",
       "position": "WR89",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 22915,
@@ -2343,7 +2555,8 @@
       "last_name": "Holani",
       "position": "RB57",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 23118,
@@ -2354,7 +2567,8 @@
       "last_name": "Lloyd",
       "position": "RB54",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 22908,
@@ -2365,7 +2579,8 @@
       "last_name": "Bigsby",
       "position": "RB58",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 26136,
@@ -2376,7 +2591,8 @@
       "last_name": "Legette",
       "position": "WR90",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 24344,
@@ -2387,7 +2603,8 @@
       "last_name": "Blue",
       "position": "RB56",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 28130,
@@ -2398,7 +2615,8 @@
       "last_name": "Hurst III",
       "position": "WR92",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 27994,
@@ -2409,7 +2627,8 @@
       "last_name": "Fields",
       "position": "WR91",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 24346,
@@ -2420,7 +2639,8 @@
       "last_name": "Allen",
       "position": "RB59",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 26355,
@@ -2431,7 +2651,8 @@
       "last_name": "Vidal",
       "position": "RB60",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 23679,
@@ -2442,7 +2663,8 @@
       "last_name": "Tucker",
       "position": "RB62",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 25968,
@@ -2453,7 +2675,8 @@
       "last_name": "Sanders",
       "position": "QB33",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 27315,
@@ -2464,7 +2687,8 @@
       "last_name": "Dike",
       "position": "WR95",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 28108,
@@ -2475,7 +2699,8 @@
       "last_name": "Washington Jr.",
       "position": "RB70",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 26191,
@@ -2486,7 +2711,8 @@
       "last_name": "Davis",
       "position": "RB61",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 23104,
@@ -2497,7 +2723,8 @@
       "last_name": "Johnson",
       "position": "TE34",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 25987,
@@ -2508,7 +2735,8 @@
       "last_name": "Wright",
       "position": "RB66",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 25823,
@@ -2519,7 +2747,8 @@
       "last_name": "Brooks",
       "position": "RB67",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 18406,
@@ -2530,7 +2759,8 @@
       "last_name": "Johnson",
       "position": "RB65",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 28107,
@@ -2541,7 +2771,8 @@
       "last_name": "Johnson",
       "position": "RB64",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 26034,
@@ -2552,7 +2783,8 @@
       "last_name": "Hunter",
       "position": "WR98",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 25984,
@@ -2563,7 +2795,8 @@
       "last_name": "Gordon II",
       "position": "RB69",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 17268,
@@ -2574,7 +2807,8 @@
       "last_name": "Kirk",
       "position": "WR96",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 28401,
@@ -2585,7 +2819,8 @@
       "last_name": "Black",
       "position": "RB72",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 24362,
@@ -2596,7 +2831,8 @@
       "last_name": "Allen",
       "position": "RB73",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 25977,
@@ -2607,7 +2843,8 @@
       "last_name": "Davis",
       "position": "RB68",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 16447,
@@ -2618,7 +2855,8 @@
       "last_name": "Conner",
       "position": "RB71",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 23791,
@@ -2629,7 +2867,8 @@
       "last_name": "Pierce",
       "position": "WR99",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 24343,
@@ -2640,7 +2879,8 @@
       "last_name": "Singleton",
       "position": "RB74",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 23770,
@@ -2651,7 +2891,8 @@
       "last_name": "Tolbert",
       "position": "WR97",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 26035,
@@ -2662,7 +2903,8 @@
       "last_name": "Tyson",
       "position": "WR101",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 24778,
@@ -2673,7 +2915,8 @@
       "last_name": "Tonges",
       "position": "TE35",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 26038,
@@ -2684,7 +2927,8 @@
       "last_name": "Bell",
       "position": "WR103",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 25654,
@@ -2695,7 +2939,8 @@
       "last_name": "Demercado",
       "position": "RB75",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 18226,
@@ -2706,7 +2951,8 @@
       "last_name": "Brown",
       "position": "WR104",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 17066,
@@ -2717,7 +2963,8 @@
       "last_name": "Bourne",
       "position": "WR100",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 18656,
@@ -2728,7 +2975,8 @@
       "last_name": "Dulin",
       "position": "WR102",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 27463,
@@ -2739,7 +2987,8 @@
       "last_name": "Sarratt",
       "position": "WR105",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 22973,
@@ -2750,7 +2999,8 @@
       "last_name": "Penix Jr.",
       "position": "QB34",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 11616,
@@ -2761,7 +3011,8 @@
       "last_name": "Allen",
       "position": "WR106",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 16499,
@@ -2772,7 +3023,8 @@
       "last_name": "Kittle",
       "position": "TE36",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 28126,
@@ -2783,7 +3035,8 @@
       "last_name": "Bell",
       "position": "WR108",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 28084,
@@ -2794,7 +3047,8 @@
       "last_name": "Claiborne",
       "position": "RB77",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 20126,
@@ -2805,7 +3059,8 @@
       "last_name": "Atwell",
       "position": "WR107",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 24205,
@@ -2816,7 +3071,8 @@
       "last_name": "Davis",
       "position": "RB79",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 27285,
@@ -2827,7 +3083,8 @@
       "last_name": "Allen Jr.",
       "position": "RB78",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 23079,
@@ -2838,7 +3095,8 @@
       "last_name": "McGowan",
       "position": "RB81",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 27487,
@@ -2849,7 +3107,8 @@
       "last_name": "Williams",
       "position": "WR110",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 27310,
@@ -2860,7 +3119,8 @@
       "last_name": "James",
       "position": "RB76",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 27097,
@@ -2871,7 +3131,8 @@
       "last_name": "Giddens",
       "position": "RB80",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 19302,
@@ -2882,7 +3143,8 @@
       "last_name": "Harris",
       "position": "RB83",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 18280,
@@ -2893,7 +3155,8 @@
       "last_name": "Singletary",
       "position": "RB82",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 27147,
@@ -2904,7 +3167,8 @@
       "last_name": "Johnson",
       "position": "WR109",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 24360,
@@ -2915,7 +3179,8 @@
       "last_name": "Miller",
       "position": "RB85",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 28013,
@@ -2926,7 +3191,8 @@
       "last_name": "Mendoza",
       "position": "QB35",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 24367,
@@ -2937,7 +3203,8 @@
       "last_name": "Randall",
       "position": "RB86",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 17272,
@@ -2948,7 +3215,8 @@
       "last_name": "Gesicki",
       "position": "TE37",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 23144,
@@ -2959,7 +3227,8 @@
       "last_name": "Stowers",
       "position": "TE40",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 19252,
@@ -2970,7 +3239,8 @@
       "last_name": "Aiyuk",
       "position": "WR108",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 27259,
@@ -2981,7 +3251,8 @@
       "last_name": "Smith",
       "position": "RB84",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 27165,
@@ -2992,7 +3263,8 @@
       "last_name": "Johnson",
       "position": "RB87",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 25393,
@@ -3003,7 +3275,8 @@
       "last_name": "Etienne",
       "position": "RB88",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 25388,
@@ -3014,7 +3287,8 @@
       "last_name": "Benson",
       "position": "RB89",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 22756,
@@ -3025,7 +3299,8 @@
       "last_name": "Kolar",
       "position": "TE38",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 19229,
@@ -3036,7 +3311,8 @@
       "last_name": "Kmet",
       "position": "TE42",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 26392,
@@ -3047,7 +3323,8 @@
       "last_name": "Guerendo",
       "position": "RB92",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 28135,
@@ -3058,7 +3335,8 @@
       "last_name": "Douglas",
       "position": "WR111",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 18631,
@@ -3069,7 +3347,8 @@
       "last_name": "Knox",
       "position": "TE39",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 23004,
@@ -3080,18 +3359,8 @@
       "last_name": "Arroyo",
       "position": "TE43",
       "team": "SEA",
-      "opponent": null
-    },
-    {
-      "player_id": 15802,
-      "rank": 278,
-      "rankIsEstimated": true,
-      "player_name": "Tyreek Hill",
-      "first_name": "Tyreek",
-      "last_name": "Hill",
-      "position": "WR110",
-      "team": "FA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 28297,
@@ -3102,7 +3371,20 @@
       "last_name": "Heidenreich",
       "position": "RB91",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
+    },
+    {
+      "player_id": 15802,
+      "rank": 279,
+      "rankIsEstimated": true,
+      "player_name": "Tyreek Hill",
+      "first_name": "Tyreek",
+      "last_name": "Hill",
+      "position": "WR110",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null
     },
     {
       "player_id": 24351,
@@ -3113,7 +3395,8 @@
       "last_name": "Sanders",
       "position": "RB90",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 25304,
@@ -3124,7 +3407,8 @@
       "last_name": "Douglas",
       "position": "WR113",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 22845,
@@ -3135,7 +3419,8 @@
       "last_name": "Palmer",
       "position": "WR114",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 26212,
@@ -3146,7 +3431,8 @@
       "last_name": "Brooks",
       "position": "RB95",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 23682,
@@ -3157,7 +3443,8 @@
       "last_name": "Neal",
       "position": "RB92",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 27326,
@@ -3168,7 +3455,8 @@
       "last_name": "Miller",
       "position": "RB93",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 16489,
@@ -3179,7 +3467,8 @@
       "last_name": "Hollins",
       "position": "WR115",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 28109,
@@ -3190,7 +3479,8 @@
       "last_name": "Taylor",
       "position": "RB95",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 24901,
@@ -3201,7 +3491,8 @@
       "last_name": "Knight",
       "position": "RB94",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 23101,
@@ -3212,7 +3503,8 @@
       "last_name": "Dotson",
       "position": "WR116",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 14104,
@@ -3223,7 +3515,8 @@
       "last_name": "Waller",
       "position": "TE41",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 22921,
@@ -3234,7 +3527,8 @@
       "last_name": "Ford",
       "position": "RB96",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 22905,
@@ -3245,7 +3539,8 @@
       "last_name": "Burks",
       "position": "WR112",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 24369,
@@ -3256,7 +3551,8 @@
       "last_name": "Small",
       "position": "RB97",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 27144,
@@ -3267,7 +3563,20 @@
       "last_name": "Williams",
       "position": "WR119",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
+    },
+    {
+      "player_id": 16425,
+      "rank": 293,
+      "rankIsEstimated": true,
+      "player_name": "Kareem Hunt",
+      "first_name": "Kareem",
+      "last_name": "Hunt",
+      "position": "RB99",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null
     },
     {
       "player_id": 19539,
@@ -3278,7 +3587,8 @@
       "last_name": "Gray",
       "position": "TE47",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 26329,
@@ -3289,18 +3599,8 @@
       "last_name": "Jordan",
       "position": "RB98",
       "team": "HOU",
-      "opponent": null
-    },
-    {
-      "player_id": 16425,
-      "rank": 295,
-      "rankIsEstimated": true,
-      "player_name": "Kareem Hunt",
-      "first_name": "Kareem",
-      "last_name": "Hunt",
-      "position": "RB99",
-      "team": "FA",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 26328,
@@ -3311,7 +3611,8 @@
       "last_name": "McCaffrey",
       "position": "WR123",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 22928,
@@ -3322,7 +3623,8 @@
       "last_name": "Mafah",
       "position": "RB100",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 26005,
@@ -3333,7 +3635,8 @@
       "last_name": "Taylor",
       "position": "TE44",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 25876,
@@ -3344,7 +3647,8 @@
       "last_name": "McLaughlin",
       "position": "RB99",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 28154,
@@ -3355,7 +3659,8 @@
       "last_name": "Raridon",
       "position": "TE45",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 18864,
@@ -3366,7 +3671,8 @@
       "last_name": "Zaccheaus",
       "position": "WR117",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 28129,
@@ -3377,7 +3683,8 @@
       "last_name": "Lance",
       "position": "WR118",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 15623,
@@ -3388,7 +3695,8 @@
       "last_name": "Higbee",
       "position": "TE48",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 28424,
@@ -3399,18 +3707,8 @@
       "last_name": "Allen",
       "position": "WR120",
       "team": "KC",
-      "opponent": null
-    },
-    {
-      "player_id": 16420,
-      "rank": 304,
-      "rankIsEstimated": true,
-      "player_name": "Joe Mixon",
-      "first_name": "Joe",
-      "last_name": "Mixon",
-      "position": "RB101",
-      "team": "FA",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 18585,
@@ -3421,7 +3719,8 @@
       "last_name": "Dortch",
       "position": "WR121",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 22795,
@@ -3432,7 +3731,20 @@
       "last_name": "Tremble",
       "position": "TE53",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
+    },
+    {
+      "player_id": 16420,
+      "rank": 306,
+      "rankIsEstimated": true,
+      "player_name": "Joe Mixon",
+      "first_name": "Joe",
+      "last_name": "Mixon",
+      "position": "RB101",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null
     },
     {
       "player_id": 17527,
@@ -3443,7 +3755,8 @@
       "last_name": "Fant",
       "position": "TE49",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 23837,
@@ -3454,7 +3767,8 @@
       "last_name": "All Jr.",
       "position": "TE46",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 25430,
@@ -3465,7 +3779,8 @@
       "last_name": "Delp",
       "position": "TE54",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 15581,
@@ -3476,7 +3791,8 @@
       "last_name": "Hooper",
       "position": "TE50",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 28079,
@@ -3487,7 +3803,8 @@
       "last_name": "Joly",
       "position": "TE55",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 24238,
@@ -3498,7 +3815,8 @@
       "last_name": "Bellinger",
       "position": "TE58",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 23119,
@@ -3509,7 +3827,8 @@
       "last_name": "Higgins",
       "position": "TE59",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 25416,
@@ -3520,7 +3839,8 @@
       "last_name": "Brown",
       "position": "WR122",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 18487,
@@ -3531,7 +3851,8 @@
       "last_name": "Oliver",
       "position": "TE56",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 28403,
@@ -3542,7 +3863,8 @@
       "last_name": "Kacmarek",
       "position": "TE51",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 25332,
@@ -3553,7 +3875,8 @@
       "last_name": "Hutchinson",
       "position": "WR130",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 15665,
@@ -3564,7 +3887,8 @@
       "last_name": "Robinson",
       "position": "WR132",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 19747,
@@ -3575,7 +3899,8 @@
       "last_name": "Westbrook-Ikhine",
       "position": "WR131",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 19483,
@@ -3586,7 +3911,20 @@
       "last_name": "Jefferson",
       "position": "WR133",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
+    },
+    {
+      "player_id": 22728,
+      "rank": 320,
+      "rankIsEstimated": true,
+      "player_name": "Michael Carter",
+      "first_name": "Michael",
+      "last_name": "Carter",
+      "position": "RB103",
+      "team": "TEN",
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 28427,
@@ -3597,18 +3935,8 @@
       "last_name": "Boerkircher",
       "position": "TE60",
       "team": "JAC",
-      "opponent": null
-    },
-    {
-      "player_id": 22728,
-      "rank": 321,
-      "rankIsEstimated": true,
-      "player_name": "Michael Carter",
-      "first_name": "Michael",
-      "last_name": "Carter",
-      "position": "RB103",
-      "team": "TEN",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 27499,
@@ -3619,7 +3947,8 @@
       "last_name": "Koziol",
       "position": "TE61",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 16081,
@@ -3630,7 +3959,8 @@
       "last_name": "Raymond",
       "position": "WR134",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 19423,
@@ -3641,7 +3971,8 @@
       "last_name": "Trautman",
       "position": "TE52",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 27138,
@@ -3652,7 +3983,8 @@
       "last_name": "Evans",
       "position": "TE62",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 23341,
@@ -3663,7 +3995,8 @@
       "last_name": "Wright",
       "position": "TE63",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 25267,
@@ -3674,7 +4007,8 @@
       "last_name": "Schoonmaker",
       "position": "TE64",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 26037,
@@ -3685,7 +4019,8 @@
       "last_name": "Young",
       "position": "WR135",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 20114,
@@ -3696,7 +4031,8 @@
       "last_name": "Moore",
       "position": "WR136",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 23135,
@@ -3707,7 +4043,8 @@
       "last_name": "Whittington",
       "position": "WR125",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 28133,
@@ -3718,7 +4055,8 @@
       "last_name": "Thompson",
       "position": "WR126",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 9300,
@@ -3729,7 +4067,8 @@
       "last_name": "Flacco",
       "position": "QB36",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 28132,
@@ -3740,7 +4079,8 @@
       "last_name": "Thomas",
       "position": "WR141",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 20113,
@@ -3751,7 +4091,8 @@
       "last_name": "Brown",
       "position": "WR139",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 16556,
@@ -3762,7 +4103,8 @@
       "last_name": "Patrick",
       "position": "WR140",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 17598,
@@ -3773,7 +4115,8 @@
       "last_name": "Conklin",
       "position": "TE66",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 28157,
@@ -3784,7 +4127,8 @@
       "last_name": "Klein",
       "position": "TE65",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 24214,
@@ -3795,7 +4139,8 @@
       "last_name": "Jones Jr.",
       "position": "WR146",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 25287,
@@ -3806,7 +4151,8 @@
       "last_name": "Tillman",
       "position": "WR138",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 23742,
@@ -3817,7 +4163,8 @@
       "last_name": "Ruckert",
       "position": "TE67",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 17530,
@@ -3828,7 +4175,8 @@
       "last_name": "McCloud III",
       "position": "WR151",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 20156,
@@ -3839,7 +4187,8 @@
       "last_name": "Jones",
       "position": "QB38",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 18397,
@@ -3850,7 +4199,20 @@
       "last_name": "Moreau",
       "position": "TE68",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
+    },
+    {
+      "player_id": 25282,
+      "rank": 342,
+      "rankIsEstimated": true,
+      "player_name": "Luke Musgrave",
+      "first_name": "Luke",
+      "last_name": "Musgrave",
+      "position": "TE54",
+      "team": "GB",
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 22895,
@@ -3861,18 +4223,8 @@
       "last_name": "Metchie III",
       "position": "WR149",
       "team": "CAR",
-      "opponent": null
-    },
-    {
-      "player_id": 25282,
-      "rank": 343,
-      "rankIsEstimated": true,
-      "player_name": "Luke Musgrave",
-      "first_name": "Luke",
-      "last_name": "Musgrave",
-      "position": "TE54",
-      "team": "GB",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 18590,
@@ -3883,7 +4235,8 @@
       "last_name": "Humphrey",
       "position": "WR148",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 27469,
@@ -3894,7 +4247,8 @@
       "last_name": "Hawes",
       "position": "TE69",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 24621,
@@ -3905,7 +4259,8 @@
       "last_name": "Smartt",
       "position": "TE70",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 25269,
@@ -3916,7 +4271,8 @@
       "last_name": "Stover",
       "position": "TE71",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 25627,
@@ -3927,7 +4283,8 @@
       "last_name": "Smith",
       "position": "WR145",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 26012,
@@ -3938,7 +4295,8 @@
       "last_name": "Benson",
       "position": "WR127",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 27093,
@@ -3949,7 +4307,8 @@
       "last_name": "Burks",
       "position": "WR147",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 27222,
@@ -3960,7 +4319,8 @@
       "last_name": "Wease Jr.",
       "position": "WR144",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 24334,
@@ -3971,7 +4331,8 @@
       "last_name": "Sanders",
       "position": "TE78",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 23761,
@@ -3982,7 +4343,8 @@
       "last_name": "Allen",
       "position": "TE72",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 12127,
@@ -3993,7 +4355,8 @@
       "last_name": "Beckham Jr.",
       "position": "WR152",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 28067,
@@ -4004,7 +4367,8 @@
       "last_name": "Coleman Jr.",
       "position": "WR150",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 27444,
@@ -4015,7 +4379,8 @@
       "last_name": "Williams",
       "position": "RB101",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 27294,
@@ -4026,7 +4391,8 @@
       "last_name": "Horn Jr.",
       "position": "WR156",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 27993,
@@ -4037,7 +4403,8 @@
       "last_name": "Klare",
       "position": "TE73",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 26379,
@@ -4048,7 +4415,8 @@
       "last_name": "Williams",
       "position": "WR152",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 28047,
@@ -4059,7 +4427,8 @@
       "last_name": "Brazzell II",
       "position": "WR155",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 24371,
@@ -4070,18 +4439,8 @@
       "last_name": "Bond",
       "position": "WR129",
       "team": "CLE",
-      "opponent": null
-    },
-    {
-      "player_id": 26309,
-      "rank": 360,
-      "rankIsEstimated": true,
-      "player_name": "Sione Vaki",
-      "first_name": "Sione",
-      "last_name": "Vaki",
-      "position": "RB113",
-      "team": "DET",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 23054,
@@ -4092,7 +4451,20 @@
       "last_name": "Estime",
       "position": "RB104",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
+    },
+    {
+      "player_id": 26309,
+      "rank": 361,
+      "rankIsEstimated": true,
+      "player_name": "Sione Vaki",
+      "first_name": "Sione",
+      "last_name": "Vaki",
+      "position": "RB113",
+      "team": "DET",
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 28435,
@@ -4103,7 +4475,8 @@
       "last_name": "Wetjen",
       "position": "WR153",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 27810,
@@ -4114,7 +4487,8 @@
       "last_name": "Walker",
       "position": "WR154",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 26011,
@@ -4125,7 +4499,8 @@
       "last_name": "Walker",
       "position": "WR124",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 18561,
@@ -4136,7 +4511,8 @@
       "last_name": "Sample",
       "position": "TE75",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 25167,
@@ -4147,7 +4523,8 @@
       "last_name": "Myers",
       "position": "TE74",
       "team": "FA",
-      "opponent": null
+      "opponent": null,
+      "matchupRating": null
     },
     {
       "player_id": 18633,
@@ -4158,7 +4535,8 @@
       "last_name": "Johnson",
       "position": "WR160",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 17528,
@@ -4169,7 +4547,8 @@
       "last_name": "Valdes-Scantling",
       "position": "WR161",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 27312,
@@ -4180,7 +4559,8 @@
       "last_name": "Royer",
       "position": "TE76",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 25748,
@@ -4191,7 +4571,8 @@
       "last_name": "Scott",
       "position": "RB102",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 11606,
@@ -4202,7 +4583,8 @@
       "last_name": "Hopkins",
       "position": "WR157",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 16579,
@@ -4213,7 +4595,8 @@
       "last_name": "Alie-Cox",
       "position": "TE79",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 25368,
@@ -4224,7 +4607,8 @@
       "last_name": "Simpson",
       "position": "QB37",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 23167,
@@ -4235,7 +4619,8 @@
       "last_name": "Trigg",
       "position": "TE74",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 18566,
@@ -4246,7 +4631,8 @@
       "last_name": "Sills V",
       "position": "WR159",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 28124,
@@ -4257,7 +4643,8 @@
       "last_name": "Jones",
       "position": "RB103",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 13971,
@@ -4268,7 +4655,8 @@
       "last_name": "Lockett",
       "position": "WR164",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 26964,
@@ -4279,7 +4667,8 @@
       "last_name": "Jennings",
       "position": "RB117",
       "team": "FA",
-      "opponent": null
+      "opponent": null,
+      "matchupRating": null
     },
     {
       "player_id": 28168,
@@ -4290,7 +4679,8 @@
       "last_name": "Hibner",
       "position": "TE77",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 16483,
@@ -4301,7 +4691,8 @@
       "last_name": "Ekeler",
       "position": "RB114",
       "team": "FA",
-      "opponent": null
+      "opponent": null,
+      "matchupRating": null
     },
     {
       "player_id": 19781,
@@ -4312,7 +4703,8 @@
       "last_name": "Fields",
       "position": "QB39",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 28125,
@@ -4323,7 +4715,8 @@
       "last_name": "Daniels",
       "position": "WR165",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 28155,
@@ -4334,7 +4727,8 @@
       "last_name": "Cuevas",
       "position": "TE83",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 23018,
@@ -4345,7 +4739,8 @@
       "last_name": "McCarthy",
       "position": "QB40",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 25346,
@@ -4356,7 +4751,8 @@
       "last_name": "Durham",
       "position": "TE85",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 17508,
@@ -4367,18 +4763,8 @@
       "last_name": "Smythe",
       "position": "TE80",
       "team": "BAL",
-      "opponent": null
-    },
-    {
-      "player_id": 25387,
-      "rank": 383,
-      "rankIsEstimated": true,
-      "player_name": "Roman Hemby",
-      "first_name": "Roman",
-      "last_name": "Hemby",
-      "position": "RB137",
-      "team": "LV",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 17826,
@@ -4389,7 +4775,8 @@
       "last_name": "Hudson",
       "position": "TE82",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 25967,
@@ -4400,7 +4787,8 @@
       "last_name": "Milton III",
       "position": "QB47",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 16460,
@@ -4411,7 +4799,8 @@
       "last_name": "Smith",
       "position": "TE77",
       "team": "FA",
-      "opponent": null
+      "opponent": null,
+      "matchupRating": null
     },
     {
       "player_id": 27288,
@@ -4422,7 +4811,8 @@
       "last_name": "Thornton Jr.",
       "position": "WR158",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 27454,
@@ -4433,7 +4823,8 @@
       "last_name": "Lane",
       "position": "WR169",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 26310,
@@ -4444,7 +4835,8 @@
       "last_name": "Sinnott",
       "position": "TE57",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 18557,
@@ -4455,7 +4847,8 @@
       "last_name": "Browning",
       "position": "QB42",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 19375,
@@ -4466,7 +4859,8 @@
       "last_name": "Hodgins",
       "position": "WR166",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 22763,
@@ -4475,9 +4869,10 @@
       "player_name": "Khalil Herbert",
       "first_name": "Khalil",
       "last_name": "Herbert",
-      "position": "RB128",
+      "position": "RB124",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 18604,
@@ -4488,7 +4883,20 @@
       "last_name": "Stidham",
       "position": "QB41",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
+    },
+    {
+      "player_id": 25387,
+      "rank": 392,
+      "rankIsEstimated": true,
+      "player_name": "Roman Hemby",
+      "first_name": "Roman",
+      "last_name": "Hemby",
+      "position": "RB130",
+      "team": "LV",
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 28896,
@@ -4499,7 +4907,8 @@
       "last_name": "Wilson",
       "position": "WR128",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 24180,
@@ -4510,18 +4919,8 @@
       "last_name": "Calcaterra",
       "position": "TE81",
       "team": "PHI",
-      "opponent": null
-    },
-    {
-      "player_id": 10977,
-      "rank": 394,
-      "rankIsEstimated": true,
-      "player_name": "Isaiah Williams",
-      "first_name": "Isaiah",
-      "last_name": "Williams",
-      "position": "WR164",
-      "team": "FA",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 22833,
@@ -4532,7 +4931,8 @@
       "last_name": "Bates",
       "position": "TE84",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 13890,
@@ -4543,7 +4943,20 @@
       "last_name": "Mariota",
       "position": "QB43",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
+    },
+    {
+      "player_id": 10977,
+      "rank": 396,
+      "rankIsEstimated": true,
+      "player_name": "Isaiah Williams",
+      "first_name": "Isaiah",
+      "last_name": "Williams",
+      "position": "WR161",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null
     },
     {
       "player_id": 24361,
@@ -4554,7 +4967,8 @@
       "last_name": "Klubnik",
       "position": "QB45",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 19297,
@@ -4565,7 +4979,8 @@
       "last_name": "Huntley",
       "position": "QB44",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 13891,
@@ -4576,7 +4991,8 @@
       "last_name": "Winston",
       "position": "QB46",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 28141,
@@ -4587,7 +5003,8 @@
       "last_name": "Virgil",
       "position": "WR171",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 23196,
@@ -4598,7 +5015,8 @@
       "last_name": "Fehoko",
       "position": "WR175",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 28526,
@@ -4609,7 +5027,8 @@
       "last_name": "Wortham",
       "position": "WR174",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 11798,
@@ -4620,7 +5039,8 @@
       "last_name": "Juszczyk",
       "position": "RB106",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 17603,
@@ -4631,7 +5051,8 @@
       "last_name": "Watson",
       "position": "WR162",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 17264,
@@ -4642,7 +5063,20 @@
       "last_name": "Pettis",
       "position": "WR168",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
+    },
+    {
+      "player_id": 11689,
+      "rank": 405,
+      "rankIsEstimated": true,
+      "player_name": "Zach Ertz",
+      "first_name": "Zach",
+      "last_name": "Ertz",
+      "position": "TE69",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null
     },
     {
       "player_id": 15569,
@@ -4653,18 +5087,8 @@
       "last_name": "Shepard",
       "position": "WR176",
       "team": "HOU",
-      "opponent": null
-    },
-    {
-      "player_id": 11689,
-      "rank": 406,
-      "rankIsEstimated": true,
-      "player_name": "Zach Ertz",
-      "first_name": "Zach",
-      "last_name": "Ertz",
-      "position": "TE69",
-      "team": "FA",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 20082,
@@ -4675,7 +5099,8 @@
       "last_name": "Lance",
       "position": "QB48",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 25541,
@@ -4686,7 +5111,20 @@
       "last_name": "Wilson",
       "position": "TE89",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
+    },
+    {
+      "player_id": 19624,
+      "rank": 408,
+      "rankIsEstimated": true,
+      "player_name": "Antonio Gibson",
+      "first_name": "Antonio",
+      "last_name": "Gibson",
+      "position": "RB129",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null
     },
     {
       "player_id": 28137,
@@ -4697,7 +5135,8 @@
       "last_name": "Cameron",
       "position": "WR178",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 10007,
@@ -4708,18 +5147,8 @@
       "last_name": "Taylor",
       "position": "QB49",
       "team": "GB",
-      "opponent": null
-    },
-    {
-      "player_id": 19624,
-      "rank": 409,
-      "rankIsEstimated": true,
-      "player_name": "Antonio Gibson",
-      "first_name": "Antonio",
-      "last_name": "Gibson",
-      "position": "RB129",
-      "team": "FA",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 24370,
@@ -4730,7 +5159,20 @@
       "last_name": "Tinsley",
       "position": "WR163",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
+    },
+    {
+      "player_id": 25693,
+      "rank": 410,
+      "rankIsEstimated": true,
+      "player_name": "Jacob Saylors",
+      "first_name": "Jacob",
+      "last_name": "Saylors",
+      "position": "RB131",
+      "team": "DET",
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 20162,
@@ -4741,18 +5183,8 @@
       "last_name": "Jordan",
       "position": "TE99",
       "team": "HOU",
-      "opponent": null
-    },
-    {
-      "player_id": 25693,
-      "rank": 411,
-      "rankIsEstimated": true,
-      "player_name": "Jacob Saylors",
-      "first_name": "Jacob",
-      "last_name": "Saylors",
-      "position": "RB130",
-      "team": "DET",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 16706,
@@ -4763,7 +5195,20 @@
       "last_name": "Saubert",
       "position": "TE86",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
+    },
+    {
+      "player_id": 25289,
+      "rank": 412,
+      "rankIsEstimated": true,
+      "player_name": "Jacob Cowing",
+      "first_name": "Jacob",
+      "last_name": "Cowing",
+      "position": "WR163",
+      "team": "SF",
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 23081,
@@ -4774,18 +5219,8 @@
       "last_name": "Rattler",
       "position": "QB51",
       "team": "NO",
-      "opponent": null
-    },
-    {
-      "player_id": 18616,
-      "rank": 414,
-      "rankIsEstimated": true,
-      "player_name": "Travis Homer",
-      "first_name": "Travis",
-      "last_name": "Homer",
-      "position": "RB142",
-      "team": "PIT",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 23012,
@@ -4796,7 +5231,8 @@
       "last_name": "Bell",
       "position": "WR180",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 27066,
@@ -4807,7 +5243,8 @@
       "last_name": "Restrepo",
       "position": "WR167",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 28161,
@@ -4818,18 +5255,20 @@
       "last_name": "Roush",
       "position": "TE88",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
-      "player_id": 25289,
+      "player_id": 14191,
       "rank": 417,
       "rankIsEstimated": true,
-      "player_name": "Jacob Cowing",
-      "first_name": "Jacob",
-      "last_name": "Cowing",
-      "position": "WR166",
-      "team": "SF",
-      "opponent": null
+      "player_name": "Michael Burton",
+      "first_name": "Michael",
+      "last_name": "Burton",
+      "position": "RB149",
+      "team": "CLE",
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 28165,
@@ -4840,7 +5279,20 @@
       "last_name": "Sharp",
       "position": "TE90",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
+    },
+    {
+      "player_id": 23093,
+      "rank": 418,
+      "rankIsEstimated": true,
+      "player_name": "Moliki Matavao",
+      "first_name": "Moliki",
+      "last_name": "Matavao",
+      "position": "TE99",
+      "team": "NO",
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 25657,
@@ -4851,7 +5303,8 @@
       "last_name": "Whiteheart",
       "position": "TE87",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 23680,
@@ -4862,18 +5315,8 @@
       "last_name": "Ewers",
       "position": "QB53",
       "team": "MIA",
-      "opponent": null
-    },
-    {
-      "player_id": 14191,
-      "rank": 420,
-      "rankIsEstimated": true,
-      "player_name": "Michael Burton",
-      "first_name": "Michael",
-      "last_name": "Burton",
-      "position": "RB150",
-      "team": "CLE",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 25941,
@@ -4884,7 +5327,8 @@
       "last_name": "Luepke",
       "position": "RB107",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 22976,
@@ -4895,7 +5339,20 @@
       "last_name": "Goodson",
       "position": "RB105",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
+    },
+    {
+      "player_id": 23249,
+      "rank": 421,
+      "rankIsEstimated": true,
+      "player_name": "Kene Nwangwu",
+      "first_name": "Kene",
+      "last_name": "Nwangwu",
+      "position": "RB151",
+      "team": "NYJ",
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 23049,
@@ -4906,7 +5363,8 @@
       "last_name": "Austin Jr.",
       "position": "WR182",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 23893,
@@ -4915,9 +5373,10 @@
       "player_name": "Michael Woods II",
       "first_name": "Michael",
       "last_name": "Woods II",
-      "position": "WR182",
+      "position": "WR208",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 22799,
@@ -4928,18 +5387,8 @@
       "last_name": "Mills",
       "position": "QB50",
       "team": "HOU",
-      "opponent": null
-    },
-    {
-      "player_id": 23249,
-      "rank": 424,
-      "rankIsEstimated": true,
-      "player_name": "Kene Nwangwu",
-      "first_name": "Kene",
-      "last_name": "Nwangwu",
-      "position": "RB156",
-      "team": "NYJ",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 25321,
@@ -4950,7 +5399,8 @@
       "last_name": "Bagent",
       "position": "QB52",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 17262,
@@ -4960,8 +5410,9 @@
       "first_name": "Cedrick",
       "last_name": "Wilson Jr.",
       "position": "WR170",
-      "team": "DET",
-      "opponent": null
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null
     },
     {
       "player_id": 17145,
@@ -4972,7 +5423,8 @@
       "last_name": "Ricard",
       "position": "RB108",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 24029,
@@ -4983,7 +5435,20 @@
       "last_name": "Martin",
       "position": "WR179",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
+    },
+    {
+      "player_id": 28115,
+      "rank": 427,
+      "rankIsEstimated": true,
+      "player_name": "Noah Whittington",
+      "first_name": "Noah",
+      "last_name": "Whittington",
+      "position": "RB123",
+      "team": "HOU",
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 25746,
@@ -4994,7 +5459,8 @@
       "last_name": "DeVito",
       "position": "QB55",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 28587,
@@ -5005,7 +5471,8 @@
       "last_name": "Pezza",
       "position": "TE92",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 25373,
@@ -5016,7 +5483,8 @@
       "last_name": "Leonard",
       "position": "QB54",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 27501,
@@ -5027,7 +5495,8 @@
       "last_name": "Endries",
       "position": "TE103",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 25251,
@@ -5038,7 +5507,8 @@
       "last_name": "Hyatt",
       "position": "WR172",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 28399,
@@ -5049,7 +5519,8 @@
       "last_name": "Ryan",
       "position": "TE93",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 27466,
@@ -5060,7 +5531,8 @@
       "last_name": "Simon",
       "position": "TE94",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 24740,
@@ -5071,7 +5543,20 @@
       "last_name": "McKee",
       "position": "QB56",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
+    },
+    {
+      "player_id": 19219,
+      "rank": 436,
+      "rankIsEstimated": true,
+      "player_name": "Jalen Reagor",
+      "first_name": "Jalen",
+      "last_name": "Reagor",
+      "position": "WR166",
+      "team": "MIA",
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 25912,
@@ -5082,18 +5567,8 @@
       "last_name": "Drummond",
       "position": "WR173",
       "team": "ATL",
-      "opponent": null
-    },
-    {
-      "player_id": 28115,
-      "rank": 436,
-      "rankIsEstimated": true,
-      "player_name": "Noah Whittington",
-      "first_name": "Noah",
-      "last_name": "Whittington",
-      "position": "RB122",
-      "team": "HOU",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 28163,
@@ -5104,7 +5579,8 @@
       "last_name": "Traore",
       "position": "TE91",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 16381,
@@ -5115,18 +5591,8 @@
       "last_name": "Trubisky",
       "position": "QB58",
       "team": "TEN",
-      "opponent": null
-    },
-    {
-      "player_id": 19219,
-      "rank": 438,
-      "rankIsEstimated": true,
-      "player_name": "Jalen Reagor",
-      "first_name": "Jalen",
-      "last_name": "Reagor",
-      "position": "WR168",
-      "team": "MIA",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 16445,
@@ -5137,7 +5603,8 @@
       "last_name": "McNichols",
       "position": "RB115",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 28434,
@@ -5148,7 +5615,8 @@
       "last_name": "Bredeson",
       "position": "RB111",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 16726,
@@ -5159,7 +5627,8 @@
       "last_name": "Mullens",
       "position": "QB57",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 28113,
@@ -5170,7 +5639,8 @@
       "last_name": "Connors",
       "position": "RB109",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 17869,
@@ -5181,7 +5651,8 @@
       "last_name": "Allen",
       "position": "QB60",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 23014,
@@ -5192,7 +5663,8 @@
       "last_name": "Edwards",
       "position": "RB113",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 22722,
@@ -5203,7 +5675,8 @@
       "last_name": "Pickett",
       "position": "QB61",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 26008,
@@ -5214,7 +5687,8 @@
       "last_name": "Velling",
       "position": "TE105",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 16757,
@@ -5225,7 +5699,8 @@
       "last_name": "Moore",
       "position": "WR186",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 26002,
@@ -5236,7 +5711,8 @@
       "last_name": "Bartholomew",
       "position": "TE97",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 23172,
@@ -5247,7 +5723,8 @@
       "last_name": "McCormick",
       "position": "RB110",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 18246,
@@ -5258,7 +5735,8 @@
       "last_name": "Okwuegbunam Jr.",
       "position": "TE104",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 27449,
@@ -5269,7 +5747,8 @@
       "last_name": "Mumpfield",
       "position": "WR177",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 25349,
@@ -5280,7 +5759,8 @@
       "last_name": "Sims",
       "position": "TE98",
       "team": "MIA",
-      "opponent": null
+      "opponent": "at LV",
+      "matchupRating": null
     },
     {
       "player_id": 24561,
@@ -5291,7 +5771,8 @@
       "last_name": "Ogletree",
       "position": "TE96",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 28122,
@@ -5302,7 +5783,8 @@
       "last_name": "Bullock",
       "position": "RB112",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 22924,
@@ -5313,7 +5795,8 @@
       "last_name": "Briningstool",
       "position": "TE102",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 18714,
@@ -5324,7 +5807,8 @@
       "last_name": "Miller",
       "position": "WR183",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 25443,
@@ -5335,7 +5819,8 @@
       "last_name": "Nichols III",
       "position": "RB117",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 26395,
@@ -5346,7 +5831,8 @@
       "last_name": "Waters",
       "position": "RB116",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 22923,
@@ -5357,7 +5843,8 @@
       "last_name": "Whyle",
       "position": "TE95",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 23986,
@@ -5368,7 +5855,8 @@
       "last_name": "Rivers",
       "position": "RB114",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 19844,
@@ -5379,7 +5867,8 @@
       "last_name": "Gilliam",
       "position": "RB125",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 23451,
@@ -5390,7 +5879,8 @@
       "last_name": "Prentice",
       "position": "RB118",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 22684,
@@ -5401,7 +5891,8 @@
       "last_name": "Blair",
       "position": "WR188",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 18571,
@@ -5412,7 +5903,8 @@
       "last_name": "Ingold",
       "position": "RB126",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 27076,
@@ -5423,7 +5915,8 @@
       "last_name": "Royals",
       "position": "WR184",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 26003,
@@ -5434,7 +5927,8 @@
       "last_name": "Spann-Ford",
       "position": "TE100",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 22841,
@@ -5445,7 +5939,8 @@
       "last_name": "Granson",
       "position": "TE101",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 22953,
@@ -5456,7 +5951,8 @@
       "last_name": "Beck",
       "position": "QB59",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 24352,
@@ -5467,7 +5963,8 @@
       "last_name": "Abanikanda",
       "position": "RB122",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 22884,
@@ -5478,7 +5975,8 @@
       "last_name": "Milroe",
       "position": "QB62",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 22930,
@@ -5489,7 +5987,8 @@
       "last_name": "Shipley",
       "position": "RB119",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 25631,
@@ -5500,7 +5999,8 @@
       "last_name": "Tremayne",
       "position": "WR137",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 24345,
@@ -5511,7 +6011,8 @@
       "last_name": "Allar",
       "position": "QB63",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 25998,
@@ -5522,7 +6023,8 @@
       "last_name": "Nesbit",
       "position": "TE106",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 28279,
@@ -5533,7 +6035,8 @@
       "last_name": "Mason",
       "position": "TE112",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 23030,
@@ -5544,7 +6047,8 @@
       "last_name": "Mingo",
       "position": "WR142",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 24372,
@@ -5555,7 +6059,8 @@
       "last_name": "Lambert-Smith",
       "position": "WR191",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 9907,
@@ -5566,7 +6071,8 @@
       "last_name": "Dalton",
       "position": "QB64",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 16431,
@@ -5577,7 +6083,8 @@
       "last_name": "Jones",
       "position": "WR192",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 19665,
@@ -5588,7 +6095,8 @@
       "last_name": "Woerner",
       "position": "TE107",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 23293,
@@ -5599,7 +6107,8 @@
       "last_name": "Brightwell",
       "position": "RB127",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 28717,
@@ -5610,7 +6119,8 @@
       "last_name": "McMillan",
       "position": "RB121",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 25322,
@@ -5621,7 +6131,8 @@
       "last_name": "Johnson",
       "position": "RB120",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 20155,
@@ -5632,7 +6143,8 @@
       "last_name": "Patterson",
       "position": "RB129",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 27866,
@@ -5643,7 +6155,8 @@
       "last_name": "Cooper",
       "position": "WR143",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 19501,
@@ -5654,7 +6167,8 @@
       "last_name": "Farrell",
       "position": "TE108",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 19471,
@@ -5665,7 +6179,8 @@
       "last_name": "Chandler",
       "position": "RB123",
       "team": "NO",
-      "opponent": null
+      "opponent": "at DET",
+      "matchupRating": null
     },
     {
       "player_id": 19739,
@@ -5676,7 +6191,8 @@
       "last_name": "White",
       "position": "WR189",
       "team": "SEA",
-      "opponent": null
+      "opponent": "vs NE",
+      "matchupRating": null
     },
     {
       "player_id": 28425,
@@ -5687,7 +6203,8 @@
       "last_name": "Caldwell",
       "position": "WR197",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 25980,
@@ -5698,7 +6215,8 @@
       "last_name": "Gore Jr.",
       "position": "RB124",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 24335,
@@ -5709,7 +6227,8 @@
       "last_name": "Hunter",
       "position": "RB130",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 25976,
@@ -5720,7 +6239,8 @@
       "last_name": "Martinez",
       "position": "RB132",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 28027,
@@ -5731,7 +6251,8 @@
       "last_name": "Gordon",
       "position": "TE115",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 27912,
@@ -5742,7 +6263,8 @@
       "last_name": "Campbell",
       "position": "WR195",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 25334,
@@ -5753,7 +6275,8 @@
       "last_name": "Davis",
       "position": "WR187",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 23727,
@@ -5764,7 +6287,8 @@
       "last_name": "Turner",
       "position": "TE110",
       "team": "FA",
-      "opponent": null
+      "opponent": null,
+      "matchupRating": null
     },
     {
       "player_id": 26023,
@@ -5775,7 +6299,8 @@
       "last_name": "Corley",
       "position": "WR198",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 17234,
@@ -5786,7 +6311,8 @@
       "last_name": "Rudolph",
       "position": "QB65",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 25772,
@@ -5797,7 +6323,8 @@
       "last_name": "Remigio",
       "position": "WR200",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 16743,
@@ -5808,7 +6335,8 @@
       "last_name": "Mundt",
       "position": "TE109",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 25468,
@@ -5819,7 +6347,8 @@
       "last_name": "Brooks",
       "position": "WR190",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 28404,
@@ -5830,7 +6359,8 @@
       "last_name": "Henry Jr.",
       "position": "RB128",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 26748,
@@ -5841,7 +6371,8 @@
       "last_name": "Brooks",
       "position": "RB131",
       "team": "HOU",
-      "opponent": null
+      "opponent": "vs BUF",
+      "matchupRating": null
     },
     {
       "player_id": 22947,
@@ -5852,7 +6383,8 @@
       "last_name": "Pierce",
       "position": "RB133",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 23905,
@@ -5863,7 +6395,8 @@
       "last_name": "Moore",
       "position": "WR199",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 27667,
@@ -5874,7 +6407,8 @@
       "last_name": "Carter",
       "position": "RB134",
       "team": "ATL",
-      "opponent": null
+      "opponent": "at PIT",
+      "matchupRating": null
     },
     {
       "player_id": 23829,
@@ -5885,7 +6419,8 @@
       "last_name": "Woods",
       "position": "TE111",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 27843,
@@ -5896,7 +6431,8 @@
       "last_name": "Yurosek",
       "position": "TE113",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 26216,
@@ -5907,7 +6443,8 @@
       "last_name": "Schrader",
       "position": "RB135",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 24182,
@@ -5918,7 +6455,8 @@
       "last_name": "Quitoriano",
       "position": "TE116",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 27621,
@@ -5929,7 +6467,8 @@
       "last_name": "Owen",
       "position": "WR201",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 27467,
@@ -5940,7 +6479,8 @@
       "last_name": "Fairweather",
       "position": "TE114",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 22843,
@@ -5951,7 +6491,8 @@
       "last_name": "Skowronek",
       "position": "WR193",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 23812,
@@ -5962,7 +6503,8 @@
       "last_name": "Badie",
       "position": "RB140",
       "team": "DEN",
-      "opponent": null
+      "opponent": "at KC",
+      "matchupRating": null
     },
     {
       "player_id": 25394,
@@ -5973,7 +6515,8 @@
       "last_name": "Ott",
       "position": "RB137",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 24572,
@@ -5984,7 +6527,8 @@
       "last_name": "Brown",
       "position": "RB142",
       "team": "CHI",
-      "opponent": null
+      "opponent": "at CAR",
+      "matchupRating": null
     },
     {
       "player_id": 18587,
@@ -5995,7 +6539,8 @@
       "last_name": "Hardman Jr.",
       "position": "WR194",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 28903,
@@ -6006,7 +6551,8 @@
       "last_name": "Castle",
       "position": "RB145",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 17289,
@@ -6017,7 +6563,8 @@
       "last_name": "Berrios",
       "position": "WR196",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 23075,
@@ -6028,7 +6575,8 @@
       "last_name": "Gray",
       "position": "RB141",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 28757,
@@ -6039,7 +6587,8 @@
       "last_name": "Tau-Tolliver",
       "position": "RB136",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 27724,
@@ -6050,7 +6599,8 @@
       "last_name": "Williams",
       "position": "WR210",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 26372,
@@ -6061,7 +6611,8 @@
       "last_name": "Steele",
       "position": "RB146",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 28906,
@@ -6072,7 +6623,8 @@
       "last_name": "Davis",
       "position": "RB144",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 26413,
@@ -6083,7 +6635,8 @@
       "last_name": "Washington",
       "position": "WR202",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 24330,
@@ -6094,7 +6647,8 @@
       "last_name": "O'Connell",
       "position": "QB67",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 28429,
@@ -6105,7 +6659,8 @@
       "last_name": "Nixon",
       "position": "RB143",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 15520,
@@ -6116,7 +6671,8 @@
       "last_name": "Wentz",
       "position": "QB68",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 22987,
@@ -6127,7 +6683,8 @@
       "last_name": "Levis",
       "position": "QB69",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 26194,
@@ -6138,7 +6695,8 @@
       "last_name": "Laube",
       "position": "RB147",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 22965,
@@ -6149,7 +6707,8 @@
       "last_name": "Smith",
       "position": "WR203",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 19052,
@@ -6160,7 +6719,8 @@
       "last_name": "Kennedy",
       "position": "WR209",
       "team": "DET",
-      "opponent": null
+      "opponent": "vs NO",
+      "matchupRating": null
     },
     {
       "player_id": 23045,
@@ -6171,7 +6731,8 @@
       "last_name": "Howell",
       "position": "QB70",
       "team": "DAL",
-      "opponent": null
+      "opponent": "at NYG",
+      "matchupRating": null
     },
     {
       "player_id": 27596,
@@ -6182,7 +6743,8 @@
       "last_name": "Marshall",
       "position": "RB153",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 27696,
@@ -6193,7 +6755,8 @@
       "last_name": "Johnson",
       "position": "RB148",
       "team": "LAC",
-      "opponent": null
+      "opponent": "vs ARI",
+      "matchupRating": null
     },
     {
       "player_id": 26404,
@@ -6204,7 +6767,8 @@
       "last_name": "Gould",
       "position": "WR205",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 23260,
@@ -6215,7 +6779,8 @@
       "last_name": "Trammell",
       "position": "WR207",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 19801,
@@ -6226,7 +6791,8 @@
       "last_name": "Wallace",
       "position": "WR211",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 24234,
@@ -6237,7 +6803,8 @@
       "last_name": "Covey",
       "position": "WR204",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 24173,
@@ -6248,7 +6815,8 @@
       "last_name": "Strong Jr.",
       "position": "RB152",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 23927,
@@ -6259,7 +6827,8 @@
       "last_name": "Bennett IV",
       "position": "QB71",
       "team": "LAR",
-      "opponent": null
+      "opponent": "vs SF",
+      "matchupRating": null
     },
     {
       "player_id": 27829,
@@ -6270,7 +6839,8 @@
       "last_name": "Larvadain",
       "position": "WR206",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 22820,
@@ -6281,7 +6851,8 @@
       "last_name": "Morris",
       "position": "TE117",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 28121,
@@ -6292,7 +6863,8 @@
       "last_name": "Booth",
       "position": "RB154",
       "team": "CLE",
-      "opponent": null
+      "opponent": "at JAC",
+      "matchupRating": null
     },
     {
       "player_id": 26626,
@@ -6303,7 +6875,8 @@
       "last_name": "Johnson",
       "position": "WR208",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 25754,
@@ -6314,7 +6887,8 @@
       "last_name": "Brownlee",
       "position": "WR217",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 24347,
@@ -6325,7 +6899,8 @@
       "last_name": "Richardson Sr.",
       "position": "QB73",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 26436,
@@ -6336,7 +6911,8 @@
       "last_name": "Westover",
       "position": "TE126",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 22998,
@@ -6347,7 +6923,8 @@
       "last_name": "Nussmeier",
       "position": "QB74",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 25983,
@@ -6358,7 +6935,8 @@
       "last_name": "Ali",
       "position": "RB149",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 28816,
@@ -6369,7 +6947,8 @@
       "last_name": "Bankston",
       "position": "RB155",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 18166,
@@ -6380,7 +6959,8 @@
       "last_name": "Hodge",
       "position": "WR213",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 19358,
@@ -6391,7 +6971,8 @@
       "last_name": "Dillon",
       "position": "RB150",
       "team": "CAR",
-      "opponent": null
+      "opponent": "vs CHI",
+      "matchupRating": null
     },
     {
       "player_id": 27705,
@@ -6402,7 +6983,8 @@
       "last_name": "Keeney-James",
       "position": "WR212",
       "team": "PIT",
-      "opponent": null
+      "opponent": "vs ATL",
+      "matchupRating": null
     },
     {
       "player_id": 27839,
@@ -6413,7 +6995,8 @@
       "last_name": "Watson",
       "position": "TE118",
       "team": "KC",
-      "opponent": null
+      "opponent": "vs DEN",
+      "matchupRating": null
     },
     {
       "player_id": 15654,
@@ -6424,7 +7007,8 @@
       "last_name": "Moore",
       "position": "WR215",
       "team": "BAL",
-      "opponent": null
+      "opponent": "at IND",
+      "matchupRating": null
     },
     {
       "player_id": 24134,
@@ -6435,7 +7019,8 @@
       "last_name": "Thompkins",
       "position": "WR223",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 26576,
@@ -6446,7 +7031,8 @@
       "last_name": "Yankoff",
       "position": "TE128",
       "team": "WAS",
-      "opponent": null
+      "opponent": "at PHI",
+      "matchupRating": null
     },
     {
       "player_id": 27445,
@@ -6457,7 +7043,8 @@
       "last_name": "Chism III",
       "position": "WR216",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 26384,
@@ -6468,7 +7055,8 @@
       "last_name": "Bradley",
       "position": "QB80",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 17888,
@@ -6479,7 +7067,8 @@
       "last_name": "Sherfield Sr.",
       "position": "WR214",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 25758,
@@ -6490,7 +7079,8 @@
       "last_name": "Gipson",
       "position": "WR219",
       "team": "NYG",
-      "opponent": null
+      "opponent": "vs DAL",
+      "matchupRating": null
     },
     {
       "player_id": 27686,
@@ -6501,7 +7091,8 @@
       "last_name": "Skinner",
       "position": "WR218",
       "team": "BUF",
-      "opponent": null
+      "opponent": "at HOU",
+      "matchupRating": null
     },
     {
       "player_id": 27182,
@@ -6512,7 +7103,8 @@
       "last_name": "Felton",
       "position": "WR181",
       "team": "MIN",
-      "opponent": null
+      "opponent": "vs GB",
+      "matchupRating": null
     },
     {
       "player_id": 25709,
@@ -6523,7 +7115,8 @@
       "last_name": "Jackson",
       "position": "WR220",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 23883,
@@ -6534,7 +7127,8 @@
       "last_name": "Toure",
       "position": "WR221",
       "team": "PHI",
-      "opponent": null
+      "opponent": "vs WAS",
+      "matchupRating": null
     },
     {
       "player_id": 28698,
@@ -6545,7 +7139,8 @@
       "last_name": "Curtis",
       "position": "TE132",
       "team": "NYJ",
-      "opponent": null
+      "opponent": "at TEN",
+      "matchupRating": null
     },
     {
       "player_id": 27486,
@@ -6556,7 +7151,8 @@
       "last_name": "Watkins",
       "position": "WR224",
       "team": "SF",
-      "opponent": null
+      "opponent": "at LAR",
+      "matchupRating": null
     },
     {
       "player_id": 24049,
@@ -6567,7 +7163,8 @@
       "last_name": "Melton",
       "position": "WR222",
       "team": "GB",
-      "opponent": null
+      "opponent": "at MIN",
+      "matchupRating": null
     },
     {
       "player_id": 24570,
@@ -6578,7 +7175,8 @@
       "last_name": "Young",
       "position": "WR227",
       "team": "LV",
-      "opponent": null
+      "opponent": "vs MIA",
+      "matchupRating": null
     },
     {
       "player_id": 28810,
@@ -6589,7 +7187,8 @@
       "last_name": "Fletcher Jr.",
       "position": "TE129",
       "team": "TB",
-      "opponent": null
+      "opponent": "at CIN",
+      "matchupRating": null
     },
     {
       "player_id": 26588,
@@ -6600,7 +7199,8 @@
       "last_name": "Oliver",
       "position": "WR225",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 23438,
@@ -6611,7 +7211,8 @@
       "last_name": "Jones",
       "position": "WR230",
       "team": "JAC",
-      "opponent": null
+      "opponent": "vs CLE",
+      "matchupRating": null
     },
     {
       "player_id": 19704,
@@ -6622,7 +7223,8 @@
       "last_name": "Kinsey",
       "position": "WR226",
       "team": "TEN",
-      "opponent": null
+      "opponent": "vs NYJ",
+      "matchupRating": null
     },
     {
       "player_id": 15495,
@@ -6633,7 +7235,8 @@
       "last_name": "Treadwell",
       "position": "WR228",
       "team": "IND",
-      "opponent": null
+      "opponent": "vs BAL",
+      "matchupRating": null
     },
     {
       "player_id": 9326,
@@ -6644,7 +7247,8 @@
       "last_name": "Johnson",
       "position": "QB77",
       "team": "CIN",
-      "opponent": null
+      "opponent": "vs TB",
+      "matchupRating": null
     },
     {
       "player_id": 19270,
@@ -6655,7 +7259,8 @@
       "last_name": "Duvernay",
       "position": "WR229",
       "team": "ARI",
-      "opponent": null
+      "opponent": "at LAC",
+      "matchupRating": null
     },
     {
       "player_id": 28166,
@@ -6666,7 +7271,8 @@
       "last_name": "Arkin",
       "position": "TE123",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     },
     {
       "player_id": 26411,
@@ -6677,7 +7283,8 @@
       "last_name": "Palmer",
       "position": "WR231",
       "team": "NE",
-      "opponent": null
+      "opponent": "at SEA",
+      "matchupRating": null
     }
   ]
 }
