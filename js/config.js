@@ -1,9 +1,9 @@
-// Loads the human-maintained config.json at the repo root (draftId,
-// and the same season/week overrides scripts/update-rankings.mjs reads).
-// Missing file or fields fall back to sensible defaults - config.json is
-// optional, not required for the app to function.
+// Loads the human-maintained config/app.json (draftId, and the same
+// season/week overrides scripts/update-rankings.mjs reads). Missing file
+// or fields fall back to sensible defaults - config/app.json is optional,
+// not required for the app to function.
 
-const CONFIG_URL = 'config.json';
+const CONFIG_URL = 'config/app.json';
 
 export async function loadConfig() {
   try {
