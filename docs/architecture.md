@@ -112,6 +112,34 @@ Abgleich des Draft-Fortschritts (Draft-ID → gedraftete Spieler) erfolgt
 daher weiterhin direkt im Browser zur Laufzeit, unverändert zum
 Vorgängerprodukt.
 
+## Konfiguration (`config.json`)
+
+Eine im Repository-Root committete, von Hand gepflegte `config.json`
+enthält optionale Overrides, die sowohl vom Frontend (`js/config.js`) als
+auch von der Pipeline (`scripts/update-rankings.mjs`) gelesen werden:
+
+```json
+{
+  "draftId": "1265036873886076928",
+  "season": null,
+  "week": null
+}
+```
+
+- `draftId`: Ist ein Wert gesetzt, befüllt das Frontend das Draft-ID-Feld
+  beim Laden automatisch vor und löst den Sleeper-Abgleich (UC-002)
+  sofort aus — kein manuelles Eintippen/Klicken pro Sitzung nötig. `null`
+  bedeutet: Feld bleibt leer, Nutzer trägt die ID manuell ein.
+- `season`/`week`: Überschreiben die automatisch berechneten Werte aus
+  `currentNflSeason()`/`currentNflWeek()` in der Pipeline. `null`
+  bedeutet: automatische Berechnung wird verwendet (Standardverhalten,
+  siehe oben). Gedacht als Absicherung/manuelle Korrektur, falls die
+  Automatik in einem Randfall doch einmal daneben liegen sollte — nicht
+  als Ersatz für die automatische Berechnung.
+
+Fehlt `config.json` ganz oder sind Felder nicht gesetzt, verhält sich die
+App genau wie ohne diese Datei (reine Fallback-Defaults, keine Pflicht).
+
 ## Verworfene Alternative
 
 Ein Laufzeit-Proxy (z. B. Cloudflare Worker) für On-Demand-Live-Rankings

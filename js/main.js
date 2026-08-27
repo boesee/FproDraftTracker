@@ -1,4 +1,5 @@
 import { Logger } from './logger.js';
+import { loadConfig } from './config.js';
 import { loadRankingsSnapshot, sortPlayersByRank, describeFreshness } from './rankings.js';
 import { fetchDraftPicks, matchDraftedPlayers } from './sleeperDraft.js';
 import { applyFilters } from './filters.js';
@@ -156,6 +157,8 @@ async function loadDraft() {
 }
 
 async function init() {
+  const config = await loadConfig();
+
   try {
     const snapshot = await loadRankingsSnapshot();
     renderBanner(snapshot.generatedAt);
@@ -179,6 +182,13 @@ async function init() {
   rankFilter.addEventListener('input', renderTable);
   draftedFilter.addEventListener('change', renderTable);
   playerSearch.addEventListener('input', renderTable);
+
+  // Pre-fill and auto-sync from config.json, so a recurring draft doesn't
+  // need the Draft-ID typed in and "Draft-Daten laden" clicked every time.
+  if (config.draftId) {
+    draftIdInput.value = config.draftId;
+    loadDraft();
+  }
 }
 
 if (document.readyState === 'loading') {
