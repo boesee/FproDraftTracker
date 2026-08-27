@@ -37,7 +37,11 @@ auf der offiziellen API basierenden Prozess.
 ### Konkrete Umsetzung (UC-007)
 
 - **Workflow:** [`.github/workflows/update-rankings.yml`](../.github/workflows/update-rankings.yml)
-- **Skript:** [`scripts/update-rankings.mjs`](../scripts/update-rankings.mjs)
+- **Skript:** [`scripts/update-rankings.mjs`](../scripts/update-rankings.mjs) orchestriert nur;
+  die eigentliche Logik liegt modular in [`scripts/lib/`](../scripts/lib/)
+  (`config.mjs`, `nflSchedule.mjs`, `fantasyProsRankings.mjs`,
+  `espnOpponents.mjs`, `matchupRatings.mjs`) — analog zur Modul-Aufteilung
+  im Frontend (`js/filters.js`, `js/stats.js`, etc.).
 - **Endpoint:** `GET https://api.fantasypros.com/public/v2/json/nfl/{season}/rankings?week={week}&range=true`
   (Auth über Header `x-api-key`). Die Antwort liefert pro Spieler alle
   Scoring-Formate und Positionsgruppen verschachtelt unter
@@ -157,22 +161,24 @@ verworfen:
   ungewöhnliches automatisiertes Zugriffsmuster).
 
 **Gewählte Lösung:** eine manuell gepflegte Momentaufnahme,
-[`matchup-ratings.json`](../matchup-ratings.json) im Repository-Root,
-analog zu `config.json`. Der Repo-Owner öffnet die Seite eingeloggt,
+[`config/matchup-ratings.json`](../config/matchup-ratings.json), analog zu
+`config/app.json`. Der Repo-Owner öffnet die Seite eingeloggt,
 führt in der Browser-Konsole `copy(JSON.stringify(advancedMetrics))` aus
 und fügt das Ergebnis ab Zeile 2 der Datei ein (Zeile 1 bleibt ein
 `//`-Kommentar mit genau diesem Befehl als Reminder). Damit läuft **kein
 eigener Code** gegen die FantasyPros-Website — kein Scraping, keine
 Login-Automatisierung, kein Puppeteer/Headless-Browser in der Pipeline.
 
-- `scripts/update-rankings.mjs` (`loadMatchupRatings`) liest die Datei,
+- `scripts/lib/matchupRatings.mjs` (`loadMatchupRatings`) liest die Datei,
   überspringt die führende Kommentarzeile und mapped pro FantasyPros-
   `player_id` den Wert aus `matchup_rating.rating` (als `matchupRating`
   auf `PLAYER`).
 - Fehlt die Datei, ist sie leer/veraltet oder nicht mehr parsebar (z. B.
   weil FantasyPros die interne Struktur ändert), wird das geloggt und die
   Pipeline läuft ohne Matchup-Ratings weiter (`matchupRating: null`) —
-  wie beim ESPN-Gegner kein Grund, den Lauf abzubrechen.
+  wie beim ESPN-Gegner kein Grund, den Lauf abzubrechen. `config/` enthält
+  damit ausschliesslich von Hand gepflegte Dateien; `data/` bleibt rein
+  für maschinell erzeugten Pipeline-Output (`rankings.json`) reserviert.
 - Frontend: Der Wert wird auf die nächste ganze Zahl gerundet und als
   0–5 blaue/graue Sterne dargestellt (z. B. 2.7 → 3 gefüllte + 2 leere
   Sterne), mit dem Rohwert als Tooltip.
@@ -187,11 +193,11 @@ Abgleich des Draft-Fortschritts (Draft-ID → gedraftete Spieler) erfolgt
 daher weiterhin direkt im Browser zur Laufzeit, unverändert zum
 Vorgängerprodukt.
 
-## Konfiguration (`config.json`)
+## Konfiguration (`config/app.json`)
 
-Eine im Repository-Root committete, von Hand gepflegte `config.json`
-enthält optionale Overrides, die sowohl vom Frontend (`js/config.js`) als
-auch von der Pipeline (`scripts/update-rankings.mjs`) gelesen werden:
+Eine committete, von Hand gepflegte `config/app.json` enthält optionale
+Overrides, die sowohl vom Frontend (`js/config.js`) als auch von der
+Pipeline (`scripts/lib/config.mjs`) gelesen werden:
 
 ```json
 {
@@ -206,14 +212,31 @@ auch von der Pipeline (`scripts/update-rankings.mjs`) gelesen werden:
   sofort aus — kein manuelles Eintippen/Klicken pro Sitzung nötig. `null`
   bedeutet: Feld bleibt leer, Nutzer trägt die ID manuell ein.
 - `season`/`week`: Überschreiben die automatisch berechneten Werte aus
-  `currentNflSeason()`/`currentNflWeek()` in der Pipeline. `null`
-  bedeutet: automatische Berechnung wird verwendet (Standardverhalten,
-  siehe oben). Gedacht als Absicherung/manuelle Korrektur, falls die
-  Automatik in einem Randfall doch einmal daneben liegen sollte — nicht
-  als Ersatz für die automatische Berechnung.
+  `currentNflSeason()`/`currentNflWeek()` (`scripts/lib/nflSchedule.mjs`).
+  `null` bedeutet: automatische Berechnung wird verwendet
+  (Standardverhalten, siehe oben). Gedacht als Absicherung/manuelle
+  Korrektur, falls die Automatik in einem Randfall doch einmal daneben
+  liegen sollte — nicht als Ersatz für die automatische Berechnung.
 
-Fehlt `config.json` ganz oder sind Felder nicht gesetzt, verhält sich die
-App genau wie ohne diese Datei (reine Fallback-Defaults, keine Pflicht).
+Fehlt `config/app.json` ganz oder sind Felder nicht gesetzt, verhält sich
+die App genau wie ohne diese Datei (reine Fallback-Defaults, keine
+Pflicht).
+
+## Repository-Struktur (Übersicht)
+
+- `config/` — von Hand gepflegte, committete Konfiguration
+  (`app.json`, `matchup-ratings.json`).
+- `data/` — ausschliesslich maschinell erzeugter Pipeline-Output
+  (`rankings.json`), nie von Hand editiert.
+- `docs/` — AIUP-Artefakte (`vision.md`, `architecture.md`,
+  `requirements.md`, `entity_model.md`, `use_cases.puml`,
+  `use_cases/*.md`).
+- `js/` — Frontend, ein Modul pro Belang (`rankings.js`, `filters.js`,
+  `stats.js`, `sleeperDraft.js`, `messages.js`, `config.js`, `logger.js`,
+  `main.js` als Orchestrator).
+- `scripts/` — Node-Pipeline (`update-rankings.mjs` als Orchestrator,
+  Logik modular in `scripts/lib/`).
+- `.github/workflows/` — GitHub-Actions-Workflow.
 
 ## Verworfene Alternative
 

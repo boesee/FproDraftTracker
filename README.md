@@ -26,14 +26,14 @@ offiziellen FantasyPros-API bezogen. Details dazu und zur restlichen Architektur
 
 1. **Seite öffnen:** Die Datei `data/rankings.json` wird automatisch geladen und angezeigt.
 2. **Draft abgleichen:** Sleeper-Draft-ID eingeben und auf „Draft-Daten laden“ klicken, um gedraftete
-   Spieler zu markieren. Ist in `config.json` eine `draftId` hinterlegt, geschieht das automatisch
+   Spieler zu markieren. Ist in `config/app.json` eine `draftId` hinterlegt, geschieht das automatisch
    beim Laden der Seite (siehe unten).
 3. **Filtern/Suchen:** Über den Filterbereich nach Position, Rang oder Draft-Status einschränken, oder
    die Suche nutzen (z. B. `team:phi`).
 
-### `config.json`
+### `config/app.json`
 
-Optionale, von Hand gepflegte Konfiguration im Repository-Root:
+Optionale, von Hand gepflegte Konfiguration:
 
 ```json
 {
@@ -47,9 +47,9 @@ Optionale, von Hand gepflegte Konfiguration im Repository-Root:
   du wöchentlich dieselbe Draft-ID verwendest.
 - `season`/`week`: überschreiben bei Bedarf die von der Pipeline automatisch berechneten Werte;
   `null` heisst "automatisch berechnen" (Standard). Details siehe
-  [`docs/architecture.md`](docs/architecture.md#konfiguration-configjson).
+  [`docs/architecture.md`](docs/architecture.md#konfiguration-configappjson).
 
-### `matchup-ratings.json` (optional)
+### `config/matchup-ratings.json` (optional)
 
 FantasyPros' Matchup-Rating erfordert einen eingeloggten Account und ist über keine API verfügbar
 (siehe [`docs/architecture.md`](docs/architecture.md#matchup-rating-manuell-gepflegte-ausnahme)).
@@ -57,7 +57,7 @@ Um es trotzdem nutzen zu können, ohne Zugangsdaten zu automatisieren, wird es m
 
 1. [`ppr-superflex.php`](https://www.fantasypros.com/nfl/rankings/ppr-superflex.php) eingeloggt öffnen.
 2. Browser-Konsole öffnen und ausführen: `copy(JSON.stringify(advancedMetrics))`
-3. Ergebnis in `matchup-ratings.json` ab Zeile 2 einfügen (Zeile 1 ist ein Kommentar mit genau
+3. Ergebnis in `config/matchup-ratings.json` ab Zeile 2 einfügen (Zeile 1 ist ein Kommentar mit genau
    diesem Befehl) und committen.
 
 Fehlt die Datei oder ist sie veraltet, bleibt das Matchup-Rating in der App einfach leer.
@@ -80,7 +80,9 @@ Fehlt die Datei oder ist sie veraltet, bleibt das Matchup-Rating in der App einf
    [`docs/entity_model.md`](docs/entity_model.md) für das Format); ohne diese Datei zeigt die App den
    entsprechenden Fehlerzustand.
 
-3. **Dateien in `/js/`, `/css/` und `index.html` nach Bedarf anpassen.**
+3. **Dateien in `/js/`, `/css/` und `index.html` nach Bedarf anpassen.** Ein Überblick über die
+   Repository-Struktur (inkl. `config/`, `data/`, `scripts/lib/`) steht in
+   [`docs/architecture.md`](docs/architecture.md#repository-struktur-übersicht).
 
 ### Rankings-Pipeline (GitHub Actions)
 

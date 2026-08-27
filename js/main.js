@@ -60,9 +60,9 @@ function createRankCell(player) {
 const MATCHUP_STAR_COUNT = 5;
 
 // FantasyPros' matchup-favorability rating (0-5), from the manually
-// maintained matchup-ratings.json (see scripts/update-rankings.mjs,
-// loadMatchupRatings). Rounded to the nearest whole star, e.g. 2.7 -> 3
-// filled + 2 empty stars.
+// maintained config/matchup-ratings.json (see
+// scripts/lib/matchupRatings.mjs, loadMatchupRatings). Rounded to the
+// nearest whole star, e.g. 2.7 -> 3 filled + 2 empty stars.
 function createMatchupCell(matchupRating) {
   const td = document.createElement('td');
   if (matchupRating === null || matchupRating === undefined) {
@@ -213,8 +213,9 @@ async function init() {
   draftedFilter.addEventListener('change', renderTable);
   playerSearch.addEventListener('input', renderTable);
 
-  // Pre-fill and auto-sync from config.json, so a recurring draft doesn't
-  // need the Draft-ID typed in and "Draft-Daten laden" clicked every time.
+  // Pre-fill and auto-sync from config/app.json, so a recurring draft
+  // doesn't need the Draft-ID typed in and "Draft-Daten laden" clicked
+  // every time.
   if (config.draftId) {
     draftIdInput.value = config.draftId;
     loadDraft();
