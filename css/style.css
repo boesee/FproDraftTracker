@@ -104,3 +104,11 @@
     color: #b45309;
     margin-top: 0.5rem;
 }
+
+.matchup-star-filled {
+    color: #0284c7;
+}
+
+.matchup-star-empty {
+    color: #d1d5db;
+}

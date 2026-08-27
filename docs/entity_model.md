@@ -47,6 +47,7 @@ Ein einzelner Spieler-Eintrag innerhalb eines `RANKINGS_SNAPSHOT`.
 | position | Position kombiniert mit dem positionsspezifischen Rang derselben Scoring-Bucket wie `rank` (z. B. "RB81"), aus `position_id` + `rank.ECR.{PPR\|ROS-PPR}[position_id]` | String | 10 | Not Null |
 | team | NFL-Team-Kürzel | String | 5 | Not Null |
 | opponent | Gegner in der aktuellen Woche (z. B. "vs NE" / "at SEA"), aus der ESPN Scoreboard API (siehe architecture.md) | String | 10 | Optional (Bye Week oder ESPN-Abruf fehlgeschlagen) |
+| matchupRating | FantasyPros Matchup-Rating (0–5), aus der manuell gepflegten `matchup-ratings.json` (siehe architecture.md) | Decimal | – | Optional (Datei fehlt/veraltet oder Spieler nicht enthalten) |
 
 `drafted` ist kein gespeichertes Attribut, sondern ein zur Laufzeit
 abgeleiteter Zustand (siehe Beziehung zu `DRAFT_PICK` oben).
