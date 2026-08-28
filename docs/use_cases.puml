@@ -12,6 +12,7 @@ rectangle "FproDraftTracker" {
   usecase "UC-005\nFehler-Feedback erhalten" as UC005
   usecase "UC-006\nAktualität der Rankings einsehen" as UC006
   usecase "UC-007\nRankings über FantasyPros-API aktualisieren" as UC007
+  usecase "UC-008\nRanking-Art einsehen" as UC008
 }
 
 manager --> UC001
@@ -22,6 +23,7 @@ manager --> UC004
 scheduler --> UC007
 
 UC001 ..> UC006 : <<include>>
+UC001 ..> UC008 : <<include>>
 UC005 ..> UC002 : <<extend>>
 
 note bottom of UC003

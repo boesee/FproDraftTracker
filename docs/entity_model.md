@@ -31,6 +31,8 @@ FantasyPros-ECR-Rankings; wird von der statischen Seite ausgeliefert.
 |-----------|-------------|-----------|-------------------|-------------------|
 | generatedAt | Zeitpunkt, zu dem dieser Snapshot von der FantasyPros-API erzeugt wurde; Grundlage für den Aktualitäts-Banner (FR-010) und NFR-001/NFR-003 | DateTime | – | Not Null |
 | source | Kennzeichnung der Datenquelle (z. B. "fantasypros-api") | String | 50 | Not Null |
+| season | NFL-Saison, für die dieser Snapshot abgerufen wurde (z. B. 2026); Grundlage für die Ranking-Art-Anzeige (siehe architecture.md) | Integer | – | Not Null |
+| week | NFL-Woche, für die dieser Snapshot abgerufen wurde (1–18); Grundlage für die Ranking-Art-Anzeige (siehe architecture.md) | Integer | – | Not Null |
 | matchupRatingsUpdatedAt | Letzter Git-Commit-Zeitpunkt von `config/matchup-ratings.json`; Grundlage für die Warnung bei veralteten Matchup-Ratings (siehe architecture.md) | DateTime | – | Optional (kein Commit-Verlauf ermittelbar) |
 
 ### PLAYER

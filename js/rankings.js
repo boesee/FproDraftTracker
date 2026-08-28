@@ -20,6 +20,40 @@ export function sortPlayersByRank(players) {
   return [...players].sort((a, b) => a.rank - b.rank);
 }
 
+// `position` combines the position with its positional rank in the same
+// scoring bucket as `rank` (e.g. "RB23" -> 23; see extractPositionLabel,
+// scripts/lib/fantasyProsRankings.mjs). Used to display/sort by a specific
+// position's ranking (the QB/RB/WR pills) instead of the overall Superflex
+// ranking. Returns null if unparseable, so callers can push such players
+// to the end rather than crash or silently sort them first.
+export function extractPositionRank(position) {
+  const match = /(\d+)$/.exec(position ?? '');
+  return match ? parseInt(match[1], 10) : null;
+}
+
+// Position-specific ranking (QB/RB/WR pills): ascending by that position's
+// rank, not the overall Superflex rank. Players without a parseable
+// positional rank sort last instead of first.
+export function sortPlayersByPositionRank(players) {
+  return [...players].sort((a, b) => {
+    const rankA = extractPositionRank(a.position) ?? Infinity;
+    const rankB = extractPositionRank(b.position) ?? Infinity;
+    return rankA - rankB;
+  });
+}
+
+// Surfaces the ranking's scope (In-Season Wochen-Ranking, not a Rest-of-
+// Season/Dynasty view) and scoring format, so it's transparent what's
+// being shown - matches FantasyPros' own "PPR" wording. Season/week are
+// optional (older snapshots, from before this field existed, won't have
+// them) - falls back to a scoring-only line rather than showing nothing.
+export function describeRankingType(season, week) {
+  if (season == null || week == null) {
+    return 'In-Season Wochen-Ranking – PPR-Scoring';
+  }
+  return `In-Season Wochen-Ranking – Woche ${week}, Saison ${season} – PPR-Scoring`;
+}
+
 // UC-006 BR-002: the staleness check only applies within the 07:00-23:00
 // operating window (C-004) - the pipeline doesn't run outside it, so an
 // older snapshot at night is expected, not stale.

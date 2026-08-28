@@ -1,6 +1,13 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { sortPlayersByRank, describeFreshness, describeMatchupRatingsFreshness } from '../js/rankings.js';
+import {
+  sortPlayersByRank,
+  extractPositionRank,
+  sortPlayersByPositionRank,
+  describeRankingType,
+  describeFreshness,
+  describeMatchupRatingsFreshness,
+} from '../js/rankings.js';
 
 test('sortPlayersByRank: BR-001 ascending by rank, does not mutate the input array', () => {
   const players = [{ rank: 3 }, { rank: 1 }, { rank: 2 }];
@@ -13,6 +20,50 @@ test('sortPlayersByRank: BR-001 ascending by rank, does not mutate the input arr
     players.map((p) => p.rank),
     [3, 1, 2]
   );
+});
+
+test('extractPositionRank: parses the trailing digits from a combined position label', () => {
+  assert.equal(extractPositionRank('RB1'), 1);
+  assert.equal(extractPositionRank('QB23'), 23);
+  assert.equal(extractPositionRank('WR100'), 100);
+});
+
+test('extractPositionRank: returns null for unparseable input instead of NaN', () => {
+  assert.equal(extractPositionRank('RB'), null);
+  assert.equal(extractPositionRank(''), null);
+  assert.equal(extractPositionRank(null), null);
+  assert.equal(extractPositionRank(undefined), null);
+});
+
+test('sortPlayersByPositionRank: ascending by positional rank, not overall rank', () => {
+  const players = [
+    { rank: 5, position: 'QB2' },
+    { rank: 1, position: 'QB10' },
+    { rank: 20, position: 'QB1' },
+  ];
+  const sorted = sortPlayersByPositionRank(players);
+  assert.deepEqual(
+    sorted.map((p) => p.position),
+    ['QB1', 'QB2', 'QB10']
+  );
+});
+
+test('sortPlayersByPositionRank: unparseable positions sort last, not first', () => {
+  const players = [{ position: 'DST' }, { position: 'RB2' }, { position: 'RB1' }];
+  const sorted = sortPlayersByPositionRank(players);
+  assert.deepEqual(
+    sorted.map((p) => p.position),
+    ['RB1', 'RB2', 'DST']
+  );
+});
+
+test('describeRankingType: with season/week, names both plus the scoring format', () => {
+  assert.equal(describeRankingType(2026, 1), 'In-Season Wochen-Ranking – Woche 1, Saison 2026 – PPR-Scoring');
+});
+
+test('describeRankingType: falls back gracefully when season/week are missing (older snapshot)', () => {
+  assert.equal(describeRankingType(null, null), 'In-Season Wochen-Ranking – PPR-Scoring');
+  assert.equal(describeRankingType(undefined, undefined), 'In-Season Wochen-Ranking – PPR-Scoring');
 });
 
 test('describeFreshness: missing/invalid timestamp is handled gracefully (BR-003)', () => {

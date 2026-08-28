@@ -21,6 +21,7 @@
         </header>
 
         <p id="rankingsBanner" class="rankings-banner" role="status" hidden></p>
+        <p id="rankingTypeBanner" class="rankings-banner ranking-type" role="status" hidden></p>
         <p id="matchupRatingsBanner" class="rankings-banner stale" role="status" hidden></p>
         <p id="rankingsError" class="message-error" role="alert" hidden></p>
 
@@ -63,17 +64,6 @@
                 <summary>Filter</summary>
                 <div class="filters-grid">
                     <div>
-                        <label for="positionFilter">Position</label>
-                        <select id="positionFilter">
-                            <option value="">Alle Positionen</option>
-                            <option value="QB">QB</option>
-                            <option value="RB">RB</option>
-                            <option value="WR">WR</option>
-                            <option value="TE">TE</option>
-                            <option value="FLEX">FLEX</option>
-                        </select>
-                    </div>
-                    <div>
                         <label for="rankFilter">Maximaler Rang</label>
                         <input type="number" id="rankFilter" min="1" placeholder="z. B. 50">
                     </div>
@@ -95,6 +85,14 @@
                 </div>
                 <button id="clearFiltersBtn" type="button" class="secondary outline">Filter zurücksetzen</button>
             </details>
+
+            <nav class="pills-wrap" id="positionPills" aria-label="Ranking-Ansicht">
+                <button type="button" class="pill" data-position="">Overall</button>
+                <button type="button" class="pill outline secondary" data-position="QB">QB</button>
+                <button type="button" class="pill outline secondary" data-position="RB">RB</button>
+                <button type="button" class="pill outline secondary" data-position="WR">WR</button>
+                <button type="button" class="pill outline secondary" data-position="FLEX">Flex</button>
+            </nav>
 
             <div class="table-scroll">
                 <table id="playersTable">

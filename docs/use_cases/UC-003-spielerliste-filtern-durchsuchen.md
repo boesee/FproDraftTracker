@@ -17,14 +17,16 @@
 
 ## Main Success Scenario
 
-1. Der Fantasy-Football-Manager wählt im Filterbereich eine Position
-   (z. B. "RB").
+1. Der Fantasy-Football-Manager wählt in der Pills-Wrap-Navigation über der
+   Tabelle eine Position ("Overall", "QB", "RB", "WR" oder "Flex";
+   "Overall" ist beim Laden aktiv).
 2. Das System filtert die angezeigte Tabelle auf Spieler, deren Position
-   der Auswahl entspricht (siehe BR-003 für "FLEX").
+   der Auswahl entspricht (siehe BR-003 für "Flex"), und sortiert sie neu
+   (siehe BR-006).
 3. Das System behält die Statistik-Badges unverändert bei, da diese sich
    stets auf die Gesamtliste beziehen (siehe UC-004).
 4. Der Fantasy-Football-Manager sieht in der Tabelle nur noch Spieler der
-   gewählten Position.
+   gewählten Position, nach der dafür jeweils passenden Rangliste sortiert.
 
 ## Alternative Flows
 
@@ -62,8 +64,9 @@ Use case continues at step 4.
 - **Trigger:** (step 4) Mindestens ein Filter- oder Suchkriterium ist
   aktiv.
 1. Der Fantasy-Football-Manager löst "Filter zurücksetzen" aus.
-2. Das System setzt Position, maximalen Rang, Draft-Status und Suchfeld
-   zurück und zeigt wieder die vollständige Spielerliste.
+2. Das System setzt Positions-Pill (zurück auf "Overall"), maximalen Rang,
+   Draft-Status und Suchfeld zurück und zeigt wieder die vollständige,
+   nach der Overall-Rangliste sortierte Spielerliste.
 
 Use case ends.
 
@@ -93,11 +96,19 @@ Use case ends.
   einem Spieler nicht, gilt der Spieler für diese Suche als nicht
   passend (kein Treffer) — es erfolgt kein Rückfall auf die
   Volltextsuche.
-- **BR-003:** Die Positionsauswahl "FLEX" schließt alle Spieler ein, deren
+- **BR-003:** Die Positions-Pill "Flex" schließt alle Spieler ein, deren
   Position RB, WR oder TE enthält (auch bei Mehrfachpositionen wie
   "RB/WR").
-- **BR-004:** Alle aktiven Filterkriterien (Position, maximaler Rang,
+- **BR-004:** Alle aktiven Filterkriterien (Positions-Pill, maximaler Rang,
   Draft-Status, Suche) werden mit logischem UND kombiniert.
 - **BR-005:** Ein nicht-numerischer Wert im Rang-Filter wird ignoriert;
   dieses Kriterium bleibt dann wirkungslos, ohne die übrigen Filter zu
-  beeinflussen.
+  beeinflussen. Er bezieht sich dabei stets auf den Overall-Rang (`rank`),
+  unabhängig von der aktiven Positions-Pill.
+- **BR-006:** Bei aktiver "QB"-, "RB"- oder "WR"-Pill zeigt und sortiert
+  das System nach dem positionsspezifischen Rang dieser Position (z. B.
+  "QB1", "QB2", ... statt des Overall-Rangs); bei "Overall" und "Flex"
+  bleiben Anzeige und Sortierung beim Overall-Rang (`rank`), da für "Flex"
+  keine eigene, positionsübergreifende Rangliste vorliegt — die
+  FantasyPros-API liefert nur einzelne Positionsränge (QB/RB/WR/TE) sowie
+  den Overall-Rang (OP), keinen dedizierten Flex-Rang.

@@ -109,6 +109,49 @@ auf der offiziellen API basierenden Prozess.
   sowie das Mapping wurden anhand echter API-Antworten bestätigt
   (inklusive eines vollständigen Laufs über alle NFL-Spieler).
 
+## Positions-Rankings (Pills-Wrap)
+
+Angelehnt an FantasyPros' eigene "pills-wrap"-Navigation über deren
+Rankings-Tabelle: eine feste Navigationsleiste
+(`<nav class="pills-wrap">`, `index.html`) über der Tabelle löst die
+frühere Position-Dropdown-Filterung ab.
+
+- **Pills:** "Overall" (Standard, aktiv beim Laden), "QB", "RB", "WR",
+  "Flex". Bewusst kein eigenes "TE"-Pill (anders als bei FantasyPros) —
+  TE-Spieler sind über "Flex" erreichbar; "Superflex" heisst hier
+  "Overall", da das ohnehin die einzige im Superflex-Format berechnete
+  Ranking-Sicht dieser App ist (siehe Datenbeschaffung oben).
+- **QB/RB/WR:** filtert auf die Position UND sortiert nach deren
+  eigenem positionsspezifischen Rang (aus dem `position`-Feld
+  extrahiert, z. B. "QB12" → 12; `js/rankings.js`,
+  `extractPositionRank`/`sortPlayersByPositionRank`) statt nach dem
+  Overall-Rang (`rank`). Die "#"-Spalte zeigt dabei ebenfalls diesen
+  positionsspezifischen Rang (`js/main.js`, `getDisplayRank`) — analog
+  zu FantasyPros' eigenem Verhalten beim Wechsel auf einen Positions-Tab.
+- **Flex:** filtert auf RB/WR/TE (identisch zur früheren "FLEX"-Dropdown-
+  Option, `filters.js` BR-003), sortiert aber weiterhin nach dem
+  Overall-Rang. Ein eigener, positionsübergreifender "Flex-Rang" existiert
+  in den FantasyPros-Daten nicht (nur einzelne Positionsränge QB/RB/WR/TE
+  sowie der Overall-Rang OP) — der Overall-Rang ist damit die einzig
+  sinnvolle Sortierbasis für eine gemischte RB/WR/TE-Liste.
+- **Maximaler Rang-Filter:** bezieht sich bewusst immer auf den
+  Overall-Rang, unabhängig von der aktiven Pill — eine Umstellung auf den
+  jeweiligen Positions-Rang wurde nicht umgesetzt, um die Filterlogik
+  nicht zusätzlich zu verzweigen; ließe sich bei Bedarf nachrüsten.
+
+## Ranking-Art-Transparenz
+
+Ergänzt um `season`/`week` im `RANKINGS_SNAPSHOT` (vom Pipeline-Skript
+berechnet/übernommen, siehe oben) zeigt ein Info-Banner
+(`js/rankings.js`, `describeRankingType`; UC-008) explizit an, dass es
+sich um ein **In-Season Wochen-Ranking** mit **PPR**-Scoring handelt,
+inklusive Woche und Saison — macht sichtbar, dass dies **kein**
+Rest-of-Season- oder Dynasty-Ranking ist (auch wenn einzelne Spieler
+intern auf den ROS-PPR-Fallback zurückgreifen, siehe
+`rankIsEstimated` oben). Fehlen `season`/`week` (älterer Snapshot vor
+Einführung dieser Felder), zeigt der Banner einen reduzierten Text ohne
+Woche/Saison statt eines falschen Werts.
+
 ## Gegner-Anreicherung (ESPN Scoreboard API)
 
 Das ursprüngliche Vorgängerprodukt zeigte pro Spieler den Gegner sowie ein
