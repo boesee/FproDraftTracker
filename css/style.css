@@ -172,6 +172,25 @@
     overflow-x: auto;
 }
 
+/* table-layout: fixed + the <colgroup> widths in index.html make every
+   column's width depend only on that fixed percentage, never on which
+   rows/pill happen to be rendered. Without this, table-layout: auto (the
+   default) recomputes every column's width from its own currently-visible
+   content - switching position pills changed the "#" column's digit
+   count and the Spieler column's name lengths, which shifted every
+   column after it sideways (reported: switching to QB shifted all
+   columns since "#" itself got narrower; switching to RB only shifted
+   columns from Pos. onward since "#" stayed the same width but Spieler
+   changed). The same content-dependent width also explains the mobile
+   "vs NO" wrapping to two lines while "vs LV" didn't on the same
+   column - the auto-computed width for Geg. happened to sit right at
+   the boundary for some team codes but not others. Fixed widths make
+   both problems disappear: same layout regardless of content, so
+   wrapping (or not) is consistent too. */
+#playersTable {
+    table-layout: fixed;
+}
+
 #playersTable th {
     position: sticky;
     top: 0;
@@ -236,10 +255,11 @@
     }
 }
 
+/* Width no longer set here - the colgroup in index.html (table-layout:
+   fixed) owns column widths now, see the comment above #playersTable. */
 #playersTable td:first-child,
 #playersTable th:first-child {
     text-align: right;
-    width: 3em;
 }
 
 .drafted-row {
@@ -248,13 +268,12 @@
 
 /* Specificity must match/beat #playersTable td:first-child above (same ID
    + element weight) since this cell, as the row's only child, is also its
-   first-child and would otherwise inherit that rule's right-align/3em
-   width instead of being centered. */
+   first-child and would otherwise inherit that rule's right-align
+   instead of being centered. */
 #playersTable td.empty-state {
     text-align: center;
     color: var(--pico-muted-color);
     padding: 1.5rem 1rem;
-    width: auto;
 }
 
 .draft-sync {

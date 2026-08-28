@@ -31,7 +31,6 @@ const loadDraftBtn = document.getElementById('loadDraftBtn');
 const pillButtons = document.querySelectorAll('#positionPills .pill');
 const draftedFilter = document.getElementById('draftedFilter');
 const playerSearch = document.getElementById('playerSearch');
-const clearFiltersBtn = document.getElementById('clearFiltersBtn');
 
 const statTotalEl = document.getElementById('statTotal');
 const statMatchedEl = document.getElementById('statMatched');
@@ -327,13 +326,6 @@ function showRankingsError(message) {
   sectionEl.hidden = true;
 }
 
-// UC-003 AF-4.
-function clearFilters() {
-  draftedFilter.value = '';
-  playerSearch.value = '';
-  setActivePosition(''); // back to Overall; also re-renders the table
-}
-
 // UC-002 main flow. Only ever runs from an explicit "Draft-Daten laden"
 // click (see init()) - there is no automatic sync.
 async function loadDraft() {
@@ -403,7 +395,6 @@ async function init() {
   }
 
   loadDraftBtn.addEventListener('click', loadDraft);
-  clearFiltersBtn.addEventListener('click', clearFilters);
   pillButtons.forEach((btn) => btn.addEventListener('click', () => setActivePosition(btn.dataset.position)));
   draftedFilter.addEventListener('change', renderTable);
   playerSearch.addEventListener('input', renderTable);

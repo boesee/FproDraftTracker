@@ -134,10 +134,30 @@ frühere Position-Dropdown-Filterung ab.
   in den FantasyPros-Daten nicht (nur einzelne Positionsränge QB/RB/WR/TE
   sowie der Overall-Rang OP) — der Overall-Rang ist damit die einzig
   sinnvolle Sortierbasis für eine gemischte RB/WR/TE-Liste.
-- **Maximaler Rang-Filter:** bezieht sich bewusst immer auf den
-  Overall-Rang, unabhängig von der aktiven Pill — eine Umstellung auf den
-  jeweiligen Positions-Rang wurde nicht umgesetzt, um die Filterlogik
-  nicht zusätzlich zu verzweigen; ließe sich bei Bedarf nachrüsten.
+- **`rank:`-Suchtoken (ex-Maximaler-Rang-Filter):** bezieht sich bewusst
+  immer auf den Overall-Rang, unabhängig von der aktiven Pill — eine
+  Umstellung auf den jeweiligen Positions-Rang wurde nicht umgesetzt, um
+  die Filterlogik nicht zusätzlich zu verzweigen; ließe sich bei Bedarf
+  nachrüsten.
+- **Stabile Spaltenbreiten (`table-layout: fixed`):** Mit
+  `table-layout: auto` (Default) berechnet der Browser jede
+  Spaltenbreite aus dem aktuell gerenderten Inhalt neu — beim
+  Pill-Wechsel änderte sich dadurch sowohl die Ziffernbreite der
+  "#"-Spalte (Overall- vs. Positions-Rang) als auch die Namenslängen in
+  "Spieler" (andere Teilmenge sichtbar), wodurch alle nachfolgenden
+  Spalten sichtbar nach links/rechts sprangen (gemeldet: Overall→QB liess
+  alle Spalten springen, da sich "#" selbst änderte; Overall→RB nur die
+  Spalten ab "Pos.", da "#" gleich breit blieb, aber "Spieler" nicht).
+  Derselbe Mechanismus erklärte auch inkonsistentes Zeilenumbrechen in
+  "Geg." auf schmalen Bildschirmen (z. B. "vs NO" auf zwei Zeilen,
+  "vs LV" nicht) — die auto-berechnete Breite lag zufällig genau an der
+  Umbruchgrenze für manche Team-Kürzel. Fix: `<colgroup>` mit festen
+  Prozent-Breiten pro Spalte (`index.html`) plus `table-layout: fixed`
+  (`style.css`) — Spaltenbreiten hängen dadurch nur noch von der
+  Konfiguration ab, nie vom gerade sichtbaren Inhalt. Die
+  Status-Spalte (siehe UC-002) bekommt ihre `<col>` ebenfalls über die
+  `status-column`-Klasse ausgeblendet/eingeblendet und kollabiert dabei
+  korrekt auf 0 Breite, statt eine leere Lücke zu hinterlassen.
 
 ## Ranking-Art-Transparenz
 
