@@ -1,6 +1,11 @@
 import { Logger } from './logger.js';
 import { loadConfig } from './config.js';
-import { loadRankingsSnapshot, sortPlayersByRank, describeFreshness } from './rankings.js';
+import {
+  loadRankingsSnapshot,
+  sortPlayersByRank,
+  describeFreshness,
+  describeMatchupRatingsFreshness,
+} from './rankings.js';
 import { fetchDraftPicks, matchDraftedPlayers } from './sleeperDraft.js';
 import { applyFilters } from './filters.js';
 import { computeStats } from './stats.js';
@@ -9,6 +14,7 @@ import { createMessageCenter } from './messages.js';
 const logger = new Logger(false);
 
 const bannerEl = document.getElementById('rankingsBanner');
+const matchupRatingsBannerEl = document.getElementById('matchupRatingsBanner');
 const rankingsErrorEl = document.getElementById('rankingsError');
 const sectionEl = document.getElementById('playersSection');
 const tbodyEl = document.getElementById('playersTableBody');
@@ -141,6 +147,16 @@ function renderBanner(generatedAt) {
   bannerEl.hidden = false;
 }
 
+// Surfaces a warning only when config/matchup-ratings.json's last commit is
+// older than the weekly refresh cadence (see describeMatchupRatingsFreshness)
+// - stays hidden otherwise so it doesn't clutter the UI when ratings are
+// current or simply weren't set up at all.
+function renderMatchupRatingsBanner(matchupRatingsUpdatedAt) {
+  const { text, stale } = describeMatchupRatingsFreshness(matchupRatingsUpdatedAt);
+  matchupRatingsBannerEl.textContent = text;
+  matchupRatingsBannerEl.hidden = !stale;
+}
+
 // UC-001 AF-1: no rankings file available.
 function showRankingsError(message) {
   rankingsErrorEl.textContent = message;
@@ -199,6 +215,7 @@ async function init() {
   try {
     const snapshot = await loadRankingsSnapshot();
     renderBanner(snapshot.generatedAt);
+    renderMatchupRatingsBanner(snapshot.matchupRatingsUpdatedAt);
     allPlayers = (snapshot.players ?? []).map((player) => ({
       ...player,
       drafted: false,

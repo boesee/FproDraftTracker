@@ -31,6 +31,7 @@ FantasyPros-ECR-Rankings; wird von der statischen Seite ausgeliefert.
 |-----------|-------------|-----------|-------------------|-------------------|
 | generatedAt | Zeitpunkt, zu dem dieser Snapshot von der FantasyPros-API erzeugt wurde; Grundlage für den Aktualitäts-Banner (FR-010) und NFR-001/NFR-003 | DateTime | – | Not Null |
 | source | Kennzeichnung der Datenquelle (z. B. "fantasypros-api") | String | 50 | Not Null |
+| matchupRatingsUpdatedAt | Letzter Git-Commit-Zeitpunkt von `config/matchup-ratings.json`; Grundlage für die Warnung bei veralteten Matchup-Ratings (siehe architecture.md) | DateTime | – | Optional (kein Commit-Verlauf ermittelbar) |
 
 ### PLAYER
 

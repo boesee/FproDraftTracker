@@ -15,7 +15,7 @@ import { loadConfig } from './lib/config.mjs';
 import { currentNflSeason, currentNflWeek } from './lib/nflSchedule.mjs';
 import { fetchRankings, mapPlayers } from './lib/fantasyProsRankings.mjs';
 import { fetchOpponents } from './lib/espnOpponents.mjs';
-import { loadMatchupRatings } from './lib/matchupRatings.mjs';
+import { loadMatchupRatings, getMatchupRatingsUpdatedAt } from './lib/matchupRatings.mjs';
 
 const OUTPUT_PATH = new URL('../data/rankings.json', import.meta.url);
 
@@ -55,6 +55,7 @@ async function main() {
   const snapshot = {
     generatedAt: new Date().toISOString(),
     source: 'fantasypros-api',
+    matchupRatingsUpdatedAt: getMatchupRatingsUpdatedAt(),
     players,
   };
 

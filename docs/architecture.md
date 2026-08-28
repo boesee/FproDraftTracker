@@ -182,6 +182,18 @@ Login-Automatisierung, kein Puppeteer/Headless-Browser in der Pipeline.
 - Frontend: Der Wert wird auf die nächste ganze Zahl gerundet und als
   0–5 blaue/graue Sterne dargestellt (z. B. 2.7 → 3 gefüllte + 2 leere
   Sterne), mit dem Rohwert als Tooltip.
+- **Aktualität:** Die Datei trägt selbst keine Woche/Saison (reines
+  Copy-Paste von `advancedMetrics`). Statt eines manuellen Tags liest
+  `getMatchupRatingsUpdatedAt` (`scripts/lib/matchupRatings.mjs`) den
+  letzten Git-Commit-Zeitpunkt der Datei via `git log -1 --format=%cI --
+  config/matchup-ratings.json` und schreibt ihn als
+  `matchupRatingsUpdatedAt` in den Snapshot. Das erfordert die volle
+  Commit-Historie statt des GitHub-Actions-Standard-Shallow-Checkouts,
+  daher `fetch-depth: 0` im Workflow. Ist der Commit älter als 6 Tage
+  (`describeMatchupRatingsFreshness`, `js/rankings.js`), zeigt das
+  Frontend eine Warnung — analog zum Rankings-Aktualitäts-Banner
+  (UC-006), aber nur sichtbar, wenn tatsächlich veraltet, statt bei
+  jedem Laden zu erscheinen.
 - Bewusster Nachteil: Die Datei veraltet, sobald sich die Rankings ändern,
   bis sie manuell neu eingefügt wird — akzeptiert, da es sich um ein
   Nice-to-have-Attribut handelt, nicht um die Kern-Rankings.
