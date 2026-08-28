@@ -8,7 +8,7 @@
   Spielerliste über Filter- und Suchkriterien ein, um sich auf die für
   seinen nächsten Pick relevanten Spieler zu konzentrieren.
 - **Status:** Draft
-- **Bezug:** FR-003, FR-004, FR-005, FR-006, FR-007; Entität `PLAYER`.
+- **Bezug:** FR-003, FR-004, FR-005, FR-006; Entität `PLAYER`.
 
 ## Preconditions
 
@@ -50,17 +50,6 @@ Use case continues at step 4.
 2. Andernfalls durchsucht das System alle Spaltenwerte jedes Spielers nach
    dem Suchbegriff (siehe BR-001).
 
-Use case continues at step 4.
-
-### AF-3: Filter zurücksetzen
-
-- **Trigger:** (step 4) Mindestens ein Filter- oder Suchkriterium ist
-  aktiv.
-1. Der Fantasy-Football-Manager löst "Filter zurücksetzen" aus.
-2. Das System setzt Positions-Pill (zurück auf "Overall"), Draft-Status
-   und Suchfeld zurück und zeigt wieder die vollständige, nach der
-   Overall-Rangliste sortierte Spielerliste.
-
 Use case ends.
 
 ## Postconditions
@@ -70,7 +59,13 @@ Use case ends.
 - Die angezeigte Tabelle enthält nur Spieler, die allen aktiven
   Filterkriterien entsprechen (siehe BR-004).
 - Aktive Filterkriterien bleiben sichtbar eingestellt, bis der Manager sie
-  ändert oder zurücksetzt (AF-3).
+  ändert. Eine dedizierte Rücksetzen-Aktion ("Filter zurücksetzen")
+  existiert bewusst nicht mehr: mit dem Wegfall der Position als
+  Dropdown-Filter (jetzt Pills-Wrap-Navigation) und des Rang-Filters als
+  eigenständiges Feld (jetzt `rank:`-Suchtoken) lässt sich jedes
+  verbleibende Kriterium einzeln und direkt zurücksetzen (Positions-Pill
+  "Overall" anklicken, Draft-Status auf "Alle Spieler", Suchfeld leeren)
+  — ein separater Button dafür wäre überflüssig.
 
 ### Failure
 
