@@ -42,6 +42,57 @@
     background: var(--pico-background-color);
 }
 
+/* Pico's default 8px/16px cell padding alone accounts for ~35% of the
+   table's width across 7 columns - the single biggest lever for fitting a
+   phone screen (e.g. iPhone 15, 393px) without the table needing its own
+   horizontal scroll. */
+@media (max-width: 480px) {
+    #playersTable th,
+    #playersTable td {
+        padding: 6px 6px;
+        font-size: 0.8rem;
+    }
+}
+
+.status-dot {
+    display: none;
+}
+
+.status-dot-available {
+    color: #28a745;
+}
+
+.status-dot-drafted {
+    color: #dc3545;
+}
+
+@media (max-width: 480px) {
+    .status-full {
+        display: none;
+    }
+
+    .status-dot {
+        display: inline;
+        font-size: 1.1rem;
+    }
+}
+
+.matchup-compact {
+    display: none;
+    color: #0284c7;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .matchup-full {
+        display: none;
+    }
+
+    .matchup-compact {
+        display: inline;
+    }
+}
+
 #playersTable td:first-child,
 #playersTable th:first-child {
     text-align: right;

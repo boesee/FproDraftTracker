@@ -65,6 +65,31 @@ function createRankCell(player) {
   return td;
 }
 
+// "Verfügbar"/"Gedraftet" is the single widest column on a narrow screen
+// (e.g. iPhone 15, 393px) after the rank/player columns, which are already
+// as tight as they can get. Renders both a full-text label (shown on wider
+// screens) and a compact colored dot (shown below 480px, see style.css);
+// the accessible name always comes from the cell's aria-label, independent
+// of which one is visually hidden.
+function createStatusCell(player) {
+  const td = document.createElement('td');
+  const label = player.drafted ? 'Gedraftet' : 'Verfügbar';
+  td.setAttribute('aria-label', label);
+
+  const full = document.createElement('span');
+  full.className = 'status-full';
+  full.textContent = label;
+  full.setAttribute('aria-hidden', 'true');
+
+  const dot = document.createElement('span');
+  dot.className = `status-dot ${player.drafted ? 'status-dot-drafted' : 'status-dot-available'}`;
+  dot.textContent = '●';
+  dot.setAttribute('aria-hidden', 'true');
+
+  td.append(full, dot);
+  return td;
+}
+
 const MATCHUP_STAR_COUNT = 5;
 
 // FantasyPros' matchup-favorability rating (0-5), from the manually
@@ -81,6 +106,9 @@ function createMatchupCell(matchupRating) {
   const filled = Math.max(0, Math.min(MATCHUP_STAR_COUNT, Math.round(matchupRating)));
   const empty = MATCHUP_STAR_COUNT - filled;
 
+  const full = document.createElement('span');
+  full.className = 'matchup-full';
+
   const filledSpan = document.createElement('span');
   filledSpan.className = 'matchup-star-filled';
   filledSpan.textContent = '★'.repeat(filled);
@@ -89,7 +117,17 @@ function createMatchupCell(matchupRating) {
   emptySpan.className = 'matchup-star-empty';
   emptySpan.textContent = '★'.repeat(empty);
 
-  td.append(filledSpan, emptySpan);
+  full.append(filledSpan, emptySpan);
+
+  // Five individual star glyphs don't fit a phone screen (e.g. iPhone 15)
+  // alongside the other six columns; below 480px this compact "★4" badge
+  // replaces them (see style.css) while the full row's tooltip still gives
+  // the exact rating.
+  const compact = document.createElement('span');
+  compact.className = 'matchup-compact';
+  compact.textContent = `★${filled}`;
+
+  td.append(full, compact);
   td.title = `Matchup-Rating: ${matchupRating}`;
   return td;
 }
@@ -117,7 +155,7 @@ function renderTable() {
       createCell(player.team),
       createCell(player.opponent ?? '-'),
       createMatchupCell(player.matchupRating),
-      createCell(player.drafted ? 'Gedraftet' : 'Verfügbar')
+      createStatusCell(player)
     );
     tbodyEl.appendChild(row);
   }
