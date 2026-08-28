@@ -10,6 +10,7 @@ import { fetchDraftPicks, matchDraftedPlayers } from './sleeperDraft.js';
 import { applyFilters } from './filters.js';
 import { computeStats } from './stats.js';
 import { createMessageCenter } from './messages.js';
+import { initThemeToggle } from './theme.js';
 
 const logger = new Logger(false);
 
@@ -17,6 +18,7 @@ const bannerEl = document.getElementById('rankingsBanner');
 const matchupRatingsBannerEl = document.getElementById('matchupRatingsBanner');
 const rankingsErrorEl = document.getElementById('rankingsError');
 const sectionEl = document.getElementById('playersSection');
+const tableEl = document.getElementById('playersTable');
 const tbodyEl = document.getElementById('playersTableBody');
 
 const draftIdInput = document.getElementById('draftId');
@@ -42,6 +44,10 @@ const messages = createMessageCenter(
 );
 
 let allPlayers = [];
+// Availability only means anything once picks have been matched (UC-002) -
+// before that, every player is trivially "Verfügbar", which confused a
+// tester. Gates the Status column and the Draft-Status filter until then.
+let draftSynced = false;
 
 function createCell(text) {
   const td = document.createElement('td');
@@ -73,6 +79,7 @@ function createRankCell(player) {
 // of which one is visually hidden.
 function createStatusCell(player) {
   const td = document.createElement('td');
+  td.className = 'status-column';
   const label = player.drafted ? 'Gedraftet' : 'Verfügbar';
   td.setAttribute('aria-label', label);
 
@@ -143,15 +150,27 @@ function getFilters() {
 
 const PLAYER_TABLE_COLUMN_COUNT = 7;
 
+// Hides the Status column (table + CSS class, see style.css) until a draft
+// has actually been synced - before that every player is trivially
+// "Verfügbar", which is confusing rather than informative. Also gates the
+// Draft-Status filter, since filtering by drafted/available means nothing
+// yet either.
+function updateDraftDependentUI() {
+  tableEl.classList.toggle('draft-not-synced', !draftSynced);
+  draftedFilter.disabled = !draftSynced;
+  if (!draftSynced) draftedFilter.value = '';
+}
+
 // UC-001 main flow, step 3 / UC-003 main flow.
 function renderTable() {
+  updateDraftDependentUI();
   const filtered = applyFilters(sortPlayersByRank(allPlayers), getFilters());
   tbodyEl.innerHTML = '';
 
   if (filtered.length === 0) {
     const row = document.createElement('tr');
     const td = document.createElement('td');
-    td.colSpan = PLAYER_TABLE_COLUMN_COUNT;
+    td.colSpan = draftSynced ? PLAYER_TABLE_COLUMN_COUNT : PLAYER_TABLE_COLUMN_COUNT - 1;
     td.className = 'empty-state';
     td.textContent = 'Keine Spieler entsprechen den aktuellen Filtern.';
     row.appendChild(td);
@@ -254,6 +273,7 @@ async function loadDraft({ silent = false } = {}) {
     const picks = await fetchDraftPicks(draftId);
     const { players, matched, unmatchedPicks } = matchDraftedPlayers(allPlayers, picks);
     allPlayers = players;
+    draftSynced = true;
     renderAll();
     if (!silent) messages.showSuccess(`${picks.length} Picks geladen, ${matched} Spieler zugeordnet.`);
     // UC-002 AF-3: surface unmatched picks in the console for quick
@@ -273,6 +293,8 @@ async function loadDraft({ silent = false } = {}) {
 }
 
 async function init() {
+  initThemeToggle(document.getElementById('themeToggle'));
+
   const config = await loadConfig();
 
   try {
