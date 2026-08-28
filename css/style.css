@@ -30,6 +30,12 @@
     border-left: 4px solid #28a745;
 }
 
+/* NFR-005: keeps horizontal overflow contained to the table itself on
+   narrow screens, instead of the whole page scrolling sideways. */
+.table-scroll {
+    overflow-x: auto;
+}
+
 #playersTable th {
     position: sticky;
     top: 0;
@@ -60,6 +66,7 @@
 
 .stats-badges {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem 0;
 }

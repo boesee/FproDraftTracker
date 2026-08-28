@@ -88,20 +88,22 @@
                 <button id="clearFiltersBtn" type="button" class="secondary outline">Filter zurücksetzen</button>
             </details>
 
-            <table id="playersTable">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Spieler</th>
-                        <th>Position</th>
-                        <th>Team</th>
-                        <th>Gegner</th>
-                        <th>Matchup</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody id="playersTableBody"></tbody>
-            </table>
+            <div class="table-scroll">
+                <table id="playersTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Spieler</th>
+                            <th>Position</th>
+                            <th>Team</th>
+                            <th>Gegner</th>
+                            <th>Matchup</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="playersTableBody"></tbody>
+                </table>
+            </div>
 
             <p id="rankEstimateNote" class="rank-estimate-note" hidden>
                 * Rang basiert auf Rest-of-Season-Daten, da für diese Woche keine Daten vorliegen.
