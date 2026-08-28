@@ -17,10 +17,15 @@
 }
 
 /* FantasyPros-style "pills-wrap": the position-ranking switch, replacing
-   the old Position dropdown filter. Sits directly above the table. */
+   the old Position dropdown filter. Sits directly above the table.
+   justify-content: flex-start overrides Pico's own <nav> default of
+   space-between (meant for "logo left, links right" navbars), which
+   otherwise stretches the 5 pills across the full container width on a
+   wide desktop screen instead of keeping them together. */
 .pills-wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 0.5rem;
     margin: 1rem 0;
 }
