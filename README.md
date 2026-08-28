@@ -84,6 +84,16 @@ Fehlt die Datei oder ist sie veraltet, bleibt das Matchup-Rating in der App einf
    Repository-Struktur (inkl. `config/`, `data/`, `scripts/lib/`) steht in
    [`docs/architecture.md`](docs/architecture.md#repository-struktur-übersicht).
 
+### Tests
+
+Unit-Tests (Node's eingebauter Test-Runner, keine Abhängigkeiten) für die reine Logik in `js/` und
+`scripts/lib/` (Filter/Suche, Statistik, Freshness-Berechnung, Namensabgleich, FantasyPros-Mapping,
+ESPN-Gegner-Mapping, HTML-Entity-Decoding):
+
+```sh
+npm test
+```
+
 ### Rankings-Pipeline (GitHub Actions)
 
 Der Workflow [`update-rankings.yml`](.github/workflows/update-rankings.yml) benötigt zwei

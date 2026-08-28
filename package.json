@@ -1,0 +1,11 @@
+{
+  "name": "fprodrafttracker",
+  "private": true,
+  "description": "Fantasy Football Draft Tracker - vanilla JS frontend + GitHub Actions data pipeline. No build step, no runtime dependencies; this file exists only to run the test suite.",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

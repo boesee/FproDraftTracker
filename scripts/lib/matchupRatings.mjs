@@ -17,6 +17,23 @@ const MATCHUP_RATINGS_REPO_RELATIVE_PATH = 'config/matchup-ratings.json';
 // config/matchup-ratings.json. A leading `//` comment line in that file
 // (documenting the exact command above) is tolerated and stripped before
 // parsing.
+// Split out from loadMatchupRatings so the parsing itself (leading-comment
+// stripping, JSON parsing, rating extraction) is testable without touching
+// the filesystem. Throws on malformed input; the caller decides how to
+// handle that (see loadMatchupRatings).
+export function parseMatchupRatings(raw) {
+  const withoutLeadingComment = raw.replace(/^\s*\/\/.*(\r?\n|$)/, '');
+  const advancedMetrics = JSON.parse(withoutLeadingComment);
+  const ratings = {};
+  for (const [playerId, entry] of Object.entries(advancedMetrics)) {
+    const rating = parseFloat(entry?.matchup_rating?.rating);
+    if (!Number.isNaN(rating)) {
+      ratings[playerId] = rating;
+    }
+  }
+  return ratings;
+}
+
 export async function loadMatchupRatings() {
   let raw;
   try {
@@ -30,16 +47,7 @@ export async function loadMatchupRatings() {
   }
 
   try {
-    const withoutLeadingComment = raw.replace(/^\s*\/\/.*(\r?\n|$)/, '');
-    const advancedMetrics = JSON.parse(withoutLeadingComment);
-    const ratings = {};
-    for (const [playerId, entry] of Object.entries(advancedMetrics)) {
-      const rating = parseFloat(entry?.matchup_rating?.rating);
-      if (!Number.isNaN(rating)) {
-        ratings[playerId] = rating;
-      }
-    }
-    return ratings;
+    return parseMatchupRatings(raw);
   } catch (err) {
     console.error('Could not parse config/matchup-ratings.json, continuing without matchup ratings:', err.message);
     return {};

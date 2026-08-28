@@ -1,8 +1,8 @@
 # Node.js dependencies
 node_modules/
 
-# Package lock files
-package.json
+# Package lock files (package.json itself IS tracked - it just declares the
+# test script, no dependencies, so there's no lockfile to generate anyway)
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
