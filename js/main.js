@@ -67,6 +67,42 @@ function createCell(text) {
   return td;
 }
 
+// Colors an injury tag by severity; anything not in this map (an
+// unanticipated status) falls back to a neutral grey rather than being
+// silently unstyled.
+const INJURY_STATUS_CLASSES = {
+  Q: 'injury-questionable',
+  D: 'injury-doubtful',
+  O: 'injury-out',
+  IR: 'injury-ir',
+};
+
+// FantasyPros injuries API enrichment (scripts/lib/injuries.mjs). Shown as
+// a short colored tag right after the player name; the probability is
+// only in the tooltip, not the tag itself, to keep the table compact -
+// and it's omitted entirely for "Out"/"Injured Reserve" (see
+// resolveProbability, injuries.mjs), where it would just be redundant.
+function createInjuryTag(player) {
+  const tag = document.createElement('span');
+  const colorClass = INJURY_STATUS_CLASSES[player.injuryStatusShort] ?? 'injury-other';
+  tag.className = `injury-tag ${colorClass}`;
+  tag.textContent = player.injuryStatusShort;
+  tag.title =
+    player.injuryProbability != null
+      ? `${player.injuryStatus} – ${player.injuryProbability}% Spielwahrscheinlichkeit`
+      : player.injuryStatus;
+  return tag;
+}
+
+function createPlayerCell(player) {
+  const td = document.createElement('td');
+  td.textContent = player.player_name;
+  if (player.injuryStatusShort) {
+    td.appendChild(createInjuryTag(player));
+  }
+  return td;
+}
+
 const POSITION_RANKED_PILLS = ['QB', 'RB', 'WR'];
 
 // On a QB/RB/WR pill, the "#" column shows that position's own rank
@@ -214,7 +250,7 @@ function renderTable() {
     if (player.drafted) row.classList.add('drafted-row');
     row.append(
       createRankCell(player),
-      createCell(player.player_name),
+      createPlayerCell(player),
       createCell(player.position),
       createCell(player.team),
       createCell(player.opponent ?? '-'),

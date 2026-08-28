@@ -40,8 +40,8 @@ auf der offiziellen API basierenden Prozess.
 - **Skript:** [`scripts/update-rankings.mjs`](../scripts/update-rankings.mjs) orchestriert nur;
   die eigentliche Logik liegt modular in [`scripts/lib/`](../scripts/lib/)
   (`config.mjs`, `nflSchedule.mjs`, `fantasyProsRankings.mjs`,
-  `espnOpponents.mjs`, `matchupRatings.mjs`) — analog zur Modul-Aufteilung
-  im Frontend (`js/filters.js`, `js/stats.js`, etc.).
+  `espnOpponents.mjs`, `matchupRatings.mjs`, `injuries.mjs`) — analog zur
+  Modul-Aufteilung im Frontend (`js/filters.js`, `js/stats.js`, etc.).
 - **Endpoint:** `GET https://api.fantasypros.com/public/v2/json/nfl/{season}/rankings?week={week}&range=true`
   (Auth über Header `x-api-key`). Die Antwort liefert pro Spieler alle
   Scoring-Formate und Positionsgruppen verschachtelt unter
@@ -249,6 +249,48 @@ Login-Automatisierung, kein Puppeteer/Headless-Browser in der Pipeline.
 - Bewusster Nachteil: Die Datei veraltet, sobald sich die Rankings ändern,
   bis sie manuell neu eingefügt wird — akzeptiert, da es sich um ein
   Nice-to-have-Attribut handelt, nicht um die Kern-Rankings.
+
+## Verletzungsstatus (FantasyPros Injuries API)
+
+Anders als das Matchup-Rating ist der Verletzungsstatus über eine reguläre,
+mit demselben `x-api-key` authentifizierte FantasyPros-API verfügbar —
+keine Ausnahme vom "kein Scraping"-Grundsatz nötig.
+
+- **Endpoint:** `GET https://api.fantasypros.com/public/v2/json/nfl/injuries?year={season}&week={week}`
+  (`scripts/lib/injuries.mjs`, `fetchInjuries`). Läuft parallel zu
+  Rankings-Abruf, ESPN-Gegner und Matchup-Ratings (`Promise.all`,
+  `scripts/update-rankings.mjs`).
+- **Mapping:** Antwort liefert pro verletztem Spieler `player_id`,
+  `status` (Klartext, z. B. "Questionable"), `status_short` und
+  `probability_of_playing` (Dezimalstring, z. B. "0.88797"). Gemappt auf
+  eine `player_id -> {status, statusShort, probability}`-Map
+  (`mapInjuries`, testbar ohne Netzwerkzugriff, analog zu
+  `parseMatchupRatings`), anschliessend pro Spieler in `mapPlayers`
+  eingereichert (`fantasyProsRankings.mjs`) — die meisten Spieler haben
+  keinen Eintrag (nicht verletzt), `injuryStatus`/`injuryStatusShort`/
+  `injuryProbability` bleiben dann `null`.
+- **Korrektur eines API-Fehlers:** `status_short` der API ist für
+  "Questionable" nachweislich falsch (liefert "O" statt "Q", bestätigt
+  anhand einer echten Antwort) — `mapInjuries` überschreibt das gezielt
+  für bekannte Fehlerfälle (`STATUS_SHORT_OVERRIDES`), statt der API
+  blind zu vertrauen oder eine komplette eigene Status-Tabelle zu raten.
+- **`probability_of_playing` bewusst nicht immer angezeigt:** Bei "Out"
+  und "Injured Reserve" impliziert der Status bereits, dass der Spieler
+  nicht spielt — eine zusätzliche, praktisch immer nahe 0 % liegende
+  Prozentzahl wäre redundant, nicht informativ. `mapInjuries` liefert für
+  diese beiden Status bewusst `probability: null`.
+- **Ausfallsicherheit:** Wie ESPN-Gegner und Matchup-Rating ein
+  Nice-to-have, kein Kern-Feature — ein Fetch-Fehler wird geloggt, die
+  Pipeline läuft mit einer leeren Injuries-Map weiter (kein Spieler zeigt
+  einen Verletzungs-Tag), statt den gesamten Lauf abzubrechen.
+- **Frontend:** Ein farbiges Kurz-Tag direkt hinter dem Spielernamen
+  (`js/main.js`, `createInjuryTag`) — Q (gelb), D (orange), O (rot), IR
+  (dunkelrot), unbekannte Status grau. Tooltip zeigt den vollen
+  Klartext-Status plus Prozentzahl (wenn vorhanden). Feste, gesättigte
+  Farben mit weisser Schrift statt Picos theme-abhängiger Variablen —
+  dadurch automatisch in Light und Dark Mode lesbar, ohne eigene
+  Dark-Mode-Anpassung (anders als die pastellfarbenen Banner an anderer
+  Stelle in dieser Datei).
 
 ## Sleeper-Draft-Abgleich
 

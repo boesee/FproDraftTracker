@@ -9,12 +9,12 @@ Tracke deinen Fantasy Football Draft mit aktuellen FantasyPros-Rankings und Slee
 
 - **Automatisches Laden** der aktuellen Rankings aus `data/rankings.json`
 - **Aktualitäts-Banner**, der anzeigt, wann die Rankings zuletzt mit der FantasyPros-API synchronisiert wurden
-- **Ranking-Art-Banner**: macht transparent, dass es sich um ein In-Season-Wochen-Ranking (Woche/Saison) mit PPR-Scoring handelt
+- **Ranking/Scoring-Auswahl**: macht transparent, dass es sich aktuell um ein Wochen-Ranking mit PPR-Scoring handelt (Woche/Saison als Hinweistext); als Auswahlfelder angelegt, erweiterbar auf weitere Ranking-Typen/Scoring-Formate
 - **Positions-Pills** (Overall/QB/RB/WR/Flex, FantasyPros-Style): wechseln zwischen der Overall- und den positionsspezifischen Ranglisten
 - **Draft-Abgleich** über die Sleeper-API anhand einer Draft-ID
 - **Filter & Suche**: maximaler Rang, Draft-Status (erst nach Draft-Abgleich verfügbar), Volltextsuche (inkl. `spalte:wert`-Syntax)
 - **Statistik-Übersicht**: Spieler gesamt / gematched / ROS-Fallback / verfügbar / gedraftet
-- **Gegner** pro Spieler (ESPN Scoreboard API) und optional ein **Matchup-Rating** (Sterne)
+- **Gegner** pro Spieler (ESPN Scoreboard API), optional ein **Matchup-Rating** (Sterne), und ein **Verletzungsstatus-Tag** (FantasyPros Injuries API)
 - Responsive UI auf Basis von [Pico CSS](https://picocss.com/)
 
 Die Rankings werden nicht mehr gescraped, sondern über einen GitHub-Actions-Workflow
@@ -93,7 +93,7 @@ Fehlt die Datei oder ist sie veraltet, bleibt das Matchup-Rating in der App einf
 
 Unit-Tests (Node's eingebauter Test-Runner, keine Abhängigkeiten) für die reine Logik in `js/` und
 `scripts/lib/` (Filter/Suche, Statistik, Freshness-Berechnung, Namensabgleich, FantasyPros-Mapping,
-ESPN-Gegner-Mapping, HTML-Entity-Decoding):
+ESPN-Gegner-Mapping, Verletzungsstatus-Mapping, HTML-Entity-Decoding):
 
 ```sh
 npm test

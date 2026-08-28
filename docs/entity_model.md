@@ -51,6 +51,9 @@ Ein einzelner Spieler-Eintrag innerhalb eines `RANKINGS_SNAPSHOT`.
 | team | NFL-Team-Kürzel | String | 5 | Not Null |
 | opponent | Gegner in der aktuellen Woche (z. B. "vs NE" / "at SEA"), aus der ESPN Scoreboard API (siehe architecture.md) | String | 10 | Optional (Bye Week oder ESPN-Abruf fehlgeschlagen) |
 | matchupRating | FantasyPros Matchup-Rating (0–5), aus der manuell gepflegten `config/matchup-ratings.json` (siehe architecture.md) | Decimal | – | Optional (Datei fehlt/veraltet oder Spieler nicht enthalten) |
+| injuryStatus | Verletzungsstatus im Klartext (z. B. "Questionable", "Out", "Injured Reserve") aus der FantasyPros Injuries API (siehe architecture.md) | String | 30 | Optional (Spieler nicht verletzt/nicht in der API-Antwort enthalten) |
+| injuryStatusShort | Kurzform des Verletzungsstatus für die Tabellen-Anzeige (z. B. "Q", "O", "IR"); korrigiert einen bekannten Fehler in der API (siehe architecture.md) | String | 5 | Optional, wie `injuryStatus` |
+| injuryProbability | Spielwahrscheinlichkeit in Prozent (0–100), aus `probability_of_playing`; bei "Out"/"Injured Reserve" bewusst `null` statt eines (redundanten) Werts nahe 0 | Integer | – | Optional (kein Verletzungsstatus, oder Status "Out"/"Injured Reserve") |
 
 `drafted` ist kein gespeichertes Attribut, sondern ein zur Laufzeit
 abgeleiteter Zustand (siehe Beziehung zu `DRAFT_PICK` oben).

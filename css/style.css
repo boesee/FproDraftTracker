@@ -16,6 +16,42 @@
     white-space: nowrap;
 }
 
+/* Injury status tag, shown right after the player name (FantasyPros
+   injuries API, scripts/lib/injuries.mjs). Solid, saturated colors with
+   white text rather than Pico's theme-aware variables - already reads
+   correctly in both light and dark mode without a separate override,
+   unlike the pastel banners elsewhere in this file. */
+.injury-tag {
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 0.05rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    vertical-align: middle;
+}
+
+.injury-tag.injury-questionable {
+    background: #d97706;
+}
+
+.injury-tag.injury-doubtful {
+    background: #ea580c;
+}
+
+.injury-tag.injury-out {
+    background: #dc2626;
+}
+
+.injury-tag.injury-ir {
+    background: #7f1d1d;
+}
+
+.injury-tag.injury-other {
+    background: #6b7280;
+}
+
 /* FantasyPros-style "pills-wrap": the position-ranking switch, replacing
    the old Position dropdown filter. Sits directly above the table.
    justify-content: flex-start overrides Pico's own <nav> default of
