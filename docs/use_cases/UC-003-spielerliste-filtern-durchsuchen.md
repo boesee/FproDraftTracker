@@ -30,16 +30,7 @@
 
 ## Alternative Flows
 
-### AF-1: Nach maximalem Rang filtern
-
-- **Trigger:** (step 1) Der Fantasy-Football-Manager gibt zusätzlich oder
-  stattdessen einen maximalen Rang ein.
-1. Das System zeigt in der Tabelle nur Spieler mit `rank` kleiner oder
-   gleich dem eingegebenen Wert.
-
-Use case continues at step 4.
-
-### AF-2: Nach Draft-Status filtern
+### AF-1: Nach Draft-Status filtern
 
 - **Trigger:** (step 1) Der Fantasy-Football-Manager wählt zusätzlich oder
   stattdessen den Draft-Status "Verfügbar" oder "Gedraftet".
@@ -48,25 +39,27 @@ Use case continues at step 4.
 
 Use case continues at step 4.
 
-### AF-3: Volltextsuche verwenden
+### AF-2: Volltextsuche verwenden
 
 - **Trigger:** (step 1) Der Fantasy-Football-Manager gibt zusätzlich oder
   stattdessen einen Suchbegriff ein.
 1. Erkennt das System die Syntax `spalte:wert` (siehe BR-002), filtert es
-   gezielt auf die angegebene Spalte.
+   gezielt auf die angegebene Spalte — inklusive des maximalen Rangs
+   (`rank:wert`, siehe BR-005) und des Verletzungsstatus
+   (`injury:wert`, siehe BR-002).
 2. Andernfalls durchsucht das System alle Spaltenwerte jedes Spielers nach
    dem Suchbegriff (siehe BR-001).
 
 Use case continues at step 4.
 
-### AF-4: Filter zurücksetzen
+### AF-3: Filter zurücksetzen
 
 - **Trigger:** (step 4) Mindestens ein Filter- oder Suchkriterium ist
   aktiv.
 1. Der Fantasy-Football-Manager löst "Filter zurücksetzen" aus.
-2. Das System setzt Positions-Pill (zurück auf "Overall"), maximalen Rang,
-   Draft-Status und Suchfeld zurück und zeigt wieder die vollständige,
-   nach der Overall-Rangliste sortierte Spielerliste.
+2. Das System setzt Positions-Pill (zurück auf "Overall"), Draft-Status
+   und Suchfeld zurück und zeigt wieder die vollständige, nach der
+   Overall-Rangliste sortierte Spielerliste.
 
 Use case ends.
 
@@ -77,14 +70,14 @@ Use case ends.
 - Die angezeigte Tabelle enthält nur Spieler, die allen aktiven
   Filterkriterien entsprechen (siehe BR-004).
 - Aktive Filterkriterien bleiben sichtbar eingestellt, bis der Manager sie
-  ändert oder zurücksetzt (AF-4).
+  ändert oder zurücksetzt (AF-3).
 
 ### Failure
 
-- Ein ungültiger Wert im Rang-Filter (z. B. nicht-numerisch) wird ignoriert
-  und bleibt wirkungslos, ohne dass eine Fehlermeldung erscheint (siehe
-  BR-005); der Manager erhält dadurch kein Feedback, warum dieses Kriterium
-  nicht greift.
+- Ein ungültiger Wert bei `rank:` (z. B. nicht-numerisch, "rank:abc") wird
+  ignoriert und bleibt wirkungslos, ohne dass eine Fehlermeldung erscheint
+  (siehe BR-005); der Manager erhält dadurch kein Feedback, warum dieses
+  Kriterium nicht greift.
 
 ## Business Rules
 
@@ -95,16 +88,25 @@ Use case ends.
   filtert ausschließlich auf das benannte Feld. Existiert dieses Feld bei
   einem Spieler nicht, gilt der Spieler für diese Suche als nicht
   passend (kein Treffer) — es erfolgt kein Rückfall auf die
-  Volltextsuche.
+  Volltextsuche. Einige Spaltennamen sind lesbarer benannt als das
+  zugrunde liegende `PLAYER`-Feld: `injury:` durchsucht
+  `injuryStatusShort` (z. B. "injury:q" für alle mit Status
+  "Questionable"). Unterstützte Spalten (nicht abschliessend, jede
+  weitere `PLAYER`-Eigenschaft funktioniert ebenfalls): `team`,
+  `position`, `opponent`, `rank` (siehe BR-005, abweichende Semantik),
+  `injury`.
 - **BR-003:** Die Positions-Pill "Flex" schließt alle Spieler ein, deren
   Position RB, WR oder TE enthält (auch bei Mehrfachpositionen wie
   "RB/WR").
-- **BR-004:** Alle aktiven Filterkriterien (Positions-Pill, maximaler Rang,
-  Draft-Status, Suche) werden mit logischem UND kombiniert.
-- **BR-005:** Ein nicht-numerischer Wert im Rang-Filter wird ignoriert;
-  dieses Kriterium bleibt dann wirkungslos, ohne die übrigen Filter zu
-  beeinflussen. Er bezieht sich dabei stets auf den Overall-Rang (`rank`),
-  unabhängig von der aktiven Positions-Pill.
+- **BR-004:** Alle aktiven Filterkriterien (Positions-Pill, Draft-Status,
+  Suche) werden mit logischem UND kombiniert.
+- **BR-005:** `rank:wert` ist kein Substring-Abgleich wie die übrigen
+  `spalte:wert`-Suchen (BR-002), sondern filtert numerisch auf Spieler mit
+  `rank` kleiner oder gleich dem angegebenen Wert ("maximaler Rang") — er
+  bezieht sich dabei stets auf den Overall-Rang, unabhängig von der
+  aktiven Positions-Pill. Ein nicht-numerischer Wert (z. B. "rank:abc")
+  wird ignoriert; dieses Kriterium bleibt dann wirkungslos, ohne die
+  übrigen Filter zu beeinflussen.
 - **BR-006:** Bei aktiver "QB"-, "RB"- oder "WR"-Pill zeigt und sortiert
   das System nach dem positionsspezifischen Rang dieser Position (z. B.
   "QB1", "QB2", ... statt des Overall-Rangs); bei "Overall" und "Flex"

@@ -1,5 +1,16 @@
 /* Fantasy Football Draft Tracker - custom styles on top of Pico CSS. */
 
+.search-hint-list {
+    margin: 0.15rem 0 0;
+    padding-left: 1.1rem;
+    font-size: 0.8rem;
+    color: var(--pico-muted-color);
+}
+
+.search-hint-list li {
+    margin: 0;
+}
+
 .app-header {
     display: flex;
     justify-content: space-between;

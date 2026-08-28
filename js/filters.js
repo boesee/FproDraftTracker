@@ -4,6 +4,10 @@
 const FLEX_POSITIONS = ['RB', 'WR', 'TE'];
 const COLUMN_SEARCH_PATTERN = /^([a-z_]+):(.*)$/i;
 
+// Lets a friendlier search token stand in for the actual PLAYER field name
+// (see entity_model.md) - "injury:q" reads better than "injurystatusshort:q".
+const COLUMN_ALIASES = { injury: 'injuryStatusShort' };
+
 // BR-002: `column:value` targets one field; anything else falls back to
 // full-text search (BR-001).
 function parseSearch(searchTerm) {
@@ -15,7 +19,6 @@ function parseSearch(searchTerm) {
 
 export function applyFilters(players, filters) {
   const { column, value } = parseSearch(filters.search);
-  const maxRank = parseInt(filters.maxRank, 10); // BR-005: NaN => ignored below
 
   return players.filter((player) => {
     // BR-003: "FLEX" includes any player whose position contains RB/WR/TE.
@@ -26,16 +29,25 @@ export function applyFilters(players, filters) {
       if (!matchesFlex && !matchesExact) return false;
     }
 
-    if (!Number.isNaN(maxRank) && player.rank > maxRank) return false;
-
     if (filters.draftStatus === 'available' && player.drafted) return false;
     if (filters.draftStatus === 'drafted' && !player.drafted) return false;
+
+    // BR-006: `rank:` is a numeric "at most this rank" filter (replaces
+    // the old dedicated Maximaler-Rang input) rather than a substring
+    // match on the other spalte:wert tokens below. An unparseable value
+    // (e.g. "rank:abc") is ignored gracefully, same as the old input's
+    // BR-005 behavior, instead of matching zero players.
+    if (column === 'rank') {
+      const maxRank = parseInt(value, 10);
+      return Number.isNaN(maxRank) || player.rank <= maxRank;
+    }
 
     if (column) {
       // BR-002: an unknown column means no match - no fallback to
       // full-text search.
-      if (!Object.prototype.hasOwnProperty.call(player, column)) return false;
-      return String(player[column] ?? '').toLowerCase().includes(value);
+      const field = COLUMN_ALIASES[column] ?? column;
+      if (!Object.prototype.hasOwnProperty.call(player, field)) return false;
+      return String(player[field] ?? '').toLowerCase().includes(value);
     }
 
     if (value) {
