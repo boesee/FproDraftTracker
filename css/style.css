@@ -30,6 +30,29 @@
     border-left: 4px solid #28a745;
 }
 
+/* These three use hardcoded light pastel backgrounds rather than Pico's
+   theme-aware --pico-* variables, so they need their own dark-mode swap
+   now that data-theme is no longer forced to "light" in index.html. */
+@media (prefers-color-scheme: dark) {
+    .rankings-banner.stale {
+        background: #4d3800;
+        border-color: #a6791b;
+        color: #ffd873;
+    }
+
+    .message-error {
+        background: #4a1f24;
+        color: #ffb3ba;
+        border-left-color: #f85149;
+    }
+
+    .message-success {
+        background: #10281c;
+        color: #7ee2a8;
+        border-left-color: #3fb950;
+    }
+}
+
 /* NFR-005: keeps horizontal overflow contained to the table itself on
    narrow screens, instead of the whole page scrolling sideways. */
 .table-scroll {
@@ -101,6 +124,17 @@
 
 .drafted-row {
     opacity: 0.6;
+}
+
+/* Specificity must match/beat #playersTable td:first-child above (same ID
+   + element weight) since this cell, as the row's only child, is also its
+   first-child and would otherwise inherit that rule's right-align/3em
+   width instead of being centered. */
+#playersTable td.empty-state {
+    text-align: center;
+    color: var(--pico-muted-color);
+    padding: 1.5rem 1rem;
+    width: auto;
 }
 
 .draft-sync {
