@@ -81,6 +81,26 @@ test('mapPlayers: matchupRating is null when the player id has no rating', () =>
   assert.equal(player.matchupRating, null);
 });
 
+test('mapPlayers: enriches injury fields keyed by numeric player id', () => {
+  const injuries = { 42: { status: 'Questionable', statusShort: 'Q', probability: 89 } };
+  const [player] = mapPlayers([rawPlayer({ id: 42 })], {}, {}, injuries);
+  assert.equal(player.injuryStatus, 'Questionable');
+  assert.equal(player.injuryStatusShort, 'Q');
+  assert.equal(player.injuryProbability, 89);
+});
+
+test('mapPlayers: injury fields are null for a player with no injury entry (the common case)', () => {
+  const [player] = mapPlayers([rawPlayer({ id: 42 })], {}, {}, {});
+  assert.equal(player.injuryStatus, null);
+  assert.equal(player.injuryStatusShort, null);
+  assert.equal(player.injuryProbability, null);
+});
+
+test('mapPlayers: injury fields are null when the injuries map is omitted entirely', () => {
+  const [player] = mapPlayers([rawPlayer({ id: 42 })], {}, {});
+  assert.equal(player.injuryStatus, null);
+});
+
 test('mapPlayers: result is sorted ascending by rank regardless of input order', () => {
   const players = mapPlayers(
     [

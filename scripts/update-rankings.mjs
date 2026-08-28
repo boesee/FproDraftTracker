@@ -9,6 +9,7 @@
 // - fantasyProsRankings.mjs: the FantasyPros fetch + rank/position mapping
 // - espnOpponents.mjs: opponent enrichment via ESPN's scoreboard
 // - matchupRatings.mjs: the manually maintained matchup-rating snapshot
+// - injuries.mjs: injury status enrichment via FantasyPros' injuries API
 
 import { writeFile } from 'node:fs/promises';
 import { loadConfig } from './lib/config.mjs';
@@ -16,6 +17,7 @@ import { currentNflSeason, currentNflWeek } from './lib/nflSchedule.mjs';
 import { fetchRankings, mapPlayers } from './lib/fantasyProsRankings.mjs';
 import { fetchOpponents } from './lib/espnOpponents.mjs';
 import { loadMatchupRatings, getMatchupRatingsUpdatedAt } from './lib/matchupRatings.mjs';
+import { fetchInjuries } from './lib/injuries.mjs';
 
 const OUTPUT_PATH = new URL('../data/rankings.json', import.meta.url);
 
@@ -34,13 +36,14 @@ async function main() {
   const season = config.season ?? currentNflSeason();
   const week = config.week ?? currentNflWeek();
 
-  const [data, opponents, matchupRatings] = await Promise.all([
+  const [data, opponents, matchupRatings, injuries] = await Promise.all([
     fetchRankings(season, week),
     fetchOpponents(season, week),
     loadMatchupRatings(),
+    fetchInjuries(season, week),
   ]);
   const rawPlayers = data.players ?? [];
-  const players = mapPlayers(rawPlayers, opponents, matchupRatings);
+  const players = mapPlayers(rawPlayers, opponents, matchupRatings, injuries);
 
   if (players.length < MIN_PLAYERS) {
     console.error(

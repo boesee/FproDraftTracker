@@ -60,7 +60,7 @@ function extractPositionLabel(player, scoring) {
   return typeof positionalRank === 'number' ? `${positionId}${positionalRank}` : positionId;
 }
 
-export function mapPlayers(rawPlayers, opponents, matchupRatings) {
+export function mapPlayers(rawPlayers, opponents, matchupRatings, injuries = {}) {
   return rawPlayers
     .map((p) => {
       const scoring = resolveScoringBucket(p);
@@ -74,6 +74,8 @@ export function mapPlayers(rawPlayers, opponents, matchupRatings) {
         console.log(`Fallback (${FALLBACK_SCORING}) used for id=${p.id} "${p.player_name}"`);
       }
 
+      const injury = injuries[p.id] ?? null;
+
       return {
         player_id: p.id ?? null,
         rank: extractOverallRank(p, scoring),
@@ -85,6 +87,9 @@ export function mapPlayers(rawPlayers, opponents, matchupRatings) {
         team: p.team_id ?? '',
         opponent: opponents[p.team_id] ?? null,
         matchupRating: matchupRatings[String(p.id)] ?? null,
+        injuryStatus: injury?.status ?? null,
+        injuryStatusShort: injury?.statusShort ?? null,
+        injuryProbability: injury?.probability ?? null,
       };
     })
     .filter((p) => p && p.player_name && p.rank !== null)
