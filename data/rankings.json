@@ -1,6 +1,8 @@
 {
-  "generatedAt": "2026-08-28T20:05:14.675Z",
+  "generatedAt": "2026-08-28T21:03:10.072Z",
   "source": "fantasypros-api",
+  "season": 2026,
+  "week": 1,
   "matchupRatingsUpdatedAt": "2026-08-27T14:01:28Z",
   "players": [
     {
@@ -13,7 +15,10 @@
       "position": "RB1",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": 2.7
+      "matchupRating": 2.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19788,
@@ -25,7 +30,10 @@
       "position": "WR1",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": 2.2
+      "matchupRating": 2.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19196,
@@ -37,7 +45,10 @@
       "position": "QB1",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": 3.8
+      "matchupRating": 3.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23133,
@@ -49,7 +60,10 @@
       "position": "RB2",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": 1.7
+      "matchupRating": 1.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23180,
@@ -61,7 +75,10 @@
       "position": "WR2",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 3.2
+      "matchupRating": 3.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17298,
@@ -73,7 +90,10 @@
       "position": "QB2",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17233,
@@ -85,7 +105,10 @@
       "position": "QB3",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": 1.8
+      "matchupRating": 1.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19275,
@@ -97,7 +120,10 @@
       "position": "QB4",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": 4.5
+      "matchupRating": 4.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23070,
@@ -109,7 +135,10 @@
       "position": "WR3",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19799,
@@ -121,7 +150,10 @@
       "position": "WR4",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": 3.5
+      "matchupRating": 3.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18635,
@@ -133,7 +165,10 @@
       "position": "QB5",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": 1.5
+      "matchupRating": 1.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16393,
@@ -145,7 +180,10 @@
       "position": "RB3",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 4
+      "matchupRating": 4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 15600,
@@ -157,7 +195,10 @@
       "position": "QB6",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": 1.2
+      "matchupRating": 1.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22902,
@@ -169,7 +210,10 @@
       "position": "QB7",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 1.8
+      "matchupRating": 1.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23046,
@@ -181,7 +225,10 @@
       "position": "QB8",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19217,
@@ -193,7 +240,10 @@
       "position": "RB4",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19780,
@@ -205,7 +255,10 @@
       "position": "QB9",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 2.3
+      "matchupRating": 2.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23160,
@@ -217,7 +270,10 @@
       "position": "QB11",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23084,
@@ -229,7 +285,10 @@
       "position": "QB10",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 15501,
@@ -241,7 +300,10 @@
       "position": "QB12",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": 2.5
+      "matchupRating": 2.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23136,
@@ -253,7 +315,10 @@
       "position": "RB5",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": 4.5
+      "matchupRating": 4.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 9451,
@@ -265,7 +330,10 @@
       "position": "QB13",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 3.9
+      "matchupRating": 3.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19797,
@@ -277,7 +345,10 @@
       "position": "QB14",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 4.7
+      "matchupRating": 4.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17237,
@@ -289,7 +360,10 @@
       "position": "QB15",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": 4.3
+      "matchupRating": 4.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18600,
@@ -301,7 +375,10 @@
       "position": "QB16",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19236,
@@ -313,7 +390,10 @@
       "position": "WR6",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": 2.7
+      "matchupRating": 2.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19202,
@@ -325,7 +405,10 @@
       "position": "WR5",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": 1.9
+      "matchupRating": 1.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16413,
@@ -337,7 +420,10 @@
       "position": "QB17",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22910,
@@ -349,7 +435,10 @@
       "position": "QB18",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": 2.6
+      "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25989,
@@ -361,7 +450,10 @@
       "position": "RB6",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": 4.3
+      "matchupRating": 4.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19246,
@@ -373,7 +465,10 @@
       "position": "QB21",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": 3.5
+      "matchupRating": 3.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25324,
@@ -385,7 +480,10 @@
       "position": "RB7",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23096,
@@ -397,7 +495,10 @@
       "position": "QB20",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23499,
@@ -409,7 +510,10 @@
       "position": "QB19",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": 3.9
+      "matchupRating": 3.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25395,
@@ -421,7 +525,10 @@
       "position": "RB8",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 20130,
@@ -433,7 +540,10 @@
       "position": "WR7",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 20111,
@@ -445,7 +555,10 @@
       "position": "WR8",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17236,
@@ -457,7 +570,10 @@
       "position": "QB22",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17240,
@@ -469,7 +585,10 @@
       "position": "RB9",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23071,
@@ -481,7 +600,10 @@
       "position": "QB23",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": 1.5
+      "matchupRating": 1.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22958,
@@ -493,7 +615,10 @@
       "position": "RB10",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22900,
@@ -505,7 +630,10 @@
       "position": "QB24",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 4.4
+      "matchupRating": 4.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23163,
@@ -517,7 +645,10 @@
       "position": "WR9",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 15514,
@@ -529,7 +660,10 @@
       "position": "RB11",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18232,
@@ -541,7 +675,10 @@
       "position": "QB25",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23021,
@@ -553,7 +690,10 @@
       "position": "RB12",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22955,
@@ -565,7 +705,10 @@
       "position": "TE1",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23113,
@@ -577,7 +720,10 @@
       "position": "WR10",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18218,
@@ -589,7 +735,10 @@
       "position": "WR12",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22963,
@@ -601,7 +750,10 @@
       "position": "WR11",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": 2.1
+      "matchupRating": 2.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22739,
@@ -613,7 +765,10 @@
       "position": "RB13",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": 1.1
+      "matchupRating": 1.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22936,
@@ -625,7 +780,10 @@
       "position": "TE2",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 3.6
+      "matchupRating": 3.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 9001,
@@ -637,7 +795,10 @@
       "position": "QB26",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": 3.5
+      "matchupRating": 3.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19222,
@@ -649,7 +810,10 @@
       "position": "WR13",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19211,
@@ -661,7 +825,10 @@
       "position": "WR14",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": 2.3
+      "matchupRating": 2.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23059,
@@ -673,7 +840,10 @@
       "position": "RB14",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 3.7
+      "matchupRating": 3.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22982,
@@ -685,7 +855,10 @@
       "position": "RB16",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22916,
@@ -697,7 +870,10 @@
       "position": "WR15",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": 1.3
+      "matchupRating": 1.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 15642,
@@ -709,7 +885,10 @@
       "position": "QB27",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23072,
@@ -721,7 +900,10 @@
       "position": "WR16",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18269,
@@ -733,7 +915,10 @@
       "position": "RB15",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 11177,
@@ -745,7 +930,10 @@
       "position": "QB28",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": 4.5
+      "matchupRating": 4.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25417,
@@ -757,7 +945,10 @@
       "position": "WR17",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19210,
@@ -769,7 +960,10 @@
       "position": "RB17",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": 2.4
+      "matchupRating": 2.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24755,
@@ -781,7 +975,10 @@
       "position": "QB29",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19231,
@@ -793,7 +990,10 @@
       "position": "RB19",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 2.6
+      "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 11687,
@@ -805,7 +1005,10 @@
       "position": "QB30",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": 4.9
+      "matchupRating": 4.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27166,
@@ -817,7 +1020,10 @@
       "position": "RB18",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26122,
@@ -829,7 +1035,10 @@
       "position": "WR18",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": 3.3
+      "matchupRating": 3.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19790,
@@ -841,7 +1050,10 @@
       "position": "WR19",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": 2.2
+      "matchupRating": 2.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25403,
@@ -853,7 +1065,10 @@
       "position": "RB20",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18239,
@@ -865,7 +1080,10 @@
       "position": "RB21",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": 2.7
+      "matchupRating": 2.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23062,
@@ -877,7 +1095,10 @@
       "position": "WR20",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": 3.7
+      "matchupRating": 3.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 12123,
@@ -889,7 +1110,10 @@
       "position": "WR21",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18466,
@@ -901,7 +1125,10 @@
       "position": "WR22",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 1.5
+      "matchupRating": 1.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25981,
@@ -913,7 +1140,10 @@
       "position": "RB22",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": 4
+      "matchupRating": 4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26006,
@@ -925,7 +1155,10 @@
       "position": "TE3",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": 1.8
+      "matchupRating": 1.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23886,
@@ -937,7 +1170,10 @@
       "position": "WR23",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26434,
@@ -949,7 +1185,10 @@
       "position": "TE4",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23677,
@@ -961,7 +1200,10 @@
       "position": "WR25",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 12119,
@@ -973,7 +1215,10 @@
       "position": "WR24",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 4.4
+      "matchupRating": 4.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27016,
@@ -985,7 +1230,10 @@
       "position": "WR26",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": 3.9
+      "matchupRating": 3.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25391,
@@ -997,7 +1245,10 @@
       "position": "RB24",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24209,
@@ -1009,7 +1260,10 @@
       "position": "RB23",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25411,
@@ -1021,7 +1275,10 @@
       "position": "WR27",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": 3.7
+      "matchupRating": 3.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25409,
@@ -1033,7 +1290,10 @@
       "position": "WR28",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": 1.7
+      "matchupRating": 1.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23106,
@@ -1045,7 +1305,10 @@
       "position": "WR29",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23064,
@@ -1057,7 +1320,10 @@
       "position": "WR31",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 2.6
+      "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18219,
@@ -1069,7 +1335,10 @@
       "position": "WR30",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18705,
@@ -1081,7 +1350,10 @@
       "position": "RB25",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 3.9
+      "matchupRating": 3.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17253,
@@ -1093,7 +1365,10 @@
       "position": "WR33",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": 2.3
+      "matchupRating": 2.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24706,
@@ -1105,7 +1380,10 @@
       "position": "WR32",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22726,
@@ -1117,7 +1395,10 @@
       "position": "RB26",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": 1.1
+      "matchupRating": 1.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26009,
@@ -1129,7 +1410,10 @@
       "position": "WR34",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 3.2
+      "matchupRating": 3.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 20164,
@@ -1141,7 +1425,10 @@
       "position": "TE5",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27050,
@@ -1153,7 +1440,10 @@
       "position": "TE6",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": 2.3
+      "matchupRating": 2.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27297,
@@ -1165,7 +1455,10 @@
       "position": "RB27",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 2.6
+      "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19198,
@@ -1177,7 +1470,10 @@
       "position": "QB31",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": 3.6
+      "matchupRating": 3.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17265,
@@ -1189,7 +1485,10 @@
       "position": "WR35",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19647,
@@ -1201,7 +1500,10 @@
       "position": "RB28",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": 3.3
+      "matchupRating": 3.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22985,
@@ -1213,7 +1515,10 @@
       "position": "WR36",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22978,
@@ -1225,7 +1530,10 @@
       "position": "TE7",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": 2.2
+      "matchupRating": 2.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25298,
@@ -1237,7 +1545,10 @@
       "position": "TE8",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": 2.2
+      "matchupRating": 2.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16406,
@@ -1249,7 +1560,10 @@
       "position": "WR38",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": 3.7
+      "matchupRating": 3.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23000,
@@ -1261,7 +1575,10 @@
       "position": "WR37",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23065,
@@ -1273,7 +1590,10 @@
       "position": "RB30",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": 1.1
+      "matchupRating": 1.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27329,
@@ -1285,7 +1605,10 @@
       "position": "RB29",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": 1.9
+      "matchupRating": 1.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25333,
@@ -1297,7 +1620,10 @@
       "position": "WR40",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19278,
@@ -1309,7 +1635,10 @@
       "position": "WR39",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": 3.3
+      "matchupRating": 3.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17270,
@@ -1321,7 +1650,10 @@
       "position": "TE9",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": 4.7
+      "matchupRating": 4.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 11594,
@@ -1333,7 +1665,10 @@
       "position": "TE10",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 1.7
+      "matchupRating": 1.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19792,
@@ -1345,7 +1680,10 @@
       "position": "RB31",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23123,
@@ -1357,7 +1695,10 @@
       "position": "WR41",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18598,
@@ -1369,7 +1710,10 @@
       "position": "WR42",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 3.5
+      "matchupRating": 3.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23020,
@@ -1381,7 +1725,10 @@
       "position": "WR43",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19245,
@@ -1393,7 +1740,10 @@
       "position": "RB33",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": 1.4
+      "matchupRating": 1.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23107,
@@ -1405,7 +1755,10 @@
       "position": "WR44",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": 2.7
+      "matchupRating": 2.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23310,
@@ -1417,7 +1770,10 @@
       "position": "RB32",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23748,
@@ -1429,7 +1785,10 @@
       "position": "WR45",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22718,
@@ -1441,7 +1800,10 @@
       "position": "TE11",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26403,
@@ -1453,7 +1815,10 @@
       "position": "WR46",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 3.9
+      "matchupRating": 3.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23794,
@@ -1465,7 +1830,10 @@
       "position": "WR47",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": 1.9
+      "matchupRating": 1.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16673,
@@ -1477,7 +1845,10 @@
       "position": "RB34",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": 4.3
+      "matchupRating": 4.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23019,
@@ -1489,7 +1860,10 @@
       "position": "WR48",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19562,
@@ -1501,7 +1875,10 @@
       "position": "TE12",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 2.6
+      "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23781,
@@ -1513,7 +1890,10 @@
       "position": "TE13",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": 2.5
+      "matchupRating": 2.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25420,
@@ -1525,7 +1905,10 @@
       "position": "WR49",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23891,
@@ -1537,7 +1920,10 @@
       "position": "RB35",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26024,
@@ -1549,7 +1935,10 @@
       "position": "WR50",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27131,
@@ -1561,7 +1950,10 @@
       "position": "RB36",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": 2.3
+      "matchupRating": 2.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26148,
@@ -1573,7 +1965,10 @@
       "position": "RB37",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27331,
@@ -1585,7 +1980,10 @@
       "position": "WR51",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": 1.8
+      "matchupRating": 1.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25247,
@@ -1597,7 +1995,10 @@
       "position": "TE14",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17269,
@@ -1609,7 +2010,10 @@
       "position": "TE15",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": 1.5
+      "matchupRating": 1.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27142,
@@ -1621,7 +2025,10 @@
       "position": "RB38",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": 2.1
+      "matchupRating": 2.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24687,
@@ -1633,7 +2040,10 @@
       "position": "WR52",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25345,
@@ -1645,7 +2055,10 @@
       "position": "TE16",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17349,
@@ -1657,7 +2070,10 @@
       "position": "TE17",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 15561,
@@ -1669,7 +2085,10 @@
       "position": "TE18",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25337,
@@ -1681,7 +2100,10 @@
       "position": "WR53",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": 4.9
+      "matchupRating": 4.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27316,
@@ -1693,7 +2115,10 @@
       "position": "RB39",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23013,
@@ -1705,7 +2130,10 @@
       "position": "RB40",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 4
+      "matchupRating": 4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22969,
@@ -1717,7 +2145,10 @@
       "position": "RB41",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": 4.5
+      "matchupRating": 4.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24177,
@@ -1729,7 +2160,10 @@
       "position": "WR54",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": 4.8
+      "matchupRating": 4.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19590,
@@ -1741,7 +2175,10 @@
       "position": "WR55",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19201,
@@ -1753,7 +2190,10 @@
       "position": "WR56",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": 1.8
+      "matchupRating": 1.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27339,
@@ -1765,7 +2205,10 @@
       "position": "WR57",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": 1.8
+      "matchupRating": 1.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16398,
@@ -1777,7 +2220,10 @@
       "position": "QB32",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18290,
@@ -1789,7 +2235,10 @@
       "position": "TE20",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25997,
@@ -1801,7 +2250,10 @@
       "position": "TE19",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24357,
@@ -1813,7 +2265,10 @@
       "position": "WR59",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": 4.4
+      "matchupRating": 4.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23152,
@@ -1825,7 +2280,10 @@
       "position": "RB48",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23179,
@@ -1837,7 +2295,10 @@
       "position": "WR58",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": 3.9
+      "matchupRating": 3.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23181,
@@ -1849,7 +2310,10 @@
       "position": "TE21",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": 4
+      "matchupRating": 4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25323,
@@ -1861,7 +2325,10 @@
       "position": "RB42",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 3.5
+      "matchupRating": 3.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23982,
@@ -1873,7 +2340,10 @@
       "position": "TE22",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28127,
@@ -1885,7 +2355,10 @@
       "position": "WR67",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": 4.3
+      "matchupRating": 4.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16433,
@@ -1897,7 +2370,10 @@
       "position": "WR60",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": 3.8
+      "matchupRating": 3.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22986,
@@ -1909,7 +2385,10 @@
       "position": "RB43",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 2.6
+      "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26335,
@@ -1921,7 +2400,10 @@
       "position": "TE23",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28138,
@@ -1933,7 +2415,10 @@
       "position": "WR61",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 4.3
+      "matchupRating": 4.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24354,
@@ -1945,7 +2430,10 @@
       "position": "WR65",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26314,
@@ -1957,7 +2445,10 @@
       "position": "WR62",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": 4.6
+      "matchupRating": 4.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22980,
@@ -1969,7 +2460,10 @@
       "position": "RB44",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26398,
@@ -1981,7 +2475,10 @@
       "position": "WR64",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19810,
@@ -1993,7 +2490,10 @@
       "position": "WR66",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27109,
@@ -2005,7 +2505,10 @@
       "position": "TE24",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 2.5
+      "matchupRating": 2.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 20163,
@@ -2017,7 +2520,10 @@
       "position": "TE25",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17258,
@@ -2029,7 +2535,10 @@
       "position": "WR68",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 3.2
+      "matchupRating": 3.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23091,
@@ -2041,7 +2550,10 @@
       "position": "TE27",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 3.5
+      "matchupRating": 3.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23153,
@@ -2053,7 +2565,10 @@
       "position": "TE26",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": 4.7
+      "matchupRating": 4.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25360,
@@ -2065,7 +2580,10 @@
       "position": "RB46",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22989,
@@ -2077,7 +2595,10 @@
       "position": "WR69",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": 1.9
+      "matchupRating": 1.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27102,
@@ -2089,7 +2610,10 @@
       "position": "RB45",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": 2.6
+      "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26215,
@@ -2101,7 +2625,10 @@
       "position": "WR70",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 13981,
@@ -2113,7 +2640,10 @@
       "position": "WR63",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 1.4
+      "matchupRating": 1.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16411,
@@ -2125,7 +2655,10 @@
       "position": "TE29",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26055,
@@ -2137,7 +2670,10 @@
       "position": "TE28",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": 3.9
+      "matchupRating": 3.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24333,
@@ -2149,7 +2685,10 @@
       "position": "RB48",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": 2.6
+      "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23092,
@@ -2161,7 +2700,10 @@
       "position": "WR73",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": 2.4
+      "matchupRating": 2.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19794,
@@ -2173,7 +2715,10 @@
       "position": "WR72",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": 1.3
+      "matchupRating": 1.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27520,
@@ -2185,7 +2730,10 @@
       "position": "RB49",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": 2.6
+      "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27446,
@@ -2197,7 +2745,10 @@
       "position": "WR76",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": 3.6
+      "matchupRating": 3.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24172,
@@ -2209,7 +2760,10 @@
       "position": "RB47",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16399,
@@ -2221,7 +2775,10 @@
       "position": "TE30",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18706,
@@ -2233,7 +2790,10 @@
       "position": "WR74",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26039,
@@ -2245,7 +2805,10 @@
       "position": "WR75",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": 3.3
+      "matchupRating": 3.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18244,
@@ -2257,7 +2820,10 @@
       "position": "WR71",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19372,
@@ -2269,7 +2835,10 @@
       "position": "TE31",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 2.2
+      "matchupRating": 2.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27211,
@@ -2281,7 +2850,10 @@
       "position": "WR79",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": 2.2
+      "matchupRating": 2.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25419,
@@ -2293,7 +2865,10 @@
       "position": "WR77",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26409,
@@ -2305,7 +2880,10 @@
       "position": "WR78",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 1.4
+      "matchupRating": 1.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22913,
@@ -2317,7 +2895,10 @@
       "position": "WR80",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 3.2
+      "matchupRating": 3.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23056,
@@ -2329,7 +2910,10 @@
       "position": "TE32",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": 3.3
+      "matchupRating": 3.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26019,
@@ -2341,7 +2925,10 @@
       "position": "WR83",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27059,
@@ -2353,7 +2940,10 @@
       "position": "WR81",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23080,
@@ -2365,7 +2955,10 @@
       "position": "WR82",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": 2.4
+      "matchupRating": 2.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18256,
@@ -2377,7 +2970,10 @@
       "position": "RB50",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": 3.6
+      "matchupRating": 3.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27122,
@@ -2389,7 +2985,10 @@
       "position": "WR87",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25885,
@@ -2401,7 +3000,10 @@
       "position": "RB51",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25335,
@@ -2413,7 +3015,10 @@
       "position": "WR93",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": 2.7
+      "matchupRating": 2.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22967,
@@ -2425,7 +3030,10 @@
       "position": "TE33",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 20094,
@@ -2437,7 +3045,10 @@
       "position": "RB52",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": 1.5
+      "matchupRating": 1.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27337,
@@ -2449,7 +3060,10 @@
       "position": "WR84",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": 1.4
+      "matchupRating": 1.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25418,
@@ -2461,7 +3075,10 @@
       "position": "WR95",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 1.4
+      "matchupRating": 1.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27224,
@@ -2473,7 +3090,10 @@
       "position": "WR86",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": 4.8
+      "matchupRating": 4.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16423,
@@ -2485,7 +3105,10 @@
       "position": "RB63",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": 3.3
+      "matchupRating": 3.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25361,
@@ -2497,7 +3120,10 @@
       "position": "WR85",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": 1.7
+      "matchupRating": 1.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26022,
@@ -2509,7 +3135,10 @@
       "position": "WR88",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": 4.3
+      "matchupRating": 4.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27320,
@@ -2521,7 +3150,10 @@
       "position": "RB54",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": 1.7
+      "matchupRating": 1.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18520,
@@ -2533,7 +3165,10 @@
       "position": "WR90",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": 2.4
+      "matchupRating": 2.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22908,
@@ -2545,7 +3180,10 @@
       "position": "RB56",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": 4
+      "matchupRating": 4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22915,
@@ -2557,7 +3195,10 @@
       "position": "RB57",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": 2.1
+      "matchupRating": 2.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23118,
@@ -2569,7 +3210,10 @@
       "position": "RB53",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": 1.5
+      "matchupRating": 1.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26136,
@@ -2581,7 +3225,10 @@
       "position": "WR89",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 3.7
+      "matchupRating": 3.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16421,
@@ -2593,7 +3240,10 @@
       "position": "RB55",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27994,
@@ -2605,7 +3255,10 @@
       "position": "WR91",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": 1.8
+      "matchupRating": 1.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28130,
@@ -2617,7 +3270,10 @@
       "position": "WR92",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": 3.8
+      "matchupRating": 3.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24346,
@@ -2629,7 +3285,10 @@
       "position": "RB59",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": 4.5
+      "matchupRating": 4.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24344,
@@ -2641,7 +3300,10 @@
       "position": "RB58",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": 1.1
+      "matchupRating": 1.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26355,
@@ -2653,7 +3315,10 @@
       "position": "RB60",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": 3.2
+      "matchupRating": 3.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23679,
@@ -2665,7 +3330,10 @@
       "position": "RB62",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": 3.7
+      "matchupRating": 3.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25968,
@@ -2677,7 +3345,10 @@
       "position": "QB33",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27315,
@@ -2689,7 +3360,10 @@
       "position": "WR94",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26191,
@@ -2701,7 +3375,10 @@
       "position": "RB61",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": 3.3
+      "matchupRating": 3.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28108,
@@ -2713,7 +3390,10 @@
       "position": "RB70",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23104,
@@ -2725,7 +3405,10 @@
       "position": "TE34",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": 2.5
+      "matchupRating": 2.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25987,
@@ -2737,7 +3420,10 @@
       "position": "RB66",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25823,
@@ -2749,7 +3435,10 @@
       "position": "RB67",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": 1.8
+      "matchupRating": 1.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18406,
@@ -2761,7 +3450,10 @@
       "position": "RB65",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": 3.3
+      "matchupRating": 3.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28107,
@@ -2773,7 +3465,10 @@
       "position": "RB64",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26034,
@@ -2785,7 +3480,10 @@
       "position": "WR98",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 3.5
+      "matchupRating": 3.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25984,
@@ -2797,7 +3495,10 @@
       "position": "RB69",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": 3.9
+      "matchupRating": 3.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17268,
@@ -2809,7 +3510,10 @@
       "position": "WR96",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28401,
@@ -2821,7 +3525,10 @@
       "position": "RB72",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24362,
@@ -2833,7 +3540,10 @@
       "position": "RB73",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25977,
@@ -2845,7 +3555,10 @@
       "position": "RB68",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": 3.6
+      "matchupRating": 3.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16447,
@@ -2857,7 +3570,10 @@
       "position": "RB71",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23770,
@@ -2869,7 +3585,10 @@
       "position": "WR97",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": 4
+      "matchupRating": 4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24343,
@@ -2881,7 +3600,10 @@
       "position": "RB74",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 3.7
+      "matchupRating": 3.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23791,
@@ -2893,7 +3615,10 @@
       "position": "WR101",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24778,
@@ -2905,7 +3630,10 @@
       "position": "TE35",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26038,
@@ -2917,7 +3645,10 @@
       "position": "WR103",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25654,
@@ -2929,7 +3660,10 @@
       "position": "RB75",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17066,
@@ -2941,7 +3675,10 @@
       "position": "WR99",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18226,
@@ -2953,7 +3690,10 @@
       "position": "WR104",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18656,
@@ -2965,7 +3705,10 @@
       "position": "WR100",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26035,
@@ -2977,7 +3720,10 @@
       "position": "WR102",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 1.8
+      "matchupRating": 1.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22973,
@@ -2989,7 +3735,10 @@
       "position": "QB34",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": 3.8
+      "matchupRating": 3.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27463,
@@ -3001,7 +3750,10 @@
       "position": "WR105",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": 1.4
+      "matchupRating": 1.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 11616,
@@ -3013,7 +3765,10 @@
       "position": "WR106",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28126,
@@ -3025,7 +3780,10 @@
       "position": "WR108",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28084,
@@ -3037,7 +3795,10 @@
       "position": "RB77",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 20126,
@@ -3049,7 +3810,10 @@
       "position": "WR107",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24205,
@@ -3061,7 +3825,10 @@
       "position": "RB79",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": 0.9
+      "matchupRating": 0.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27285,
@@ -3073,7 +3840,10 @@
       "position": "RB78",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 2.7
+      "matchupRating": 2.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23079,
@@ -3085,7 +3855,10 @@
       "position": "RB81",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": 1.9
+      "matchupRating": 1.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27310,
@@ -3097,7 +3870,10 @@
       "position": "RB76",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27487,
@@ -3109,7 +3885,10 @@
       "position": "WR110",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": 1.8
+      "matchupRating": 1.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27097,
@@ -3121,7 +3900,10 @@
       "position": "RB80",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": 1.9
+      "matchupRating": 1.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16499,
@@ -3133,7 +3915,10 @@
       "position": "TE36",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 3.8
+      "matchupRating": 3.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18280,
@@ -3145,7 +3930,10 @@
       "position": "RB82",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19302,
@@ -3157,7 +3945,10 @@
       "position": "RB83",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": 3.5
+      "matchupRating": 3.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27147,
@@ -3169,7 +3960,10 @@
       "position": "WR109",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24360,
@@ -3181,7 +3975,10 @@
       "position": "RB85",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 2.4
+      "matchupRating": 2.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28013,
@@ -3193,7 +3990,10 @@
       "position": "QB35",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": 4.5
+      "matchupRating": 4.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24367,
@@ -3205,7 +4005,10 @@
       "position": "RB86",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27259,
@@ -3217,7 +4020,10 @@
       "position": "RB84",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 2.3
+      "matchupRating": 2.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17272,
@@ -3229,7 +4035,10 @@
       "position": "TE37",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": 4.4
+      "matchupRating": 4.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19252,
@@ -3241,7 +4050,10 @@
       "position": "WR108",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 4.3
+      "matchupRating": 4.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27165,
@@ -3253,7 +4065,10 @@
       "position": "RB87",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25393,
@@ -3265,7 +4080,10 @@
       "position": "RB88",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23144,
@@ -3277,7 +4095,10 @@
       "position": "TE40",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": 4.6
+      "matchupRating": 4.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25388,
@@ -3289,7 +4110,10 @@
       "position": "RB89",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
+      "injuryProbability": null
     },
     {
       "player_id": 23682,
@@ -3301,7 +4125,10 @@
       "position": "RB92",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28297,
@@ -3313,7 +4140,10 @@
       "position": "RB91",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24351,
@@ -3325,11 +4155,14 @@
       "position": "RB90",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": 3.2
+      "matchupRating": 3.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26392,
-      "rank": 276,
+      "rank": 275,
       "rankIsEstimated": true,
       "player_name": "Isaac Guerendo",
       "first_name": "Isaac",
@@ -3337,7 +4170,10 @@
       "position": "RB92",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": "PUP",
+      "injuryStatusShort": "PUP",
+      "injuryProbability": null
     },
     {
       "player_id": 27326,
@@ -3349,7 +4185,10 @@
       "position": "RB93",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": 1.1
+      "matchupRating": 1.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28109,
@@ -3361,7 +4200,10 @@
       "position": "RB95",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 2.6
+      "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24901,
@@ -3373,7 +4215,10 @@
       "position": "RB94",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22756,
@@ -3385,7 +4230,10 @@
       "position": "TE38",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28135,
@@ -3397,7 +4245,10 @@
       "position": "WR111",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19229,
@@ -3409,7 +4260,10 @@
       "position": "TE42",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": 1.8
+      "matchupRating": 1.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18631,
@@ -3421,19 +4275,10 @@
       "position": "TE39",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": 2.5
-    },
-    {
-      "player_id": 15802,
-      "rank": 283,
-      "rankIsEstimated": true,
-      "player_name": "Tyreek Hill",
-      "first_name": "Tyreek",
-      "last_name": "Hill",
-      "position": "WR110",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null
+      "matchupRating": 2.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23004,
@@ -3445,7 +4290,40 @@
       "position": "TE43",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": 3.3
+      "matchupRating": 3.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 26212,
+      "rank": 283,
+      "rankIsEstimated": true,
+      "player_name": "Tahj Brooks",
+      "first_name": "Tahj",
+      "last_name": "Brooks",
+      "position": "RB94",
+      "team": "CIN",
+      "opponent": "vs TB",
+      "matchupRating": 3.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 15802,
+      "rank": 284,
+      "rankIsEstimated": true,
+      "player_name": "Tyreek Hill",
+      "first_name": "Tyreek",
+      "last_name": "Hill",
+      "position": "WR110",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22845,
@@ -3457,19 +4335,10 @@
       "position": "WR113",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": 3
-    },
-    {
-      "player_id": 26212,
-      "rank": 284,
-      "rankIsEstimated": true,
-      "player_name": "Tahj Brooks",
-      "first_name": "Tahj",
-      "last_name": "Brooks",
-      "position": "RB95",
-      "team": "CIN",
-      "opponent": "vs TB",
-      "matchupRating": 3.2
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25304,
@@ -3481,7 +4350,10 @@
       "position": "WR114",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": 2
+      "matchupRating": 2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16489,
@@ -3493,7 +4365,10 @@
       "position": "WR115",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": 1.7
+      "matchupRating": 1.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26329,
@@ -3505,7 +4380,10 @@
       "position": "RB96",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": 2.5
+      "matchupRating": 2.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 14104,
@@ -3517,7 +4395,10 @@
       "position": "TE41",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23101,
@@ -3529,7 +4410,10 @@
       "position": "WR116",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22921,
@@ -3541,7 +4425,10 @@
       "position": "RB97",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 3.5
+      "matchupRating": 3.5,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
+      "injuryProbability": null
     },
     {
       "player_id": 24369,
@@ -3553,7 +4440,10 @@
       "position": "RB98",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22928,
@@ -3565,7 +4455,10 @@
       "position": "RB100",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": 1.1
+      "matchupRating": 1.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22905,
@@ -3577,7 +4470,10 @@
       "position": "WR112",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 1.3
+      "matchupRating": 1.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27144,
@@ -3589,7 +4485,10 @@
       "position": "WR119",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19539,
@@ -3601,7 +4500,10 @@
       "position": "TE48",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 1.9
+      "matchupRating": 1.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25876,
@@ -3613,7 +4515,10 @@
       "position": "RB99",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26328,
@@ -3625,7 +4530,10 @@
       "position": "WR125",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 1.4
+      "matchupRating": 1.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26005,
@@ -3637,7 +4545,10 @@
       "position": "TE44",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": 4
+      "matchupRating": 4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28154,
@@ -3649,7 +4560,10 @@
       "position": "TE47",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18864,
@@ -3661,7 +4575,25 @@
       "position": "WR117",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 16420,
+      "rank": 301,
+      "rankIsEstimated": true,
+      "player_name": "Joe Mixon",
+      "first_name": "Joe",
+      "last_name": "Mixon",
+      "position": "RB101",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28129,
@@ -3673,7 +4605,10 @@
       "position": "WR118",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 1.8
+      "matchupRating": 1.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 15623,
@@ -3685,23 +4620,14 @@
       "position": "TE46",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 2.5
-    },
-    {
-      "player_id": 16420,
-      "rank": 302,
-      "rankIsEstimated": true,
-      "player_name": "Joe Mixon",
-      "first_name": "Joe",
-      "last_name": "Mixon",
-      "position": "RB101",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null
+      "matchupRating": 2.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16425,
-      "rank": 303,
+      "rank": 302,
       "rankIsEstimated": true,
       "player_name": "Kareem Hunt",
       "first_name": "Kareem",
@@ -3709,7 +4635,10 @@
       "position": "RB99",
       "team": "FA",
       "opponent": null,
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28424,
@@ -3721,7 +4650,10 @@
       "position": "WR120",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18585,
@@ -3733,7 +4665,10 @@
       "position": "WR121",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": 3.5
+      "matchupRating": 3.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22795,
@@ -3745,7 +4680,10 @@
       "position": "TE53",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 2.5
+      "matchupRating": 2.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17527,
@@ -3757,7 +4695,10 @@
       "position": "TE49",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 2.4
+      "matchupRating": 2.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23837,
@@ -3769,7 +4710,10 @@
       "position": "TE45",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": 4.6
+      "matchupRating": 4.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24238,
@@ -3781,7 +4725,10 @@
       "position": "TE55",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 2.6
+      "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23119,
@@ -3793,7 +4740,10 @@
       "position": "TE56",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 4
+      "matchupRating": 4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25416,
@@ -3805,7 +4755,10 @@
       "position": "WR122",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25430,
@@ -3817,7 +4770,10 @@
       "position": "TE57",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 2.4
+      "matchupRating": 2.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 15581,
@@ -3829,7 +4785,10 @@
       "position": "TE50",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": 3.6
+      "matchupRating": 3.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28403,
@@ -3841,7 +4800,10 @@
       "position": "TE51",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19747,
@@ -3853,7 +4815,10 @@
       "position": "WR130",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": 4.5
+      "matchupRating": 4.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18487,
@@ -3865,7 +4830,10 @@
       "position": "TE58",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28079,
@@ -3877,7 +4845,10 @@
       "position": "TE59",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25332,
@@ -3889,7 +4860,10 @@
       "position": "WR131",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": 1.7
+      "matchupRating": 1.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 15665,
@@ -3901,7 +4875,10 @@
       "position": "WR132",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 4.4
+      "matchupRating": 4.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23135,
@@ -3913,7 +4890,10 @@
       "position": "WR124",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19483,
@@ -3925,7 +4905,10 @@
       "position": "WR133",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16081,
@@ -3937,11 +4920,14 @@
       "position": "WR134",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": 3.9
+      "matchupRating": 3.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22728,
-      "rank": 322,
+      "rank": 321,
       "rankIsEstimated": true,
       "player_name": "Michael Carter",
       "first_name": "Michael",
@@ -3949,7 +4935,10 @@
       "position": "RB104",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 3.7
+      "matchupRating": 3.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27138,
@@ -3961,7 +4950,10 @@
       "position": "TE60",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 2.6
+      "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16556,
@@ -3973,7 +4965,10 @@
       "position": "WR135",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 20114,
@@ -3985,7 +4980,10 @@
       "position": "WR136",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19423,
@@ -3997,7 +4995,10 @@
       "position": "TE52",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26037,
@@ -4009,7 +5010,10 @@
       "position": "WR137",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27499,
@@ -4021,7 +5025,10 @@
       "position": "TE61",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 2.1
+      "matchupRating": 2.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25627,
@@ -4033,7 +5040,10 @@
       "position": "WR139",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 20113,
@@ -4045,7 +5055,10 @@
       "position": "WR138",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 1.5
+      "matchupRating": 1.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25267,
@@ -4057,7 +5070,10 @@
       "position": "TE64",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23341,
@@ -4069,7 +5085,10 @@
       "position": "TE63",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 9300,
@@ -4081,7 +5100,10 @@
       "position": "QB36",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": 3.8
+      "matchupRating": 3.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28427,
@@ -4093,7 +5115,10 @@
       "position": "TE62",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 2.1
+      "matchupRating": 2.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28133,
@@ -4105,7 +5130,10 @@
       "position": "WR126",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": 2.8
+      "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23742,
@@ -4117,7 +5145,10 @@
       "position": "TE65",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18590,
@@ -4129,7 +5160,10 @@
       "position": "WR141",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25282,
@@ -4141,7 +5175,10 @@
       "position": "TE54",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": 2.6
+      "matchupRating": 2.6,
+      "injuryStatus": "PUP",
+      "injuryStatusShort": "PUP",
+      "injuryProbability": null
     },
     {
       "player_id": 17598,
@@ -4153,7 +5190,10 @@
       "position": "TE66",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25269,
@@ -4165,7 +5205,10 @@
       "position": "TE68",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28132,
@@ -4177,7 +5220,10 @@
       "position": "WR142",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": 3.7
+      "matchupRating": 3.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24214,
@@ -4189,7 +5235,10 @@
       "position": "WR143",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28157,
@@ -4201,7 +5250,10 @@
       "position": "TE69",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26011,
@@ -4213,7 +5265,10 @@
       "position": "WR123",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": 1.4
+      "matchupRating": 1.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27469,
@@ -4225,7 +5280,10 @@
       "position": "TE67",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": 2.7
+      "matchupRating": 2.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18397,
@@ -4237,7 +5295,10 @@
       "position": "TE70",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17530,
@@ -4249,7 +5310,10 @@
       "position": "WR145",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25287,
@@ -4261,7 +5325,10 @@
       "position": "WR144",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27294,
@@ -4273,7 +5340,10 @@
       "position": "WR151",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27810,
@@ -4285,7 +5355,10 @@
       "position": "WR149",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22895,
@@ -4297,7 +5370,10 @@
       "position": "WR147",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 20156,
@@ -4309,7 +5385,10 @@
       "position": "QB38",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": 4.7
+      "matchupRating": 4.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25983,
@@ -4321,7 +5400,10 @@
       "position": "RB111",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 15569,
@@ -4333,7 +5415,10 @@
       "position": "WR152",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24621,
@@ -4345,7 +5430,10 @@
       "position": "TE73",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17508,
@@ -4357,7 +5445,10 @@
       "position": "TE72",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23761,
@@ -4369,7 +5460,10 @@
       "position": "TE74",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18561,
@@ -4381,7 +5475,10 @@
       "position": "TE71",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26012,
@@ -4393,7 +5490,10 @@
       "position": "WR127",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": 4.8
+      "matchupRating": 4.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27093,
@@ -4405,7 +5505,10 @@
       "position": "WR150",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16579,
@@ -4417,7 +5520,10 @@
       "position": "TE77",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26379,
@@ -4429,7 +5535,10 @@
       "position": "WR154",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24371,
@@ -4441,7 +5550,10 @@
       "position": "WR128",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": 2.2
+      "matchupRating": 2.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26309,
@@ -4453,7 +5565,10 @@
       "position": "RB113",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27312,
@@ -4465,7 +5580,10 @@
       "position": "TE76",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18566,
@@ -4477,7 +5595,10 @@
       "position": "WR159",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23054,
@@ -4489,7 +5610,10 @@
       "position": "RB107",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27993,
@@ -4501,7 +5625,10 @@
       "position": "TE75",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 2.2
+      "matchupRating": 2.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17826,
@@ -4513,7 +5640,10 @@
       "position": "TE78",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25167,
@@ -4525,7 +5655,10 @@
       "position": "TE75",
       "team": "FA",
       "opponent": null,
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18633,
@@ -4537,7 +5670,10 @@
       "position": "WR160",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17264,
@@ -4549,7 +5685,10 @@
       "position": "WR161",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28067,
@@ -4561,7 +5700,10 @@
       "position": "WR153",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17528,
@@ -4573,7 +5715,10 @@
       "position": "WR162",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25748,
@@ -4585,7 +5730,10 @@
       "position": "RB101",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27222,
@@ -4597,7 +5745,10 @@
       "position": "WR154",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25368,
@@ -4609,19 +5760,10 @@
       "position": "QB37",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 4
-    },
-    {
-      "player_id": 26964,
-      "rank": 372,
-      "rankIsEstimated": true,
-      "player_name": "Terrell Jennings",
-      "first_name": "Terrell",
-      "last_name": "Jennings",
-      "position": "RB117",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null
+      "matchupRating": 4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28435,
@@ -4633,7 +5775,10 @@
       "position": "WR158",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25346,
@@ -4645,7 +5790,10 @@
       "position": "TE84",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25657,
@@ -4657,7 +5805,25 @@
       "position": "TE79",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 26964,
+      "rank": 374,
+      "rankIsEstimated": true,
+      "player_name": "Terrell Jennings",
+      "first_name": "Terrell",
+      "last_name": "Jennings",
+      "position": "RB117",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24334,
@@ -4669,7 +5835,10 @@
       "position": "TE88",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 2.7
+      "matchupRating": 2.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26310,
@@ -4681,7 +5850,10 @@
       "position": "TE54",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 11798,
@@ -4693,7 +5865,25 @@
       "position": "RB102",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 16483,
+      "rank": 378,
+      "rankIsEstimated": true,
+      "player_name": "Austin Ekeler",
+      "first_name": "Austin",
+      "last_name": "Ekeler",
+      "position": "RB114",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27288,
@@ -4705,7 +5895,10 @@
       "position": "WR157",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": 4.5
+      "matchupRating": 4.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 12127,
@@ -4717,19 +5910,10 @@
       "position": "WR163",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": null
-    },
-    {
-      "player_id": 16483,
-      "rank": 379,
-      "rankIsEstimated": true,
-      "player_name": "Austin Ekeler",
-      "first_name": "Austin",
-      "last_name": "Ekeler",
-      "position": "RB114",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17603,
@@ -4741,7 +5925,10 @@
       "position": "WR156",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17145,
@@ -4753,7 +5940,10 @@
       "position": "RB103",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22833,
@@ -4765,7 +5955,10 @@
       "position": "TE81",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 1.5
+      "matchupRating": 1.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28047,
@@ -4777,7 +5970,10 @@
       "position": "WR165",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 4.1
+      "matchupRating": 4.1,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
+      "injuryProbability": null
     },
     {
       "player_id": 16706,
@@ -4789,7 +5985,10 @@
       "position": "TE82",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25967,
@@ -4801,7 +6000,10 @@
       "position": "QB43",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28155,
@@ -4813,7 +6015,10 @@
       "position": "TE83",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19781,
@@ -4825,19 +6030,10 @@
       "position": "QB39",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 3.1
-    },
-    {
-      "player_id": 16460,
-      "rank": 388,
-      "rankIsEstimated": true,
-      "player_name": "Jonnu Smith",
-      "first_name": "Jonnu",
-      "last_name": "Smith",
-      "position": "TE83",
-      "team": "GB",
-      "opponent": "at MIN",
-      "matchupRating": null
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28161,
@@ -4849,7 +6045,25 @@
       "position": "TE86",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": 1.7
+      "matchupRating": 1.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 16460,
+      "rank": 389,
+      "rankIsEstimated": true,
+      "player_name": "Jonnu Smith",
+      "first_name": "Jonnu",
+      "last_name": "Smith",
+      "position": "TE79",
+      "team": "GB",
+      "opponent": "at MIN",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23018,
@@ -4861,7 +6075,10 @@
       "position": "QB40",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18557,
@@ -4873,7 +6090,10 @@
       "position": "QB41",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25941,
@@ -4885,7 +6105,10 @@
       "position": "RB104",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24370,
@@ -4897,7 +6120,10 @@
       "position": "WR155",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": 2.2
+      "matchupRating": 2.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18604,
@@ -4909,7 +6135,10 @@
       "position": "QB42",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28124,
@@ -4921,7 +6150,10 @@
       "position": "RB105",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 11606,
@@ -4933,7 +6165,10 @@
       "position": "WR171",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23167,
@@ -4945,7 +6180,10 @@
       "position": "TE80",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27444,
@@ -4957,7 +6195,10 @@
       "position": "RB110",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 13890,
@@ -4969,7 +6210,10 @@
       "position": "QB44",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 1.8
+      "matchupRating": 1.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19297,
@@ -4981,7 +6225,10 @@
       "position": "QB45",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 13971,
@@ -4993,7 +6240,10 @@
       "position": "WR173",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 20082,
@@ -5005,7 +6255,10 @@
       "position": "QB46",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28168,
@@ -5017,7 +6270,10 @@
       "position": "TE85",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24361,
@@ -5029,7 +6285,10 @@
       "position": "QB47",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": 4.9
+      "matchupRating": 4.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28125,
@@ -5041,7 +6300,10 @@
       "position": "WR169",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 3.2
+      "matchupRating": 3.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 13891,
@@ -5053,7 +6315,10 @@
       "position": "QB49",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 11689,
@@ -5062,10 +6327,13 @@
       "player_name": "Zach Ertz",
       "first_name": "Zach",
       "last_name": "Ertz",
-      "position": "TE70",
+      "position": "TE69",
       "team": "FA",
       "opponent": null,
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24180,
@@ -5077,7 +6345,25 @@
       "position": "TE87",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 25289,
+      "rank": 407,
+      "rankIsEstimated": true,
+      "player_name": "Jacob Cowing",
+      "first_name": "Jacob",
+      "last_name": "Cowing",
+      "position": "WR165",
+      "team": "SF",
+      "opponent": "at LAR",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28434,
@@ -5089,7 +6375,10 @@
       "position": "RB106",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 10007,
@@ -5101,19 +6390,10 @@
       "position": "QB48",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": 3.7
-    },
-    {
-      "player_id": 25289,
-      "rank": 408,
-      "rankIsEstimated": true,
-      "player_name": "Jacob Cowing",
-      "first_name": "Jacob",
-      "last_name": "Cowing",
-      "position": "WR165",
-      "team": "SF",
-      "opponent": "at LAR",
-      "matchupRating": null
+      "matchupRating": 3.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28896,
@@ -5125,7 +6405,10 @@
       "position": "WR129",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19375,
@@ -5137,7 +6420,10 @@
       "position": "WR168",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28165,
@@ -5149,7 +6435,10 @@
       "position": "TE89",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18571,
@@ -5161,7 +6450,25 @@
       "position": "RB109",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 25693,
+      "rank": 412,
+      "rankIsEstimated": true,
+      "player_name": "Jacob Saylors",
+      "first_name": "Jacob",
+      "last_name": "Saylors",
+      "position": "RB131",
+      "team": "DET",
+      "opponent": "vs NO",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23081,
@@ -5173,19 +6480,10 @@
       "position": "QB52",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": 3.1
-    },
-    {
-      "player_id": 25693,
-      "rank": 413,
-      "rankIsEstimated": true,
-      "player_name": "Jacob Saylors",
-      "first_name": "Jacob",
-      "last_name": "Saylors",
-      "position": "RB131",
-      "team": "DET",
-      "opponent": "vs NO",
-      "matchupRating": null
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27454,
@@ -5197,7 +6495,10 @@
       "position": "WR170",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 1.2
+      "matchupRating": 1.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19624,
@@ -5209,7 +6510,10 @@
       "position": "RB128",
       "team": "FA",
       "opponent": null,
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22799,
@@ -5221,7 +6525,10 @@
       "position": "QB51",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25912,
@@ -5233,7 +6540,10 @@
       "position": "WR167",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25321,
@@ -5245,7 +6555,10 @@
       "position": "QB50",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": 1.9
+      "matchupRating": 1.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23680,
@@ -5257,7 +6570,10 @@
       "position": "QB56",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": 4.8
+      "matchupRating": 4.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 10977,
@@ -5269,7 +6585,10 @@
       "position": "WR164",
       "team": "FA",
       "opponent": null,
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25980,
@@ -5281,7 +6600,10 @@
       "position": "RB140",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 14191,
@@ -5293,7 +6615,10 @@
       "position": "RB146",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22976,
@@ -5305,7 +6630,10 @@
       "position": "RB108",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25541,
@@ -5317,7 +6645,10 @@
       "position": "TE93",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25746,
@@ -5329,7 +6660,10 @@
       "position": "QB54",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22923,
@@ -5341,7 +6675,10 @@
       "position": "TE90",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23249,
@@ -5353,7 +6690,10 @@
       "position": "RB145",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23093,
@@ -5362,10 +6702,13 @@
       "player_name": "Moliki Matavao",
       "first_name": "Moliki",
       "last_name": "Matavao",
-      "position": "TE99",
+      "position": "TE101",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
+      "injuryProbability": null
     },
     {
       "player_id": 27066,
@@ -5377,7 +6720,10 @@
       "position": "WR166",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23893,
@@ -5389,7 +6735,10 @@
       "position": "WR217",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
+      "injuryProbability": null
     },
     {
       "player_id": 24740,
@@ -5401,7 +6750,10 @@
       "position": "QB53",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": 4.6
+      "matchupRating": 4.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25373,
@@ -5413,7 +6765,10 @@
       "position": "QB55",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19844,
@@ -5425,7 +6780,10 @@
       "position": "RB114",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17262,
@@ -5437,7 +6795,10 @@
       "position": "WR174",
       "team": "FA",
       "opponent": null,
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28115,
@@ -5449,7 +6810,10 @@
       "position": "RB123",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16726,
@@ -5461,7 +6825,10 @@
       "position": "QB57",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16381,
@@ -5473,7 +6840,10 @@
       "position": "QB58",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 3.2
+      "matchupRating": 3.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25349,
@@ -5485,7 +6855,10 @@
       "position": "TE92",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24561,
@@ -5497,7 +6870,10 @@
       "position": "TE91",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17869,
@@ -5509,7 +6885,10 @@
       "position": "QB60",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 20162,
@@ -5521,7 +6900,10 @@
       "position": "TE102",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22722,
@@ -5533,7 +6915,10 @@
       "position": "QB59",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": 4.5
+      "matchupRating": 4.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19219,
@@ -5545,7 +6930,10 @@
       "position": "WR167",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28587,
@@ -5557,7 +6945,10 @@
       "position": "TE95",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28113,
@@ -5569,7 +6960,10 @@
       "position": "RB111",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26003,
@@ -5581,7 +6975,10 @@
       "position": "TE94",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27449,
@@ -5593,7 +6990,10 @@
       "position": "WR172",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": 3.5
+      "matchupRating": 3.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25251,
@@ -5605,7 +7005,10 @@
       "position": "WR175",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28141,
@@ -5617,7 +7020,10 @@
       "position": "WR180",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 2.9
+      "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26395,
@@ -5629,7 +7035,10 @@
       "position": "RB118",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25443,
@@ -5641,7 +7050,10 @@
       "position": "RB117",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28122,
@@ -5653,7 +7065,10 @@
       "position": "RB113",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23986,
@@ -5665,7 +7080,10 @@
       "position": "RB112",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28399,
@@ -5677,7 +7095,10 @@
       "position": "TE97",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27501,
@@ -5689,7 +7110,10 @@
       "position": "TE108",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": 4.6
+      "matchupRating": 4.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18714,
@@ -5701,7 +7125,10 @@
       "position": "WR177",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23451,
@@ -5713,7 +7140,10 @@
       "position": "RB119",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23293,
@@ -5725,7 +7155,10 @@
       "position": "RB115",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23196,
@@ -5737,7 +7170,10 @@
       "position": "WR182",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27076,
@@ -5749,7 +7185,10 @@
       "position": "WR176",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23172,
@@ -5761,7 +7200,10 @@
       "position": "RB116",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27466,
@@ -5773,7 +7215,10 @@
       "position": "TE99",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16417,
@@ -5785,7 +7230,10 @@
       "position": "QB62",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28163,
@@ -5797,7 +7245,10 @@
       "position": "TE96",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16431,
@@ -5809,7 +7260,10 @@
       "position": "WR178",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22841,
@@ -5821,7 +7275,10 @@
       "position": "TE98",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16445,
@@ -5833,7 +7290,10 @@
       "position": "RB120",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24372,
@@ -5845,7 +7305,10 @@
       "position": "WR179",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28526,
@@ -5857,7 +7320,10 @@
       "position": "WR183",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24029,
@@ -5869,7 +7335,10 @@
       "position": "WR181",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23012,
@@ -5881,7 +7350,10 @@
       "position": "WR184",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26008,
@@ -5893,7 +7365,10 @@
       "position": "TE109",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18246,
@@ -5905,7 +7380,10 @@
       "position": "TE104",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28137,
@@ -5917,7 +7395,10 @@
       "position": "WR187",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 3.5
+      "matchupRating": 3.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23049,
@@ -5929,7 +7410,10 @@
       "position": "WR186",
       "team": "NO",
       "opponent": "at DET",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26002,
@@ -5941,7 +7425,10 @@
       "position": "TE100",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24352,
@@ -5953,7 +7440,10 @@
       "position": "RB123",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22953,
@@ -5965,7 +7455,10 @@
       "position": "QB63",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 3.2
+      "matchupRating": 3.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22930,
@@ -5977,7 +7470,10 @@
       "position": "RB121",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 20155,
@@ -5989,7 +7485,10 @@
       "position": "RB126",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17234,
@@ -6001,7 +7500,10 @@
       "position": "QB61",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18225,
@@ -6013,7 +7515,10 @@
       "position": "QB66",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22884,
@@ -6025,7 +7530,10 @@
       "position": "QB64",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": 4.3
+      "matchupRating": 4.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28279,
@@ -6037,7 +7545,10 @@
       "position": "TE113",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25631,
@@ -6049,7 +7560,10 @@
       "position": "WR140",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16502,
@@ -6061,7 +7575,10 @@
       "position": "TE116",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24345,
@@ -6073,7 +7590,10 @@
       "position": "QB65",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": 3.4
+      "matchupRating": 3.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22924,
@@ -6085,7 +7605,10 @@
       "position": "TE111",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25322,
@@ -6097,7 +7620,10 @@
       "position": "RB122",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": 2.3
+      "matchupRating": 2.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 9907,
@@ -6109,7 +7635,10 @@
       "position": "QB67",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18562,
@@ -6121,7 +7650,10 @@
       "position": "QB68",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": 3.2
+      "matchupRating": 3.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28903,
@@ -6133,7 +7665,10 @@
       "position": "RB124",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23030,
@@ -6145,7 +7680,10 @@
       "position": "WR146",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25998,
@@ -6157,7 +7695,10 @@
       "position": "TE106",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23905,
@@ -6169,7 +7710,10 @@
       "position": "WR193",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19665,
@@ -6181,7 +7725,10 @@
       "position": "TE101",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23014,
@@ -6193,7 +7740,10 @@
       "position": "RB133",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24182,
@@ -6205,7 +7755,10 @@
       "position": "TE103",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26748,
@@ -6217,7 +7770,10 @@
       "position": "RB127",
       "team": "HOU",
       "opponent": "vs BUF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19739,
@@ -6229,7 +7785,10 @@
       "position": "WR199",
       "team": "SEA",
       "opponent": "vs NE",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22684,
@@ -6241,7 +7800,10 @@
       "position": "WR194",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24335,
@@ -6253,7 +7815,10 @@
       "position": "RB129",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": 3.9
+      "matchupRating": 3.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16757,
@@ -6265,7 +7830,10 @@
       "position": "WR195",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25772,
@@ -6277,7 +7845,10 @@
       "position": "WR189",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24572,
@@ -6289,7 +7860,10 @@
       "position": "RB125",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16743,
@@ -6301,7 +7875,10 @@
       "position": "TE105",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27467,
@@ -6313,7 +7890,10 @@
       "position": "TE107",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 16443,
@@ -6325,7 +7905,10 @@
       "position": "WR197",
       "team": "FA",
       "opponent": null,
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22947,
@@ -6337,7 +7920,10 @@
       "position": "RB131",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": 4
+      "matchupRating": 4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25334,
@@ -6349,7 +7935,10 @@
       "position": "WR188",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27866,
@@ -6361,7 +7950,10 @@
       "position": "WR148",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25976,
@@ -6373,7 +7965,10 @@
       "position": "RB130",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": 1.6
+      "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27621,
@@ -6385,7 +7980,10 @@
       "position": "WR192",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19501,
@@ -6397,7 +7995,10 @@
       "position": "TE110",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28404,
@@ -6409,7 +8010,10 @@
       "position": "RB128",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": 3.1
+      "matchupRating": 3.1,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23829,
@@ -6421,7 +8025,10 @@
       "position": "TE112",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23727,
@@ -6433,7 +8040,10 @@
       "position": "TE114",
       "team": "MIA",
       "opponent": "at LV",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
+      "injuryProbability": null
     },
     {
       "player_id": 27912,
@@ -6445,7 +8055,10 @@
       "position": "WR200",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28027,
@@ -6457,7 +8070,10 @@
       "position": "TE122",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27843,
@@ -6469,7 +8085,10 @@
       "position": "TE115",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26372,
@@ -6481,7 +8100,10 @@
       "position": "RB132",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19627,
@@ -6493,7 +8115,10 @@
       "position": "RB138",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28436,
@@ -6505,7 +8130,10 @@
       "position": "TE120",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22763,
@@ -6517,7 +8145,10 @@
       "position": "RB136",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22843,
@@ -6529,7 +8160,10 @@
       "position": "WR190",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25468,
@@ -6541,7 +8175,10 @@
       "position": "WR196",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27724,
@@ -6553,7 +8190,10 @@
       "position": "WR201",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26946,
@@ -6565,7 +8205,10 @@
       "position": "TE117",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28906,
@@ -6577,7 +8220,10 @@
       "position": "RB135",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18587,
@@ -6589,7 +8235,10 @@
       "position": "WR191",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26216,
@@ -6601,7 +8250,10 @@
       "position": "RB141",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27667,
@@ -6613,7 +8265,10 @@
       "position": "RB140",
       "team": "ATL",
       "opponent": "at PIT",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19456,
@@ -6625,7 +8280,10 @@
       "position": "TE124",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26194,
@@ -6637,7 +8295,10 @@
       "position": "RB134",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28717,
@@ -6649,7 +8310,10 @@
       "position": "RB148",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23798,
@@ -6661,7 +8325,10 @@
       "position": "RB143",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23812,
@@ -6673,7 +8340,10 @@
       "position": "RB144",
       "team": "DEN",
       "opponent": "at KC",
-      "matchupRating": 3.8
+      "matchupRating": 3.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25394,
@@ -6685,7 +8355,10 @@
       "position": "RB150",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28114,
@@ -6697,7 +8370,10 @@
       "position": "RB147",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 20100,
@@ -6709,7 +8385,10 @@
       "position": "RB142",
       "team": "FA",
       "opponent": null,
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28510,
@@ -6721,7 +8400,10 @@
       "position": "RB145",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26023,
@@ -6733,7 +8415,10 @@
       "position": "WR204",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24330,
@@ -6745,7 +8430,10 @@
       "position": "QB69",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27696,
@@ -6757,7 +8445,10 @@
       "position": "RB152",
       "team": "LAC",
       "opponent": "vs ARI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26436,
@@ -6769,7 +8460,10 @@
       "position": "TE132",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27916,
@@ -6781,7 +8475,10 @@
       "position": "TE121",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17289,
@@ -6793,7 +8490,10 @@
       "position": "WR202",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19052,
@@ -6805,7 +8505,10 @@
       "position": "WR207",
       "team": "DET",
       "opponent": "vs NO",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26404,
@@ -6817,7 +8520,10 @@
       "position": "WR203",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27596,
@@ -6829,7 +8535,10 @@
       "position": "RB151",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 15520,
@@ -6841,7 +8550,10 @@
       "position": "QB70",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19801,
@@ -6853,7 +8565,10 @@
       "position": "WR212",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28429,
@@ -6865,7 +8580,10 @@
       "position": "RB149",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26413,
@@ -6877,7 +8595,10 @@
       "position": "WR206",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25387,
@@ -6889,7 +8610,10 @@
       "position": "RB146",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24216,
@@ -6901,7 +8625,10 @@
       "position": "TE118",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22987,
@@ -6913,7 +8640,10 @@
       "position": "QB72",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": 4
+      "matchupRating": 4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24331,
@@ -6925,7 +8655,10 @@
       "position": "TE127",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26626,
@@ -6937,7 +8670,10 @@
       "position": "WR205",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28121,
@@ -6949,7 +8685,10 @@
       "position": "RB156",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27678,
@@ -6961,7 +8700,10 @@
       "position": "WR211",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25754,
@@ -6973,7 +8715,10 @@
       "position": "WR218",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22965,
@@ -6985,7 +8730,10 @@
       "position": "WR208",
       "team": "NYJ",
       "opponent": "at TEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23045,
@@ -6997,7 +8745,10 @@
       "position": "QB71",
       "team": "DAL",
       "opponent": "at NYG",
-      "matchupRating": 1.3
+      "matchupRating": 1.3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19449,
@@ -7009,7 +8760,10 @@
       "position": "RB153",
       "team": "CHI",
       "opponent": "at CAR",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23260,
@@ -7021,7 +8775,10 @@
       "position": "WR209",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24689,
@@ -7033,7 +8790,10 @@
       "position": "RB154",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26429,
@@ -7045,7 +8805,10 @@
       "position": "TE123",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23927,
@@ -7057,7 +8820,10 @@
       "position": "QB73",
       "team": "LAR",
       "opponent": "vs SF",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28425,
@@ -7069,7 +8835,10 @@
       "position": "WR210",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
+      "injuryProbability": null
     },
     {
       "player_id": 28787,
@@ -7081,7 +8850,10 @@
       "position": "WR213",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24347,
@@ -7093,7 +8865,10 @@
       "position": "QB74",
       "team": "IND",
       "opponent": "vs BAL",
-      "matchupRating": 4.2
+      "matchupRating": 4.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22998,
@@ -7105,7 +8880,10 @@
       "position": "QB75",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": 3
+      "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28178,
@@ -7117,7 +8895,10 @@
       "position": "WR216",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27829,
@@ -7129,7 +8910,10 @@
       "position": "WR221",
       "team": "CLE",
       "opponent": "at JAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24134,
@@ -7141,7 +8925,10 @@
       "position": "WR215",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28757,
@@ -7153,7 +8940,10 @@
       "position": "RB155",
       "team": "BAL",
       "opponent": "at IND",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26384,
@@ -7165,7 +8955,10 @@
       "position": "QB79",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26576,
@@ -7177,7 +8970,10 @@
       "position": "TE126",
       "team": "WAS",
       "opponent": "at PHI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 18166,
@@ -7189,7 +8985,10 @@
       "position": "WR217",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23120,
@@ -7201,7 +9000,10 @@
       "position": "RB157",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24234,
@@ -7213,7 +9015,10 @@
       "position": "WR214",
       "team": "PHI",
       "opponent": "vs WAS",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28136,
@@ -7225,7 +9030,10 @@
       "position": "WR225",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25758,
@@ -7237,7 +9045,10 @@
       "position": "WR220",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 17888,
@@ -7249,7 +9060,10 @@
       "position": "WR219",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 28816,
@@ -7261,7 +9075,10 @@
       "position": "RB159",
       "team": "NYG",
       "opponent": "vs DAL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27686,
@@ -7273,7 +9090,10 @@
       "position": "WR226",
       "team": "BUF",
       "opponent": "at HOU",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 22820,
@@ -7285,7 +9105,10 @@
       "position": "TE128",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19358,
@@ -7297,7 +9120,10 @@
       "position": "RB160",
       "team": "CAR",
       "opponent": "vs CHI",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27705,
@@ -7309,7 +9135,10 @@
       "position": "WR222",
       "team": "PIT",
       "opponent": "vs ATL",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27445,
@@ -7321,7 +9150,10 @@
       "position": "WR223",
       "team": "NE",
       "opponent": "at SEA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27486,
@@ -7333,7 +9165,10 @@
       "position": "WR227",
       "team": "SF",
       "opponent": "at LAR",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 25709,
@@ -7345,7 +9180,10 @@
       "position": "WR224",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26400,
@@ -7357,7 +9195,10 @@
       "position": "WR228",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27182,
@@ -7369,7 +9210,10 @@
       "position": "WR185",
       "team": "MIN",
       "opponent": "vs GB",
-      "matchupRating": 2.7
+      "matchupRating": 2.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 24570,
@@ -7381,7 +9225,10 @@
       "position": "WR229",
       "team": "LV",
       "opponent": "vs MIA",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 26588,
@@ -7393,7 +9240,10 @@
       "position": "WR230",
       "team": "TEN",
       "opponent": "vs NYJ",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 9326,
@@ -7405,7 +9255,10 @@
       "position": "QB77",
       "team": "CIN",
       "opponent": "vs TB",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 23438,
@@ -7417,7 +9270,10 @@
       "position": "WR232",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 19270,
@@ -7429,7 +9285,10 @@
       "position": "WR231",
       "team": "ARI",
       "opponent": "at LAC",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     },
     {
       "player_id": 27889,
@@ -7441,7 +9300,10 @@
       "position": "WR234",
       "team": "KC",
       "opponent": "vs DEN",
-      "matchupRating": null
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
     }
   ]
 }
