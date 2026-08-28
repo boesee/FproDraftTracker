@@ -55,6 +55,8 @@ async function main() {
   const snapshot = {
     generatedAt: new Date().toISOString(),
     source: 'fantasypros-api',
+    season,
+    week,
     matchupRatingsUpdatedAt: getMatchupRatingsUpdatedAt(),
     players,
   };

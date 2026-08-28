@@ -10,7 +10,7 @@ nicht mehrfach vergeben.
 |----|-------|-------------|----------|--------|
 | FR-001 | Rankings anzeigen | As a Fantasy-Football-Manager, I want to see the current FantasyPros ECR rankings when I open the app, so that I know each player's expert consensus rank without any manual step. | High | Draft |
 | FR-002 | Draft-Fortschritt abgleichen | As a Fantasy-Football-Manager, I want to enter my Sleeper Draft-ID and load the current picks, so that I can see which players are already drafted. | High | Draft |
-| FR-003 | Nach Position filtern | As a Fantasy-Football-Manager, I want to filter the player list by position (QB/RB/WR/TE/FLEX), so that I can focus on the players relevant to my current pick. | High | Draft |
+| FR-003 | Nach Position filtern | As a Fantasy-Football-Manager, I want to switch between an Overall (Superflex) ranking and position-specific rankings (QB/RB/WR/Flex) via a pills-style navigation, so that I can focus on the players relevant to my current pick and see them ranked the way that position is actually drafted. | High | Draft |
 | FR-004 | Nach maximalem Rang filtern | As a Fantasy-Football-Manager, I want to limit the player list to a maximum rank, so that I only see players within my relevant draft range. | Medium | Draft |
 | FR-005 | Nach Draft-Status filtern | As a Fantasy-Football-Manager, I want to filter players by draft status (available/drafted), so that I can quickly see who is still available. | High | Draft |
 | FR-006 | Spieler durchsuchen | As a Fantasy-Football-Manager, I want to search across all player columns, including a targeted `column:value` syntax, so that I can quickly find specific players or attributes. | Medium | Draft |
@@ -18,6 +18,7 @@ nicht mehrfach vergeben.
 | FR-008 | Statistik-Übersicht einsehen | As a Fantasy-Football-Manager, I want to see a live count of total, available, and drafted players, so that I can gauge draft progress at a glance. | Medium | Draft |
 | FR-009 | Feedback bei Fehlern | As a Fantasy-Football-Manager, I want to see a clear message when an invalid Draft-ID is entered or the Sleeper data cannot be loaded, so that I understand why the draft sync failed. | Medium | Draft |
 | FR-010 | Aktualität der Rankings einsehen | As a Fantasy-Football-Manager, I want to see an info banner stating when the rankings were last synced with the FantasyPros API, so that I can judge how current the data is, especially if a scheduled update has failed. | High | Draft |
+| FR-011 | Ranking-Art einsehen | As a Fantasy-Football-Manager, I want to see what kind of ranking I'm looking at (in-season weekly, which week/season, and the scoring format), so that I don't mistake it for a Rest-of-Season or Dynasty view or a different scoring format. | Medium | Draft |
 
 ## Non-Functional Requirements (NFR)
 

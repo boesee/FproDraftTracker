@@ -3,8 +3,11 @@ import { loadConfig } from './config.js';
 import {
   loadRankingsSnapshot,
   sortPlayersByRank,
+  sortPlayersByPositionRank,
+  extractPositionRank,
   describeFreshness,
   describeMatchupRatingsFreshness,
+  describeRankingType,
 } from './rankings.js';
 import { fetchDraftPicks, matchDraftedPlayers } from './sleeperDraft.js';
 import { applyFilters } from './filters.js';
@@ -15,6 +18,7 @@ import { initThemeToggle } from './theme.js';
 const logger = new Logger(false);
 
 const bannerEl = document.getElementById('rankingsBanner');
+const rankingTypeBannerEl = document.getElementById('rankingTypeBanner');
 const matchupRatingsBannerEl = document.getElementById('matchupRatingsBanner');
 const rankingsErrorEl = document.getElementById('rankingsError');
 const sectionEl = document.getElementById('playersSection');
@@ -24,7 +28,7 @@ const tbodyEl = document.getElementById('playersTableBody');
 const draftIdInput = document.getElementById('draftId');
 const loadDraftBtn = document.getElementById('loadDraftBtn');
 
-const positionFilter = document.getElementById('positionFilter');
+const pillButtons = document.querySelectorAll('#positionPills .pill');
 const rankFilter = document.getElementById('rankFilter');
 const draftedFilter = document.getElementById('draftedFilter');
 const playerSearch = document.getElementById('playerSearch');
@@ -48,6 +52,14 @@ let allPlayers = [];
 // before that, every player is trivially "Verfügbar", which confused a
 // tester. Gates the Status column and the Draft-Status filter until then.
 let draftSynced = false;
+// '' = Overall (Superflex), or 'QB'/'RB'/'WR'/'FLEX' - selected via the
+// pills-wrap nav (replaces the old Position dropdown filter). QB/RB/WR
+// switch both the filter AND the displayed/sorted ranking to that
+// position's own rank (see getDisplayRank, sortPlayersByPositionRank);
+// FLEX still shows/sorts by the overall rank, since there's no separate
+// FLEX-specific ranking bucket in the FantasyPros data - it's the overall
+// ranking restricted to RB/WR/TE, same as the old FLEX filter option.
+let activePosition = '';
 
 function createCell(text) {
   const td = document.createElement('td');
@@ -55,18 +67,35 @@ function createCell(text) {
   return td;
 }
 
+const POSITION_RANKED_PILLS = ['QB', 'RB', 'WR'];
+
+// On a QB/RB/WR pill, the "#" column shows that position's own rank
+// (e.g. QB1, QB2, ...) instead of the overall Superflex rank - matches
+// FantasyPros' own pill behavior. Falls back to the overall rank if a
+// positional rank can't be parsed (shouldn't normally happen, since
+// applyFilters already restricts to matching players).
+function getDisplayRank(player) {
+  if (POSITION_RANKED_PILLS.includes(activePosition)) {
+    return extractPositionRank(player.position) ?? player.rank;
+  }
+  return player.rank;
+}
+
 // Marks a rank derived from the ROS-PPR fallback (see
 // scripts/update-rankings.mjs, resolveScoringBucket) visibly, since it's on
 // a different scale than a week-specific rank - a bare number next to
-// regular ranks would misleadingly suggest direct comparability.
+// regular ranks would misleadingly suggest direct comparability. Applies
+// regardless of which rank is displayed (getDisplayRank), since the
+// positional rank comes from the same resolved scoring bucket.
 function createRankCell(player) {
   const td = document.createElement('td');
+  const displayRank = getDisplayRank(player);
   if (player.rankIsEstimated) {
-    td.textContent = `${player.rank}*`;
+    td.textContent = `${displayRank}*`;
     td.title = 'Rang basiert auf Rest-of-Season-Daten, da für diese Woche keine Daten vorliegen.';
     td.classList.add('rank-estimated');
   } else {
-    td.textContent = player.rank;
+    td.textContent = displayRank;
   }
   return td;
 }
@@ -141,7 +170,7 @@ function createMatchupCell(matchupRating) {
 
 function getFilters() {
   return {
-    position: positionFilter.value,
+    position: activePosition,
     maxRank: rankFilter.value,
     draftStatus: draftedFilter.value,
     search: playerSearch.value,
@@ -164,7 +193,8 @@ function updateDraftDependentUI() {
 // UC-001 main flow, step 3 / UC-003 main flow.
 function renderTable() {
   updateDraftDependentUI();
-  const filtered = applyFilters(sortPlayersByRank(allPlayers), getFilters());
+  const sortFn = POSITION_RANKED_PILLS.includes(activePosition) ? sortPlayersByPositionRank : sortPlayersByRank;
+  const filtered = applyFilters(sortFn(allPlayers), getFilters());
   tbodyEl.innerHTML = '';
 
   if (filtered.length === 0) {
@@ -229,6 +259,29 @@ function renderMatchupRatingsBanner(matchupRatingsUpdatedAt) {
   matchupRatingsBannerEl.hidden = !stale;
 }
 
+// Transparency: makes explicit what's actually being shown (an in-season
+// weekly PPR ranking, not e.g. a Rest-of-Season or Dynasty view) - see
+// describeRankingType. Falls back gracefully if season/week are missing
+// (an older snapshot from before this field existed).
+function renderRankingTypeBanner(season, week) {
+  rankingTypeBannerEl.textContent = describeRankingType(season, week);
+  rankingTypeBannerEl.hidden = false;
+}
+
+// pills-wrap: switches which ranking is shown (Overall/Superflex vs. a
+// specific position's own ranking - see getDisplayRank/sortPlayersByRank
+// vs. sortPlayersByPositionRank) and doubles as the position filter. The
+// active/inactive look comes from toggling Pico's own default-vs-outline
+// button variants (see style.css, .pill) rather than a custom color.
+function setActivePosition(position) {
+  activePosition = position;
+  pillButtons.forEach((btn) => {
+    btn.classList.toggle('outline', btn.dataset.position !== position);
+    btn.classList.toggle('secondary', btn.dataset.position !== position);
+  });
+  renderTable();
+}
+
 // UC-001 AF-1: no rankings file available.
 function showRankingsError(message) {
   rankingsErrorEl.textContent = message;
@@ -239,11 +292,10 @@ function showRankingsError(message) {
 
 // UC-003 AF-4.
 function clearFilters() {
-  positionFilter.value = '';
   rankFilter.value = '';
   draftedFilter.value = '';
   playerSearch.value = '';
-  renderTable();
+  setActivePosition(''); // back to Overall; also re-renders the table
 }
 
 // UC-002 main flow. Only ever runs from an explicit "Draft-Daten laden"
@@ -298,6 +350,7 @@ async function init() {
   try {
     const snapshot = await loadRankingsSnapshot();
     renderBanner(snapshot.generatedAt);
+    renderRankingTypeBanner(snapshot.season, snapshot.week);
     renderMatchupRatingsBanner(snapshot.matchupRatingsUpdatedAt);
     allPlayers = (snapshot.players ?? []).map((player) => ({
       ...player,
@@ -315,7 +368,7 @@ async function init() {
 
   loadDraftBtn.addEventListener('click', loadDraft);
   clearFiltersBtn.addEventListener('click', clearFilters);
-  positionFilter.addEventListener('change', renderTable);
+  pillButtons.forEach((btn) => btn.addEventListener('click', () => setActivePosition(btn.dataset.position)));
   rankFilter.addEventListener('input', renderTable);
   draftedFilter.addEventListener('change', renderTable);
   playerSearch.addEventListener('input', renderTable);

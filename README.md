@@ -9,8 +9,10 @@ Tracke deinen Fantasy Football Draft mit aktuellen FantasyPros-Rankings und Slee
 
 - **Automatisches Laden** der aktuellen Rankings aus `data/rankings.json`
 - **Aktualitäts-Banner**, der anzeigt, wann die Rankings zuletzt mit der FantasyPros-API synchronisiert wurden
+- **Ranking-Art-Banner**: macht transparent, dass es sich um ein In-Season-Wochen-Ranking (Woche/Saison) mit PPR-Scoring handelt
+- **Positions-Pills** (Overall/QB/RB/WR/Flex, FantasyPros-Style): wechseln zwischen der Overall- und den positionsspezifischen Ranglisten
 - **Draft-Abgleich** über die Sleeper-API anhand einer Draft-ID
-- **Filter & Suche**: Position, maximaler Rang, Draft-Status, Volltextsuche (inkl. `spalte:wert`-Syntax)
+- **Filter & Suche**: maximaler Rang, Draft-Status (erst nach Draft-Abgleich verfügbar), Volltextsuche (inkl. `spalte:wert`-Syntax)
 - **Statistik-Übersicht**: Spieler gesamt / gematched / ROS-Fallback / verfügbar / gedraftet
 - **Gegner** pro Spieler (ESPN Scoreboard API) und optional ein **Matchup-Rating** (Sterne)
 - Responsive UI auf Basis von [Pico CSS](https://picocss.com/)
@@ -28,8 +30,10 @@ offiziellen FantasyPros-API bezogen. Details dazu und zur restlichen Architektur
 2. **Draft abgleichen:** Sleeper-Draft-ID eingeben und auf „Draft-Daten laden“ klicken, um gedraftete
    Spieler zu markieren. Ist in `config/app.json` eine `draftId` hinterlegt, wird das Feld beim Laden
    der Seite vorbefüllt (siehe unten) - der Abgleich selbst erfolgt weiterhin erst per Klick.
-3. **Filtern/Suchen:** Über den Filterbereich nach Position, Rang oder Draft-Status einschränken, oder
-   die Suche nutzen (z. B. `team:phi`).
+3. **Ranking wechseln:** Über die Pills-Navigation ("Overall", "QB", "RB", "WR", "Flex") über der
+   Tabelle zwischen Overall- und positionsspezifischer Rangliste wechseln.
+4. **Filtern/Suchen:** Über den Filterbereich nach Rang oder Draft-Status einschränken, oder die Suche
+   nutzen (z. B. `team:phi`).
 
 ### `config/app.json`
 

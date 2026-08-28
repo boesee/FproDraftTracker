@@ -16,6 +16,30 @@
     white-space: nowrap;
 }
 
+/* FantasyPros-style "pills-wrap": the position-ranking switch, replacing
+   the old Position dropdown filter. Sits directly above the table. */
+.pills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+/* Sizing/shape only - color comes from Pico's own outline/secondary vs.
+   default button variants (toggled in js/main.js), not custom color
+   overrides. Pico's button styling locally redefines --pico-color to its
+   inverse (white) for the filled look, so a custom "color: var(--pico-color)"
+   here would read that same overridden token instead of normal text
+   color - this sidesteps that entirely and stays correct in dark mode too,
+   since Pico's own variants already are. */
+.pill {
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
 .rankings-banner {
     padding: 0.5rem 1rem;
     border-radius: var(--pico-border-radius);
