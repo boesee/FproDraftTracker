@@ -29,7 +29,6 @@ const draftIdInput = document.getElementById('draftId');
 const loadDraftBtn = document.getElementById('loadDraftBtn');
 
 const pillButtons = document.querySelectorAll('#positionPills .pill');
-const rankFilter = document.getElementById('rankFilter');
 const draftedFilter = document.getElementById('draftedFilter');
 const playerSearch = document.getElementById('playerSearch');
 const clearFiltersBtn = document.getElementById('clearFiltersBtn');
@@ -207,7 +206,6 @@ function createMatchupCell(matchupRating) {
 function getFilters() {
   return {
     position: activePosition,
-    maxRank: rankFilter.value,
     draftStatus: draftedFilter.value,
     search: playerSearch.value,
   };
@@ -331,7 +329,6 @@ function showRankingsError(message) {
 
 // UC-003 AF-4.
 function clearFilters() {
-  rankFilter.value = '';
   draftedFilter.value = '';
   playerSearch.value = '';
   setActivePosition(''); // back to Overall; also re-renders the table
@@ -408,7 +405,6 @@ async function init() {
   loadDraftBtn.addEventListener('click', loadDraft);
   clearFiltersBtn.addEventListener('click', clearFilters);
   pillButtons.forEach((btn) => btn.addEventListener('click', () => setActivePosition(btn.dataset.position)));
-  rankFilter.addEventListener('input', renderTable);
   draftedFilter.addEventListener('change', renderTable);
   playerSearch.addEventListener('input', renderTable);
 

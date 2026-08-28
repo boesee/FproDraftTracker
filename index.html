@@ -76,10 +76,6 @@
                         </select>
                     </div>
                     <div>
-                        <label for="rankFilter">Maximaler Rang</label>
-                        <input type="number" id="rankFilter" min="1" placeholder="z. B. 50">
-                    </div>
-                    <div>
                         <label for="draftedFilter">Draft-Status</label>
                         <select id="draftedFilter" disabled title="Erst nach dem Laden der Draft-Daten verfügbar">
                             <option value="">Alle Spieler</option>
@@ -89,10 +85,15 @@
                     </div>
                     <div>
                         <label for="playerSearch">Suche</label>
-                        <input type="text" id="playerSearch" placeholder="z. B. Hurts, team:phi">
-                        <small class="search-hint">
-                            Auch spaltenbasiert, z. B. <code>team:phi</code>
-                        </small>
+                        <input type="text" id="playerSearch" placeholder="z. B. Hurts, rank:50">
+                        <small class="field-hint">Auch spaltenbasiert:</small>
+                        <ul class="search-hint-list">
+                            <li><code>team:phi</code> – Team</li>
+                            <li><code>position:rb</code> – Position</li>
+                            <li><code>opponent:ne</code> – Gegner</li>
+                            <li><code>rank:50</code> – max. Rang</li>
+                            <li><code>injury:q</code> – Verletzungsstatus</li>
+                        </ul>
                     </div>
                 </div>
                 <button id="clearFiltersBtn" type="button" class="secondary outline">Filter zurücksetzen</button>
