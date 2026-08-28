@@ -158,16 +158,19 @@ function clearFilters() {
   renderTable();
 }
 
-// UC-002 main flow.
-async function loadDraft() {
+// UC-002 main flow. `silent` suppresses the UC-005 success/error toasts for
+// the automatic config/app.json sync on page load (see init()), so the
+// banner only appears when the Fantasy-Football-Manager explicitly triggers
+// a sync via the "Draft-Daten laden" button.
+async function loadDraft({ silent = false } = {}) {
   const draftId = draftIdInput.value.trim();
   if (!draftId) {
-    messages.showError('Bitte geben Sie eine gültige Draft-ID ein.');
+    if (!silent) messages.showError('Bitte geben Sie eine gültige Draft-ID ein.');
     return;
   }
   // UC-002 AF-1: rankings not loaded yet.
   if (allPlayers.length === 0) {
-    messages.showError('Bitte zuerst die Rankings laden.');
+    if (!silent) messages.showError('Bitte zuerst die Rankings laden.');
     return;
   }
 
@@ -176,7 +179,7 @@ async function loadDraft() {
     const { players, matched, unmatchedPicks } = matchDraftedPlayers(allPlayers, picks);
     allPlayers = players;
     renderAll();
-    messages.showSuccess(`${picks.length} Picks geladen, ${matched} Spieler zugeordnet.`);
+    if (!silent) messages.showSuccess(`${picks.length} Picks geladen, ${matched} Spieler zugeordnet.`);
     // UC-002 AF-3: surface unmatched picks in the console for quick
     // diagnosis, instead of having to manually diff 100+ picks by hand.
     if (unmatchedPicks.length > 0) {
@@ -186,7 +189,7 @@ async function loadDraft() {
   } catch (error) {
     // UC-002 AF-2: invalid/unknown draft ID or unexpected response.
     logger.error('Draft-Abgleich fehlgeschlagen', error);
-    messages.showError('Draft-ID ungültig oder keine Daten gefunden.');
+    if (!silent) messages.showError('Draft-ID ungültig oder keine Daten gefunden.');
   }
 }
 
@@ -210,7 +213,7 @@ async function init() {
     return;
   }
 
-  loadDraftBtn.addEventListener('click', loadDraft);
+  loadDraftBtn.addEventListener('click', () => loadDraft());
   clearFiltersBtn.addEventListener('click', clearFilters);
   positionFilter.addEventListener('change', renderTable);
   rankFilter.addEventListener('input', renderTable);
@@ -222,7 +225,7 @@ async function init() {
   // every time.
   if (config.draftId) {
     draftIdInput.value = config.draftId;
-    loadDraft();
+    loadDraft({ silent: true });
   }
 }
 
