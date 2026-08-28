@@ -42,16 +42,14 @@ export function sortPlayersByPositionRank(players) {
   });
 }
 
-// Surfaces the ranking's scope (In-Season Wochen-Ranking, not a Rest-of-
-// Season/Dynasty view) and scoring format, so it's transparent what's
-// being shown - matches FantasyPros' own "PPR" wording. Season/week are
-// optional (older snapshots, from before this field existed, won't have
-// them) - falls back to a scoring-only line rather than showing nothing.
-export function describeRankingType(season, week) {
-  if (season == null || week == null) {
-    return 'In-Season Wochen-Ranking – PPR-Scoring';
-  }
-  return `In-Season Wochen-Ranking – Woche ${week}, Saison ${season} – PPR-Scoring`;
+// UC-008: supplements the Ranking/Scoring selects (index.html) with the
+// specific week/season those selections currently resolve to - "Weekly"
+// alone doesn't say *which* week. Season/week are optional (older
+// snapshots, from before these fields existed, won't have them); returns
+// '' rather than a misleading placeholder when they're missing.
+export function describeRankingPeriod(season, week) {
+  if (season == null || week == null) return '';
+  return `Woche ${week}, Saison ${season}`;
 }
 
 // UC-006 BR-002: the staleness check only applies within the 07:00-23:00

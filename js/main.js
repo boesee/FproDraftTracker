@@ -7,7 +7,7 @@ import {
   extractPositionRank,
   describeFreshness,
   describeMatchupRatingsFreshness,
-  describeRankingType,
+  describeRankingPeriod,
 } from './rankings.js';
 import { fetchDraftPicks, matchDraftedPlayers } from './sleeperDraft.js';
 import { applyFilters } from './filters.js';
@@ -18,7 +18,7 @@ import { initThemeToggle } from './theme.js';
 const logger = new Logger(false);
 
 const bannerEl = document.getElementById('rankingsBanner');
-const rankingTypeBannerEl = document.getElementById('rankingTypeBanner');
+const rankingPeriodInfoEl = document.getElementById('rankingPeriodInfo');
 const matchupRatingsBannerEl = document.getElementById('matchupRatingsBanner');
 const rankingsErrorEl = document.getElementById('rankingsError');
 const sectionEl = document.getElementById('playersSection');
@@ -259,13 +259,16 @@ function renderMatchupRatingsBanner(matchupRatingsUpdatedAt) {
   matchupRatingsBannerEl.hidden = !stale;
 }
 
-// Transparency: makes explicit what's actually being shown (an in-season
-// weekly PPR ranking, not e.g. a Rest-of-Season or Dynasty view) - see
-// describeRankingType. Falls back gracefully if season/week are missing
-// (an older snapshot from before this field existed).
-function renderRankingTypeBanner(season, week) {
-  rankingTypeBannerEl.textContent = describeRankingType(season, week);
-  rankingTypeBannerEl.hidden = false;
+// UC-008 transparency: the Ranking/Scoring selects (currently a single
+// option each - "Wochen-Ranking"/"PPR" - are the only ranking type/scoring
+// format the pipeline actually produces today; more options land here as
+// the pipeline grows to support them, e.g. Dynasty/ROS rankings or
+// Half-PPR scoring) say *what kind* of ranking this is; this fills in
+// *which* week/season it resolves to, since "Weekly" alone doesn't say
+// that. Left empty (not an error state) if season/week are missing - an
+// older snapshot from before those fields existed.
+function renderRankingPeriodInfo(season, week) {
+  rankingPeriodInfoEl.textContent = describeRankingPeriod(season, week);
 }
 
 // pills-wrap: switches which ranking is shown (Overall/Superflex vs. a
@@ -350,7 +353,7 @@ async function init() {
   try {
     const snapshot = await loadRankingsSnapshot();
     renderBanner(snapshot.generatedAt);
-    renderRankingTypeBanner(snapshot.season, snapshot.week);
+    renderRankingPeriodInfo(snapshot.season, snapshot.week);
     renderMatchupRatingsBanner(snapshot.matchupRatingsUpdatedAt);
     allPlayers = (snapshot.players ?? []).map((player) => ({
       ...player,

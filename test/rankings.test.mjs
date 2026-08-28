@@ -4,7 +4,7 @@ import {
   sortPlayersByRank,
   extractPositionRank,
   sortPlayersByPositionRank,
-  describeRankingType,
+  describeRankingPeriod,
   describeFreshness,
   describeMatchupRatingsFreshness,
 } from '../js/rankings.js';
@@ -57,13 +57,13 @@ test('sortPlayersByPositionRank: unparseable positions sort last, not first', ()
   );
 });
 
-test('describeRankingType: with season/week, names both plus the scoring format', () => {
-  assert.equal(describeRankingType(2026, 1), 'In-Season Wochen-Ranking – Woche 1, Saison 2026 – PPR-Scoring');
+test('describeRankingPeriod: names week and season', () => {
+  assert.equal(describeRankingPeriod(2026, 1), 'Woche 1, Saison 2026');
 });
 
-test('describeRankingType: falls back gracefully when season/week are missing (older snapshot)', () => {
-  assert.equal(describeRankingType(null, null), 'In-Season Wochen-Ranking – PPR-Scoring');
-  assert.equal(describeRankingType(undefined, undefined), 'In-Season Wochen-Ranking – PPR-Scoring');
+test('describeRankingPeriod: returns empty string when season/week are missing (older snapshot)', () => {
+  assert.equal(describeRankingPeriod(null, null), '');
+  assert.equal(describeRankingPeriod(undefined, undefined), '');
 });
 
 test('describeFreshness: missing/invalid timestamp is handled gracefully (BR-003)', () => {

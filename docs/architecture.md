@@ -142,15 +142,24 @@ frühere Position-Dropdown-Filterung ab.
 ## Ranking-Art-Transparenz
 
 Ergänzt um `season`/`week` im `RANKINGS_SNAPSHOT` (vom Pipeline-Skript
-berechnet/übernommen, siehe oben) zeigt ein Info-Banner
-(`js/rankings.js`, `describeRankingType`; UC-008) explizit an, dass es
-sich um ein **In-Season Wochen-Ranking** mit **PPR**-Scoring handelt,
-inklusive Woche und Saison — macht sichtbar, dass dies **kein**
+berechnet/übernommen, siehe oben). Statt eines reinen Info-Banners sind
+"Ranking" und "Scoring" (UC-008) als eigene `<select>`-Felder im
+Filterbereich (`index.html`, `#rankingTypeSelect`/`#scoringFormatSelect`)
+umgesetzt — macht **explizit als Auswahlmöglichkeit** sichtbar, dass es
+sich aktuell um ein **Wochen-Ranking** mit **PPR**-Scoring handelt, und
+ist bewusst so angelegt, dass später weitere `<option>`-Werte ergänzt
+werden können, sobald die Pipeline sie tatsächlich unterstützt (z. B.
+Dynasty-/ROS-/Draft-Rankings, Half-PPR-Scoring) — aktuell hat jedes
+Select nur den einen tatsächlich verfügbaren Wert, ohne deaktivierte
+Platzhalter-Optionen für Ungebautes vorzutäuschen. Die konkrete Woche/
+Saison (die Selects allein sagen nur "Wochen-Ranking", nicht "welche
+Woche") steht als kleiner Hinweistext darunter
+(`js/rankings.js`, `describeRankingPeriod`) — leer, wenn `season`/`week`
+im Snapshot fehlen (älterer Snapshot vor Einführung dieser Felder),
+statt eines falschen Werts. Macht insgesamt sichtbar, dass dies **kein**
 Rest-of-Season- oder Dynasty-Ranking ist (auch wenn einzelne Spieler
-intern auf den ROS-PPR-Fallback zurückgreifen, siehe
-`rankIsEstimated` oben). Fehlen `season`/`week` (älterer Snapshot vor
-Einführung dieser Felder), zeigt der Banner einen reduzierten Text ohne
-Woche/Saison statt eines falschen Werts.
+intern auf den ROS-PPR-Fallback zurückgreifen, siehe `rankIsEstimated`
+oben).
 
 ## Gegner-Anreicherung (ESPN Scoreboard API)
 
