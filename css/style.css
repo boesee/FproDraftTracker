@@ -1,5 +1,21 @@
 /* Fantasy Football Draft Tracker - custom styles on top of Pico CSS. */
 
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
 .rankings-banner {
     padding: 0.5rem 1rem;
     border-radius: var(--pico-border-radius);
@@ -31,26 +47,47 @@
 }
 
 /* These three use hardcoded light pastel backgrounds rather than Pico's
-   theme-aware --pico-* variables, so they need their own dark-mode swap
-   now that data-theme is no longer forced to "light" in index.html. */
+   theme-aware --pico-* variables, so they need their own dark-mode swap -
+   defined twice, matching how Pico itself resolves the theme: once for the
+   OS-level preference (guarded against an explicit light override), and
+   again for the manual toggle's data-theme="dark" (js/theme.js), since a
+   manual choice must win even when it disagrees with the OS setting. */
 @media (prefers-color-scheme: dark) {
-    .rankings-banner.stale {
+    :root:not([data-theme="light"]) .rankings-banner.stale {
         background: #4d3800;
         border-color: #a6791b;
         color: #ffd873;
     }
 
-    .message-error {
+    :root:not([data-theme="light"]) .message-error {
         background: #4a1f24;
         color: #ffb3ba;
         border-left-color: #f85149;
     }
 
-    .message-success {
+    :root:not([data-theme="light"]) .message-success {
         background: #10281c;
         color: #7ee2a8;
         border-left-color: #3fb950;
     }
+}
+
+:root[data-theme="dark"] .rankings-banner.stale {
+    background: #4d3800;
+    border-color: #a6791b;
+    color: #ffd873;
+}
+
+:root[data-theme="dark"] .message-error {
+    background: #4a1f24;
+    color: #ffb3ba;
+    border-left-color: #f85149;
+}
+
+:root[data-theme="dark"] .message-success {
+    background: #10281c;
+    color: #7ee2a8;
+    border-left-color: #3fb950;
 }
 
 /* NFR-005: keeps horizontal overflow contained to the table itself on
@@ -87,6 +124,13 @@
 
 .status-dot-drafted {
     color: #dc3545;
+}
+
+/* Availability is meaningless before a draft is synced (UC-002) - every
+   player would trivially show "Verfügbar", which a real test user found
+   confusing rather than informative. */
+#playersTable.draft-not-synced .status-column {
+    display: none;
 }
 
 @media (max-width: 480px) {

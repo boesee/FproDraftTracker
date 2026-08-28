@@ -12,8 +12,12 @@
 
 <body>
     <main class="container">
-        <header>
+        <header class="app-header">
             <h1>Fantasy Football Draft Tracker</h1>
+            <label class="theme-toggle" for="themeToggle">
+                <input type="checkbox" id="themeToggle" role="switch">
+                Dark Mode
+            </label>
         </header>
 
         <p id="rankingsBanner" class="rankings-banner" role="status" hidden></p>
@@ -75,7 +79,7 @@
                     </div>
                     <div>
                         <label for="draftedFilter">Draft-Status</label>
-                        <select id="draftedFilter">
+                        <select id="draftedFilter" disabled title="Erst nach dem Laden der Draft-Daten verfügbar">
                             <option value="">Alle Spieler</option>
                             <option value="available">Verfügbar</option>
                             <option value="drafted">Gedraftet</option>
@@ -102,7 +106,7 @@
                             <th>Team</th>
                             <th title="Gegner">Geg.</th>
                             <th title="Matchup">Mat.</th>
-                            <th>Status</th>
+                            <th class="status-column" title="Erst nach dem Laden der Draft-Daten verfügbar">Status</th>
                         </tr>
                     </thead>
                     <tbody id="playersTableBody"></tbody>
