@@ -189,7 +189,7 @@ Login-Automatisierung, kein Puppeteer/Headless-Browser in der Pipeline.
   config/matchup-ratings.json` und schreibt ihn als
   `matchupRatingsUpdatedAt` in den Snapshot. Das erfordert die volle
   Commit-Historie statt des GitHub-Actions-Standard-Shallow-Checkouts,
-  daher `fetch-depth: 0` im Workflow. Ist der Commit älter als 6 Tage
+  daher `fetch-depth: 0` im Workflow. Ist der Commit älter als 1 Tag
   (`describeMatchupRatingsFreshness`, `js/rankings.js`), zeigt das
   Frontend eine Warnung — analog zum Rankings-Aktualitäts-Banner
   (UC-006), aber nur sichtbar, wenn tatsächlich veraltet, statt bei

@@ -5,7 +5,7 @@
 const RANKINGS_URL = 'data/rankings.json';
 const STALE_THRESHOLD_MINUTES = 30;
 const OPERATING_WINDOW = { startHour: 7, endHour: 23 };
-const MATCHUP_RATINGS_STALE_THRESHOLD_DAYS = 6;
+const MATCHUP_RATINGS_STALE_THRESHOLD_DAYS = 1;
 
 export async function loadRankingsSnapshot() {
   const response = await fetch(RANKINGS_URL, { cache: 'no-store' });
