@@ -246,19 +246,17 @@ function clearFilters() {
   renderTable();
 }
 
-// UC-002 main flow. `silent` suppresses the UC-005 success/error toasts for
-// the automatic config/app.json sync on page load (see init()), so the
-// banner only appears when the Fantasy-Football-Manager explicitly triggers
-// a sync via the "Draft-Daten laden" button.
-async function loadDraft({ silent = false } = {}) {
+// UC-002 main flow. Only ever runs from an explicit "Draft-Daten laden"
+// click (see init()) - there is no automatic sync.
+async function loadDraft() {
   const draftId = draftIdInput.value.trim();
   if (!draftId) {
-    if (!silent) messages.showError('Bitte geben Sie eine gültige Draft-ID ein.');
+    messages.showError('Bitte geben Sie eine gültige Draft-ID ein.');
     return;
   }
   // UC-002 AF-1: rankings not loaded yet.
   if (allPlayers.length === 0) {
-    if (!silent) messages.showError('Bitte zuerst die Rankings laden.');
+    messages.showError('Bitte zuerst die Rankings laden.');
     return;
   }
 
@@ -275,7 +273,7 @@ async function loadDraft({ silent = false } = {}) {
     allPlayers = players;
     draftSynced = true;
     renderAll();
-    if (!silent) messages.showSuccess(`${picks.length} Picks geladen, ${matched} Spieler zugeordnet.`);
+    messages.showSuccess(`${picks.length} Picks geladen, ${matched} Spieler zugeordnet.`);
     // UC-002 AF-3: surface unmatched picks in the console for quick
     // diagnosis, instead of having to manually diff 100+ picks by hand.
     if (unmatchedPicks.length > 0) {
@@ -285,7 +283,7 @@ async function loadDraft({ silent = false } = {}) {
   } catch (error) {
     // UC-002 AF-2: invalid/unknown draft ID or unexpected response.
     logger.error('Draft-Abgleich fehlgeschlagen', error);
-    if (!silent) messages.showError('Draft-ID ungültig oder keine Daten gefunden.');
+    messages.showError('Draft-ID ungültig oder keine Daten gefunden.');
   } finally {
     loadDraftBtn.disabled = false;
     loadDraftBtn.textContent = originalLabel;
@@ -315,19 +313,21 @@ async function init() {
     return;
   }
 
-  loadDraftBtn.addEventListener('click', () => loadDraft());
+  loadDraftBtn.addEventListener('click', loadDraft);
   clearFiltersBtn.addEventListener('click', clearFilters);
   positionFilter.addEventListener('change', renderTable);
   rankFilter.addEventListener('input', renderTable);
   draftedFilter.addEventListener('change', renderTable);
   playerSearch.addEventListener('input', renderTable);
 
-  // Pre-fill and auto-sync from config/app.json, so a recurring draft
-  // doesn't need the Draft-ID typed in and "Draft-Daten laden" clicked
-  // every time.
+  // Pre-fill from config/app.json, so a recurring draft doesn't need the
+  // Draft-ID typed in every time - but never sync automatically. An
+  // unconditional auto-sync on every page load meant draftSynced was
+  // already true by the time anyone looked at the page, defeating the
+  // Status column's gating (see updateDraftDependentUI) and silently
+  // hitting the Sleeper API before the user asked for it.
   if (config.draftId) {
     draftIdInput.value = config.draftId;
-    loadDraft({ silent: true });
   }
 }
 

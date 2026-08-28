@@ -26,8 +26,8 @@ offiziellen FantasyPros-API bezogen. Details dazu und zur restlichen Architektur
 
 1. **Seite öffnen:** Die Datei `data/rankings.json` wird automatisch geladen und angezeigt.
 2. **Draft abgleichen:** Sleeper-Draft-ID eingeben und auf „Draft-Daten laden“ klicken, um gedraftete
-   Spieler zu markieren. Ist in `config/app.json` eine `draftId` hinterlegt, geschieht das automatisch
-   beim Laden der Seite (siehe unten).
+   Spieler zu markieren. Ist in `config/app.json` eine `draftId` hinterlegt, wird das Feld beim Laden
+   der Seite vorbefüllt (siehe unten) - der Abgleich selbst erfolgt weiterhin erst per Klick.
 3. **Filtern/Suchen:** Über den Filterbereich nach Position, Rang oder Draft-Status einschränken, oder
    die Suche nutzen (z. B. `team:phi`).
 
@@ -43,8 +43,9 @@ Optionale, von Hand gepflegte Konfiguration:
 }
 ```
 
-- `draftId`: wird beim Laden vorbefüllt und löst den Draft-Abgleich automatisch aus. Praktisch, wenn
-  du wöchentlich dieselbe Draft-ID verwendest.
+- `draftId`: wird beim Laden nur vorbefüllt, löst den Draft-Abgleich aber **nicht** automatisch aus -
+  "Draft-Daten laden" muss weiterhin manuell geklickt werden. Praktisch, wenn du wöchentlich dieselbe
+  Draft-ID verwendest, ohne sie jedes Mal neu eintippen zu müssen.
 - `season`/`week`: überschreiben bei Bedarf die von der Pipeline automatisch berechneten Werte;
   `null` heisst "automatisch berechnen" (Standard). Details siehe
   [`docs/architecture.md`](docs/architecture.md#konfiguration-configappjson).
