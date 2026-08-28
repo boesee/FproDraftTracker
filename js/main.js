@@ -141,10 +141,25 @@ function getFilters() {
   };
 }
 
+const PLAYER_TABLE_COLUMN_COUNT = 7;
+
 // UC-001 main flow, step 3 / UC-003 main flow.
 function renderTable() {
   const filtered = applyFilters(sortPlayersByRank(allPlayers), getFilters());
   tbodyEl.innerHTML = '';
+
+  if (filtered.length === 0) {
+    const row = document.createElement('tr');
+    const td = document.createElement('td');
+    td.colSpan = PLAYER_TABLE_COLUMN_COUNT;
+    td.className = 'empty-state';
+    td.textContent = 'Keine Spieler entsprechen den aktuellen Filtern.';
+    row.appendChild(td);
+    tbodyEl.appendChild(row);
+    rankEstimateNoteEl.hidden = true;
+    return;
+  }
+
   for (const player of filtered) {
     const row = document.createElement('tr');
     if (player.drafted) row.classList.add('drafted-row');
@@ -228,6 +243,13 @@ async function loadDraft({ silent = false } = {}) {
     return;
   }
 
+  // Sleeper's response time varies; without a busy state a slow fetch looks
+  // like the click didn't register, inviting a double-click (harmless, but
+  // confusing) instead of just waiting.
+  const originalLabel = loadDraftBtn.textContent;
+  loadDraftBtn.disabled = true;
+  loadDraftBtn.textContent = 'Lädt…';
+
   try {
     const picks = await fetchDraftPicks(draftId);
     const { players, matched, unmatchedPicks } = matchDraftedPlayers(allPlayers, picks);
@@ -244,6 +266,9 @@ async function loadDraft({ silent = false } = {}) {
     // UC-002 AF-2: invalid/unknown draft ID or unexpected response.
     logger.error('Draft-Abgleich fehlgeschlagen', error);
     if (!silent) messages.showError('Draft-ID ungültig oder keine Daten gefunden.');
+  } finally {
+    loadDraftBtn.disabled = false;
+    loadDraftBtn.textContent = originalLabel;
   }
 }
 
