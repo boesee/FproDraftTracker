@@ -220,9 +220,14 @@ Pipeline (`scripts/lib/config.mjs`) gelesen werden:
 ```
 
 - `draftId`: Ist ein Wert gesetzt, befüllt das Frontend das Draft-ID-Feld
-  beim Laden automatisch vor und löst den Sleeper-Abgleich (UC-002)
-  sofort aus — kein manuelles Eintippen/Klicken pro Sitzung nötig. `null`
-  bedeutet: Feld bleibt leer, Nutzer trägt die ID manuell ein.
+  beim Laden automatisch vor — kein manuelles Eintippen pro Sitzung nötig.
+  Der Sleeper-Abgleich (UC-002) selbst wird dadurch bewusst **nicht**
+  ausgelöst; das bleibt ein expliziter Klick auf "Draft-Daten laden". Ein
+  automatischer Sync bei jedem Seitenaufruf hätte den Sleeper-Endpunkt
+  ungefragt bei jedem Laden getroffen und die Statusspalte (an den
+  Sync-Zustand gekoppelt, siehe UC-002/UC-004) von Anfang an bedeutungslos
+  gemacht, statt bis zum ersten echten Abgleich ausgeblendet zu bleiben.
+  `null` bedeutet: Feld bleibt leer, Nutzer trägt die ID manuell ein.
 - `season`/`week`: Überschreiben die automatisch berechneten Werte aus
   `currentNflSeason()`/`currentNflWeek()` (`scripts/lib/nflSchedule.mjs`).
   `null` bedeutet: automatische Berechnung wird verwendet
