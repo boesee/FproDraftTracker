@@ -95,7 +95,7 @@ test('describeFreshness: older than 30min inside the operating window is stale',
   assert.equal(result.stale, true);
   // Staleness is surfaced visually via the `.stale` CSS class (js/main.js),
   // not by appending wording to the text itself.
-  assert.match(result.text, /^Rankings zuletzt aktualisiert um \d{2}:\d{2} Uhr$/);
+  assert.match(result.text, /^Rankings zuletzt aktualisiert am \d{2}\.\d{2}\.\d{4} um \d{2}:\d{2} Uhr$/);
 });
 
 test('describeFreshness: BR-002 old data outside the 07-23h operating window is not flagged stale', () => {
@@ -120,5 +120,5 @@ test('describeMatchupRatingsFreshness: over the 1-day threshold is stale and men
   const now = new Date('2026-08-28T12:00:00Z');
   const result = describeMatchupRatingsFreshness('2026-08-26T12:00:00Z', now); // 2 days old
   assert.equal(result.stale, true);
-  assert.match(result.text, /^Matchup-Ratings zuletzt aktualisiert am \d{2}\.\d{2}\.\d{4}$/);
+  assert.match(result.text, /^Matchup-Ratings zuletzt aktualisiert am \d{2}\.\d{2}\.\d{4} um \d{2}:\d{2} Uhr$/);
 });

@@ -70,10 +70,15 @@ export function describeFreshness(generatedAt, now = new Date()) {
 
   const ageMinutes = (now.getTime() - generatedDate.getTime()) / 60000;
   const stale = ageMinutes > STALE_THRESHOLD_MINUTES && isWithinOperatingWindow(now);
+  const date = generatedDate.toLocaleDateString('de-CH', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  });
   const time = generatedDate.toLocaleTimeString('de-CH', { hour: '2-digit', minute: '2-digit' });
 
   return {
-    text: `Rankings zuletzt aktualisiert um ${time} Uhr`,
+    text: `Rankings zuletzt aktualisiert am ${date} um ${time} Uhr`,
     stale,
   };
 }
@@ -98,9 +103,10 @@ export function describeMatchupRatingsFreshness(updatedAt, now = new Date()) {
     month: '2-digit',
     year: 'numeric',
   });
+  const time = updatedDate.toLocaleTimeString('de-CH', { hour: '2-digit', minute: '2-digit' });
 
   return {
     stale,
-    text: `Matchup-Ratings zuletzt aktualisiert am ${date}`,
+    text: `Matchup-Ratings zuletzt aktualisiert am ${date} um ${time} Uhr`,
   };
 }
