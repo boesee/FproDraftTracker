@@ -73,9 +73,7 @@ export function describeFreshness(generatedAt, now = new Date()) {
   const time = generatedDate.toLocaleTimeString('de-CH', { hour: '2-digit', minute: '2-digit' });
 
   return {
-    text: stale
-      ? `Rankings zuletzt aktualisiert um ${time} Uhr (veraltet)`
-      : `Rankings zuletzt aktualisiert um ${time} Uhr`,
+    text: `Rankings zuletzt aktualisiert um ${time} Uhr`,
     stale,
   };
 }
@@ -95,10 +93,14 @@ export function describeMatchupRatingsFreshness(updatedAt, now = new Date()) {
 
   const ageDays = (now.getTime() - updatedDate.getTime()) / (24 * 60 * 60 * 1000);
   const stale = ageDays > MATCHUP_RATINGS_STALE_THRESHOLD_DAYS;
-  const date = updatedDate.toLocaleDateString('de-CH', { day: '2-digit', month: '2-digit' });
+  const date = updatedDate.toLocaleDateString('de-CH', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  });
 
   return {
     stale,
-    text: `Matchup-Ratings zuletzt aktualisiert am ${date} – möglicherweise nicht mehr aktuell für diese Woche.`,
+    text: `Matchup-Ratings zuletzt aktualisiert am ${date}`,
   };
 }
