@@ -105,9 +105,15 @@ test('describeFreshness: BR-002 old data outside the 07-23h operating window is 
   assert.equal(result.stale, false);
 });
 
-test('describeMatchupRatingsFreshness: missing/invalid timestamp stays hidden (no warning, no error)', () => {
-  assert.deepEqual(describeMatchupRatingsFreshness(null), { stale: false, text: '' });
-  assert.deepEqual(describeMatchupRatingsFreshness('not-a-date'), { stale: false, text: '' });
+test('describeMatchupRatingsFreshness: missing/invalid timestamp is handled gracefully, not flagged stale', () => {
+  assert.deepEqual(describeMatchupRatingsFreshness(null), {
+    stale: false,
+    text: 'Matchup-Ratings: Aktualität unbekannt',
+  });
+  assert.deepEqual(describeMatchupRatingsFreshness('not-a-date'), {
+    stale: false,
+    text: 'Matchup-Ratings: Aktualität unbekannt',
+  });
 });
 
 test('describeMatchupRatingsFreshness: under the 1-day threshold is not stale', () => {
