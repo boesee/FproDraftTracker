@@ -87,13 +87,13 @@ export function describeFreshness(generatedAt, now = new Date()) {
 // week/season tag of its own (see scripts/lib/matchupRatings.mjs) - it's a
 // raw copy-paste of FantasyPros' advancedMetrics, refreshed by hand roughly
 // once a week. Its freshness is derived from the file's last git commit
-// date (matchupRatingsUpdatedAt in the snapshot) instead, and surfaced only
-// when stale, so the UI doesn't flash a warning on every page load like
-// UC-006's rankings banner does.
+// date (matchupRatingsUpdatedAt in the snapshot) instead. Always shown,
+// same as UC-006's rankings banner - the `stale` flag only controls the
+// orange warning styling, not whether the banner appears at all.
 export function describeMatchupRatingsFreshness(updatedAt, now = new Date()) {
   const updatedDate = updatedAt ? new Date(updatedAt) : null;
   if (!updatedDate || Number.isNaN(updatedDate.getTime())) {
-    return { stale: false, text: '' };
+    return { stale: false, text: 'Matchup-Ratings: Aktualität unbekannt' };
   }
 
   const ageDays = (now.getTime() - updatedDate.getTime()) / (24 * 60 * 60 * 1000);

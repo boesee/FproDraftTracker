@@ -282,14 +282,14 @@ function renderBanner(generatedAt) {
   bannerEl.hidden = false;
 }
 
-// Surfaces a warning only when config/matchup-ratings.json's last commit is
-// older than the weekly refresh cadence (see describeMatchupRatingsFreshness)
-// - stays hidden otherwise so it doesn't clutter the UI when ratings are
-// current or simply weren't set up at all.
+// Always shown, same as renderBanner - only the orange warning styling
+// (.stale) depends on config/matchup-ratings.json's last commit being
+// older than the weekly refresh cadence (see describeMatchupRatingsFreshness).
 function renderMatchupRatingsBanner(matchupRatingsUpdatedAt) {
   const { text, stale } = describeMatchupRatingsFreshness(matchupRatingsUpdatedAt);
   matchupRatingsBannerEl.textContent = text;
-  matchupRatingsBannerEl.hidden = !stale;
+  matchupRatingsBannerEl.classList.toggle('stale', stale);
+  matchupRatingsBannerEl.hidden = false;
 }
 
 // UC-008 transparency: the Ranking/Scoring selects (currently a single
