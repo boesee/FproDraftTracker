@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-01T05:37:54.349Z",
+  "generatedAt": "2026-09-01T06:22:26.371Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
-  "matchupRatingsUpdatedAt": "2026-08-28T23:22:47+02:00",
+  "matchupRatingsUpdatedAt": "2026-09-01T07:56:45+02:00",
   "players": [
     {
       "player_id": 22968,
@@ -3705,7 +3705,7 @@
       "position": "RB72",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 1.1,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -3990,7 +3990,7 @@
       "position": "RB83",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 2,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -4065,7 +4065,7 @@
       "position": "RB85",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": 2.9,
+      "matchupRating": 1.6,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -4200,7 +4200,7 @@
       "position": "RB91",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 2.6,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -4305,7 +4305,7 @@
       "position": "RB92",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 1.1,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -4425,7 +4425,7 @@
       "position": "RB93",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 1.6,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -4500,7 +4500,7 @@
       "position": "RB94",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 2.5,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -4545,7 +4545,7 @@
       "position": "RB97",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 1.1,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -4875,7 +4875,7 @@
       "position": "WR121",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 3.5,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -4965,7 +4965,7 @@
       "position": "RB102",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 3.7,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -5055,7 +5055,7 @@
       "position": "WR130",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 4.5,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -5115,7 +5115,7 @@
       "position": "TE65",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 3.1,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -5775,7 +5775,7 @@
       "position": "QB52",
       "team": "JAC",
       "opponent": "vs CLE",
-      "matchupRating": 4.8,
+      "matchupRating": 2.6,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -6390,7 +6390,7 @@
       "position": "RB106",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 4,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -6495,7 +6495,7 @@
       "position": "WR155",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 2.2,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -6510,7 +6510,7 @@
       "position": "TE83",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 2.9,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -7845,7 +7845,7 @@
       "position": "RB129",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 1.6,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -7935,7 +7935,7 @@
       "position": "RB124",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 3.1,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -8550,7 +8550,7 @@
       "position": "QB73",
       "team": "FA",
       "opponent": null,
-      "matchupRating": 4,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
