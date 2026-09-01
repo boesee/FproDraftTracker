@@ -621,15 +621,6 @@
         "position_id": "QB",
         "team_id": "ARI"
     },
-    "18585": {
-        "matchup_rating": {
-            "rating": "3.5",
-            "opp": "NO"
-        },
-        "player_name": "Greg Dortch",
-        "position_id": "WR",
-        "team_id": "DET"
-    },
     "18598": {
         "matchup_rating": {
             "rating": "3.5",
@@ -891,15 +882,6 @@
         "position_id": "RB",
         "team_id": "PIT"
     },
-    "19747": {
-        "matchup_rating": {
-            "rating": "4.5",
-            "opp": "NE"
-        },
-        "player_name": "Nick Westbrook-Ikhine",
-        "position_id": "WR",
-        "team_id": "IND"
-    },
     "19780": {
         "matchup_rating": {
             "rating": "2.3",
@@ -1098,15 +1080,6 @@
         "position_id": "RB",
         "team_id": "NE"
     },
-    "22728": {
-        "matchup_rating": {
-            "rating": "3.7",
-            "opp": "SF"
-        },
-        "player_name": "Michael Carter",
-        "position_id": "RB",
-        "team_id": "TEN"
-    },
     "22739": {
         "matchup_rating": {
             "rating": "1.1",
@@ -1241,15 +1214,6 @@
         "player_name": "Jerome Ford",
         "position_id": "RB",
         "team_id": "WAS"
-    },
-    "22928": {
-        "matchup_rating": {
-            "rating": "1.1",
-            "opp": "SEA"
-        },
-        "player_name": "Phil Mafah",
-        "position_id": "RB",
-        "team_id": "DAL"
     },
     "22930": {
         "matchup_rating": {
@@ -1394,15 +1358,6 @@
         "player_name": "Chris Rodriguez Jr.",
         "position_id": "RB",
         "team_id": "JAC"
-    },
-    "22987": {
-        "matchup_rating": {
-            "rating": "4.0",
-            "opp": "SF"
-        },
-        "player_name": "Will Levis",
-        "position_id": "QB",
-        "team_id": "TEN"
     },
     "22989": {
         "matchup_rating": {
@@ -1809,15 +1764,6 @@
         "position_id": "WR",
         "team_id": "ATL"
     },
-    "23167": {
-        "matchup_rating": {
-            "rating": "2.9",
-            "opp": "SEA"
-        },
-        "player_name": "Michael Trigg",
-        "position_id": "TE",
-        "team_id": "DAL"
-    },
     "23179": {
         "matchup_rating": {
             "rating": "3.9",
@@ -1883,12 +1829,12 @@
     },
     "23680": {
         "matchup_rating": {
-            "rating": "4.8",
-            "opp": "WAS"
+            "rating": "2.6",
+            "opp": "NO"
         },
         "player_name": "Quinn Ewers",
         "position_id": "QB",
-        "team_id": "MIA"
+        "team_id": "JAC"
     },
     "23682": {
         "matchup_rating": {
@@ -2061,15 +2007,6 @@
         "position_id": "TE",
         "team_id": "CAR"
     },
-    "24335": {
-        "matchup_rating": {
-            "rating": "4.0",
-            "opp": "WAS"
-        },
-        "player_name": "Jarquez Hunter",
-        "position_id": "RB",
-        "team_id": "MIA"
-    },
     "24343": {
         "matchup_rating": {
             "rating": "3.7",
@@ -2078,15 +2015,6 @@
         "player_name": "Nicholas Singleton",
         "position_id": "RB",
         "team_id": "TEN"
-    },
-    "24344": {
-        "matchup_rating": {
-            "rating": "1.1",
-            "opp": "SEA"
-        },
-        "player_name": "Jaydon Blue",
-        "position_id": "RB",
-        "team_id": "DAL"
     },
     "24345": {
         "matchup_rating": {
@@ -2177,15 +2105,6 @@
         "player_name": "Adam Randall",
         "position_id": "RB",
         "team_id": "BAL"
-    },
-    "24370": {
-        "matchup_rating": {
-            "rating": "2.2",
-            "opp": "TB"
-        },
-        "player_name": "Mitch Tinsley",
-        "position_id": "WR",
-        "team_id": "CIN"
     },
     "24371": {
         "matchup_rating": {
@@ -2511,15 +2430,6 @@
         "position_id": "TE",
         "team_id": "NO"
     },
-    "25654": {
-        "matchup_rating": {
-            "rating": "2.0",
-            "opp": "LAR"
-        },
-        "player_name": "Emari Demercado",
-        "position_id": "RB",
-        "team_id": "KC"
-    },
     "25823": {
         "matchup_rating": {
             "rating": "1.8",
@@ -2528,15 +2438,6 @@
         "player_name": "Chris Brooks",
         "position_id": "RB",
         "team_id": "GB"
-    },
-    "25876": {
-        "matchup_rating": {
-            "rating": "1.6",
-            "opp": "KC"
-        },
-        "player_name": "Jaleel McLaughlin",
-        "position_id": "RB",
-        "team_id": "DEN"
     },
     "25885": {
         "matchup_rating": {
@@ -2573,15 +2474,6 @@
         "player_name": "Will Howard",
         "position_id": "QB",
         "team_id": "PIT"
-    },
-    "25976": {
-        "matchup_rating": {
-            "rating": "1.6",
-            "opp": "PIT"
-        },
-        "player_name": "Damien Martinez",
-        "position_id": "RB",
-        "team_id": "GB"
     },
     "25977": {
         "matchup_rating": {
@@ -2844,15 +2736,6 @@
         "position_id": "WR",
         "team_id": "WAS"
     },
-    "26329": {
-        "matchup_rating": {
-            "rating": "2.5",
-            "opp": "LAC"
-        },
-        "player_name": "Jawhar Jordan",
-        "position_id": "RB",
-        "team_id": "HOU"
-    },
     "26335": {
         "matchup_rating": {
             "rating": "3.4",
@@ -3051,23 +2934,14 @@
         "position_id": "WR",
         "team_id": "TB"
     },
-    "27161": {
-        "matchup_rating": {
-            "rating": "4.9",
-            "opp": "TEN"
-        },
-        "player_name": "Brady Cook",
-        "position_id": "QB",
-        "team_id": "NYJ"
-    },
     "27165": {
         "matchup_rating": {
-            "rating": "2.9",
-            "opp": "GB"
+            "rating": "1.6",
+            "opp": "PIT"
         },
         "player_name": "Kaleb Johnson",
         "position_id": "RB",
-        "team_id": "PIT"
+        "team_id": "GB"
     },
     "27166": {
         "matchup_rating": {
@@ -3176,15 +3050,6 @@
         "player_name": "Jonah Coleman",
         "position_id": "RB",
         "team_id": "DEN"
-    },
-    "27326": {
-        "matchup_rating": {
-            "rating": "1.1",
-            "opp": "SEA"
-        },
-        "player_name": "Jam Miller",
-        "position_id": "RB",
-        "team_id": "NE"
     },
     "27329": {
         "matchup_rating": {
@@ -3348,15 +3213,6 @@
         "position_id": "WR",
         "team_id": "MIA"
     },
-    "28079": {
-        "matchup_rating": {
-            "rating": "3.1",
-            "opp": "KC"
-        },
-        "player_name": "Justin Joly",
-        "position_id": "TE",
-        "team_id": "DEN"
-    },
     "28084": {
         "matchup_rating": {
             "rating": "4.2",
@@ -3392,15 +3248,6 @@
         "player_name": "Mike Washington Jr.",
         "position_id": "RB",
         "team_id": "LV"
-    },
-    "28109": {
-        "matchup_rating": {
-            "rating": "2.6",
-            "opp": "NO"
-        },
-        "player_name": "J'Mari Taylor",
-        "position_id": "RB",
-        "team_id": "JAC"
     },
     "28125": {
         "matchup_rating": {
@@ -3545,15 +3392,6 @@
         "player_name": "Kaelon Black",
         "position_id": "RB",
         "team_id": "SF"
-    },
-    "28404": {
-        "matchup_rating": {
-            "rating": "3.1",
-            "opp": "PHI"
-        },
-        "player_name": "Robert Henry Jr.",
-        "position_id": "RB",
-        "team_id": "WAS"
     },
     "28424": {
         "matchup_rating": {
