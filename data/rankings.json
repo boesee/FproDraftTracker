@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T12:44:39.260Z",
+  "generatedAt": "2026-09-01T13:13:09.686Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -5571,6 +5571,21 @@
       "injuryProbability": null
     },
     {
+      "player_id": 25693,
+      "rank": 357,
+      "rankIsEstimated": true,
+      "player_name": "Jacob Saylors",
+      "first_name": "Jacob",
+      "last_name": "Saylors",
+      "position": "RB112",
+      "team": "DET",
+      "opponent": "vs NO",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
       "player_id": 28079,
       "rank": 357,
       "rankIsEstimated": false,
@@ -5595,21 +5610,6 @@
       "position": "WR140",
       "team": "FA",
       "opponent": null,
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
-      "player_id": 25693,
-      "rank": 358,
-      "rankIsEstimated": true,
-      "player_name": "Jacob Saylors",
-      "first_name": "Jacob",
-      "last_name": "Saylors",
-      "position": "RB112",
-      "team": "DET",
-      "opponent": "vs NO",
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
