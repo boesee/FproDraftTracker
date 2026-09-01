@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T09:15:05.695Z",
+  "generatedAt": "2026-09-01T09:39:03.322Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -3777,7 +3777,7 @@
       "player_name": "Christian Kirk",
       "first_name": "Christian",
       "last_name": "Kirk",
-      "position": "WR99",
+      "position": "WR100",
       "team": "SF",
       "opponent": "at LAR",
       "matchupRating": 4.1,
