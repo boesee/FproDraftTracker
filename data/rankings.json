@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T10:38:03.174Z",
+  "generatedAt": "2026-09-01T11:11:39.295Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -2316,6 +2316,21 @@
       "injuryProbability": null
     },
     {
+      "player_id": 23152,
+      "rank": 154,
+      "rankIsEstimated": true,
+      "player_name": "Zach Charbonnet",
+      "first_name": "Zach",
+      "last_name": "Charbonnet",
+      "position": "RB49",
+      "team": "SEA",
+      "opponent": "vs NE",
+      "matchupRating": 2,
+      "injuryStatus": "PUP",
+      "injuryStatusShort": "PUP",
+      "injuryProbability": null
+    },
+    {
       "player_id": 23179,
       "rank": 154,
       "rankIsEstimated": false,
@@ -2328,21 +2343,6 @@
       "matchupRating": 3.9,
       "injuryStatus": null,
       "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
-      "player_id": 23152,
-      "rank": 155,
-      "rankIsEstimated": true,
-      "player_name": "Zach Charbonnet",
-      "first_name": "Zach",
-      "last_name": "Charbonnet",
-      "position": "RB49",
-      "team": "SEA",
-      "opponent": "vs NE",
-      "matchupRating": 2,
-      "injuryStatus": "PUP",
-      "injuryStatusShort": "PUP",
       "injuryProbability": null
     },
     {
@@ -5586,21 +5586,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 25693,
-      "rank": 357,
-      "rankIsEstimated": true,
-      "player_name": "Jacob Saylors",
-      "first_name": "Jacob",
-      "last_name": "Saylors",
-      "position": "RB112",
-      "team": "DET",
-      "opponent": "vs NO",
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 27449,
       "rank": 357,
       "rankIsEstimated": false,
@@ -5625,6 +5610,21 @@
       "position": "TE72",
       "team": "HOU",
       "opponent": "vs BUF",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 25693,
+      "rank": 358,
+      "rankIsEstimated": true,
+      "player_name": "Jacob Saylors",
+      "first_name": "Jacob",
+      "last_name": "Saylors",
+      "position": "RB112",
+      "team": "DET",
+      "opponent": "vs NO",
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
