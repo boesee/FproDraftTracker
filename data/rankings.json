@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T18:39:17.189Z",
+  "generatedAt": "2026-09-01T19:10:53.085Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -4596,21 +4596,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 16425,
-      "rank": 297,
-      "rankIsEstimated": true,
-      "player_name": "Kareem Hunt",
-      "first_name": "Kareem",
-      "last_name": "Hunt",
-      "position": "RB99",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 17527,
       "rank": 297,
       "rankIsEstimated": false,
@@ -4621,6 +4606,21 @@
       "team": "NO",
       "opponent": "at DET",
       "matchupRating": 2.4,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 16425,
+      "rank": 298,
+      "rankIsEstimated": true,
+      "player_name": "Kareem Hunt",
+      "first_name": "Kareem",
+      "last_name": "Hunt",
+      "position": "RB99",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
