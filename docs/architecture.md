@@ -236,6 +236,51 @@ Rest-of-Season- oder Dynasty-Ranking ist (auch wenn einzelne Spieler
 intern auf den ROS-PPR-Fallback zurückgreifen, siehe `rankIsEstimated`
 oben).
 
+## UI-Aufräumen: Aktualitäts-Zeile & Draft-Sync-Zustände
+
+Zwei Anpassungen, nachdem der Bereich oberhalb der Tabelle
+("Sleeper Draft-ID, Statistik und Filtermöglichkeiten") als zu
+unstrukturiert/prominent empfunden wurde — vor der Änderung füllten
+Header, zwei Banner, Draft-Sync und Statistik allein schon den ersten
+Bildschirm auf Mobile, ohne dass Pills oder Tabelle sichtbar waren.
+
+- **Aktualitäts-Zeile statt zwei Bannern:** `#rankingsBanner` und
+  `#matchupRatingsBanner` (je ein umrandeter, hintergrundgefüllter `<p>`)
+  sind einer einzigen, unauffälligen Textzeile gewichen
+  (`#freshnessLine`, `js/main.js` `renderBanner`/
+  `renderMatchupRatingsBanner`) — ein Zeitstempel ist kein Alarm und soll
+  auch optisch nicht wie einer aussehen. Nur das jeweils veraltete
+  Segment (Rankings ODER Matchup-Ratings, unabhängig voneinander) wird
+  per `.stale`-Klasse auf dem einzelnen `<span>` amberfarben hervorgehoben
+  — nicht mehr die ganze Zeile als Box. `describeFreshness`/
+  `describeMatchupRatingsFreshness` (`js/rankings.js`) liefern dafür
+  bewusst kompakten Text ohne Jahr ("Rankings: 02.09. 14:46 Uhr" statt
+  "Rankings zuletzt aktualisiert am 02.09.2026 um 14:46 Uhr") — die
+  beiden Segmente stehen nebeneinander in einer Zeile (getrennt durch
+  "·"), da die Aktualität hier ohnehin immer in Minuten/Stunden/Tagen
+  gemessen wird, nie in Jahren.
+- **Draft-Sync mit drei Sichtbarkeits-Zuständen** (`DRAFT_SYNC_STATE`,
+  `js/main.js`) statt permanent sichtbarem Input+Button:
+  - `FORM`: das volle Eingabefeld + Button — nur nötig, wenn tatsächlich
+    eine ID eingetragen werden muss (keine für die aktuelle Woche
+    vorausgefüllt, oder der Manager hat "Ändern" angeklickt).
+  - `READY`: eine Draft-ID ist aus `config/app.json`s `draftIds`
+    vorausgefüllt, aber noch nicht synchronisiert — statt des vollen
+    Formulars nur eine kompakte Zeile ("Draft-ID vorausgefüllt") mit
+    einem schlanken "Draft-Daten laden"-Link. Das war der zweite
+    Kritikpunkt: das Formular blieb bisher auch dann prominent
+    sichtbar, wenn ohnehin nichts einzutippen war.
+  - `SYNCED`: nach erfolgreichem Abgleich, "✓ Draft verbunden" (siehe
+    vorheriger Abschnitt zum ursprünglichen Zusammenklappen).
+  - Beide Zustände mit `<button>Ändern</button>` kehren zu `FORM` zurück,
+    mit dem zuletzt bekannten Wert weiterhin im (jetzt sichtbaren)
+    Eingabefeld.
+  - Zwei Buttons können `loadDraft()` auslösen (das volle Formular und
+    die kompakte `READY`-Zeile) — nur einer ist je Zustand sichtbar, aber
+    der Busy-Zustand ("Lädt…") wird über `.load-draft-trigger`
+    einheitlich auf beide angewendet, statt nur auf das zufällig
+    angeklickte Element.
+
 ## Gegner-Anreicherung (ESPN Scoreboard API)
 
 Das ursprüngliche Vorgängerprodukt zeigte pro Spieler den Gegner sowie ein

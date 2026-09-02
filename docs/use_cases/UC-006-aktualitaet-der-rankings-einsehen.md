@@ -21,7 +21,7 @@
    `RANKINGS_SNAPSHOT`.
 2. Das System berechnet das Alter der Rankings relativ zur aktuellen
    Uhrzeit.
-3. Das System zeigt im Info-Banner den Zeitpunkt der letzten
+3. Das System zeigt in der Aktualitäts-Zeile den Zeitpunkt der letzten
    Synchronisation in einem für Menschen lesbaren Format an (siehe
    BR-001).
 4. Der Fantasy-Football-Manager sieht, wie aktuell die Rankings sind.
@@ -43,8 +43,11 @@ Use case continues at step 3.
 
 - **Trigger:** (step 2) Das Alter der Rankings überschreitet innerhalb des
   Betriebsfensters den in NFR-001 definierten Schwellenwert.
-1. Das System markiert den Info-Banner als "veraltet" (siehe UC-001,
-   AF-2, für das Anzeigeverhalten der zugrunde liegenden Rankings-Liste).
+1. Das System hebt nur den Rankings-Teil der Aktualitäts-Zeile farblich
+   hervor (siehe UC-001, AF-2, für das Anzeigeverhalten der zugrunde
+   liegenden Rankings-Liste) — nicht die ganze Zeile, da diese auch die
+   unabhängig davon zu bewertende Matchup-Ratings-Aktualität enthält
+   (eigener Abschnitt in architecture.md).
 
 Use case continues at step 3.
 
@@ -52,8 +55,8 @@ Use case continues at step 3.
 
 ### Success
 
-- Der Info-Banner zeigt einen korrekten, für Menschen lesbaren Zeitpunkt
-  bzw. Zeitabstand der letzten Synchronisation.
+- Die Aktualitäts-Zeile zeigt einen korrekten, für Menschen lesbaren
+  Zeitpunkt bzw. Zeitabstand der letzten Synchronisation.
 
 ### Failure
 
@@ -63,13 +66,17 @@ Use case continues at step 3.
 
 ## Business Rules
 
-- **BR-001:** Der Zeitpunkt wird als relative, für Menschen verständliche
-  Angabe dargestellt (z. B. "zuletzt aktualisiert vor 12 Minuten" oder als
-  absolute Uhrzeit "zuletzt aktualisiert um 14:30 Uhr").
+- **BR-001:** Der Zeitpunkt wird als kompakte, absolute Uhrzeit dargestellt
+  (z. B. "Rankings: 02.09. 14:30 Uhr", ohne Jahr, da die Aktualität hier
+  stets in Minuten/Stunden/Tagen gemessen wird — das Jahr wäre nie die
+  informative Angabe). Steht in derselben Zeile wie die
+  Matchup-Ratings-Aktualität (durch "·" getrennt, siehe architecture.md),
+  nicht mehr als eigener, umrandeter Banner — eine Zeitangabe ist kein
+  Alarm und soll auch optisch nicht wie einer aussehen.
 - **BR-002:** Das "veraltet"-Kriterium (mehr als 30 Minuten, siehe NFR-001)
   wird nur innerhalb des Betriebsfensters 07:00–23:00 Uhr angewendet;
   außerhalb dieses Fensters gilt der letzte Snapshot als aktuell, auch
   wenn er älter als 30 Minuten ist.
 - **BR-003:** Fehlt `generatedAt` im geladenen Snapshot, zeigt das System
-  stattdessen einen neutralen Hinweis ("Aktualität unbekannt") anstelle
-  eines falschen oder leeren Zeitwerts.
+  stattdessen einen neutralen Hinweis ("Rankings: Aktualität unbekannt")
+  anstelle eines falschen oder leeren Zeitwerts.

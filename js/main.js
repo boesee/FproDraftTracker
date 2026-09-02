@@ -18,9 +18,10 @@ import { initThemeToggle } from './theme.js';
 
 const logger = new Logger(false);
 
-const bannerEl = document.getElementById('rankingsBanner');
+const freshnessLineEl = document.getElementById('freshnessLine');
+const rankingsFreshnessEl = document.getElementById('rankingsFreshness');
+const matchupFreshnessEl = document.getElementById('matchupFreshness');
 const rankingPeriodInfoEl = document.getElementById('rankingPeriodInfo');
-const matchupRatingsBannerEl = document.getElementById('matchupRatingsBanner');
 const rankingsErrorEl = document.getElementById('rankingsError');
 const sectionEl = document.getElementById('playersSection');
 const tableEl = document.getElementById('playersTable');
@@ -30,7 +31,10 @@ const draftIdInput = document.getElementById('draftId');
 const loadDraftBtn = document.getElementById('loadDraftBtn');
 const draftSyncFormEl = document.getElementById('draftSyncForm');
 const draftSyncSummaryEl = document.getElementById('draftSyncSummary');
+const draftSyncSummaryTextEl = document.getElementById('draftSyncSummaryText');
+const loadDraftLinkBtn = document.getElementById('loadDraftLinkBtn');
 const editDraftIdBtn = document.getElementById('editDraftIdBtn');
+const loadDraftTriggerButtons = document.querySelectorAll('.load-draft-trigger');
 
 const pillButtons = document.querySelectorAll('#positionPills .pill');
 const myTeamPill = document.querySelector('#positionPills .pill[data-position="MYTEAM"]');
@@ -223,17 +227,31 @@ function getFilters() {
   };
 }
 
-// Collapses the Draft-ID input/button into a one-line "✓ Draft verbunden"
-// summary once synced, so it doesn't keep taking permanent vertical space
-// for something only needed once per session. Deliberately independent of
-// renderTable()/updateDraftDependentUI() (called only from loadDraft's
-// success path and the "Ändern" button) - if it were tied to the render
-// cycle instead, re-expanding via "Ändern" would immediately collapse
-// again the next time renderTable() runs (e.g. on a pill click), since
-// draftSynced stays true for the rest of the session.
-function setDraftSyncCollapsed(collapsed) {
-  draftSyncFormEl.hidden = collapsed;
-  draftSyncSummaryEl.hidden = !collapsed;
+// Three states for the Sleeper Draft-ID area, from most to least visually
+// prominent - the raw input/button only need to be front-and-center when
+// there's actually something to type:
+// - FORM: full input + button. Only state that can show a truly empty
+//   field, so it's the only one usable when no ID is known yet.
+// - READY: a pre-filled-but-unsynced ID (config/app.json's draftIds,
+//   see init()) doesn't need the raw input visible - a compact "Draft-ID
+//   vorausgefüllt" line with just a "Draft-Daten laden" action is enough,
+//   and noticeably less prominent on first load than a full form was.
+// - SYNCED: "✓ Draft verbunden" once loadDraft() has actually succeeded.
+// "Ändern" (any state but FORM) always returns to FORM with the current
+// value still in the input, ready to edit.
+const DRAFT_SYNC_STATE = { FORM: 'form', READY: 'ready', SYNCED: 'synced' };
+
+// Deliberately independent of renderTable()/updateDraftDependentUI()
+// (only called from init(), loadDraft's success path, and the "Ändern"
+// button) - if it were tied to the render cycle instead, re-expanding via
+// "Ändern" would immediately collapse again on the next render (e.g. a
+// pill click), since draftSynced stays true for the rest of the session.
+function setDraftSyncState(state) {
+  draftSyncFormEl.hidden = state !== DRAFT_SYNC_STATE.FORM;
+  draftSyncSummaryEl.hidden = state === DRAFT_SYNC_STATE.FORM;
+  loadDraftLinkBtn.hidden = state !== DRAFT_SYNC_STATE.READY;
+  draftSyncSummaryTextEl.textContent =
+    state === DRAFT_SYNC_STATE.SYNCED ? '✓ Draft verbunden' : 'Draft-ID vorausgefüllt';
 }
 
 const PLAYER_TABLE_COLUMN_COUNT = 7;
@@ -315,22 +333,26 @@ function renderAll() {
   renderStats();
 }
 
-// UC-001 main flow, step 4 / UC-006.
+// UC-001 main flow, step 4 / UC-006. A single muted caption line combining
+// both freshness signals (see also renderMatchupRatingsBanner right
+// below) - not a boxed "banner" like before, since a timestamp isn't an
+// alert. Only the segment that's actually stale gets colored (.stale on
+// that one <span>, not the whole line) - the common case is "everything's
+// fine", which shouldn't look like a warning.
 function renderBanner(generatedAt) {
   const { text, stale } = describeFreshness(generatedAt);
-  bannerEl.textContent = text;
-  bannerEl.classList.toggle('stale', stale);
-  bannerEl.hidden = false;
+  rankingsFreshnessEl.textContent = text;
+  rankingsFreshnessEl.classList.toggle('stale', stale);
+  freshnessLineEl.hidden = false;
 }
 
-// Always shown, same as renderBanner - only the orange warning styling
-// (.stale) depends on config/matchup-ratings.json's last commit being
-// older than the weekly refresh cadence (see describeMatchupRatingsFreshness).
+// Always shown, same as renderBanner - only the .stale color depends on
+// config/matchup-ratings.json's last commit being older than the weekly
+// refresh cadence (see describeMatchupRatingsFreshness).
 function renderMatchupRatingsBanner(matchupRatingsUpdatedAt) {
   const { text, stale } = describeMatchupRatingsFreshness(matchupRatingsUpdatedAt);
-  matchupRatingsBannerEl.textContent = text;
-  matchupRatingsBannerEl.classList.toggle('stale', stale);
-  matchupRatingsBannerEl.hidden = false;
+  matchupFreshnessEl.textContent = text;
+  matchupFreshnessEl.classList.toggle('stale', stale);
 }
 
 // UC-008 transparency: the Ranking/Scoring selects (currently a single
@@ -363,7 +385,7 @@ function setActivePosition(position) {
 function showRankingsError(message) {
   rankingsErrorEl.textContent = message;
   rankingsErrorEl.hidden = false;
-  bannerEl.hidden = true;
+  freshnessLineEl.hidden = true;
   sectionEl.hidden = true;
 }
 
@@ -383,17 +405,21 @@ async function loadDraft() {
 
   // Sleeper's response time varies; without a busy state a slow fetch looks
   // like the click didn't register, inviting a double-click (harmless, but
-  // confusing) instead of just waiting.
-  const originalLabel = loadDraftBtn.textContent;
-  loadDraftBtn.disabled = true;
-  loadDraftBtn.textContent = 'Lädt…';
+  // confusing) instead of just waiting. Two possible trigger buttons exist
+  // (the full form's, and the compact READY summary's "Draft-Daten laden"
+  // link) - only one is ever visible at a time, but both get the busy
+  // state so it's correct regardless of which one was actually clicked.
+  loadDraftTriggerButtons.forEach((btn) => {
+    btn.disabled = true;
+    btn.textContent = 'Lädt…';
+  });
 
   try {
     const picks = await fetchDraftPicks(draftId);
     const { players, matched, unmatchedPicks } = matchDraftedPlayers(allPlayers, picks);
     allPlayers = players;
     draftSynced = true;
-    setDraftSyncCollapsed(true);
+    setDraftSyncState(DRAFT_SYNC_STATE.SYNCED);
     renderAll();
     messages.showSuccess(`${picks.length} Picks geladen, ${matched} Spieler zugeordnet.`);
     // UC-002 AF-3: surface unmatched picks in the console for quick
@@ -407,8 +433,10 @@ async function loadDraft() {
     logger.error('Draft-Abgleich fehlgeschlagen', error);
     messages.showError('Draft-ID ungültig oder keine Daten gefunden.');
   } finally {
-    loadDraftBtn.disabled = false;
-    loadDraftBtn.textContent = originalLabel;
+    loadDraftTriggerButtons.forEach((btn) => {
+      btn.disabled = false;
+      btn.textContent = 'Draft-Daten laden';
+    });
   }
 }
 
@@ -442,6 +470,12 @@ async function init() {
     if (draftId) {
       draftIdInput.value = draftId;
     }
+    // A pre-filled ID doesn't need the raw input shown on first load - a
+    // compact READY summary is enough until the manager actually wants to
+    // sync or change it (see DRAFT_SYNC_STATE). No pre-fill at all (new
+    // week, none configured) still needs the full form, since there's
+    // nothing to summarize yet.
+    setDraftSyncState(draftId ? DRAFT_SYNC_STATE.READY : DRAFT_SYNC_STATE.FORM);
   } catch (error) {
     logger.error('Rankings konnten nicht geladen werden', error);
     showRankingsError('Aktuell sind keine Rankings verfügbar.');
@@ -449,7 +483,8 @@ async function init() {
   }
 
   loadDraftBtn.addEventListener('click', loadDraft);
-  editDraftIdBtn.addEventListener('click', () => setDraftSyncCollapsed(false));
+  loadDraftLinkBtn.addEventListener('click', loadDraft);
+  editDraftIdBtn.addEventListener('click', () => setDraftSyncState(DRAFT_SYNC_STATE.FORM));
   pillButtons.forEach((btn) => btn.addEventListener('click', () => setActivePosition(btn.dataset.position)));
   draftedFilter.addEventListener('change', renderTable);
   playerSearch.addEventListener('input', renderTable);

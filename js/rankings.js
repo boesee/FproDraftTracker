@@ -86,24 +86,24 @@ function isWithinOperatingWindow(date) {
 }
 
 // UC-006 main flow + BR-001 (human-readable time) + BR-003 (missing/invalid
-// timestamp handled gracefully).
+// timestamp handled gracefully). Deliberately compact ("Rankings: DD.MM.
+// HH:MM Uhr", no year) rather than a full sentence - this is meant to sit
+// next to describeMatchupRatingsFreshness on one combined line
+// (js/main.js), and freshness here is always measured in minutes/hours/
+// days, never months/years, so the year is never the informative part.
 export function describeFreshness(generatedAt, now = new Date()) {
   const generatedDate = generatedAt ? new Date(generatedAt) : null;
   if (!generatedDate || Number.isNaN(generatedDate.getTime())) {
-    return { text: 'Aktualität unbekannt', stale: false };
+    return { text: 'Rankings: Aktualität unbekannt', stale: false };
   }
 
   const ageMinutes = (now.getTime() - generatedDate.getTime()) / 60000;
   const stale = ageMinutes > STALE_THRESHOLD_MINUTES && isWithinOperatingWindow(now);
-  const date = generatedDate.toLocaleDateString('de-CH', {
-    day: '2-digit',
-    month: '2-digit',
-    year: 'numeric',
-  });
+  const date = generatedDate.toLocaleDateString('de-CH', { day: '2-digit', month: '2-digit' });
   const time = generatedDate.toLocaleTimeString('de-CH', { hour: '2-digit', minute: '2-digit' });
 
   return {
-    text: `Rankings zuletzt aktualisiert am ${date} um ${time} Uhr`,
+    text: `Rankings: ${date} ${time} Uhr`,
     stale,
   };
 }
@@ -123,15 +123,11 @@ export function describeMatchupRatingsFreshness(updatedAt, now = new Date()) {
 
   const ageDays = (now.getTime() - updatedDate.getTime()) / (24 * 60 * 60 * 1000);
   const stale = ageDays > MATCHUP_RATINGS_STALE_THRESHOLD_DAYS;
-  const date = updatedDate.toLocaleDateString('de-CH', {
-    day: '2-digit',
-    month: '2-digit',
-    year: 'numeric',
-  });
+  const date = updatedDate.toLocaleDateString('de-CH', { day: '2-digit', month: '2-digit' });
   const time = updatedDate.toLocaleTimeString('de-CH', { hour: '2-digit', minute: '2-digit' });
 
   return {
     stale,
-    text: `Matchup-Ratings zuletzt aktualisiert am ${date} um ${time} Uhr`,
+    text: `Matchup-Ratings: ${date} ${time} Uhr`,
   };
 }

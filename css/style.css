@@ -92,18 +92,27 @@
     margin: 0;
 }
 
-.rankings-banner {
-    padding: 0.5rem 1rem;
-    border-radius: var(--pico-border-radius);
-    background: var(--pico-card-background-color);
-    border: 1px solid var(--pico-border-color);
-    font-size: 0.9em;
+/* Deliberately lightweight - just a small muted caption line, not a boxed
+   "banner" - a timestamp isn't an alert and shouldn't look like one. Only
+   the individual .stale segment (rankings or matchup-ratings, whichever
+   is actually outdated) gets colored; a plain amber text color reads fine
+   in both themes without a separate dark-mode override (unlike the pastel
+   *backgrounds* the old boxed version used, see message-error/-success
+   below), so no extra rule is needed there. */
+.freshness-line {
+    font-size: 0.85em;
+    color: var(--pico-muted-color);
+    margin: 0.25rem 0 1rem;
 }
 
-.rankings-banner.stale {
-    background: #fff3cd;
-    border-color: #f0ad4e;
-    color: #664d03;
+.freshness-line .stale {
+    color: #b45309;
+    font-weight: 600;
+}
+
+.freshness-sep {
+    margin: 0 0.5rem;
+    opacity: 0.5;
 }
 
 .message-error {
@@ -122,19 +131,13 @@
     border-left: 4px solid #28a745;
 }
 
-/* These three use hardcoded light pastel backgrounds rather than Pico's
+/* These two use hardcoded light pastel backgrounds rather than Pico's
    theme-aware --pico-* variables, so they need their own dark-mode swap -
    defined twice, matching how Pico itself resolves the theme: once for the
    OS-level preference (guarded against an explicit light override), and
    again for the manual toggle's data-theme="dark" (js/theme.js), since a
    manual choice must win even when it disagrees with the OS setting. */
 @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) .rankings-banner.stale {
-        background: #4d3800;
-        border-color: #a6791b;
-        color: #ffd873;
-    }
-
     :root:not([data-theme="light"]) .message-error {
         background: #4a1f24;
         color: #ffb3ba;
@@ -146,12 +149,6 @@
         color: #7ee2a8;
         border-left-color: #3fb950;
     }
-}
-
-:root[data-theme="dark"] .rankings-banner.stale {
-    background: #4d3800;
-    border-color: #a6791b;
-    color: #ffd873;
 }
 
 :root[data-theme="dark"] .message-error {

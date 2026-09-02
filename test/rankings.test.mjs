@@ -119,8 +119,8 @@ test('describeRankingPeriod: returns empty string when season/week are missing (
 });
 
 test('describeFreshness: missing/invalid timestamp is handled gracefully (BR-003)', () => {
-  assert.deepEqual(describeFreshness(null), { text: 'Aktualität unbekannt', stale: false });
-  assert.deepEqual(describeFreshness('not-a-date'), { text: 'Aktualität unbekannt', stale: false });
+  assert.deepEqual(describeFreshness(null), { text: 'Rankings: Aktualität unbekannt', stale: false });
+  assert.deepEqual(describeFreshness('not-a-date'), { text: 'Rankings: Aktualität unbekannt', stale: false });
 });
 
 // isWithinOperatingWindow reads local hours (the app assumes a
@@ -146,8 +146,9 @@ test('describeFreshness: older than 30min inside the operating window is stale',
   const result = describeFreshness(generatedAt, now);
   assert.equal(result.stale, true);
   // Staleness is surfaced visually via the `.stale` CSS class (js/main.js),
-  // not by appending wording to the text itself.
-  assert.match(result.text, /^Rankings zuletzt aktualisiert am \d{2}\.\d{2}\.\d{4} um \d{2}:\d{2} Uhr$/);
+  // not by appending wording to the text itself. Deliberately compact (no
+  // year) - see describeFreshness.
+  assert.match(result.text, /^Rankings: \d{2}\.\d{2}\. \d{2}:\d{2} Uhr$/);
 });
 
 test('describeFreshness: BR-002 old data outside the 07-23h operating window is not flagged stale', () => {
@@ -174,9 +175,9 @@ test('describeMatchupRatingsFreshness: under the 1-day threshold is not stale', 
   assert.equal(result.stale, false);
 });
 
-test('describeMatchupRatingsFreshness: over the 1-day threshold is stale and mentions a full date', () => {
+test('describeMatchupRatingsFreshness: over the 1-day threshold is stale and mentions a date', () => {
   const now = new Date('2026-08-28T12:00:00Z');
   const result = describeMatchupRatingsFreshness('2026-08-26T12:00:00Z', now); // 2 days old
   assert.equal(result.stale, true);
-  assert.match(result.text, /^Matchup-Ratings zuletzt aktualisiert am \d{2}\.\d{2}\.\d{4} um \d{2}:\d{2} Uhr$/);
+  assert.match(result.text, /^Matchup-Ratings: \d{2}\.\d{2}\. \d{2}:\d{2} Uhr$/);
 });

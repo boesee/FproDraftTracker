@@ -8,7 +8,7 @@ Tracke deinen Fantasy Football Draft mit aktuellen FantasyPros-Rankings und Slee
 ## Features
 
 - **Automatisches Laden** der aktuellen Rankings aus `data/rankings.json`
-- **Aktualitäts-Banner**, der anzeigt, wann die Rankings zuletzt mit der FantasyPros-API synchronisiert wurden
+- **Aktualitäts-Zeile**, die anzeigt, wann die Rankings zuletzt mit der FantasyPros-API synchronisiert wurden (und, daneben, die Matchup-Ratings)
 - **Ranking/Scoring-Auswahl**: macht transparent, dass es sich aktuell um ein Wochen-Ranking mit PPR-Scoring handelt (Woche/Saison als Hinweistext); als Auswahlfelder angelegt, erweiterbar auf weitere Ranking-Typen/Scoring-Formate
 - **Positions-Pills** (Overall/QB/RB/WR/Flex, FantasyPros-Style): wechseln zwischen der Overall- und den positionsspezifischen Ranglisten
 - **"Mein Team"-Pill**: zeigt nur die eigenen gedrafteten Spieler, nach Position gruppiert statt nach Rang sortiert (erfordert Draft-Abgleich und `sleeperUserId` in `config/app.json`); per `index.html?myteam` als teilbarer Link direkt aufrufbar (lädt automatisch)

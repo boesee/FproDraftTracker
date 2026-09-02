@@ -20,23 +20,27 @@
             </label>
         </header>
 
-        <p id="rankingsBanner" class="rankings-banner" role="status" hidden></p>
-        <p id="matchupRatingsBanner" class="rankings-banner" role="status" hidden></p>
+        <p class="freshness-line" id="freshnessLine" role="status" hidden>
+            <span id="rankingsFreshness"></span>
+            <span class="freshness-sep">·</span>
+            <span id="matchupFreshness"></span>
+        </p>
         <p id="rankingsError" class="message-error" role="alert" hidden></p>
 
         <p id="syncError" class="message-error" role="alert" hidden></p>
         <p id="syncSuccess" class="message-success" role="status" hidden></p>
 
         <section id="playersSection" hidden>
-            <section class="draft-sync" id="draftSyncForm">
+            <section class="draft-sync" id="draftSyncForm" hidden>
                 <div>
                     <label for="draftId">Sleeper Draft-ID</label>
                     <input type="text" id="draftId" placeholder="Draft-ID eingeben" autocomplete="off">
                 </div>
-                <button id="loadDraftBtn" type="button">Draft-Daten laden</button>
+                <button id="loadDraftBtn" type="button" class="load-draft-trigger">Draft-Daten laden</button>
             </section>
             <p class="draft-sync-summary" id="draftSyncSummary" hidden>
-                ✓ Draft verbunden
+                <span id="draftSyncSummaryText"></span>
+                <button type="button" class="link-button load-draft-trigger" id="loadDraftLinkBtn" hidden>Draft-Daten laden</button>
                 <button type="button" class="link-button" id="editDraftIdBtn">Ändern</button>
             </p>
 
