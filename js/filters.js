@@ -21,8 +21,17 @@ export function applyFilters(players, filters) {
   const { column, value } = parseSearch(filters.search);
 
   return players.filter((player) => {
-    // BR-003: "FLEX" includes any player whose position contains RB/WR/TE.
-    if (filters.position) {
+    // BR-007: "MYTEAM" (the "Mein Team" pill) is a different kind of
+    // filter than the other position pills - it doesn't look at
+    // `player.position` at all, only at whether Sleeper recorded this
+    // player as picked by the configured user. `picked_by` (a Sleeper
+    // user_id) is used rather than `roster_id`, since roster_id is
+    // reassigned per draft (this league re-draws weekly), while
+    // picked_by/user_id stays constant across every week's draft.
+    if (filters.position === 'MYTEAM') {
+      if (!player.drafted || !filters.myUserId || player.draftInfo?.picked_by !== filters.myUserId) return false;
+    } else if (filters.position) {
+      // BR-003: "FLEX" includes any player whose position contains RB/WR/TE.
       const matchesFlex =
         filters.position === 'FLEX' && FLEX_POSITIONS.some((pos) => player.position.includes(pos));
       const matchesExact = filters.position !== 'FLEX' && player.position.includes(filters.position);

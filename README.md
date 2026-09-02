@@ -11,6 +11,7 @@ Tracke deinen Fantasy Football Draft mit aktuellen FantasyPros-Rankings und Slee
 - **Aktualitäts-Banner**, der anzeigt, wann die Rankings zuletzt mit der FantasyPros-API synchronisiert wurden
 - **Ranking/Scoring-Auswahl**: macht transparent, dass es sich aktuell um ein Wochen-Ranking mit PPR-Scoring handelt (Woche/Saison als Hinweistext); als Auswahlfelder angelegt, erweiterbar auf weitere Ranking-Typen/Scoring-Formate
 - **Positions-Pills** (Overall/QB/RB/WR/Flex, FantasyPros-Style): wechseln zwischen der Overall- und den positionsspezifischen Ranglisten
+- **"Mein Team"-Pill**: zeigt nur die eigenen gedrafteten Spieler, nach Position gruppiert statt nach Rang sortiert (erfordert Draft-Abgleich und `sleeperUserId` in `config/app.json`)
 - **Draft-Abgleich** über die Sleeper-API anhand einer Draft-ID
 - **Filter & Suche**: maximaler Rang, Draft-Status (erst nach Draft-Abgleich verfügbar), Volltextsuche (inkl. `spalte:wert`-Syntax)
 - **Statistik-Übersicht**: Spieler gesamt / gematched / ROS-Fallback / verfügbar / gedraftet
@@ -31,8 +32,10 @@ offiziellen FantasyPros-API bezogen. Details dazu und zur restlichen Architektur
    Spieler zu markieren. Ist in `config/app.json` unter `draftIds` ein Eintrag für die aktuell
    geladene Woche hinterlegt, wird das Feld beim Laden der Seite vorbefüllt (siehe unten) - der
    Abgleich selbst erfolgt weiterhin erst per Klick.
-3. **Ranking wechseln:** Über die Pills-Navigation ("Overall", "QB", "RB", "WR", "Flex") über der
-   Tabelle zwischen Overall- und positionsspezifischer Rangliste wechseln.
+3. **Ranking wechseln:** Über die Pills-Navigation ("Overall", "QB", "RB", "WR", "Flex", "Mein Team")
+   über der Tabelle zwischen Overall-, positionsspezifischer Rangliste und der eigenen gedrafteten
+   Mannschaft wechseln. "Mein Team" ist erst nach dem Draft-Abgleich (Schritt 2) und nur mit
+   konfigurierter `sleeperUserId` (siehe unten) verfügbar.
 4. **Filtern/Suchen:** Über den Filterbereich nach Rang oder Draft-Status einschränken, oder die Suche
    nutzen (z. B. `team:phi`).
 
@@ -46,6 +49,8 @@ Optionale, von Hand gepflegte Konfiguration:
     "1": "1265036873886076928",
     "2": "1265036873886076929"
   },
+  "sleeperUsername": "dein-sleeper-username",
+  "sleeperUserId": "555361572189896704",
   "season": null,
   "week": null
 }
@@ -57,6 +62,9 @@ Optionale, von Hand gepflegte Konfiguration:
   Feld `week`) - nicht irgendeine separat berechnete Woche. Fehlt für die aktuelle Woche ein Eintrag,
   bleibt das Feld leer. Der Draft-Abgleich selbst löst dadurch **nicht** automatisch aus -
   "Draft-Daten laden" muss weiterhin manuell geklickt werden.
+- `sleeperUserId`: deine Sleeper `user_id`, Grundlage der "Mein Team"-Pill (vergleicht sie gegen
+  `picked_by` in den Draft-Picks - bewusst nicht `roster_id`, die in dieser Liga pro Draft neu vergeben
+  wird). `sleeperUsername` wird vom Code nicht verwendet, steht nur als lesbare Referenz daneben.
 - `season`/`week`: überschreiben bei Bedarf die von der Pipeline automatisch berechneten Werte;
   `null` heisst "automatisch berechnen" (Standard). Details siehe
   [`docs/architecture.md`](docs/architecture.md#konfiguration-configappjson).

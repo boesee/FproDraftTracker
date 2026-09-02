@@ -159,6 +159,44 @@ frühere Position-Dropdown-Filterung ab.
   `status-column`-Klasse ausgeblendet/eingeblendet und kollabiert dabei
   korrekt auf 0 Breite, statt eine leere Lücke zu hinterlassen.
 
+### "Mein Team"-Pill
+
+Eine sechste Pill neben Overall/QB/RB/WR/Flex: filtert auf die vom Manager
+selbst gedrafteten Spieler und gruppiert sie nach Position statt sie nach
+Rang zu sortieren — UC-002-Erweiterung, dokumentiert in UC-003 AF-3/BR-007.
+
+- **Identifikation "meiner" Picks — `picked_by`, nicht `roster_id`:** Ein
+  Sleeper-Pick trägt sowohl `roster_id` als auch `picked_by` (Sleeper
+  `user_id`). Naheliegend wäre `roster_id` gewesen, da es direkter nach
+  "Team-Zugehörigkeit" klingt — aber in dieser Liga wird `roster_id` pro
+  Draft neu vergeben (`slot_to_roster_id` im Draft-Objekt selbst variiert
+  wöchentlich, bestätigt anhand einer echten API-Antwort), während
+  `picked_by`/`user_id` an den Sleeper-Account gebunden und damit über
+  alle 15 wöchentlichen Drafts hinweg konstant bleibt. `js/filters.js`
+  (BR-007) vergleicht daher `player.draftInfo.picked_by` gegen die in
+  `config/app.json` hinterlegte `sleeperUserId` — keine zusätzliche
+  API-Anfrage nötig, da `draftInfo` bereits das vollständige, rohe
+  Pick-Objekt aus `matchDraftedPlayers` (`js/sleeperDraft.js`) enthält.
+- **Sortierung (`sortPlayersByMyTeam`, `js/rankings.js`):** Gruppiert nach
+  Position (Reihenfolge QB, RB, WR, TE; andere Positionen zuletzt),
+  innerhalb einer Gruppe nach `draftInfo.pick_no` (Pick-Reihenfolge) — der
+  Rang wird hier bewusst nicht mehr als Sortierkriterium verwendet, da er
+  für bereits gedraftete eigene Spieler nicht mehr die relevante
+  Information ist.
+- **Bewusst kein Slot-Mapping:** Es wird nicht versucht, einzelne Picks
+  exakt auf Roster-Slots (z. B. "3. RB-Pick → FLEX statt RB2") abzubilden,
+  obwohl das Draft-Objekt die Slot-Konfiguration der Liga kennt
+  (`settings.slots_qb/rb/wr/te/flex`) — das wäre eine nicht-triviale
+  Zuordnungslogik mit Grenzfällen (z. B. Superflex-Slots, mehrdeutige
+  Flex-Zuordnung), für die keine Anforderung vorliegt. Stattdessen reine
+  Positions-Gruppierung; ein exaktes Slot-Mapping bliebe eine mögliche
+  spätere Erweiterung.
+- **Voraussetzungen für die Pill:** deaktiviert (mit erklärendem Tooltip),
+  solange UC-002 noch nicht erfolgreich ausgeführt wurde oder
+  `sleeperUserId` in `config/app.json` fehlt (`updateDraftDependentUI`,
+  `js/main.js`) — ein `disabled`-Button feuert keine Click-Events, daher
+  ist kein zusätzlicher Guard beim Pill-Wechsel selbst nötig.
+
 ## Ranking-Art-Transparenz
 
 Ergänzt um `season`/`week` im `RANKINGS_SNAPSHOT` (vom Pipeline-Skript

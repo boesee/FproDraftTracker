@@ -42,6 +42,31 @@ export function sortPlayersByPositionRank(players) {
   });
 }
 
+// "Mein Team" pill (UC-002 extension): groups a manager's own drafted
+// players the way a roster is naturally read - by position, in the order
+// they were actually picked - rather than by preseason rank, which stops
+// being the relevant ordering once a player is already on your team.
+const MY_TEAM_POSITION_ORDER = ['QB', 'RB', 'WR', 'TE'];
+
+function extractPositionGroup(position) {
+  const match = /^[A-Za-z]+/.exec(position ?? '');
+  return match ? match[0] : '';
+}
+
+export function sortPlayersByMyTeam(players) {
+  return [...players].sort((a, b) => {
+    const groupIndexA = MY_TEAM_POSITION_ORDER.indexOf(extractPositionGroup(a.position));
+    const groupIndexB = MY_TEAM_POSITION_ORDER.indexOf(extractPositionGroup(b.position));
+    const orderA = groupIndexA === -1 ? MY_TEAM_POSITION_ORDER.length : groupIndexA;
+    const orderB = groupIndexB === -1 ? MY_TEAM_POSITION_ORDER.length : groupIndexB;
+    if (orderA !== orderB) return orderA - orderB;
+
+    const pickA = a.draftInfo?.pick_no ?? Infinity;
+    const pickB = b.draftInfo?.pick_no ?? Infinity;
+    return pickA - pickB;
+  });
+}
+
 // UC-008: supplements the Ranking/Scoring selects (index.html) with the
 // specific week/season those selections currently resolve to - "Weekly"
 // alone doesn't say *which* week. Season/week are optional (older

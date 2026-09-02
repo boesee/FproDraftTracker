@@ -4,6 +4,7 @@ import {
   loadRankingsSnapshot,
   sortPlayersByRank,
   sortPlayersByPositionRank,
+  sortPlayersByMyTeam,
   extractPositionRank,
   describeFreshness,
   describeMatchupRatingsFreshness,
@@ -29,6 +30,7 @@ const draftIdInput = document.getElementById('draftId');
 const loadDraftBtn = document.getElementById('loadDraftBtn');
 
 const pillButtons = document.querySelectorAll('#positionPills .pill');
+const myTeamPill = document.querySelector('#positionPills .pill[data-position="MYTEAM"]');
 const draftedFilter = document.getElementById('draftedFilter');
 const playerSearch = document.getElementById('playerSearch');
 
@@ -50,14 +52,21 @@ let allPlayers = [];
 // before that, every player is trivially "Verfügbar", which confused a
 // tester. Gates the Status column and the Draft-Status filter until then.
 let draftSynced = false;
-// '' = Overall (Superflex), or 'QB'/'RB'/'WR'/'FLEX' - selected via the
-// pills-wrap nav (replaces the old Position dropdown filter). QB/RB/WR
-// switch both the filter AND the displayed/sorted ranking to that
-// position's own rank (see getDisplayRank, sortPlayersByPositionRank);
+// '' = Overall (Superflex), or 'QB'/'RB'/'WR'/'FLEX'/'MYTEAM' - selected
+// via the pills-wrap nav (replaces the old Position dropdown filter).
+// QB/RB/WR switch both the filter AND the displayed/sorted ranking to
+// that position's own rank (see getDisplayRank, sortPlayersByPositionRank);
 // FLEX still shows/sorts by the overall rank, since there's no separate
 // FLEX-specific ranking bucket in the FantasyPros data - it's the overall
 // ranking restricted to RB/WR/TE, same as the old FLEX filter option.
+// MYTEAM (see updateDraftDependentUI) filters to the configured Sleeper
+// user's own picks (js/filters.js BR-007) and sorts by position group
+// then draft pick order (sortPlayersByMyTeam), not by rank at all.
 let activePosition = '';
+// Sleeper user_id from config/app.json's sleeperUserId (see init()) - null
+// if not configured. Identifies "my" picks via picked_by (BR-007);
+// roster_id isn't used since it's reassigned every week in this league.
+let myUserId = null;
 
 function createCell(text) {
   const td = document.createElement('td');
@@ -205,6 +214,7 @@ function createMatchupCell(matchupRating) {
 function getFilters() {
   return {
     position: activePosition,
+    myUserId,
     draftStatus: draftedFilter.value,
     search: playerSearch.value,
   };
@@ -216,17 +226,32 @@ const PLAYER_TABLE_COLUMN_COUNT = 7;
 // has actually been synced - before that every player is trivially
 // "Verfügbar", which is confusing rather than informative. Also gates the
 // Draft-Status filter, since filtering by drafted/available means nothing
-// yet either.
+// yet either - and the "Mein Team" pill, which depends on the same draft
+// data plus a configured sleeperUserId (config/app.json).
 function updateDraftDependentUI() {
   tableEl.classList.toggle('draft-not-synced', !draftSynced);
   draftedFilter.disabled = !draftSynced;
   if (!draftSynced) draftedFilter.value = '';
+
+  if (myTeamPill) {
+    const myTeamAvailable = draftSynced && myUserId;
+    myTeamPill.disabled = !myTeamAvailable;
+    myTeamPill.title = myTeamAvailable
+      ? ''
+      : 'Erst nach dem Laden der Draft-Daten verfügbar' +
+        (myUserId ? '' : ' (sleeperUserId fehlt in config/app.json)');
+  }
 }
 
 // UC-001 main flow, step 3 / UC-003 main flow.
 function renderTable() {
   updateDraftDependentUI();
-  const sortFn = POSITION_RANKED_PILLS.includes(activePosition) ? sortPlayersByPositionRank : sortPlayersByRank;
+  const sortFn =
+    activePosition === 'MYTEAM'
+      ? sortPlayersByMyTeam
+      : POSITION_RANKED_PILLS.includes(activePosition)
+        ? sortPlayersByPositionRank
+        : sortPlayersByRank;
   const filtered = applyFilters(sortFn(allPlayers), getFilters());
   tbodyEl.innerHTML = '';
 
@@ -374,6 +399,7 @@ async function init() {
   initThemeToggle(document.getElementById('themeToggle'));
 
   const config = await loadConfig();
+  myUserId = config.sleeperUserId ?? null;
 
   try {
     const snapshot = await loadRankingsSnapshot();

@@ -78,3 +78,4 @@ Ein einzelner, über die Sleeper-API abgerufener Pick innerhalb eines
 | round | Runde, in der der Pick erfolgte | Integer | – | Not Null, Min: 1 |
 | playerFirstName | Vorname des gedrafteten Spielers (laut Sleeper) | String | 50 | Not Null |
 | playerLastName | Nachname des gedrafteten Spielers (laut Sleeper) | String | 50 | Not Null |
+| pickedBy | Sleeper `user_id` des Managers, der diesen Pick getätigt hat; Grundlage der "Mein Team"-Ansicht (UC-002, `sleeperUserId` in `config/app.json`). Bewusst nicht `roster_id` — die wird in dieser Liga pro Draft neu vergeben, während `user_id` über alle wöchentlichen Drafts hinweg konstant bleibt. | String | 30 | Optional (nicht jeder Slot hat einen menschlichen Manager) |

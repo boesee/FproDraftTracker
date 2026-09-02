@@ -4,6 +4,7 @@ import {
   sortPlayersByRank,
   extractPositionRank,
   sortPlayersByPositionRank,
+  sortPlayersByMyTeam,
   describeRankingPeriod,
   describeFreshness,
   describeMatchupRatingsFreshness,
@@ -54,6 +55,57 @@ test('sortPlayersByPositionRank: unparseable positions sort last, not first', ()
   assert.deepEqual(
     sorted.map((p) => p.position),
     ['RB1', 'RB2', 'DST']
+  );
+});
+
+test('sortPlayersByMyTeam: groups by position (QB, RB, WR, TE order), not by rank', () => {
+  const players = [
+    { name: 'wr1', position: 'WR12', rank: 5, draftInfo: { pick_no: 3 } },
+    { name: 'qb1', position: 'QB4', rank: 40, draftInfo: { pick_no: 1 } },
+    { name: 'rb1', position: 'RB8', rank: 20, draftInfo: { pick_no: 2 } },
+    { name: 'te1', position: 'TE2', rank: 60, draftInfo: { pick_no: 4 } },
+  ];
+  const sorted = sortPlayersByMyTeam(players);
+  assert.deepEqual(
+    sorted.map((p) => p.name),
+    ['qb1', 'rb1', 'wr1', 'te1']
+  );
+});
+
+test('sortPlayersByMyTeam: within a position group, sorts by draft pick order', () => {
+  const players = [
+    { name: 'rb-picked-3rd', position: 'RB20', draftInfo: { pick_no: 30 } },
+    { name: 'rb-picked-1st', position: 'RB1', draftInfo: { pick_no: 2 } },
+    { name: 'rb-picked-2nd', position: 'RB10', draftInfo: { pick_no: 15 } },
+  ];
+  const sorted = sortPlayersByMyTeam(players);
+  assert.deepEqual(
+    sorted.map((p) => p.name),
+    ['rb-picked-1st', 'rb-picked-2nd', 'rb-picked-3rd']
+  );
+});
+
+test('sortPlayersByMyTeam: positions outside QB/RB/WR/TE (e.g. DST) sort last', () => {
+  const players = [
+    { name: 'dst', position: 'DST1', draftInfo: { pick_no: 1 } },
+    { name: 'qb', position: 'QB1', draftInfo: { pick_no: 2 } },
+  ];
+  const sorted = sortPlayersByMyTeam(players);
+  assert.deepEqual(
+    sorted.map((p) => p.name),
+    ['qb', 'dst']
+  );
+});
+
+test('sortPlayersByMyTeam: a missing pick_no (no draftInfo) sorts last within its group, not first', () => {
+  const players = [
+    { name: 'no-draftinfo', position: 'RB5', draftInfo: null },
+    { name: 'picked-later', position: 'RB1', draftInfo: { pick_no: 50 } },
+  ];
+  const sorted = sortPlayersByMyTeam(players);
+  assert.deepEqual(
+    sorted.map((p) => p.name),
+    ['picked-later', 'no-draftinfo']
   );
 });
 

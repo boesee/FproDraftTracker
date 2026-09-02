@@ -8,7 +8,9 @@
   Spielerliste über Filter- und Suchkriterien ein, um sich auf die für
   seinen nächsten Pick relevanten Spieler zu konzentrieren.
 - **Status:** Draft
-- **Bezug:** FR-003, FR-004, FR-005, FR-006; Entität `PLAYER`.
+- **Bezug:** FR-003, FR-004, FR-005, FR-006; `<<extend>>` von UC-002 (die
+  "Mein Team"-Pill, siehe AF-3); Entitäten `PLAYER`, `DRAFT_PICK`
+  (`pickedBy`).
 
 ## Preconditions
 
@@ -18,8 +20,8 @@
 ## Main Success Scenario
 
 1. Der Fantasy-Football-Manager wählt in der Pills-Wrap-Navigation über der
-   Tabelle eine Position ("Overall", "QB", "RB", "WR" oder "Flex";
-   "Overall" ist beim Laden aktiv).
+   Tabelle eine Position ("Overall", "QB", "RB", "WR", "Flex" oder "Mein
+   Team", siehe AF-3; "Overall" ist beim Laden aktiv).
 2. Das System filtert die angezeigte Tabelle auf Spieler, deren Position
    der Auswahl entspricht (siehe BR-003 für "Flex"), und sortiert sie neu
    (siehe BR-006).
@@ -49,6 +51,20 @@ Use case continues at step 4.
    (`injury:wert`, siehe BR-002).
 2. Andernfalls durchsucht das System alle Spaltenwerte jedes Spielers nach
    dem Suchbegriff (siehe BR-001).
+
+Use case continues at step 4.
+
+### AF-3: "Mein Team" ansehen
+
+- **Trigger:** (step 1) Der Fantasy-Football-Manager wählt die Pill "Mein
+  Team", nachdem UC-002 (Draft-Abgleich) bereits erfolgreich ausgeführt
+  wurde und `sleeperUserId` in `config/app.json` hinterlegt ist (siehe
+  BR-007).
+1. Das System filtert auf die vom Manager selbst gedrafteten Spieler und
+   gruppiert sie nach Position statt sie nach Rang zu sortieren (siehe
+   BR-007).
+2. Ist UC-002 noch nicht ausgeführt worden oder fehlt `sleeperUserId`, ist
+   die Pill deaktiviert; ein Tooltip nennt den fehlenden Grund.
 
 Use case ends.
 
@@ -109,3 +125,14 @@ Use case ends.
   keine eigene, positionsübergreifende Rangliste vorliegt — die
   FantasyPros-API liefert nur einzelne Positionsränge (QB/RB/WR/TE) sowie
   den Overall-Rang (OP), keinen dedizierten Flex-Rang.
+- **BR-007:** Die Pill "Mein Team" filtert auf Spieler, die (a) gedraftet
+  sind (siehe UC-002) und (b) deren `DRAFT_PICK.pickedBy` exakt der
+  konfigurierten `sleeperUserId` entspricht — nicht auf `roster_id`, da
+  diese in dieser Liga pro Draft neu vergeben wird, während `pickedBy`
+  (Sleeper `user_id`) über alle wöchentlichen Drafts hinweg konstant
+  bleibt. Angezeigt wird nach Position gruppiert (Reihenfolge QB, RB, WR,
+  TE; andere Positionen zuletzt), innerhalb einer Gruppe nach
+  Pick-Reihenfolge (`pickNo`) — nicht nach Rang, da der Rang für bereits
+  gedraftete eigene Spieler nicht mehr die relevante Sortierung ist. Die
+  Pill ist deaktiviert, solange UC-002 noch nicht erfolgreich ausgeführt
+  wurde oder `sleeperUserId` in `config/app.json` fehlt.
