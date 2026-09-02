@@ -28,6 +28,9 @@ const tbodyEl = document.getElementById('playersTableBody');
 
 const draftIdInput = document.getElementById('draftId');
 const loadDraftBtn = document.getElementById('loadDraftBtn');
+const draftSyncFormEl = document.getElementById('draftSyncForm');
+const draftSyncSummaryEl = document.getElementById('draftSyncSummary');
+const editDraftIdBtn = document.getElementById('editDraftIdBtn');
 
 const pillButtons = document.querySelectorAll('#positionPills .pill');
 const myTeamPill = document.querySelector('#positionPills .pill[data-position="MYTEAM"]');
@@ -220,6 +223,19 @@ function getFilters() {
   };
 }
 
+// Collapses the Draft-ID input/button into a one-line "✓ Draft verbunden"
+// summary once synced, so it doesn't keep taking permanent vertical space
+// for something only needed once per session. Deliberately independent of
+// renderTable()/updateDraftDependentUI() (called only from loadDraft's
+// success path and the "Ändern" button) - if it were tied to the render
+// cycle instead, re-expanding via "Ändern" would immediately collapse
+// again the next time renderTable() runs (e.g. on a pill click), since
+// draftSynced stays true for the rest of the session.
+function setDraftSyncCollapsed(collapsed) {
+  draftSyncFormEl.hidden = collapsed;
+  draftSyncSummaryEl.hidden = !collapsed;
+}
+
 const PLAYER_TABLE_COLUMN_COUNT = 7;
 
 // Hides the Status column (table + CSS class, see style.css) until a draft
@@ -377,6 +393,7 @@ async function loadDraft() {
     const { players, matched, unmatchedPicks } = matchDraftedPlayers(allPlayers, picks);
     allPlayers = players;
     draftSynced = true;
+    setDraftSyncCollapsed(true);
     renderAll();
     messages.showSuccess(`${picks.length} Picks geladen, ${matched} Spieler zugeordnet.`);
     // UC-002 AF-3: surface unmatched picks in the console for quick
@@ -432,6 +449,7 @@ async function init() {
   }
 
   loadDraftBtn.addEventListener('click', loadDraft);
+  editDraftIdBtn.addEventListener('click', () => setDraftSyncCollapsed(false));
   pillButtons.forEach((btn) => btn.addEventListener('click', () => setActivePosition(btn.dataset.position)));
   draftedFilter.addEventListener('change', renderTable);
   playerSearch.addEventListener('input', renderTable);

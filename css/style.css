@@ -288,6 +288,24 @@
     flex: 1 1 220px;
 }
 
+.draft-sync-summary {
+    margin: 1rem 0;
+    color: var(--pico-muted-color);
+}
+
+.link-button {
+    display: inline;
+    width: auto;
+    padding: 0;
+    margin: 0 0 0 0.4rem;
+    border: none;
+    background: none;
+    color: var(--pico-primary);
+    text-decoration: underline;
+    font-size: inherit;
+    cursor: pointer;
+}
+
 .stats-badges {
     display: flex;
     flex-wrap: wrap;

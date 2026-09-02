@@ -28,13 +28,17 @@
         <p id="syncSuccess" class="message-success" role="status" hidden></p>
 
         <section id="playersSection" hidden>
-            <section class="draft-sync">
+            <section class="draft-sync" id="draftSyncForm">
                 <div>
                     <label for="draftId">Sleeper Draft-ID</label>
                     <input type="text" id="draftId" placeholder="Draft-ID eingeben" autocomplete="off">
                 </div>
                 <button id="loadDraftBtn" type="button">Draft-Daten laden</button>
             </section>
+            <p class="draft-sync-summary" id="draftSyncSummary" hidden>
+                ✓ Draft verbunden
+                <button type="button" class="link-button" id="editDraftIdBtn">Ändern</button>
+            </p>
 
             <section class="stats-badges" id="statsBadges">
                 <span class="stat-badge">
@@ -59,7 +63,7 @@
                 </span>
             </section>
 
-            <details class="filters" open>
+            <details class="filters">
                 <summary>Filter</summary>
                 <div class="filters-grid">
                     <div>
