@@ -1,4 +1,7 @@
-// FantasyPros-Konsole (eingeloggt auf https://www.fantasypros.com/nfl/rankings/ppr-superflex.php): copy(JSON.stringify(advancedMetrics)) ausführen, Ergebnis ab hier (Zeile 2) einfügen - diese Kommentarzeile behalten.
+// FantasyPros-Konsole (eingeloggt auf 
+// https://www.fantasypros.com/nfl/rankings/ppr-superflex.php)
+// copy(JSON.stringify(advancedMetrics)) 
+// ausführen, Ergebnis ab hier (Zeile 5) einfügen - diese Kommentarzeile behalten.
 {
     "9001": {
         "matchup_rating": {
@@ -621,6 +624,15 @@
         "position_id": "QB",
         "team_id": "ARI"
     },
+    "18585": {
+        "matchup_rating": {
+            "rating": "2.9",
+            "opp": "HOU"
+        },
+        "player_name": "Greg Dortch",
+        "position_id": "WR",
+        "team_id": "BUF"
+    },
     "18598": {
         "matchup_rating": {
             "rating": "3.5",
@@ -1079,6 +1091,15 @@
         "player_name": "Rhamondre Stevenson",
         "position_id": "RB",
         "team_id": "NE"
+    },
+    "22728": {
+        "matchup_rating": {
+            "rating": "3.7",
+            "opp": "SF"
+        },
+        "player_name": "Michael Carter",
+        "position_id": "RB",
+        "team_id": "TEN"
     },
     "22739": {
         "matchup_rating": {
@@ -1764,6 +1785,15 @@
         "position_id": "WR",
         "team_id": "ATL"
     },
+    "23167": {
+        "matchup_rating": {
+            "rating": "2.9",
+            "opp": "SEA"
+        },
+        "player_name": "Michael Trigg",
+        "position_id": "TE",
+        "team_id": "DAL"
+    },
     "23179": {
         "matchup_rating": {
             "rating": "3.9",
@@ -2016,6 +2046,15 @@
         "position_id": "RB",
         "team_id": "TEN"
     },
+    "24344": {
+        "matchup_rating": {
+            "rating": "4.4",
+            "opp": "WAS"
+        },
+        "player_name": "Jaydon Blue",
+        "position_id": "RB",
+        "team_id": "PHI"
+    },
     "24345": {
         "matchup_rating": {
             "rating": "3.4",
@@ -2106,6 +2145,15 @@
         "position_id": "RB",
         "team_id": "BAL"
     },
+    "24370": {
+        "matchup_rating": {
+            "rating": "1.7",
+            "opp": "LAC"
+        },
+        "player_name": "Mitch Tinsley",
+        "position_id": "WR",
+        "team_id": "HOU"
+    },
     "24371": {
         "matchup_rating": {
             "rating": "2.2",
@@ -2186,6 +2234,15 @@
         "player_name": "Luke Musgrave",
         "position_id": "TE",
         "team_id": "GB"
+    },
+    "25287": {
+        "matchup_rating": {
+            "rating": "1.6",
+            "opp": "JAC"
+        },
+        "player_name": "Cedric Tillman",
+        "position_id": "WR",
+        "team_id": "NO"
     },
     "25298": {
         "matchup_rating": {
@@ -2430,6 +2487,15 @@
         "position_id": "TE",
         "team_id": "NO"
     },
+    "25654": {
+        "matchup_rating": {
+            "rating": "1.2",
+            "opp": "SEA"
+        },
+        "player_name": "Emari Demercado",
+        "position_id": "RB",
+        "team_id": "DAL"
+    },
     "25823": {
         "matchup_rating": {
             "rating": "1.8",
@@ -2439,6 +2505,15 @@
         "position_id": "RB",
         "team_id": "GB"
     },
+    "25876": {
+        "matchup_rating": {
+            "rating": "2.4",
+            "opp": "JAC"
+        },
+        "player_name": "Jaleel McLaughlin",
+        "position_id": "RB",
+        "team_id": "CLE"
+    },
     "25885": {
         "matchup_rating": {
             "rating": "2.0",
@@ -2447,15 +2522,6 @@
         "player_name": "Emanuel Wilson",
         "position_id": "RB",
         "team_id": "SEA"
-    },
-    "25967": {
-        "matchup_rating": {
-            "rating": "1.6",
-            "opp": "SEA"
-        },
-        "player_name": "Joe Milton III",
-        "position_id": "QB",
-        "team_id": "DAL"
     },
     "25968": {
         "matchup_rating": {
@@ -2735,6 +2801,15 @@
         "player_name": "Luke McCaffrey",
         "position_id": "WR",
         "team_id": "WAS"
+    },
+    "26329": {
+        "matchup_rating": {
+            "rating": "2.5",
+            "opp": "LAC"
+        },
+        "player_name": "Jawhar Jordan",
+        "position_id": "RB",
+        "team_id": "HOU"
     },
     "26335": {
         "matchup_rating": {
@@ -3249,6 +3324,15 @@
         "position_id": "RB",
         "team_id": "LV"
     },
+    "28109": {
+        "matchup_rating": {
+            "rating": "2.6",
+            "opp": "NO"
+        },
+        "player_name": "J'Mari Taylor",
+        "position_id": "RB",
+        "team_id": "JAC"
+    },
     "28125": {
         "matchup_rating": {
             "rating": "3.2",
@@ -3392,6 +3476,15 @@
         "player_name": "Kaelon Black",
         "position_id": "RB",
         "team_id": "SF"
+    },
+    "28404": {
+        "matchup_rating": {
+            "rating": "3.1",
+            "opp": "PHI"
+        },
+        "player_name": "Robert Henry Jr.",
+        "position_id": "RB",
+        "team_id": "WAS"
     },
     "28424": {
         "matchup_rating": {
