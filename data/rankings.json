@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T08:41:51.187Z",
+  "generatedAt": "2026-09-02T09:15:14.191Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -2121,6 +2121,21 @@
       "injuryProbability": null
     },
     {
+      "player_id": 26035,
+      "rank": 142,
+      "rankIsEstimated": true,
+      "player_name": "Jordyn Tyson",
+      "first_name": "Jordyn",
+      "last_name": "Tyson",
+      "position": "WR55",
+      "team": "NO",
+      "opponent": "at DET",
+      "matchupRating": 1.8,
+      "injuryStatus": "OUT",
+      "injuryStatusShort": "O",
+      "injuryProbability": null
+    },
+    {
       "player_id": 27131,
       "rank": 142,
       "rankIsEstimated": false,
@@ -2148,21 +2163,6 @@
       "matchupRating": 4.5,
       "injuryStatus": null,
       "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
-      "player_id": 26035,
-      "rank": 143,
-      "rankIsEstimated": true,
-      "player_name": "Jordyn Tyson",
-      "first_name": "Jordyn",
-      "last_name": "Tyson",
-      "position": "WR55",
-      "team": "NO",
-      "opponent": "at DET",
-      "matchupRating": 1.8,
-      "injuryStatus": "OUT",
-      "injuryStatusShort": "O",
       "injuryProbability": null
     },
     {
@@ -2331,21 +2331,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 23152,
-      "rank": 154,
-      "rankIsEstimated": true,
-      "player_name": "Zach Charbonnet",
-      "first_name": "Zach",
-      "last_name": "Charbonnet",
-      "position": "RB50",
-      "team": "SEA",
-      "opponent": "vs NE",
-      "matchupRating": 2,
-      "injuryStatus": "PUP",
-      "injuryStatusShort": "PUP",
-      "injuryProbability": null
-    },
-    {
       "player_id": 13981,
       "rank": 155,
       "rankIsEstimated": false,
@@ -2358,6 +2343,21 @@
       "matchupRating": 1.4,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 23152,
+      "rank": 155,
+      "rankIsEstimated": true,
+      "player_name": "Zach Charbonnet",
+      "first_name": "Zach",
+      "last_name": "Charbonnet",
+      "position": "RB50",
+      "team": "SEA",
+      "opponent": "vs NE",
+      "matchupRating": 2,
+      "injuryStatus": "PUP",
+      "injuryStatusShort": "PUP",
       "injuryProbability": null
     },
     {
@@ -3156,6 +3156,21 @@
       "injuryProbability": null
     },
     {
+      "player_id": 25361,
+      "rank": 208,
+      "rankIsEstimated": true,
+      "player_name": "Tank Dell",
+      "first_name": "Tank",
+      "last_name": "Dell",
+      "position": "WR84",
+      "team": "HOU",
+      "opponent": "vs BUF",
+      "matchupRating": 1.7,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
+      "injuryProbability": null
+    },
+    {
       "player_id": 27994,
       "rank": 208,
       "rankIsEstimated": false,
@@ -3168,21 +3183,6 @@
       "matchupRating": 1.8,
       "injuryStatus": null,
       "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
-      "player_id": 25361,
-      "rank": 209,
-      "rankIsEstimated": true,
-      "player_name": "Tank Dell",
-      "first_name": "Tank",
-      "last_name": "Dell",
-      "position": "WR84",
-      "team": "HOU",
-      "opponent": "vs BUF",
-      "matchupRating": 1.7,
-      "injuryStatus": "IR",
-      "injuryStatusShort": "IR",
       "injuryProbability": null
     },
     {
@@ -4252,7 +4252,7 @@
     },
     {
       "player_id": 26392,
-      "rank": 275,
+      "rank": 276,
       "rankIsEstimated": true,
       "player_name": "Isaac Guerendo",
       "first_name": "Isaac",
@@ -4581,21 +4581,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 16425,
-      "rank": 296,
-      "rankIsEstimated": true,
-      "player_name": "Kareem Hunt",
-      "first_name": "Kareem",
-      "last_name": "Hunt",
-      "position": "RB99",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 25876,
       "rank": 296,
       "rankIsEstimated": false,
@@ -4605,6 +4590,21 @@
       "position": "RB95",
       "team": "CLE",
       "opponent": "at JAC",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 16425,
+      "rank": 297,
+      "rankIsEstimated": true,
+      "player_name": "Kareem Hunt",
+      "first_name": "Kareem",
+      "last_name": "Hunt",
+      "position": "RB99",
+      "team": "FA",
+      "opponent": null,
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
@@ -4671,21 +4671,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 16420,
-      "rank": 301,
-      "rankIsEstimated": true,
-      "player_name": "Joe Mixon",
-      "first_name": "Joe",
-      "last_name": "Mixon",
-      "position": "RB100",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 27138,
       "rank": 301,
       "rankIsEstimated": false,
@@ -4711,6 +4696,21 @@
       "team": "HOU",
       "opponent": "vs BUF",
       "matchupRating": 1.7,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 16420,
+      "rank": 303,
+      "rankIsEstimated": true,
+      "player_name": "Joe Mixon",
+      "first_name": "Joe",
+      "last_name": "Mixon",
+      "position": "RB100",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -5601,21 +5601,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 16483,
-      "rank": 357,
-      "rankIsEstimated": true,
-      "player_name": "Austin Ekeler",
-      "first_name": "Austin",
-      "last_name": "Ekeler",
-      "position": "RB112",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 18585,
       "rank": 357,
       "rankIsEstimated": false,
@@ -5625,6 +5610,21 @@
       "position": "WR138",
       "team": "BUF",
       "opponent": "at HOU",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 16483,
+      "rank": 358,
+      "rankIsEstimated": true,
+      "player_name": "Austin Ekeler",
+      "first_name": "Austin",
+      "last_name": "Ekeler",
+      "position": "RB112",
+      "team": "FA",
+      "opponent": null,
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
@@ -6246,21 +6246,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 19624,
-      "rank": 392,
-      "rankIsEstimated": true,
-      "player_name": "Antonio Gibson",
-      "first_name": "Antonio",
-      "last_name": "Gibson",
-      "position": "RB125",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 25287,
       "rank": 392,
       "rankIsEstimated": false,
@@ -6291,13 +6276,13 @@
       "injuryProbability": null
     },
     {
-      "player_id": 11689,
-      "rank": 394,
+      "player_id": 19624,
+      "rank": 393,
       "rankIsEstimated": true,
-      "player_name": "Zach Ertz",
-      "first_name": "Zach",
-      "last_name": "Ertz",
-      "position": "TE72",
+      "player_name": "Antonio Gibson",
+      "first_name": "Antonio",
+      "last_name": "Gibson",
+      "position": "RB125",
       "team": "FA",
       "opponent": null,
       "matchupRating": null,
@@ -6315,6 +6300,21 @@
       "position": "RB104",
       "team": "CHI",
       "opponent": "at CAR",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 11689,
+      "rank": 395,
+      "rankIsEstimated": true,
+      "player_name": "Zach Ertz",
+      "first_name": "Zach",
+      "last_name": "Ertz",
+      "position": "TE72",
+      "team": "FA",
+      "opponent": null,
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
@@ -6351,21 +6351,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 13924,
-      "rank": 397,
-      "rankIsEstimated": true,
-      "player_name": "Ameer Abdullah",
-      "first_name": "Ameer",
-      "last_name": "Abdullah",
-      "position": "RB129",
-      "team": "JAC",
-      "opponent": "vs CLE",
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 27312,
       "rank": 397,
       "rankIsEstimated": false,
@@ -6378,6 +6363,21 @@
       "matchupRating": null,
       "injuryStatus": "IR",
       "injuryStatusShort": "IR",
+      "injuryProbability": null
+    },
+    {
+      "player_id": 13924,
+      "rank": 398,
+      "rankIsEstimated": true,
+      "player_name": "Ameer Abdullah",
+      "first_name": "Ameer",
+      "last_name": "Abdullah",
+      "position": "RB129",
+      "team": "JAC",
+      "opponent": "vs CLE",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
       "injuryProbability": null
     },
     {
@@ -6426,21 +6426,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 12122,
-      "rank": 401,
-      "rankIsEstimated": true,
-      "player_name": "Brandin Cooks",
-      "first_name": "Brandin",
-      "last_name": "Cooks",
-      "position": "WR172",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 26343,
       "rank": 401,
       "rankIsEstimated": false,
@@ -6450,6 +6435,21 @@
       "position": "TE83",
       "team": "KC",
       "opponent": "vs DEN",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 12122,
+      "rank": 402,
+      "rankIsEstimated": true,
+      "player_name": "Brandin Cooks",
+      "first_name": "Brandin",
+      "last_name": "Cooks",
+      "position": "WR172",
+      "team": "FA",
+      "opponent": null,
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
