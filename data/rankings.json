@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T06:55:01.204Z",
+  "generatedAt": "2026-09-02T07:15:31.814Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -2121,21 +2121,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 26035,
-      "rank": 142,
-      "rankIsEstimated": true,
-      "player_name": "Jordyn Tyson",
-      "first_name": "Jordyn",
-      "last_name": "Tyson",
-      "position": "WR55",
-      "team": "NO",
-      "opponent": "at DET",
-      "matchupRating": 1.8,
-      "injuryStatus": "OUT",
-      "injuryStatusShort": "O",
-      "injuryProbability": null
-    },
-    {
       "player_id": 27131,
       "rank": 142,
       "rankIsEstimated": false,
@@ -2163,6 +2148,21 @@
       "matchupRating": 4.5,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 26035,
+      "rank": 143,
+      "rankIsEstimated": true,
+      "player_name": "Jordyn Tyson",
+      "first_name": "Jordyn",
+      "last_name": "Tyson",
+      "position": "WR55",
+      "team": "NO",
+      "opponent": "at DET",
+      "matchupRating": 1.8,
+      "injuryStatus": "OUT",
+      "injuryStatusShort": "O",
       "injuryProbability": null
     },
     {
@@ -3156,21 +3156,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 25361,
-      "rank": 207,
-      "rankIsEstimated": true,
-      "player_name": "Tank Dell",
-      "first_name": "Tank",
-      "last_name": "Dell",
-      "position": "WR84",
-      "team": "HOU",
-      "opponent": "vs BUF",
-      "matchupRating": 1.7,
-      "injuryStatus": "IR",
-      "injuryStatusShort": "IR",
-      "injuryProbability": null
-    },
-    {
       "player_id": 27994,
       "rank": 208,
       "rankIsEstimated": false,
@@ -3183,6 +3168,21 @@
       "matchupRating": 1.8,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 25361,
+      "rank": 209,
+      "rankIsEstimated": true,
+      "player_name": "Tank Dell",
+      "first_name": "Tank",
+      "last_name": "Dell",
+      "position": "WR84",
+      "team": "HOU",
+      "opponent": "vs BUF",
+      "matchupRating": 1.7,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
       "injuryProbability": null
     },
     {
