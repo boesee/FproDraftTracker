@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T15:15:15.583Z",
+  "generatedAt": "2026-09-02T15:39:17.354Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -9013,8 +9013,8 @@
       "first_name": "Bryce",
       "last_name": "Oliver",
       "position": "WR231",
-      "team": "FA",
-      "opponent": null,
+      "team": "CLE",
+      "opponent": "at JAC",
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
