@@ -65,8 +65,10 @@ robuster, aktueller und wartungsärmer wird.
   hat zur Laufzeit kein eigenes Backend.
 - Die Sleeper-API bleibt öffentlich und ohne Authentifizierung nutzbar wie im
   bisherigen Produkt.
-- Die Benutzeroberfläche bleibt deutschsprachig, analog zum bisherigen
-  Produkt.
+- Die Benutzeroberfläche bleibt primär deutschsprachig; englische
+  Fantasy-Football-Fachbegriffe (z. B. "Matchup", "Draft Status",
+  "Weekly") sind bewusst zugelassen, da sie im deutschsprachigen
+  Fantasy-Football-Umfeld gängige, etablierte Fachsprache sind.
 - API-Zugangsdaten (API-Key) dürfen nicht im Frontend-Code oder im
   Repository landen.
 

@@ -40,4 +40,4 @@ nicht mehrfach vergeben.
 | C-004 | Zeitplan der Datenpipeline | Die Aktualisierung der Rankings erfolgt per GitHub-Actions-Workflow halbstündlich im Fenster 07:00–23:00 Uhr. | Schedule | Medium | Draft |
 | C-005 | API-Zugangsdaten bereits vorhanden | API-URL und API-Key für die FantasyPros-API sind bereits vorhanden und als GitHub-Actions-Secret zu hinterlegen. | Technical | Medium | Draft |
 | C-006 | Sleeper-Zugriff bleibt clientseitig | Die Sleeper-API ist öffentlich und unauthentifiziert und wird weiterhin direkt aus dem Browser aufgerufen. | Technical | Low | Draft |
-| C-007 | Deutschsprachige Oberfläche | Die Benutzeroberfläche bleibt durchgehend deutschsprachig, analog zum bisherigen Produkt. | Business | Low | Draft |
+| C-007 | Primär deutschsprachige Oberfläche | Die Benutzeroberfläche bleibt primär deutschsprachig; englische Fantasy-Football-Fachbegriffe (z. B. "Matchup", "Draft Status", "Weekly") sind bewusst zugelassen, da sie im deutschsprachigen Fantasy-Football-Umfeld gängige, etablierte Fachsprache sind, nicht nur eine Übersetzungslücke. | Business | Low | Draft |
