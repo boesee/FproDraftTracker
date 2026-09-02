@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T20:12:24.286Z",
+  "generatedAt": "2026-09-02T20:36:59.202Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -7813,8 +7813,8 @@
       "first_name": "Kevin",
       "last_name": "Austin Jr.",
       "position": "WR185",
-      "team": "FA",
-      "opponent": null,
+      "team": "NO",
+      "opponent": "at DET",
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
