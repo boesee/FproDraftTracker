@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T19:35:20.328Z",
+  "generatedAt": "2026-09-02T20:12:24.286Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -4146,21 +4146,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 25393,
-      "rank": 269,
-      "rankIsEstimated": true,
-      "player_name": "Trevor Etienne",
-      "first_name": "Trevor",
-      "last_name": "Etienne",
-      "position": "RB90",
-      "team": "CAR",
-      "opponent": "vs CHI",
-      "matchupRating": 2.9,
-      "injuryStatus": "OUT",
-      "injuryStatusShort": "O",
-      "injuryProbability": null
-    },
-    {
       "player_id": 24901,
       "rank": 270,
       "rankIsEstimated": false,
@@ -4173,6 +4158,21 @@
       "matchupRating": 2.9,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 25393,
+      "rank": 270,
+      "rankIsEstimated": true,
+      "player_name": "Trevor Etienne",
+      "first_name": "Trevor",
+      "last_name": "Etienne",
+      "position": "RB90",
+      "team": "CAR",
+      "opponent": "vs CHI",
+      "matchupRating": 2.9,
+      "injuryStatus": "OUT",
+      "injuryStatusShort": "O",
       "injuryProbability": null
     },
     {
@@ -5017,7 +5017,7 @@
     },
     {
       "player_id": 22728,
-      "rank": 321,
+      "rank": 322,
       "rankIsEstimated": true,
       "player_name": "Michael Carter",
       "first_name": "Michael",
