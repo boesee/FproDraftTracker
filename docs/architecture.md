@@ -321,26 +321,42 @@ Vorgängerprodukt.
 ## Konfiguration (`config/app.json`)
 
 Eine committete, von Hand gepflegte `config/app.json` enthält optionale
-Overrides, die sowohl vom Frontend (`js/config.js`) als auch von der
-Pipeline (`scripts/lib/config.mjs`) gelesen werden:
+Overrides. `season`/`week` werden sowohl vom Frontend (`js/config.js`,
+nur zum Anzeigen) als auch von der Pipeline (`scripts/lib/config.mjs`,
+für den API-Abruf) gelesen; `draftIds` ist reine Frontend-Konfiguration —
+die Pipeline liest oder benötigt es nicht (Sleeper-Zugriff bleibt
+clientseitig, siehe unten).
 
 ```json
 {
-  "draftId": "1265036873886076928",
+  "draftIds": {
+    "1": "1265036873886076928",
+    "2": "1265036873886076929"
+  },
   "season": null,
   "week": null
 }
 ```
 
-- `draftId`: Ist ein Wert gesetzt, befüllt das Frontend das Draft-ID-Feld
-  beim Laden automatisch vor — kein manuelles Eintippen pro Sitzung nötig.
-  Der Sleeper-Abgleich (UC-002) selbst wird dadurch bewusst **nicht**
-  ausgelöst; das bleibt ein expliziter Klick auf "Draft-Daten laden". Ein
-  automatischer Sync bei jedem Seitenaufruf hätte den Sleeper-Endpunkt
-  ungefragt bei jedem Laden getroffen und die Statusspalte (an den
-  Sync-Zustand gekoppelt, siehe UC-002/UC-004) von Anfang an bedeutungslos
-  gemacht, statt bis zum ersten echten Abgleich ausgeblendet zu bleiben.
-  `null` bedeutet: Feld bleibt leer, Nutzer trägt die ID manuell ein.
+- `draftIds`: pro Woche eine eigene Sleeper-Draft-ID (Schlüssel =
+  Wochennummer als String, z. B. "1") — für Ligen, die jede Woche neu
+  drafteten (z. B. wöchentliche Redraft-Ligen), statt einer über die
+  ganze Saison fixen Draft-ID. Beim Laden befüllt das Frontend
+  (`js/main.js`, `init`) das Draft-ID-Feld automatisch vor — mit dem
+  Eintrag für die Woche, für die der gerade geladene
+  `RANKINGS_SNAPSHOT` tatsächlich gilt (`snapshot.week`), nicht mit
+  einer separat im Frontend berechneten Woche; so bleibt es auch
+  korrekt, falls sich `config/app.json`'s `week`/`season`-Override und
+  der Snapshot-Inhalt einmal auseinander entwickeln sollten. Fehlt für
+  die aktuelle Woche ein Eintrag (oder `season`/`week` fehlen im
+  Snapshot — älterer Snapshot vor Einführung dieser Felder), bleibt das
+  Feld leer, kein Fehler. Der Sleeper-Abgleich (UC-002) selbst wird
+  dadurch bewusst **nicht** ausgelöst; das bleibt ein expliziter Klick
+  auf "Draft-Daten laden". Ein automatischer Sync bei jedem
+  Seitenaufruf hätte den Sleeper-Endpunkt ungefragt bei jedem Laden
+  getroffen und die Statusspalte (an den Sync-Zustand gekoppelt, siehe
+  UC-002/UC-004) von Anfang an bedeutungslos gemacht, statt bis zum
+  ersten echten Abgleich ausgeblendet zu bleiben.
 - `season`/`week`: Überschreiben die automatisch berechneten Werte aus
   `currentNflSeason()`/`currentNflWeek()` (`scripts/lib/nflSchedule.mjs`).
   `null` bedeutet: automatische Berechnung wird verwendet

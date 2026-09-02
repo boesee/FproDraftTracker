@@ -28,8 +28,9 @@ offiziellen FantasyPros-API bezogen. Details dazu und zur restlichen Architektur
 
 1. **Seite öffnen:** Die Datei `data/rankings.json` wird automatisch geladen und angezeigt.
 2. **Draft abgleichen:** Sleeper-Draft-ID eingeben und auf „Draft-Daten laden“ klicken, um gedraftete
-   Spieler zu markieren. Ist in `config/app.json` eine `draftId` hinterlegt, wird das Feld beim Laden
-   der Seite vorbefüllt (siehe unten) - der Abgleich selbst erfolgt weiterhin erst per Klick.
+   Spieler zu markieren. Ist in `config/app.json` unter `draftIds` ein Eintrag für die aktuell
+   geladene Woche hinterlegt, wird das Feld beim Laden der Seite vorbefüllt (siehe unten) - der
+   Abgleich selbst erfolgt weiterhin erst per Klick.
 3. **Ranking wechseln:** Über die Pills-Navigation ("Overall", "QB", "RB", "WR", "Flex") über der
    Tabelle zwischen Overall- und positionsspezifischer Rangliste wechseln.
 4. **Filtern/Suchen:** Über den Filterbereich nach Rang oder Draft-Status einschränken, oder die Suche
@@ -41,15 +42,21 @@ Optionale, von Hand gepflegte Konfiguration:
 
 ```json
 {
-  "draftId": "1265036873886076928",
+  "draftIds": {
+    "1": "1265036873886076928",
+    "2": "1265036873886076929"
+  },
   "season": null,
   "week": null
 }
 ```
 
-- `draftId`: wird beim Laden nur vorbefüllt, löst den Draft-Abgleich aber **nicht** automatisch aus -
-  "Draft-Daten laden" muss weiterhin manuell geklickt werden. Praktisch, wenn du wöchentlich dieselbe
-  Draft-ID verwendest, ohne sie jedes Mal neu eintippen zu müssen.
+- `draftIds`: pro Woche eine eigene Sleeper-Draft-ID (Schlüssel = Wochennummer als String) - praktisch
+  bei einer wöchentlichen Redraft-Liga mit jede Woche neuem Draft. Beim Laden wird die ID für die
+  Woche vorbefüllt, für die die gerade geladenen Rankings tatsächlich gelten (`data/rankings.json`,
+  Feld `week`) - nicht irgendeine separat berechnete Woche. Fehlt für die aktuelle Woche ein Eintrag,
+  bleibt das Feld leer. Der Draft-Abgleich selbst löst dadurch **nicht** automatisch aus -
+  "Draft-Daten laden" muss weiterhin manuell geklickt werden.
 - `season`/`week`: überschreiben bei Bedarf die von der Pipeline automatisch berechneten Werte;
   `null` heisst "automatisch berechnen" (Standard). Details siehe
   [`docs/architecture.md`](docs/architecture.md#konfiguration-configappjson).

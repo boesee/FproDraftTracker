@@ -388,6 +388,17 @@ async function init() {
     renderAll();
     rankingsErrorEl.hidden = true;
     sectionEl.hidden = false;
+
+    // Pre-fill from config/app.json's draftIds (keyed by week - a
+    // different weekly-redraft league has its own Sleeper draft each
+    // week), so a recurring draft doesn't need the Draft-ID typed in
+    // every time - but never sync automatically (see loadDraft). Keyed
+    // by the loaded snapshot's own week, not a separately-computed one,
+    // so the pre-filled draft always matches the rankings actually shown.
+    const draftId = config.draftIds?.[snapshot.week];
+    if (draftId) {
+      draftIdInput.value = draftId;
+    }
   } catch (error) {
     logger.error('Rankings konnten nicht geladen werden', error);
     showRankingsError('Aktuell sind keine Rankings verfügbar.');
@@ -398,16 +409,6 @@ async function init() {
   pillButtons.forEach((btn) => btn.addEventListener('click', () => setActivePosition(btn.dataset.position)));
   draftedFilter.addEventListener('change', renderTable);
   playerSearch.addEventListener('input', renderTable);
-
-  // Pre-fill from config/app.json, so a recurring draft doesn't need the
-  // Draft-ID typed in every time - but never sync automatically. An
-  // unconditional auto-sync on every page load meant draftSynced was
-  // already true by the time anyone looked at the page, defeating the
-  // Status column's gating (see updateDraftDependentUI) and silently
-  // hitting the Sleeper API before the user asked for it.
-  if (config.draftId) {
-    draftIdInput.value = config.draftId;
-  }
 }
 
 if (document.readyState === 'loading') {
