@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T20:36:59.202Z",
+  "generatedAt": "2026-09-02T21:10:44.927Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -5872,7 +5872,7 @@
     },
     {
       "player_id": 27182,
-      "rank": 372,
+      "rank": 371,
       "rankIsEstimated": true,
       "player_name": "Tai Felton",
       "first_name": "Tai",
@@ -5931,6 +5931,21 @@
       "injuryProbability": null
     },
     {
+      "player_id": 16445,
+      "rank": 375,
+      "rankIsEstimated": true,
+      "player_name": "Jeremy McNichols",
+      "first_name": "Jeremy",
+      "last_name": "McNichols",
+      "position": "RB117",
+      "team": "WAS",
+      "opponent": "at PHI",
+      "matchupRating": null,
+      "injuryStatus": "OUT",
+      "injuryStatusShort": "O",
+      "injuryProbability": null
+    },
+    {
       "player_id": 19423,
       "rank": 375,
       "rankIsEstimated": false,
@@ -5946,18 +5961,18 @@
       "injuryProbability": null
     },
     {
-      "player_id": 16445,
+      "player_id": 19843,
       "rank": 376,
       "rankIsEstimated": true,
-      "player_name": "Jeremy McNichols",
-      "first_name": "Jeremy",
-      "last_name": "McNichols",
-      "position": "RB117",
-      "team": "WAS",
-      "opponent": "at PHI",
+      "player_name": "Antonio Williams",
+      "first_name": "Antonio",
+      "last_name": "Williams",
+      "position": "RB130",
+      "team": "FA",
+      "opponent": null,
       "matchupRating": null,
-      "injuryStatus": "OUT",
-      "injuryStatusShort": "O",
+      "injuryStatus": null,
+      "injuryStatusShort": null,
       "injuryProbability": null
     },
     {
@@ -5971,21 +5986,6 @@
       "team": "WAS",
       "opponent": "at PHI",
       "matchupRating": 1.5,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
-      "player_id": 19843,
-      "rank": 377,
-      "rankIsEstimated": true,
-      "player_name": "Antonio Williams",
-      "first_name": "Antonio",
-      "last_name": "Williams",
-      "position": "RB130",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -6021,6 +6021,21 @@
       "injuryProbability": null
     },
     {
+      "player_id": 26964,
+      "rank": 378,
+      "rankIsEstimated": true,
+      "player_name": "Terrell Jennings",
+      "first_name": "Terrell",
+      "last_name": "Jennings",
+      "position": "RB118",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
       "player_id": 18562,
       "rank": 379,
       "rankIsEstimated": false,
@@ -6031,21 +6046,6 @@
       "team": "ARI",
       "opponent": "at LAC",
       "matchupRating": 3.2,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
-      "player_id": 26964,
-      "rank": 379,
-      "rankIsEstimated": true,
-      "player_name": "Terrell Jennings",
-      "first_name": "Terrell",
-      "last_name": "Jennings",
-      "position": "RB118",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
