@@ -158,6 +158,34 @@ frühere Position-Dropdown-Filterung ab.
   Status-Spalte (siehe UC-002) bekommt ihre `<col>` ebenfalls über die
   `status-column`-Klasse ausgeblendet/eingeblendet und kollabiert dabei
   korrekt auf 0 Breite, statt eine leere Lücke zu hinterlassen.
+- **Mobile Spaltenbreiten weichen von Desktop ab (eigener `<colgroup>`-Satz
+  unter 480px):** Die `<col>`-Breiten wurden von Inline-`style`-Attributen
+  auf Klassen (`.col-rank`, `.col-player`, ...) umgestellt, weil Inline-
+  Styles jede Stylesheet-Regel unabhängig von Spezifität überstimmen —
+  ein `@media`-Override wäre sonst wirkungslos gewesen. Grund für den
+  eigenen Satz: Desktop und Mobile brauchen fundamental unterschiedliche
+  Proportionen, nicht nur kleinere Zahlen. Auf Desktop zeigen
+  Matchup/Status den vollen Text (5-Sterne-Reihe, "Verfügbar"/
+  "Gedraftet") und brauchen entsprechend Platz; mobil kollabieren beide
+  auf ein Symbol (`.status-dot`, `.matchup-compact`) und brauchen kaum
+  noch etwas, während #, Pos. und Team nie schrumpfen (Rang-Ziffern,
+  "WR104", Team-Kürzel sind bildschirmunabhängig gleich breit) und bei
+  den alten, für Desktop kalibrierten Prozentwerten schmaler waren als
+  ihr eigener Inhalt — auf echtem iPhone-15-Hardware gemeldet: "10"
+  brach zu "1"/"0", "WR2" auf zwei Zeilen. Zusätzlich wurden die
+  Header-Texte "Matchup" und "Draft Status" (siehe C-007, bewusst
+  ausgeschriebene Labels) unterhalb 480px per `.header-full`/
+  `.header-compact`-Toggle (dasselbe Muster wie `.status-full`/
+  `.status-dot`) durch "Mat."/"Status" ersetzt, da "Matchup" als
+  einzelnes Wort ohne Trennstelle sonst mitten im Wort umgebrochen wäre
+  ("Matc"/"hup"). Die mobilen Prozentwerte wurden gegen die real
+  gerenderten Inhaltsbreiten der kompletten ~600-Spieler-Liste kalibriert
+  (Playwright, iPhone-15-Viewport) und mobile Zellpadding von 6px auf
+  3px/4px reduziert (größter Hebel laut Kommentar bei `#playersTable th`
+  oben). Ergebnis: kein Zellinhalt außer "Spieler" bricht mehr um — lange
+  Spielernamen dürfen als einzige Spalte auf zwei Zeilen umbrechen, da
+  das an einer Wortgrenze passiert und dadurch nicht kaputt aussieht, im
+  Gegensatz zu einem Bruch mitten in einem Kürzel wie "WR1"/"04".
 
 ### "Mein Team"-Pill
 

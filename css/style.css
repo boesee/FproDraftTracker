@@ -188,6 +188,45 @@
     table-layout: fixed;
 }
 
+/* Desktop column widths - moved from inline style="width:...%" on the
+   <col> elements (index.html) to classes so the mobile media query below
+   can override them; inline styles would win over any stylesheet rule
+   regardless of specificity. */
+.col-rank { width: 6%; }
+.col-player { width: 30%; }
+.col-pos { width: 11%; }
+.col-team { width: 10%; }
+.col-opp { width: 13%; }
+.col-matchup { width: 12%; }
+.col-status { width: 18%; }
+
+/* Mobile needs a different split than desktop, not just smaller numbers:
+   on desktop, Status/Matchup show full text ("Verfügbar"/full star row)
+   so they need generous room; on mobile they collapse to a single dot /
+   "★N" (see .status-dot, .matchup-compact below) and barely need any,
+   while #, Pos. and Team never shrink (rank digits, "WR12", "DET" are
+   fixed-width regardless of screen) and were being squeezed into widths
+   narrower than their own content - e.g. "#" at 6% (~22px) can't fit a
+   2-digit rank, "Pos." at 11% (~40px) can't reliably fit "WR12" - so
+   both wrapped mid-content (reported on real iPhone 15 hardware: "10"
+   wrapping to "1"/"0", "WR2" onto two lines) even though the table
+   itself never overflowed. Values here were tuned against real per-column
+   content widths measured with Playwright across the full ~600-player
+   ranking list (worst case per column, e.g. "WR104" for Pos., "at HOU"
+   for Opp., the "Status"/"Mat." compact headers), then verified the same
+   way that no cell in any column wraps except Spieler - which is the one
+   column allowed to wrap, since player names break at word boundaries
+   and don't look broken the way a mid-token break like "WR1"/"04" does. */
+@media (max-width: 480px) {
+    .col-rank { width: 11%; }
+    .col-player { width: 19%; }
+    .col-pos { width: 16%; }
+    .col-team { width: 13%; }
+    .col-opp { width: 16%; }
+    .col-matchup { width: 11%; }
+    .col-status { width: 14%; }
+}
+
 #playersTable th {
     position: sticky;
     top: 0;
@@ -201,7 +240,7 @@
 @media (max-width: 480px) {
     #playersTable th,
     #playersTable td {
-        padding: 6px 6px;
+        padding: 4px 3px;
         font-size: 0.8rem;
     }
 }
@@ -242,12 +281,30 @@
     font-weight: bold;
 }
 
+/* Same full/compact pattern as .status-full/.status-dot and
+   .matchup-full/.matchup-compact above, applied to header labels: "Matchup"
+   and "Draft Status" are the deliberately spelled-out desktop labels (see
+   C-007), but at mobile column widths they don't fit as one word/phrase
+   and wrap mid-word ("Matc"/"hup") - swapped for a short abbreviation
+   below 480px instead of shrinking the column further. */
+.header-compact {
+    display: none;
+}
+
 @media (max-width: 480px) {
     .matchup-full {
         display: none;
     }
 
     .matchup-compact {
+        display: inline;
+    }
+
+    .header-full {
+        display: none;
+    }
+
+    .header-compact {
         display: inline;
     }
 }

@@ -118,13 +118,13 @@
             <div class="table-scroll">
                 <table id="playersTable">
                     <colgroup>
-                        <col style="width: 6%">
-                        <col style="width: 30%">
-                        <col style="width: 11%">
-                        <col style="width: 10%">
-                        <col style="width: 13%">
-                        <col style="width: 12%">
-                        <col class="status-column" style="width: 18%">
+                        <col class="col-rank">
+                        <col class="col-player">
+                        <col class="col-pos">
+                        <col class="col-team">
+                        <col class="col-opp">
+                        <col class="col-matchup">
+                        <col class="col-status status-column">
                     </colgroup>
                     <thead>
                         <tr>
@@ -133,8 +133,8 @@
                             <th title="Position">Pos.</th>
                             <th>Team</th>
                             <th title="Gegner">Opp.</th>
-                            <th title="Matchup">Matchup</th>
-                            <th class="status-column" title="Erst nach dem Laden der Draft-Daten verfügbar">Draft Status</th>
+                            <th title="Matchup"><span class="header-full">Matchup</span><span class="header-compact">Mat.</span></th>
+                            <th class="status-column" title="Erst nach dem Laden der Draft-Daten verfügbar"><span class="header-full">Draft Status</span><span class="header-compact">Status</span></th>
                         </tr>
                     </thead>
                     <tbody id="playersTableBody"></tbody>
