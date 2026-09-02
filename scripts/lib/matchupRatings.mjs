@@ -14,16 +14,21 @@ const MATCHUP_RATINGS_REPO_RELATIVE_PATH = 'config/matchup-ratings.json';
 // snapshot: the repo owner periodically pastes the browser's
 // `advancedMetrics` object (logged in, via DevTools:
 // `copy(JSON.stringify(advancedMetrics))`) into
-// config/matchup-ratings.json. A leading `//` comment line in that file
-// (documenting the exact command above) is tolerated and stripped before
-// parsing.
+// config/matchup-ratings.json. One or more leading `//` comment lines in
+// that file (documenting the exact command above) are tolerated and
+// stripped before parsing - editors/browsers sometimes wrap that reminder
+// across multiple lines when it's pasted back in, so this strips every
+// consecutive leading comment line, not just the first (a real bug: a
+// 3-line wrapped comment made the whole file fail to parse, silently
+// dropping every player's matchup rating instead of just the intended
+// reminder text).
 // Split out from loadMatchupRatings so the parsing itself (leading-comment
 // stripping, JSON parsing, rating extraction) is testable without touching
 // the filesystem. Throws on malformed input; the caller decides how to
 // handle that (see loadMatchupRatings).
 export function parseMatchupRatings(raw) {
-  const withoutLeadingComment = raw.replace(/^\s*\/\/.*(\r?\n|$)/, '');
-  const advancedMetrics = JSON.parse(withoutLeadingComment);
+  const withoutLeadingComments = raw.replace(/^(?:[ \t]*\/\/.*(?:\r?\n|$))+/, '');
+  const advancedMetrics = JSON.parse(withoutLeadingComments);
   const ratings = {};
   for (const [playerId, entry] of Object.entries(advancedMetrics)) {
     const rating = parseFloat(entry?.matchup_rating?.rating);

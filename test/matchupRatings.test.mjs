@@ -12,6 +12,20 @@ test('parseMatchupRatings: works without a leading comment line too', () => {
   assert.deepEqual(parseMatchupRatings(raw), { 9001: 4 });
 });
 
+// Regression: a real paste wrapped the reminder comment across 3 lines
+// (the URL landed on its own line) instead of 1. The old regex only
+// stripped a single leading "//" line, so the 2 leftover comment lines
+// broke JSON.parse for the *entire* file - silently dropping every
+// player's matchup rating, not just the one intended as a comment.
+test('parseMatchupRatings: strips multiple consecutive leading comment lines', () => {
+  const raw =
+    '// FantasyPros-Konsole (eingeloggt auf \n' +
+    '// https://www.fantasypros.com/nfl/rankings/ppr-superflex.php)\n' +
+    '// copy(JSON.stringify(advancedMetrics))\n' +
+    '{"9001":{"matchup_rating":{"rating":"3.5"}}}';
+  assert.deepEqual(parseMatchupRatings(raw), { 9001: 3.5 });
+});
+
 test('parseMatchupRatings: multiple players', () => {
   const raw = JSON.stringify({
     '1': { matchup_rating: { rating: '1' } },

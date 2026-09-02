@@ -280,9 +280,10 @@ eigener Code** gegen die FantasyPros-Website — kein Scraping, keine
 Login-Automatisierung, kein Puppeteer/Headless-Browser in der Pipeline.
 
 - `scripts/lib/matchupRatings.mjs` (`loadMatchupRatings`) liest die Datei,
-  überspringt die führende Kommentarzeile und mapped pro FantasyPros-
-  `player_id` den Wert aus `matchup_rating.rating` (als `matchupRating`
-  auf `PLAYER`).
+  überspringt alle führenden Kommentarzeilen (nicht nur eine — ein reales
+  Paste hat den Reminder schon auf 3 Zeilen umgebrochen, siehe
+  `parseMatchupRatings`) und mapped pro FantasyPros-`player_id` den Wert
+  aus `matchup_rating.rating` (als `matchupRating` auf `PLAYER`).
 - Fehlt die Datei, ist sie leer/veraltet oder nicht mehr parsebar (z. B.
   weil FantasyPros die interne Struktur ändert), wird das geloggt und die
   Pipeline läuft ohne Matchup-Ratings weiter (`matchupRating: null`) —
