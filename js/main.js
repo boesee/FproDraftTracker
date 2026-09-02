@@ -435,6 +435,19 @@ async function init() {
   pillButtons.forEach((btn) => btn.addEventListener('click', () => setActivePosition(btn.dataset.position)));
   draftedFilter.addEventListener('change', renderTable);
   playerSearch.addEventListener('input', renderTable);
+
+  // Sharable "Mein Team" link (?myteam): syncs and switches to the "Mein
+  // Team" pill automatically. Unlike the auto-sync-by-default that was
+  // deliberately removed earlier (it fired on every normal visit before
+  // the user did anything), this only fires when someone opens a URL that
+  // explicitly asks for it - e.g. a link shared to show off a drafted
+  // roster - a rare, deliberate visit, not the default page load.
+  if (new URLSearchParams(window.location.search).has('myteam') && draftIdInput.value) {
+    await loadDraft();
+    if (draftSynced && myUserId) {
+      setActivePosition('MYTEAM');
+    }
+  }
 }
 
 if (document.readyState === 'loading') {

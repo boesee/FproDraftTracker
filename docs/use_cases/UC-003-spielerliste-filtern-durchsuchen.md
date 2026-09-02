@@ -9,7 +9,7 @@
   seinen nächsten Pick relevanten Spieler zu konzentrieren.
 - **Status:** Draft
 - **Bezug:** FR-003, FR-004, FR-005, FR-006; `<<extend>>` von UC-002 (die
-  "Mein Team"-Pill, siehe AF-3); Entitäten `PLAYER`, `DRAFT_PICK`
+  "Mein Team"-Pill, siehe AF-3/AF-4); Entitäten `PLAYER`, `DRAFT_PICK`
   (`pickedBy`).
 
 ## Preconditions
@@ -65,6 +65,21 @@ Use case continues at step 4.
    BR-007).
 2. Ist UC-002 noch nicht ausgeführt worden oder fehlt `sleeperUserId`, ist
    die Pill deaktiviert; ein Tooltip nennt den fehlenden Grund.
+
+Use case ends.
+
+### AF-4: "Mein Team" über einen geteilten Link öffnen
+
+- **Trigger:** (step 1) Der Fantasy-Football-Manager öffnet
+  `index.html?myteam` (z. B. ein von sich selbst geteilter Link) statt
+  die Pill manuell anzuklicken.
+1. Das System löst UC-002 automatisch aus (sofern eine Draft-ID für die
+   aktuelle Woche vorbefüllt ist, siehe `config/app.json`).
+2. War UC-002 erfolgreich und ist `sleeperUserId` konfiguriert, wechselt
+   das System automatisch auf die Pill "Mein Team" (wie AF-3, Schritt 1).
+3. Der geteilte Link zeigt dabei immer den Kader des in
+   `config/app.json` konfigurierten `sleeperUserId` — keine
+   Personalisierung je nach Empfänger des Links.
 
 Use case ends.
 
@@ -136,3 +151,9 @@ Use case ends.
   gedraftete eigene Spieler nicht mehr die relevante Sortierung ist. Die
   Pill ist deaktiviert, solange UC-002 noch nicht erfolgreich ausgeführt
   wurde oder `sleeperUserId` in `config/app.json` fehlt.
+- **BR-008:** Der URL-Parameter `?myteam` löst UC-002 automatisch aus
+  (sofern eine Draft-ID vorbefüllt ist) und wechselt danach auf "Mein
+  Team" (siehe AF-4) — im Unterschied zum bewusst entfernten
+  automatischen Sync bei jedem normalen Seitenaufruf (siehe UC-002),
+  da hier ein bewusst geöffneter/geteilter Link der Auslöser ist, nicht
+  der normale Aufruf ohne Query-Parameter.

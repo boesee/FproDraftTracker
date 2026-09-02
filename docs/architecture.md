@@ -196,6 +196,23 @@ Rang zu sortieren — UC-002-Erweiterung, dokumentiert in UC-003 AF-3/BR-007.
   `sleeperUserId` in `config/app.json` fehlt (`updateDraftDependentUI`,
   `js/main.js`) — ein `disabled`-Button feuert keine Click-Events, daher
   ist kein zusätzlicher Guard beim Pill-Wechsel selbst nötig.
+- **Teilbarer Link (`?myteam`):** `index.html?myteam` löst beim Laden
+  automatisch `loadDraft()` aus (derselbe Code-Pfad wie der manuelle
+  Button-Klick) und wechselt danach auf die "Mein Team"-Pill — gedacht,
+  um den eigenen gedrafteten Kader unkompliziert mit anderen zu teilen
+  (Liga-Chat, eigenes Gerät als Lesezeichen), ohne Draft-ID abtippen und
+  Button/Pill klicken zu müssen. Zeigt **immer** den Kader des in
+  `config/app.json` konfigurierten `sleeperUserId` — keine
+  Personalisierung pro Empfänger/URL (bewusste Entscheidung, siehe
+  Rückfrage/Antwort dazu; eine per-Empfänger-Ansicht bräuchte einen
+  zweiten URL-Parameter mit der jeweiligen `user_id` und wurde nicht
+  gebaut, da nicht gewünscht). Löst *nicht* denselben Fehler aus wie der
+  entfernte automatische Sync bei jedem Seitenaufruf (siehe UC-002) — der
+  Unterschied ist, dass hier ein bewusst geteilter/geöffneter Link der
+  Auslöser ist, nicht der normale Seitenaufruf ohne Query-Parameter.
+  Schlägt der Sync fehl (z. B. ungültige Draft-ID) oder ist
+  `sleeperUserId` nicht konfiguriert, bleibt die Pill inaktiv/deaktiviert
+  wie gehabt — kein zusätzlicher Fehlerzustand nötig.
 
 ## Ranking-Art-Transparenz
 
