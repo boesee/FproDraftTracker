@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T19:10:44.849Z",
+  "generatedAt": "2026-09-02T19:35:20.328Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -2136,6 +2136,21 @@
       "injuryProbability": null
     },
     {
+      "player_id": 26035,
+      "rank": 142,
+      "rankIsEstimated": true,
+      "player_name": "Jordyn Tyson",
+      "first_name": "Jordyn",
+      "last_name": "Tyson",
+      "position": "WR55",
+      "team": "NO",
+      "opponent": "at DET",
+      "matchupRating": 1.8,
+      "injuryStatus": "OUT",
+      "injuryStatusShort": "O",
+      "injuryProbability": null
+    },
+    {
       "player_id": 23013,
       "rank": 143,
       "rankIsEstimated": false,
@@ -2148,21 +2163,6 @@
       "matchupRating": 4,
       "injuryStatus": null,
       "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
-      "player_id": 26035,
-      "rank": 143,
-      "rankIsEstimated": true,
-      "player_name": "Jordyn Tyson",
-      "first_name": "Jordyn",
-      "last_name": "Tyson",
-      "position": "WR55",
-      "team": "NO",
-      "opponent": "at DET",
-      "matchupRating": 1.8,
-      "injuryStatus": "OUT",
-      "injuryStatusShort": "O",
       "injuryProbability": null
     },
     {
@@ -3786,21 +3786,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 17268,
-      "rank": 249,
-      "rankIsEstimated": true,
-      "player_name": "Christian Kirk",
-      "first_name": "Christian",
-      "last_name": "Kirk",
-      "position": "WR101",
-      "team": "SF",
-      "opponent": "at LAR",
-      "matchupRating": 4.1,
-      "injuryStatus": "IR",
-      "injuryStatusShort": "IR",
-      "injuryProbability": null
-    },
-    {
       "player_id": 27310,
       "rank": 249,
       "rankIsEstimated": false,
@@ -3813,6 +3798,21 @@
       "matchupRating": 4.1,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 17268,
+      "rank": 250,
+      "rankIsEstimated": true,
+      "player_name": "Christian Kirk",
+      "first_name": "Christian",
+      "last_name": "Kirk",
+      "position": "WR101",
+      "team": "SF",
+      "opponent": "at LAR",
+      "matchupRating": 4.1,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
       "injuryProbability": null
     },
     {
@@ -4146,6 +4146,21 @@
       "injuryProbability": null
     },
     {
+      "player_id": 25393,
+      "rank": 269,
+      "rankIsEstimated": true,
+      "player_name": "Trevor Etienne",
+      "first_name": "Trevor",
+      "last_name": "Etienne",
+      "position": "RB90",
+      "team": "CAR",
+      "opponent": "vs CHI",
+      "matchupRating": 2.9,
+      "injuryStatus": "OUT",
+      "injuryStatusShort": "O",
+      "injuryProbability": null
+    },
+    {
       "player_id": 24901,
       "rank": 270,
       "rankIsEstimated": false,
@@ -4158,21 +4173,6 @@
       "matchupRating": 2.9,
       "injuryStatus": null,
       "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
-      "player_id": 25393,
-      "rank": 270,
-      "rankIsEstimated": true,
-      "player_name": "Trevor Etienne",
-      "first_name": "Trevor",
-      "last_name": "Etienne",
-      "position": "RB90",
-      "team": "CAR",
-      "opponent": "vs CHI",
-      "matchupRating": 2.9,
-      "injuryStatus": "OUT",
-      "injuryStatusShort": "O",
       "injuryProbability": null
     },
     {
@@ -4252,7 +4252,7 @@
     },
     {
       "player_id": 26392,
-      "rank": 275,
+      "rank": 276,
       "rankIsEstimated": true,
       "player_name": "Isaac Guerendo",
       "first_name": "Isaac",
@@ -4956,16 +4956,16 @@
       "injuryProbability": null
     },
     {
-      "player_id": 22728,
+      "player_id": 25693,
       "rank": 319,
       "rankIsEstimated": true,
-      "player_name": "Michael Carter",
-      "first_name": "Michael",
-      "last_name": "Carter",
+      "player_name": "Jacob Saylors",
+      "first_name": "Jacob",
+      "last_name": "Saylors",
       "position": "RB103",
-      "team": "TEN",
-      "opponent": "vs NYJ",
-      "matchupRating": 3.7,
+      "team": "DET",
+      "opponent": "vs NO",
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -5016,16 +5016,16 @@
       "injuryProbability": null
     },
     {
-      "player_id": 25693,
-      "rank": 322,
+      "player_id": 22728,
+      "rank": 321,
       "rankIsEstimated": true,
-      "player_name": "Jacob Saylors",
-      "first_name": "Jacob",
-      "last_name": "Saylors",
+      "player_name": "Michael Carter",
+      "first_name": "Michael",
+      "last_name": "Carter",
       "position": "RB104",
-      "team": "DET",
-      "opponent": "vs NO",
-      "matchupRating": null,
+      "team": "TEN",
+      "opponent": "vs NYJ",
+      "matchupRating": 3.7,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -6471,21 +6471,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 12122,
-      "rank": 404,
-      "rankIsEstimated": true,
-      "player_name": "Brandin Cooks",
-      "first_name": "Brandin",
-      "last_name": "Cooks",
-      "position": "WR171",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 27288,
       "rank": 404,
       "rankIsEstimated": false,
@@ -6498,6 +6483,21 @@
       "matchupRating": 4.5,
       "injuryStatus": "IR",
       "injuryStatusShort": "IR",
+      "injuryProbability": null
+    },
+    {
+      "player_id": 12122,
+      "rank": 405,
+      "rankIsEstimated": true,
+      "player_name": "Brandin Cooks",
+      "first_name": "Brandin",
+      "last_name": "Cooks",
+      "position": "WR171",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
       "injuryProbability": null
     },
     {
@@ -6546,21 +6546,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 25289,
-      "rank": 407,
-      "rankIsEstimated": true,
-      "player_name": "Jacob Cowing",
-      "first_name": "Jacob",
-      "last_name": "Cowing",
-      "position": "WR153",
-      "team": "SF",
-      "opponent": "at LAR",
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 17264,
       "rank": 408,
       "rankIsEstimated": false,
@@ -6570,6 +6555,21 @@
       "position": "WR163",
       "team": "FA",
       "opponent": null,
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 25289,
+      "rank": 408,
+      "rankIsEstimated": true,
+      "player_name": "Jacob Cowing",
+      "first_name": "Jacob",
+      "last_name": "Cowing",
+      "position": "WR153",
+      "team": "SF",
+      "opponent": "at LAR",
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
@@ -6667,7 +6667,7 @@
     },
     {
       "player_id": 18283,
-      "rank": 414,
+      "rank": 415,
       "rankIsEstimated": true,
       "player_name": "Miles Sanders",
       "first_name": "Miles",
@@ -6696,21 +6696,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 27045,
-      "rank": 415,
-      "rankIsEstimated": true,
-      "player_name": "Kalel Mullings",
-      "first_name": "Kalel",
-      "last_name": "Mullings",
-      "position": "RB134",
-      "team": "TEN",
-      "opponent": "vs NYJ",
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 18633,
       "rank": 416,
       "rankIsEstimated": false,
@@ -6726,8 +6711,23 @@
       "injuryProbability": null
     },
     {
-      "player_id": 23893,
+      "player_id": 27045,
       "rank": 416,
+      "rankIsEstimated": true,
+      "player_name": "Kalel Mullings",
+      "first_name": "Kalel",
+      "last_name": "Mullings",
+      "position": "RB134",
+      "team": "TEN",
+      "opponent": "vs NYJ",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 23893,
+      "rank": 417,
       "rankIsEstimated": true,
       "player_name": "Michael Woods II",
       "first_name": "Michael",
@@ -6816,21 +6816,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 23812,
-      "rank": 422,
-      "rankIsEstimated": true,
-      "player_name": "Tyler Badie",
-      "first_name": "Tyler",
-      "last_name": "Badie",
-      "position": "RB133",
-      "team": "DEN",
-      "opponent": "at KC",
-      "matchupRating": 3.8,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 27222,
       "rank": 422,
       "rankIsEstimated": false,
@@ -6838,8 +6823,8 @@
       "first_name": "Theo",
       "last_name": "Wease Jr.",
       "position": "WR160",
-      "team": "FA",
-      "opponent": null,
+      "team": "LAC",
+      "opponent": "vs ARI",
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
@@ -6861,16 +6846,16 @@
       "injuryProbability": null
     },
     {
-      "player_id": 19219,
-      "rank": 424,
+      "player_id": 23812,
+      "rank": 423,
       "rankIsEstimated": true,
-      "player_name": "Jalen Reagor",
-      "first_name": "Jalen",
-      "last_name": "Reagor",
-      "position": "WR172",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
+      "player_name": "Tyler Badie",
+      "first_name": "Tyler",
+      "last_name": "Badie",
+      "position": "RB133",
+      "team": "DEN",
+      "opponent": "at KC",
+      "matchupRating": 3.8,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -6891,15 +6876,15 @@
       "injuryProbability": null
     },
     {
-      "player_id": 24689,
+      "player_id": 19219,
       "rank": 425,
       "rankIsEstimated": true,
-      "player_name": "Julius Chestnut",
-      "first_name": "Julius",
-      "last_name": "Chestnut",
-      "position": "RB136",
-      "team": "TEN",
-      "opponent": "vs NYJ",
+      "player_name": "Jalen Reagor",
+      "first_name": "Jalen",
+      "last_name": "Reagor",
+      "position": "WR172",
+      "team": "FA",
+      "opponent": null,
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
@@ -6930,6 +6915,21 @@
       "position": "TE93",
       "team": "GB",
       "opponent": "at MIN",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 24689,
+      "rank": 426,
+      "rankIsEstimated": true,
+      "player_name": "Julius Chestnut",
+      "first_name": "Julius",
+      "last_name": "Chestnut",
+      "position": "RB136",
+      "team": "TEN",
+      "opponent": "vs NYJ",
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
@@ -7027,7 +7027,7 @@
     },
     {
       "player_id": 23249,
-      "rank": 432,
+      "rank": 433,
       "rankIsEstimated": true,
       "player_name": "Kene Nwangwu",
       "first_name": "Kene",
