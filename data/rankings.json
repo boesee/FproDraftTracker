@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T14:12:46.920Z",
+  "generatedAt": "2026-09-02T14:38:07.455Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -7051,8 +7051,8 @@
       "team": "MIA",
       "opponent": "at LV",
       "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
       "injuryProbability": null
     },
     {
