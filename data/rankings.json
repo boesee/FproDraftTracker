@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T08:42:25.528Z",
+  "generatedAt": "2026-09-03T09:14:40.082Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -4062,7 +4062,7 @@
       "player_name": "Adam Randall",
       "first_name": "Adam",
       "last_name": "Randall",
-      "position": "RB87",
+      "position": "RB86",
       "team": "BAL",
       "opponent": "at IND",
       "matchupRating": 3,
@@ -4581,6 +4581,21 @@
       "injuryProbability": null
     },
     {
+      "player_id": 16425,
+      "rank": 296,
+      "rankIsEstimated": true,
+      "player_name": "Kareem Hunt",
+      "first_name": "Kareem",
+      "last_name": "Hunt",
+      "position": "RB99",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
       "player_id": 24334,
       "rank": 296,
       "rankIsEstimated": false,
@@ -4591,21 +4606,6 @@
       "team": "CAR",
       "opponent": "vs CHI",
       "matchupRating": 2.7,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
-      "player_id": 16425,
-      "rank": 297,
-      "rankIsEstimated": true,
-      "player_name": "Kareem Hunt",
-      "first_name": "Kareem",
-      "last_name": "Hunt",
-      "position": "RB99",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -4716,21 +4716,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 16420,
-      "rank": 304,
-      "rankIsEstimated": true,
-      "player_name": "Joe Mixon",
-      "first_name": "Joe",
-      "last_name": "Mixon",
-      "position": "RB101",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 24238,
       "rank": 304,
       "rankIsEstimated": false,
@@ -4756,6 +4741,21 @@
       "team": "CAR",
       "opponent": "vs CHI",
       "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 16420,
+      "rank": 306,
+      "rankIsEstimated": true,
+      "player_name": "Joe Mixon",
+      "first_name": "Joe",
+      "last_name": "Mixon",
+      "position": "RB101",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -5076,21 +5076,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 27144,
-      "rank": 325,
-      "rankIsEstimated": true,
-      "player_name": "Savion Williams",
-      "first_name": "Savion",
-      "last_name": "Williams",
-      "position": "WR132",
-      "team": "GB",
-      "opponent": "at MIN",
-      "matchupRating": 2.8,
-      "injuryStatus": "IR",
-      "injuryStatusShort": "IR",
-      "injuryProbability": null
-    },
-    {
       "player_id": 26012,
       "rank": 326,
       "rankIsEstimated": false,
@@ -5103,6 +5088,21 @@
       "matchupRating": 4.8,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 27144,
+      "rank": 326,
+      "rankIsEstimated": true,
+      "player_name": "Savion Williams",
+      "first_name": "Savion",
+      "last_name": "Williams",
+      "position": "WR132",
+      "team": "GB",
+      "opponent": "at MIN",
+      "matchupRating": 2.8,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
       "injuryProbability": null
     },
     {
@@ -5811,21 +5811,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 16445,
-      "rank": 369,
-      "rankIsEstimated": true,
-      "player_name": "Jeremy McNichols",
-      "first_name": "Jeremy",
-      "last_name": "McNichols",
-      "position": "RB118",
-      "team": "WAS",
-      "opponent": "at PHI",
-      "matchupRating": null,
-      "injuryStatus": "OUT",
-      "injuryStatusShort": "O",
-      "injuryProbability": null
-    },
-    {
       "player_id": 25941,
       "rank": 369,
       "rankIsEstimated": false,
@@ -5838,6 +5823,21 @@
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 16445,
+      "rank": 370,
+      "rankIsEstimated": true,
+      "player_name": "Jeremy McNichols",
+      "first_name": "Jeremy",
+      "last_name": "McNichols",
+      "position": "RB118",
+      "team": "WAS",
+      "opponent": "at PHI",
+      "matchupRating": null,
+      "injuryStatus": "OUT",
+      "injuryStatusShort": "O",
       "injuryProbability": null
     },
     {
@@ -6606,21 +6606,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 25289,
-      "rank": 412,
-      "rankIsEstimated": true,
-      "player_name": "Jacob Cowing",
-      "first_name": "Jacob",
-      "last_name": "Cowing",
-      "position": "WR154",
-      "team": "SF",
-      "opponent": "at LAR",
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 23030,
       "rank": 413,
       "rankIsEstimated": false,
@@ -6630,6 +6615,21 @@
       "position": "WR154",
       "team": "DAL",
       "opponent": "at NYG",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 25289,
+      "rank": 413,
+      "rankIsEstimated": true,
+      "player_name": "Jacob Cowing",
+      "first_name": "Jacob",
+      "last_name": "Cowing",
+      "position": "WR154",
+      "team": "SF",
+      "opponent": "at LAR",
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
@@ -6727,7 +6727,7 @@
     },
     {
       "player_id": 18283,
-      "rank": 419,
+      "rank": 420,
       "rankIsEstimated": true,
       "player_name": "Miles Sanders",
       "first_name": "Miles",
@@ -6772,7 +6772,7 @@
     },
     {
       "player_id": 27045,
-      "rank": 421,
+      "rank": 422,
       "rankIsEstimated": true,
       "player_name": "Kalel Mullings",
       "first_name": "Kalel",
@@ -6783,21 +6783,6 @@
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
-      "player_id": 23893,
-      "rank": 422,
-      "rankIsEstimated": true,
-      "player_name": "Michael Woods II",
-      "first_name": "Michael",
-      "last_name": "Woods II",
-      "position": "WR181",
-      "team": "DEN",
-      "opponent": "at KC",
-      "matchupRating": null,
-      "injuryStatus": "IR",
-      "injuryStatusShort": "IR",
       "injuryProbability": null
     },
     {
@@ -6828,6 +6813,21 @@
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 23893,
+      "rank": 423,
+      "rankIsEstimated": true,
+      "player_name": "Michael Woods II",
+      "first_name": "Michael",
+      "last_name": "Woods II",
+      "position": "WR181",
+      "team": "DEN",
+      "opponent": "at KC",
+      "matchupRating": null,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
       "injuryProbability": null
     },
     {
