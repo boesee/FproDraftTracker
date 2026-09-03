@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T13:37:21.282Z",
+  "generatedAt": "2026-09-03T14:14:13.354Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -3051,21 +3051,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 16447,
-      "rank": 202,
-      "rankIsEstimated": true,
-      "player_name": "James Conner",
-      "first_name": "James",
-      "last_name": "Conner",
-      "position": "RB63",
-      "team": "ARI",
-      "opponent": "at LAC",
-      "matchupRating": 3.1,
-      "injuryStatus": "OUT",
-      "injuryStatusShort": "O",
-      "injuryProbability": null
-    },
-    {
       "player_id": 27320,
       "rank": 202,
       "rankIsEstimated": false,
@@ -3093,6 +3078,21 @@
       "matchupRating": 3.2,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 16447,
+      "rank": 204,
+      "rankIsEstimated": true,
+      "player_name": "James Conner",
+      "first_name": "James",
+      "last_name": "Conner",
+      "position": "RB64",
+      "team": "ARI",
+      "opponent": "at LAC",
+      "matchupRating": 3.1,
+      "injuryStatus": "OUT",
+      "injuryStatusShort": "O",
       "injuryProbability": null
     },
     {
@@ -4107,7 +4107,7 @@
       "player_name": "Trevor Etienne",
       "first_name": "Trevor",
       "last_name": "Etienne",
-      "position": "RB89",
+      "position": "RB88",
       "team": "CAR",
       "opponent": "vs CHI",
       "matchupRating": 2.9,
@@ -4287,7 +4287,7 @@
       "player_name": "Isaac Guerendo",
       "first_name": "Isaac",
       "last_name": "Guerendo",
-      "position": "RB95",
+      "position": "RB93",
       "team": "SF",
       "opponent": "at LAR",
       "matchupRating": 4.1,
@@ -4746,21 +4746,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 16420,
-      "rank": 306,
-      "rankIsEstimated": true,
-      "player_name": "Joe Mixon",
-      "first_name": "Joe",
-      "last_name": "Mixon",
-      "position": "RB101",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 23054,
       "rank": 306,
       "rankIsEstimated": false,
@@ -4771,6 +4756,21 @@
       "team": "NO",
       "opponent": "at DET",
       "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 16420,
+      "rank": 307,
+      "rankIsEstimated": true,
+      "player_name": "Joe Mixon",
+      "first_name": "Joe",
+      "last_name": "Mixon",
+      "position": "RB101",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -5016,21 +5016,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 22728,
-      "rank": 323,
-      "rankIsEstimated": true,
-      "player_name": "Michael Carter",
-      "first_name": "Michael",
-      "last_name": "Carter",
-      "position": "RB104",
-      "team": "TEN",
-      "opponent": "vs NYJ",
-      "matchupRating": 3.7,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 26310,
       "rank": 323,
       "rankIsEstimated": false,
@@ -5056,6 +5041,21 @@
       "team": "CIN",
       "opponent": "vs TB",
       "matchupRating": 3.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 22728,
+      "rank": 324,
+      "rankIsEstimated": true,
+      "player_name": "Michael Carter",
+      "first_name": "Michael",
+      "last_name": "Carter",
+      "position": "RB105",
+      "team": "TEN",
+      "opponent": "vs NYJ",
+      "matchupRating": 3.7,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -5661,21 +5661,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 16483,
-      "rank": 362,
-      "rankIsEstimated": true,
-      "player_name": "Austin Ekeler",
-      "first_name": "Austin",
-      "last_name": "Ekeler",
-      "position": "RB112",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 24335,
       "rank": 362,
       "rankIsEstimated": false,
@@ -5716,6 +5701,21 @@
       "team": "WAS",
       "opponent": "at PHI",
       "matchupRating": 1.2,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 16483,
+      "rank": 365,
+      "rankIsEstimated": true,
+      "player_name": "Austin Ekeler",
+      "first_name": "Austin",
+      "last_name": "Ekeler",
+      "position": "RB112",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
