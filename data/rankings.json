@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T20:11:12.036Z",
+  "generatedAt": "2026-09-03T20:36:14.215Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -4536,6 +4536,21 @@
       "injuryProbability": null
     },
     {
+      "player_id": 16425,
+      "rank": 293,
+      "rankIsEstimated": true,
+      "player_name": "Kareem Hunt",
+      "first_name": "Kareem",
+      "last_name": "Hunt",
+      "position": "RB99",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
       "player_id": 17527,
       "rank": 293,
       "rankIsEstimated": false,
@@ -4546,21 +4561,6 @@
       "team": "NO",
       "opponent": "at DET",
       "matchupRating": 2.4,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
-      "player_id": 16425,
-      "rank": 294,
-      "rankIsEstimated": true,
-      "player_name": "Kareem Hunt",
-      "first_name": "Kareem",
-      "last_name": "Hunt",
-      "position": "RB99",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -4746,21 +4746,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 16420,
-      "rank": 306,
-      "rankIsEstimated": true,
-      "player_name": "Joe Mixon",
-      "first_name": "Joe",
-      "last_name": "Mixon",
-      "position": "RB101",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 25430,
       "rank": 306,
       "rankIsEstimated": false,
@@ -4773,6 +4758,21 @@
       "matchupRating": 2.4,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 28047,
+      "rank": 306,
+      "rankIsEstimated": true,
+      "player_name": "Chris Brazzell II",
+      "first_name": "Chris",
+      "last_name": "Brazzell II",
+      "position": "WR128",
+      "team": "CAR",
+      "opponent": "vs CHI",
+      "matchupRating": 4.1,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
       "injuryProbability": null
     },
     {
@@ -4791,18 +4791,18 @@
       "injuryProbability": null
     },
     {
-      "player_id": 28047,
+      "player_id": 16420,
       "rank": 307,
       "rankIsEstimated": true,
-      "player_name": "Chris Brazzell II",
-      "first_name": "Chris",
-      "last_name": "Brazzell II",
-      "position": "WR128",
-      "team": "CAR",
-      "opponent": "vs CHI",
-      "matchupRating": 4.1,
-      "injuryStatus": "IR",
-      "injuryStatusShort": "IR",
+      "player_name": "Joe Mixon",
+      "first_name": "Joe",
+      "last_name": "Mixon",
+      "position": "RB101",
+      "team": "FA",
+      "opponent": null,
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
       "injuryProbability": null
     },
     {
