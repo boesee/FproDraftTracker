@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T16:13:55.670Z",
+  "generatedAt": "2026-09-03T16:38:01.703Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -6207,7 +6207,7 @@
       "player_name": "Zach Ertz",
       "first_name": "Zach",
       "last_name": "Ertz",
-      "position": "TE71",
+      "position": "TE70",
       "team": "FA",
       "opponent": null,
       "matchupRating": null,
