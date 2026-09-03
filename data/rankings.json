@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T17:36:03.253Z",
+  "generatedAt": "2026-09-03T18:15:51.937Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -2151,21 +2151,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 26035,
-      "rank": 143,
-      "rankIsEstimated": true,
-      "player_name": "Jordyn Tyson",
-      "first_name": "Jordyn",
-      "last_name": "Tyson",
-      "position": "WR55",
-      "team": "NO",
-      "opponent": "at DET",
-      "matchupRating": 1.8,
-      "injuryStatus": "OUT",
-      "injuryStatusShort": "O",
-      "injuryProbability": null
-    },
-    {
       "player_id": 18290,
       "rank": 144,
       "rankIsEstimated": false,
@@ -2178,6 +2163,21 @@
       "matchupRating": 2,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 26035,
+      "rank": 144,
+      "rankIsEstimated": true,
+      "player_name": "Jordyn Tyson",
+      "first_name": "Jordyn",
+      "last_name": "Tyson",
+      "position": "WR55",
+      "team": "NO",
+      "opponent": "at DET",
+      "matchupRating": 1.8,
+      "injuryStatus": "OUT",
+      "injuryStatusShort": "O",
       "injuryProbability": null
     },
     {
