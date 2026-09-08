@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T20:12:03.908Z",
+  "generatedAt": "2026-09-08T20:37:04.106Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -2991,21 +2991,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 24333,
-      "rank": 197,
-      "rankIsEstimated": true,
-      "player_name": "Isiah Pacheco",
-      "first_name": "Isiah",
-      "last_name": "Pacheco",
-      "position": "RB62",
-      "team": "DET",
-      "opponent": "vs NO",
-      "matchupRating": 2.6,
-      "injuryStatus": "IR",
-      "injuryStatusShort": "IR",
-      "injuryProbability": null
-    },
-    {
       "player_id": 26355,
       "rank": 197,
       "rankIsEstimated": false,
@@ -3018,6 +3003,21 @@
       "matchupRating": 3.2,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 24333,
+      "rank": 198,
+      "rankIsEstimated": true,
+      "player_name": "Isiah Pacheco",
+      "first_name": "Isiah",
+      "last_name": "Pacheco",
+      "position": "RB62",
+      "team": "DET",
+      "opponent": "vs NO",
+      "matchupRating": 2.6,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
       "injuryProbability": null
     },
     {
@@ -7764,8 +7764,8 @@
       "player_id": 24370,
       "rank": 467,
       "rankIsEstimated": true,
-      "player_name": "Mitch Tinsley",
-      "first_name": "Mitch",
+      "player_name": "Mitchell Tinsley",
+      "first_name": "Mitchell",
       "last_name": "Tinsley",
       "position": "WR206",
       "team": "HOU",
