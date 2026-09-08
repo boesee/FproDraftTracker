@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T05:12:53.670Z",
+  "generatedAt": "2026-09-08T05:37:45.142Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -1836,23 +1836,8 @@
       "injuryProbability": null
     },
     {
-      "player_id": 13981,
-      "rank": 123,
-      "rankIsEstimated": false,
-      "player_name": "Stefon Diggs",
-      "first_name": "Stefon",
-      "last_name": "Diggs",
-      "position": "WR48",
-      "team": "WAS",
-      "opponent": "at PHI",
-      "matchupRating": 1.4,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 22718,
-      "rank": 124,
+      "rank": 123,
       "rankIsEstimated": false,
       "player_name": "Jake Ferguson",
       "first_name": "Jake",
@@ -1861,6 +1846,21 @@
       "team": "DAL",
       "opponent": "at NYG",
       "matchupRating": 2.9,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 13981,
+      "rank": 124,
+      "rankIsEstimated": false,
+      "player_name": "Stefon Diggs",
+      "first_name": "Stefon",
+      "last_name": "Diggs",
+      "position": "WR48",
+      "team": "WAS",
+      "opponent": "at PHI",
+      "matchupRating": 1.4,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -2361,23 +2361,8 @@
       "injuryProbability": null
     },
     {
-      "player_id": 27131,
-      "rank": 156,
-      "rankIsEstimated": false,
-      "player_name": "Kyle Monangai",
-      "first_name": "Kyle",
-      "last_name": "Monangai",
-      "position": "RB42",
-      "team": "CHI",
-      "opponent": "at CAR",
-      "matchupRating": 2.3,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 19590,
-      "rank": 157,
+      "rank": 156,
       "rankIsEstimated": false,
       "player_name": "Jauan Jennings",
       "first_name": "Jauan",
@@ -2386,6 +2371,21 @@
       "team": "MIN",
       "opponent": "vs GB",
       "matchupRating": 2.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 27131,
+      "rank": 157,
+      "rankIsEstimated": false,
+      "player_name": "Kyle Monangai",
+      "first_name": "Kyle",
+      "last_name": "Monangai",
+      "position": "RB42",
+      "team": "CHI",
+      "opponent": "at CAR",
+      "matchupRating": 2.3,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -2916,21 +2916,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 24333,
-      "rank": 192,
-      "rankIsEstimated": true,
-      "player_name": "Isiah Pacheco",
-      "first_name": "Isiah",
-      "last_name": "Pacheco",
-      "position": "RB61",
-      "team": "DET",
-      "opponent": "vs NO",
-      "matchupRating": 2.6,
-      "injuryStatus": "IR",
-      "injuryStatusShort": "IR",
-      "injuryProbability": null
-    },
-    {
       "player_id": 27320,
       "rank": 192,
       "rankIsEstimated": false,
@@ -2958,6 +2943,21 @@
       "matchupRating": 3,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 24333,
+      "rank": 193,
+      "rankIsEstimated": true,
+      "player_name": "Isiah Pacheco",
+      "first_name": "Isiah",
+      "last_name": "Pacheco",
+      "position": "RB61",
+      "team": "DET",
+      "opponent": "vs NO",
+      "matchupRating": 2.6,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
       "injuryProbability": null
     },
     {
@@ -4362,7 +4362,7 @@
       "player_name": "Isaac Guerendo",
       "first_name": "Isaac",
       "last_name": "Guerendo",
-      "position": "RB95",
+      "position": "RB94",
       "team": "SF",
       "opponent": "at LAR",
       "matchupRating": 4.1,
@@ -5166,21 +5166,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 27288,
-      "rank": 330,
-      "rankIsEstimated": true,
-      "player_name": "Dont'e Thornton Jr.",
-      "first_name": "Dont'e",
-      "last_name": "Thornton Jr.",
-      "position": "WR132",
-      "team": "LV",
-      "opponent": "vs MIA",
-      "matchupRating": 4.5,
-      "injuryStatus": "IR",
-      "injuryStatusShort": "IR",
-      "injuryProbability": null
-    },
-    {
       "player_id": 28403,
       "rank": 331,
       "rankIsEstimated": false,
@@ -5208,6 +5193,21 @@
       "matchupRating": 3.1,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 27288,
+      "rank": 332,
+      "rankIsEstimated": true,
+      "player_name": "Dont'e Thornton Jr.",
+      "first_name": "Dont'e",
+      "last_name": "Thornton Jr.",
+      "position": "WR132",
+      "team": "LV",
+      "opponent": "vs MIA",
+      "matchupRating": 4.5,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
       "injuryProbability": null
     },
     {
@@ -5256,23 +5256,8 @@
       "injuryProbability": null
     },
     {
-      "player_id": 27144,
-      "rank": 335,
-      "rankIsEstimated": true,
-      "player_name": "Savion Williams",
-      "first_name": "Savion",
-      "last_name": "Williams",
-      "position": "WR133",
-      "team": "GB",
-      "opponent": "at MIN",
-      "matchupRating": 2.8,
-      "injuryStatus": "IR",
-      "injuryStatusShort": "IR",
-      "injuryProbability": null
-    },
-    {
       "player_id": 22728,
-      "rank": 336,
+      "rank": 335,
       "rankIsEstimated": true,
       "player_name": "Michael Carter",
       "first_name": "Michael",
@@ -5298,6 +5283,21 @@
       "matchupRating": 2.6,
       "injuryStatus": null,
       "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 27144,
+      "rank": 336,
+      "rankIsEstimated": true,
+      "player_name": "Savion Williams",
+      "first_name": "Savion",
+      "last_name": "Williams",
+      "position": "WR133",
+      "team": "GB",
+      "opponent": "at MIN",
+      "matchupRating": 2.8,
+      "injuryStatus": "IR",
+      "injuryStatusShort": "IR",
       "injuryProbability": null
     },
     {
@@ -5631,21 +5631,6 @@
       "injuryProbability": null
     },
     {
-      "player_id": 16483,
-      "rank": 359,
-      "rankIsEstimated": true,
-      "player_name": "Austin Ekeler",
-      "first_name": "Austin",
-      "last_name": "Ekeler",
-      "position": "RB116",
-      "team": "FA",
-      "opponent": null,
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 18397,
       "rank": 359,
       "rankIsEstimated": false,
@@ -5655,6 +5640,21 @@
       "position": "TE71",
       "team": "HOU",
       "opponent": "vs BUF",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 16483,
+      "rank": 360,
+      "rankIsEstimated": true,
+      "player_name": "Austin Ekeler",
+      "first_name": "Austin",
+      "last_name": "Ekeler",
+      "position": "RB116",
+      "team": "FA",
+      "opponent": null,
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
