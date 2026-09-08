@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T19:10:20.207Z",
+  "generatedAt": "2026-09-08T19:35:19.789Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -3466,8 +3466,8 @@
       "team": "HOU",
       "opponent": "vs BUF",
       "matchupRating": 1.7,
-      "injuryStatus": "IR",
-      "injuryStatusShort": "IR",
+      "injuryStatus": "OUT",
+      "injuryStatusShort": "O",
       "injuryProbability": null
     },
     {
@@ -5251,8 +5251,8 @@
       "team": "GB",
       "opponent": "at MIN",
       "matchupRating": 2.8,
-      "injuryStatus": "IR",
-      "injuryStatusShort": "IR",
+      "injuryStatus": "OUT",
+      "injuryStatusShort": "O",
       "injuryProbability": null
     },
     {
