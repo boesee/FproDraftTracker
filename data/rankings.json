@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T08:17:26.092Z",
+  "generatedAt": "2026-09-10T08:41:41.915Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -291,23 +291,8 @@
       "injuryProbability": null
     },
     {
-      "player_id": 19217,
-      "rank": 20,
-      "rankIsEstimated": false,
-      "player_name": "Jonathan Taylor",
-      "first_name": "Jonathan",
-      "last_name": "Taylor",
-      "position": "RB4",
-      "team": "IND",
-      "opponent": "vs BAL",
-      "matchupRating": 2,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 23160,
-      "rank": 21,
+      "rank": 20,
       "rankIsEstimated": false,
       "player_name": "Jaxson Dart",
       "first_name": "Jaxson",
@@ -316,6 +301,21 @@
       "team": "NYG",
       "opponent": "vs DAL",
       "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 19217,
+      "rank": 21,
+      "rankIsEstimated": false,
+      "player_name": "Jonathan Taylor",
+      "first_name": "Jonathan",
+      "last_name": "Taylor",
+      "position": "RB4",
+      "team": "IND",
+      "opponent": "vs BAL",
+      "matchupRating": 2,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -2301,23 +2301,8 @@
       "injuryProbability": null
     },
     {
-      "player_id": 24357,
-      "rank": 151,
-      "rankIsEstimated": false,
-      "player_name": "Adonai Mitchell",
-      "first_name": "Adonai",
-      "last_name": "Mitchell",
-      "position": "WR59",
-      "team": "NYJ",
-      "opponent": "at TEN",
-      "matchupRating": 4.4,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 16499,
-      "rank": 152,
+      "rank": 151,
       "rankIsEstimated": false,
       "player_name": "George Kittle",
       "first_name": "George",
@@ -2326,6 +2311,21 @@
       "team": "SF",
       "opponent": "at LAR",
       "matchupRating": 3.8,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 24357,
+      "rank": 152,
+      "rankIsEstimated": false,
+      "player_name": "Adonai Mitchell",
+      "first_name": "Adonai",
+      "last_name": "Mitchell",
+      "position": "WR59",
+      "team": "NYJ",
+      "opponent": "at TEN",
+      "matchupRating": 4.4,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -5691,23 +5691,8 @@
       "injuryProbability": null
     },
     {
-      "player_id": 27501,
-      "rank": 362,
-      "rankIsEstimated": false,
-      "player_name": "Jack Endries",
-      "first_name": "Jack",
-      "last_name": "Endries",
-      "position": "TE77",
-      "team": "CIN",
-      "opponent": "vs TB",
-      "matchupRating": 4.6,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 23030,
-      "rank": 363,
+      "rank": 362,
       "rankIsEstimated": false,
       "player_name": "Jonathan Mingo",
       "first_name": "Jonathan",
@@ -5716,6 +5701,21 @@
       "team": "DAL",
       "opponent": "at NYG",
       "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 27501,
+      "rank": 363,
+      "rankIsEstimated": false,
+      "player_name": "Jack Endries",
+      "first_name": "Jack",
+      "last_name": "Endries",
+      "position": "TE77",
+      "team": "CIN",
+      "opponent": "vs TB",
+      "matchupRating": 4.6,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
