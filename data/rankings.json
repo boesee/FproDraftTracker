@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T19:09:00.827Z",
+  "generatedAt": "2026-09-10T19:35:46.730Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -276,23 +276,8 @@
       "injuryProbability": null
     },
     {
-      "player_id": 23136,
-      "rank": 19,
-      "rankIsEstimated": false,
-      "player_name": "De'Von Achane",
-      "first_name": "De'Von",
-      "last_name": "Achane",
-      "position": "RB5",
-      "team": "MIA",
-      "opponent": "at LV",
-      "matchupRating": 4.5,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 23160,
-      "rank": 20,
+      "rank": 19,
       "rankIsEstimated": false,
       "player_name": "Jaxson Dart",
       "first_name": "Jaxson",
@@ -301,6 +286,21 @@
       "team": "NYG",
       "opponent": "vs DAL",
       "matchupRating": 1.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 23136,
+      "rank": 20,
+      "rankIsEstimated": false,
+      "player_name": "De'Von Achane",
+      "first_name": "De'Von",
+      "last_name": "Achane",
+      "position": "RB5",
+      "team": "MIA",
+      "opponent": "at LV",
+      "matchupRating": 4.5,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -642,7 +642,7 @@
       "player_name": "Drake London",
       "first_name": "Drake",
       "last_name": "London",
-      "position": "WR9",
+      "position": "WR10",
       "team": "ATL",
       "opponent": "at PIT",
       "matchupRating": 2.8,
@@ -687,7 +687,7 @@
       "player_name": "George Pickens",
       "first_name": "George",
       "last_name": "Pickens",
-      "position": "WR10",
+      "position": "WR9",
       "team": "DAL",
       "opponent": "at NYG",
       "matchupRating": 2.1,
@@ -1281,23 +1281,8 @@
       "injuryProbability": null
     },
     {
-      "player_id": 20164,
-      "rank": 85,
-      "rankIsEstimated": false,
-      "player_name": "Kyle Pitts Sr.",
-      "first_name": "Kyle",
-      "last_name": "Pitts Sr.",
-      "position": "TE4",
-      "team": "ATL",
-      "opponent": "at PIT",
-      "matchupRating": 3.4,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 24209,
-      "rank": 86,
+      "rank": 85,
       "rankIsEstimated": false,
       "player_name": "Jaylen Warren",
       "first_name": "Jaylen",
@@ -1306,6 +1291,21 @@
       "team": "PIT",
       "opponent": "vs ATL",
       "matchupRating": 3,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 20164,
+      "rank": 86,
+      "rankIsEstimated": false,
+      "player_name": "Kyle Pitts Sr.",
+      "first_name": "Kyle",
+      "last_name": "Pitts Sr.",
+      "position": "TE4",
+      "team": "ATL",
+      "opponent": "at PIT",
+      "matchupRating": 3.4,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -1413,7 +1413,7 @@
       "matchupRating": 3.7,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 67
+      "injuryProbability": 38
     },
     {
       "player_id": 22978,
@@ -2043,7 +2043,7 @@
       "matchupRating": 3,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 66
+      "injuryProbability": 67
     },
     {
       "player_id": 17349,
@@ -2271,16 +2271,16 @@
       "injuryProbability": null
     },
     {
-      "player_id": 18290,
+      "player_id": 24177,
       "rank": 150,
       "rankIsEstimated": false,
-      "player_name": "T.J. Hockenson",
-      "first_name": "T.J.",
-      "last_name": "Hockenson",
-      "position": "TE19",
-      "team": "MIN",
-      "opponent": "vs GB",
-      "matchupRating": 2,
+      "player_name": "Jalen Nailor",
+      "first_name": "Jalen",
+      "last_name": "Nailor",
+      "position": "WR59",
+      "team": "LV",
+      "opponent": "vs MIA",
+      "matchupRating": 4.8,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -2301,16 +2301,16 @@
       "injuryProbability": null
     },
     {
-      "player_id": 24177,
+      "player_id": 18290,
       "rank": 151,
       "rankIsEstimated": false,
-      "player_name": "Jalen Nailor",
-      "first_name": "Jalen",
-      "last_name": "Nailor",
-      "position": "WR59",
-      "team": "LV",
-      "opponent": "vs MIA",
-      "matchupRating": 4.8,
+      "player_name": "T.J. Hockenson",
+      "first_name": "T.J.",
+      "last_name": "Hockenson",
+      "position": "TE19",
+      "team": "MIN",
+      "opponent": "vs GB",
+      "matchupRating": 2,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -3321,23 +3321,8 @@
       "injuryProbability": null
     },
     {
-      "player_id": 23679,
-      "rank": 217,
-      "rankIsEstimated": false,
-      "player_name": "Sean Tucker",
-      "first_name": "Sean",
-      "last_name": "Tucker",
-      "position": "RB60",
-      "team": "TB",
-      "opponent": "at CIN",
-      "matchupRating": 3.7,
-      "injuryStatus": "Questionable",
-      "injuryStatusShort": "Q",
-      "injuryProbability": 12
-    },
-    {
       "player_id": 24205,
-      "rank": 218,
+      "rank": 217,
       "rankIsEstimated": false,
       "player_name": "Malik Davis",
       "first_name": "Malik",
@@ -3349,6 +3334,21 @@
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
+    },
+    {
+      "player_id": 23679,
+      "rank": 218,
+      "rankIsEstimated": false,
+      "player_name": "Sean Tucker",
+      "first_name": "Sean",
+      "last_name": "Tucker",
+      "position": "RB60",
+      "team": "TB",
+      "opponent": "at CIN",
+      "matchupRating": 3.7,
+      "injuryStatus": "Questionable",
+      "injuryStatusShort": "Q",
+      "injuryProbability": 12
     },
     {
       "player_id": 24333,
@@ -3786,23 +3786,8 @@
       "injuryProbability": null
     },
     {
-      "player_id": 27285,
-      "rank": 245,
-      "rankIsEstimated": false,
-      "player_name": "LeQuint Allen Jr.",
-      "first_name": "LeQuint",
-      "last_name": "Allen Jr.",
-      "position": "RB75",
-      "team": "JAC",
-      "opponent": "vs CLE",
-      "matchupRating": 2.7,
-      "injuryStatus": "Questionable",
-      "injuryStatusShort": "Q",
-      "injuryProbability": 23
-    },
-    {
       "player_id": 16421,
-      "rank": 246,
+      "rank": 245,
       "rankIsEstimated": false,
       "player_name": "Alvin Kamara",
       "first_name": "Alvin",
@@ -3813,7 +3798,7 @@
       "matchupRating": 2.9,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 59
+      "injuryProbability": 60
     },
     {
       "player_id": 26022,
@@ -3829,6 +3814,21 @@
       "injuryStatus": "OUT",
       "injuryStatusShort": "O",
       "injuryProbability": 45
+    },
+    {
+      "player_id": 27285,
+      "rank": 246,
+      "rankIsEstimated": false,
+      "player_name": "LeQuint Allen Jr.",
+      "first_name": "LeQuint",
+      "last_name": "Allen Jr.",
+      "position": "RB75",
+      "team": "JAC",
+      "opponent": "vs CLE",
+      "matchupRating": 2.7,
+      "injuryStatus": "Questionable",
+      "injuryStatusShort": "Q",
+      "injuryProbability": 23
     },
     {
       "player_id": 27487,
@@ -4968,7 +4968,7 @@
       "matchupRating": 2.4,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 21
+      "injuryProbability": 11
     },
     {
       "player_id": 26011,
@@ -5706,8 +5706,23 @@
       "injuryProbability": null
     },
     {
-      "player_id": 28125,
+      "player_id": 13924,
       "rank": 363,
+      "rankIsEstimated": false,
+      "player_name": "Ameer Abdullah",
+      "first_name": "Ameer",
+      "last_name": "Abdullah",
+      "position": "RB106",
+      "team": "JAC",
+      "opponent": "vs CLE",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 28125,
+      "rank": 364,
       "rankIsEstimated": false,
       "player_name": "CJ Daniels",
       "first_name": "CJ",
@@ -5722,7 +5737,7 @@
     },
     {
       "player_id": 23905,
-      "rank": 364,
+      "rank": 365,
       "rankIsEstimated": false,
       "player_name": "Skyy Moore",
       "first_name": "Skyy",
@@ -5737,7 +5752,7 @@
     },
     {
       "player_id": 27093,
-      "rank": 365,
+      "rank": 366,
       "rankIsEstimated": false,
       "player_name": "Deion Burks",
       "first_name": "Deion",
@@ -5752,7 +5767,7 @@
     },
     {
       "player_id": 25346,
-      "rank": 366,
+      "rank": 367,
       "rankIsEstimated": false,
       "player_name": "Payne Durham",
       "first_name": "Payne",
@@ -5760,21 +5775,6 @@
       "position": "TE81",
       "team": "TB",
       "opponent": "at CIN",
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
-      "player_id": 20114,
-      "rank": 367,
-      "rankIsEstimated": false,
-      "player_name": "Elijah Moore",
-      "first_name": "Elijah",
-      "last_name": "Moore",
-      "position": "WR145",
-      "team": "PHI",
-      "opponent": "vs WAS",
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
@@ -5796,8 +5796,23 @@
       "injuryProbability": null
     },
     {
-      "player_id": 24049,
+      "player_id": 20114,
       "rank": 368,
+      "rankIsEstimated": false,
+      "player_name": "Elijah Moore",
+      "first_name": "Elijah",
+      "last_name": "Moore",
+      "position": "WR145",
+      "team": "PHI",
+      "opponent": "vs WAS",
+      "matchupRating": null,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 24049,
+      "rank": 369,
       "rankIsEstimated": false,
       "player_name": "Bo Melton",
       "first_name": "Bo",
@@ -5805,21 +5820,6 @@
       "position": "WR149",
       "team": "GB",
       "opponent": "at MIN",
-      "matchupRating": null,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
-      "player_id": 13924,
-      "rank": 369,
-      "rankIsEstimated": false,
-      "player_name": "Ameer Abdullah",
-      "first_name": "Ameer",
-      "last_name": "Abdullah",
-      "position": "RB106",
-      "team": "JAC",
-      "opponent": "vs CLE",
       "matchupRating": null,
       "injuryStatus": null,
       "injuryStatusShort": null,
@@ -6813,7 +6813,7 @@
       "matchupRating": 1.9,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 62
+      "injuryProbability": 3
     },
     {
       "player_id": 22799,
