@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T12:18:38.346Z",
+  "generatedAt": "2026-09-10T12:45:31.996Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -5238,7 +5238,7 @@
       "matchupRating": null,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 55
+      "injuryProbability": null
     },
     {
       "player_id": 27138,
