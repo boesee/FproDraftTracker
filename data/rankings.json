@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T20:11:08.750Z",
+  "generatedAt": "2026-09-10T20:35:24.336Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -1141,9 +1141,9 @@
       "team": "ATL",
       "opponent": "at PIT",
       "matchupRating": 3.6,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
+      "injuryStatus": "Questionable",
+      "injuryStatusShort": "Q",
+      "injuryProbability": 54
     },
     {
       "player_id": 23062,
@@ -1413,7 +1413,7 @@
       "matchupRating": 3.7,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 38
+      "injuryProbability": 66
     },
     {
       "player_id": 22978,
@@ -1743,7 +1743,7 @@
       "matchupRating": 3.5,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 79
+      "injuryProbability": 77
     },
     {
       "player_id": 23118,
@@ -2433,7 +2433,7 @@
       "matchupRating": 3.9,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 64
+      "injuryProbability": 63
     },
     {
       "player_id": 23181,
@@ -3348,7 +3348,7 @@
       "matchupRating": 3.7,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 12
+      "injuryProbability": 54
     },
     {
       "player_id": 24333,
@@ -3798,7 +3798,7 @@
       "matchupRating": 2.9,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 60
+      "injuryProbability": 59
     },
     {
       "player_id": 26022,
@@ -3828,7 +3828,7 @@
       "matchupRating": 2.7,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 23
+      "injuryProbability": 66
     },
     {
       "player_id": 27487,
@@ -4968,7 +4968,7 @@
       "matchupRating": 2.4,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 11
+      "injuryProbability": 21
     },
     {
       "player_id": 26011,
@@ -6453,7 +6453,7 @@
       "matchupRating": null,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 25
+      "injuryProbability": 21
     },
     {
       "player_id": 25748,
@@ -6813,7 +6813,7 @@
       "matchupRating": 1.9,
       "injuryStatus": "Questionable",
       "injuryStatusShort": "Q",
-      "injuryProbability": 3
+      "injuryProbability": 12
     },
     {
       "player_id": 22799,
