@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T13:11:56.175Z",
+  "generatedAt": "2026-09-10T13:35:56.452Z",
   "source": "fantasypros-api",
   "season": 2026,
   "week": 1,
@@ -876,23 +876,8 @@
       "injuryProbability": null
     },
     {
-      "player_id": 11687,
-      "rank": 58,
-      "rankIsEstimated": false,
-      "player_name": "Geno Smith",
-      "first_name": "Geno",
-      "last_name": "Smith",
-      "position": "QB29",
-      "team": "NYJ",
-      "opponent": "at TEN",
-      "matchupRating": 4.9,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 19231,
-      "rank": 59,
+      "rank": 58,
       "rankIsEstimated": false,
       "player_name": "Travis Etienne Jr.",
       "first_name": "Travis",
@@ -901,6 +886,21 @@
       "team": "NO",
       "opponent": "at DET",
       "matchupRating": 2.6,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 11687,
+      "rank": 59,
+      "rankIsEstimated": false,
+      "player_name": "Geno Smith",
+      "first_name": "Geno",
+      "last_name": "Smith",
+      "position": "QB29",
+      "team": "NYJ",
+      "opponent": "at TEN",
+      "matchupRating": 4.9,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
@@ -1296,23 +1296,8 @@
       "injuryProbability": null
     },
     {
-      "player_id": 24209,
-      "rank": 86,
-      "rankIsEstimated": false,
-      "player_name": "Jaylen Warren",
-      "first_name": "Jaylen",
-      "last_name": "Warren",
-      "position": "RB24",
-      "team": "PIT",
-      "opponent": "vs ATL",
-      "matchupRating": 3,
-      "injuryStatus": null,
-      "injuryStatusShort": null,
-      "injuryProbability": null
-    },
-    {
       "player_id": 18466,
-      "rank": 87,
+      "rank": 86,
       "rankIsEstimated": false,
       "player_name": "Terry McLaurin",
       "first_name": "Terry",
@@ -1321,6 +1306,21 @@
       "team": "WAS",
       "opponent": "at PHI",
       "matchupRating": 1.5,
+      "injuryStatus": null,
+      "injuryStatusShort": null,
+      "injuryProbability": null
+    },
+    {
+      "player_id": 24209,
+      "rank": 87,
+      "rankIsEstimated": false,
+      "player_name": "Jaylen Warren",
+      "first_name": "Jaylen",
+      "last_name": "Warren",
+      "position": "RB24",
+      "team": "PIT",
+      "opponent": "vs ATL",
+      "matchupRating": 3,
       "injuryStatus": null,
       "injuryStatusShort": null,
       "injuryProbability": null
